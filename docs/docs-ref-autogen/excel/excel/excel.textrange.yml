@@ -1,0 +1,148 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TextRange:class'
+    summary: 'Enthält den Text, der mit einer Form verknüpft ist, sowie Eigenschaften und Methoden für das Bearbeiten des Texts.'
+    name: Excel.TextRange
+    fullName: Excel.TextRange
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.TextRange#context:member'
+      - 'excel!Excel.TextRange#font:member'
+      - 'excel!Excel.TextRange#getSubstring:member(1)'
+      - 'excel!Excel.TextRange#load:member(1)'
+      - 'excel!Excel.TextRange#load:member(2)'
+      - 'excel!Excel.TextRange#set:member(1)'
+      - 'excel!Excel.TextRange#text:member'
+  - uid: 'excel!Excel.TextRange#context:member'
+    summary: 'Der Anforderungskontext, der mit dem Objekt verknüpft ist. Dadurch wird das Add-in-Verfahren mit dem Prozess der Office-Hostanwendung verbunden.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TextRange#font:member'
+    summary: 'Gibt ein ShapeFont-Objekt zurück, das die Schriftartattribute für den Textbereich darstellt. Schreibgeschützt.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ShapeFont;'
+      return:
+        type:
+          - 'excel!Excel.ShapeFont:class'
+  - uid: 'excel!Excel.TextRange#getSubstring:member(1)'
+    summary: Gibt ein TextRange-Objekt für die Teilzeichenfolge im angegebenen Bereich zurück.
+    name: 'getSubstring(start, length)'
+    fullName: 'getSubstring(start, length)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubstring(start: number, length?: number): Excel.TextRange;'
+      return:
+        type:
+          - 'excel!Excel.TextRange:class'
+        description: ''
+      parameters:
+        - id: start
+          description: 'Der nullbasierte Index des ersten Zeichens, das aus dem Textbereich abgerufen werden soll.'
+          type:
+            - number
+        - id: length
+          description: 'Optional. Die Anzahl der Zeichen, die im neuen Textbereich zurückgegeben werden sollen. Wenn length nicht angegeben wird, werden alle Zeichen vom Anfang bis zum Ende des letzten Absatzes des Textbereichs zurückgegeben.'
+          type:
+            - number
+  - uid: 'excel!Excel.TextRange#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TextRange;'
+      return:
+        type:
+          - 'excel!Excel.TextRange:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TextRange#load:member(2)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.TextRange;
+      return:
+        type:
+          - 'excel!Excel.TextRange:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Eigenschaften `propertyNamesAndPaths.expand` angibt, und ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Navigationseigenschaften angibt.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.TextRange#set:member(1)'
+    summary: Legt mehrere Eigenschaften für das Objekt gleichzeitig basierend auf einem vorhandenen geladenen Objekt fest.
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.TextRange): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.TextRange:class'
+  - uid: 'excel!Excel.TextRange#text:member'
+    summary: Stellt den unformatierten Textinhalt des Textbereichs dar.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ShapeFont:class'
+    name: ShapeFont
+    fullName: Excel.ShapeFont
+  - uid: 'excel!Excel.TextRange:class'
+    name: TextRange
+    fullName: Excel.TextRange
