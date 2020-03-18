@@ -1,0 +1,196 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartBinOptions:class'
+    summary: Verkapselt die Intervalloptionen für Histogramme und Pareto-Diagramme.
+    name: Excel.ChartBinOptions
+    fullName: Excel.ChartBinOptions
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartBinOptions#allowOverflow:member'
+      - 'excel!Excel.ChartBinOptions#allowUnderflow:member'
+      - 'excel!Excel.ChartBinOptions#context:member'
+      - 'excel!Excel.ChartBinOptions#count:member'
+      - 'excel!Excel.ChartBinOptions#load:member(1)'
+      - 'excel!Excel.ChartBinOptions#load:member(2)'
+      - 'excel!Excel.ChartBinOptions#overflowValue:member'
+      - 'excel!Excel.ChartBinOptions#set:member(1)'
+      - 'excel!Excel.ChartBinOptions#type:member'
+      - 'excel!Excel.ChartBinOptions#underflowValue:member'
+      - 'excel!Excel.ChartBinOptions#width:member'
+  - uid: 'excel!Excel.ChartBinOptions#allowOverflow:member'
+    summary: 'Gibt an, ob für ein Histogramm oder ein Pareto-Diagramm der Intervallüberlauf aktiviert ist oder nicht. Lese-/Schreibzugriff.'
+    name: allowOverflow
+    fullName: allowOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowOverflow: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartBinOptions#allowUnderflow:member'
+    summary: 'Gibt an, ob für ein Histogramm oder ein Pareto-Diagramm der Intervallunterlauf aktiviert ist oder nicht. Lese-/Schreibzugriff.'
+    name: allowUnderflow
+    fullName: allowUnderflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowUnderflow: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartBinOptions#context:member'
+    summary: 'Der Anforderungskontext, der mit dem Objekt verknüpft ist. Dadurch wird das Add-in-Verfahren mit dem Prozess der Office-Hostanwendung verbunden.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartBinOptions#count:member'
+    summary: Gibt die Anzahl der Intervalle eines Histogramms oder eines Pareto-Diagramms zurück oder legt sie fest. Lese-/Schreibzugriff.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartBinOptions#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartBinOptions;'
+      return:
+        type:
+          - 'excel!Excel.ChartBinOptions:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartBinOptions#load:member(2)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartBinOptions;
+      return:
+        type:
+          - 'excel!Excel.ChartBinOptions:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Eigenschaften `propertyNamesAndPaths.expand` angibt, und ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Navigationseigenschaften angibt.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartBinOptions#overflowValue:member'
+    summary: Gibt den Wert für den Intervallüberlauf eines Histogramms oder eines Pareto-Diagramms zurück oder legt ihn fest. Lese-/Schreibzugriff.
+    name: overflowValue
+    fullName: overflowValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overflowValue: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartBinOptions#set:member(1)'
+    summary: Legt mehrere Eigenschaften für das Objekt gleichzeitig basierend auf einem vorhandenen geladenen Objekt fest.
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartBinOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartBinOptions:class'
+  - uid: 'excel!Excel.ChartBinOptions#type:member'
+    summary: Gibt den Intervalltyp für ein Histogramm oder Pareto-Diagramm zurück oder legt diesen fest. Lese-/Schreibzugriff.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";'
+      return:
+        type:
+          - 'excel!Excel.ChartBinOptions#type~0:complex'
+  - uid: 'excel!Excel.ChartBinOptions#underflowValue:member'
+    summary: Gibt den Wert für den Intervallunterlauf eines Histogramms oder eines Pareto-Diagramms zurück oder legt ihn fest. Lese-/Schreibzugriff.
+    name: underflowValue
+    fullName: underflowValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underflowValue: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartBinOptions#width:member'
+    summary: Gibt den Wert für die Intervallbreite eines Histogramms oder eines Pareto-Diagramms zurück oder legt ihn fest. Lese-/Schreibzugriff.
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartBinOptions:class'
+    name: ChartBinOptions
+    fullName: Excel.ChartBinOptions
+  - uid: 'excel!Excel.ChartBinOptions#type~0:complex'
+    name: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
+    fullName: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartBinType:enum'
+        name: Excel.ChartBinType
+        fullName: Excel.ChartBinType
+      - name: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'
+        fullName: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'

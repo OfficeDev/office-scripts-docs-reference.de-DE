@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CloseBehavior:enum'
+    summary: Gibt das Close-Verhalten für Workbook. Close-API an.
+    name: Excel.CloseBehavior
+    fullName: Excel.CloseBehavior
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.CloseBehavior.save:member'
+      - 'excel!Excel.CloseBehavior.skipSave:member'
+  - uid: 'excel!Excel.CloseBehavior.save:member'
+    summary: 'Speichern Sie die möglichen Änderungen, bevor Sie die Arbeitsmappe schließen.'
+    name: save
+    fullName: save
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Save"'
+  - uid: 'excel!Excel.CloseBehavior.skipSave:member'
+    summary: Verwerfen Sie die möglichen Änderungen beim Schließen der Arbeitsmappe.
+    name: skipSave
+    fullName: skipSave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SkipSave"'

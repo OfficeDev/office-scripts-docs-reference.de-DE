@@ -1,0 +1,168 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLegendFormat:class'
+    summary: Kapselt die Formateigenschaften einer Diagrammlegende.
+    name: Excel.ChartLegendFormat
+    fullName: Excel.ChartLegendFormat
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLegendFormat#border:member'
+      - 'excel!Excel.ChartLegendFormat#context:member'
+      - 'excel!Excel.ChartLegendFormat#fill:member'
+      - 'excel!Excel.ChartLegendFormat#font:member'
+      - 'excel!Excel.ChartLegendFormat#load:member(1)'
+      - 'excel!Excel.ChartLegendFormat#load:member(2)'
+      - 'excel!Excel.ChartLegendFormat#set:member(1)'
+  - uid: 'excel!Excel.ChartLegendFormat#border:member'
+    summary: 'Gibt das Rahmenformat einschließlich Farbe, Linienart und Stärke an. Schreibgeschützt.'
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:class'
+  - uid: 'excel!Excel.ChartLegendFormat#context:member'
+    summary: 'Der Anforderungskontext, der mit dem Objekt verknüpft ist. Dadurch wird das Add-in-Verfahren mit dem Prozess der Office-Hostanwendung verbunden.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartLegendFormat#fill:member'
+    summary: 'Stellt die Füllung eines Objekts dar, einschließlich Informationen zur Hintergrundformatierung. Schreibgeschützt.'
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:class'
+  - uid: 'excel!Excel.ChartLegendFormat#font:member'
+    summary: 'Stellt die Schriftartattribute wie Schriftartname, Schriftgrad, Farbe usw. einer Diagrammlegende dar. Schreibgeschützt.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:class'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+
+              let chart = sheet.charts.getItemAt(0);
+              chart.legend.visible = true;
+
+              // Format the legend font.
+              let font = chart.legend.format.font;
+              font.bold = true;
+              font.color = "red";
+              font.italic = true;
+              font.size = 15;
+              font.name = "Calibri";
+              font.underline = "Single";
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.ChartLegendFormat#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartLegendFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartLegendFormat#load:member(2)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartLegendFormat;
+      return:
+        type:
+          - 'excel!Excel.ChartLegendFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Eigenschaften `propertyNamesAndPaths.expand` angibt, und ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Navigationseigenschaften angibt.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartLegendFormat#set:member(1)'
+    summary: Legt mehrere Eigenschaften für das Objekt gleichzeitig basierend auf einem vorhandenen geladenen Objekt fest.
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartLegendFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartLegendFormat:class'
+references:
+  - uid: 'excel!Excel.ChartBorder:class'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartFill:class'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:class'
+    name: ChartFont
+    fullName: Excel.ChartFont
+  - uid: 'excel!Excel.ChartLegendFormat:class'
+    name: ChartLegendFormat
+    fullName: Excel.ChartLegendFormat

@@ -1,0 +1,174 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLegendEntry:class'
+    summary: Stellt das legendEntry in legendEntryCollection dar.
+    name: Excel.ChartLegendEntry
+    fullName: Excel.ChartLegendEntry
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLegendEntry#context:member'
+      - 'excel!Excel.ChartLegendEntry#height:member'
+      - 'excel!Excel.ChartLegendEntry#index:member'
+      - 'excel!Excel.ChartLegendEntry#left:member'
+      - 'excel!Excel.ChartLegendEntry#load:member(1)'
+      - 'excel!Excel.ChartLegendEntry#load:member(2)'
+      - 'excel!Excel.ChartLegendEntry#set:member(1)'
+      - 'excel!Excel.ChartLegendEntry#top:member'
+      - 'excel!Excel.ChartLegendEntry#visible:member'
+      - 'excel!Excel.ChartLegendEntry#width:member'
+  - uid: 'excel!Excel.ChartLegendEntry#context:member'
+    summary: 'Der Anforderungskontext, der mit dem Objekt verknüpft ist. Dadurch wird das Add-in-Verfahren mit dem Prozess der Office-Hostanwendung verbunden.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartLegendEntry#height:member'
+    summary: Die Höhe des LegendEntry-Objekts in der Legende des Diagramms.
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegendEntry#index:member'
+    summary: Die Höhe des Index des legendEntry-Objekts in der Legende des Diagramms.
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegendEntry#left:member'
+    summary: Linker Rand des legendEntry-Objekts des Diagramms.
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegendEntry#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartLegendEntry;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendEntry:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartLegendEntry#load:member(2)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartLegendEntry;
+      return:
+        type:
+          - 'excel!Excel.ChartLegendEntry:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Eigenschaften `propertyNamesAndPaths.expand` angibt, und ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Navigationseigenschaften angibt.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartLegendEntry#set:member(1)'
+    summary: Legt mehrere Eigenschaften für das Objekt gleichzeitig basierend auf einem vorhandenen geladenen Objekt fest.
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartLegendEntry): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartLegendEntry:class'
+  - uid: 'excel!Excel.ChartLegendEntry#top:member'
+    summary: Oberer Rand des legendEntry-Objekts des Diagramms.
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegendEntry#visible:member'
+    summary: Stellt den sichtbaren Teil eines Diagrammlegendeneintrags dar.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartLegendEntry#width:member'
+    summary: Die Breite des LegendEntry-Objekts in der Legende des Diagramms.
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartLegendEntry:class'
+    name: ChartLegendEntry
+    fullName: Excel.ChartLegendEntry

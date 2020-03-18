@@ -1,0 +1,177 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection:class'
+    summary: 'Stellt eine Auflistung von FilterPivotHierarchy-Elementen dar, die der PivotTable zugeordnet sind.'
+    name: Excel.FilterPivotHierarchyCollection
+    fullName: Excel.FilterPivotHierarchyCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.FilterPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#context:member'
+      - 'excel!Excel.FilterPivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#getItem:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#items:member'
+      - 'excel!Excel.FilterPivotHierarchyCollection#load:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#remove:member(1)'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#add:member(1)'
+    summary: 'Fügt der aktuellen Achse das PivotHierarchy-Objekt hinzu. Wenn die Hierarchie an anderer Stelle in der Zeile, Spalte oder Filterachse vorhanden ist, wird sie von dieser Stelle entfernt.'
+    name: add(pivotHierarchy)
+    fullName: add(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(pivotHierarchy: Excel.PivotHierarchy): Excel.FilterPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.PivotHierarchy:class'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#context:member'
+    summary: 'Der Anforderungskontext, der mit dem Objekt verknüpft ist. Dadurch wird das Add-in-Verfahren mit dem Prozess der Office-Hostanwendung verbunden.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#getCount:member(1)'
+    summary: Ruft die Anzahl der Pivot-Hierarchien in der Sammlung ab.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchyCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#getItem:member(1)'
+    summary: Ruft das FilterPivotHierarchy-Objekt anhand des Namens oder der ID ab.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.FilterPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Name des FilterPivotHierarchy, das abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft das FilterPivotHierarchy-Objekt anhand des Namens ab. Wenn das FilterPivotHierarchy-Objekt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.FilterPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Name des FilterPivotHierarchy, das abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#items:member'
+    summary: Ruft die geladenen untergeordneten Elemente in dieser Sammlung ab.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.FilterPivotHierarchy[];'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchyCollection#items~0:complex'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.FilterPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchyCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#remove:member(1)'
+    summary: Entfernt das PivotHierarchy-Objekt von der aktuellen Achse.
+    name: remove(filterPivotHierarchy)
+    fullName: remove(filterPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(filterPivotHierarchy: Excel.FilterPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: filterPivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.FilterPivotHierarchy:class'
+references:
+  - uid: 'excel!Excel.FilterPivotHierarchy:class'
+    name: FilterPivotHierarchy
+    fullName: Excel.FilterPivotHierarchy
+  - uid: 'excel!Excel.PivotHierarchy:class'
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#items~0:complex'
+    name: 'Excel.FilterPivotHierarchy[]'
+    fullName: 'Excel.FilterPivotHierarchy[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.FilterPivotHierarchy:class'
+        name: Excel.FilterPivotHierarchy
+        fullName: Excel.FilterPivotHierarchy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection:class'
+    name: FilterPivotHierarchyCollection
+    fullName: Excel.FilterPivotHierarchyCollection
