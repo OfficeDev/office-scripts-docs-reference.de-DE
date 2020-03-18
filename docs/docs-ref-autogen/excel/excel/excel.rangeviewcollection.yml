@@ -1,0 +1,117 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeViewCollection:class'
+    summary: Stellt eine Sammlung von RangeView-Objekten dar.
+    name: Excel.RangeViewCollection
+    fullName: Excel.RangeViewCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.RangeViewCollection#context:member'
+      - 'excel!Excel.RangeViewCollection#getCount:member(1)'
+      - 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
+      - 'excel!Excel.RangeViewCollection#items:member'
+      - 'excel!Excel.RangeViewCollection#load:member(1)'
+  - uid: 'excel!Excel.RangeViewCollection#context:member'
+    summary: 'Der Anforderungskontext, der mit dem Objekt verknüpft ist. Dadurch wird das Add-in-Verfahren mit dem Prozess der Office-Hostanwendung verbunden.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeViewCollection#getCount:member(1)'
+    summary: Gibt die Anzahl von RangeView-Objekten in der Auflistung zurück.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.RangeViewCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
+    summary: Ruft eine RangeView-Zeile über den Index ab. Nullindiziert.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.RangeView;'
+      return:
+        type:
+          - 'excel!Excel.RangeView:class'
+        description: ''
+      parameters:
+        - id: index
+          description: Index der sichtbaren Zeile.
+          type:
+            - number
+  - uid: 'excel!Excel.RangeViewCollection#items:member'
+    summary: Ruft die geladenen untergeordneten Elemente in dieser Sammlung ab.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.RangeView[];'
+      return:
+        type:
+          - 'excel!Excel.RangeViewCollection#items~0:complex'
+  - uid: 'excel!Excel.RangeViewCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RangeViewCollection;'
+      return:
+        type:
+          - 'excel!Excel.RangeViewCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.RangeViewCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.RangeView:class'
+    name: RangeView
+    fullName: Excel.RangeView
+  - uid: 'excel!Excel.RangeViewCollection#items~0:complex'
+    name: 'Excel.RangeView[]'
+    fullName: 'Excel.RangeView[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeView:class'
+        name: Excel.RangeView
+        fullName: Excel.RangeView
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.RangeViewCollection:class'
+    name: RangeViewCollection
+    fullName: Excel.RangeViewCollection

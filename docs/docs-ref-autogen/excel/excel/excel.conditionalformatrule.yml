@@ -1,0 +1,151 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalFormatRule:class'
+    summary: Stellt eine Regel für alle herkömmlichen Regel-Format-Paarungen dar.
+    name: Excel.ConditionalFormatRule
+    fullName: Excel.ConditionalFormatRule
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalFormatRule#context:member'
+      - 'excel!Excel.ConditionalFormatRule#formula:member'
+      - 'excel!Excel.ConditionalFormatRule#formulaLocal:member'
+      - 'excel!Excel.ConditionalFormatRule#formulaR1C1:member'
+      - 'excel!Excel.ConditionalFormatRule#load:member(1)'
+      - 'excel!Excel.ConditionalFormatRule#load:member(2)'
+      - 'excel!Excel.ConditionalFormatRule#set:member(1)'
+  - uid: 'excel!Excel.ConditionalFormatRule#context:member'
+    summary: 'Der Anforderungskontext, der mit dem Objekt verknüpft ist. Dadurch wird das Add-in-Verfahren mit dem Prozess der Office-Hostanwendung verbunden.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalFormatRule#formula:member'
+    summary: 'Die Formel, sofern erforderlich, nach der die bedingte Formatregel ausgewertet werden soll.'
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B8:E13");
+              let conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+              conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
+              conditionalFormat.custom.format.font.color = "green";
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.ConditionalFormatRule#formulaLocal:member'
+    summary: 'Die Formel in der Benutzersprache, sofern erforderlich, nach der die bedingte Formatregel ausgewertet werden soll.'
+    name: formulaLocal
+    fullName: formulaLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaLocal: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalFormatRule#formulaR1C1:member'
+    summary: 'Die Formel in R1C1-Notation, sofern erforderlich, nach der die bedingte Formatregel ausgewertet werden soll.'
+    name: formulaR1C1
+    fullName: formulaR1C1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaR1C1: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalFormatRule#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ConditionalFormatRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormatRule:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalFormatRule#load:member(2)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ConditionalFormatRule;
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormatRule:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Eigenschaften `propertyNamesAndPaths.expand` angibt, und ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Navigationseigenschaften angibt.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ConditionalFormatRule#set:member(1)'
+    summary: Legt mehrere Eigenschaften für das Objekt gleichzeitig basierend auf einem vorhandenen geladenen Objekt fest.
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ConditionalFormatRule): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ConditionalFormatRule:class'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ConditionalFormatRule:class'
+    name: ConditionalFormatRule
+    fullName: Excel.ConditionalFormatRule

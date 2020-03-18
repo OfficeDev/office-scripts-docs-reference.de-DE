@@ -1,0 +1,197 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SettingCollection:class'
+    summary: 'Stellt eine Auflistung von Schlüssel-Wert-Paar-Einstellungs Objekten dar, die Teil der Arbeitsmappe sind. Der Bereich ist auf pro Datei und Add-in (Aufgabenbereich oder Inhalts-Kombination) beschränkt.'
+    name: Excel.SettingCollection
+    fullName: Excel.SettingCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.SettingCollection#add:member(1)'
+      - 'excel!Excel.SettingCollection#context:member'
+      - 'excel!Excel.SettingCollection#getCount:member(1)'
+      - 'excel!Excel.SettingCollection#getItem:member(1)'
+      - 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SettingCollection#items:member'
+      - 'excel!Excel.SettingCollection#load:member(1)'
+  - uid: 'excel!Excel.SettingCollection#add:member(1)'
+    summary: Legt die angegebene Einstellung fest oder fügt sie zur Arbeitsmappe hinzu.
+    name: 'add(key, value)'
+    fullName: 'add(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;'
+      return:
+        type:
+          - 'excel!Excel.Setting:class'
+        description: ''
+      parameters:
+        - id: key
+          description: Der Schlüssel der neuen Einstellung.
+          type:
+            - string
+        - id: value
+          description: Der Wert der neuen Einstellung.
+          type:
+            - 'excel!Excel.SettingCollection#add~0:complex'
+  - uid: 'excel!Excel.SettingCollection#context:member'
+    summary: 'Der Anforderungskontext, der mit dem Objekt verknüpft ist. Dadurch wird das Add-in-Verfahren mit dem Prozess der Office-Hostanwendung verbunden.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.SettingCollection#getCount:member(1)'
+    summary: Ruft die Anzahl der Einstellungen in der Sammlung ab.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.SettingCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.SettingCollection#getItem:member(1)'
+    summary: Ruft einen Setting-Eintrag über den Schlüssel ab.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Excel.Setting;'
+      return:
+        type:
+          - 'excel!Excel.Setting:class'
+        description: ''
+      parameters:
+        - id: key
+          description: Schlüssel der Einstellung.
+          type:
+            - string
+  - uid: 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft einen Setting-Eintrag über den Schlüssel ab. Wenn das Setting-Objekt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.Setting;'
+      return:
+        type:
+          - 'excel!Excel.Setting:class'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let settings = context.workbook.settings;
+              let needsReview = settings.getItem("NeedsReview");
+              needsReview.delete();
+              needsReview = settings.getItemOrNullObject("NeedsReview");
+
+              await context.sync();
+
+              if (needsReview.isNullObject) {
+                  console.log("The setting has been deleted");
+              } else {
+                  console.log("The setting was not deleted");
+              }
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: key
+          description: Der Schlüssel der Einstellung.
+          type:
+            - string
+  - uid: 'excel!Excel.SettingCollection#items:member'
+    summary: Ruft die geladenen untergeordneten Elemente in dieser Sammlung ab.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Setting[];'
+      return:
+        type:
+          - 'excel!Excel.SettingCollection#items~0:complex'
+  - uid: 'excel!Excel.SettingCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.SettingCollection;'
+      return:
+        type:
+          - 'excel!Excel.SettingCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Setting:class'
+    name: Setting
+    fullName: Excel.Setting
+  - uid: 'excel!Excel.SettingCollection#add~0:complex'
+    name: string | number | boolean | Date | Array<any> | any
+    fullName: string | number | boolean | Date | Array<any> | any
+    spec.typeScript:
+      - name: 'string | number | boolean | '
+        fullName: 'string | number | boolean | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <any> | any
+        fullName: <any> | any
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.SettingCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.SettingCollection#items~0:complex'
+    name: 'Excel.Setting[]'
+    fullName: 'Excel.Setting[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Setting:class'
+        name: Excel.Setting
+        fullName: Excel.Setting
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.SettingCollection:class'
+    name: SettingCollection
+    fullName: Excel.SettingCollection
