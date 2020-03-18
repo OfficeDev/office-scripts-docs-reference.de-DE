@@ -1,0 +1,724 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Workbook:class'
+    summary: 'Workbook ist das Objekt der obersten Ebene, das zugehörige Workbook-Objekte wie Arbeitsblätter, Tabellen, Bereiche usw. enthält. Weitere Informationen zum Workbook-Objektmodell finden Sie [unter Arbeiten mit Arbeitsmappen mithilfe der Excel-JavaScript-API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks) .<!-- -->.'
+    name: Excel.Workbook
+    fullName: Excel.Workbook
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.Workbook#application:member'
+      - 'excel!Excel.Workbook#autoSave:member'
+      - 'excel!Excel.Workbook#bindings:member'
+      - 'excel!Excel.Workbook#calculationEngineVersion:member'
+      - 'excel!Excel.Workbook#chartDataPointTrack:member'
+      - 'excel!Excel.Workbook#comments:member'
+      - 'excel!Excel.Workbook#context:member'
+      - 'excel!Excel.Workbook#customXmlParts:member'
+      - 'excel!Excel.Workbook#dataConnections:member'
+      - 'excel!Excel.Workbook#functions:member'
+      - 'excel!Excel.Workbook#getActiveCell:member(1)'
+      - 'excel!Excel.Workbook#getActiveChart:member(1)'
+      - 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
+      - 'excel!Excel.Workbook#getActiveSlicer:member(1)'
+      - 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
+      - 'excel!Excel.Workbook#getIsActiveCollabSession:member(1)'
+      - 'excel!Excel.Workbook#getSelectedRange:member(1)'
+      - 'excel!Excel.Workbook#getSelectedRanges:member(1)'
+      - 'excel!Excel.Workbook#isDirty:member'
+      - 'excel!Excel.Workbook#load:member(1)'
+      - 'excel!Excel.Workbook#load:member(2)'
+      - 'excel!Excel.Workbook#name:member'
+      - 'excel!Excel.Workbook#names:member'
+      - 'excel!Excel.Workbook#pivotTables:member'
+      - 'excel!Excel.Workbook#pivotTableStyles:member'
+      - 'excel!Excel.Workbook#previouslySaved:member'
+      - 'excel!Excel.Workbook#properties:member'
+      - 'excel!Excel.Workbook#protection:member'
+      - 'excel!Excel.Workbook#readOnly:member'
+      - 'excel!Excel.Workbook#set:member(1)'
+      - 'excel!Excel.Workbook#settings:member'
+      - 'excel!Excel.Workbook#slicers:member'
+      - 'excel!Excel.Workbook#slicerStyles:member'
+      - 'excel!Excel.Workbook#styles:member'
+      - 'excel!Excel.Workbook#tables:member'
+      - 'excel!Excel.Workbook#tableStyles:member'
+      - 'excel!Excel.Workbook#timelineStyles:member'
+      - 'excel!Excel.Workbook#usePrecisionAsDisplayed:member'
+      - 'excel!Excel.Workbook#worksheets:member'
+  - uid: 'excel!Excel.Workbook#application:member'
+    summary: 'Stellt die Excel-Anwendungsinstanz dar, die diese Arbeitsmappe enthält. Schreibgeschützt.'
+    name: application
+    fullName: application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly application: Excel.Application;'
+      return:
+        type:
+          - 'excel!Excel.Application:class'
+  - uid: 'excel!Excel.Workbook#autoSave:member'
+    summary: 'Gibt an, ob die Arbeitsmappe sich im AutoSpeichern Modus befindet. Schreibgeschützt.'
+    name: autoSave
+    fullName: autoSave
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly autoSave: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Workbook#bindings:member'
+    summary: 'Stellt eine Auflistung aller Bindungen dar, die Teil der Arbeitsmappe sind. Schreibgeschützt.'
+    name: bindings
+    fullName: bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly bindings: Excel.BindingCollection;'
+      return:
+        type:
+          - 'excel!Excel.BindingCollection:class'
+  - uid: 'excel!Excel.Workbook#calculationEngineVersion:member'
+    summary: Gibt eine Nummer zur Version des Excel-Berechnungsmoduls zurück. Schreibgeschützt.
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationEngineVersion: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Workbook#chartDataPointTrack:member'
+    summary: 'True, wenn alle Diagramme in der Arbeitsmappe die tatsächlichen Datenpunkte nachverfolgen, mit denen sie verbunden sind. False, wenn die Diagramme den Index der Datenpunkte nachverfolgen.'
+    name: chartDataPointTrack
+    fullName: chartDataPointTrack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartDataPointTrack: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Workbook#comments:member'
+    summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften Kommentare dar. Schreibgeschützt.
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly comments: Excel.CommentCollection;'
+      return:
+        type:
+          - 'excel!Excel.CommentCollection:class'
+  - uid: 'excel!Excel.Workbook#context:member'
+    summary: 'Der Anforderungskontext, der mit dem Objekt verknüpft ist. Dadurch wird das Add-in-Verfahren mit dem Prozess der Office-Hostanwendung verbunden.'
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Workbook#customXmlParts:member'
+    summary: 'Stellt die Auflistung von benutzerdefinierten XML-Parts dar, die in dieser Arbeitsmappe enthalten sind. Schreibgeschützt.'
+    name: customXmlParts
+    fullName: customXmlParts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customXmlParts: Excel.CustomXmlPartCollection;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPartCollection:class'
+  - uid: 'excel!Excel.Workbook#dataConnections:member'
+    summary: Stellt alle Datenverbindungen in der Arbeitsmappe dar. Schreibgeschützt.
+    name: dataConnections
+    fullName: dataConnections
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataConnections: Excel.DataConnectionCollection;'
+      return:
+        type:
+          - 'excel!Excel.DataConnectionCollection:class'
+  - uid: 'excel!Excel.Workbook#functions:member'
+    summary: 'Stellt eine Auflistung von Arbeitsblattfunktionen dar, die für die Berechnung verwendet werden können. Schreibgeschützt.'
+    name: functions
+    fullName: functions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly functions: Excel.Functions;'
+      return:
+        type:
+          - 'excel!Excel.Functions:class'
+  - uid: 'excel!Excel.Workbook#getActiveCell:member(1)'
+    summary: Ruft die derzeit aktive Zelle aus der Arbeitsmappe ab.
+    name: getActiveCell()
+    fullName: getActiveCell()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveCell(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+
+              let myWorkbook = context.workbook;
+              let activeCell = myWorkbook.getActiveCell();
+              activeCell.load("address");
+
+              await context.sync();
+              
+              console.log("The active cell is " + activeCell.address);
+          }
+          ```
+  - uid: 'excel!Excel.Workbook#getActiveChart:member(1)'
+    summary: 'Ruft das derzeit aktive Diagramm in der Arbeitsmappe ab. Wenn kein aktives Diagramm vorhanden ist, `ItemNotFound` wird eine Ausnahme ausgelöst.'
+    name: getActiveChart()
+    fullName: getActiveChart()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveChart(): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+  - uid: 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
+    summary: 'Ruft das derzeit aktive Diagramm in der Arbeitsmappe ab. Wenn kein aktives Diagramm vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getActiveChartOrNullObject()
+    fullName: getActiveChartOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveChartOrNullObject(): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+  - uid: 'excel!Excel.Workbook#getActiveSlicer:member(1)'
+    summary: 'Ruft den derzeit aktiven Datenschnitt in der Arbeitsmappe ab. Wenn kein aktiver datenschnitt vorhanden ist, wird `ItemNotFound` eine Ausnahme ausgelöst.'
+    name: getActiveSlicer()
+    fullName: getActiveSlicer()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveSlicer(): Excel.Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:class'
+        description: ''
+  - uid: 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
+    summary: 'Ruft den derzeit aktiven Datenschnitt in der Arbeitsmappe ab. Wenn kein aktiver Datenschnitt vorhanden ist, wird ein Nullobjekt zurückgegeben.'
+    name: getActiveSlicerOrNullObject()
+    fullName: getActiveSlicerOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveSlicerOrNullObject(): Excel.Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:class'
+        description: ''
+  - uid: 'excel!Excel.Workbook#getIsActiveCollabSession:member(1)'
+    summary: 'True, wenn die Arbeitsmappe von mehreren Benutzern bearbeitet wird (gemeinsame Dokumenterstellung). Beachten Sie, dass möglicherweise einige Verzögerungen auftreten, wenn sich der Status der Arbeitsmappe ändert und wenn sich die Änderungen auf das Ergebnis der Methode auswirken.'
+    name: getIsActiveCollabSession()
+    fullName: getIsActiveCollabSession()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsActiveCollabSession(): ClientResult<boolean>;'
+      return:
+        type:
+          - 'excel!Excel.Workbook#getIsActiveCollabSession~0:complex'
+        description: ''
+  - uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
+    summary: 'Ruft den aktuell ausgewählten einzelnen Bereich aus der Arbeitsmappe ab. Wenn mehrere Bereiche ausgewählt sind, wird durch diese Methode ein Fehler ausgelöst.'
+    name: getSelectedRange()
+    fullName: getSelectedRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Workbook#getSelectedRanges:member(1)'
+    summary: 'Ruft die aktuell ausgewählten Bereiche (einen oder mehrere) aus der Arbeitsmappe ab. Gibt im Gegensatz zu getSelectedRange() ein RangeAreas-Objekt zurück, das alle ausgewählten Bereiche darstellt.'
+    name: getSelectedRanges()
+    fullName: getSelectedRanges()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRanges(): Excel.RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:class'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+
+              let selectedRanges = context.workbook.getSelectedRanges();
+              selectedRanges.format.fill.color = "lightblue";
+
+              await context.sync();
+          })
+          ```
+  - uid: 'excel!Excel.Workbook#isDirty:member'
+    summary: 'Gibt an, ob seit dem letzten Speichern Änderungen an der Arbeitsmappe vorgenommen wurden. Sie können diese Eigenschaft auf true festlegen, wenn Sie eine geänderte Arbeitsmappe schließen möchten, ohne Sie zu speichern oder zum Speichern aufgefordert zu werden.'
+    name: isDirty
+    fullName: isDirty
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDirty: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Workbook#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
+      return:
+        type:
+          - 'excel!Excel.Workbook:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Workbook#load:member(2)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen vor `context.sync()` dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Workbook;
+      return:
+        type:
+          - 'excel!Excel.Workbook:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Eigenschaften `propertyNamesAndPaths.expand` angibt, und ist eine durch trennzeichengetrennte Zeichenfolge, die die zu ladenden Navigationseigenschaften angibt.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.Workbook#name:member'
+    summary: Ruft den Namen der Arbeitsmappe ab. Schreibgeschützt.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Workbook#names:member'
+    summary: Stellt eine Auflistung der benannten Elemente des Arbeitsmappenbereichs dar (benannte Bereiche und Konstanten). Schreibgeschützt.
+    name: names
+    fullName: names
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly names: Excel.NamedItemCollection;'
+      return:
+        type:
+          - 'excel!Excel.NamedItemCollection:class'
+  - uid: 'excel!Excel.Workbook#pivotTables:member'
+    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften PivotTables dar. Schreibgeschützt.
+    name: pivotTables
+    fullName: pivotTables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pivotTables: Excel.PivotTableCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableCollection:class'
+  - uid: 'excel!Excel.Workbook#pivotTableStyles:member'
+    summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften PivotTableStyles dar. Schreibgeschützt.
+    name: pivotTableStyles
+    fullName: pivotTableStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pivotTableStyles: Excel.PivotTableStyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyleCollection:class'
+  - uid: 'excel!Excel.Workbook#previouslySaved:member'
+    summary: 'Gibt an, ob die Arbeitsmappe jemals lokal oder online gespeichert wurde. Schreibgeschützt.'
+    name: previouslySaved
+    fullName: previouslySaved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly previouslySaved: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Workbook#properties:member'
+    summary: Ruft die Arbeitsmappeneigenschaften ab. Schreibgeschützt.
+    name: properties
+    fullName: properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly properties: Excel.DocumentProperties;'
+      return:
+        type:
+          - 'excel!Excel.DocumentProperties:class'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let titleValue = "Excel document properties API";
+              let subjectValue = "Set and get document properties";
+              let keywordsValue = "Set and get operations";
+              let commentsValue = "This is an Excel document properties API code sample";
+              let categoryValue = "Office Add-ins";
+              let managerValue = "John";
+              let companyValue = "Microsoft";
+
+              let docProperties = context.workbook.properties;
+
+              // Set the writeable document properties.
+              docProperties.title = titleValue;
+              docProperties.subject = subjectValue;
+              docProperties.keywords = keywordsValue;
+              docProperties.comments = commentsValue;
+              docProperties.category = categoryValue;
+              docProperties.manager = managerValue;
+              docProperties.company = companyValue;
+
+              await context.sync();
+
+              console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
+          }
+          ```
+  - uid: 'excel!Excel.Workbook#protection:member'
+    summary: Gibt das Arbeitsmappenschutz-Objekt für eine Arbeitsmappe zurück. Schreibgeschützt.
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly protection: Excel.WorkbookProtection;'
+      return:
+        type:
+          - 'excel!Excel.WorkbookProtection:class'
+  - uid: 'excel!Excel.Workbook#readOnly:member'
+    summary: 'True, wenn die Arbeitsmappe im schreibgeschützten Modus geöffnet ist. Schreibgeschützt.'
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Workbook#set:member(1)'
+    summary: Legt mehrere Eigenschaften für das Objekt gleichzeitig basierend auf einem vorhandenen geladenen Objekt fest.
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Workbook): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.Workbook:class'
+  - uid: 'excel!Excel.Workbook#settings:member'
+    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Einstellungen dar. Schreibgeschützt.
+    name: settings
+    fullName: settings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly settings: Excel.SettingCollection;'
+      return:
+        type:
+          - 'excel!Excel.SettingCollection:class'
+  - uid: 'excel!Excel.Workbook#slicers:member'
+    summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften Datenschnitte dar. Schreibgeschützt.
+    name: slicers
+    fullName: slicers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly slicers: Excel.SlicerCollection;'
+      return:
+        type:
+          - 'excel!Excel.SlicerCollection:class'
+  - uid: 'excel!Excel.Workbook#slicerStyles:member'
+    summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften SlicerStyles dar. Schreibgeschützt.
+    name: slicerStyles
+    fullName: slicerStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly slicerStyles: Excel.SlicerStyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyleCollection:class'
+  - uid: 'excel!Excel.Workbook#styles:member'
+    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Formatvorlagen dar. Schreibgeschützt.
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly styles: Excel.StyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.StyleCollection:class'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let styles = context.workbook.styles;
+
+              // Add a new style to the style collection.
+              // Styles is in the Home tab ribbon.
+              styles.add("Diagonal Orientation Style");
+                    
+              let newStyle = styles.getItem("Diagonal Orientation Style");
+              
+              // The "Diagonal Orientation Style" properties.
+              newStyle.textOrientation = 38;
+              newStyle.autoIndent = true;
+              newStyle.includeProtection = true;
+              newStyle.shrinkToFit = true;
+              newStyle.locked = false;
+              
+              await context.sync();
+
+              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+          }
+          ```
+  - uid: 'excel!Excel.Workbook#tables:member'
+    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Tabellen dar. Schreibgeschützt.
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly tables: Excel.TableCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableCollection:class'
+  - uid: 'excel!Excel.Workbook#tableStyles:member'
+    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften TableStyles dar. Schreibgeschützt.
+    name: tableStyles
+    fullName: tableStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly tableStyles: Excel.TableStyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableStyleCollection:class'
+  - uid: 'excel!Excel.Workbook#timelineStyles:member'
+    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften TimelineStyles dar. Schreibgeschützt.
+    name: timelineStyles
+    fullName: timelineStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly timelineStyles: Excel.TimelineStyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyleCollection:class'
+  - uid: 'excel!Excel.Workbook#usePrecisionAsDisplayed:member'
+    summary: 'True, wenn die Berechnungen in dieser Arbeitsmappe nur mit der Genauigkeit durchgeführt werden, mit der die Zahlen angezeigt werden. Daten verlieren dauerhaft die Genauigkeit, wenn diese Eigenschaft von false auf true umgeschaltet wird.'
+    name: usePrecisionAsDisplayed
+    fullName: usePrecisionAsDisplayed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'usePrecisionAsDisplayed: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Workbook#worksheets:member'
+    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Arbeitsblätter dar. Schreibgeschützt.
+    name: worksheets
+    fullName: worksheets
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheets: Excel.WorksheetCollection;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetCollection:class'
+references:
+  - uid: 'excel!Excel.Application:class'
+    name: Application
+    fullName: Excel.Application
+  - uid: 'excel!Excel.BindingCollection:class'
+    name: BindingCollection
+    fullName: Excel.BindingCollection
+  - uid: 'excel!Excel.CommentCollection:class'
+    name: CommentCollection
+    fullName: Excel.CommentCollection
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.CustomXmlPartCollection:class'
+    name: CustomXmlPartCollection
+    fullName: Excel.CustomXmlPartCollection
+  - uid: 'excel!Excel.DataConnectionCollection:class'
+    name: DataConnectionCollection
+    fullName: Excel.DataConnectionCollection
+  - uid: 'excel!Excel.Functions:class'
+    name: Functions
+    fullName: Excel.Functions
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.Chart:class'
+    name: Chart
+    fullName: Excel.Chart
+  - uid: 'excel!Excel.Slicer:class'
+    name: Slicer
+    fullName: Excel.Slicer
+  - uid: 'excel!Excel.Workbook#getIsActiveCollabSession~0:complex'
+    name: ClientResult<boolean>
+    fullName: Excel.ClientResult<boolean>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <boolean>
+        fullName: <boolean>
+  - uid: 'excel!Excel.RangeAreas:class'
+    name: RangeAreas
+    fullName: Excel.RangeAreas
+  - uid: 'excel!Excel.Workbook:class'
+    name: Workbook
+    fullName: Excel.Workbook
+  - uid: 'excel!Excel.NamedItemCollection:class'
+    name: NamedItemCollection
+    fullName: Excel.NamedItemCollection
+  - uid: 'excel!Excel.PivotTableCollection:class'
+    name: PivotTableCollection
+    fullName: Excel.PivotTableCollection
+  - uid: 'excel!Excel.PivotTableStyleCollection:class'
+    name: PivotTableStyleCollection
+    fullName: Excel.PivotTableStyleCollection
+  - uid: 'excel!Excel.DocumentProperties:class'
+    name: DocumentProperties
+    fullName: Excel.DocumentProperties
+  - uid: 'excel!Excel.WorkbookProtection:class'
+    name: WorkbookProtection
+    fullName: Excel.WorkbookProtection
+  - uid: 'excel!Excel.SettingCollection:class'
+    name: SettingCollection
+    fullName: Excel.SettingCollection
+  - uid: 'excel!Excel.SlicerCollection:class'
+    name: SlicerCollection
+    fullName: Excel.SlicerCollection
+  - uid: 'excel!Excel.SlicerStyleCollection:class'
+    name: SlicerStyleCollection
+    fullName: Excel.SlicerStyleCollection
+  - uid: 'excel!Excel.StyleCollection:class'
+    name: StyleCollection
+    fullName: Excel.StyleCollection
+  - uid: 'excel!Excel.TableCollection:class'
+    name: TableCollection
+    fullName: Excel.TableCollection
+  - uid: 'excel!Excel.TableStyleCollection:class'
+    name: TableStyleCollection
+    fullName: Excel.TableStyleCollection
+  - uid: 'excel!Excel.TimelineStyleCollection:class'
+    name: TimelineStyleCollection
+    fullName: Excel.TimelineStyleCollection
+  - uid: 'excel!Excel.WorksheetCollection:class'
+    name: WorksheetCollection
+    fullName: Excel.WorksheetCollection
