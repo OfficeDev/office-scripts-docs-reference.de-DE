@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Workbook:class'
-    summary: 'Workbook ist das Objekt der obersten Ebene, das zugehörige Workbook-Objekte wie Arbeitsblätter, Tabellen, Bereiche usw. enthält. Weitere Informationen zum Workbook-Objektmodell finden Sie [unter Arbeiten mit Arbeitsmappen mithilfe der Excel-JavaScript-API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks) .<!-- -->.'
+    summary: 'Die Arbeitsmappe ist das Objekt auf oberster Ebene , das dazugehörige Arbeitsmappenobjekte wie z. B. Arbeitsblätter, Tabellen, Bereiche usw. enthält.'
     name: Excel.Workbook
     fullName: Excel.Workbook
     langs:

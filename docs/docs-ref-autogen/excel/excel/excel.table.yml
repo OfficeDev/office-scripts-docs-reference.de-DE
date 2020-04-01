@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Table:class'
-    summary: 'Stellt eine Excel-Tabelle dar. Weitere Informationen zum Tabellenobjekt Modell finden Sie [unter Arbeiten mit Tabellen mithilfe der Excel-JavaScript-API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables) .<!-- -->.'
+    summary: Stellt eine Excel-Tabelle dar.
     name: Excel.Table
     fullName: Excel.Table
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.PivotTable:class'
-    summary: 'Stellt eine Excel-PivotTable dar. Weitere Informationen zum PivotTable-Objektmodell finden Sie [unter Arbeiten mit PivotTables mithilfe der Excel-JavaScript-API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.'
+    summary: Stellt eine Excel-PivotTable dar.
     name: Excel.PivotTable
     fullName: Excel.PivotTable
     langs:
