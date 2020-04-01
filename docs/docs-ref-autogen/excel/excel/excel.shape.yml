@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Shape:class'
-    summary: 'Stellt ein generisches Shape-Objekt im Arbeitsblatt dar. Eine Form kann eine geometrische Form, eine Linien, eine Gruppe von Formen usw. sein. Weitere Informationen zum Shape-Objektmodell finden Sie [unter Arbeiten mit Shapes mithilfe der Excel-JavaScript-API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes) .<!-- -->.'
+    summary: 'Stellt ein generisches Shape-Objekt im Arbeitsblatt dar. Eine Form kann eine geometrische Form, eine Linien, eine Gruppe von Formen usw. sein.'
     name: Excel.Shape
     fullName: Excel.Shape
     langs:

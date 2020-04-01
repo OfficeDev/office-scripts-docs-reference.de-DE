@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.RangeAreas:class'
-    summary: 'RangeAreas stellt eine Auflistung von einem oder mehreren rechteckigen Bereichen im gleichen Arbeitsblatt dar. Informationen zur Verwendung von discontinguous-Bereichen finden Sie unter [Arbeiten mit mehreren Bereichen gleichzeitig in Excel-Add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges) .<!-- -->.'
+    summary: RangeAreas stellt eine Auflistung von einem oder mehreren rechteckigen Bereichen im gleichen Arbeitsblatt dar.
     name: Excel.RangeAreas
     fullName: Excel.RangeAreas
     langs:
