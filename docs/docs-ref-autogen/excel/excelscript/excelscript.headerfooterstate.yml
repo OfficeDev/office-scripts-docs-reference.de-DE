@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
+    name: ExcelScript.HeaderFooterState
+    fullName: ExcelScript.HeaderFooterState
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
+      - 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
+      - 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
+      - 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
+    summary: 'Für alle Seiten, die gedruckt werden, wird nur eine allgemeine Kopfzeile/Fußzeile verwendet.'
+    name: default
+    fullName: default
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
+    summary: 'Es gibt eine separate Kopfzeile/Fußzeile für die erste Seite und eine allgemeine Kopfzeile/Fußzeile, die für alle anderen Seiten verwendet wird.'
+    name: firstAndDefault
+    fullName: firstAndDefault
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
+    summary: 'Es gibt eine separate Kopfzeile/Fußzeile der ersten Seite, dann gibt es eine separate Kopfzeile/Fußzeile für ungerade und gerade Seiten.'
+    name: firstOddAndEven
+    fullName: firstOddAndEven
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
+    summary: Es gibt eine andere Kopfzeile/Fußzeile für ungerade und gerade Seiten.
+    name: oddAndEven
+    fullName: oddAndEven
+    langs:
+      - typeScript
+    type: field

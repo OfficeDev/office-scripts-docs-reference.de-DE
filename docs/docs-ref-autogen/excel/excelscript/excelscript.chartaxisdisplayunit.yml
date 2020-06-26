@@ -1,0 +1,98 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
+    name: ExcelScript.ChartAxisDisplayUnit
+    fullName: ExcelScript.ChartAxisDisplayUnit
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member'
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member'
+    summary: Dadurch wird die Achse in Milliarden Einheiten festgelegt.
+    name: billions
+    fullName: billions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member'
+    summary: Dadurch wird die Achse in Einheiten von benutzerdefiniertem Wert festgelegt.
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
+    summary: Dadurch wird die Achse in Einheiten von Hunderten von Millionen festgelegt.
+    name: hundredMillions
+    fullName: hundredMillions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
+    summary: Dadurch wird die Achse in Einheiten von Hunderten festgelegt.
+    name: hundreds
+    fullName: hundreds
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
+    summary: Dadurch wird die Achse in Einheiten von Hunderttausenden festgelegt.
+    name: hundredThousands
+    fullName: hundredThousands
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member'
+    summary: Dadurch wird die Achse in Millionen Einheiten festgelegt.
+    name: millions
+    fullName: millions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member'
+    summary: 'Standardoption. Dadurch wird die Anzeigeeinheit auf die Achse zurückgesetzt, und die Einheitenbeschriftung wird unsichtbar festgelegt.'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
+    summary: Dadurch wird die Achse in Einheiten von zehn Millionen festgelegt.
+    name: tenMillions
+    fullName: tenMillions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
+    summary: Dadurch wird die Achse in Einheiten von Zehntausenden festgelegt.
+    name: tenThousands
+    fullName: tenThousands
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member'
+    summary: Dadurch wird die Achse in Einheiten von Tausenden festgelegt.
+    name: thousands
+    fullName: thousands
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member'
+    summary: Dadurch wird die Achse in Einheiten von Billionen festgelegt.
+    name: trillions
+    fullName: trillions
+    langs:
+      - typeScript
+    type: field

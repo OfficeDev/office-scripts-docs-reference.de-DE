@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentReplyCollection:interface'
+    summary: 'Stellt eine Auflistung von comment Reply-Objekten dar, die Teil des Kommentars sind.'
+    name: Excel.CommentReplyCollection
+    fullName: Excel.CommentReplyCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CommentReplyCollection#add:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getItem:member(1)'
+      - 'excel!Excel.CommentReplyCollection#load:member(1)'
+  - uid: 'excel!Excel.CommentReplyCollection#add:member(1)'
+    summary: Erstellt eine Kommentarantwort für einen Kommentar.
+    name: 'add(content, contentType)'
+    fullName: 'add(content, contentType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    content: CommentRichContent | string,
+                    contentType?: ContentType
+                ): CommentReply;
+      return:
+        type:
+          - 'excel!Excel.CommentReply:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              // Adds a reply to the first comment in this worksheet.
+              let sheet = context.workbook.worksheets.getItem("Comments");
+              let comment = sheet.comments.getItemAt(0);
+              comment.replies.add("Add content to this worksheet.");
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: content
+          description: Der Inhalt des Kommentars. Hierbei kann es sich um eine Zeichenfolge oder eine Schnittstelle CommentRichContent (beispielsweise für Kommentare mit Erwähnungen) handeln.
+          type:
+            - 'excel!Excel.CommentReplyCollection#add~0:complex'
+        - id: contentType
+          description: 'Optional. Der Typ des Inhalts, der im Kommentar enthalten ist. Der Standardwert ist Enum.`ContentType.Plain`<!-- -->.'
+          type:
+            - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentReplyCollection#getItem:member(1)'
+    summary: 'Gibt eine Kommentarantwort zurück, die durch ihre ID angegeben ist.'
+    name: getItem(commentReplyId)
+    fullName: getItem(commentReplyId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(commentReplyId: string): CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:interface'
+        description: ''
+      parameters:
+        - id: commentReplyId
+          description: Der Bezeichner für die Kommentar Antwort.
+          type:
+            - string
+  - uid: 'excel!Excel.CommentReplyCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.CommentReply:interface'
+    name: CommentReply
+    fullName: Excel.CommentReply
+  - uid: 'excel!Excel.CommentReplyCollection#add~0:complex'
+    name: CommentRichContent | string
+    fullName: Excel.CommentRichContent | string
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentRichContent:interface'
+        name: CommentRichContent
+        fullName: Excel.CommentRichContent
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.ContentType:enum'
+    name: ContentType
+    fullName: Excel.ContentType

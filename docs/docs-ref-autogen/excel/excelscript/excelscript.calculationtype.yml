@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CalculationType:enum'
+    name: ExcelScript.CalculationType
+    fullName: ExcelScript.CalculationType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CalculationType.full:member'
+      - 'ExcelScript!ExcelScript.CalculationType.fullRebuild:member'
+      - 'ExcelScript!ExcelScript.CalculationType.recalculate:member'
+  - uid: 'ExcelScript!ExcelScript.CalculationType.full:member'
+    summary: Dadurch werden alle Zellen als verschmutzt markiert und anschließend neu berechnet.
+    name: full
+    fullName: full
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.CalculationType.fullRebuild:member'
+    summary: 'Dadurch wird die vollständige Abhängigkeitskette neu erstellt, alle Zellen als verschmutzt markiert und neu berechnet.'
+    name: fullRebuild
+    fullName: fullRebuild
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.CalculationType.recalculate:member'
+    summary: 'Berechnet alle Zellen neu, die Excel als verschmutzt markiert hat, also abhängige Elemente flüchtiger oder geänderter Daten und Zellen, die programmgesteuert als verschmutzt markiert wurden.'
+    name: recalculate
+    fullName: recalculate
+    langs:
+      - typeScript
+    type: field

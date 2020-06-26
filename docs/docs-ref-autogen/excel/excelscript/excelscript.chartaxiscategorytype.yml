@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
+    summary: Gibt den Typ der Rubrikenachse an.
+    name: ExcelScript.ChartAxisCategoryType
+    fullName: ExcelScript.ChartAxisCategoryType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member'
+      - 'ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member'
+      - 'ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member'
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member'
+    summary: Der Achsentyp wird von Excel gesteuert.
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member'
+    summary: Auf der Achse werden die Daten auf einer Zeitskala gruppiert.
+    name: dateAxis
+    fullName: dateAxis
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member'
+    summary: Auf der Achse werden die Daten nach beliebigen Rubriken gruppiert.
+    name: textAxis
+    fullName: textAxis
+    langs:
+      - typeScript
+    type: field

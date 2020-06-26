@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface'
+    summary: Stellt ColorScale Kriterien für die bedingte Formatierung dar.
+    name: ExcelScript.ColorScaleConditionalFormat
+    fullName: ExcelScript.ColorScaleConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)'
+      - 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)'
+      - 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)'
+    summary: 'Die Kriterien der Farb Skala. Der Mittelpunkt ist optional, wenn eine zwei Punkt Farbskala verwendet wird.'
+    name: getCriteria()
+    fullName: getCriteria()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCriteria(): ConditionalColorScaleCriteria;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)'
+    summary: 'Bei true wird die Farbskala mit drei Punkten (Minimum, Mittelpunkt, Maximum) verwendet, andernfalls hat Sie zwei (minimal, Maximum).'
+    name: getThreeColorScale()
+    fullName: getThreeColorScale()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getThreeColorScale(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)'
+    summary: 'Die Kriterien der Farb Skala. Der Mittelpunkt ist optional, wenn eine zwei Punkt Farbskala verwendet wird.'
+    name: setCriteria(criteria)
+    fullName: setCriteria(criteria)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCriteria(criteria: ConditionalColorScaleCriteria): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface'
+    name: ConditionalColorScaleCriteria
+    fullName: ExcelScript.ConditionalColorScaleCriteria

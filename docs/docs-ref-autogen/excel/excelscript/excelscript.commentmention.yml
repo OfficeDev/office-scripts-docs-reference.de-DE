@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CommentMention:interface'
+    summary: 'Stellt die Entität dar, die in Kommentaren erwähnt wird.'
+    name: ExcelScript.CommentMention
+    fullName: ExcelScript.CommentMention
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CommentMention#email:member'
+      - 'ExcelScript!ExcelScript.CommentMention#id:member'
+      - 'ExcelScript!ExcelScript.CommentMention#name:member'
+  - uid: 'ExcelScript!ExcelScript.CommentMention#email:member'
+    summary: 'Die e-Mail-Adresse der Entität, die in Comment erwähnt wird.'
+    name: email
+    fullName: email
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'email: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.CommentMention#id:member'
+    summary: Die ID der Entität. Die ID entspricht einem der IDs in`CommentRichContent.richContent`<!-- -->.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.CommentMention#name:member'
+    summary: 'Der Name der Entität, die in Comment erwähnt wird.'
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string

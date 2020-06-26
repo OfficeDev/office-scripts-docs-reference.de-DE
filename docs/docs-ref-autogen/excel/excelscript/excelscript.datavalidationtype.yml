@@ -1,0 +1,91 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataValidationType:enum'
+    summary: Stellt den Datentyp Enum für die Datenüberprüfung dar.
+    name: ExcelScript.DataValidationType
+    fullName: ExcelScript.DataValidationType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataValidationType.custom:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.date:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.list:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.none:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.time:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.custom:member'
+    summary: Typ der benutzerdefinierten Datenüberprüfung
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.date:member'
+    summary: Datumsdaten-Überprüfungs
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
+    summary: Typ der Dezimaldaten Überprüfung
+    name: decimal
+    fullName: decimal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
+    summary: 'Inkonsistente bedeutet, dass der Bereich eine inkonsistente Datenüberprüfung aufweist (es gibt unterschiedliche Regeln für unterschiedliche Zellen)'
+    name: inconsistent
+    fullName: inconsistent
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.list:member'
+    summary: Typ der Listendaten Überprüfung
+    name: list
+    fullName: list
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
+    summary: 'MixedCriteria bedeutet, dass für den Bereich die Datenüberprüfung in einigen, aber nicht allen Zellen vorhanden ist.'
+    name: mixedCriteria
+    fullName: mixedCriteria
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.none:member'
+    summary: 'None bedeutet, dass jeder Wert zulässig ist, sodass keine Datenüberprüfung im Bereich erfolgt.'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
+    summary: Datentyp für Text Längen-Gültigkeitsprüfung
+    name: textLength
+    fullName: textLength
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.time:member'
+    summary: Typ der Zeit Datenüberprüfung
+    name: time
+    fullName: time
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
+    summary: Überprüfungs für ganze Zahlen Daten
+    name: wholeNumber
+    fullName: wholeNumber
+    langs:
+      - typeScript
+    type: field

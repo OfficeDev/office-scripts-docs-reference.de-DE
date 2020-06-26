@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup:interface'
+    summary: Stellt eine Shape-Gruppe innerhalb eines Arbeitsblatts dar. Verwenden Sie zum Abrufen des entsprechenden Shape-Objekts`ShapeGroup.shape`<!-- -->.
+    name: ExcelScript.ShapeGroup
+    fullName: ExcelScript.ShapeGroup
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
+    summary: Gibt den Shape-Bezeichner an.
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)'
+    summary: Ruft eine Form anhand ihres Namens oder ihrer ID ab.
+    name: getShape(key)
+    fullName: getShape(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShape(key: string): Shape;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Shape:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Der Name oder die ID der Form, die abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)'
+    summary: Gibt die Sammlung von Shape-Objekten zurück.
+    name: getShapes()
+    fullName: getShapes()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShapes(): Shape[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeGroup#getShapes~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)'
+    summary: Hebt die Gruppierung von gruppierten Formen in der angegebenen Formgruppe auf.
+    name: ungroup()
+    fullName: ungroup()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'ungroup(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.Shape:interface'
+    name: Shape
+    fullName: ExcelScript.Shape
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getShapes~0:complex'
+    name: 'Shape[]'
+    fullName: 'ExcelScript.Shape[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Shape:interface'
+        name: Shape
+        fullName: ExcelScript.Shape
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
+    summary: Gibt den Füllungstyp einer Form an.
+    name: ExcelScript.ShapeFillType
+    fullName: ExcelScript.ShapeFillType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
+    summary: Graduelle Füllung.
+    name: gradient
+    fullName: gradient
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
+    summary: Gemischte Füllung.
+    name: mixed
+    fullName: mixed
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
+    summary: Keine Füllung.
+    name: noFill
+    fullName: noFill
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
+    summary: Musterfüllung.
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
+    summary: Füllbereich für Grafik und Textur.
+    name: pictureAndTexture
+    fullName: pictureAndTexture
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
+    summary: Uni.
+    name: solid
+    fullName: solid
+    langs:
+      - typeScript
+    type: field

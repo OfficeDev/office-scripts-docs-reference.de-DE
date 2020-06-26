@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartDataLabelFormat:interface'
+    summary: Kapselt die Formateigenschaften für die Diagrammdatenbeschriftungen.
+    name: Excel.ChartDataLabelFormat
+    fullName: Excel.ChartDataLabelFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartDataLabelFormat#border:member'
+      - 'excel!Excel.ChartDataLabelFormat#fill:member'
+      - 'excel!Excel.ChartDataLabelFormat#font:member'
+      - 'excel!Excel.ChartDataLabelFormat#load:member(1)'
+  - uid: 'excel!Excel.ChartDataLabelFormat#border:member'
+    summary: 'Gibt das Rahmenformat einschließlich Farbe, Linienart und Stärke an.'
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:interface'
+  - uid: 'excel!Excel.ChartDataLabelFormat#fill:member'
+    summary: Stellt die Füllung der aktuellen Diagrammdatenbeschriftung dar.
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:interface'
+  - uid: 'excel!Excel.ChartDataLabelFormat#font:member'
+    summary: 'Stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für eine Diagrammdatenbeschriftung dar.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartDataLabelFormat#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartBorder:interface'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.ChartFill:interface'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont

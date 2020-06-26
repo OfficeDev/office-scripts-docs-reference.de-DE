@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation:interface'
+    summary: Stellt die Listendaten Überprüfungskriterien dar.
+    name: ExcelScript.ListDataValidation
+    fullName: ExcelScript.ListDataValidation
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
+      - 'ExcelScript!ExcelScript.ListDataValidation#source:member'
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
+    summary: Zeigt die Liste in der Zelldropdownliste an. Standardeinstellung ist „true“.
+    name: inCellDropDown
+    fullName: inCellDropDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inCellDropDown: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation#source:member'
+    summary: 'Quelle der Liste für die Datenüberprüfung Wenn Sie den Wert festlegen, kann er als Excel Range-Objekt oder als Zeichenfolge übergeben werden, die Komma getrennte Zahl, Boolean oder Date enthält.'
+    name: source
+    fullName: source
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'source: string | Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ListDataValidation#source~0:complex'
+references:
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation#source~0:complex'
+    name: string | Range
+    fullName: string | ExcelScript.Range
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
