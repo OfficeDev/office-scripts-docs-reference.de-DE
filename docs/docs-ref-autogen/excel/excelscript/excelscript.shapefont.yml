@@ -1,0 +1,213 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeFont:interface'
+    summary: 'Stellt die Schriftartattribute für das TextRange-Objekt eines Shapes dar, beispielsweise den Namen der Schriftart, den Schriftgrad und die Farbe.'
+    name: ExcelScript.ShapeFont
+    fullName: ExcelScript.ShapeFont
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeFont#getBold:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setBold:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getBold:member(1)'
+    summary: 'Stellt den Fett-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl fette als auch nicht fette Abschnitte enthält.'
+    name: getBold()
+    fullName: getBold()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
+    summary: 'HTML-Farb Codedarstellung der Textfarbe (beispielsweise " \# FF0000" steht für rot). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Farben enthält.'
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)'
+    summary: 'Stellt den Kursiv-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl kursive als auch nicht kursive Abschnitte enthält.'
+    name: getItalic()
+    fullName: getItalic()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
+    summary: 'Stellt den Namen der Schriftart dar (beispielsweise "Calibri"). Wenn der Text aus komplexen Schriftzeichen oder Ostasiatischen Zeichen besteht, ist dies der entsprechende Schriftartname; andernfalls der lateinische Schriftartname.'
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
+    summary: 'Stellt den Schriftgrad in Punkt dar (z. b. 11). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Schriftgraden enthält.'
+    name: getSize()
+    fullName: getSize()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
+    summary: 'Art der auf die Schriftart angewendeten Unterstreichung. Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Unterstreichungsarten enthält. Einzelheiten finden Sie unter Excel.ShapeFontUnderlineStyle.'
+    name: getUnderline()
+    fullName: getUnderline()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUnderline(): ShapeFontUnderlineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setBold:member(1)'
+    summary: 'Stellt den Fett-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl fette als auch nicht fette Abschnitte enthält.'
+    name: setBold(bold)
+    fullName: setBold(bold)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: bold
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
+    summary: 'HTML-Farb Codedarstellung der Textfarbe (beispielsweise " \# FF0000" steht für rot). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Farben enthält.'
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)'
+    summary: 'Stellt den Kursiv-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl kursive als auch nicht kursive Abschnitte enthält.'
+    name: setItalic(italic)
+    fullName: setItalic(italic)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: italic
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
+    summary: 'Stellt den Namen der Schriftart dar (beispielsweise "Calibri"). Wenn der Text aus komplexen Schriftzeichen oder Ostasiatischen Zeichen besteht, ist dies der entsprechende Schriftartname; andernfalls der lateinische Schriftartname.'
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
+    summary: 'Stellt den Schriftgrad in Punkt dar (z. b. 11). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Schriftgraden enthält.'
+    name: setSize(size)
+    fullName: setSize(size)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSize(size: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: size
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
+    summary: 'Art der auf die Schriftart angewendeten Unterstreichung. Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Unterstreichungsarten enthält. Einzelheiten finden Sie unter Excel.ShapeFontUnderlineStyle.'
+    name: setUnderline(underline)
+    fullName: setUnderline(underline)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUnderline(underline: ShapeFontUnderlineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: underline
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
+    name: ShapeFontUnderlineStyle
+    fullName: ExcelScript.ShapeFontUnderlineStyle
