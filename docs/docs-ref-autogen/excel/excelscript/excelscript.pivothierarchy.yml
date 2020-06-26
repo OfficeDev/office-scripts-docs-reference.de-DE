@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+    summary: Stellt die Excel-PivotHierarchy dar.
+    name: ExcelScript.PivotHierarchy
+    fullName: ExcelScript.PivotHierarchy
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
+    summary: 'Gibt die PivotFields-Objekte zurück, die dem PivotHierarchy-Objekt zugeordnet sind.'
+    name: getFields()
+    fullName: getFields()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFields(): PivotField[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotHierarchy#getFields~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
+    summary: Die ID des PivotHierarchy-Objekts.
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
+    summary: Der Name des PivotHierarchy-Objekts
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
+    summary: 'Ruft ein PivotField nach Namen ab. Wenn das PivotField nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getPivotField(name)
+    fullName: getPivotField(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotField(name: string): PivotField | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Name des PivotField, das abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
+    summary: Der Name des PivotHierarchy-Objekts
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields~0:complex'
+    name: 'PivotField[]'
+    fullName: 'ExcelScript.PivotField[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+        name: PivotField
+        fullName: ExcelScript.PivotField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField~0:complex'
+    name: PivotField | undefined
+    fullName: ExcelScript.PivotField | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+        name: PivotField
+        fullName: ExcelScript.PivotField
+      - name: ' | undefined'
+        fullName: ' | undefined'

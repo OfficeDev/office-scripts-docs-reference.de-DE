@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartMapOptions:interface'
+    summary: Kapselt die Eigenschaften für ein Regions Zuordnungsdiagramm.
+    name: Excel.ChartMapOptions
+    fullName: Excel.ChartMapOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartMapOptions#labelStrategy:member'
+      - 'excel!Excel.ChartMapOptions#level:member'
+      - 'excel!Excel.ChartMapOptions#load:member(1)'
+      - 'excel!Excel.ChartMapOptions#projectionType:member'
+  - uid: 'excel!Excel.ChartMapOptions#labelStrategy:member'
+    summary: Gibt die Strategie der Reihen kartenbeschriftungen eines Bereichs Karten Diagramms an.
+    name: labelStrategy
+    fullName: labelStrategy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelStrategy: ChartMapLabelStrategy;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapLabelStrategy:enum'
+  - uid: 'excel!Excel.ChartMapOptions#level:member'
+    summary: Gibt die Datenreihen Zuordnungsebene eines Bereichs Zuordnungs Diagramms an.
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'level: ChartMapAreaLevel;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapAreaLevel:enum'
+  - uid: 'excel!Excel.ChartMapOptions#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartMapOptions#projectionType:member'
+    summary: Gibt den Projektionstyp der Reihe eines Bereichs Karten Diagramms an.
+    name: projectionType
+    fullName: projectionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'projectionType: ChartMapProjectionType;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapProjectionType:enum'
+references:
+  - uid: 'excel!Excel.ChartMapLabelStrategy:enum'
+    name: ChartMapLabelStrategy
+    fullName: Excel.ChartMapLabelStrategy
+  - uid: 'excel!Excel.ChartMapAreaLevel:enum'
+    name: ChartMapAreaLevel
+    fullName: Excel.ChartMapAreaLevel
+  - uid: 'excel!Excel.ChartMapProjectionType:enum'
+    name: ChartMapProjectionType
+    fullName: Excel.ChartMapProjectionType

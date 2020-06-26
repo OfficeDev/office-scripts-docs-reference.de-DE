@@ -1,0 +1,572 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+    summary: 'RangeAreas stellt eine Auflistung von einem oder mehreren rechteckigen Bereichen im gleichen Arbeitsblatt dar. Informationen zur Verwendung von discontinguous-Bereichen finden Sie unter [Arbeiten mit mehreren Bereichen gleichzeitig in Excel-Add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges) .<!-- -->.'
+    name: ExcelScript.RangeAreas
+    fullName: ExcelScript.RangeAreas
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeAreas#addConditionalFormat:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#clear:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getAreaCount:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getAreas:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormat:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormats:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getDataValidation:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#addConditionalFormat:member(1)'
+    summary: Fügt der Auflistung ein neues bedingtes Format an der ersten/obersten Priorität hinzu.
+    name: addConditionalFormat(type)
+    fullName: addConditionalFormat(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalFormat:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: Der Typ des hinzuzufügenden bedingten Formats. Weitere Informationen finden Sie unter Excel. ConditionalFormatType.
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
+    summary: Berechnet alle Zellen in RangeAreas.
+    name: calculate()
+    fullName: calculate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#clear:member(1)'
+    summary: 'Löscht Werte, Format, Füllung, Rahmen usw. in jedem der Bereiche, die dieses RangeAreas-Objekt bilden.'
+    name: clear(applyTo)
+    fullName: clear(applyTo)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(applyTo?: ClearApplyTo): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: applyTo
+          description: Optional. Bestimmt den Typ der Löschaktion. Weitere Informationen finden Sie unter Excel. ClearApplyTo. Der Standardwert ist "All".
+          type:
+            - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'
+    summary: 'Löscht alle bedingten Formate, die im aktuellen angegebenen Bereich aktiv sind.'
+    name: clearAllConditionalFormats()
+    fullName: clearAllConditionalFormats()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearAllConditionalFormats(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
+    summary: Konvertiert alle Zellen in RangeAreas mit Datentypen in Text.
+    name: convertDataTypeToText()
+    fullName: convertDataTypeToText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'convertDataTypeToText(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
+    summary: Konvertiert alle Zellen in RangeAreas in den verknüpften Datentyp.
+    name: 'convertToLinkedDataType(serviceID, languageCulture)'
+    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        convertToLinkedDataType(
+                    serviceID: number,
+                    languageCulture: string
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: serviceID
+          description: 'Die Dienst-ID, die zum Abfragen der Daten verwendet wird.'
+          type:
+            - number
+        - id: languageCulture
+          description: 'Sprach Kultur, für die der Dienst abgefragt werden soll.'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
+    summary: 'Kopiert Daten oder Formatierung von Zellen aus dem Quellbereich oder RangeAreas in das aktuelle RangeAreas-Objekt. Das Ziel-rangeAreas kann eine andere Größe als der Quellbereich oder rangeAreas sein. Das Ziel wird automatisch erweitert, wenn es kleiner als die Quelle ist.'
+    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        copyFrom(
+                    sourceRange: Range | RangeAreas | string,
+                    copyType?: RangeCopyType,
+                    skipBlanks?: boolean,
+                    transpose?: boolean
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceRange
+          description: 'Der Quellbereich oder RangeAreas, aus dem kopiert werden soll. Wenn die Quell-RangeAreas mehrere Bereiche aufweist, muss Ihr Formular in der Lage sein, durch Entfernen ganzer Zeilen oder Spalten aus einem rechteckigen Bereich erstellt zu werden.'
+          type:
+            - 'ExcelScript!ExcelScript.RangeAreas#copyFrom~0:complex'
+        - id: copyType
+          description: Der Typ der zu kopierende Zellendaten oder-Formatierung. Der Standardwert ist "All".
+          type:
+            - 'ExcelScript!ExcelScript.RangeCopyType:enum'
+        - id: skipBlanks
+          description: 'True, wenn leere Zellen im Quellbereich oder RangeAreas übersprungen werden sollen. Der Standardwert ist „false“.'
+          type:
+            - boolean
+        - id: transpose
+          description: 'True, wenn die Zellen im Ziel RangeAreas transponieren. Der Standardwert ist „false“.'
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)'
+    summary: 'Gibt den RangeAreas-Verweis im a1-Format zurück. Der Adresswert enthält den Namen des Arbeitsblatts für jeden rechteckigen Block von Zellen (beispielsweise "Sheet1! A1: B4, Sheet1! D1: D4 ").'
+    name: getAddress()
+    fullName: getAddress()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAddress(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)'
+    summary: Gibt den RangeAreas-Verweis im Benutzergebietsschema zurück.
+    name: getAddressLocal()
+    fullName: getAddressLocal()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAddressLocal(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getAreaCount:member(1)'
+    summary: 'Gibt die Anzahl der rechteckigen Bereiche zurück, die dieses RangeAreas-Objekt bilden.'
+    name: getAreaCount()
+    fullName: getAreaCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAreaCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getAreas:member(1)'
+    summary: 'Gibt eine Sammlung der rechteckigen Bereiche zurück, die dieses RangeAreas-Objekt bilden.'
+    name: getAreas()
+    fullName: getAreas()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAreas(): Range[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas#getAreas~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)'
+    summary: 'Gibt die Anzahl der Zellen in RangeAreas-Objekt zurück und addiert dabei die Zellanzahl aller rechteckigen Einzelbereiche. Gibt -1 zurück, wenn die Zellanzahl 2^31-1 (2,147,483,647) überschreitet.'
+    name: getCellCount()
+    fullName: getCellCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCellCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormat:member(1)'
+    summary: Gibt ein bedingtes Format für die angegebene ID zurück.
+    name: getConditionalFormat(id)
+    fullName: getConditionalFormat(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getConditionalFormat(id: string): ConditionalFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalFormat:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: Die ID des bedingten Formats.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormats:member(1)'
+    summary: 'Gibt eine Sammlung von ConditionalFormats zurück, die sich mit Zellen in diesem RangeAreas-Objekt überschneiden.'
+    name: getConditionalFormats()
+    fullName: getConditionalFormats()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getConditionalFormats(): ConditionalFormat[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormats~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getDataValidation:member(1)'
+    summary: Gibt ein dataValidation-Objekt für alle Bereiche im RangeAreas zurück.
+    name: getDataValidation()
+    fullName: getDataValidation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataValidation(): DataValidation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DataValidation:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)'
+    summary: 'Gibt ein RangeAreas-Objekt zurück, das die gesamten Spalten von RangeAreas darstellt (wenn beispielsweise das aktuelle RangeAreas die Zellen "B4:E11, H2" darstellt, wird ein RangeAreas-Objekt zurückgegeben, das die Spalten "B:E, H:H" darstellt).'
+    name: getEntireColumn()
+    fullName: getEntireColumn()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntireColumn(): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)'
+    summary: 'Gibt ein RangeAreas-Objekt zurück, das die gesamten Zeilen von RangeAreas darstellt (wenn beispielsweise das aktuelle RangeAreas die Zellen "B4:E11" darstellt, wird ein RangeAreas-Objekt zurückgegeben, das die Zeilen "4:11" darstellt).'
+    name: getEntireRow()
+    fullName: getEntireRow()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntireRow(): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)'
+    summary: 'Gibt ein RangeFormat-Objekt zurück, das die Schriftart, die Füllung, die Rahmen, die Ausrichtung und andere Eigenschaften für alle Bereiche im RangeAreas-Objekt kapselt.'
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): RangeFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)'
+    summary: 'Gibt das RangeAreas-Objekt zurück, das die Schnittmenge der angegebenen Bereiche oder RangeAreas darstellt. Wenn keine Schnittmenge gefunden wird, wird ein NULL-Objekt zurückgegeben.'
+    name: getIntersection(anotherRange)
+    fullName: getIntersection(anotherRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: anotherRange
+          description: 'Der Bereich, RangeAreas oder die Adresse, die verwendet wird, um die Schnittmenge zu bestimmen.'
+          type:
+            - 'ExcelScript!ExcelScript.RangeAreas#getIntersection~0:complex'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)'
+    summary: 'Gibt an, ob alle Bereiche in diesem RangeAreas-Objekt ganze Spalten darstellen (beispielsweise "A:C, Q:Z").'
+    name: getIsEntireColumn()
+    fullName: getIsEntireColumn()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsEntireColumn(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)'
+    summary: 'Gibt an, ob alle Bereiche in diesem RangeAreas-Objekt ganze Zeilen darstellen (beispielsweise "1:3, 5:7").'
+    name: getIsEntireRow()
+    fullName: getIsEntireRow()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsEntireRow(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)'
+    summary: 'Gibt ein RangeAreas-Objekt zurück, das um den angegebenen Zeilen- und Spaltenoffset verschoben ist. Die Dimension des zurückgegebenen RangeAreas stimmt mit dem ursprünglichen Objekt überein. Wenn das sich ergebende RangeAreas außerhalb der Grenzen des Arbeitsblattrasters zu liegen kommt, wird ein Fehler ausgelöst.'
+    name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
+    fullName: 'getOffsetRangeAreas(rowOffset, columnOffset)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getOffsetRangeAreas(
+                    rowOffset: number,
+                    columnOffset: number
+                ): RangeAreas;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: rowOffset
+          description: 'Die Anzahl der Zeilen (positiv, negativ oder 0), mit denen die RangeAreas versetzt werden soll. Bei positiven Werten erfolgt der Versatz nach unten, bei negativen Werten nach oben.'
+          type:
+            - number
+        - id: columnOffset
+          description: 'Die Anzahl der Spalten (positiv, negativ oder 0), mit denen die RangeAreas versetzt werden soll. Bei positiven Werten erfolgt der Versatz nach rechts, bei negativen Werten nach links.'
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)'
+    summary: 'Stellt die Formatvorlage für alle Bereiche in diesem RangeAreas-Objekt dar. Wenn die Formatvorlagen der Zellen inkonsistent sind, wird NULL zurückgegeben. Für benutzerdefinierte Formatvorlagen wird der Name der Formatvorlage zurückgegeben. Für integrierte Formatvorlagen wird eine Zeichenfolge zurückgegeben, die einen Wert in der Builtin-Enumeration darstellt.'
+    name: getPredefinedCellStyle()
+    fullName: getPredefinedCellStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPredefinedCellStyle(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)'
+    summary: 'Gibt ein RangeAreas-Objekt zurück, das alle Zellen darstellt, die dem angegebenen Typ und Wert entsprechen. Gibt ein NULL-Objekt zurück, wenn keine besonderen Zellen gefunden werden, die den Kriterien entsprechen.'
+    name: 'getSpecialCells(cellType, cellValueType)'
+    fullName: 'getSpecialCells(cellType, cellValueType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getSpecialCells(
+                    cellType: SpecialCellType,
+                    cellValueType?: SpecialCellValueType
+                ): RangeAreas;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: cellType
+          description: Der Typ der einzuschließenden Zellen.
+          type:
+            - 'ExcelScript!ExcelScript.SpecialCellType:enum'
+        - id: cellValueType
+          description: 'Wenn CellType entweder Konstanten oder Formeln ist, wird dieses Argument verwendet, um zu bestimmen, welche Arten von Zellen in das Ergebnis einbezogen werden sollen. Diese Werte können miteinander kombiniert werden, um mehr als einen Typ zurückzugeben. Standardmäßig werden alle Konstanten oder Formeln unabhängig vom Typ ausgewählt.'
+          type:
+            - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
+    summary: 'Gibt das verwendete RangeAreas zurück, das alle verwendeten Bereiche einzelner rechteckiger Bereiche im RangeAreas-Objekt umfasst. Wenn in der RangeAreas keine Zellen verwendet werden, wird ein NULL-Objekt zurückgegeben.'
+    name: getUsedRangeAreas(valuesOnly)
+    fullName: getUsedRangeAreas(valuesOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: 'Gibt an, ob Zellen mit Werten als verwendete Zellen betrachtet werden sollen.'
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)'
+    summary: Gibt das Arbeitsblatt für das aktuelle RangeAreas zurück.
+    name: getWorksheet()
+    fullName: getWorksheet()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWorksheet(): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)'
+    summary: Legt für das RangeAreas Neuberechnung bei der nächsten auszuführenden Neuberechnung fest.
+    name: setDirty()
+    fullName: setDirty()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDirty(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)'
+    summary: 'Stellt die Formatvorlage für alle Bereiche in diesem RangeAreas-Objekt dar. Wenn die Formatvorlagen der Zellen inkonsistent sind, wird NULL zurückgegeben. Für benutzerdefinierte Formatvorlagen wird der Name der Formatvorlage zurückgegeben. Für integrierte Formatvorlagen wird eine Zeichenfolge zurückgegeben, die einen Wert in der Builtin-Enumeration darstellt.'
+    name: setPredefinedCellStyle(predefinedCellStyle)
+    fullName: setPredefinedCellStyle(predefinedCellStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: predefinedCellStyle
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
+    name: ConditionalFormat
+    fullName: ExcelScript.ConditionalFormat
+  - uid: 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
+    name: ConditionalFormatType
+    fullName: ExcelScript.ConditionalFormatType
+  - uid: 'ExcelScript!ExcelScript.ClearApplyTo:enum'
+    name: ClearApplyTo
+    fullName: ExcelScript.ClearApplyTo
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#copyFrom~0:complex'
+    name: Range | RangeAreas | string
+    fullName: ExcelScript.Range | ExcelScript.RangeAreas | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+        name: RangeAreas
+        fullName: ExcelScript.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.RangeCopyType:enum'
+    name: RangeCopyType
+    fullName: ExcelScript.RangeCopyType
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getAreas~0:complex'
+    name: 'Range[]'
+    fullName: 'ExcelScript.Range[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormats~0:complex'
+    name: 'ConditionalFormat[]'
+    fullName: 'ExcelScript.ConditionalFormat[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
+        name: ConditionalFormat
+        fullName: ExcelScript.ConditionalFormat
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
+    name: DataValidation
+    fullName: ExcelScript.DataValidation
+  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+    name: RangeAreas
+    fullName: ExcelScript.RangeAreas
+  - uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
+    name: RangeFormat
+    fullName: ExcelScript.RangeFormat
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getIntersection~0:complex'
+    name: Range | RangeAreas | string
+    fullName: ExcelScript.Range | ExcelScript.RangeAreas | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+        name: RangeAreas
+        fullName: ExcelScript.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
+    name: SpecialCellType
+    fullName: ExcelScript.SpecialCellType
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+    name: SpecialCellValueType
+    fullName: ExcelScript.SpecialCellValueType
+  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+    name: Worksheet
+    fullName: ExcelScript.Worksheet

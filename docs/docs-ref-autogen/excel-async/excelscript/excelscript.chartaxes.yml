@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxes:interface'
+    summary: Die Achsen des Diagramms.
+    name: Excel.ChartAxes
+    fullName: Excel.ChartAxes
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxes#categoryAxis:member'
+      - 'excel!Excel.ChartAxes#getItem:member(1)'
+      - 'excel!Excel.ChartAxes#load:member(1)'
+      - 'excel!Excel.ChartAxes#seriesAxis:member'
+      - 'excel!Excel.ChartAxes#valueAxis:member'
+  - uid: 'excel!Excel.ChartAxes#categoryAxis:member'
+    summary: Stellt die Rubrikenachse in einem Diagramm dar.
+    name: categoryAxis
+    fullName: categoryAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly categoryAxis: ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+  - uid: 'excel!Excel.ChartAxes#getItem:member(1)'
+    summary: Gibt eine bestimmte Achse anhand des Typs und der Gruppe zurück.
+    name: 'getItem(type, group)'
+    fullName: 'getItem(type, group)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: Gibt den Achsentyp an. Weitere Informationen finden Sie unter Excel. ChartAxisType.
+          type:
+            - 'excel!Excel.ChartAxisType:enum'
+        - id: group
+          description: Optional. Gibt die Achsengruppe an. Weitere Informationen finden Sie unter Excel. ChartAxisGroup.
+          type:
+            - 'excel!Excel.ChartAxisGroup:enum'
+  - uid: 'excel!Excel.ChartAxes#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxes#seriesAxis:member'
+    summary: Stellt die Reihenachse eines dreidimensionalen Diagramms dar.
+    name: seriesAxis
+    fullName: seriesAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly seriesAxis: ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+  - uid: 'excel!Excel.ChartAxes#valueAxis:member'
+    summary: Stellt die Größenachse in einer Achse dar.
+    name: valueAxis
+    fullName: valueAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly valueAxis: ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:interface'
+references:
+  - uid: 'excel!Excel.ChartAxis:interface'
+    name: ChartAxis
+    fullName: Excel.ChartAxis
+  - uid: 'excel!Excel.ChartAxisType:enum'
+    name: ChartAxisType
+    fullName: Excel.ChartAxisType
+  - uid: 'excel!Excel.ChartAxisGroup:enum'
+    name: ChartAxisGroup
+    fullName: Excel.ChartAxisGroup
