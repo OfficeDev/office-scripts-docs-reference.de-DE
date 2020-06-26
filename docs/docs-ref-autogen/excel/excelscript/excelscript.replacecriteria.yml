@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
+    summary: Stellt das zu verwendende Replace-Kriterium dar.
+    name: ExcelScript.ReplaceCriteria
+    fullName: ExcelScript.ReplaceCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
+      - 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
+  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
+    summary: 'Gibt an, ob die Übereinstimmung vollständig oder partiell sein muss. Eine vollständige Übereinstimmung stimmt mit dem gesamten Inhalt der Zelle überein. Eine partielle Übereinstimmung stimmt mit einer Teilzeichenfolge innerhalb des Inhalts der Zelle überein (beispielsweise `cat` teilweise Übereinstimmungen `caterpillar` und`scatter`<!-- -->). Der Standardwert ist "false" (teilweise).'
+    name: completeMatch
+    fullName: completeMatch
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
+    summary: 'Gibt an, ob bei der Übereinstimmung die Groß-/Kleinschreibung beachtet wird. Der Standardwert ist "false" (nicht beachtet).'
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean

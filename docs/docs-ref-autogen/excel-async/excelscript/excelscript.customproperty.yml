@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomProperty:interface'
+    summary: Stellt eine benutzerdefinierte Eigenschaft dar.
+    name: Excel.CustomProperty
+    fullName: Excel.CustomProperty
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomProperty#delete:member(1)'
+      - 'excel!Excel.CustomProperty#key:member'
+      - 'excel!Excel.CustomProperty#load:member(1)'
+      - 'excel!Excel.CustomProperty#type:member'
+      - 'excel!Excel.CustomProperty#value:member'
+  - uid: 'excel!Excel.CustomProperty#delete:member(1)'
+    summary: Löscht die benutzerdefinierte Eigenschaft.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.CustomProperty#key:member'
+    summary: Der Schlüssel der benutzerdefinierten Eigenschaft. Der Schlüssel ist auf 255 Zeichen außerhalb von Excel im Internet eingeschränkt (größere Tasten werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CustomProperty#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CustomProperty#type:member'
+    summary: 'Der Typ des Werts, der für die benutzerdefinierte Eigenschaft verwendet wird.'
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: DocumentPropertyType;'
+      return:
+        type:
+          - 'excel!Excel.DocumentPropertyType:enum'
+  - uid: 'excel!Excel.CustomProperty#value:member'
+    summary: Der Wert der benutzerdefinierten Eigenschaft. Der Wert ist auf 255 Zeichen außerhalb von Excel im Internet eingeschränkt (größere Werte werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any
+references:
+  - uid: 'excel!Excel.DocumentPropertyType:enum'
+    name: DocumentPropertyType
+    fullName: Excel.DocumentPropertyType

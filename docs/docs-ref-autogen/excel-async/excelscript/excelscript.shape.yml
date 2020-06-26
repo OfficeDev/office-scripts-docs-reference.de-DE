@@ -1,0 +1,770 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Shape:interface'
+    summary: 'Stellt ein generisches Shape-Objekt im Arbeitsblatt dar. Eine Form kann eine geometrische Form, eine Linien, eine Gruppe von Formen usw. sein. Weitere Informationen zum Shape-Objektmodell finden Sie [unter Arbeiten mit Shapes mithilfe der Excel-JavaScript-API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes) .<!-- -->.'
+    name: Excel.Shape
+    fullName: Excel.Shape
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Shape#altTextDescription:member'
+      - 'excel!Excel.Shape#altTextTitle:member'
+      - 'excel!Excel.Shape#connectionSiteCount:member'
+      - 'excel!Excel.Shape#copyTo:member(1)'
+      - 'excel!Excel.Shape#delete:member(1)'
+      - 'excel!Excel.Shape#fill:member'
+      - 'excel!Excel.Shape#geometricShape:member'
+      - 'excel!Excel.Shape#geometricShapeType:member'
+      - 'excel!Excel.Shape#getAsImage:member(1)'
+      - 'excel!Excel.Shape#group:member'
+      - 'excel!Excel.Shape#height:member'
+      - 'excel!Excel.Shape#id:member'
+      - 'excel!Excel.Shape#image:member'
+      - 'excel!Excel.Shape#incrementLeft:member(1)'
+      - 'excel!Excel.Shape#incrementRotation:member(1)'
+      - 'excel!Excel.Shape#incrementTop:member(1)'
+      - 'excel!Excel.Shape#left:member'
+      - 'excel!Excel.Shape#level:member'
+      - 'excel!Excel.Shape#line:member'
+      - 'excel!Excel.Shape#lineFormat:member'
+      - 'excel!Excel.Shape#load:member(1)'
+      - 'excel!Excel.Shape#lockAspectRatio:member'
+      - 'excel!Excel.Shape#name:member'
+      - 'excel!Excel.Shape#placement:member'
+      - 'excel!Excel.Shape#rotation:member'
+      - 'excel!Excel.Shape#scaleHeight:member(1)'
+      - 'excel!Excel.Shape#scaleWidth:member(1)'
+      - 'excel!Excel.Shape#setZOrder:member(1)'
+      - 'excel!Excel.Shape#textFrame:member'
+      - 'excel!Excel.Shape#top:member'
+      - 'excel!Excel.Shape#type:member'
+      - 'excel!Excel.Shape#visible:member'
+      - 'excel!Excel.Shape#width:member'
+      - 'excel!Excel.Shape#zOrderPosition:member'
+  - uid: 'excel!Excel.Shape#altTextDescription:member'
+    summary: Gibt den alternativen Beschreibungstext für ein Shape-Objekt an.
+    name: altTextDescription
+    fullName: altTextDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextDescription: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Shape#altTextTitle:member'
+    summary: Gibt den alternativen Titeltext für ein Shape-Objekt an.
+    name: altTextTitle
+    fullName: altTextTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextTitle: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Shape#connectionSiteCount:member'
+    summary: Gibt die Anzahl der Verbindungsseiten für diese Form zurück.
+    name: connectionSiteCount
+    fullName: connectionSiteCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly connectionSiteCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#copyTo:member(1)'
+    summary: Kopiert ein Shape-Objekt und fügt es ein. Die eingefügte Form wird an dieselbe Pixelposition wie diese Form kopiert.
+    name: copyTo(destinationSheet)
+    fullName: copyTo(destinationSheet)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: destinationSheet
+          description: 'Das Blatt, in das das Shape-Objekt eingefügt wird. Der Standardwert ist das Arbeitsblatt der kopierten Form.'
+          type:
+            - 'excel!Excel.Shape#copyTo~0:complex'
+  - uid: 'excel!Excel.Shape#delete:member(1)'
+    summary: Entfernt die Form aus dem Arbeitsblatt.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              context.workbook.worksheets.getItemOrNullObject("Shapes").delete();
+              let sheet = context.workbook.worksheets.add("Shapes");
+
+              let shapes = sheet.shapes;
+
+              // load all the shapes in the collection without loading their properties
+              shapes.load("items/$none");
+              await context.sync();
+
+              shapes.items.forEach((shape) => shape.delete());
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#fill:member'
+    summary: Gibt die Füllungsformatierung dieser Form zurück.
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ShapeFill;'
+      return:
+        type:
+          - 'excel!Excel.ShapeFill:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
+              shape.left = 300;
+              shape.top = 100;
+              shape.height = 100;
+              shape.width = 100;
+              shape.fill.foregroundColor = "yellow"
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#geometricShape:member'
+    summary: 'Gibt die der Form zugeordnete geometrische Form zurück. Es wird ein Fehler ausgelöst, wenn der Formtyp nicht "GeometricShape" ist.'
+    name: geometricShape
+    fullName: geometricShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly geometricShape: GeometricShape;'
+      return:
+        type:
+          - 'excel!Excel.GeometricShape:interface'
+  - uid: 'excel!Excel.Shape#geometricShapeType:member'
+    summary: 'Gibt den geometrischen Typ dieser geometrischen Form an. Details finden Sie unter Excel.GeometricShapeType. Gibt NULL zurück, wenn der Formtyp nicht "GeometricShape" ist.'
+    name: geometricShapeType
+    fullName: geometricShapeType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'geometricShapeType: GeometricShapeType;'
+      return:
+        type:
+          - 'excel!Excel.GeometricShapeType:enum'
+  - uid: 'excel!Excel.Shape#getAsImage:member(1)'
+    summary: 'Konvertiert die Form in ein Bild und gibt das Bild als base64-codierte Zeichenfolge zurück. Der DPI-Wert ist 96. Die einzigen unterstützten Formate sind`Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!-- -->, und`Excel.PictureFormat.GIF`<!-- -->.'
+    name: getAsImage(format)
+    fullName: getAsImage(format)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsImage(format: PictureFormat): string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Image");
+              let result = shape.getAsImage(Excel.PictureFormat.png);
+              await context.sync();
+
+              let imageString = result.value;
+              // Your add-in would save this string as a .png file.
+              console.log("The image's base64-encoded string: " + imageString);
+          }
+          ```
+      parameters:
+        - id: format
+          description: Gibt das Format des Bilds an.
+          type:
+            - 'excel!Excel.PictureFormat:enum'
+  - uid: 'excel!Excel.Shape#group:member'
+    summary: 'Gibt die der Form zugeordnete Formgruppe zurück. Es wird ein Fehler ausgelöst, wenn der Formtyp nicht "GroupShape" ist.'
+    name: group
+    fullName: group
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly group: ShapeGroup;'
+      return:
+        type:
+          - 'excel!Excel.ShapeGroup:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+
+              let shapeGroup = sheet.shapes.getItem("Group").group;
+              shapeGroup.ungroup();
+              console.log("Shapes ungrouped");
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#height:member'
+    summary: 'Gibt die Höhe des Shapes in Punkten an. Löst eine ungültige Argumentausnahme aus, wenn mit einem negativen Wert oder 0 als Eingabe festgelegt wird.'
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#id:member'
+    summary: Gibt den Shape-Bezeichner an.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Shape#image:member'
+    summary: 'Gibt das Bild zurück, das der Form zugeordnet ist. Es wird ein Fehler ausgelöst, wenn der Formtyp nicht "Image" ist.'
+    name: image
+    fullName: image
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly image: Image;'
+      return:
+        type:
+          - 'excel!Excel.Image:interface'
+  - uid: 'excel!Excel.Shape#incrementLeft:member(1)'
+    summary: Verschiebt die Form horizontal um die angegebene Punktanzahl.
+    name: incrementLeft(increment)
+    fullName: incrementLeft(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementLeft(increment: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Square")
+              shape.incrementLeft(-25);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: increment
+          description: 'Das Inkrement (in Punkt), das die Form horizontal verschoben wird. Ein positiver Wert verschiebt die Form nach rechts, und ein negativer Wert verschiebt Sie nach links. Wenn das Blatt von rechts nach links ausgerichtet ist, wird es umgekehrt: positive Werte werden das Shape nach links verschoben, und negative Werte werden nach rechts verschoben.'
+          type:
+            - number
+  - uid: 'excel!Excel.Shape#incrementRotation:member(1)'
+    summary: 'Dreht die Form um die angegebene Gradzahl um die Z-Achse. Verwenden Sie die `rotation` -Eigenschaft, um die absolute Drehung der Form festzulegen.'
+    name: incrementRotation(increment)
+    fullName: incrementRotation(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementRotation(increment: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Image");
+              shape.incrementRotation(180);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: increment
+          description: Wie viele Grade das Shape gedreht wird. Ein positiver Wert dreht die Form im Uhrzeigersinn; ein negativer Wert gegen den Uhrzeigersinn gedreht.
+          type:
+            - number
+  - uid: 'excel!Excel.Shape#incrementTop:member(1)'
+    summary: Verschiebt die Form vertikal um die angegebene Anzahl von Punkten.
+    name: incrementTop(increment)
+    fullName: incrementTop(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementTop(increment: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Pentagon")
+              shape.incrementTop(25);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: increment
+          description: 'Das Inkrement (in Punkt), das die Form vertikal verschoben wird. in Punkt. Ein positiver Wert verschiebt die Form nach unten, und ein negativer Wert verschiebt Sie nach oben.'
+          type:
+            - number
+  - uid: 'excel!Excel.Shape#left:member'
+    summary: 'Der Abstand in Punkten von der linken Seite der Form zur linken Seite des Arbeitsblatts. Löst eine ungültige Argumentausnahme aus, wenn mit einem negativen Wert als Eingabe festgelegt wird.'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#level:member'
+    summary: 'Gibt die Ebene der angegebenen Form an. Beispielsweise bedeutet die Ebene 0, dass die Form nicht Teil von Gruppen ist, die Ebene 1 bedeutet, die Form ist Teil einer Gruppe der obersten Ebene, und die Ebene 2 bedeutet, dass die Form Teil einer Untergruppe der obersten Ebene ist.'
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly level: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#line:member'
+    summary: 'Gibt die Linie zurück, die der Form zugeordnet ist. Es wird ein Fehler ausgelöst, wenn der Formtyp nicht "Line" ist.'
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly line: Line;'
+      return:
+        type:
+          - 'excel!Excel.Line:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.beginArrowheadLength = Excel.ArrowheadLength.long;
+              line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
+              line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
+
+              line.endArrowheadLength = Excel.ArrowheadLength.long;
+              line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
+              line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#lineFormat:member'
+    summary: Gibt die Linienformatierung dieser Form zurück.
+    name: lineFormat
+    fullName: lineFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lineFormat: ShapeLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ShapeLineFormat:interface'
+  - uid: 'excel!Excel.Shape#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Shape#lockAspectRatio:member'
+    summary: 'Gibt an, ob das Seitenverhältnis dieses Shapes gesperrt ist.'
+    name: lockAspectRatio
+    fullName: lockAspectRatio
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lockAspectRatio: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Octagon")
+              shape.lockAspectRatio = true;
+              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#name:member'
+    summary: Gibt den Namen der Form an.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Shape#placement:member'
+    summary: 'Stellt dar, wie das Objekt an die Zellen darunter angefügt ist.'
+    name: placement
+    fullName: placement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'placement: Placement;'
+      return:
+        type:
+          - 'excel!Excel.Placement:enum'
+  - uid: 'excel!Excel.Shape#rotation:member'
+    summary: Gibt die Drehung der Form in Grad an.
+    name: rotation
+    fullName: rotation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rotation: number;'
+      return:
+        type:
+          - number
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.triangle);
+              shape.left = 100;
+              shape.top = 300;
+              shape.height = 150;
+              shape.width = 200;
+              shape.rotation = 45;
+              shape.fill.clear();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#scaleHeight:member(1)'
+    summary: 'Skaliert die Höhe der Form anhand eines angegebenen Faktors. Für Bilder können Sie angeben, ob Sie die Form relativ zum Original oder zur aktuellen Größe skalieren möchten. Andere Formen als Bilder werden immer relativ zu ihrer aktuellen Höhe skaliert.'
+    name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        scaleHeight(
+                    scaleFactor: number,
+                    scaleType: ShapeScaleType,
+                    scaleFrom?: ShapeScaleFrom
+                ): void;
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Octagon")
+              shape.lockAspectRatio = true;
+              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: scaleFactor
+          description: Gibt das Verhältnis zwischen der Höhe der Form nach der Änderung ihrer Größe und der aktuellen oder ursprünglichen Höhe an.
+          type:
+            - number
+        - id: scaleType
+          description: 'Gibt an, ob die Form relativ zu ihrer ursprünglichen oder aktuellen Größe skaliert wird. Die Option ursprüngliche Größenskalierung kann nur für Bilder verwendet werden.'
+          type:
+            - 'excel!Excel.ShapeScaleType:enum'
+        - id: scaleFrom
+          description: 'Optional. Gibt an, welcher Teil der Form beim Skalieren die Position beibehält. Wenn dieser Wert nicht angegeben ist, wird die obere linke Ecke des Shapes beibehalten seiner Position.'
+          type:
+            - 'excel!Excel.ShapeScaleFrom:enum'
+  - uid: 'excel!Excel.Shape#scaleWidth:member(1)'
+    summary: 'Skaliert die Breite der Form anhand eines angegebenen Faktors. Für Bilder können Sie angeben, ob Sie die Form relativ zum Original oder zur aktuellen Größe skalieren möchten. Andere Formen als Bilder werden immer relativ zu ihrer aktuellen Breite skaliert.'
+    name: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        scaleWidth(
+                    scaleFactor: number,
+                    scaleType: ShapeScaleType,
+                    scaleFrom?: ShapeScaleFrom
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleFactor
+          description: Gibt das Verhältnis zwischen der Breite der Form nach der Änderung ihrer Größe und der aktuellen oder ursprünglichen Breite an.
+          type:
+            - number
+        - id: scaleType
+          description: 'Gibt an, ob die Form relativ zu ihrer ursprünglichen oder aktuellen Größe skaliert wird. Die Option ursprüngliche Größenskalierung kann nur für Bilder verwendet werden.'
+          type:
+            - 'excel!Excel.ShapeScaleType:enum'
+        - id: scaleFrom
+          description: 'Optional. Gibt an, welcher Teil der Form beim Skalieren die Position beibehält. Wenn dieser Wert nicht angegeben ist, wird die obere linke Ecke des Shapes beibehalten seiner Position.'
+          type:
+            - 'excel!Excel.ShapeScaleFrom:enum'
+  - uid: 'excel!Excel.Shape#setZOrder:member(1)'
+    summary: 'Verschiebt de angegebene Form in der Z-Reihenfolge der Sammlung nach oben oder unten, wodurch sie vor oder hinter anderen Formen zu liegen kommt.'
+    name: setZOrder(position)
+    fullName: setZOrder(position)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setZOrder(position: ShapeZOrder): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Octagon")
+              shape.setZOrder(Excel.ShapeZOrder.sendBackward);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: position
+          description: Verschiebt die Form im Stapel der z-Reihenfolge relativ zu den anderen Formen. Weitere Informationen finden Sie unter Excel. ShapeZOrder.
+          type:
+            - 'excel!Excel.ShapeZOrder:enum'
+  - uid: 'excel!Excel.Shape#textFrame:member'
+    summary: Gibt das textFrame-Objekt dieser Form zurück. Schreibgeschützt.
+    name: textFrame
+    fullName: textFrame
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly textFrame: TextFrame;'
+      return:
+        type:
+          - 'excel!Excel.TextFrame:interface'
+  - uid: 'excel!Excel.Shape#top:member'
+    summary: 'Der Abstand in Punkten zwischen der oberen Kante der Form und der oberen Kante der Arbeitsmappe. Löst eine ungültige Argumentausnahme aus, wenn mit einem negativen Wert als Eingabe festgelegt wird.'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#type:member'
+    summary: Gibt den Typ dieser Form zurück. Details finden Sie unter Excel.ShapeType.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: ShapeType;'
+      return:
+        type:
+          - 'excel!Excel.ShapeType:enum'
+  - uid: 'excel!Excel.Shape#visible:member'
+    summary: 'Gibt an, ob die Form sichtbar ist.'
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Shape#width:member'
+    summary: 'Gibt die Breite des Shapes in Punkten an. Löst eine ungültige Argumentausnahme aus, wenn mit einem negativen Wert oder 0 als Eingabe festgelegt wird.'
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#zOrderPosition:member'
+    summary: 'Gibt die Position der angegebenen Form in der Z-Reihenfolge an, wobei 0 den Boden des Reihenfolgestapels darstellt.'
+    name: zOrderPosition
+    fullName: zOrderPosition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly zOrderPosition: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape
+  - uid: 'excel!Excel.Shape#copyTo~0:complex'
+    name: Worksheet | string
+    fullName: Excel.Worksheet | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Worksheet:interface'
+        name: Worksheet
+        fullName: Excel.Worksheet
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.ShapeFill:interface'
+    name: ShapeFill
+    fullName: Excel.ShapeFill
+  - uid: 'excel!Excel.GeometricShape:interface'
+    name: GeometricShape
+    fullName: Excel.GeometricShape
+  - uid: 'excel!Excel.GeometricShapeType:enum'
+    name: GeometricShapeType
+    fullName: Excel.GeometricShapeType
+  - uid: 'excel!Excel.PictureFormat:enum'
+    name: PictureFormat
+    fullName: Excel.PictureFormat
+  - uid: 'excel!Excel.ShapeGroup:interface'
+    name: ShapeGroup
+    fullName: Excel.ShapeGroup
+  - uid: 'excel!Excel.Image:interface'
+    name: Image
+    fullName: Excel.Image
+  - uid: 'excel!Excel.Line:interface'
+    name: Line
+    fullName: Excel.Line
+  - uid: 'excel!Excel.ShapeLineFormat:interface'
+    name: ShapeLineFormat
+    fullName: Excel.ShapeLineFormat
+  - uid: 'excel!Excel.Placement:enum'
+    name: Placement
+    fullName: Excel.Placement
+  - uid: 'excel!Excel.ShapeScaleType:enum'
+    name: ShapeScaleType
+    fullName: Excel.ShapeScaleType
+  - uid: 'excel!Excel.ShapeScaleFrom:enum'
+    name: ShapeScaleFrom
+    fullName: Excel.ShapeScaleFrom
+  - uid: 'excel!Excel.ShapeZOrder:enum'
+    name: ShapeZOrder
+    fullName: Excel.ShapeZOrder
+  - uid: 'excel!Excel.TextFrame:interface'
+    name: TextFrame
+    fullName: Excel.TextFrame
+  - uid: 'excel!Excel.ShapeType:enum'
+    name: ShapeType
+    fullName: Excel.ShapeType

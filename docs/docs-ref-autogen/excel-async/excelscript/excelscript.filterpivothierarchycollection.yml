@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection:interface'
+    summary: 'Stellt eine Auflistung von FilterPivotHierarchy-Elementen dar, die der PivotTable zugeordnet sind.'
+    name: Excel.FilterPivotHierarchyCollection
+    fullName: Excel.FilterPivotHierarchyCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.FilterPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#load:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#remove:member(1)'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#add:member(1)'
+    summary: 'Fügt der aktuellen Achse das PivotHierarchy-Objekt hinzu. Wenn die Hierarchie an anderer Stelle in der Zeile, Spalte oder Filterachse vorhanden ist, wird sie von dieser Stelle entfernt.'
+    name: add(pivotHierarchy)
+    fullName: add(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(pivotHierarchy: PivotHierarchy): FilterPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.PivotHierarchy:interface'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft das FilterPivotHierarchy-Objekt anhand des Namens ab. Wenn das FilterPivotHierarchy-Objekt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): FilterPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Name des FilterPivotHierarchy, das abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#remove:member(1)'
+    summary: Entfernt das PivotHierarchy-Objekt von der aktuellen Achse.
+    name: remove(filterPivotHierarchy)
+    fullName: remove(filterPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(filterPivotHierarchy: FilterPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: filterPivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.FilterPivotHierarchy:interface'
+references:
+  - uid: 'excel!Excel.FilterPivotHierarchy:interface'
+    name: FilterPivotHierarchy
+    fullName: Excel.FilterPivotHierarchy
+  - uid: 'excel!Excel.PivotHierarchy:interface'
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy

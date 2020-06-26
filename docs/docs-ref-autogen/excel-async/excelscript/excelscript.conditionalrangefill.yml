@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeFill:interface'
+    summary: Stellt den Hintergrund eines bedingten Bereichsobjekts dar.
+    name: Excel.ConditionalRangeFill
+    fullName: Excel.ConditionalRangeFill
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeFill#clear:member(1)'
+      - 'excel!Excel.ConditionalRangeFill#color:member'
+      - 'excel!Excel.ConditionalRangeFill#load:member(1)'
+  - uid: 'excel!Excel.ConditionalRangeFill#clear:member(1)'
+    summary: Setzt die Füllung zurück.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ConditionalRangeFill#color:member'
+    summary: 'HTML-Farbcode, der die Farbe der Füllung, des Formulars \# RRGGBB (z. b. "FFA500") oder als benannte HTML-Farbe (beispielsweise "Orange") darstellt.'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalRangeFill#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
