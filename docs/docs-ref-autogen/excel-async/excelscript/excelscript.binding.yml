@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Binding:interface'
+    summary: 'Stellt eine Office.js-Bindung dar, die in der Arbeitsmappe definiert wird.'
+    name: Excel.Binding
+    fullName: Excel.Binding
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Binding#delete:member(1)'
+      - 'excel!Excel.Binding#getRange:member(1)'
+      - 'excel!Excel.Binding#getTable:member(1)'
+      - 'excel!Excel.Binding#getText:member(1)'
+      - 'excel!Excel.Binding#id:member'
+      - 'excel!Excel.Binding#load:member(1)'
+      - 'excel!Excel.Binding#type:member'
+  - uid: 'excel!Excel.Binding#delete:member(1)'
+    summary: Löscht die Bindung.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Binding#getRange:member(1)'
+    summary: 'Gibt den durch die Bindung dargestellten Bereich zurück. Gibt einen Fehler zurück, wenn die Bindung nicht den korrekten Typ aufweist.'
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.Binding#getTable:member(1)'
+    summary: 'Gibt die durch die Bindung dargestellte Tabelle zurück. Gibt einen Fehler zurück, wenn die Bindung nicht den korrekten Typ aufweist.'
+    name: getTable()
+    fullName: getTable()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTable(): Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:interface'
+        description: ''
+  - uid: 'excel!Excel.Binding#getText:member(1)'
+    summary: 'Gibt den durch die Bindung dargestellten Text zurück. Gibt einen Fehler zurück, wenn die Bindung nicht den korrekten Typ aufweist.'
+    name: getText()
+    fullName: getText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'excel!Excel.Binding#id:member'
+    summary: Stellt die Bindungs-ID dar.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Binding#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Binding#type:member'
+    summary: Gibt den Typ der Bindung an. Details finden Sie unter Excel. BindingType.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: BindingType;'
+      return:
+        type:
+          - 'excel!Excel.BindingType:enum'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.Table:interface'
+    name: Table
+    fullName: Excel.Table
+  - uid: 'excel!Excel.BindingType:enum'
+    name: BindingType
+    fullName: Excel.BindingType

@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection:interface'
+    summary: 'Stellt die Rahmen-Objekte dar, aus denen der Bereichsrahmen besteht.'
+    name: Excel.ConditionalRangeBorderCollection
+    fullName: Excel.ConditionalRangeBorderCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#top:member'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+    summary: Ruft die untere Rahmenlinie ab.
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly bottom: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+    summary: 'Ruft ein Rahmen-Objekt ab, das den Namen verwendet'
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: ConditionalRangeBorderIndex): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter Excel. ConditionalRangeBorderIndex.
+          type:
+            - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
+    summary: Ruft den linken Rahmen ab.
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly left: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
+    summary: Ruft den rechten Rahmen ab.
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly right: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
+    summary: Ruft den oberen Rahmen ab.
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+references:
+  - uid: 'excel!Excel.ConditionalRangeBorder:interface'
+    name: ConditionalRangeBorder
+    fullName: Excel.ConditionalRangeBorder
+  - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
+    name: ConditionalRangeBorderIndex
+    fullName: Excel.ConditionalRangeBorderIndex

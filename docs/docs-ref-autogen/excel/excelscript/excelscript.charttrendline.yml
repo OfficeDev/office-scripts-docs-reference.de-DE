@@ -1,0 +1,360 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline:interface'
+    summary: Dieses Objekt stellt die Attribute für ein Diagramm-Trendlinien Objekt dar.
+    name: ExcelScript.ChartTrendline
+    fullName: ExcelScript.ChartTrendline
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartTrendline#delete:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getBackwardPeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getForwardPeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getLabel:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getShowEquation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getType:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setBackwardPeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setForwardPeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setShowEquation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setType:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#delete:member(1)'
+    summary: Löschen des Trendline-Objekts.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getBackwardPeriod:member(1)'
+    summary: 'Die Anzahl der Punkte, über die sich eine Trendlinie zurück erstreckt.'
+    name: getBackwardPeriod()
+    fullName: getBackwardPeriod()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBackwardPeriod(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getFormat:member(1)'
+    summary: Stellt die Formatierung der Diagrammtrendlinie dar.
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ChartTrendlineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTrendlineFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getForwardPeriod:member(1)'
+    summary: 'Die Anzahl der Punkte, über die sich eine Trendlinie vorwärts erstreckt.'
+    name: getForwardPeriod()
+    fullName: getForwardPeriod()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getForwardPeriod(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)'
+    summary: Stellt den Wert der y-Schnittpunkt der Trendlinie dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden (für automatische Werte). Der zurückgegebene Wert ist immer eine Zahl.
+    name: getIntercept()
+    fullName: getIntercept()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIntercept(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getLabel:member(1)'
+    summary: Die Beschriftung einer Diagrammtrendlinie.
+    name: getLabel()
+    fullName: getLabel()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLabel(): ChartTrendlineLabel;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTrendlineLabel:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)'
+    summary: Stellt den Zeitraum einer Diagramm Trendlinie dar. Gilt nur für Trendlinie mit MovingAverage-Typ.
+    name: getMovingAveragePeriod()
+    fullName: getMovingAveragePeriod()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMovingAveragePeriod(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getName:member(1)'
+    summary: 'Gibt den Namen der Trendlinie zurück. Kann auf einen Zeichenfolgenwert festgelegt werden, oder auf einen null-Wert und entspricht automatischen Werten. Der zurückgegebene Wert ist immer eine Zeichenfolge.'
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)'
+    summary: Stellt die Reihenfolge einer Diagramm Trendlinie dar. Gilt nur für Trendlinie mit polynomtyp.
+    name: getPolynomialOrder()
+    fullName: getPolynomialOrder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPolynomialOrder(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getShowEquation:member(1)'
+    summary: 'True, wenn die Formel für die Trendlinie im Diagramm angezeigt wird.'
+    name: getShowEquation()
+    fullName: getShowEquation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowEquation(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)'
+    summary: 'True, wenn das Bestimmtheitsmaß für die Trendlinie im Diagramm angezeigt wird.'
+    name: getShowRSquared()
+    fullName: getShowRSquared()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowRSquared(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getType:member(1)'
+    summary: Stellt die Beschriftung einer Diagrammtrendlinie dar.
+    name: getType()
+    fullName: getType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getType(): ChartTrendlineType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setBackwardPeriod:member(1)'
+    summary: 'Die Anzahl der Punkte, über die sich eine Trendlinie zurück erstreckt.'
+    name: setBackwardPeriod(backwardPeriod)
+    fullName: setBackwardPeriod(backwardPeriod)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBackwardPeriod(backwardPeriod: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: backwardPeriod
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setForwardPeriod:member(1)'
+    summary: 'Die Anzahl der Punkte, über die sich eine Trendlinie vorwärts erstreckt.'
+    name: setForwardPeriod(forwardPeriod)
+    fullName: setForwardPeriod(forwardPeriod)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setForwardPeriod(forwardPeriod: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: forwardPeriod
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)'
+    summary: Stellt den Wert der y-Schnittpunkt der Trendlinie dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden (für automatische Werte). Der zurückgegebene Wert ist immer eine Zahl.
+    name: setIntercept(intercept)
+    fullName: setIntercept(intercept)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIntercept(intercept: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: intercept
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)'
+    summary: Stellt den Zeitraum einer Diagramm Trendlinie dar. Gilt nur für Trendlinie mit MovingAverage-Typ.
+    name: setMovingAveragePeriod(movingAveragePeriod)
+    fullName: setMovingAveragePeriod(movingAveragePeriod)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMovingAveragePeriod(movingAveragePeriod: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: movingAveragePeriod
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setName:member(1)'
+    summary: 'Gibt den Namen der Trendlinie zurück. Kann auf einen Zeichenfolgenwert festgelegt werden, oder auf einen null-Wert und entspricht automatischen Werten. Der zurückgegebene Wert ist immer eine Zeichenfolge.'
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)'
+    summary: Stellt die Reihenfolge einer Diagramm Trendlinie dar. Gilt nur für Trendlinie mit polynomtyp.
+    name: setPolynomialOrder(polynomialOrder)
+    fullName: setPolynomialOrder(polynomialOrder)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPolynomialOrder(polynomialOrder: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: polynomialOrder
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setShowEquation:member(1)'
+    summary: 'True, wenn die Formel für die Trendlinie im Diagramm angezeigt wird.'
+    name: setShowEquation(showEquation)
+    fullName: setShowEquation(showEquation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowEquation(showEquation: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showEquation
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)'
+    summary: 'True, wenn das Bestimmtheitsmaß für die Trendlinie im Diagramm angezeigt wird.'
+    name: setShowRSquared(showRSquared)
+    fullName: setShowRSquared(showRSquared)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowRSquared(showRSquared: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showRSquared
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setType:member(1)'
+    summary: Stellt die Beschriftung einer Diagrammtrendlinie dar.
+    name: setType(type)
+    fullName: setType(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setType(type: ChartTrendlineType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: type
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineFormat:interface'
+    name: ChartTrendlineFormat
+    fullName: ExcelScript.ChartTrendlineFormat
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel:interface'
+    name: ChartTrendlineLabel
+    fullName: ExcelScript.ChartTrendlineLabel
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
+    name: ChartTrendlineType
+    fullName: ExcelScript.ChartTrendlineType

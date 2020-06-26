@@ -1,0 +1,97 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TextConditionalFormat:interface'
+    summary: Stellt ein bestimmtes Text bedingtes Format dar.
+    name: Excel.TextConditionalFormat
+    fullName: Excel.TextConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TextConditionalFormat#format:member'
+      - 'excel!Excel.TextConditionalFormat#load:member(1)'
+      - 'excel!Excel.TextConditionalFormat#rule:member'
+  - uid: 'excel!Excel.TextConditionalFormat#format:member'
+    summary: 'Gibt ein Format-Objekt zurück, das die Schriftart, Füllung, Rahmen und andere Eigenschaften für bedingte Formate kapselt.'
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ConditionalRangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFormat:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B16:D18");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.containsText);
+              conditionalFormat.textComparison.format.font.color = "red";
+              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.TextConditionalFormat#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TextConditionalFormat#rule:member'
+    summary: Die Regel des bedingten Formats.
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule: ConditionalTextComparisonRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalTextComparisonRule:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B16:D18");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.containsText);
+              conditionalFormat.textComparison.format.font.color = "red";
+              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+
+              await context.sync();
+          }
+          ```
+references:
+  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
+    name: ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
+    name: ConditionalTextComparisonRule
+    fullName: Excel.ConditionalTextComparisonRule

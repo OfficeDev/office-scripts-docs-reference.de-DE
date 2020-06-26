@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt:interface'
+    summary: Stellt die Benutzereingabe Aufforderungseigenschaften für die Datenüberprüfung dar.
+    name: ExcelScript.DataValidationPrompt
+    fullName: ExcelScript.DataValidationPrompt
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataValidationPrompt#message:member'
+      - 'ExcelScript!ExcelScript.DataValidationPrompt#showPrompt:member'
+      - 'ExcelScript!ExcelScript.DataValidationPrompt#title:member'
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt#message:member'
+    summary: Gibt die Nachricht der Eingabeaufforderung an.
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt#showPrompt:member'
+    summary: 'Gibt an, ob eine Eingabeaufforderung angezeigt wird, wenn ein Benutzer eine Zelle mit Datenüberprüfung auswählt.'
+    name: showPrompt
+    fullName: showPrompt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPrompt: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt#title:member'
+    summary: Gibt den Titel für die Eingabeaufforderung an.
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string

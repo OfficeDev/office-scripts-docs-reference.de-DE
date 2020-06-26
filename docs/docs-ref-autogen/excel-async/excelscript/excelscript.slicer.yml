@@ -1,0 +1,302 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Slicer:interface'
+    summary: Stellt ein Slicer-Objekt in der Arbeitsmappe dar.
+    name: Excel.Slicer
+    fullName: Excel.Slicer
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Slicer#caption:member'
+      - 'excel!Excel.Slicer#clearFilters:member(1)'
+      - 'excel!Excel.Slicer#delete:member(1)'
+      - 'excel!Excel.Slicer#getSelectedItems:member(1)'
+      - 'excel!Excel.Slicer#height:member'
+      - 'excel!Excel.Slicer#id:member'
+      - 'excel!Excel.Slicer#isFilterCleared:member'
+      - 'excel!Excel.Slicer#left:member'
+      - 'excel!Excel.Slicer#load:member(1)'
+      - 'excel!Excel.Slicer#name:member'
+      - 'excel!Excel.Slicer#selectItems:member(1)'
+      - 'excel!Excel.Slicer#slicerItems:member'
+      - 'excel!Excel.Slicer#sortBy:member'
+      - 'excel!Excel.Slicer#style:member'
+      - 'excel!Excel.Slicer#top:member'
+      - 'excel!Excel.Slicer#width:member'
+      - 'excel!Excel.Slicer#worksheet:member'
+  - uid: 'excel!Excel.Slicer#caption:member'
+    summary: Stellt die Beschriftung eines Datenschnitts dar.
+    name: caption
+    fullName: caption
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'caption: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Slicer#clearFilters:member(1)'
+    summary: 'Löscht alle Filter, die derzeit für den Datenschnitt verwendet werden.'
+    name: clearFilters()
+    fullName: clearFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.clearFilters();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Slicer#delete:member(1)'
+    summary: Löscht den Datenschnitt.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.slicers.getItemAt(0).delete();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Slicer#getSelectedItems:member(1)'
+    summary: Gibt ein Array mit den Schlüsseln der ausgewählten Elemente zurück.
+    name: getSelectedItems()
+    fullName: getSelectedItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedItems(): string[];'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+  - uid: 'excel!Excel.Slicer#height:member'
+    summary: Stellt die Höhe des Datenschnitts in typografischen Punkten dar. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert oder 0 als Eingabe.
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Slicer#id:member'
+    summary: Stellt die eindeutige ID des Datenschnitts dar.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Slicer#isFilterCleared:member'
+    summary: 'True, wenn alle derzeit auf den Datenschnitt angewendeten Filter gelöscht sind.'
+    name: isFilterCleared
+    fullName: isFilterCleared
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isFilterCleared: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Slicer#left:member'
+    summary: Stellt den Abstand in Punkt von der linken Seite des Datenschnitts zur linken Seite des Arbeitsblatts dar. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert als Eingabe.
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Slicer#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Slicer#name:member'
+    summary: Stellt den Namen des Datenschnitts dar.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Slicer#selectItems:member(1)'
+    summary: 'Wählt datenschnitt Elemente basierend auf ihren Schlüsseln aus. Die vorherige Auswahl wird gelöscht. Alle Elemente werden standardmäßig ausgewählt, wenn das Array leer ist.'
+    name: selectItems(items)
+    fullName: selectItems(items)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'selectItems(items?: string[]): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.selectItems(["Lemon", "Lime", "Orange"]);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: items
+          description: 'Optional. Die angegebenen datenschnitt Elementnamen, die ausgewählt werden sollen.'
+          type:
+            - 'string[]'
+  - uid: 'excel!Excel.Slicer#slicerItems:member'
+    summary: 'Stellt die Sammlung von SlicerItems dar, die Teil des Datenschnitts sind.'
+    name: slicerItems
+    fullName: slicerItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly slicerItems: SlicerItemCollection;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItemCollection:interface'
+  - uid: 'excel!Excel.Slicer#sortBy:member'
+    summary: 'Stellt die Sortierreihenfolge der Elemente im Datenschnitt dar. Mögliche Werte sind: "DataSourceOrder", "Aufsteigend", "absteigend".'
+    name: sortBy
+    fullName: sortBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sortBy: SlicerSortType;'
+      return:
+        type:
+          - 'excel!Excel.SlicerSortType:enum'
+  - uid: 'excel!Excel.Slicer#style:member'
+    summary: 'Konstanter Wert, der das Format des Datenschnitts darstellt. Mögliche Werte sind: "SlicerStyleLight1" bis "SlicerStyleLight6", "TableStyleOther1" bis "TableStyleOther2", "SlicerStyleDark1" bis "SlicerStyleDark6". Es kann ebenfalls eine in der Arbeitsmappe vorhandene benutzerdefinierte Formatierung angegeben werden.'
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.style = "SlicerStyleLight6";
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Slicer#top:member'
+    summary: Stellt den Abstand in Punkt von der Oberkante des Datenschnitts zur Oberkante des Arbeitsblatts dar. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert als Eingabe.
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Slicer#width:member'
+    summary: Die Breite des Datenschnitts in Punkten. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert oder 0 als Eingabe.
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Slicer#worksheet:member'
+    summary: 'Stellt das Arbeitsblatt dar, das den Datenschnitt enthält.'
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+references:
+  - uid: 'excel!Excel.SlicerItemCollection:interface'
+    name: SlicerItemCollection
+    fullName: Excel.SlicerItemCollection
+  - uid: 'excel!Excel.SlicerSortType:enum'
+    name: SlicerSortType
+    fullName: Excel.SlicerSortType
+  - uid: 'excel!Excel.Worksheet:interface'
+    name: Worksheet
+    fullName: Excel.Worksheet

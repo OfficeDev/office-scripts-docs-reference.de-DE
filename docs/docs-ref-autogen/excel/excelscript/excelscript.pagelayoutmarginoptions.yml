@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions:interface'
+    summary: Stellt die Optionen in Seitenlayout Rändern dar.
+    name: ExcelScript.PageLayoutMarginOptions
+    fullName: ExcelScript.PageLayoutMarginOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member'
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member'
+    summary: Gibt das Seitenlayout unterer Rand in der für das Drucken angegebenen Einheit an.
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottom?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member'
+    summary: Gibt den Seitenlayout-Fußzeilenrand in der für das Drucken angegebenen Einheit an.
+    name: footer
+    fullName: footer
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'footer?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member'
+    summary: Gibt den Seitenlayout-Kopfzeilenrand in der für das Drucken angegebenen Einheit an.
+    name: header
+    fullName: header
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'header?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member'
+    summary: Gibt den linken Rand des Seitenlayouts in der für das Drucken angegebenen Einheit an.
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member'
+    summary: Gibt den rechten Rand des Seitenlayouts in der für das Drucken angegebenen Einheit an.
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'right?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member'
+    summary: Gibt den Seitenlayout-oberen Seitenrand in der für die Druckfunktion angegebenen Einheit an.
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number

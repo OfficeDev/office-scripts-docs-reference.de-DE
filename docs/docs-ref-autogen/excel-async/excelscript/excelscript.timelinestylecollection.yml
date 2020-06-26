@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TimelineStyleCollection:interface'
+    summary: Stellt eine Auflistung von TimelineStyles dar.
+    name: Excel.TimelineStyleCollection
+    fullName: Excel.TimelineStyleCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TimelineStyleCollection#add:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#load:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.TimelineStyleCollection#add:member(1)'
+    summary: Erstellt einen leeren TimelineStyle mit dem angegebenen Namen.
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Der eindeutige Name für die neue timelinestyle. Eine ungültige Argumentausnahme wird ausgelöst, wenn der Name bereits verwendet wird.'
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Optional, standardmäßig auf false festgelegt. Wenn true, werden Zahlen an den Namen angefügt, um ihn eindeutig zu machen, falls erforderlich.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
+    summary: Ruft den Standard-TimelineStyle für den Bereich des übergeordneten Objekts ab.
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft einen TimelineStyle anhand des Namens ab. Wenn der TimelineStyle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Name des abzurufenden timelinestyle.
+          type:
+            - string
+  - uid: 'excel!Excel.TimelineStyleCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
+    summary: Legt den Standard-TimelineStyle für die Verwendung im Bereich des übergeordneten Objekts fest.
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: TimelineStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 'Das timelinestyle-Objekt oder der Name des timelinestyle-Objekts, das als neuer Standardwert verwendet werden soll.'
+          type:
+            - 'excel!Excel.TimelineStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.TimelineStyle:interface'
+    name: TimelineStyle
+    fullName: Excel.TimelineStyle
+  - uid: 'excel!Excel.TimelineStyleCollection#setDefault~0:complex'
+    name: TimelineStyle | string
+    fullName: Excel.TimelineStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: Excel.TimelineStyle
+      - name: ' | string'
+        fullName: ' | string'
