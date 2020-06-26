@@ -1,0 +1,77 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.FormatProtection:interface'
+    summary: Stellt den Formatschutz eines Bereichsobjekts dar.
+    name: ExcelScript.FormatProtection
+    fullName: ExcelScript.FormatProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)'
+      - 'ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)'
+      - 'ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)'
+      - 'ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)'
+  - uid: 'ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)'
+    summary: 'Gibt an, ob die Formel für die Zellen im Bereich von Excel ausgeblendet wird. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Einstellung zur Formelausblendung hat.'
+    name: getFormulaHidden()
+    fullName: getFormulaHidden()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulaHidden(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)'
+    summary: 'Gibt an, ob Excel die Zellen im Objekt sperrt. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Einstellung zum Sperren hat.'
+    name: getLocked()
+    fullName: getLocked()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocked(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)'
+    summary: 'Gibt an, ob die Formel für die Zellen im Bereich von Excel ausgeblendet wird. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Einstellung zur Formelausblendung hat.'
+    name: setFormulaHidden(formulaHidden)
+    fullName: setFormulaHidden(formulaHidden)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulaHidden(formulaHidden: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulaHidden
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)'
+    summary: 'Gibt an, ob Excel die Zellen im Objekt sperrt. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Einstellung zum Sperren hat.'
+    name: setLocked(locked)
+    fullName: setLocked(locked)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLocked(locked: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: locked
+          description: ''
+          type:
+            - boolean

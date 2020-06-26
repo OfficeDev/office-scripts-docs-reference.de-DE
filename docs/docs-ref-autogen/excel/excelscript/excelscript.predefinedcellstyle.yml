@@ -1,0 +1,772 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
+    summary: 'Ein Objekt, das das Format einer Formatvorlage und andere Eigenschaften kapselt.'
+    name: ExcelScript.PredefinedCellStyle
+    fullName: ExcelScript.PredefinedCellStyle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#delete:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getAutoIndent:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getBorders:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getBuiltIn:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getFont:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getFormulaHidden:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeBorder:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeFont:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeNumber:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludePatterns:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeProtection:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIndentLevel:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getLocked:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getName:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getNumberFormatLocal:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorder:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getReadingOrder:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getShrinkToFit:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getWrapText:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setAutoIndent:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setFormulaHidden:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeBorder:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeFont:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeNumber:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludePatterns:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeProtection:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIndentLevel:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setLocked:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setNumberFormatLocal:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setReadingOrder:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setShrinkToFit:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setWrapText:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#delete:member(1)'
+    summary: Löscht diese Formatvorlage.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getAutoIndent:member(1)'
+    summary: 'Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung in einer Zelle auf gleiche Verteilung festgelegt ist.'
+    name: getAutoIndent()
+    fullName: getAutoIndent()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAutoIndent(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getBorders:member(1)'
+    summary: 'Eine Auflistung von vier Rahmenobjekten, die die vier Rahmenlinien eines Bereichs- oder Style-Objekts darstellen.'
+    name: getBorders()
+    fullName: getBorders()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorders(): RangeBorder[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PredefinedCellStyle#getBorders~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getBuiltIn:member(1)'
+    summary: 'Gibt an, ob es sich bei der Formatvorlage um eine integrierte Formatvorlage handelt.'
+    name: getBuiltIn()
+    fullName: getBuiltIn()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBuiltIn(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getFill:member(1)'
+    summary: Der Inhalt der Formatvorlage.
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): RangeFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getFont:member(1)'
+    summary: 'Gibt ein Schriftartobjekt zurück, das die Schriftart der Formatvorlage darstellt.'
+    name: getFont()
+    fullName: getFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFont(): RangeFont;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeFont:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getFormulaHidden:member(1)'
+    summary: 'Gibt an, ob die Formel ausgeblendet wird, wenn das Arbeitsblatt geschützt ist.'
+    name: getFormulaHidden()
+    fullName: getFormulaHidden()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulaHidden(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)'
+    summary: Stellt die horizontale Ausrichtung für den Stil dar. Details finden Sie unter Excel. HorizontalAlignment.
+    name: getHorizontalAlignment()
+    fullName: getHorizontalAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHorizontalAlignment(): HorizontalAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HorizontalAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeAlignment:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die Eigenschaften autoindent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel und textorientation enthält.'
+    name: getIncludeAlignment()
+    fullName: getIncludeAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludeAlignment(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeBorder:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die Eigenschaften Color, ColorIndex, Linienart und Gewichtungs Rahmen enthält.'
+    name: getIncludeBorder()
+    fullName: getIncludeBorder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludeBorder(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeFont:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die Schriftarteigenschaften background, Bold, Color, ColorIndex, FontStyle, kursiv, Name, Größe, durchgestrichen, tiefgestellt, hochgestellt und unterstrichen enthält.'
+    name: getIncludeFont()
+    fullName: getIncludeFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludeFont(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeNumber:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die NumberFormat-Eigenschaft enthält.'
+    name: getIncludeNumber()
+    fullName: getIncludeNumber()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludeNumber(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludePatterns:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die Interior-Eigenschaften Color, ColorIndex, InvertIfNegative, pattern, PatternColor und PatternColorIndex enthält.'
+    name: getIncludePatterns()
+    fullName: getIncludePatterns()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludePatterns(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeProtection:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die Eigenschaften FormulaHidden und Locked Protection enthält.'
+    name: getIncludeProtection()
+    fullName: getIncludeProtection()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludeProtection(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIndentLevel:member(1)'
+    summary: 'Eine ganze Zahl zwischen 0 und 250, die die Einzugsebene für die Formatvorlage angibt.'
+    name: getIndentLevel()
+    fullName: getIndentLevel()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIndentLevel(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getLocked:member(1)'
+    summary: 'Gibt an, ob das Objekt gesperrt ist, wenn das Arbeitsblatt geschützt ist.'
+    name: getLocked()
+    fullName: getLocked()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocked(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getName:member(1)'
+    summary: Der Name der Formatvorlage.
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getNumberFormat:member(1)'
+    summary: Der Formatcode des Zahlenformats für die Formatvorlage.
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getNumberFormatLocal:member(1)'
+    summary: Der lokalisierte Formatcode des Zahlenformats für die Formatvorlage.
+    name: getNumberFormatLocal()
+    fullName: getNumberFormatLocal()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormatLocal(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorder:member(1)'
+    summary: 'Ruft ein Rahmen-Objekt ab, das den Namen verwendet'
+    name: getRangeBorder(index)
+    fullName: getRangeBorder(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter Excel. BorderIndex.
+          type:
+            - 'ExcelScript!ExcelScript.BorderIndex:enum'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)'
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt. Der Wert ist zwischen-1 (am dunkelsten) und 1 (am hellsten), wobei 0 für die ursprüngliche Farbe steht. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.'
+    name: getRangeBorderTintAndShade()
+    fullName: getRangeBorderTintAndShade()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeBorderTintAndShade(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getReadingOrder:member(1)'
+    summary: Die Leserichtung für die Formatvorlage.
+    name: getReadingOrder()
+    fullName: getReadingOrder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadingOrder(): ReadingOrder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ReadingOrder:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getShrinkToFit:member(1)'
+    summary: 'Gibt an, ob Text automatisch verkleinert wird, sodass er in die verfügbare Spaltenbreite passt.'
+    name: getShrinkToFit()
+    fullName: getShrinkToFit()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShrinkToFit(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getTextOrientation:member(1)'
+    summary: Die Textausrichtung für die Formatvorlage.
+    name: getTextOrientation()
+    fullName: getTextOrientation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)'
+    summary: Gibt die vertikale Ausrichtung für die Formatvorlage an. Weitere Informationen finden Sie unter Excel. VerticalAlignment.
+    name: getVerticalAlignment()
+    fullName: getVerticalAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVerticalAlignment(): VerticalAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.VerticalAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getWrapText:member(1)'
+    summary: 'Gibt an, ob der Text im Objekt von Excel umbrochen wird.'
+    name: getWrapText()
+    fullName: getWrapText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWrapText(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setAutoIndent:member(1)'
+    summary: 'Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung in einer Zelle auf gleiche Verteilung festgelegt ist.'
+    name: setAutoIndent(autoIndent)
+    fullName: setAutoIndent(autoIndent)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAutoIndent(autoIndent: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: autoIndent
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setFormulaHidden:member(1)'
+    summary: 'Gibt an, ob die Formel ausgeblendet wird, wenn das Arbeitsblatt geschützt ist.'
+    name: setFormulaHidden(formulaHidden)
+    fullName: setFormulaHidden(formulaHidden)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulaHidden(formulaHidden: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulaHidden
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)'
+    summary: Stellt die horizontale Ausrichtung für den Stil dar. Details finden Sie unter Excel. HorizontalAlignment.
+    name: setHorizontalAlignment(horizontalAlignment)
+    fullName: setHorizontalAlignment(horizontalAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: horizontalAlignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.HorizontalAlignment:enum'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeAlignment:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die Eigenschaften autoindent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel und textorientation enthält.'
+    name: setIncludeAlignment(includeAlignment)
+    fullName: setIncludeAlignment(includeAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludeAlignment(includeAlignment: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includeAlignment
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeBorder:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die Eigenschaften Color, ColorIndex, Linienart und Gewichtungs Rahmen enthält.'
+    name: setIncludeBorder(includeBorder)
+    fullName: setIncludeBorder(includeBorder)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludeBorder(includeBorder: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includeBorder
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeFont:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die Schriftarteigenschaften background, Bold, Color, ColorIndex, FontStyle, kursiv, Name, Größe, durchgestrichen, tiefgestellt, hochgestellt und unterstrichen enthält.'
+    name: setIncludeFont(includeFont)
+    fullName: setIncludeFont(includeFont)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludeFont(includeFont: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includeFont
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeNumber:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die NumberFormat-Eigenschaft enthält.'
+    name: setIncludeNumber(includeNumber)
+    fullName: setIncludeNumber(includeNumber)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludeNumber(includeNumber: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includeNumber
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludePatterns:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die Interior-Eigenschaften Color, ColorIndex, InvertIfNegative, pattern, PatternColor und PatternColorIndex enthält.'
+    name: setIncludePatterns(includePatterns)
+    fullName: setIncludePatterns(includePatterns)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludePatterns(includePatterns: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includePatterns
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeProtection:member(1)'
+    summary: 'Gibt an, ob die Formatvorlage die Eigenschaften FormulaHidden und Locked Protection enthält.'
+    name: setIncludeProtection(includeProtection)
+    fullName: setIncludeProtection(includeProtection)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludeProtection(includeProtection: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includeProtection
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIndentLevel:member(1)'
+    summary: 'Eine ganze Zahl zwischen 0 und 250, die die Einzugsebene für die Formatvorlage angibt.'
+    name: setIndentLevel(indentLevel)
+    fullName: setIndentLevel(indentLevel)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIndentLevel(indentLevel: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: indentLevel
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setLocked:member(1)'
+    summary: 'Gibt an, ob das Objekt gesperrt ist, wenn das Arbeitsblatt geschützt ist.'
+    name: setLocked(locked)
+    fullName: setLocked(locked)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLocked(locked: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: locked
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setNumberFormat:member(1)'
+    summary: Der Formatcode des Zahlenformats für die Formatvorlage.
+    name: setNumberFormat(numberFormat)
+    fullName: setNumberFormat(numberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormat
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setNumberFormatLocal:member(1)'
+    summary: Der lokalisierte Formatcode des Zahlenformats für die Formatvorlage.
+    name: setNumberFormatLocal(numberFormatLocal)
+    fullName: setNumberFormatLocal(numberFormatLocal)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormatLocal(numberFormatLocal: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormatLocal
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)'
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt. Der Wert ist zwischen-1 (am dunkelsten) und 1 (am hellsten), wobei 0 für die ursprüngliche Farbe steht. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.'
+    name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+    fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRangeBorderTintAndShade(rangeBorderTintAndShade: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rangeBorderTintAndShade
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setReadingOrder:member(1)'
+    summary: Die Leserichtung für die Formatvorlage.
+    name: setReadingOrder(readingOrder)
+    fullName: setReadingOrder(readingOrder)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setReadingOrder(readingOrder: ReadingOrder): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: readingOrder
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ReadingOrder:enum'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setShrinkToFit:member(1)'
+    summary: 'Gibt an, ob Text automatisch verkleinert wird, sodass er in die verfügbare Spaltenbreite passt.'
+    name: setShrinkToFit(shrinkToFit)
+    fullName: setShrinkToFit(shrinkToFit)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShrinkToFit(shrinkToFit: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: shrinkToFit
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setTextOrientation:member(1)'
+    summary: Die Textausrichtung für die Formatvorlage.
+    name: setTextOrientation(textOrientation)
+    fullName: setTextOrientation(textOrientation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: textOrientation
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)'
+    summary: Gibt die vertikale Ausrichtung für die Formatvorlage an. Weitere Informationen finden Sie unter Excel. VerticalAlignment.
+    name: setVerticalAlignment(verticalAlignment)
+    fullName: setVerticalAlignment(verticalAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVerticalAlignment(verticalAlignment: VerticalAlignment): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: verticalAlignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.VerticalAlignment:enum'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setWrapText:member(1)'
+    summary: 'Gibt an, ob der Text im Objekt von Excel umbrochen wird.'
+    name: setWrapText(wrapText)
+    fullName: setWrapText(wrapText)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWrapText(wrapText: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: wrapText
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getBorders~0:complex'
+    name: 'RangeBorder[]'
+    fullName: 'ExcelScript.RangeBorder[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RangeBorder:interface'
+        name: RangeBorder
+        fullName: ExcelScript.RangeBorder
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.RangeFill:interface'
+    name: RangeFill
+    fullName: ExcelScript.RangeFill
+  - uid: 'ExcelScript!ExcelScript.RangeFont:interface'
+    name: RangeFont
+    fullName: ExcelScript.RangeFont
+  - uid: 'ExcelScript!ExcelScript.HorizontalAlignment:enum'
+    name: HorizontalAlignment
+    fullName: ExcelScript.HorizontalAlignment
+  - uid: 'ExcelScript!ExcelScript.RangeBorder:interface'
+    name: RangeBorder
+    fullName: ExcelScript.RangeBorder
+  - uid: 'ExcelScript!ExcelScript.BorderIndex:enum'
+    name: BorderIndex
+    fullName: ExcelScript.BorderIndex
+  - uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
+    name: ReadingOrder
+    fullName: ExcelScript.ReadingOrder
+  - uid: 'ExcelScript!ExcelScript.VerticalAlignment:enum'
+    name: VerticalAlignment
+    fullName: ExcelScript.VerticalAlignment

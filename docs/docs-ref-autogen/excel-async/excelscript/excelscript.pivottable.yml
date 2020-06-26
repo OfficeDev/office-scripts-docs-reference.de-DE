@@ -1,0 +1,314 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTable:interface'
+    summary: 'Stellt eine Excel-PivotTable dar. Weitere Informationen zum PivotTable-Objektmodell finden Sie [unter Arbeiten mit PivotTables mithilfe der Excel-JavaScript-API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.'
+    name: Excel.PivotTable
+    fullName: Excel.PivotTable
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTable#columnHierarchies:member'
+      - 'excel!Excel.PivotTable#dataHierarchies:member'
+      - 'excel!Excel.PivotTable#delete:member(1)'
+      - 'excel!Excel.PivotTable#enableDataValueEditing:member'
+      - 'excel!Excel.PivotTable#filterHierarchies:member'
+      - 'excel!Excel.PivotTable#hierarchies:member'
+      - 'excel!Excel.PivotTable#id:member'
+      - 'excel!Excel.PivotTable#layout:member'
+      - 'excel!Excel.PivotTable#load:member(1)'
+      - 'excel!Excel.PivotTable#name:member'
+      - 'excel!Excel.PivotTable#refresh:member(1)'
+      - 'excel!Excel.PivotTable#rowHierarchies:member'
+      - 'excel!Excel.PivotTable#useCustomSortLists:member'
+      - 'excel!Excel.PivotTable#worksheet:member'
+  - uid: 'excel!Excel.PivotTable#columnHierarchies:member'
+    summary: Die Pivot-Hierarchien der Spalten von PivotTable.
+    name: columnHierarchies
+    fullName: columnHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columnHierarchies: RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");       
+
+              // check if the PivotTable already has a column
+              let column = pivotTable.columnHierarchies.getItemOrNullObject("Farm");
+              column.load("id");
+              await context.sync();
+
+              if (column.isNullObject) {
+                  // ading the farm column to the column hierarchy automatically removes it from the row hierarchy
+                  pivotTable.columnHierarchies.add(pivotTable.hierarchies.getItem("Farm"));
+              } else {
+                  pivotTable.columnHierarchies.remove(column);
+              }
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#dataHierarchies:member'
+    summary: Die Pivot-Hierarchien der Daten von PivotTable.
+    name: dataHierarchies
+    fullName: dataHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataHierarchies: DataPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchyCollection:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold at Farm"));
+              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold Wholesale"));
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#delete:member(1)'
+    summary: Aktualisiert PivotTable
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#enableDataValueEditing:member'
+    summary: 'Gibt an, ob die PivotTable das Bearbeiten von Werten im Daten Text durch den Benutzer zulässt.'
+    name: enableDataValueEditing
+    fullName: enableDataValueEditing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableDataValueEditing: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotTable#filterHierarchies:member'
+    summary: Die Pivot-Hierarchien der Filter von PivotTable.
+    name: filterHierarchies
+    fullName: filterHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly filterHierarchies: FilterPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchyCollection:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function filter(functionType: Excel.AggregationFunction) {
+              async function main(context: Excel.RequestContext) {
+                  let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+                  let filters = pivotTable.filterHierarchies;
+                  let filter = filters.getItemOrNullObject("Classification");
+                  filter.load();
+                  await context.sync();
+
+                  // add the Classification hierarchy to the filter, if it's not already there
+                  if (filter.isNullObject) {
+                      filters.add(pivotTable.hierarchies.getItem("Classification"));
+                      await context.sync();
+                  }
+              }
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#hierarchies:member'
+    summary: Die Pivot-Hierarchien von PivotTable.
+    name: hierarchies
+    fullName: hierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly hierarchies: PivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchyCollection:interface'
+  - uid: 'excel!Excel.PivotTable#id:member'
+    summary: Die ID der PivotTable.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotTable#layout:member'
+    summary: 'Das PivotLayout-Objekt, das das Layout und die visuelle Struktur von PivotTable beschreibt.'
+    name: layout
+    fullName: layout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly layout: PivotLayout;'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              pivotTable.layout.load("layoutType");
+              await context.sync();
+
+              // cycle between the three layout types
+              if (pivotTable.layout.layoutType === "Compact") {
+                  pivotTable.layout.layoutType = "Outline";
+              } else if (pivotTable.layout.layoutType === "Outline") {
+                  pivotTable.layout.layoutType = "Tabular";
+              } else {
+                  pivotTable.layout.layoutType = "Compact";
+              }
+              await context.sync();
+              console.log("Pivot layout is now " + pivotTable.layout.layoutType);
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTable#name:member'
+    summary: Der Name der PivotTable.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotTable#refresh:member(1)'
+    summary: Aktualisiert die PivotTable.
+    name: refresh()
+    fullName: refresh()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refresh(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.PivotTable#rowHierarchies:member'
+    summary: Die Pivot-Hierarchien der Zeilen von PivotTable.
+    name: rowHierarchies
+    fullName: rowHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rowHierarchies: RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
+  - uid: 'excel!Excel.PivotTable#useCustomSortLists:member'
+    summary: 'Gibt an, ob die PivotTable beim Sortieren benutzerdefinierte Listen verwendet.'
+    name: useCustomSortLists
+    fullName: useCustomSortLists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useCustomSortLists: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotTable#worksheet:member'
+    summary: 'Das Arbeitsblatt, das die aktuelle PivotTable enthält.'
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+references:
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
+    name: RowColumnPivotHierarchyCollection
+    fullName: Excel.RowColumnPivotHierarchyCollection
+  - uid: 'excel!Excel.DataPivotHierarchyCollection:interface'
+    name: DataPivotHierarchyCollection
+    fullName: Excel.DataPivotHierarchyCollection
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection:interface'
+    name: FilterPivotHierarchyCollection
+    fullName: Excel.FilterPivotHierarchyCollection
+  - uid: 'excel!Excel.PivotHierarchyCollection:interface'
+    name: PivotHierarchyCollection
+    fullName: Excel.PivotHierarchyCollection
+  - uid: 'excel!Excel.PivotLayout:interface'
+    name: PivotLayout
+    fullName: Excel.PivotLayout
+  - uid: 'excel!Excel.Worksheet:interface'
+    name: Worksheet
+    fullName: Excel.Worksheet

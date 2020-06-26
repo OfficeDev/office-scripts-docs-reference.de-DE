@@ -1,0 +1,253 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat:interface'
+    summary: Stellt einen bedingten Daten Balkentyp in Excel dar.
+    name: ExcelScript.DataBarConditionalFormat
+    fullName: ExcelScript.DataBarConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisColor:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisFormat:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getBarDirection:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getLowerBoundRule:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getNegativeFormat:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getPositiveFormat:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getShowDataBarOnly:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#getUpperBoundRule:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisColor:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisFormat:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setBarDirection:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setLowerBoundRule:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setShowDataBarOnly:member(1)'
+      - 'ExcelScript!ExcelScript.DataBarConditionalFormat#setUpperBoundRule:member(1)'
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisColor:member(1)'
+    summary: 'HTML-Farbcode, der die Farbe der Achsenlinie, der Form \# RRGGBB (beispielsweise "FFA500") oder als benannte HTML-Farbe (beispielsweise "Orange") darstellt. "" (leere Zeichenfolge), wenn keine Achse vorhanden oder festgelegt ist.'
+    name: getAxisColor()
+    fullName: getAxisColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAxisColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisFormat:member(1)'
+    summary: Darstellung der Bestimmung der Achse für einen Excel-Datenbalken.
+    name: getAxisFormat()
+    fullName: getAxisFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAxisFormat(): ConditionalDataBarAxisFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getBarDirection:member(1)'
+    summary: 'Gibt die Richtung an, auf der die Datenbalken Grafik basieren soll.'
+    name: getBarDirection()
+    fullName: getBarDirection()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBarDirection(): ConditionalDataBarDirection;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarDirection:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getLowerBoundRule:member(1)'
+    summary: 'Die Regel, die bestimmt, was die untere Grenze für einen Datenbalken darstellt (und wie diese ggf. berechnet wird). Das `ConditionalDataBarRule` Objekt muss als JSON-Objekt festgelegt werden (verwenden Sie `x.lowerBoundRule = {...}` anstelle von`x.lowerBoundRule.formula = ...`<!-- -->).'
+    name: getLowerBoundRule()
+    fullName: getLowerBoundRule()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLowerBoundRule(): ConditionalDataBarRule;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getNegativeFormat:member(1)'
+    summary: Darstellung aller Werte Links von der Achse in einem Excel-Datenbalken.
+    name: getNegativeFormat()
+    fullName: getNegativeFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNegativeFormat(): ConditionalDataBarNegativeFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getPositiveFormat:member(1)'
+    summary: Darstellung aller Werte rechts von der Achse in einem Excel-Datenbalken.
+    name: getPositiveFormat()
+    fullName: getPositiveFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPositiveFormat(): ConditionalDataBarPositiveFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getShowDataBarOnly:member(1)'
+    summary: 'Wenn „true“, werden die Werte in den Zellen ausgeblendet, auf die der Datenbalken angewendet wird.'
+    name: getShowDataBarOnly()
+    fullName: getShowDataBarOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowDataBarOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#getUpperBoundRule:member(1)'
+    summary: 'Die Regel, die bestimmt, was die obere Grenze für einen Datenbalken darstellt (und wie diese ggf. berechnet wird). Das `ConditionalDataBarRule` Objekt muss als JSON-Objekt festgelegt werden (verwenden Sie `x.upperBoundRule = {...}` anstelle von`x.upperBoundRule.formula = ...`<!-- -->).'
+    name: getUpperBoundRule()
+    fullName: getUpperBoundRule()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUpperBoundRule(): ConditionalDataBarRule;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisColor:member(1)'
+    summary: 'HTML-Farbcode, der die Farbe der Achsenlinie, der Form \# RRGGBB (beispielsweise "FFA500") oder als benannte HTML-Farbe (beispielsweise "Orange") darstellt. "" (leere Zeichenfolge), wenn keine Achse vorhanden oder festgelegt ist.'
+    name: setAxisColor(axisColor)
+    fullName: setAxisColor(axisColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAxisColor(axisColor: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: axisColor
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisFormat:member(1)'
+    summary: Darstellung der Bestimmung der Achse für einen Excel-Datenbalken.
+    name: setAxisFormat(axisFormat)
+    fullName: setAxisFormat(axisFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAxisFormat(axisFormat: ConditionalDataBarAxisFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: axisFormat
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum'
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setBarDirection:member(1)'
+    summary: 'Gibt die Richtung an, auf der die Datenbalken Grafik basieren soll.'
+    name: setBarDirection(barDirection)
+    fullName: setBarDirection(barDirection)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBarDirection(barDirection: ConditionalDataBarDirection): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: barDirection
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalDataBarDirection:enum'
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setLowerBoundRule:member(1)'
+    summary: 'Die Regel, die bestimmt, was die untere Grenze für einen Datenbalken darstellt (und wie diese ggf. berechnet wird). Das `ConditionalDataBarRule` Objekt muss als JSON-Objekt festgelegt werden (verwenden Sie `x.lowerBoundRule = {...}` anstelle von`x.lowerBoundRule.formula = ...`<!-- -->).'
+    name: setLowerBoundRule(lowerBoundRule)
+    fullName: setLowerBoundRule(lowerBoundRule)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLowerBoundRule(lowerBoundRule: ConditionalDataBarRule): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: lowerBoundRule
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setShowDataBarOnly:member(1)'
+    summary: 'Wenn „true“, werden die Werte in den Zellen ausgeblendet, auf die der Datenbalken angewendet wird.'
+    name: setShowDataBarOnly(showDataBarOnly)
+    fullName: setShowDataBarOnly(showDataBarOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowDataBarOnly(showDataBarOnly: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showDataBarOnly
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat#setUpperBoundRule:member(1)'
+    summary: 'Die Regel, die bestimmt, was die obere Grenze für einen Datenbalken darstellt (und wie diese ggf. berechnet wird). Das `ConditionalDataBarRule` Objekt muss als JSON-Objekt festgelegt werden (verwenden Sie `x.upperBoundRule = {...}` anstelle von`x.upperBoundRule.formula = ...`<!-- -->).'
+    name: setUpperBoundRule(upperBoundRule)
+    fullName: setUpperBoundRule(upperBoundRule)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUpperBoundRule(upperBoundRule: ConditionalDataBarRule): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: upperBoundRule
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarAxisFormat:enum'
+    name: ConditionalDataBarAxisFormat
+    fullName: ExcelScript.ConditionalDataBarAxisFormat
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarDirection:enum'
+    name: ConditionalDataBarDirection
+    fullName: ExcelScript.ConditionalDataBarDirection
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
+    name: ConditionalDataBarRule
+    fullName: ExcelScript.ConditionalDataBarRule
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
+    name: ConditionalDataBarNegativeFormat
+    fullName: ExcelScript.ConditionalDataBarNegativeFormat
+  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface'
+    name: ConditionalDataBarPositiveFormat
+    fullName: ExcelScript.ConditionalDataBarPositiveFormat

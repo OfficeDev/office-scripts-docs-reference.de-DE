@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+    summary: Stellt ein benutzerdefiniertes XML-Part-Objekt in einer Arbeitsmappe dar.
+    name: ExcelScript.CustomXmlPart
+    fullName: ExcelScript.CustomXmlPart
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CustomXmlPart#delete:member(1)'
+      - 'ExcelScript!ExcelScript.CustomXmlPart#getId:member(1)'
+      - 'ExcelScript!ExcelScript.CustomXmlPart#getNamespaceUri:member(1)'
+      - 'ExcelScript!ExcelScript.CustomXmlPart#getXml:member(1)'
+      - 'ExcelScript!ExcelScript.CustomXmlPart#setXml:member(1)'
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart#delete:member(1)'
+    summary: Löscht die benutzerdefinierte XML-Komponente.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart#getId:member(1)'
+    summary: Die ID des benutzerdefinierten XML-Teils.
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart#getNamespaceUri:member(1)'
+    summary: Der Namespace-URI des benutzerdefinierten XML-Teils.
+    name: getNamespaceUri()
+    fullName: getNamespaceUri()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNamespaceUri(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart#getXml:member(1)'
+    summary: Ruft den vollständigen XML-Inhalt der benutzerdefinierten XML-Komponente ab.
+    name: getXml()
+    fullName: getXml()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getXml(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart#setXml:member(1)'
+    summary: Legt den vollständigen XML-Inhalt der benutzerdefinierten XML-Komponente fest.
+    name: setXml(xml)
+    fullName: setXml(xml)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setXml(xml: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: xml
+          description: XML-Inhalt für das Webpart.
+          type:
+            - string

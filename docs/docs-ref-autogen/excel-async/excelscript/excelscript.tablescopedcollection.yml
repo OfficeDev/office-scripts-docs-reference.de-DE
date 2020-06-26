@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableScopedCollection:interface'
+    summary: 'Stellt eine bereichsbezogene Auflistung von Tabellen dar. Für jede Tabelle wird ihre obere linke Ecke als Ankerposition betrachtet, und die Tabellen werden von oben nach unten und dann von links nach rechts sortiert.'
+    name: Excel.TableScopedCollection
+    fullName: Excel.TableScopedCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableScopedCollection#getFirst:member(1)'
+      - 'excel!Excel.TableScopedCollection#getItem:member(1)'
+      - 'excel!Excel.TableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.TableScopedCollection#getFirst:member(1)'
+    summary: 'Ruft die erste Tabelle in der Sammlung ab. Die Tabellen in der Sammlung sind von oben nach unten und von links nach rechts sortiert, so dass die oberste linke Tabelle die erste Tabelle der Sammlung bildet.'
+    name: getFirst()
+    fullName: getFirst()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:interface'
+        description: ''
+  - uid: 'excel!Excel.TableScopedCollection#getItem:member(1)'
+    summary: Ruft eine Tabelle anhand des Namens oder der ID ab.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Name oder ID der abzurufenden Tabelle.
+          type:
+            - string
+  - uid: 'excel!Excel.TableScopedCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Table:interface'
+    name: Table
+    fullName: Excel.Table

@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableColumnCollection:interface'
+    summary: 'Stellt eine Auflistung aller Spalten dar, die Teil der Tabelle sind.'
+    name: Excel.TableColumnCollection
+    fullName: Excel.TableColumnCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableColumnCollection#load:member(1)'
+  - uid: 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft ein Spaltenobjekt nach Name oder ID ab. Wenn die Spalte nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: number | string): TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Spaltenname oder -ID.
+          type:
+            - number | string
+  - uid: 'excel!Excel.TableColumnCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.TableColumn:interface'
+    name: TableColumn
+    fullName: Excel.TableColumn

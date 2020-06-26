@@ -1,0 +1,436 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Slicer:interface'
+    summary: Stellt ein Slicer-Objekt in der Arbeitsmappe dar.
+    name: ExcelScript.Slicer
+    fullName: ExcelScript.Slicer
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Slicer#clearFilters:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#delete:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getCaption:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getHeight:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getId:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getIsFilterCleared:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getLeft:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getName:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getSelectedItems:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getSlicerItems:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getSortBy:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getTop:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getWidth:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#getWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#selectItems:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#setCaption:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#setHeight:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#setLeft:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#setName:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#setSortBy:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#setStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#setTop:member(1)'
+      - 'ExcelScript!ExcelScript.Slicer#setWidth:member(1)'
+  - uid: 'ExcelScript!ExcelScript.Slicer#clearFilters:member(1)'
+    summary: 'Löscht alle Filter, die derzeit für den Datenschnitt verwendet werden.'
+    name: clearFilters()
+    fullName: clearFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#delete:member(1)'
+    summary: Löscht den Datenschnitt.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getCaption:member(1)'
+    summary: Stellt die Beschriftung eines Datenschnitts dar.
+    name: getCaption()
+    fullName: getCaption()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCaption(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getHeight:member(1)'
+    summary: Stellt die Höhe des Datenschnitts in typografischen Punkten dar. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert oder 0 als Eingabe.
+    name: getHeight()
+    fullName: getHeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getId:member(1)'
+    summary: Stellt die eindeutige ID des Datenschnitts dar.
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getIsFilterCleared:member(1)'
+    summary: 'True, wenn alle derzeit auf den Datenschnitt angewendeten Filter gelöscht sind.'
+    name: getIsFilterCleared()
+    fullName: getIsFilterCleared()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsFilterCleared(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getLeft:member(1)'
+    summary: Stellt den Abstand in Punkt von der linken Seite des Datenschnitts zur linken Seite des Arbeitsblatts dar. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert als Eingabe.
+    name: getLeft()
+    fullName: getLeft()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getName:member(1)'
+    summary: Stellt den Namen des Datenschnitts dar.
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getSelectedItems:member(1)'
+    summary: Gibt ein Array mit den Schlüsseln der ausgewählten Elemente zurück.
+    name: getSelectedItems()
+    fullName: getSelectedItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedItems(): string[];'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)'
+    summary: 'Ruft ein Datenschnittelement anhand seines Schlüssels oder Namens ab. Wenn das Datenschnittelement nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getSlicerItem(key)
+    fullName: getSlicerItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicerItem(key: string): SlicerItem | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Slicer#getSlicerItem~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Der Schlüssel oder Name des datenschnitts, der abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Slicer#getSlicerItems:member(1)'
+    summary: 'Stellt die Sammlung von SlicerItems dar, die Teil des Datenschnitts sind.'
+    name: getSlicerItems()
+    fullName: getSlicerItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicerItems(): SlicerItem[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Slicer#getSlicerItems~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getSortBy:member(1)'
+    summary: 'Stellt die Sortierreihenfolge der Elemente im Datenschnitt dar. Mögliche Werte sind: "DataSourceOrder", "Aufsteigend", "absteigend".'
+    name: getSortBy()
+    fullName: getSortBy()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSortBy(): SlicerSortType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.SlicerSortType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getStyle:member(1)'
+    summary: 'Konstanter Wert, der das Format des Datenschnitts darstellt. Mögliche Werte sind: "SlicerStyleLight1" bis "SlicerStyleLight6", "TableStyleOther1" bis "TableStyleOther2", "SlicerStyleDark1" bis "SlicerStyleDark6". Es kann ebenfalls eine in der Arbeitsmappe vorhandene benutzerdefinierte Formatierung angegeben werden.'
+    name: getStyle()
+    fullName: getStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStyle(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getTop:member(1)'
+    summary: Stellt den Abstand in Punkt von der Oberkante des Datenschnitts zur Oberkante des Arbeitsblatts dar. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert als Eingabe.
+    name: getTop()
+    fullName: getTop()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getWidth:member(1)'
+    summary: Die Breite des Datenschnitts in Punkten. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert oder 0 als Eingabe.
+    name: getWidth()
+    fullName: getWidth()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#getWorksheet:member(1)'
+    summary: 'Stellt das Arbeitsblatt dar, das den Datenschnitt enthält.'
+    name: getWorksheet()
+    fullName: getWorksheet()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWorksheet(): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Slicer#selectItems:member(1)'
+    summary: 'Wählt datenschnitt Elemente basierend auf ihren Schlüsseln aus. Die vorherige Auswahl wird gelöscht. Alle Elemente werden standardmäßig ausgewählt, wenn das Array leer ist.'
+    name: selectItems(items)
+    fullName: selectItems(items)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'selectItems(items?: string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: items
+          description: 'Optional. Die angegebenen datenschnitt Elementnamen, die ausgewählt werden sollen.'
+          type:
+            - 'string[]'
+  - uid: 'ExcelScript!ExcelScript.Slicer#setCaption:member(1)'
+    summary: Stellt die Beschriftung eines Datenschnitts dar.
+    name: setCaption(caption)
+    fullName: setCaption(caption)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCaption(caption: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: caption
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Slicer#setHeight:member(1)'
+    summary: Stellt die Höhe des Datenschnitts in typografischen Punkten dar. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert oder 0 als Eingabe.
+    name: setHeight(height)
+    fullName: setHeight(height)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setHeight(height: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: height
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Slicer#setLeft:member(1)'
+    summary: Stellt den Abstand in Punkt von der linken Seite des Datenschnitts zur linken Seite des Arbeitsblatts dar. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert als Eingabe.
+    name: setLeft(left)
+    fullName: setLeft(left)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLeft(left: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: left
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Slicer#setName:member(1)'
+    summary: Stellt den Namen des Datenschnitts dar.
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Slicer#setSortBy:member(1)'
+    summary: 'Stellt die Sortierreihenfolge der Elemente im Datenschnitt dar. Mögliche Werte sind: "DataSourceOrder", "Aufsteigend", "absteigend".'
+    name: setSortBy(sortBy)
+    fullName: setSortBy(sortBy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSortBy(sortBy: SlicerSortType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.SlicerSortType:enum'
+  - uid: 'ExcelScript!ExcelScript.Slicer#setStyle:member(1)'
+    summary: 'Konstanter Wert, der das Format des Datenschnitts darstellt. Mögliche Werte sind: "SlicerStyleLight1" bis "SlicerStyleLight6", "TableStyleOther1" bis "TableStyleOther2", "SlicerStyleDark1" bis "SlicerStyleDark6". Es kann ebenfalls eine in der Arbeitsmappe vorhandene benutzerdefinierte Formatierung angegeben werden.'
+    name: setStyle(style)
+    fullName: setStyle(style)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStyle(style: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: style
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Slicer#setTop:member(1)'
+    summary: Stellt den Abstand in Punkt von der Oberkante des Datenschnitts zur Oberkante des Arbeitsblatts dar. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert als Eingabe.
+    name: setTop(top)
+    fullName: setTop(top)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTop(top: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: top
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Slicer#setWidth:member(1)'
+    summary: Die Breite des Datenschnitts in Punkten. Löst ein "das Argument ist ungültig oder fehlt oder hat ein falsches Format." Ausnahme bei Festlegung mit negativem Wert oder 0 als Eingabe.
+    name: setWidth(width)
+    fullName: setWidth(width)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWidth(width: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: width
+          description: ''
+          type:
+            - number
+references:
+  - uid: 'ExcelScript!ExcelScript.Slicer#getSlicerItem~0:complex'
+    name: SlicerItem | undefined
+    fullName: ExcelScript.SlicerItem | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
+        name: SlicerItem
+        fullName: ExcelScript.SlicerItem
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Slicer#getSlicerItems~0:complex'
+    name: 'SlicerItem[]'
+    fullName: 'ExcelScript.SlicerItem[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
+        name: SlicerItem
+        fullName: ExcelScript.SlicerItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType:enum'
+    name: SlicerSortType
+    fullName: ExcelScript.SlicerSortType
+  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+    name: Worksheet
+    fullName: ExcelScript.Worksheet

@@ -1,0 +1,1173 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxis:interface'
+    summary: Stellt eine einzelne Achse in einem Diagramm dar.
+    name: ExcelScript.ChartAxis
+    fullName: ExcelScript.ChartAxis
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getBaseTimeUnit:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getTitle:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getTop:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getType:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setCategoryNames:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setCustomDisplayUnit:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)'
+    summary: Gibt die Ausrichtung für die angegebene Achsen Teilstrichbeschriftung an. Ausführliche Informationen finden Sie unter Excel. ChartTextHorizontalAlignment.
+    name: getAlignment()
+    fullName: getAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAlignment(): ChartTickLabelAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)'
+    summary: Gibt die Gruppe für die angegebene Achse an. Weitere Informationen finden Sie unter Excel. ChartAxisGroup.
+    name: getAxisGroup()
+    fullName: getAxisGroup()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAxisGroup(): ChartAxisGroup;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getBaseTimeUnit:member(1)'
+    summary: Gibt die Basiseinheit für die angegebene Rubrikenachse an.
+    name: getBaseTimeUnit()
+    fullName: getBaseTimeUnit()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBaseTimeUnit(): ChartAxisTimeUnit;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)'
+    summary: Gibt den Typ der Rubrikenachse an.
+    name: getCategoryType()
+    fullName: getCategoryType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCategoryType(): ChartAxisCategoryType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)'
+    summary: Gibt den Wert der benutzerdefinierten Achsenanzeige Einheit an. Verwenden Sie zum Festlegen dieser Eigenschaft die SetCustomDisplayUnit(double)-Methode.
+    name: getCustomDisplayUnit()
+    fullName: getCustomDisplayUnit()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomDisplayUnit(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)'
+    summary: Die Anzeigeeinheit für die Achse. Weitere Informationen finden Sie unter Excel. ChartAxisDisplayUnit.
+    name: getDisplayUnit()
+    fullName: getDisplayUnit()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDisplayUnit(): ChartAxisDisplayUnit;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getFormat:member(1)'
+    summary: 'Stellt die Formatierung für ein Diagrammobjekt dar, einschließlich Linien- und Schriftartformatierung.'
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ChartAxisFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)'
+    summary: 'Gibt die Höhe der Diagrammachse in Punkten an. NULL, wenn die Achse nicht sichtbar ist.'
+    name: getHeight()
+    fullName: getHeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)'
+    summary: 'Gibt an, ob die Größenachse die Rubrikenachse zwischen den Kategorien kreuzt.'
+    name: getIsBetweenCategories()
+    fullName: getIsBetweenCategories()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsBetweenCategories(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)'
+    summary: 'Gibt den Abstand zwischen dem linken Rand der Achse und der linken Seite des Diagrammbereichs in Punkten an. NULL, wenn die Achse nicht sichtbar ist.'
+    name: getLeft()
+    fullName: getLeft()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)'
+    summary: 'Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist. Wenn wahr, ändert sich das Zahlenformat in den Bezeichnungen, wenn es sich in den Zellen ändert.'
+    name: getLinkNumberFormat()
+    fullName: getLinkNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLinkNumberFormat(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)'
+    summary: 'Gibt die Basis des Logarithmus an, wenn Logarithmische Skalen verwendet werden.'
+    name: getLogBase()
+    fullName: getLogBase()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLogBase(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)'
+    summary: 'Gibt ein Gitternetzlinien-Objekt zurück, das die Hauptgitternetzlinien für die angegebene Achse darstellt.'
+    name: getMajorGridlines()
+    fullName: getMajorGridlines()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMajorGridlines(): ChartGridlines;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartGridlines:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)'
+    summary: Gibt den Typ der Haupt Teilstrich Markierung für die angegebene Achse an. Weitere Informationen finden Sie unter Excel. ChartAxisTickMark.
+    name: getMajorTickMark()
+    fullName: getMajorTickMark()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMajorTickMark(): ChartAxisTickMark;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)'
+    summary: 'Gibt den Haupt Wert der Skalen Einheit für die Rubrikenachse an, wenn die kategorietype-Eigenschaft auf Zeitskala festgelegt ist.'
+    name: getMajorTimeUnitScale()
+    fullName: getMajorTimeUnitScale()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMajorTimeUnitScale(): ChartAxisTimeUnit;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)'
+    summary: Stellt das Intervall zwischen zwei Hauptteilstrichen dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden. Der zurückgegebene Wert ist immer eine Zahl.
+    name: getMajorUnit()
+    fullName: getMajorUnit()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMajorUnit(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)'
+    summary: Stellt den Maximalwert auf der Größenachse dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden (für automatische Achsenwerte). Der zurückgegebene Wert ist immer eine Zahl.
+    name: getMaximum()
+    fullName: getMaximum()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMaximum(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)'
+    summary: Stellt den Mindestwert auf der Größenachse dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden (für automatische Achsenwerte). Der zurückgegebene Wert ist immer eine Zahl.
+    name: getMinimum()
+    fullName: getMinimum()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMinimum(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)'
+    summary: 'Gibt ein Gitternetzlinien-Objekt zurück, das die Hilfsgitternetzlinien für die angegebene Achse darstellt.'
+    name: getMinorGridlines()
+    fullName: getMinorGridlines()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMinorGridlines(): ChartGridlines;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartGridlines:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)'
+    summary: Gibt den Typ der geringfügigen Teilstrich Markierung für die angegebene Achse an. Weitere Informationen finden Sie unter Excel. ChartAxisTickMark.
+    name: getMinorTickMark()
+    fullName: getMinorTickMark()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMinorTickMark(): ChartAxisTickMark;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)'
+    summary: 'Gibt den kleineren Einheiten Skalierungswert für die Rubrikenachse an, wenn die kategorietype-Eigenschaft auf Zeitskala festgelegt ist.'
+    name: getMinorTimeUnitScale()
+    fullName: getMinorTimeUnitScale()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMinorTimeUnitScale(): ChartAxisTimeUnit;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)'
+    summary: Stellt das Intervall zwischen zwei Hilfsteilstrichen dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden (für automatische Achsenwerte). Der zurückgegebene Wert ist immer eine Zahl.
+    name: getMinorUnit()
+    fullName: getMinorUnit()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMinorUnit(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)'
+    summary: 'Gibt an, ob eine Achse mehrstufig ist.'
+    name: getMultiLevel()
+    fullName: getMultiLevel()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMultiLevel(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)'
+    summary: Gibt den Formatcode für die Achsen Teilstrichbeschriftung an.
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)'
+    summary: Gibt den Abstand zwischen den Beschriftungsebenen und den Abstand zwischen der ersten Ebene und der Achsenlinie an. Der Wert sollte eine ganze Zahl zwischen 0 und 1000 sein.
+    name: getOffset()
+    fullName: getOffset()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOffset(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)'
+    summary: 'Gibt die angegebene Achsenposition an, an der sich die andere Achse kreuzt. Weitere Informationen finden Sie unter Excel. ChartAxisPosition.'
+    name: getPosition()
+    fullName: getPosition()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPosition(): ChartAxisPosition;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisPosition:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)'
+    summary: 'Gibt die angegebene Achsenposition an, an der sich die andere Achse kreuzt. Sie sollten die SetPositionAt(double)-Methode verwenden, um diese Eigenschaft festzulegen.'
+    name: getPositionAt()
+    fullName: getPositionAt()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPositionAt(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)'
+    summary: 'Gibt an, ob Excel Datenpunkte vom letzten bis zum ersten Diagramm zeichnet.'
+    name: getReversePlotOrder()
+    fullName: getReversePlotOrder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReversePlotOrder(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)'
+    summary: Gibt den Skalierungs der Größenachse an. Weitere Informationen finden Sie unter Excel. ChartAxisScaleType.
+    name: getScaleType()
+    fullName: getScaleType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getScaleType(): ChartAxisScaleType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisScaleType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)'
+    summary: 'Gibt an, ob die Achsenanzeige Einheitenbezeichnung sichtbar ist.'
+    name: getShowDisplayUnitLabel()
+    fullName: getShowDisplayUnitLabel()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowDisplayUnitLabel(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)'
+    summary: 'Gibt den Winkel an, an dem der Text für die Teilstrichbeschriftung der Diagrammachse ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von-90 bis 90 oder die ganze Zahl 180 für vertikal orientierten Text sein.'
+    name: getTextOrientation()
+    fullName: getTextOrientation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
+    summary: Gibt die Position der Teilstrichbeschriftungen der angegebenen Achse an. Weitere Informationen finden Sie unter Excel. ChartAxisTickLabelPosition.
+    name: getTickLabelPosition()
+    fullName: getTickLabelPosition()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTickLabelPosition(): ChartAxisTickLabelPosition;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
+    summary: 'Gibt die Anzahl von Kategorien oder Datenreihen zwischen Teilstrichbeschriftungen an. Kann ein Wert zwischen 1 und 31999 oder eine leere Zeichenfolge sein, wenn automatisch festgelegt. Der zurückgegebene Wert ist immer eine Zahl.'
+    name: getTickLabelSpacing()
+    fullName: getTickLabelSpacing()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTickLabelSpacing(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)'
+    summary: Gibt die Anzahl von Kategorien oder Datenreihen zwischen Teilstrichen an.
+    name: getTickMarkSpacing()
+    fullName: getTickMarkSpacing()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTickMarkSpacing(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTitle:member(1)'
+    summary: Stellt den Achsentitel dar.
+    name: getTitle()
+    fullName: getTitle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTitle(): ChartAxisTitle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisTitle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTop:member(1)'
+    summary: 'Gibt den Abstand zwischen dem oberen Rand der Achse und dem oberen Rand des Diagrammbereichs in Punkten an. NULL, wenn die Achse nicht sichtbar ist.'
+    name: getTop()
+    fullName: getTop()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getType:member(1)'
+    summary: Gibt den Achsentyp an. Weitere Informationen finden Sie unter Excel. ChartAxisType.
+    name: getType()
+    fullName: getType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getType(): ChartAxisType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)'
+    summary: 'Gibt an, ob die Achse sichtbar ist.'
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)'
+    summary: 'Gibt die Breite der Diagrammachse in Punkten an. NULL, wenn die Achse nicht sichtbar ist.'
+    name: getWidth()
+    fullName: getWidth()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)'
+    summary: Gibt die Ausrichtung für die angegebene Achsen Teilstrichbeschriftung an. Ausführliche Informationen finden Sie unter Excel. ChartTextHorizontalAlignment.
+    name: setAlignment(alignment)
+    fullName: setAlignment(alignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAlignment(alignment: ChartTickLabelAlignment): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: alignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)'
+    summary: Gibt die Basiseinheit für die angegebene Rubrikenachse an.
+    name: setBaseTimeUnit(baseTimeUnit)
+    fullName: setBaseTimeUnit(baseTimeUnit)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBaseTimeUnit(baseTimeUnit: ChartAxisTimeUnit): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: baseTimeUnit
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setCategoryNames:member(1)'
+    summary: Legt alle Kategorienamen für die angegebene Achse fest.
+    name: setCategoryNames(sourceData)
+    fullName: setCategoryNames(sourceData)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCategoryNames(sourceData: Range): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceData
+          description: Das den Quelldaten entsprechende Range-Objekt.
+          type:
+            - 'ExcelScript!ExcelScript.Range:interface'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)'
+    summary: Gibt den Typ der Rubrikenachse an.
+    name: setCategoryType(categoryType)
+    fullName: setCategoryType(categoryType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCategoryType(categoryType: ChartAxisCategoryType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: categoryType
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setCustomDisplayUnit:member(1)'
+    summary: Legt für die Anzeigeeinheit der Achse einen benutzerdefinierten Wert fest.
+    name: setCustomDisplayUnit(value)
+    fullName: setCustomDisplayUnit(value)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCustomDisplayUnit(value: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: Benutzerdefinierter Wert der Anzeigeeinheit.
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)'
+    summary: Die Anzeigeeinheit für die Achse. Weitere Informationen finden Sie unter Excel. ChartAxisDisplayUnit.
+    name: setDisplayUnit(displayUnit)
+    fullName: setDisplayUnit(displayUnit)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDisplayUnit(displayUnit: ChartAxisDisplayUnit): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: displayUnit
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)'
+    summary: 'Gibt an, ob die Größenachse die Rubrikenachse zwischen den Kategorien kreuzt.'
+    name: setIsBetweenCategories(isBetweenCategories)
+    fullName: setIsBetweenCategories(isBetweenCategories)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIsBetweenCategories(isBetweenCategories: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: isBetweenCategories
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)'
+    summary: 'Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist. Wenn wahr, ändert sich das Zahlenformat in den Bezeichnungen, wenn es sich in den Zellen ändert.'
+    name: setLinkNumberFormat(linkNumberFormat)
+    fullName: setLinkNumberFormat(linkNumberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: linkNumberFormat
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)'
+    summary: 'Gibt die Basis des Logarithmus an, wenn Logarithmische Skalen verwendet werden.'
+    name: setLogBase(logBase)
+    fullName: setLogBase(logBase)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLogBase(logBase: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: logBase
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
+    summary: Gibt den Typ der Haupt Teilstrich Markierung für die angegebene Achse an. Weitere Informationen finden Sie unter Excel. ChartAxisTickMark.
+    name: setMajorTickMark(majorTickMark)
+    fullName: setMajorTickMark(majorTickMark)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMajorTickMark(majorTickMark: ChartAxisTickMark): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: majorTickMark
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)'
+    summary: 'Gibt den Haupt Wert der Skalen Einheit für die Rubrikenachse an, wenn die kategorietype-Eigenschaft auf Zeitskala festgelegt ist.'
+    name: setMajorTimeUnitScale(majorTimeUnitScale)
+    fullName: setMajorTimeUnitScale(majorTimeUnitScale)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMajorTimeUnitScale(majorTimeUnitScale: ChartAxisTimeUnit): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: majorTimeUnitScale
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)'
+    summary: Stellt das Intervall zwischen zwei Hauptteilstrichen dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden. Der zurückgegebene Wert ist immer eine Zahl.
+    name: setMajorUnit(majorUnit)
+    fullName: setMajorUnit(majorUnit)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMajorUnit(majorUnit: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: majorUnit
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)'
+    summary: Stellt den Maximalwert auf der Größenachse dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden (für automatische Achsenwerte). Der zurückgegebene Wert ist immer eine Zahl.
+    name: setMaximum(maximum)
+    fullName: setMaximum(maximum)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMaximum(maximum: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: maximum
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)'
+    summary: Stellt den Mindestwert auf der Größenachse dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden (für automatische Achsenwerte). Der zurückgegebene Wert ist immer eine Zahl.
+    name: setMinimum(minimum)
+    fullName: setMinimum(minimum)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMinimum(minimum: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: minimum
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
+    summary: Gibt den Typ der geringfügigen Teilstrich Markierung für die angegebene Achse an. Weitere Informationen finden Sie unter Excel. ChartAxisTickMark.
+    name: setMinorTickMark(minorTickMark)
+    fullName: setMinorTickMark(minorTickMark)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMinorTickMark(minorTickMark: ChartAxisTickMark): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: minorTickMark
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)'
+    summary: 'Gibt den kleineren Einheiten Skalierungswert für die Rubrikenachse an, wenn die kategorietype-Eigenschaft auf Zeitskala festgelegt ist.'
+    name: setMinorTimeUnitScale(minorTimeUnitScale)
+    fullName: setMinorTimeUnitScale(minorTimeUnitScale)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMinorTimeUnitScale(minorTimeUnitScale: ChartAxisTimeUnit): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: minorTimeUnitScale
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)'
+    summary: Stellt das Intervall zwischen zwei Hilfsteilstrichen dar. Kann auf einen numerischen Wert oder eine leere Zeichenfolge festgelegt werden (für automatische Achsenwerte). Der zurückgegebene Wert ist immer eine Zahl.
+    name: setMinorUnit(minorUnit)
+    fullName: setMinorUnit(minorUnit)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMinorUnit(minorUnit: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: minorUnit
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)'
+    summary: 'Gibt an, ob eine Achse mehrstufig ist.'
+    name: setMultiLevel(multiLevel)
+    fullName: setMultiLevel(multiLevel)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMultiLevel(multiLevel: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: multiLevel
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)'
+    summary: Gibt den Formatcode für die Achsen Teilstrichbeschriftung an.
+    name: setNumberFormat(numberFormat)
+    fullName: setNumberFormat(numberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormat
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)'
+    summary: Gibt den Abstand zwischen den Beschriftungsebenen und den Abstand zwischen der ersten Ebene und der Achsenlinie an. Der Wert sollte eine ganze Zahl zwischen 0 und 1000 sein.
+    name: setOffset(offset)
+    fullName: setOffset(offset)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setOffset(offset: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: offset
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)'
+    summary: 'Gibt die angegebene Achsenposition an, an der sich die andere Achse kreuzt. Weitere Informationen finden Sie unter Excel. ChartAxisPosition.'
+    name: setPosition(position)
+    fullName: setPosition(position)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPosition(position: ChartAxisPosition): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: position
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisPosition:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)'
+    summary: 'Legt die angegebene Achsenposition fest, an der sich die andere Achse kreuzt.'
+    name: setPositionAt(value)
+    fullName: setPositionAt(value)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPositionAt(value: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: Benutzerdefinierter Wert der Kreuzungen bei
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)'
+    summary: 'Gibt an, ob Excel Datenpunkte vom letzten bis zum ersten Diagramm zeichnet.'
+    name: setReversePlotOrder(reversePlotOrder)
+    fullName: setReversePlotOrder(reversePlotOrder)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setReversePlotOrder(reversePlotOrder: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: reversePlotOrder
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)'
+    summary: Gibt den Skalierungs der Größenachse an. Weitere Informationen finden Sie unter Excel. ChartAxisScaleType.
+    name: setScaleType(scaleType)
+    fullName: setScaleType(scaleType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setScaleType(scaleType: ChartAxisScaleType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleType
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisScaleType:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)'
+    summary: 'Gibt an, ob die Achsenanzeige Einheitenbezeichnung sichtbar ist.'
+    name: setShowDisplayUnitLabel(showDisplayUnitLabel)
+    fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowDisplayUnitLabel(showDisplayUnitLabel: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showDisplayUnitLabel
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)'
+    summary: 'Gibt den Winkel an, an dem der Text für die Teilstrichbeschriftung der Diagrammachse ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von-90 bis 90 oder die ganze Zahl 180 für vertikal orientierten Text sein.'
+    name: setTextOrientation(textOrientation)
+    fullName: setTextOrientation(textOrientation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: textOrientation
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
+    summary: Gibt die Position der Teilstrichbeschriftungen der angegebenen Achse an. Weitere Informationen finden Sie unter Excel. ChartAxisTickLabelPosition.
+    name: setTickLabelPosition(tickLabelPosition)
+    fullName: setTickLabelPosition(tickLabelPosition)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setTickLabelPosition(
+                    tickLabelPosition: ChartAxisTickLabelPosition
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tickLabelPosition
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
+    summary: 'Gibt die Anzahl von Kategorien oder Datenreihen zwischen Teilstrichbeschriftungen an. Kann ein Wert zwischen 1 und 31999 oder eine leere Zeichenfolge sein, wenn automatisch festgelegt. Der zurückgegebene Wert ist immer eine Zahl.'
+    name: setTickLabelSpacing(tickLabelSpacing)
+    fullName: setTickLabelSpacing(tickLabelSpacing)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTickLabelSpacing(tickLabelSpacing: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tickLabelSpacing
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
+    summary: Gibt die Anzahl von Kategorien oder Datenreihen zwischen Teilstrichen an.
+    name: setTickMarkSpacing(tickMarkSpacing)
+    fullName: setTickMarkSpacing(tickMarkSpacing)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTickMarkSpacing(tickMarkSpacing: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tickMarkSpacing
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)'
+    summary: 'Gibt an, ob die Achse sichtbar ist.'
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
+    name: ChartTickLabelAlignment
+    fullName: ExcelScript.ChartTickLabelAlignment
+  - uid: 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
+    name: ChartAxisGroup
+    fullName: ExcelScript.ChartAxisGroup
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
+    name: ChartAxisTimeUnit
+    fullName: ExcelScript.ChartAxisTimeUnit
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
+    name: ChartAxisCategoryType
+    fullName: ExcelScript.ChartAxisCategoryType
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
+    name: ChartAxisDisplayUnit
+    fullName: ExcelScript.ChartAxisDisplayUnit
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat:interface'
+    name: ChartAxisFormat
+    fullName: ExcelScript.ChartAxisFormat
+  - uid: 'ExcelScript!ExcelScript.ChartGridlines:interface'
+    name: ChartGridlines
+    fullName: ExcelScript.ChartGridlines
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
+    name: ChartAxisTickMark
+    fullName: ExcelScript.ChartAxisTickMark
+  - uid: 'ExcelScript!ExcelScript.ChartAxisPosition:enum'
+    name: ChartAxisPosition
+    fullName: ExcelScript.ChartAxisPosition
+  - uid: 'ExcelScript!ExcelScript.ChartAxisScaleType:enum'
+    name: ChartAxisScaleType
+    fullName: ExcelScript.ChartAxisScaleType
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
+    name: ChartAxisTickLabelPosition
+    fullName: ExcelScript.ChartAxisTickLabelPosition
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle:interface'
+    name: ChartAxisTitle
+    fullName: ExcelScript.ChartAxisTitle
+  - uid: 'ExcelScript!ExcelScript.ChartAxisType:enum'
+    name: ChartAxisType
+    fullName: ExcelScript.ChartAxisType
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range

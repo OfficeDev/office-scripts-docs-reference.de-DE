@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
+    summary: Gibt den vertikalen Überlauf für den Textrahmen in einem Shape an.
+    name: ExcelScript.ShapeTextVerticalOverflow
+    fullName: ExcelScript.ShapeTextVerticalOverflow
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+    summary: 'Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet.'
+    name: clip
+    fullName: clip
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+    summary: 'Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet, und ein Auslassungszeichen (...) wird am Ende des sichtbaren Texts angezeigt.'
+    name: ellipsis
+    fullName: ellipsis
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+    summary: 'Vertikalen Überlauf von Text über den Textrahmen zulassen (kann oben, unten oder an beiden Enden abhängig von der Textausrichtung auftreten).'
+    name: overflow
+    fullName: overflow
+    langs:
+      - typeScript
+    type: field

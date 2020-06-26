@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisFormat:interface'
+    summary: Kapselt die Formateigenschaften für die Diagrammachse.
+    name: Excel.ChartAxisFormat
+    fullName: Excel.ChartAxisFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxisFormat#fill:member'
+      - 'excel!Excel.ChartAxisFormat#font:member'
+      - 'excel!Excel.ChartAxisFormat#line:member'
+      - 'excel!Excel.ChartAxisFormat#load:member(1)'
+  - uid: 'excel!Excel.ChartAxisFormat#fill:member'
+    summary: Gibt die Formatierung der Diagramm Füllung an.
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:interface'
+  - uid: 'excel!Excel.ChartAxisFormat#font:member'
+    summary: 'Gibt die Schriftattribute (Schriftartname, Schriftgrad, Farbe usw.) für ein Diagrammachsen Element an.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartAxisFormat#line:member'
+    summary: Gibt die Formatierung von Diagramm Leitungen an.
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly line: ChartLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat:interface'
+  - uid: 'excel!Excel.ChartAxisFormat#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartFill:interface'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont
+  - uid: 'excel!Excel.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: Excel.ChartLineFormat
