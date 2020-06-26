@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableStyle:interface'
+    summary: 'Stellt einen TableStyle dar, der die Formatvorlagenelemente nach Region der Tabelle definiert.'
+    name: Excel.TableStyle
+    fullName: Excel.TableStyle
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableStyle#delete:member(1)'
+      - 'excel!Excel.TableStyle#duplicate:member(1)'
+      - 'excel!Excel.TableStyle#load:member(1)'
+      - 'excel!Excel.TableStyle#name:member'
+      - 'excel!Excel.TableStyle#readOnly:member'
+  - uid: 'excel!Excel.TableStyle#delete:member(1)'
+    summary: Löscht den TableStyle.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.TableStyle#duplicate:member(1)'
+    summary: Erstellt ein Duplikat dieses TableStyle mit Kopien aller Elemente der Formatvorlage.
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.TableStyle#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableStyle#name:member'
+    summary: Ruft den Namen des TableStyle ab.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.TableStyle#readOnly:member'
+    summary: 'Gibt an, ob dieses TableStyle-Objekt schreibgeschützt ist.'
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.TableStyle:interface'
+    name: TableStyle
+    fullName: Excel.TableStyle

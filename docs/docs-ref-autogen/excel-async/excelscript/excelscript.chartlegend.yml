@@ -1,0 +1,170 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLegend:interface'
+    summary: Stellt die Legende in einem Diagramm dar.
+    name: Excel.ChartLegend
+    fullName: Excel.ChartLegend
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLegend#format:member'
+      - 'excel!Excel.ChartLegend#height:member'
+      - 'excel!Excel.ChartLegend#left:member'
+      - 'excel!Excel.ChartLegend#legendEntries:member'
+      - 'excel!Excel.ChartLegend#load:member(1)'
+      - 'excel!Excel.ChartLegend#overlay:member'
+      - 'excel!Excel.ChartLegend#position:member'
+      - 'excel!Excel.ChartLegend#showShadow:member'
+      - 'excel!Excel.ChartLegend#top:member'
+      - 'excel!Excel.ChartLegend#visible:member'
+      - 'excel!Excel.ChartLegend#width:member'
+  - uid: 'excel!Excel.ChartLegend#format:member'
+    summary: 'Stellt die Formatierung für eine Diagrammlegende dar, einschließlich Füllung und Schriftartformatierung.'
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartLegendFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendFormat:interface'
+  - uid: 'excel!Excel.ChartLegend#height:member'
+    summary: 'Gibt die Höhe der Legende im Diagramm in Punkt an. NULL, wenn Legende nicht sichtbar ist.'
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegend#left:member'
+    summary: 'Gibt die linke (in Punkt) der Legende im Diagramm an. NULL, wenn Legende nicht sichtbar ist.'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegend#legendEntries:member'
+    summary: Stellt eine Sammlung von LegendEntries in der Legende dar.
+    name: legendEntries
+    fullName: legendEntries
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly legendEntries: ChartLegendEntryCollection;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendEntryCollection:interface'
+  - uid: 'excel!Excel.ChartLegend#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartLegend#overlay:member'
+    summary: 'Gibt an, ob sich die Diagrammlegende mit dem Haupttextkörper des Diagramms überlappen soll.'
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartLegend#position:member'
+    summary: Gibt die Position der Legende im Diagramm an. Weitere Informationen finden Sie unter Excel. ChartLegendPosition.
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: ChartLegendPosition;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendPosition:enum'
+  - uid: 'excel!Excel.ChartLegend#showShadow:member'
+    summary: 'Gibt an, ob die Legende einen Schatten im Diagramm aufweist.'
+    name: showShadow
+    fullName: showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartLegend#top:member'
+    summary: Gibt den oberen Rand einer Diagrammlegende an.
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegend#visible:member'
+    summary: 'Gibt an, ob die Chart Legend sichtbar ist.'
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartLegend#width:member'
+    summary: 'Gibt die Breite der Legende im Diagramm in Punkten an. NULL, wenn Legende nicht sichtbar ist.'
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartLegendFormat:interface'
+    name: ChartLegendFormat
+    fullName: Excel.ChartLegendFormat
+  - uid: 'excel!Excel.ChartLegendEntryCollection:interface'
+    name: ChartLegendEntryCollection
+    fullName: Excel.ChartLegendEntryCollection
+  - uid: 'excel!Excel.ChartLegendPosition:enum'
+    name: ChartLegendPosition
+    fullName: Excel.ChartLegendPosition

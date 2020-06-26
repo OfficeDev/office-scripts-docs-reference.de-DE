@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+    summary: Die Formatvorlage für eine Textreihe.
+    name: ExcelScript.ShapeLineStyle
+    fullName: ExcelScript.ShapeLineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeLineStyle.single:member'
+      - 'ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
+      - 'ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member'
+      - 'ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member'
+      - 'ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.single:member'
+    summary: Einfache Linie
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
+    summary: Dicke Linie mit einer dünnen Linie auf jeder Seite.
+    name: thickBetweenThin
+    fullName: thickBetweenThin
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member'
+    summary: Dicke Linie neben dünner Linie. Bei horizontalen Linien befindet sich die Dicke Linie oberhalb der dünnen Linie. Bei vertikalen Linien befindet sich die Dicke Linie links von der dünnen Linie.
+    name: thickThin
+    fullName: thickThin
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member'
+    summary: Dicke Linie neben dünner Linie. Bei horizontalen Linien befindet sich die Dicke Linie unter der dünnen Linie. Bei vertikalen Linien befindet sich die Dicke Linie rechts von der dünnen Linie.
+    name: thinThick
+    fullName: thinThick
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member'
+    summary: Zwei dünne Linien.
+    name: thinThin
+    fullName: thinThin
+    langs:
+      - typeScript
+    type: field

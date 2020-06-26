@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    summary: Die Füllung für ein Diagrammelement.
+    name: ExcelScript.ChartFill
+    fullName: ExcelScript.ChartFill
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
+    summary: Entfernen der Füllfarbe eines Diagrammelements
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
+    summary: Legt die Füllung eines Diagrammelements auf einfarbige Füllung fest.
+    name: setSolidColor(color)
+    fullName: setSolidColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: 'HTML-Farbcode, der die Hintergrundfarbe des Formulars \# RRGGBB (z.b. "FFA500") oder als benannte HTML-Farbe (beispielsweise "Orange") darstellt.'
+          type:
+            - string

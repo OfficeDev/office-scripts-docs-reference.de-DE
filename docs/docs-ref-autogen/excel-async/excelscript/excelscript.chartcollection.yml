@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartCollection:interface'
+    summary: Eine Sammlung aller Diagrammobjekte in einem Arbeitsblatt.
+    name: Excel.ChartCollection
+    fullName: Excel.ChartCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.ChartCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartCollection#add:member(1)'
+    summary: Erstellt ein neues Diagramm.
+    name: 'add(type, sourceData, seriesBy)'
+    fullName: 'add(type, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    type: ChartType,
+                    sourceData: Range,
+                    seriesBy?: ChartSeriesBy
+                ): Chart;
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: Stellt die Art des Diagramms dar. Weitere Informationen finden Sie unter Excel. ChartType.
+          type:
+            - 'excel!Excel.ChartType:enum'
+        - id: sourceData
+          description: Das den Quelldaten entsprechende Range-Objekt.
+          type:
+            - 'excel!Excel.Range:interface'
+        - id: seriesBy
+          description: 'Optional. Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden. Weitere Informationen finden Sie unter Excel. ChartSeriesBy.'
+          type:
+            - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft ein Diagramm über seinen Namen ab. Wenn mehrere Diagramme mit demselben Namen vorhanden sind, wird das erste zurückgegeben. Wenn das Diagramm nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Der Name des abzurufenden Diagramms.
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Chart:interface'
+    name: Chart
+    fullName: Excel.Chart
+  - uid: 'excel!Excel.ChartType:enum'
+    name: ChartType
+    fullName: Excel.ChartType
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.ChartSeriesBy:enum'
+    name: ChartSeriesBy
+    fullName: Excel.ChartSeriesBy

@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableStyleCollection:interface'
+    summary: Stellt eine Auflistung von TableStyles dar.
+    name: Excel.TableStyleCollection
+    fullName: Excel.TableStyleCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableStyleCollection#add:member(1)'
+      - 'excel!Excel.TableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableStyleCollection#load:member(1)'
+      - 'excel!Excel.TableStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.TableStyleCollection#add:member(1)'
+    summary: Erstellt einen leeren TableStyle mit dem angegebenen Namen.
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Der eindeutige Name für den neuen TableStyle. Eine ungültige Argumentausnahme wird ausgelöst, wenn der Name bereits verwendet wird.'
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Optional, standardmäßig auf false festgelegt. Wenn true, werden Zahlen an den Namen angefügt, um ihn eindeutig zu machen, falls erforderlich.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.TableStyleCollection#getDefault:member(1)'
+    summary: Ruft den Standard-TableStyle für den Bereich des übergeordneten Objekts ab.
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft einen TableStyle anhand des Namens ab. Wenn der TableStyle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Name des TableStyles, der abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'excel!Excel.TableStyleCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableStyleCollection#setDefault:member(1)'
+    summary: Legt den Standard-TableStyle für die Verwendung im Bereich des übergeordneten Objekts fest.
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: TableStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 'Das TableStyle-Objekt oder der Name des TableStyle-Objekts, das als neuer Standardwert verwendet werden soll.'
+          type:
+            - 'excel!Excel.TableStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.TableStyle:interface'
+    name: TableStyle
+    fullName: Excel.TableStyle
+  - uid: 'excel!Excel.TableStyleCollection#setDefault~0:complex'
+    name: TableStyle | string
+    fullName: Excel.TableStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.TableStyle:interface'
+        name: TableStyle
+        fullName: Excel.TableStyle
+      - name: ' | string'
+        fullName: ' | string'

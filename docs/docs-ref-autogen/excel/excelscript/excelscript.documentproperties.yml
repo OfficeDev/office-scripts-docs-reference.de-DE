@@ -1,0 +1,430 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties:interface'
+    summary: Stellt Arbeitsmappen-Eigenschaften dar.
+    name: ExcelScript.DocumentProperties
+    fullName: ExcelScript.DocumentProperties
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DocumentProperties#addCustomProperty:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#deleteAllCustomProperties:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCategory:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setCategory:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)'
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#addCustomProperty:member(1)'
+    summary: Erstellt eine neue benutzerdefinierte Eigenschaft oder legt eine vorhandene fest.
+    name: 'addCustomProperty(key, value)'
+    fullName: 'addCustomProperty(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addCustomProperty(key: string, value: any): CustomProperty;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Erforderlich. Der Schlüssel der benutzerdefinierten Eigenschaft, bei dem die Groß-/Kleinschreibung nicht beachtet wird. Der Schlüssel ist auf 255 Zeichen außerhalb von Excel im Internet eingeschränkt (größere Tasten werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).'
+          type:
+            - string
+        - id: value
+          description: Erforderlich. Der Wert der benutzerdefinierten Eigenschaft. Der Wert ist auf 255 Zeichen außerhalb von Excel im Internet eingeschränkt (größere Werte werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).
+          type:
+            - any
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#deleteAllCustomProperties:member(1)'
+    summary: Löscht alle benutzerdefinierten Eigenschaften in dieser Sammlung.
+    name: deleteAllCustomProperties()
+    fullName: deleteAllCustomProperties()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAllCustomProperties(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)'
+    summary: Der Autor der Arbeitsmappe.
+    name: getAuthor()
+    fullName: getAuthor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAuthor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCategory:member(1)'
+    summary: Die Kategorie der Arbeitsmappe.
+    name: getCategory()
+    fullName: getCategory()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCategory(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)'
+    summary: Die Kommentare der Arbeitsmappe.
+    name: getComments()
+    fullName: getComments()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComments(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)'
+    summary: Das Unternehmen der Arbeitsmappe.
+    name: getCompany()
+    fullName: getCompany()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCompany(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)'
+    summary: Ruft das Erstellungsdatum der Arbeitsmappe ab. Schreibgeschützt.
+    name: getCreationDate()
+    fullName: getCreationDate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCreationDate(): Date;'
+      return:
+        type:
+          - '!Date:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)'
+    summary: Ruft die Sammlung der benutzerdefinierten Eigenschaften der Arbeitsmappe ab. Schreibgeschützt.
+    name: getCustom()
+    fullName: getCustom()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustom(): CustomProperty[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DocumentProperties#getCustom~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)'
+    summary: 'Ruft ein Objekt für benutzerdefinierte Eigenschaften über seinen Schlüssel ab, bei dem Groß-/Kleinschreibung nicht beachtet wird. Gibt ein NULL-Objekt zurück, wenn die benutzerdefinierte Eigenschaft nicht vorhanden ist.'
+    name: getCustomProperty(key)
+    fullName: getCustomProperty(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomProperty(key: string): CustomProperty | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Erforderlich. Der Schlüssel, der das benutzerdefinierte Property-Objekt identifiziert.'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)'
+    summary: Die Schlüsselwörter der Arbeitsmappe.
+    name: getKeywords()
+    fullName: getKeywords()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKeywords(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)'
+    summary: Ruft den letzten Autor der Arbeitsmappe ab. Schreibgeschützt.
+    name: getLastAuthor()
+    fullName: getLastAuthor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLastAuthor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)'
+    summary: Der Manager der Arbeitsmappe.
+    name: getManager()
+    fullName: getManager()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getManager(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)'
+    summary: Ruft die Revisionsnummer der Arbeitsmappe ab. Schreibgeschützt.
+    name: getRevisionNumber()
+    fullName: getRevisionNumber()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRevisionNumber(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)'
+    summary: Der Betreff der Arbeitsmappe.
+    name: getSubject()
+    fullName: getSubject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubject(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)'
+    summary: Der Titel der Arbeitsmappe.
+    name: getTitle()
+    fullName: getTitle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTitle(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)'
+    summary: Der Autor der Arbeitsmappe.
+    name: setAuthor(author)
+    fullName: setAuthor(author)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAuthor(author: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: author
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setCategory:member(1)'
+    summary: Die Kategorie der Arbeitsmappe.
+    name: setCategory(category)
+    fullName: setCategory(category)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCategory(category: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: category
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)'
+    summary: Die Kommentare der Arbeitsmappe.
+    name: setComments(comments)
+    fullName: setComments(comments)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setComments(comments: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: comments
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)'
+    summary: Das Unternehmen der Arbeitsmappe.
+    name: setCompany(company)
+    fullName: setCompany(company)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCompany(company: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: company
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)'
+    summary: Die Schlüsselwörter der Arbeitsmappe.
+    name: setKeywords(keywords)
+    fullName: setKeywords(keywords)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setKeywords(keywords: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: keywords
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)'
+    summary: Der Manager der Arbeitsmappe.
+    name: setManager(manager)
+    fullName: setManager(manager)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setManager(manager: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: manager
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)'
+    summary: Ruft die Revisionsnummer der Arbeitsmappe ab. Schreibgeschützt.
+    name: setRevisionNumber(revisionNumber)
+    fullName: setRevisionNumber(revisionNumber)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRevisionNumber(revisionNumber: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: revisionNumber
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)'
+    summary: Der Betreff der Arbeitsmappe.
+    name: setSubject(subject)
+    fullName: setSubject(subject)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSubject(subject: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: subject
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)'
+    summary: Der Titel der Arbeitsmappe.
+    name: setTitle(title)
+    fullName: setTitle(title)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTitle(title: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: title
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
+    name: CustomProperty
+    fullName: ExcelScript.CustomProperty
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustom~0:complex'
+    name: 'CustomProperty[]'
+    fullName: 'ExcelScript.CustomProperty[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
+        name: CustomProperty
+        fullName: ExcelScript.CustomProperty
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty~0:complex'
+    name: CustomProperty | undefined
+    fullName: ExcelScript.CustomProperty | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
+        name: CustomProperty
+        fullName: ExcelScript.CustomProperty
+      - name: ' | undefined'
+        fullName: ' | undefined'

@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerCollection:interface'
+    summary: Stellt eine Auflistung aller Slicer-Objekte in der Arbeitsmappe oder einem Arbeitsblatt dar.
+    name: Excel.SlicerCollection
+    fullName: Excel.SlicerCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerCollection#add:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerCollection#add:member(1)'
+    summary: Fügt der Arbeitsmappe einen neuen Datenschnitt hinzu.
+    name: 'add(slicerSource, sourceField, slicerDestination)'
+    fullName: 'add(slicerSource, sourceField, slicerDestination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    slicerSource: string | PivotTable | Table,
+                    sourceField: string | PivotField | number | TableColumn,
+                    slicerDestination?: string | Worksheet
+                ): Slicer;
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Pivot");
+              let slicer = sheet.slicers.add(
+                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
+                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
+              );
+              slicer.name = "Fruit Slicer";
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: slicerSource
+          description: 'Die Datenquelle, auf der der neue datenschnitt basieren soll. Dabei kann es sich um ein PivotTable-Objekt, ein Table-Objekt oder eine Zeichenfolge handeln. Wenn ein PivotTable-Objekt übergeben wird, ist die Datenquelle die Quelle des PivotTable-Objekts. Wenn ein Table-Objekt übergeben wird, ist die Datenquelle das Table-Objekt. Wenn eine Zeichenfolge übergeben wird, wird Sie als Name/ID einer PivotTable/Tabelle interpretiert.'
+          type:
+            - 'excel!Excel.SlicerCollection#add~0:complex'
+        - id: sourceField
+          description: 'Das Feld in der Datenquelle, nach dem gefiltert werden soll. Dabei kann es sich um ein PivotField-Objekt, ein Table Column-Objekt, die ID eines PivotField-Objekts oder die ID/Name-Spalte handeln.'
+          type:
+            - 'excel!Excel.SlicerCollection#add~1:complex'
+        - id: slicerDestination
+          description: 'Optional. Das Arbeitsblatt, in dem der neue datenschnitt erstellt wird. Dabei kann es sich um ein Worksheet-Objekt oder den Namen/die ID eines Arbeitsblatts handeln. Dieser Parameter kann ausgelassen werden, wenn die Slicer-Auflistung aus dem Arbeitsblatt abgerufen wird.'
+          type:
+            - 'excel!Excel.SlicerCollection#add~2:complex'
+  - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft einen Datenschnitt anhand seines Namens oder seiner ID ab. Wenn der Datenschnitt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Der Name oder die ID des datenschnitts, der abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Slicer:interface'
+    name: Slicer
+    fullName: Excel.Slicer
+  - uid: 'excel!Excel.SlicerCollection#add~0:complex'
+    name: string | PivotTable | Table
+    fullName: string | Excel.PivotTable | Excel.Table
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.PivotTable:interface'
+        name: PivotTable
+        fullName: Excel.PivotTable
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.Table:interface'
+        name: Table
+        fullName: Excel.Table
+  - uid: 'excel!Excel.SlicerCollection#add~1:complex'
+    name: string | PivotField | number | TableColumn
+    fullName: string | Excel.PivotField | number | Excel.TableColumn
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.PivotField:interface'
+        name: PivotField
+        fullName: Excel.PivotField
+      - name: ' | number | '
+        fullName: ' | number | '
+      - uid: 'excel!Excel.TableColumn:interface'
+        name: TableColumn
+        fullName: Excel.TableColumn
+  - uid: 'excel!Excel.SlicerCollection#add~2:complex'
+    name: string | Worksheet
+    fullName: string | Excel.Worksheet
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.Worksheet:interface'
+        name: Worksheet
+        fullName: Excel.Worksheet

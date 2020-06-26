@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartGridlinesFormat:interface'
+    summary: Kapselt die Formateigenschaften für die Diagrammgitternetzlinien.
+    name: Excel.ChartGridlinesFormat
+    fullName: Excel.ChartGridlinesFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartGridlinesFormat#line:member'
+      - 'excel!Excel.ChartGridlinesFormat#load:member(1)'
+  - uid: 'excel!Excel.ChartGridlinesFormat#line:member'
+    summary: Stellt die Formatierung der Diagrammlinien dar.
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly line: ChartLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat:interface'
+  - uid: 'excel!Excel.ChartGridlinesFormat#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: Excel.ChartLineFormat

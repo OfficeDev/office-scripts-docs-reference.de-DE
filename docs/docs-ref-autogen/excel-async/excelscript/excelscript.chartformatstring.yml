@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartFormatString:interface'
+    summary: 'Stellt die Teilzeichenfolge in Diagramm bezogenen Objekten dar, die Text enthalten, wie ChartTitle-Objekt, ChartAxisTitle-Objekt usw.'
+    name: Excel.ChartFormatString
+    fullName: Excel.ChartFormatString
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartFormatString#font:member'
+      - 'excel!Excel.ChartFormatString#load:member(1)'
+  - uid: 'excel!Excel.ChartFormatString#font:member'
+    summary: 'Stellt die Schriftartattribute, wie Schriftartname, Schriftgrad, Farbe usw. des Diagramms Characters-Objekts dar.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartFormatString#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont

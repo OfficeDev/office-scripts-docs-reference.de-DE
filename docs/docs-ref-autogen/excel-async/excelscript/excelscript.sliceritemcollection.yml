@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerItemCollection:interface'
+    summary: Stellt eine Auflistung aller Slicer Item-Objekte auf dem datenschnitt dar.
+    name: Excel.SlicerItemCollection
+    fullName: Excel.SlicerItemCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerItemCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft ein Datenschnittelement anhand seines Schlüssels oder Namens ab. Wenn das Datenschnittelement nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Der Schlüssel oder Name des datenschnitts, der abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerItemCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.SlicerItem:interface'
+    name: SlicerItem
+    fullName: Excel.SlicerItem

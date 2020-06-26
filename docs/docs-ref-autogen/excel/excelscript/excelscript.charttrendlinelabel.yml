@@ -1,0 +1,399 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel:interface'
+    summary: Dieses Objekt stellt die Attribute für ein Lable-Objekt eines Diagramm-Trendlinien Objekts dar.
+    name: ExcelScript.ChartTrendlineLabel
+    fullName: ExcelScript.ChartTrendlineLabel
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getAutoText:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getFormula:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getHeight:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getHorizontalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getLeft:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getLinkNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getText:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getTop:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getVerticalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#getWidth:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setAutoText:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setFormula:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setHorizontalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setLeft:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setLinkNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setText:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setTop:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setVerticalAlignment:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getAutoText:member(1)'
+    summary: 'Gibt an, ob die Trendlinienbeschriftung automatisch einen geeigneten Text basierend auf dem Kontext generiert.'
+    name: getAutoText()
+    fullName: getAutoText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAutoText(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getFormat:member(1)'
+    summary: Das Format der Diagramm Trendlinienbeschriftung.
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ChartTrendlineLabelFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getFormula:member(1)'
+    summary: 'Ein Zeichenfolgenwert, der die Formel der Diagrammtrendlinienbeschriftung unter Verwendung der A1-Schreibweise angibt.'
+    name: getFormula()
+    fullName: getFormula()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormula(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getHeight:member(1)'
+    summary: 'Gibt die Höhe der Diagrammtrendlinienbeschriftung in Punkten zurück. NULL, wenn die Diagrammtrendlinienbeschriftung nicht sichtbar ist.'
+    name: getHeight()
+    fullName: getHeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getHorizontalAlignment:member(1)'
+    summary: 'Die horizontale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter Excel. ChartTextHorizontalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung-90, 90 oder 180 ist.'
+    name: getHorizontalAlignment()
+    fullName: getHorizontalAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getLeft:member(1)'
+    summary: 'Gibt den Abstand zwischen dem linken Rand der Diagrammtrendlinienbeschriftung und dem linken Rand des Diagrammbereichs in Punkten an. NULL, wenn die Diagrammtrendlinienbeschriftung nicht sichtbar ist.'
+    name: getLeft()
+    fullName: getLeft()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getLinkNumberFormat:member(1)'
+    summary: 'Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist (sodass sich das Zahlenformat in den Beschriftungen ändert, wenn es sich in den Zellen ändert).'
+    name: getLinkNumberFormat()
+    fullName: getLinkNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLinkNumberFormat(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getNumberFormat:member(1)'
+    summary: 'Zeichenfolgenwert, der den Formatcode für die Trendlinienbeschriftung angibt.'
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getText:member(1)'
+    summary: 'Eine Zeichenfolge, die den Text der Trendlinienbeschriftung in einem Diagramm darstellt.'
+    name: getText()
+    fullName: getText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getTextOrientation:member(1)'
+    summary: 'Stellt den Winkel dar, an dem der Text für die Diagramm Trendlinienbeschriftung ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von-90 bis 90 oder die ganze Zahl 180 für vertikal orientierten Text sein.'
+    name: getTextOrientation()
+    fullName: getTextOrientation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getTop:member(1)'
+    summary: 'Gibt den Abstand zwischen dem oberen Rand der Diagrammtrendlinienbeschriftung und dem oberen Rand des Diagrammbereichs in Punkten an. NULL, wenn die Diagrammtrendlinienbeschriftung nicht sichtbar ist.'
+    name: getTop()
+    fullName: getTop()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getVerticalAlignment:member(1)'
+    summary: 'Die vertikale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter Excel. ChartTextVerticalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung 0 ist.'
+    name: getVerticalAlignment()
+    fullName: getVerticalAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getWidth:member(1)'
+    summary: 'Gibt die Breite der Diagrammtrendlinienbeschriftung in Punkten zurück. NULL, wenn die Diagrammtrendlinienbeschriftung nicht sichtbar ist.'
+    name: getWidth()
+    fullName: getWidth()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setAutoText:member(1)'
+    summary: 'Gibt an, ob die Trendlinienbeschriftung automatisch einen geeigneten Text basierend auf dem Kontext generiert.'
+    name: setAutoText(autoText)
+    fullName: setAutoText(autoText)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAutoText(autoText: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: autoText
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setFormula:member(1)'
+    summary: 'Ein Zeichenfolgenwert, der die Formel der Diagrammtrendlinienbeschriftung unter Verwendung der A1-Schreibweise angibt.'
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setHorizontalAlignment:member(1)'
+    summary: 'Die horizontale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter Excel. ChartTextHorizontalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung-90, 90 oder 180 ist.'
+    name: setHorizontalAlignment(horizontalAlignment)
+    fullName: setHorizontalAlignment(horizontalAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setHorizontalAlignment(
+                    horizontalAlignment: ChartTextHorizontalAlignment
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: horizontalAlignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setLeft:member(1)'
+    summary: 'Gibt den Abstand zwischen dem linken Rand der Diagrammtrendlinienbeschriftung und dem linken Rand des Diagrammbereichs in Punkten an. NULL, wenn die Diagrammtrendlinienbeschriftung nicht sichtbar ist.'
+    name: setLeft(left)
+    fullName: setLeft(left)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLeft(left: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: left
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setLinkNumberFormat:member(1)'
+    summary: 'Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist (sodass sich das Zahlenformat in den Beschriftungen ändert, wenn es sich in den Zellen ändert).'
+    name: setLinkNumberFormat(linkNumberFormat)
+    fullName: setLinkNumberFormat(linkNumberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: linkNumberFormat
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setNumberFormat:member(1)'
+    summary: 'Zeichenfolgenwert, der den Formatcode für die Trendlinienbeschriftung angibt.'
+    name: setNumberFormat(numberFormat)
+    fullName: setNumberFormat(numberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormat
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setText:member(1)'
+    summary: 'Eine Zeichenfolge, die den Text der Trendlinienbeschriftung in einem Diagramm darstellt.'
+    name: setText(text)
+    fullName: setText(text)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setText(text: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: text
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setTextOrientation:member(1)'
+    summary: 'Stellt den Winkel dar, an dem der Text für die Diagramm Trendlinienbeschriftung ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von-90 bis 90 oder die ganze Zahl 180 für vertikal orientierten Text sein.'
+    name: setTextOrientation(textOrientation)
+    fullName: setTextOrientation(textOrientation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: textOrientation
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setTop:member(1)'
+    summary: 'Gibt den Abstand zwischen dem oberen Rand der Diagrammtrendlinienbeschriftung und dem oberen Rand des Diagrammbereichs in Punkten an. NULL, wenn die Diagrammtrendlinienbeschriftung nicht sichtbar ist.'
+    name: setTop(top)
+    fullName: setTop(top)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTop(top: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: top
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setVerticalAlignment:member(1)'
+    summary: 'Die vertikale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter Excel. ChartTextVerticalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung 0 ist.'
+    name: setVerticalAlignment(verticalAlignment)
+    fullName: setVerticalAlignment(verticalAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setVerticalAlignment(
+                    verticalAlignment: ChartTextVerticalAlignment
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: verticalAlignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface'
+    name: ChartTrendlineLabelFormat
+    fullName: ExcelScript.ChartTrendlineLabelFormat
+  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
+    name: ChartTextHorizontalAlignment
+    fullName: ExcelScript.ChartTextHorizontalAlignment
+  - uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
+    name: ChartTextVerticalAlignment
+    fullName: ExcelScript.ChartTextVerticalAlignment
