@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
+    summary: 'Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.'
+    name: ExcelScript.FilterDatetime
+    fullName: ExcelScript.FilterDatetime
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.FilterDatetime#date:member'
+      - 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime#date:member'
+    summary: Das Datum im ISO8601-Format zum Filtern von Daten.
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
+    summary: 'Wie spezifisch das Datum zum Aufbewahren von Daten verwendet werden soll. Wenn das Datum beispielsweise 2005-04-02 ist und das Spezifität auf "Month" festgelegt ist, behält der Filtervorgang alle Zeilen mit einem Datum im Monat April 2009.'
+    name: specificity
+    fullName: specificity
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'specificity: FilterDatetimeSpecificity;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum'
+    name: FilterDatetimeSpecificity
+    fullName: ExcelScript.FilterDatetimeSpecificity

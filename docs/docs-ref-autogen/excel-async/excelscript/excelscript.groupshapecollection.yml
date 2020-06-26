@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.GroupShapeCollection:interface'
+    summary: Stellt die Shape-Auflistung in einer Shape-Gruppe dar.
+    name: Excel.GroupShapeCollection
+    fullName: Excel.GroupShapeCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.GroupShapeCollection#getItem:member(1)'
+      - 'excel!Excel.GroupShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.GroupShapeCollection#getItem:member(1)'
+    summary: Ruft eine Form anhand ihres Namens oder ihrer ID ab.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Der Name oder die ID der Form, die abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'excel!Excel.GroupShapeCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape
