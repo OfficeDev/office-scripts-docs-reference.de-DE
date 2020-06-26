@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotAxis:enum'
+    summary: 'Stellt die Achse dar, aus der das PivotItems abgerufen werden soll.'
+    name: ExcelScript.PivotAxis
+    fullName: ExcelScript.PivotAxis
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotAxis.column:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.data:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.filter:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.row:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.unknown:member'
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.column:member'
+    summary: Die Spaltenachse.
+    name: column
+    fullName: column
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.data:member'
+    summary: Die Datenachse.
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.filter:member'
+    summary: Die Filterachse.
+    name: filter
+    fullName: filter
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.row:member'
+    summary: Die Zeilenachse.
+    name: row
+    fullName: row
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.unknown:member'
+    summary: Die Achse oder die Region ist unbekannt oder nicht unterstützt.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field

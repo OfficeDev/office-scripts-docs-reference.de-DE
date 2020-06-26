@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Placement:enum'
+    summary: 'Gibt an, wie ein Objekt mit seinen zugrunde liegenden Zellen verbunden ist.'
+    name: ExcelScript.Placement
+    fullName: ExcelScript.Placement
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Placement.absolute:member'
+      - 'ExcelScript!ExcelScript.Placement.oneCell:member'
+      - 'ExcelScript!ExcelScript.Placement.twoCell:member'
+  - uid: 'ExcelScript!ExcelScript.Placement.absolute:member'
+    summary: Das Objekt ist frei verschiebbar.
+    name: absolute
+    fullName: absolute
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.Placement.oneCell:member'
+    summary: Das Objekt wird mit den Zellen verschoben und angepasst.
+    name: oneCell
+    fullName: oneCell
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.Placement.twoCell:member'
+    summary: Das Objekt wird mit den Zellen verschoben.
+    name: twoCell
+    fullName: twoCell
+    langs:
+      - typeScript
+    type: field

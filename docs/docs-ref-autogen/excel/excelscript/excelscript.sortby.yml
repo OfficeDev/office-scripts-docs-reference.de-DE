@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SortBy:enum'
+    summary: Stellt die Sortierrichtung dar.
+    name: ExcelScript.SortBy
+    fullName: ExcelScript.SortBy
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SortBy.ascending:member'
+      - 'ExcelScript!ExcelScript.SortBy.descending:member'
+  - uid: 'ExcelScript!ExcelScript.SortBy.ascending:member'
+    summary: Aufsteigende Sortierung. Kleinstes bis größtes oder A bis Z.
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SortBy.descending:member'
+    summary: Absteigend sortiert. Größten bis kleinsten oder Z bis A.
+    name: descending
+    fullName: descending
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
+    name: ExcelScript.SpecialCellType
+    fullName: ExcelScript.SpecialCellType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
+    summary: Zellen ohne Inhalt.
+    name: blanks
+    fullName: blanks
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
+    summary: Alle Zellen mit bedingten Formaten
+    name: conditionalFormats
+    fullName: conditionalFormats
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
+    summary: Zellen mit Konstanten
+    name: constants
+    fullName: constants
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
+    summary: Zellen mit Gültigkeitskriterien
+    name: dataValidations
+    fullName: dataValidations
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
+    summary: Zellen mit Formeln
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
+    summary: Zellen mit demselben bedingten Format wie die erste Zelle im Bereich.
+    name: sameConditionalFormat
+    fullName: sameConditionalFormat
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
+    summary: Zellen mit den gleichen Daten Überprüfungskriterien wie die erste Zelle im Bereich.
+    name: sameDataValidation
+    fullName: sameDataValidation
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
+    summary: 'Zellen, die sichtbar sind.'
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: field

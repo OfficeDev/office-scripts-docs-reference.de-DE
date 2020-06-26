@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartSeriesCollection:interface'
+    summary: Stellt eine Sammlung von Diagrammdatenreihen dar.
+    name: Excel.ChartSeriesCollection
+    fullName: Excel.ChartSeriesCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartSeriesCollection#add:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartSeriesCollection#add:member(1)'
+    summary: 'Fügt der Sammlung eine neue Reihe hinzu. Die neue hinzugefügte Datenreihe ist erst dann sichtbar, wenn die festgelegten Werte/x-Achsenwerte/Blasengrößen dafür (je nach Diagrammtyp).'
+    name: 'add(name, index)'
+    fullName: 'add(name, index)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name?: string, index?: number): ChartSeries;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeries:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Optional. Der Name der Datenreihe.
+          type:
+            - string
+        - id: index
+          description: Optional. Indexwert der hinzuzufügenden Datenreihe. Nullindiziert.
+          type:
+            - number
+  - uid: 'excel!Excel.ChartSeriesCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartSeries:interface'
+    name: ChartSeries
+    fullName: Excel.ChartSeries

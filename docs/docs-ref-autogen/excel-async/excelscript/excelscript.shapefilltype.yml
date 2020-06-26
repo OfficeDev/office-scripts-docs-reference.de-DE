@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeFillType:enum'
+    summary: Gibt den Füllungstyp einer Form an.
+    name: Excel.ShapeFillType
+    fullName: Excel.ShapeFillType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeFillType.gradient:member'
+      - 'excel!Excel.ShapeFillType.mixed:member'
+      - 'excel!Excel.ShapeFillType.noFill:member'
+      - 'excel!Excel.ShapeFillType.pattern:member'
+      - 'excel!Excel.ShapeFillType.pictureAndTexture:member'
+      - 'excel!Excel.ShapeFillType.solid:member'
+  - uid: 'excel!Excel.ShapeFillType.gradient:member'
+    summary: Graduelle Füllung.
+    name: gradient
+    fullName: gradient
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"gradient"'
+  - uid: 'excel!Excel.ShapeFillType.mixed:member'
+    summary: Gemischte Füllung.
+    name: mixed
+    fullName: mixed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"mixed"'
+  - uid: 'excel!Excel.ShapeFillType.noFill:member'
+    summary: Keine Füllung.
+    name: noFill
+    fullName: noFill
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"noFill"'
+  - uid: 'excel!Excel.ShapeFillType.pattern:member'
+    summary: Musterfüllung.
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"pattern"'
+  - uid: 'excel!Excel.ShapeFillType.pictureAndTexture:member'
+    summary: Füllbereich für Grafik und Textur.
+    name: pictureAndTexture
+    fullName: pictureAndTexture
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"pictureAndTexture"'
+  - uid: 'excel!Excel.ShapeFillType.solid:member'
+    summary: Uni.
+    name: solid
+    fullName: solid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"solid"'

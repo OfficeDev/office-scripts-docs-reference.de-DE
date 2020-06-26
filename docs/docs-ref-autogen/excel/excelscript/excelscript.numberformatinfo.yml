@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
+    summary: Definiert das kulturell geeignete Format für die Anzeige von Zahlen. Dies basiert auf den aktuellen Systemkultur Einstellungen.
+    name: ExcelScript.NumberFormatInfo
+    fullName: ExcelScript.NumberFormatInfo
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)'
+      - 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)'
+  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)'
+    summary: 'Ruft die Zeichenfolge ab, die als Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den aktuellen Systemeinstellungen.'
+    name: getNumberDecimalSeparator()
+    fullName: getNumberDecimalSeparator()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberDecimalSeparator(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)'
+    summary: 'Ruft die Zeichenfolge ab, die zum Trennen von Zifferngruppen links vom Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den aktuellen Systemeinstellungen.'
+    name: getNumberGroupSeparator()
+    fullName: getNumberGroupSeparator()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberGroupSeparator(): string;'
+      return:
+        type:
+          - string
+        description: ''

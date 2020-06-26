@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode:enum'
+    name: ExcelScript.ProtectionSelectionMode
+    fullName: ExcelScript.ProtectionSelectionMode
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ProtectionSelectionMode.none:member'
+      - 'ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member'
+      - 'ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member'
+  - uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.none:member'
+    summary: Die Auswahl ist für alle Zellen nicht zulässig.
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member'
+    summary: Die Auswahl ist für alle Zellen zulässig.
+    name: normal
+    fullName: normal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member'
+    summary: 'Die Auswahl ist nur für Zellen zulässig, die nicht gesperrt sind.'
+    name: unlocked
+    fullName: unlocked
+    langs:
+      - typeScript
+    type: field

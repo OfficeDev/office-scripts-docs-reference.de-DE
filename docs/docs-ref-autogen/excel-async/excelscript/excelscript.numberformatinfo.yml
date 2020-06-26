@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NumberFormatInfo:interface'
+    summary: Definiert das kulturell geeignete Format für die Anzeige von Zahlen. Dies basiert auf den aktuellen Systemkultur Einstellungen.
+    name: Excel.NumberFormatInfo
+    fullName: Excel.NumberFormatInfo
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.NumberFormatInfo#load:member(1)'
+      - 'excel!Excel.NumberFormatInfo#numberDecimalSeparator:member'
+      - 'excel!Excel.NumberFormatInfo#numberGroupSeparator:member'
+  - uid: 'excel!Excel.NumberFormatInfo#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.NumberFormatInfo#numberDecimalSeparator:member'
+    summary: 'Ruft die Zeichenfolge ab, die als Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den aktuellen Systemeinstellungen.'
+    name: numberDecimalSeparator
+    fullName: numberDecimalSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly numberDecimalSeparator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.NumberFormatInfo#numberGroupSeparator:member'
+    summary: 'Ruft die Zeichenfolge ab, die zum Trennen von Zifferngruppen links vom Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den aktuellen Systemeinstellungen.'
+    name: numberGroupSeparator
+    fullName: numberGroupSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly numberGroupSeparator: string;'
+      return:
+        type:
+          - string
