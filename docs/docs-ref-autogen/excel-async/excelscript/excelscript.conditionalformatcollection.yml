@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalFormatCollection:interface'
+    summary: 'Stellt eine Auflistung aller bedingten Formate dar, die den Bereich überlappen.'
+    name: Excel.ConditionalFormatCollection
+    fullName: Excel.ConditionalFormatCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalFormatCollection#add:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#load:member(1)'
+  - uid: 'excel!Excel.ConditionalFormatCollection#add:member(1)'
+    summary: Fügt der Auflistung ein neues bedingtes Format an der ersten/obersten Priorität hinzu.
+    name: add(type)
+    fullName: add(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type: ConditionalFormatType): ConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormat:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B2:M5");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.colorScale);
+              let criteria = {
+                  minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+                  midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+                  maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+              };
+              conditionalFormat.colorScale.criteria = criteria;
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: type
+          description: Der Typ des hinzuzufügenden bedingten Formats. Weitere Informationen finden Sie unter Excel. ConditionalFormatType.
+          type:
+            - 'excel!Excel.ConditionalFormatType:enum'
+  - uid: 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
+    summary: 'Löscht alle bedingten Formate, die im aktuellen angegebenen Bereich aktiv sind.'
+    name: clearAll()
+    fullName: clearAll()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearAll(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange();
+              range.conditionalFormats.clearAll();
+
+              await context.sync();
+
+              $(".conditional-formats").hide();
+          }
+          ```
+  - uid: 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
+    summary: Gibt ein bedingtes Format für die angegebene ID zurück.
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): ConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormat:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: Die ID des bedingten Formats.
+          type:
+            - string
+  - uid: 'excel!Excel.ConditionalFormatCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ConditionalFormat:interface'
+    name: ConditionalFormat
+    fullName: Excel.ConditionalFormat
+  - uid: 'excel!Excel.ConditionalFormatType:enum'
+    name: ConditionalFormatType
+    fullName: Excel.ConditionalFormatType

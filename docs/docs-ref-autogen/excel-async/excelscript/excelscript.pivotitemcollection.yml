@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotItemCollection:interface'
+    summary: 'Stellt eine Auflistung aller PivotItems dar, die sich auf das übergeordnete PivotField beziehen.'
+    name: Excel.PivotItemCollection
+    fullName: Excel.PivotItemCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotItemCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft ein PivotItem nach Namen ab. Wenn der PivotItem nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): PivotItem;'
+      return:
+        type:
+          - 'excel!Excel.PivotItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Name des PivotItem, das abgerufen werden soll.'
+          type:
+            - string
+  - uid: 'excel!Excel.PivotItemCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.PivotItem:interface'
+    name: PivotItem
+    fullName: Excel.PivotItem

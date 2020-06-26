@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotItem:interface'
+    summary: Stellt die Excel-PivotItem dar.
+    name: Excel.PivotItem
+    fullName: Excel.PivotItem
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotItem#id:member'
+      - 'excel!Excel.PivotItem#isExpanded:member'
+      - 'excel!Excel.PivotItem#load:member(1)'
+      - 'excel!Excel.PivotItem#name:member'
+      - 'excel!Excel.PivotItem#visible:member'
+  - uid: 'excel!Excel.PivotItem#id:member'
+    summary: Die ID von PivotItem.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotItem#isExpanded:member'
+    summary: 'Gibt an, ob das Element zum Anzeigen untergeordneter Elemente erweitert wird oder untergeordnete Elemente ausgeblendet werden.'
+    name: isExpanded
+    fullName: isExpanded
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isExpanded: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotItem#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotItem#name:member'
+    summary: Der Name von PivotItem
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotItem#visible:member'
+    summary: 'Gibt an, ob die PivotItem sichtbar ist.'
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean

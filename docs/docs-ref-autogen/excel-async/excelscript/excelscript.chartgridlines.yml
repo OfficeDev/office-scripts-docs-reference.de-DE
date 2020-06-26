@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartGridlines:interface'
+    summary: Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer Diagrammachse dar.
+    name: Excel.ChartGridlines
+    fullName: Excel.ChartGridlines
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartGridlines#format:member'
+      - 'excel!Excel.ChartGridlines#load:member(1)'
+      - 'excel!Excel.ChartGridlines#visible:member'
+  - uid: 'excel!Excel.ChartGridlines#format:member'
+    summary: Stellt die Formatierung der Diagrammgitternetzlinien dar.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartGridlinesFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartGridlinesFormat:interface'
+  - uid: 'excel!Excel.ChartGridlines#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartGridlines#visible:member'
+    summary: 'Gibt an, ob die Achsen Gitternetzlinien sichtbar sind.'
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ChartGridlinesFormat:interface'
+    name: ChartGridlinesFormat
+    fullName: Excel.ChartGridlinesFormat
