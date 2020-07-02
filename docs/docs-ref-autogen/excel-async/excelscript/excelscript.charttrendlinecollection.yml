@@ -10,6 +10,7 @@ items:
     package: excel!
     children:
       - 'excel!Excel.ChartTrendlineCollection#add:member(1)'
+      - 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
       - 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
       - 'excel!Excel.ChartTrendlineCollection#load:member(1)'
   - uid: 'excel!Excel.ChartTrendlineCollection#add:member(1)'
@@ -46,6 +47,19 @@ items:
           description: Gibt den Typ der Trendlinie an. Der Standardwert ist "Linear". Weitere Informationen finden Sie unter Excel. ChartTrendline.
           type:
             - 'excel!Excel.ChartTrendlineType:enum'
+  - uid: 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
+    summary: Gibt die Anzahl der Trendlinien in der Sammlung zurück.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
     summary: 'Ruft das Trendlinien-Objekt anhand des Index ab, der die Einfügereihenfolge im Elementarray darstellt.'
     name: getItem(index)

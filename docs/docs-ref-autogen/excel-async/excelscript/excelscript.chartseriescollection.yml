@@ -10,6 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.ChartSeriesCollection#add:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#count:member'
+      - 'excel!Excel.ChartSeriesCollection#getCount:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#getItemAt:member(1)'
       - 'excel!Excel.ChartSeriesCollection#load:member(1)'
   - uid: 'excel!Excel.ChartSeriesCollection#add:member(1)'
     summary: 'Fügt der Sammlung eine neue Reihe hinzu. Die neue hinzugefügte Datenreihe ist erst dann sichtbar, wenn die festgelegten Werte/x-Achsenwerte/Blasengrößen dafür (je nach Diagrammtyp).'
@@ -31,6 +34,49 @@ items:
             - string
         - id: index
           description: Optional. Indexwert der hinzuzufügenden Datenreihe. Nullindiziert.
+          type:
+            - number
+  - uid: 'excel!Excel.ChartSeriesCollection#count:member'
+    summary: Gibt die Anzahl der Datenreihen in der Sammlung zurück.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartSeriesCollection#getCount:member(1)'
+    summary: Gibt die Anzahl der Datenreihen in der Sammlung zurück.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.ChartSeriesCollection#getItemAt:member(1)'
+    summary: Ruft eine Datenreihe anhand ihrer Position in der Sammlung ab.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ChartSeries;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeries:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Index-Wert des abzurufenden Objekts. Nullindiziert.
           type:
             - number
   - uid: 'excel!Excel.ChartSeriesCollection#load:member(1)'

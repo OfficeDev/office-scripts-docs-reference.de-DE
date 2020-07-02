@@ -12,6 +12,7 @@ items:
       - 'excel!Excel.Line#beginArrowheadLength:member'
       - 'excel!Excel.Line#beginArrowheadStyle:member'
       - 'excel!Excel.Line#beginArrowheadWidth:member'
+      - 'excel!Excel.Line#beginConnectedShape:member'
       - 'excel!Excel.Line#beginConnectedSite:member'
       - 'excel!Excel.Line#connectBeginShape:member(1)'
       - 'excel!Excel.Line#connectEndShape:member(1)'
@@ -21,11 +22,13 @@ items:
       - 'excel!Excel.Line#endArrowheadLength:member'
       - 'excel!Excel.Line#endArrowheadStyle:member'
       - 'excel!Excel.Line#endArrowheadWidth:member'
+      - 'excel!Excel.Line#endConnectedShape:member'
       - 'excel!Excel.Line#endConnectedSite:member'
       - 'excel!Excel.Line#id:member'
       - 'excel!Excel.Line#isBeginConnected:member'
       - 'excel!Excel.Line#isEndConnected:member'
       - 'excel!Excel.Line#load:member(1)'
+      - 'excel!Excel.Line#shape:member'
   - uid: 'excel!Excel.Line#beginArrowheadLength:member'
     summary: Stellt die Länge der Pfeilspitze am Anfang der angegebenen Linie dar.
     name: beginArrowheadLength
@@ -62,6 +65,18 @@ items:
       return:
         type:
           - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#beginConnectedShape:member'
+    summary: 'Stellt die Form dar, an die der Anfang der angegebenen Linie angefügt ist.'
+    name: beginConnectedShape
+    fullName: beginConnectedShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly beginConnectedShape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
   - uid: 'excel!Excel.Line#beginConnectedSite:member'
     summary: 'Stellt die Verbindungsseite dar, mit der der Anfang einer Verbindung verbunden ist. Gibt NULL zurück, wenn der Anfang der Linie nicht an eine Form angefügt ist.'
     name: beginConnectedSite
@@ -244,6 +259,18 @@ items:
       return:
         type:
           - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#endConnectedShape:member'
+    summary: 'Stellt die Form dar, an die das Ende der angegebenen Linie angefügt ist.'
+    name: endConnectedShape
+    fullName: endConnectedShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly endConnectedShape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
   - uid: 'excel!Excel.Line#endConnectedSite:member'
     summary: 'Stellt die Verbindungsseite dar, mit der das Ende einer Verbindung verbunden ist. Gibt NULL zurück, wenn das Ende der Linie nicht an eine Form angefügt ist.'
     name: endConnectedSite
@@ -310,6 +337,18 @@ items:
           description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.Line#shape:member'
+    summary: 'Gibt das Formobjekt zurück, das der Linie zugeordnet ist.'
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
 references:
   - uid: 'excel!Excel.ArrowheadLength:enum'
     name: ArrowheadLength

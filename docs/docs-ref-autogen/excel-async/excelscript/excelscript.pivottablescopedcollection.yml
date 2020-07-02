@@ -1,0 +1,100 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableScopedCollection:interface'
+    summary: Stellt eine bereichsbezogene Auflistung von PivotTables dar. Die PivotTables werden basierend auf der Position der oberen linken Ecke der PivotTable sortiert. Sie werden von oben nach unten und von links nach rechts sortiert.
+    name: Excel.PivotTableScopedCollection
+    fullName: Excel.PivotTableScopedCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableScopedCollection#getCount:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getFirst:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getItem:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotTableScopedCollection#getCount:member(1)'
+    summary: Ruft die Anzahl der PivotTables in der Auflistung ab.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotTableScopedCollection#getFirst:member(1)'
+    summary: 'Ruft die erste PivotTable in der Auflistung ab. Die PivotTables in der Auflistung werden von oben nach unten und von links nach rechts sortiert, sodass die obere linke Tabelle die erste PivotTable in der Auflistung ist.'
+    name: getFirst()
+    fullName: getFirst()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotTableScopedCollection#getItem:member(1)'
+    summary: Ruft eine PivotTable anhand des Namens ab.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Name der abzurufenden PivotTable.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableScopedCollection#getItemOrNullObject:member(1)'
+    summary: 'Ruft eine PivotTable anhand des Namens ab. Wenn die PivotTable nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Name der abzurufenden PivotTable.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableScopedCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.PivotTable:interface'
+    name: PivotTable
+    fullName: Excel.PivotTable
