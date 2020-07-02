@@ -1,0 +1,153 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableRowCollection:interface'
+    summary: |-
+      Stellt eine Auflistung aller Zeilen dar, die Teil der Tabelle sind.
+
+      Beachten Sie, dass im Gegensatz zu Bereichen oder Spalten, die angepasst werden, wenn neue Zeilen/Spalten vor Ihnen hinzugefügt werden, ein TableRow-Objekt den physikalischen Speicherort der Tabellenzeile darstellt, jedoch nicht die Daten. Das heißt, wenn die Daten sortiert werden oder wenn neue Zeilen hinzugefügt werden, zeigt eine Tabellenzeile weiterhin den Index an, für den Sie erstellt wurde.
+    name: Excel.TableRowCollection
+    fullName: Excel.TableRowCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableRowCollection#add:member(1)'
+      - 'excel!Excel.TableRowCollection#count:member'
+      - 'excel!Excel.TableRowCollection#getCount:member(1)'
+      - 'excel!Excel.TableRowCollection#getItemAt:member(1)'
+      - 'excel!Excel.TableRowCollection#load:member(1)'
+  - uid: 'excel!Excel.TableRowCollection#add:member(1)'
+    summary: |-
+      Fügt der Tabelle mindestens eine Zeile hinzu. Das Rückgabeobjekt ist die oberste Zeile der neu hinzugefügten Zeilen.
+
+      Beachten Sie, dass im Gegensatz zu Bereichen oder Spalten, die angepasst werden, wenn neue Zeilen/Spalten vor Ihnen hinzugefügt werden, ein TableRow-Objekt den physikalischen Speicherort der Tabellenzeile darstellt, jedoch nicht die Daten. Das heißt, wenn die Daten sortiert werden oder wenn neue Zeilen hinzugefügt werden, zeigt eine Tabellenzeile weiterhin den Index an, für den Sie erstellt wurde.
+    name: 'add(index, values)'
+    fullName: 'add(index, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    index?: number,
+                    values?:
+                        | Array<Array<boolean | string | number>>
+                        | boolean
+                        | string
+                        | number
+                ): TableRow;
+      return:
+        type:
+          - 'excel!Excel.TableRow:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 'Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.'
+          type:
+            - number
+        - id: values
+          description: Optional. Ein 2-dimensionales Array von unformatierten Werten der Tabellenzeile.
+          type:
+            - 'excel!Excel.TableRowCollection#add~0:complex'
+  - uid: 'excel!Excel.TableRowCollection#count:member'
+    summary: Gibt die Anzahl der Zeilen in der Tabelle zurück.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableRowCollection#getCount:member(1)'
+    summary: Ruft die Anzahl der Zeilen in der Tabelle ab.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.TableRowCollection#getItemAt:member(1)'
+    summary: |-
+      Ruft eine Zeile anhand ihrer Position in der Auflistung ab.
+
+      Beachten Sie, dass im Gegensatz zu Bereichen oder Spalten, die angepasst werden, wenn neue Zeilen/Spalten vor Ihnen hinzugefügt werden, ein TableRow-Objekt den physikalischen Speicherort der Tabellenzeile darstellt, jedoch nicht die Daten. Das heißt, wenn die Daten sortiert werden oder wenn neue Zeilen hinzugefügt werden, zeigt eine Tabellenzeile weiterhin den Index an, für den Sie erstellt wurde.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): TableRow;'
+      return:
+        type:
+          - 'excel!Excel.TableRow:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Index-Wert des abzurufenden Objekts. Nullindiziert.
+          type:
+            - number
+  - uid: 'excel!Excel.TableRowCollection#load:member(1)'
+    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.TableRow:interface'
+    name: TableRow
+    fullName: Excel.TableRow
+  - uid: 'excel!Excel.TableRowCollection#add~0:complex'
+    name: |-
+      | Array<Array<boolean | string | number>>
+                      | boolean
+                      | string
+                      | number
+    fullName: |-
+      | Array<Array<boolean | string | number>>
+                      | boolean
+                      | string
+                      | number
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: |-
+          <boolean | string | number>>
+                          | boolean
+                          | string
+                          | number
+                  
+        fullName: |-
+          <boolean | string | number>>
+                          | boolean
+                          | string
+                          | number

@@ -11,7 +11,9 @@ items:
     children:
       - 'excel!Excel.ConditionalFormatCollection#add:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getCount:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getItemAt:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#load:member(1)'
   - uid: 'excel!Excel.ConditionalFormatCollection#add:member(1)'
     summary: Fügt der Auflistung ein neues bedingtes Format an der ersten/obersten Priorität hinzu.
@@ -79,6 +81,19 @@ items:
               $(".conditional-formats").hide();
           }
           ```
+  - uid: 'excel!Excel.ConditionalFormatCollection#getCount:member(1)'
+    summary: Gibt die Anzahl der bedingten Formate in der Arbeitsmappe zurück.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
     summary: Gibt ein bedingtes Format für die angegebene ID zurück.
     name: getItem(id)
@@ -97,6 +112,24 @@ items:
           description: Die ID des bedingten Formats.
           type:
             - string
+  - uid: 'excel!Excel.ConditionalFormatCollection#getItemAt:member(1)'
+    summary: Gibt ein bedingtes Format am angegebenen Index zurück.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormat:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 'Index der bedingten Formate, die abgerufen werden sollen.'
+          type:
+            - number
   - uid: 'excel!Excel.ConditionalFormatCollection#load:member(1)'
     summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
     name: load(propertyNames)

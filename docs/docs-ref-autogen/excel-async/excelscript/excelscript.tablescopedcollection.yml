@@ -9,9 +9,23 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.TableScopedCollection#getCount:member(1)'
       - 'excel!Excel.TableScopedCollection#getFirst:member(1)'
       - 'excel!Excel.TableScopedCollection#getItem:member(1)'
       - 'excel!Excel.TableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.TableScopedCollection#getCount:member(1)'
+    summary: Ruft die Anzahl von Tabellen in der Auflistung ab.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.TableScopedCollection#getFirst:member(1)'
     summary: 'Ruft die erste Tabelle in der Sammlung ab. Die Tabellen in der Sammlung sind von oben nach unten und von links nach rechts sortiert, so dass die oberste linke Tabelle die erste Tabelle der Sammlung bildet.'
     name: getFirst()

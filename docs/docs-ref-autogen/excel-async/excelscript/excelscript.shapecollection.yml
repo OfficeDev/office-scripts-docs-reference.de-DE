@@ -9,13 +9,34 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ShapeCollection#_GetItem:member(1)'
       - 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
       - 'excel!Excel.ShapeCollection#addGroup:member(1)'
       - 'excel!Excel.ShapeCollection#addImage:member(1)'
       - 'excel!Excel.ShapeCollection#addLine:member(1)'
       - 'excel!Excel.ShapeCollection#addTextBox:member(1)'
+      - 'excel!Excel.ShapeCollection#getCount:member(1)'
       - 'excel!Excel.ShapeCollection#getItem:member(1)'
+      - 'excel!Excel.ShapeCollection#getItemAt:member(1)'
       - 'excel!Excel.ShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.ShapeCollection#_GetItem:member(1)'
+    summary: 'Gibt ein Shape zurück, das durch die Shape-ID identifiziert wird.'
+    name: _GetItem(shapeId)
+    fullName: _GetItem(shapeId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '_GetItem(shapeId: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: shapeId
+          description: Der Bezeichner für das Shape.
+          type:
+            - string
   - uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
     summary: 'Fügt dem Arbeitsblatt eine geometrische Form hinzu. Gibt ein Shape-Objekt zurück, das die neue Form darstellt.'
     name: addGeometricShape(geometricShapeType)
@@ -212,6 +233,19 @@ items:
           description: 'Stellt den Text dar, der im Textfeld erstellt angezeigt wird.'
           type:
             - string
+  - uid: 'excel!Excel.ShapeCollection#getCount:member(1)'
+    summary: Gibt die Anzahl der Formen auf dem Arbeitsblatt zurück.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.ShapeCollection#getItem:member(1)'
     summary: Ruft eine Form anhand ihres Namens oder ihrer ID ab.
     name: getItem(key)
@@ -230,6 +264,24 @@ items:
           description: 'Der Name oder die ID der Form, die abgerufen werden soll.'
           type:
             - string
+  - uid: 'excel!Excel.ShapeCollection#getItemAt:member(1)'
+    summary: Ruft eine Form anhand ihrer Position in der Sammlung ab.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 'Der nullbasierte Index der Form, die abgerufen werden soll.'
+          type:
+            - number
   - uid: 'excel!Excel.ShapeCollection#load:member(1)'
     summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
     name: load(propertyNames)

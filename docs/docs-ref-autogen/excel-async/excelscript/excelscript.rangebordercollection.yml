@@ -9,9 +9,23 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.RangeBorderCollection#count:member'
       - 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
       - 'excel!Excel.RangeBorderCollection#load:member(1)'
       - 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+  - uid: 'excel!Excel.RangeBorderCollection#count:member'
+    summary: Die Anzahl der Rahmen-Objekte in der Auflistung.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
     summary: 'Ruft ein Rahmen-Objekt ab, das den Namen verwendet'
     name: getItem(index)
@@ -30,6 +44,24 @@ items:
           description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter Excel. BorderIndex.
           type:
             - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
+    summary: 'Ruft ein Rahmen-Objekt ab, das den Namen verwendet'
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Index-Wert des abzurufenden Objekts. Nullindiziert.
+          type:
+            - number
   - uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
     summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
     name: load(propertyNames)

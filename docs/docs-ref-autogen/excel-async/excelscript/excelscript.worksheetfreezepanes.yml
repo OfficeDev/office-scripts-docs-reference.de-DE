@@ -11,6 +11,7 @@ items:
       - 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
+      - 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#load:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#unfreeze:member(1)'
@@ -110,6 +111,19 @@ items:
           description: Optionale Anzahl der einzufrierenden Zeilen oder NULL zum Aufheben der Fixierung aller Zeilen
           type:
             - number
+  - uid: 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
+    summary: 'Ruft den Bereich ab, der die fixierten Zellen in der aktiven Ansicht des Arbeitsblatts beschreibt. Der fixierte Bereich entspricht Zellen, die im oberen und linken Bereich fixiert sind.'
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
     summary: 'Ruft den Bereich ab, der die fixierten Zellen in der aktiven Ansicht des Arbeitsblatts beschreibt. Der fixierte Bereich entspricht Zellen, die im oberen und linken Bereich fixiert sind. Wenn kein fixierter Bereich vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
     name: getLocationOrNullObject()

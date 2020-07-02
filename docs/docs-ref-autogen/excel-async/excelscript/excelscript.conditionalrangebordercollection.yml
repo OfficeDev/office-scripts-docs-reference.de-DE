@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#count:member'
       - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
       - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
       - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
       - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
@@ -27,6 +29,18 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
+    summary: Die Anzahl der Rahmen-Objekte in der Auflistung.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
     summary: 'Ruft ein Rahmen-Objekt ab, das den Namen verwendet'
     name: getItem(index)
@@ -45,6 +59,24 @@ items:
           description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter Excel. ConditionalRangeBorderIndex.
           type:
             - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
+    summary: 'Ruft ein Rahmen-Objekt ab, das den Namen verwendet'
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Index-Wert des abzurufenden Objekts. Nullindiziert.
+          type:
+            - number
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
     summary: Ruft den linken Rahmen ab.
     name: left

@@ -24,9 +24,13 @@ items:
       - 'excel!Excel.RangeAreas#format:member'
       - 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
       - 'excel!Excel.RangeAreas#getEntireRow:member(1)'
+      - 'excel!Excel.RangeAreas#getIntersection:member(1)'
       - 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
       - 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
+      - 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
       - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
+      - 'excel!Excel.RangeAreas#getTables:member(1)'
+      - 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
       - 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
       - 'excel!Excel.RangeAreas#isEntireColumn:member'
       - 'excel!Excel.RangeAreas#isEntireRow:member'
@@ -280,6 +284,24 @@ items:
         type:
           - 'excel!Excel.RangeAreas:interface'
         description: ''
+  - uid: 'excel!Excel.RangeAreas#getIntersection:member(1)'
+    summary: 'Gibt das RangeAreas-Objekt zurück, das die Schnittmenge der angegebenen Bereiche oder RangeAreas darstellt. Wenn keine Schnittmenge gefunden wird, wird ein ItemNotFound-Fehler ausgelöst.'
+    name: getIntersection(anotherRange)
+    fullName: getIntersection(anotherRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: anotherRange
+          description: 'Der Bereich, das RangeAreas-Objekt oder die Bereichsadresse, die zum Bestimmen der Schnittmenge verwendet wird.'
+          type:
+            - 'excel!Excel.RangeAreas#getIntersection~0:complex'
   - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
     summary: 'Gibt das RangeAreas-Objekt zurück, das die Schnittmenge der angegebenen Bereiche oder RangeAreas darstellt. Wenn keine Schnittmenge gefunden wird, wird ein NULL-Objekt zurückgegeben.'
     name: getIntersectionOrNullObject(anotherRange)
@@ -327,6 +349,32 @@ items:
           description: 'Die Anzahl der Spalten (positiv, negativ oder 0), mit denen die RangeAreas versetzt werden soll. Bei positiven Werten erfolgt der Versatz nach rechts, bei negativen Werten nach links.'
           type:
             - number
+  - uid: 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
+    summary: 'Gibt ein RangeAreas-Objekt zurück, das alle Zellen darstellt, die dem angegebenen Typ und Wert entsprechen. Löst einen Fehler aus, wenn keine besonderen Zellen gefunden werden, die den Kriterien entsprechen.'
+    name: 'getSpecialCells(cellType, cellValueType)'
+    fullName: 'getSpecialCells(cellType, cellValueType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getSpecialCells(
+                    cellType: SpecialCellType,
+                    cellValueType?: SpecialCellValueType
+                ): RangeAreas;
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: cellType
+          description: Der Typ der einzuschließenden Zellen.
+          type:
+            - 'excel!Excel.SpecialCellType:enum'
+        - id: cellValueType
+          description: 'Wenn CellType entweder Konstanten oder Formeln ist, wird dieses Argument verwendet, um zu bestimmen, welche Arten von Zellen in das Ergebnis einbezogen werden sollen. Diese Werte können miteinander kombiniert werden, um mehr als einen Typ zurückzugeben. Standardmäßig werden alle Konstanten oder Formeln unabhängig vom Typ ausgewählt.'
+          type:
+            - 'excel!Excel.SpecialCellValueType:enum'
   - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
     summary: 'Gibt ein RangeAreas-Objekt zurück, das alle Zellen darstellt, die dem angegebenen Typ und Wert entsprechen. Gibt ein NULL-Objekt zurück, wenn keine besonderen Zellen gefunden werden, die den Kriterien entsprechen.'
     name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
@@ -353,6 +401,42 @@ items:
           description: 'Wenn CellType entweder Konstanten oder Formeln ist, wird dieses Argument verwendet, um zu bestimmen, welche Arten von Zellen in das Ergebnis einbezogen werden sollen. Diese Werte können miteinander kombiniert werden, um mehr als einen Typ zurückzugeben. Standardmäßig werden alle Konstanten oder Formeln unabhängig vom Typ ausgewählt.'
           type:
             - 'excel!Excel.SpecialCellValueType:enum'
+  - uid: 'excel!Excel.RangeAreas#getTables:member(1)'
+    summary: 'Gibt eine bereichsbezogene Sammlung von Tabellen zurück, die sich mit einem beliebigen Bereich in diesem RangeAreas-Objekt überschneiden.'
+    name: getTables(fullyContained)
+    fullName: getTables(fullyContained)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(fullyContained?: boolean): TableScopedCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableScopedCollection:interface'
+        description: ''
+      parameters:
+        - id: fullyContained
+          description: 'Wenn true, werden nur Tabellen zurückgegeben, die vollständig innerhalb der Bereichsgrenzen enthalten sind. Der Standardwert ist „false“.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
+    summary: 'Gibt das verwendete RangeAreas zurück, das alle verwendeten Bereiche einzelner rechteckiger Bereiche im RangeAreas-Objekt umfasst. Wenn in der RangeAreas keine Zellen verwendet werden, wird der ItemNotFound-Fehler ausgelöst.'
+    name: getUsedRangeAreas(valuesOnly)
+    fullName: getUsedRangeAreas(valuesOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: 'Gibt an, ob Zellen mit Werten als verwendete Zellen betrachtet werden sollen. Der Standardwert ist „false“.'
+          type:
+            - boolean
   - uid: 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
     summary: 'Gibt das verwendete RangeAreas zurück, das alle verwendeten Bereiche einzelner rechteckiger Bereiche im RangeAreas-Objekt umfasst. Wenn in der RangeAreas keine Zellen verwendet werden, wird ein NULL-Objekt zurückgegeben.'
     name: getUsedRangeAreasOrNullObject(valuesOnly)
@@ -486,6 +570,20 @@ references:
   - uid: 'excel!Excel.RangeAreas:interface'
     name: RangeAreas
     fullName: Excel.RangeAreas
+  - uid: 'excel!Excel.RangeAreas#getIntersection~0:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:interface'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
   - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
     name: Range | RangeAreas | string
     fullName: Excel.Range | Excel.RangeAreas | string
@@ -510,6 +608,9 @@ references:
   - uid: 'excel!Excel.SpecialCellValueType:enum'
     name: SpecialCellValueType
     fullName: Excel.SpecialCellValueType
+  - uid: 'excel!Excel.TableScopedCollection:interface'
+    name: TableScopedCollection
+    fullName: Excel.TableScopedCollection
   - uid: 'excel!Excel.Worksheet:interface'
     name: Worksheet
     fullName: Excel.Worksheet

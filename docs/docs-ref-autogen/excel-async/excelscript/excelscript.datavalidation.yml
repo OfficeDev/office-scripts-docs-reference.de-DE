@@ -11,6 +11,7 @@ items:
     children:
       - 'excel!Excel.DataValidation#clear:member(1)'
       - 'excel!Excel.DataValidation#errorAlert:member'
+      - 'excel!Excel.DataValidation#getInvalidCells:member(1)'
       - 'excel!Excel.DataValidation#getInvalidCellsOrNullObject:member(1)'
       - 'excel!Excel.DataValidation#ignoreBlanks:member'
       - 'excel!Excel.DataValidation#load:member(1)'
@@ -77,6 +78,19 @@ items:
               await context.sync();
           }
           ```
+  - uid: 'excel!Excel.DataValidation#getInvalidCells:member(1)'
+    summary: 'Gibt ein RangeAreas-Objekt, das einen oder mehrere rechteckige Bereiche umfasst, mit ungültigen Zellwerten zurück. Wenn alle Zellwerte gültig sind, löst diese Funktion einen ItemNotFound Fehler aus.'
+    name: getInvalidCells()
+    fullName: getInvalidCells()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getInvalidCells(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
   - uid: 'excel!Excel.DataValidation#getInvalidCellsOrNullObject:member(1)'
     summary: 'Gibt ein RangeAreas-Objekt, das einen oder mehrere rechteckige Bereiche umfasst, mit ungültigen Zellwerten zurück. Wenn alle Zellwerte gültig sind, gibt diese Funktion NULL zurück.'
     name: getInvalidCellsOrNullObject()

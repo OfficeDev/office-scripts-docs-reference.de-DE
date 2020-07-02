@@ -11,7 +11,9 @@ items:
     children:
       - 'excel!Excel.WorksheetCollection#add:member(1)'
       - 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+      - 'excel!Excel.WorksheetCollection#getCount:member(1)'
       - 'excel!Excel.WorksheetCollection#getFirst:member(1)'
+      - 'excel!Excel.WorksheetCollection#getItem:member(1)'
       - 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.WorksheetCollection#getLast:member(1)'
       - 'excel!Excel.WorksheetCollection#load:member(1)'
@@ -46,6 +48,24 @@ items:
         type:
           - 'excel!Excel.Worksheet:interface'
         description: ''
+  - uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
+    summary: Ruft die Anzahl von Arbeitsblättern in der Auflistung ab.
+    name: getCount(visibleOnly)
+    fullName: getCount(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(visibleOnly?: boolean): number;'
+      return:
+        type:
+          - number
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 'Optional. Bei true werden nur sichtbare Arbeitsblätter berücksichtigt, und alle ausgeblendeten werden übersprungen.'
+          type:
+            - boolean
   - uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
     summary: Ruft das erste Arbeitsblatt in der Sammlung ab.
     name: getFirst(visibleOnly)
@@ -94,6 +114,24 @@ items:
           description: 'Optional. Bei true werden nur sichtbare Arbeitsblätter berücksichtigt, und alle ausgeblendeten werden übersprungen.'
           type:
             - boolean
+  - uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
+    summary: Ruft das Arbeitsblattobjekt mithilfe des Namens oder der ID ab.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Der Name oder die ID des Arbeitsblatts.
+          type:
+            - string
   - uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
     summary: 'Ruft das Arbeitsblattobjekt mithilfe des Namens oder der ID ab. Wenn das Arbeitsblatt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
     name: getItemOrNullObject(key)

@@ -73,7 +73,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-    summary: 'Gibt einen Double-Wert an, der eine Musterfarbe für die Bereichs Füllung aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Wenn das Muster tintAndShades nicht einheitlich ist, wird NULL zurückgegeben.'
+    summary: 'Gibt einen Double-Wert an, der eine Musterfarbe für die Bereichs Füllung aufhellt oder verdunkelt. Der Wert ist zwischen-1 (am dunkelsten) und 1 (am hellsten), wobei 0 für die ursprüngliche Farbe steht. Wenn das Muster tintAndShades nicht einheitlich ist, wird NULL zurückgegeben.'
     name: getPatternTintAndShade()
     fullName: getPatternTintAndShade()
     langs:
@@ -153,7 +153,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-    summary: 'Gibt einen Double-Wert an, der eine Musterfarbe für die Bereichs Füllung aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Wenn das Muster tintAndShades nicht einheitlich ist, wird NULL zurückgegeben.'
+    summary: 'Gibt einen Double-Wert an, der eine Musterfarbe für die Bereichs Füllung aufhellt oder verdunkelt. Der Wert ist zwischen-1 (am dunkelsten) und 1 (am hellsten), wobei 0 für die ursprüngliche Farbe steht. Wenn das Muster tintAndShades nicht einheitlich ist, wird NULL zurückgegeben.'
     name: setPatternTintAndShade(patternTintAndShade)
     fullName: setPatternTintAndShade(patternTintAndShade)
     langs:

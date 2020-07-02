@@ -1,13 +1,13 @@
 ---
 title: Referenzdokumentation zur Office Scripts-API
 description: Eine Übersicht über die asynchronen JavaScript-APIs für Office-Skripts.
-ms.date: 06/17/2020
-ms.openlocfilehash: b9fa59764b7cb54567adbe05b9671bae9b232972
-ms.sourcegitcommit: 163b26a43411ad7f13a01237efe9b8d6de656b47
+ms.date: 06/29/2020
+ms.openlocfilehash: 3d8d37b30d9535e8b6a56a08c44f9034cb599f31
+ms.sourcegitcommit: 9c4c4c213a203e58c55eb3d84d7d92fa527f3eb8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44887084"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45003954"
 ---
 # <a name="office-scripts-async-api-reference"></a>Office Scripts Async-API-Referenz
 
@@ -20,12 +20,12 @@ Die asynchrone API für Office-Skripts unterstützt ältere Skripts, die währen
 
 In der folgenden Liste werden die Grundlagen des Office Scripts-Objektmodells aufgeschlüsselt. Dadurch werden die allgemeinen Klassen und ihre Beziehung miteinander dargestellt.
 
-- Eine [Arbeitsmappe](/javascript/api/office-scripts/excel/excelscript.workbook) enthält ein oder mehrere [Arbeitsblätter](/javascript/api/office-scripts/excel/excelscript.worksheet) in einer [worksheetcollection](/javascript/api/office-scripts/excel/excelscript.worksheetcollection).
-- Ein [Arbeitsblatt](/javascript/api/office-scripts/excel/excelscript.worksheet) ermöglicht den Zugriff auf Zellen über [Bereichsobjekte](/javascript/api/office-scripts/excel/excelscript.range).
-- Ein [Bereich](/javascript/api/office-scripts/excel/excelscript.range) besteht aus einer Gruppe zusammenhängender Zellen.
-- [Bereiche](/javascript/api/office-scripts/excel/excelscript.range) werden verwendet, um [Tabellen](/javascript/api/office-scripts/excel/excelscript.table), [Diagramme](/javascript/api/office-scripts/excel/excelscript.chart), [Formen](/javascript/api/office-scripts/excel/excelscript.shape) sowie andere Objekte für die Datenvisualisierung oder -organisation zu erstellen und zu platzieren.
-- Ein [Arbeitsblatt](/javascript/api/office-scripts/excel/excelscript.worksheet) enthält Auflistungen dieser Datenobjekte (beispielsweise eine [chartcollection](/javascript/api/office-scripts/excel/excelscript.chartcollection)), die im einzelnen Blatt vorhanden sind.
-- [Arbeitsmappen](/javascript/api/office-scripts/excel/excelscript.workbook) enthalten Auflistungen einiger dieser Datenobjekte (beispielsweise eine [tablecollection](/javascript/api/office-scripts/excel/excelscript.tablecollection)) für die gesamte [Arbeitsmappe](/javascript/api/office-scripts/excel/excelscript.workbook).
+- Eine [Arbeitsmappe](/javascript/api/office-scripts/excelscript/excelscript.workbook) enthält ein oder mehrere [Arbeitsblätter](/javascript/api/office-scripts/excelscript/excelscript.worksheet) in einer [worksheetcollection](/javascript/api/office-scripts/excelscript/excelscript.worksheetcollection).
+- Ein [Arbeitsblatt](/javascript/api/office-scripts/excelscript/excelscript.worksheet) ermöglicht den Zugriff auf Zellen über [Bereichsobjekte](/javascript/api/office-scripts/excelscript/excelscript.range).
+- Ein [Bereich](/javascript/api/office-scripts/excelscript/excelscript.range) besteht aus einer Gruppe zusammenhängender Zellen.
+- [Bereiche](/javascript/api/office-scripts/excelscript/excelscript.range) werden verwendet, um [Tabellen](/javascript/api/office-scripts/excelscript/excelscript.table), [Diagramme](/javascript/api/office-scripts/excelscript/excelscript.chart), [Formen](/javascript/api/office-scripts/excelscript/excelscript.shape) sowie andere Objekte für die Datenvisualisierung oder -organisation zu erstellen und zu platzieren.
+- Ein [Arbeitsblatt](/javascript/api/office-scripts/excelscript/excelscript.worksheet) enthält Auflistungen dieser Datenobjekte (beispielsweise eine [chartcollection](/javascript/api/office-scripts/excelscript/excelscript.chartcollection)), die im einzelnen Blatt vorhanden sind.
+- [Arbeitsmappen](/javascript/api/office-scripts/excelscript/excelscript.workbook) enthalten Auflistungen einiger dieser Datenobjekte (beispielsweise eine [tablecollection](/javascript/api/office-scripts/excelscript/excelscript.tablecollection)) für die gesamte [Arbeitsmappe](/javascript/api/office-scripts/excelscript/excelscript.workbook).
 
 Weitere Informationen zum Office Scripts-Objektmodell finden Sie unter [Scripting Fundamentals for Office scripts in Excel im Internet](/office/dev/scripts/develop/scripting-fundamentals) .
 

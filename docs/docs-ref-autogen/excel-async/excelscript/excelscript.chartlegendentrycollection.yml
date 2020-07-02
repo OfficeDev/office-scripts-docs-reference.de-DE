@@ -9,7 +9,40 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ChartLegendEntryCollection#getCount:member(1)'
+      - 'excel!Excel.ChartLegendEntryCollection#getItemAt:member(1)'
       - 'excel!Excel.ChartLegendEntryCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartLegendEntryCollection#getCount:member(1)'
+    summary: Gibt die Anzahl der legendEntry-Objekte in der Sammlung zurück.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.ChartLegendEntryCollection#getItemAt:member(1)'
+    summary: Gibt einen LegendEntry im angegebenen Index zurück.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ChartLegendEntry;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendEntry:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 'Index des legendEntry, das abgerufen werden soll.'
+          type:
+            - number
   - uid: 'excel!Excel.ChartLegendEntryCollection#load:member(1)'
     summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
     name: load(propertyNames)
@@ -28,3 +61,7 @@ items:
           description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
           type:
             - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartLegendEntry:interface'
+    name: ChartLegendEntry
+    fullName: Excel.ChartLegendEntry

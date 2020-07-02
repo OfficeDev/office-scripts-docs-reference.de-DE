@@ -33,6 +33,7 @@ items:
       - 'ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)'
@@ -431,6 +432,24 @@ items:
           description: 'Wenn CellType entweder Konstanten oder Formeln ist, wird dieses Argument verwendet, um zu bestimmen, welche Arten von Zellen in das Ergebnis einbezogen werden sollen. Diese Werte können miteinander kombiniert werden, um mehr als einen Typ zurückzugeben. Standardmäßig werden alle Konstanten oder Formeln unabhängig vom Typ ausgewählt.'
           type:
             - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
+    summary: 'Gibt eine bereichsbezogene Sammlung von Tabellen zurück, die sich mit einem beliebigen Bereich in diesem RangeAreas-Objekt überschneiden.'
+    name: getTables(fullyContained)
+    fullName: getTables(fullyContained)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(fullyContained?: boolean): Table[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas#getTables~0:complex'
+        description: ''
+      parameters:
+        - id: fullyContained
+          description: 'Wenn true, werden nur Tabellen zurückgegeben, die vollständig innerhalb der Bereichsgrenzen enthalten sind. Der Standardwert ist „false“.'
+          type:
+            - boolean
   - uid: 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
     summary: 'Gibt das verwendete RangeAreas zurück, das alle verwendeten Bereiche einzelner rechteckiger Bereiche im RangeAreas-Objekt umfasst. Wenn in der RangeAreas keine Zellen verwendet werden, wird ein NULL-Objekt zurückgegeben.'
     name: getUsedRangeAreas(valuesOnly)
@@ -567,6 +586,15 @@ references:
   - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
     name: SpecialCellValueType
     fullName: ExcelScript.SpecialCellValueType
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getTables~0:complex'
+    name: 'Table[]'
+    fullName: 'ExcelScript.Table[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: '[]'
+        fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
     name: Worksheet
     fullName: ExcelScript.Worksheet

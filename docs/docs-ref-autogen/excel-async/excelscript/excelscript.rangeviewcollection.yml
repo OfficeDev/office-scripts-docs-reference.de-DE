@@ -9,7 +9,40 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.RangeViewCollection#getCount:member(1)'
+      - 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
       - 'excel!Excel.RangeViewCollection#load:member(1)'
+  - uid: 'excel!Excel.RangeViewCollection#getCount:member(1)'
+    summary: Gibt die Anzahl von RangeView-Objekten in der Auflistung zurück.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
+    summary: Ruft eine RangeView-Zeile über den Index ab. Nullindiziert.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): RangeView;'
+      return:
+        type:
+          - 'excel!Excel.RangeView:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Index der sichtbaren Zeile.
+          type:
+            - number
   - uid: 'excel!Excel.RangeViewCollection#load:member(1)'
     summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
     name: load(propertyNames)
@@ -28,3 +61,7 @@ items:
           description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
           type:
             - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RangeView:interface'
+    name: RangeView
+    fullName: Excel.RangeView
