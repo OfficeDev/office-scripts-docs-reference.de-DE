@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"ascending"'
+    numericValue: '"Ascending"'
   - uid: 'excel!Excel.SlicerSortType.dataSourceOrder:member'
     summary: Sortieren von Slicer-Elementen in der von der Datenquelle bereitgestellten Reihenfolge.
     name: dataSourceOrder
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"dataSourceOrder"'
+    numericValue: '"DataSourceOrder"'
   - uid: 'excel!Excel.SlicerSortType.descending:member'
     summary: Sortieren von datenschnitt Elementen in absteigender Reihenfolge nach Elementbeschriftungen.
     name: descending
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"descending"'
+    numericValue: '"Descending"'

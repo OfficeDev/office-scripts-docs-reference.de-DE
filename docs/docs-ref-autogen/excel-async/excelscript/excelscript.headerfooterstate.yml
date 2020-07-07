@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"default"'
+    numericValue: '"Default"'
   - uid: 'excel!Excel.HeaderFooterState.firstAndDefault:member'
     summary: 'Es gibt eine separate Kopfzeile/Fußzeile für die erste Seite und eine allgemeine Kopfzeile/Fußzeile, die für alle anderen Seiten verwendet wird.'
     name: firstAndDefault
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"firstAndDefault"'
+    numericValue: '"FirstAndDefault"'
   - uid: 'excel!Excel.HeaderFooterState.firstOddAndEven:member'
     summary: 'Es gibt eine separate Kopfzeile/Fußzeile der ersten Seite, dann gibt es eine separate Kopfzeile/Fußzeile für ungerade und gerade Seiten.'
     name: firstOddAndEven
@@ -35,7 +35,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"firstOddAndEven"'
+    numericValue: '"FirstOddAndEven"'
   - uid: 'excel!Excel.HeaderFooterState.oddAndEven:member'
     summary: Es gibt eine andere Kopfzeile/Fußzeile für ungerade und gerade Seiten.
     name: oddAndEven
@@ -43,4 +43,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"oddAndEven"'
+    numericValue: '"OddAndEven"'
