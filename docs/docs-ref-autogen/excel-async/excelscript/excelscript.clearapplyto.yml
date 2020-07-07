@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"all"'
+    numericValue: '"All"'
   - uid: 'excel!Excel.ClearApplyTo.contents:member'
     summary: Löscht den Inhalt des Bereichs.
     name: contents
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"contents"'
+    numericValue: '"Contents"'
   - uid: 'excel!Excel.ClearApplyTo.formats:member'
     summary: Löscht alle Formatierungen für den Bereich.
     name: formats
@@ -35,7 +35,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"formats"'
+    numericValue: '"Formats"'
   - uid: 'excel!Excel.ClearApplyTo.hyperlinks:member'
     summary: 'Löscht alle Hyperlinks, lässt jedoch alle Inhalte und Formatierungen unverändert.'
     name: hyperlinks
@@ -43,7 +43,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hyperlinks"'
+    numericValue: '"Hyperlinks"'
   - uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
     summary: 'Entfernt Hyperlinks und Formatierungen für die Zelle, bleibt jedoch Inhalt, bedingte Formate und Datenüberprüfung intakt.'
     name: removeHyperlinks
@@ -51,4 +51,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"removeHyperlinks"'
+    numericValue: '"RemoveHyperlinks"'

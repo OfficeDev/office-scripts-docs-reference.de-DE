@@ -25,7 +25,7 @@ items:
       content: |-
         add(
                     content: CommentRichContent | string,
-                    contentType?: ContentType
+                    contentType?: ContentType | "Plain" | "Mention"
                 ): CommentReply;
       return:
         type:
@@ -52,7 +52,7 @@ items:
         - id: contentType
           description: 'Optional. Der Typ des Inhalts, der im Kommentar enthalten ist. Der Standardwert ist Enum.`ContentType.Plain`<!-- -->.'
           type:
-            - 'excel!Excel.ContentType:enum'
+            - 'excel!Excel.CommentReplyCollection#add~1:complex'
   - uid: 'excel!Excel.CommentReplyCollection#getCount:member(1)'
     summary: Ruft die Anzahl der Kommentarantworten in der Sammlung ab.
     name: getCount()
@@ -61,10 +61,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCount(): number;'
+      content: 'getCount(): ClientResult<number>;'
       return:
         type:
-          - number
+          - 'excel!Excel.CommentReplyCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.CommentReplyCollection#getItem:member(1)'
     summary: 'Gibt eine Kommentarantwort zurück, die durch ihre ID angegeben ist.'
@@ -133,6 +133,25 @@ references:
         fullName: Excel.CommentRichContent
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'excel!Excel.ContentType:enum'
-    name: ContentType
-    fullName: Excel.ContentType
+  - uid: 'excel!Excel.CommentReplyCollection#add~1:complex'
+    name: ContentType | "Plain" | "Mention"
+    fullName: Excel.ContentType | "Plain" | "Mention"
+    spec.typeScript:
+      - uid: 'excel!Excel.ContentType:enum'
+        name: ContentType
+        fullName: Excel.ContentType
+      - name: |2-
+           | "Plain" | "Mention"
+                  
+        fullName: |2-
+           | "Plain" | "Mention"
+                  
+  - uid: 'excel!Excel.CommentReplyCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>

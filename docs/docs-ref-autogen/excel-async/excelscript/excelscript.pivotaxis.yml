@@ -21,7 +21,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"column"'
+    numericValue: '"Column"'
   - uid: 'excel!Excel.PivotAxis.data:member'
     summary: Die Datenachse.
     name: data
@@ -29,7 +29,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"data"'
+    numericValue: '"Data"'
   - uid: 'excel!Excel.PivotAxis.filter:member'
     summary: Die Filterachse.
     name: filter
@@ -37,7 +37,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"filter"'
+    numericValue: '"Filter"'
   - uid: 'excel!Excel.PivotAxis.row:member'
     summary: Die Zeilenachse.
     name: row
@@ -45,7 +45,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"row"'
+    numericValue: '"Row"'
   - uid: 'excel!Excel.PivotAxis.unknown:member'
     summary: Die Achse oder die Region ist unbekannt oder nicht unterstützt.
     name: unknown
@@ -53,4 +53,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"unknown"'
+    numericValue: '"Unknown"'
