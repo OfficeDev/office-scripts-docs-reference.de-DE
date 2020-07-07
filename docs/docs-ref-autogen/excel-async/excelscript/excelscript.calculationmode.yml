@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"automatic"'
+    numericValue: '"Automatic"'
   - uid: 'excel!Excel.CalculationMode.automaticExceptTables:member'
     summary: 'Berechnet jedes Mal, wenn die relevanten Daten geändert werden, neue Formelergebnisse, es sei denn, die Formel befindet sich in einer Datentabelle.'
     name: automaticExceptTables
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"automaticExceptTables"'
+    numericValue: '"AutomaticExceptTables"'
   - uid: 'excel!Excel.CalculationMode.manual:member'
     summary: 'Berechnungen treten nur auf, wenn der Benutzer oder das Add-in diese anfordert.'
     name: manual
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"manual"'
+    numericValue: '"Manual"'

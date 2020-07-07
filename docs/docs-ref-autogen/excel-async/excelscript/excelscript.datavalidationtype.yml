@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"custom"'
+    numericValue: '"Custom"'
   - uid: 'excel!Excel.DataValidationType.date:member'
     summary: Datumsdaten-Überprüfungs
     name: date
@@ -34,7 +34,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"date"'
+    numericValue: '"Date"'
   - uid: 'excel!Excel.DataValidationType.decimal:member'
     summary: Typ der Dezimaldaten Überprüfung
     name: decimal
@@ -42,7 +42,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"decimal"'
+    numericValue: '"Decimal"'
   - uid: 'excel!Excel.DataValidationType.inconsistent:member'
     summary: 'Inkonsistente bedeutet, dass der Bereich eine inkonsistente Datenüberprüfung aufweist (es gibt unterschiedliche Regeln für unterschiedliche Zellen)'
     name: inconsistent
@@ -50,7 +50,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"inconsistent"'
+    numericValue: '"Inconsistent"'
   - uid: 'excel!Excel.DataValidationType.list:member'
     summary: Typ der Listendaten Überprüfung
     name: list
@@ -58,7 +58,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"list"'
+    numericValue: '"List"'
   - uid: 'excel!Excel.DataValidationType.mixedCriteria:member'
     summary: 'MixedCriteria bedeutet, dass für den Bereich die Datenüberprüfung in einigen, aber nicht allen Zellen vorhanden ist.'
     name: mixedCriteria
@@ -66,7 +66,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"mixedCriteria"'
+    numericValue: '"MixedCriteria"'
   - uid: 'excel!Excel.DataValidationType.none:member'
     summary: 'None bedeutet, dass jeder Wert zulässig ist, sodass keine Datenüberprüfung im Bereich erfolgt.'
     name: none
@@ -74,7 +74,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.DataValidationType.textLength:member'
     summary: Datentyp für Text Längen-Gültigkeitsprüfung
     name: textLength
@@ -82,7 +82,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"textLength"'
+    numericValue: '"TextLength"'
   - uid: 'excel!Excel.DataValidationType.time:member'
     summary: Typ der Zeit Datenüberprüfung
     name: time
@@ -90,7 +90,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"time"'
+    numericValue: '"Time"'
   - uid: 'excel!Excel.DataValidationType.wholeNumber:member'
     summary: Überprüfungs für ganze Zahlen Daten
     name: wholeNumber
@@ -98,4 +98,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"wholeNumber"'
+    numericValue: '"WholeNumber"'

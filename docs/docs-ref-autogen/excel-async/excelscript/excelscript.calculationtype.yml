@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"full"'
+    numericValue: '"Full"'
   - uid: 'excel!Excel.CalculationType.fullRebuild:member'
     summary: 'Dadurch wird die vollständige Abhängigkeitskette neu erstellt, alle Zellen als verschmutzt markiert und neu berechnet.'
     name: fullRebuild
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fullRebuild"'
+    numericValue: '"FullRebuild"'
   - uid: 'excel!Excel.CalculationType.recalculate:member'
     summary: 'Berechnet alle Zellen neu, die Excel als verschmutzt markiert hat, also abhängige Elemente flüchtiger oder geänderter Daten und Zellen, die programmgesteuert als verschmutzt markiert wurden.'
     name: recalculate
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"recalculate"'
+    numericValue: '"Recalculate"'

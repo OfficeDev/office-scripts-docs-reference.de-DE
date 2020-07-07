@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"compact"'
+    numericValue: '"Compact"'
   - uid: 'excel!Excel.PivotLayoutType.outline:member'
     summary: 'Die Elemente der inneren Felder befinden sich in derselben Zeile, in der sich die Elemente und Teilergebnisse von äußeren Feldern immer im unteren Bereich befinden.'
     name: outline
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"outline"'
+    numericValue: '"Outline"'
   - uid: 'excel!Excel.PivotLayoutType.tabular:member'
     summary: Die Elemente der inneren Felder befinden sich immer in einer neuen Position relativ zu den Elementen der äußeren Felder.
     name: tabular
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tabular"'
+    numericValue: '"Tabular"'

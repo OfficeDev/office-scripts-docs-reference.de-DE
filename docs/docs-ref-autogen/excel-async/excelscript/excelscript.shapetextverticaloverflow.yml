@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"clip"'
+    numericValue: '"Clip"'
   - uid: 'excel!Excel.ShapeTextVerticalOverflow.ellipsis:member'
     summary: 'Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet, und ein Auslassungszeichen (...) wird am Ende des sichtbaren Texts angezeigt.'
     name: ellipsis
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"ellipsis"'
+    numericValue: '"Ellipsis"'
   - uid: 'excel!Excel.ShapeTextVerticalOverflow.overflow:member'
     summary: 'Vertikalen Überlauf von Text über den Textrahmen zulassen (kann oben, unten oder an beiden Enden abhängig von der Textausrichtung auftreten).'
     name: overflow
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"overflow"'
+    numericValue: '"Overflow"'

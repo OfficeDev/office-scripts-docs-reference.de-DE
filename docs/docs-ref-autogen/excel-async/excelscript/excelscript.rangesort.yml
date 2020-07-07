@@ -24,8 +24,8 @@ items:
                     fields: SortField[],
                     matchCase?: boolean,
                     hasHeaders?: boolean,
-                    orientation?: SortOrientation,
-                    method?: SortMethod
+                    orientation?: SortOrientation | "Rows" | "Columns",
+                    method?: SortMethod | "PinYin" | "StrokeCount"
                 ): void;
       return:
         type:
@@ -47,11 +47,11 @@ items:
         - id: orientation
           description: 'Optional. Gibt an, ob der Vorgang Zeilen oder Spalten sortiert.'
           type:
-            - 'excel!Excel.SortOrientation:enum'
+            - 'excel!Excel.RangeSort#apply~1:complex'
         - id: method
           description: Optional. Die Sortiermethode für chinesische Zeichen.
           type:
-            - 'excel!Excel.SortMethod:enum'
+            - 'excel!Excel.RangeSort#apply~2:complex'
   - uid: 'excel!Excel.RangeSort#load:member(1)'
     summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
     name: load(propertyNames)
@@ -80,9 +80,24 @@ references:
         fullName: Excel.SortField
       - name: '[]'
         fullName: '[]'
-  - uid: 'excel!Excel.SortOrientation:enum'
-    name: SortOrientation
-    fullName: Excel.SortOrientation
-  - uid: 'excel!Excel.SortMethod:enum'
-    name: SortMethod
-    fullName: Excel.SortMethod
+  - uid: 'excel!Excel.RangeSort#apply~1:complex'
+    name: SortOrientation | "Rows" | "Columns"
+    fullName: Excel.SortOrientation | "Rows" | "Columns"
+    spec.typeScript:
+      - uid: 'excel!Excel.SortOrientation:enum'
+        name: SortOrientation
+        fullName: Excel.SortOrientation
+      - name: ' | "Rows" | "Columns"'
+        fullName: ' | "Rows" | "Columns"'
+  - uid: 'excel!Excel.RangeSort#apply~2:complex'
+    name: SortMethod | "PinYin" | "StrokeCount"
+    fullName: Excel.SortMethod | "PinYin" | "StrokeCount"
+    spec.typeScript:
+      - uid: 'excel!Excel.SortMethod:enum'
+        name: SortMethod
+        fullName: Excel.SortMethod
+      - name: |2-
+           | "PinYin" | "StrokeCount"
+                  
+        fullName: |2-
+           | "PinYin" | "StrokeCount"

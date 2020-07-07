@@ -30,7 +30,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"all"'
+    numericValue: '"All"'
   - uid: 'excel!Excel.SpecialCellValueType.errors:member'
     summary: Zellen mit Fehlern.
     name: errors
@@ -38,7 +38,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errors"'
+    numericValue: '"Errors"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsLogical:member'
     summary: Zellen mit Fehlern oder true/false-Wert.
     name: errorsLogical
@@ -46,7 +46,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsLogical"'
+    numericValue: '"ErrorsLogical"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsLogicalNumber:member'
     summary: 'Zellen mit Fehlern, true/false oder einem numerischen Wert.'
     name: errorsLogicalNumber
@@ -54,7 +54,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsLogicalNumber"'
+    numericValue: '"ErrorsLogicalNumber"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsLogicalText:member'
     summary: 'Zellen mit Fehlern, true/false oder einem String-Wert.'
     name: errorsLogicalText
@@ -62,7 +62,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsLogicalText"'
+    numericValue: '"ErrorsLogicalText"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsNumbers:member'
     summary: Zellen mit Fehlern oder ein numerischer Wert.
     name: errorsNumbers
@@ -70,7 +70,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsNumbers"'
+    numericValue: '"ErrorsNumbers"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsNumberText:member'
     summary: 'Zellen mit Fehlern, numerischen oder einem String-Wert.'
     name: errorsNumberText
@@ -78,7 +78,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsNumberText"'
+    numericValue: '"ErrorsNumberText"'
   - uid: 'excel!Excel.SpecialCellValueType.errorsText:member'
     summary: Zellen mit Fehlern oder ein String-Wert.
     name: errorsText
@@ -86,7 +86,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"errorsText"'
+    numericValue: '"ErrorsText"'
   - uid: 'excel!Excel.SpecialCellValueType.logical:member'
     summary: Zellen mit dem Wert true/false.
     name: logical
@@ -94,7 +94,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logical"'
+    numericValue: '"Logical"'
   - uid: 'excel!Excel.SpecialCellValueType.logicalNumbers:member'
     summary: Zellen mit dem Wert true/false oder einem numerischen Wert.
     name: logicalNumbers
@@ -102,7 +102,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logicalNumbers"'
+    numericValue: '"LogicalNumbers"'
   - uid: 'excel!Excel.SpecialCellValueType.logicalNumbersText:member'
     summary: 'Zellen mit dem Wert "true/false", "numeric" oder "String".'
     name: logicalNumbersText
@@ -110,7 +110,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logicalNumbersText"'
+    numericValue: '"LogicalNumbersText"'
   - uid: 'excel!Excel.SpecialCellValueType.logicalText:member'
     summary: Zellen mit dem Wert "true/false" oder "String".
     name: logicalText
@@ -118,7 +118,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"logicalText"'
+    numericValue: '"LogicalText"'
   - uid: 'excel!Excel.SpecialCellValueType.numbers:member'
     summary: Zellen mit einem numerischen Wert.
     name: numbers
@@ -126,7 +126,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"numbers"'
+    numericValue: '"Numbers"'
   - uid: 'excel!Excel.SpecialCellValueType.numbersText:member'
     summary: Zellen mit einem numerischen oder einem String-Wert.
     name: numbersText
@@ -134,7 +134,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"numbersText"'
+    numericValue: '"NumbersText"'
   - uid: 'excel!Excel.SpecialCellValueType.text:member'
     summary: Zellen mit einem String-Wert.
     name: text
@@ -142,4 +142,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"text"'
+    numericValue: '"Text"'
