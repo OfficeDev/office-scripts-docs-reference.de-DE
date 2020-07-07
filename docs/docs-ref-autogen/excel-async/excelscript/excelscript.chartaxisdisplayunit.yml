@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"billions"'
+    numericValue: '"Billions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.custom:member'
     summary: Dadurch wird die Achse in Einheiten von benutzerdefiniertem Wert festgelegt.
     name: custom
@@ -34,7 +34,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"custom"'
+    numericValue: '"Custom"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.hundredMillions:member'
     summary: Dadurch wird die Achse in Einheiten von Hunderten von Millionen festgelegt.
     name: hundredMillions
@@ -42,7 +42,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hundredMillions"'
+    numericValue: '"HundredMillions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.hundreds:member'
     summary: Dadurch wird die Achse in Einheiten von Hunderten festgelegt.
     name: hundreds
@@ -50,7 +50,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hundreds"'
+    numericValue: '"Hundreds"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.hundredThousands:member'
     summary: Dadurch wird die Achse in Einheiten von Hunderttausenden festgelegt.
     name: hundredThousands
@@ -58,7 +58,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hundredThousands"'
+    numericValue: '"HundredThousands"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.millions:member'
     summary: Dadurch wird die Achse in Millionen Einheiten festgelegt.
     name: millions
@@ -66,7 +66,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"millions"'
+    numericValue: '"Millions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.none:member'
     summary: 'Standardoption. Dadurch wird die Anzeigeeinheit auf die Achse zurückgesetzt, und die Einheitenbeschriftung wird unsichtbar festgelegt.'
     name: none
@@ -74,7 +74,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.tenMillions:member'
     summary: Dadurch wird die Achse in Einheiten von zehn Millionen festgelegt.
     name: tenMillions
@@ -82,7 +82,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tenMillions"'
+    numericValue: '"TenMillions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.tenThousands:member'
     summary: Dadurch wird die Achse in Einheiten von Zehntausenden festgelegt.
     name: tenThousands
@@ -90,7 +90,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tenThousands"'
+    numericValue: '"TenThousands"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.thousands:member'
     summary: Dadurch wird die Achse in Einheiten von Tausenden festgelegt.
     name: thousands
@@ -98,7 +98,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thousands"'
+    numericValue: '"Thousands"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.trillions:member'
     summary: Dadurch wird die Achse in Einheiten von Billionen festgelegt.
     name: trillions
@@ -106,4 +106,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"trillions"'
+    numericValue: '"Trillions"'

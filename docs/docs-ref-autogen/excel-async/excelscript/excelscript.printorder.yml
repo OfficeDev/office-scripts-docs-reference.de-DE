@@ -17,7 +17,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"downThenOver"'
+    numericValue: '"DownThenOver"'
   - uid: 'excel!Excel.PrintOrder.overThenDown:member'
     summary: Die Verarbeitung erfolgt zuerst quer über die Seiten oder Seitenfelder auf der rechten Seite und dann abwärts nach Zeilen.
     name: overThenDown
@@ -25,4 +25,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"overThenDown"'
+    numericValue: '"OverThenDown"'
