@@ -12,7 +12,7 @@ items:
       - 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
       - 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
   - uid: 'ExcelScript!ExcelScript.ReadingOrder.context:member'
-    summary: 'Reading order is determined by the language of the first character entered. If a right-to-left language character is entered first, reading order is right to left. If a left-to-right language character is entered first, reading order is left to right.'
+    summary: 'Die Leserichtung wird durch die Sprache des ersten eingegebenen Zeichens bestimmt. Wenn zuerst ein Zeichen einer Rechts-nach-Links-Sprache eingegeben wird, ist die Leserichtung von rechts nach links. Wird zunächst ein Zeichen einer Links-nach-Rechts-Sprache eingegeben, so ist die Leserichtung von links nach rechts.'
     name: context
     fullName: context
     langs:

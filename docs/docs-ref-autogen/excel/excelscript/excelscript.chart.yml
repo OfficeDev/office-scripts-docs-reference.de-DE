@@ -625,7 +625,7 @@ items:
         description: ''
       parameters:
         - id: startCell
-          description: 'The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user''s right-to-left display settings.'
+          description: 'Die Startzelle. An diese Position wird das Diagramm verschoben. Die Startzelle ist die obere linke oder die obere rechte Zelle, abhängig davon, ob die eingestellte Textrichtung des Benutzers von links nach rechts oder von rechts nach links ist.'
           type:
             - 'ExcelScript!ExcelScript.Chart#setPosition~0:complex'
         - id: endCell
