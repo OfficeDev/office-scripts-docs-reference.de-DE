@@ -106,7 +106,7 @@ items:
         description: ''
       parameters:
         - id: range
-          description: 'Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name'
+          description: Bereich für die Bindung. Kann ein Excel-Range-Objekt oder eine Zeichenfolge sein. Eine Zeichenfolge muss die vollständige Adresse einschließlich des Blattnamens enthalten.
           type:
             - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
         - id: bindingType
@@ -410,7 +410,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#addTable:member(1)'
-    summary: 'Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.'
+    summary: "Erstellt eine neue Tabelle. Das Bereichsobjekt oder die Quelladresse bestimmt das Arbeitsblatt, unter dem die Tabelle hinzugefügt wird. Wenn die Tabelle nicht hinzugefügt werden kann (z.\_B. weil die Adresse ungültig ist oder sich die Tabelle mit einer anderen Tabelle überlappen würde), wird ein Fehler ausgelöst."
     name: 'addTable(address, hasHeaders)'
     fullName: 'addTable(address, hasHeaders)'
     langs:
@@ -428,7 +428,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addTable~0:complex'
         - id: hasHeaders
-          description: 'Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.'
+          description: 'Boolescher Wert, der angibt, ob die importierten Daten Spaltenüberschriften besitzen. Wenn die Quelle keine Überschriften enthält (d. h. wenn diese Eigenschaft auf falsch festgelegt ist), generiert Excel automatisch eine Überschriftenänderung der Daten nach einer Zeile.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)'
@@ -476,7 +476,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)'
-    summary: 'Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.'
+    summary: 'Fügt der Arbeitsmappe ein neues Arbeitsblatt hinzu. Das Arbeitsblatt wird automatisch am Ende der vorhandenen Arbeitsblättern hinzugefügt. Wenn Sie das neu hinzugefügte Arbeitsblatt aktivieren möchten, rufen Sie „.activate()“ dazu auf.'
     name: addWorksheet(name)
     fullName: addWorksheet(name)
     langs:
@@ -490,7 +490,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 'Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.'
+          description: 'Optional. Der Name des hinzuzufügenden Arbeitsblatts. Falls angegeben, sollte der Name eindeutig sein. Falls nicht angegeben, bestimmt Excel den Namen des neuen Arbeitsblatts.'
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)'

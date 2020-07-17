@@ -38,7 +38,7 @@ items:
         description: ''
       parameters:
         - id: range
-          description: 'Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name'
+          description: Bereich für die Bindung. Kann ein Excel-Range-Objekt oder eine Zeichenfolge sein. Eine Zeichenfolge muss die vollständige Adresse einschließlich des Blattnamens enthalten.
           type:
             - 'excel!Excel.BindingCollection#add~0:complex'
         - id: bindingType

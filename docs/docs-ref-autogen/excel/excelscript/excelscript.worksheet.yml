@@ -393,7 +393,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addSlicer~2:complex'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
-    summary: 'Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.'
+    summary: "Erstellt eine neue Tabelle. Das Bereichsobjekt oder die Quelladresse bestimmt das Arbeitsblatt, unter dem die Tabelle hinzugefügt wird. Wenn die Tabelle nicht hinzugefügt werden kann (z.\_B. weil die Adresse ungültig ist oder sich die Tabelle mit einer anderen Tabelle überlappen würde), wird ein Fehler ausgelöst."
     name: 'addTable(address, hasHeaders)'
     fullName: 'addTable(address, hasHeaders)'
     langs:
@@ -431,7 +431,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addTable~0:complex'
         - id: hasHeaders
-          description: 'Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.'
+          description: 'Boolescher Wert, der angibt, ob die importierten Daten Spaltenüberschriften besitzen. Wenn die Quelle keine Überschriften enthält (d. h. wenn diese Eigenschaft auf falsch festgelegt ist), generiert Excel automatisch eine Überschriftenänderung der Daten nach einer Zeile.'
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)'
@@ -1172,7 +1172,7 @@ items:
           - 'ExcelScript!ExcelScript.Worksheet#getTables~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)'
-    summary: 'The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return a null object.'
+    summary: 'Der verwendete Bereich ist der kleinste Bereich, der mindestens eine der Zellen umfasst, die einen Wert enthalten oder denen eine Formatierung zugewiesen wurde. Wenn das gesamte Arbeitsblatt leer ist, gibt diese Funktion ein NULL-Objekt zurück.'
     name: getUsedRange(valuesOnly)
     fullName: getUsedRange(valuesOnly)
     langs:
