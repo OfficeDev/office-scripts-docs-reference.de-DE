@@ -15,7 +15,6 @@ items:
       - 'ExcelScript!ExcelScript.Range#clear:member(1)'
       - 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.Range#delete:member(1)'
       - 'ExcelScript!ExcelScript.Range#find:member(1)'
@@ -260,32 +259,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
-    summary: Konvertiert die Zellen eines Bereichs auf dem Arbeitsblatt in den verknüpften Datentyp.
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: 'Die Dienst-ID, die zum Abfragen der Daten verwendet wird.'
-          type:
-            - number
-        - id: languageCulture
-          description: 'Sprach Kultur, für die der Dienst abgefragt werden soll.'
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
     summary: 'Kopiert Daten oder Formatierung von Zellen aus dem Quellbereich oder RangeAreas in den aktuellen Bereich. Der Zielbereich kann eine andere Größe als der Quellbereich oder RangeAreas sein. Das Ziel wird automatisch erweitert, wenn es kleiner als die Quelle ist.'
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
@@ -1991,7 +1964,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-    summary: 'Legt den unformatierten Wert des angegebenen Bereichs fest. Die festgelegten Daten können vom Typ "String", "Number" oder "Boolean" sein. `null`der Wert wird ignoriert (nicht festgelegt oder in Excel überschrieben). Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.'
+    summary: 'Legt den unformatierten Wert des angegebenen Bereichs fest. Die festgelegten Daten können vom Typ "String", "Number" oder "Boolean" sein. `null` der Wert wird ignoriert (nicht festgelegt oder in Excel überschrieben). Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.'
     name: setValue(value)
     fullName: setValue(value)
     langs:
