@@ -14,7 +14,6 @@ items:
       - 'ExcelScript!ExcelScript.RangeAreas#clear:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)'
@@ -113,32 +112,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
-    summary: Konvertiert alle Zellen in RangeAreas in den verknüpften Datentyp.
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: 'Die Dienst-ID, die zum Abfragen der Daten verwendet wird.'
-          type:
-            - number
-        - id: languageCulture
-          description: 'Sprach Kultur, für die der Dienst abgefragt werden soll.'
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
     summary: 'Kopiert Daten oder Formatierung von Zellen aus dem Quellbereich oder RangeAreas in das aktuelle RangeAreas-Objekt. Das Ziel-rangeAreas kann eine andere Größe als der Quellbereich oder rangeAreas sein. Das Ziel wird automatisch erweitert, wenn es kleiner als die Quelle ist.'
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
