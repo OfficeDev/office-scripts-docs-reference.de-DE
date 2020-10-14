@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
+    summary: Stellt eine Auflistung von einem oder mehreren rechteckigen Bereichen in mehreren Arbeitsblättern dar.
+    name: ExcelScript.WorkbookRangeAreas
+    fullName: ExcelScript.WorkbookRangeAreas
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)'
+    summary: 'Gibt ein Array von Address im a1-Format zurück. Der Adresswert enthält den Namen des Arbeitsblatts für jeden rechteckigen Block von Zellen (beispielsweise "Sheet1! A1: B4, Sheet1! D1: D4 "). Schreibgeschützt.'
+    name: getAddresses()
+    fullName: getAddresses()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAddresses(): string[];'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)'
+    summary: 'Gibt das RangeAreasCollection-Objekt zurück, wobei jede RangeAreas in der Auflistung einen oder mehrere Rechteck Bereiche in einem Arbeitsblatt darstellt.'
+    name: getAreas()
+    fullName: getAreas()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAreas(): RangeAreas[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
+    summary: 'Gibt das RangeAreas-Objekt basierend auf dem Namen oder der ID des Arbeitsblatts in der Auflistung zurück. Wenn das Arbeitsblatt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
+    name: getRangeAreasBySheet(key)
+    fullName: getRangeAreasBySheet(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeAreasBySheet(key: string): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Der Name oder die ID des Arbeitsblatts.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)'
+    summary: 'Gibt Bereiche zurück, die dieses Objekt in einem rangecollection-Objekt enthalten.'
+    name: getRanges()
+    fullName: getRanges()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRanges(): Range[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges~0:complex'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas~0:complex'
+    name: 'RangeAreas[]'
+    fullName: 'ExcelScript.RangeAreas[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+        name: RangeAreas
+        fullName: ExcelScript.RangeAreas
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+    name: RangeAreas
+    fullName: ExcelScript.RangeAreas
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges~0:complex'
+    name: 'Range[]'
+    fullName: 'ExcelScript.Range[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: '[]'
+        fullName: '[]'

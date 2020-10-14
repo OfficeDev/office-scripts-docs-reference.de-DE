@@ -101,7 +101,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
-    summary: Stellt den Markerstil eines Diagrammdatenpunkts dar. Weitere Informationen finden Sie unter Excel. ChartMarkerStyle.
+    summary: Stellt den Markerstil eines Diagrammdatenpunkts dar. Weitere Informationen finden Sie unter ExcelScript. ChartMarkerStyle.
     name: getMarkerStyle()
     fullName: getMarkerStyle()
     langs:
@@ -199,7 +199,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
-    summary: Stellt den Markerstil eines Diagrammdatenpunkts dar. Weitere Informationen finden Sie unter Excel. ChartMarkerStyle.
+    summary: Stellt den Markerstil eines Diagrammdatenpunkts dar. Weitere Informationen finden Sie unter ExcelScript. ChartMarkerStyle.
     name: setMarkerStyle(markerStyle)
     fullName: setMarkerStyle(markerStyle)
     langs:

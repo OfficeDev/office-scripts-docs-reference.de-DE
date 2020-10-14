@@ -1,0 +1,81 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
+    summary: Definiert das kulturell geeignete Format für die Anzeige von Zahlen. Dies basiert auf den aktuellen Systemkultur Einstellungen.
+    name: ExcelScript.DatetimeFormatInfo
+    fullName: ExcelScript.DatetimeFormatInfo
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)'
+      - 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)'
+      - 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)'
+      - 'ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)'
+      - 'ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)'
+  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)'
+    summary: 'Ruft die Zeichenfolge ab, die als Datumstrennzeichen verwendet wird. Dies basiert auf den aktuellen Systemeinstellungen.'
+    name: getDateSeparator()
+    fullName: getDateSeparator()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDateSeparator(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)'
+    summary: Ruft die Formatzeichenfolge für einen langen Datumswert ab. Dies basiert auf den aktuellen Systemeinstellungen.
+    name: getLongDatePattern()
+    fullName: getLongDatePattern()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLongDatePattern(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)'
+    summary: Ruft die Formatzeichenfolge für einen Wert vom Typ Long Time ab. Dies basiert auf den aktuellen Systemeinstellungen.
+    name: getLongTimePattern()
+    fullName: getLongTimePattern()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLongTimePattern(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)'
+    summary: Ruft die Formatzeichenfolge für einen kurzen Datumswert ab. Dies basiert auf den aktuellen Systemeinstellungen.
+    name: getShortDatePattern()
+    fullName: getShortDatePattern()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShortDatePattern(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)'
+    summary: 'Ruft die Zeichenfolge ab, die als Zeittrennzeichen verwendet wird. Dies basiert auf den aktuellen Systemeinstellungen.'
+    name: getTimeSeparator()
+    fullName: getTimeSeparator()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTimeSeparator(): string;'
+      return:
+        type:
+          - string
+        description: ''

@@ -32,7 +32,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
-    summary: 'Konstanter Wert, der die bestimmte Seiten des Rahmens angibt. Weitere Informationen finden Sie unter Excel. BorderIndex.'
+    summary: 'Konstanter Wert, der die bestimmte Seiten des Rahmens angibt. Weitere Informationen finden Sie unter ExcelScript. BorderIndex.'
     name: getSideIndex()
     fullName: getSideIndex()
     langs:
@@ -45,7 +45,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderIndex:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
-    summary: 'Einer der Konstanten der Linienart, die die Linienart für den Rahmen angibt. Details finden Sie unter Excel. borderlinestyle.'
+    summary: 'Einer der Konstanten der Linienart, die die Linienart für den Rahmen angibt. Weitere Informationen finden Sie unter ExcelScript. borderlinestyle.'
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -58,7 +58,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
-    summary: 'Gibt einen Double-Wert an, der eine Farbe für den Bereichsrahmen aufhellt oder verdunkelt. Der Wert ist zwischen-1 (am dunkelsten) und 1 (am hellsten), wobei 0 für die ursprüngliche Farbe steht. Ein NULL-Wert gibt an, dass der Rahmen keine einheitliche tintAndShade-Einstellung aufweist.'
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für den Bereichsrahmen aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass der Rahmen keine einheitliche tintAndShade-Einstellung aufweist.'
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -71,7 +71,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
-    summary: Gibt die Stärke des Rahmens um einen Bereich an. Weitere Informationen finden Sie unter Excel. BorderWeight.
+    summary: Gibt die Stärke des Rahmens um einen Bereich an. Weitere Informationen finden Sie unter ExcelScript. BorderWeight.
     name: getWeight()
     fullName: getWeight()
     langs:
@@ -102,7 +102,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
-    summary: 'Einer der Konstanten der Linienart, die die Linienart für den Rahmen angibt. Details finden Sie unter Excel. borderlinestyle.'
+    summary: 'Einer der Konstanten der Linienart, die die Linienart für den Rahmen angibt. Weitere Informationen finden Sie unter ExcelScript. borderlinestyle.'
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
@@ -120,7 +120,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
-    summary: 'Gibt einen Double-Wert an, der eine Farbe für den Bereichsrahmen aufhellt oder verdunkelt. Der Wert ist zwischen-1 (am dunkelsten) und 1 (am hellsten), wobei 0 für die ursprüngliche Farbe steht. Ein NULL-Wert gibt an, dass der Rahmen keine einheitliche tintAndShade-Einstellung aufweist.'
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für den Bereichsrahmen aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass der Rahmen keine einheitliche tintAndShade-Einstellung aufweist.'
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -138,7 +138,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
-    summary: Gibt die Stärke des Rahmens um einen Bereich an. Weitere Informationen finden Sie unter Excel. BorderWeight.
+    summary: Gibt die Stärke des Rahmens um einen Bereich an. Weitere Informationen finden Sie unter ExcelScript. BorderWeight.
     name: setWeight(weight)
     fullName: setWeight(weight)
     langs:

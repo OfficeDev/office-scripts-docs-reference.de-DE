@@ -41,11 +41,11 @@ items:
         description: ''
       parameters:
         - id: type
-          description: Gibt den Achsentyp an. Weitere Informationen finden Sie unter Excel. ChartAxisType.
+          description: Gibt den Achsentyp an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisType.
           type:
             - 'ExcelScript!ExcelScript.ChartAxisType:enum'
         - id: group
-          description: Optional. Gibt die Achsengruppe an. Weitere Informationen finden Sie unter Excel. ChartAxisGroup.
+          description: Optional. Gibt die Achsengruppe an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisGroup.
           type:
             - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'

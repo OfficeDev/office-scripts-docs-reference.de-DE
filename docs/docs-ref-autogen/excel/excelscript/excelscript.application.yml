@@ -34,7 +34,7 @@ items:
         description: ''
       parameters:
         - id: calculationType
-          description: Gibt den zu verwendenden Berechnungstyp an. Weitere Informationen finden Sie unter Excel. CalculationType.
+          description: Gibt den zu verwendenden Berechnungstyp an. Weitere Informationen finden Sie unter ExcelScript. CalculationType.
           type:
             - 'ExcelScript!ExcelScript.CalculationType:enum'
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
@@ -51,7 +51,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
-    summary: 'Gibt den in der Arbeitsmappe verwendeten Berechnungsmodus gemäß der Definition durch die Konstanten in Excel. CalculationMode zurück. Mögliche Werte sind:`Automatic`<!-- -->, wobei Excel Steuerelemente neu berechnen;`AutomaticExceptTables`<!-- -->, wobei Excel Steuerelemente neu berechnen, aber Änderungen in Tabellen ignoriert;`Manual`<!-- -->, wobei die Berechnung erfolgt, wenn der Benutzer sie anfordert.'
+    summary: 'Gibt den in der Arbeitsmappe verwendeten Berechnungsmodus gemäß der Definition durch die Konstanten in ExcelScript. CalculationMode zurück. Mögliche Werte sind: `Automatic`<!-- -->, wobei Excel Steuerelemente neu berechnen; `AutomaticExceptTables`<!-- -->, wobei Excel Steuerelemente neu berechnen, aber Änderungen in Tabellen ignoriert; `Manual`<!-- -->, wobei die Berechnung erfolgt, wenn der Benutzer sie anfordert.'
     name: getCalculationMode()
     fullName: getCalculationMode()
     langs:
@@ -64,7 +64,7 @@ items:
           - 'ExcelScript!ExcelScript.CalculationMode:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
-    summary: Gibt den Berechnungszustand der Anwendung zurück. Details finden Sie unter "Excel.CalculationState".
+    summary: Gibt den Berechnungszustand der Anwendung zurück. Weitere Informationen finden Sie unter ExcelScript. CalculationState.
     name: getCalculationState()
     fullName: getCalculationState()
     langs:
@@ -142,7 +142,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
-    summary: 'Gibt den in der Arbeitsmappe verwendeten Berechnungsmodus gemäß der Definition durch die Konstanten in Excel. CalculationMode zurück. Mögliche Werte sind:`Automatic`<!-- -->, wobei Excel Steuerelemente neu berechnen;`AutomaticExceptTables`<!-- -->, wobei Excel Steuerelemente neu berechnen, aber Änderungen in Tabellen ignoriert;`Manual`<!-- -->, wobei die Berechnung erfolgt, wenn der Benutzer sie anfordert.'
+    summary: 'Gibt den in der Arbeitsmappe verwendeten Berechnungsmodus gemäß der Definition durch die Konstanten in ExcelScript. CalculationMode zurück. Mögliche Werte sind: `Automatic`<!-- -->, wobei Excel Steuerelemente neu berechnen; `AutomaticExceptTables`<!-- -->, wobei Excel Steuerelemente neu berechnen, aber Änderungen in Tabellen ignoriert; `Manual`<!-- -->, wobei die Berechnung erfolgt, wenn der Benutzer sie anfordert.'
     name: setCalculationMode(calculationMode)
     fullName: setCalculationMode(calculationMode)
     langs:

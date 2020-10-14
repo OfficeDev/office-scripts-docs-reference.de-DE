@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
       - 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
-    summary: 'Gibt an, ob die Übereinstimmung vollständig oder partiell sein muss. Eine vollständige Übereinstimmung stimmt mit dem gesamten Inhalt der Zelle überein. Eine partielle Übereinstimmung stimmt mit einer Teilzeichenfolge innerhalb des Inhalts der Zelle überein (beispielsweise `cat` teilweise Übereinstimmungen `caterpillar` und`scatter`<!-- -->). Der Standardwert ist "false" (teilweise).'
+    summary: 'Gibt an, ob die Übereinstimmung vollständig oder partiell sein muss. Eine vollständige Übereinstimmung stimmt mit dem gesamten Inhalt der Zelle überein. Eine partielle Übereinstimmung stimmt mit einer Teilzeichenfolge innerhalb des Inhalts der Zelle überein (beispielsweise `cat` teilweise Übereinstimmungen `caterpillar` und `scatter`<!-- -->). Der Standardwert ist "false" (teilweise).'
     name: completeMatch
     fullName: completeMatch
     langs:
@@ -37,7 +37,7 @@ items:
         type:
           - boolean
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
-    summary: Gibt die Suchrichtung an. Der Standardwert ist vorwärts. Details finden Sie unter Excel.SearchDirection.
+    summary: Gibt die Suchrichtung an. Der Standardwert ist vorwärts. Weitere Informationen finden Sie unter ExcelScript. SearchDirection.
     name: searchDirection
     fullName: searchDirection
     langs:

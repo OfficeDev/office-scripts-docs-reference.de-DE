@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
-    summary: 'Stellt die Datenüberprüfung dar, die auf den aktuellen Bereich angewendet wird. Weitere Informationen zum Daten Validierungs Objektmodell finden Sie unter [Hinzufügen von Datenüberprüfung zu Excel-Bereichen](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.'
+    summary: 'Stellt die Datenüberprüfung dar, die auf den aktuellen Bereich angewendet wird.'
     name: ExcelScript.DataValidation
     fullName: ExcelScript.DataValidation
     langs:
@@ -100,7 +100,7 @@ items:
           - 'ExcelScript!ExcelScript.DataValidationRule:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.DataValidation#getType:member(1)'
-    summary: Informationen zum Typ der Datenüberprüfung finden Sie unter Excel.DataValidationType.
+    summary: 'Typ der Datenüberprüfung, weitere Informationen finden Sie unter ExcelScript. datavalidationtype.'
     name: getType()
     fullName: getType()
     langs:

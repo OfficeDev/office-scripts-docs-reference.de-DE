@@ -32,7 +32,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
   - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
-    summary: Fixieren der ersten Spalte(n) des Arbeitsblatts an einem Ort.
+    summary: Fixieren Sie die erste Spalte oder Spalten des Arbeitsblatts an der richtigen Stelle.
     name: freezeColumns(count)
     fullName: freezeColumns(count)
     langs:
@@ -50,7 +50,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
-    summary: Fixiert die ersten Spalte(n) des Arbeitsblatts an einem Ort.
+    summary: Fixieren Sie die oberste Zeile oder Zeilen des Arbeitsblatts an der richtigen Stelle.
     name: freezeRows(count)
     fullName: freezeRows(count)
     langs:

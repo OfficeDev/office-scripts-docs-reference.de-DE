@@ -43,7 +43,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartBorder#getLineStyle:member(1)'
-    summary: Steht für die Linienart des Rahmens. Weitere Informationen finden Sie unter Excel. ChartLineStyle.
+    summary: Steht für die Linienart des Rahmens. Weitere Informationen finden Sie unter ExcelScript. ChartLineStyle.
     name: getLineStyle()
     fullName: getLineStyle()
     langs:
@@ -87,7 +87,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartBorder#setLineStyle:member(1)'
-    summary: Steht für die Linienart des Rahmens. Weitere Informationen finden Sie unter Excel. ChartLineStyle.
+    summary: Steht für die Linienart des Rahmens. Weitere Informationen finden Sie unter ExcelScript. ChartLineStyle.
     name: setLineStyle(lineStyle)
     fullName: setLineStyle(lineStyle)
     langs:

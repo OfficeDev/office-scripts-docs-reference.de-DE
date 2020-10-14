@@ -9,8 +9,22 @@ items:
     type: interface
     package: ExcelScript!
     children:
+      - 'ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)'
       - 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
       - 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+  - uid: 'ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)'
+    summary: Definiert das kulturell geeignete Format für die Anzeige von Datum und Uhrzeit. Dies basiert auf den aktuellen Systemkultur Einstellungen.
+    name: getDatetimeFormat()
+    fullName: getDatetimeFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDatetimeFormat(): DatetimeFormatInfo;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
     summary: 'Ruft den Namen der Kultur im Format languagecode2-Country/regioncode2 (z. b., "zh-cn" oder "en-US") ab. Dies basiert auf den aktuellen Systemeinstellungen.'
     name: getName()
@@ -38,6 +52,9 @@ items:
           - 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
         description: ''
 references:
+  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
+    name: DatetimeFormatInfo
+    fullName: ExcelScript.DatetimeFormatInfo
   - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
     name: NumberFormatInfo
     fullName: ExcelScript.NumberFormatInfo

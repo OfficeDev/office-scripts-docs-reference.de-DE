@@ -146,7 +146,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)'
-    summary: Stellt die horizontale Ausrichtung für den Stil dar. Details finden Sie unter Excel. HorizontalAlignment.
+    summary: Stellt die horizontale Ausrichtung für den Stil dar. Weitere Informationen finden Sie unter ExcelScript. HorizontalAlignment.
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -316,11 +316,11 @@ items:
         description: ''
       parameters:
         - id: index
-          description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter Excel. BorderIndex.
+          description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter ExcelScript. BorderIndex.
           type:
             - 'ExcelScript!ExcelScript.BorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)'
-    summary: 'Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt. Der Wert ist zwischen-1 (am dunkelsten) und 1 (am hellsten), wobei 0 für die ursprüngliche Farbe steht. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.'
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.'
     name: getRangeBorderTintAndShade()
     fullName: getRangeBorderTintAndShade()
     langs:
@@ -372,7 +372,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)'
-    summary: Gibt die vertikale Ausrichtung für die Formatvorlage an. Weitere Informationen finden Sie unter Excel. VerticalAlignment.
+    summary: Gibt die vertikale Ausrichtung für die Formatvorlage an. Weitere Informationen finden Sie unter ExcelScript. VerticalAlignment.
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -434,7 +434,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)'
-    summary: Stellt die horizontale Ausrichtung für den Stil dar. Details finden Sie unter Excel. HorizontalAlignment.
+    summary: Stellt die horizontale Ausrichtung für den Stil dar. Weitere Informationen finden Sie unter ExcelScript. HorizontalAlignment.
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -632,7 +632,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)'
-    summary: 'Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt. Der Wert ist zwischen-1 (am dunkelsten) und 1 (am hellsten), wobei 0 für die ursprüngliche Farbe steht. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.'
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.'
     name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     langs:
@@ -704,7 +704,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)'
-    summary: Gibt die vertikale Ausrichtung für die Formatvorlage an. Weitere Informationen finden Sie unter Excel. VerticalAlignment.
+    summary: Gibt die vertikale Ausrichtung für die Formatvorlage an. Weitere Informationen finden Sie unter ExcelScript. VerticalAlignment.
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

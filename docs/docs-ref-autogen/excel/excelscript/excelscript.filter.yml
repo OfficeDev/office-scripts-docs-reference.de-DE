@@ -230,7 +230,7 @@ items:
         description: ''
       parameters:
         - id: values
-          description: Die Liste der anzuzeigenden Werte. Hierbei muss es sich um ein Array von Zeichenfolgen oder ein Array von Excel. FilterDateTime-Objekten handeln.
+          description: Die Liste der anzuzeigenden Werte. Hierbei muss es sich um ein Array von Zeichenfolgen oder ein Array von ExcelScript. FilterDateTime-Objekten handeln.
           type:
             - 'ExcelScript!ExcelScript.Filter#applyValuesFilter~0:complex'
   - uid: 'ExcelScript!ExcelScript.Filter#clear:member(1)'

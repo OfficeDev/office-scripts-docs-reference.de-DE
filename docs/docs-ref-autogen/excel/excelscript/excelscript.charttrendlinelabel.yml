@@ -85,7 +85,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getHorizontalAlignment:member(1)'
-    summary: 'Die horizontale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter Excel. ChartTextHorizontalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung-90, 90 oder 180 ist.'
+    summary: 'Die horizontale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter ExcelScript. ChartTextHorizontalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung-90, 90 oder 180 ist.'
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -176,7 +176,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getVerticalAlignment:member(1)'
-    summary: 'Die vertikale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter Excel. ChartTextVerticalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung 0 ist.'
+    summary: 'Die vertikale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter ExcelScript. ChartTextVerticalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung 0 ist.'
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -238,7 +238,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setHorizontalAlignment:member(1)'
-    summary: 'Die horizontale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter Excel. ChartTextHorizontalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung-90, 90 oder 180 ist.'
+    summary: 'Die horizontale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter ExcelScript. ChartTextHorizontalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung-90, 90 oder 180 ist.'
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -367,7 +367,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setVerticalAlignment:member(1)'
-    summary: 'Die vertikale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter Excel. ChartTextVerticalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung 0 ist.'
+    summary: 'Die vertikale Ausrichtung für die Diagrammtrendlinienbeschriftung. Weitere Informationen finden Sie unter ExcelScript. ChartTextVerticalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textausrichtung der Trendlinienbeschriftung 0 ist.'
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

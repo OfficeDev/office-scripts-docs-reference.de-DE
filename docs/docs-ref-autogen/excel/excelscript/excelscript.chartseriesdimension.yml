@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
+    summary: Stellt die Dimensionen beim Abholen von Werten aus Diagrammdatenreihen dar.
+    name: ExcelScript.ChartSeriesDimension
+    fullName: ExcelScript.ChartSeriesDimension
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+    summary: Die Achse der Diagrammreihe für die Blasengrößen in Blasendiagrammen.
+    name: bubbleSizes
+    fullName: bubbleSizes
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+    summary: Die Achse der Diagrammreihe für die Kategorien.
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+    summary: Die Achse der Diagrammreihe für die Werte.
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+    summary: Die Achse der Diagrammreihe für die Werte der x-Achse in Streu-und Blasendiagrammen.
+    name: xvalues
+    fullName: xvalues
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+    summary: Die Achse der Diagrammreihe für die y-Achsenwerte in Streu-und Blasendiagrammen.
+    name: yvalues
+    fullName: yvalues
+    langs:
+      - typeScript
+    type: field

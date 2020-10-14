@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    summary: 'Ein Objekt, das den Bereich, das Format, die Regel und andere Eigenschaften einer bedingten Formatierung kapselt. Weitere Informationen zum bedingten Formatierungsobjekt Modell finden Sie unter [Anwenden von bedingter Formatierung auf Excel-Bereiche](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting) .<!-- -->.'
+    summary: 'Ein Objekt, das den Bereich, das Format, die Regel und andere Eigenschaften einer bedingten Formatierung kapselt.'
     name: ExcelScript.ConditionalFormat
     fullName: ExcelScript.ConditionalFormat
     langs:
@@ -118,7 +118,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
-    summary: Gibt das bedingte Format der voreingestellten Kriterien zurück. Weitere Informationen finden Sie unter Excel. PresetCriteriaConditionalFormat.
+    summary: Gibt das bedingte Format der voreingestellten Kriterien zurück. Weitere Informationen finden Sie unter ExcelScript. PresetCriteriaConditionalFormat.
     name: getPreset()
     fullName: getPreset()
     langs:
