@@ -35,7 +35,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
-    summary: 'Steht für die Linienart der Form. Gibt NULL zurück, wenn die Linie nicht sichtbar ist oder die Linienart inkonsistent ist. Einzelheiten finden Sie unter Excel.ShapeLineStyle.'
+    summary: 'Steht für die Linienart der Form. Gibt NULL zurück, wenn die Linie nicht sichtbar ist oder die Linienart inkonsistent ist. Weitere Informationen finden Sie unter ExcelScript. ShapeLineStyle.'
     name: getDashStyle()
     fullName: getDashStyle()
     langs:
@@ -48,7 +48,7 @@ items:
           - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
-    summary: 'Stellt die Linienart der Form dar. Gibt NULL zurück, wenn die Linie nicht sichtbar ist oder es inkonsistente Formatvorlagen gibt. Einzelheiten finden Sie unter Excel.ShapeLineStyle.'
+    summary: 'Stellt die Linienart der Form dar. Gibt NULL zurück, wenn die Linie nicht sichtbar ist oder es inkonsistente Formatvorlagen gibt. Weitere Informationen finden Sie unter ExcelScript. ShapeLineStyle.'
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -118,7 +118,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
-    summary: 'Steht für die Linienart der Form. Gibt NULL zurück, wenn die Linie nicht sichtbar ist oder die Linienart inkonsistent ist. Einzelheiten finden Sie unter Excel.ShapeLineStyle.'
+    summary: 'Steht für die Linienart der Form. Gibt NULL zurück, wenn die Linie nicht sichtbar ist oder die Linienart inkonsistent ist. Weitere Informationen finden Sie unter ExcelScript. ShapeLineStyle.'
     name: setDashStyle(dashStyle)
     fullName: setDashStyle(dashStyle)
     langs:
@@ -136,7 +136,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
-    summary: 'Stellt die Linienart der Form dar. Gibt NULL zurück, wenn die Linie nicht sichtbar ist oder es inkonsistente Formatvorlagen gibt. Einzelheiten finden Sie unter Excel.ShapeLineStyle.'
+    summary: 'Stellt die Linienart der Form dar. Gibt NULL zurück, wenn die Linie nicht sichtbar ist oder es inkonsistente Formatvorlagen gibt. Weitere Informationen finden Sie unter ExcelScript. ShapeLineStyle.'
     name: setStyle(style)
     fullName: setStyle(style)
     langs:

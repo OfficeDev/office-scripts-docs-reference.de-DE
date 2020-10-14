@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.CellValueConditionalFormat#getRule:member(1)'
       - 'ExcelScript!ExcelScript.CellValueConditionalFormat#setRule:member(1)'
   - uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat#getFormat:member(1)'
-    summary: 'Gibt ein Format-Objekt zurück, das die Schriftart, Füllung, Rahmen und andere Eigenschaften der bedingten Formatierung kapselt.'
+    summary: 'Gibt ein Format-Objekt zurück, das die Schriftart, Füllung, Rahmen und andere Eigenschaften für bedingte Formate kapselt.'
     name: getFormat()
     fullName: getFormat()
     langs:

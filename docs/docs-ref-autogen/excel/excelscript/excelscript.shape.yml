@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Shape:interface'
-    summary: 'Stellt ein generisches Shape-Objekt im Arbeitsblatt dar. Eine Form kann eine geometrische Form, eine Linien, eine Gruppe von Formen usw. sein. Weitere Informationen zum Shape-Objektmodell finden Sie [unter Arbeiten mit Shapes mithilfe der Excel-JavaScript-API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes) .<!-- -->.'
+    summary: 'Stellt ein generisches Shape-Objekt im Arbeitsblatt dar. Eine Form kann eine geometrische Form, eine Linien, eine Gruppe von Formen usw. sein.'
     name: ExcelScript.Shape
     fullName: ExcelScript.Shape
     langs:
@@ -113,7 +113,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getAsImage:member(1)'
-    summary: 'Konvertiert die Form in ein Bild und gibt das Bild als base64-codierte Zeichenfolge zurück. Der DPI-Wert ist 96. Die einzigen unterstützten Formate sind`Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!-- -->, und`Excel.PictureFormat.GIF`<!-- -->.'
+    summary: 'Konvertiert die Form in ein Bild und gibt das Bild als base64-codierte Zeichenfolge zurück. Der DPI-Wert ist 96. Die einzigen unterstützten Formate sind `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->, und `ExcelScript.PictureFormat.GIF`<!-- -->.'
     name: getAsImage(format)
     fullName: getAsImage(format)
     langs:
@@ -170,7 +170,7 @@ items:
           - 'ExcelScript!ExcelScript.GeometricShape:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)'
-    summary: 'Gibt den geometrischen Typ dieser geometrischen Form an. Details finden Sie unter Excel.GeometricShapeType. Gibt NULL zurück, wenn der Formtyp nicht "GeometricShape" ist.'
+    summary: 'Gibt den geometrischen Typ dieser geometrischen Form an. Weitere Informationen finden Sie unter ExcelScript. GeometricShapeType. Gibt NULL zurück, wenn der Formtyp nicht "GeometricShape" ist.'
     name: getGeometricShapeType()
     fullName: getGeometricShapeType()
     langs:
@@ -378,7 +378,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getType:member(1)'
-    summary: Gibt den Typ dieser Form zurück. Details finden Sie unter Excel.ShapeType.
+    summary: Gibt den Typ dieser Form zurück. Weitere Informationen finden Sie unter ExcelScript. ShapeType.
     name: getType()
     fullName: getType()
     langs:
@@ -582,7 +582,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)'
-    summary: 'Gibt den geometrischen Typ dieser geometrischen Form an. Details finden Sie unter Excel.GeometricShapeType. Gibt NULL zurück, wenn der Formtyp nicht "GeometricShape" ist.'
+    summary: 'Gibt den geometrischen Typ dieser geometrischen Form an. Weitere Informationen finden Sie unter ExcelScript. GeometricShapeType. Gibt NULL zurück, wenn der Formtyp nicht "GeometricShape" ist.'
     name: setGeometricShapeType(geometricShapeType)
     fullName: setGeometricShapeType(geometricShapeType)
     langs:
@@ -776,7 +776,7 @@ items:
         description: ''
       parameters:
         - id: position
-          description: Verschiebt die Form im Stapel der z-Reihenfolge relativ zu den anderen Formen. Weitere Informationen finden Sie unter Excel. ShapeZOrder.
+          description: Verschiebt die Form im Stapel der z-Reihenfolge relativ zu den anderen Formen. Weitere Informationen finden Sie unter ExcelScript. ShapeZOrder.
           type:
             - 'ExcelScript!ExcelScript.ShapeZOrder:enum'
 references:

@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
+    summary: 'Eine einfache Enumeration, die einen Filtertyp für ein PivotField-Element darstellt.'
+    name: ExcelScript.PivotFilterType
+    fullName: ExcelScript.PivotFilterType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+    summary: 'Filtert PivotItems mit einem Datum anstelle einer Bezeichnung. Hinweis: ein PivotField kann nicht gleichzeitig einen Bezeichnungs Filter und einen Datumsfilter anwenden.'
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+    summary: 'Filtert PivotItems basierend auf Ihren Bezeichnungen. Hinweis: ein PivotField kann nicht gleichzeitig einen Bezeichnungs Filter und einen Datumsfilter anwenden.'
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+    summary: Filtert bestimmte manuell ausgewählte PivotItems aus der PivotTable.
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+    summary: PivotFilterType ist unbekannt oder nicht unterstützt.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+    summary: Filter basierend auf dem Wert eines PivotItem in Bezug auf ein DataPivotHierarchy.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: field

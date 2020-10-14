@@ -15,6 +15,7 @@ items:
       - 'ExcelScript!ExcelScript.Comment#getAuthorName:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getCommentReply:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getContent:member(1)'
+      - 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getId:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getLocation:member(1)'
@@ -48,7 +49,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Comment#addCommentReply~0:complex'
         - id: contentType
-          description: 'Optional. Der Typ des Inhalts, der im Kommentar enthalten ist. Der Standardwert ist Enum.`ContentType.Plain`<!-- -->.'
+          description: 'Optional. Der Typ des Inhalts, der im Kommentar enthalten ist. Der Standardwert ist Enum. `ContentType.Plain`<!-- -->.'
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Comment#delete:member(1)'
@@ -120,6 +121,19 @@ items:
       return:
         type:
           - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
+    summary: Ruft den Inhaltstyp des Kommentars ab.
+    name: getContentType()
+    fullName: getContentType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getContentType(): ContentType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ContentType:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
     summary: 'Ruft den Erstellungszeitpunkt des Kommentars ab. Gibt Null zurück, wenn der Kommentar aus einer Notiz konvertiert wurde, da der Kommentar kein Erstellungsdatum hat.'

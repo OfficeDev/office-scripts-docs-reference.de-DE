@@ -69,7 +69,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getName:member(1)'
-    summary: Name der Schriftart (beispielsweise "Calibri")
+    summary: Name der Schriftart (beispielsweise "Calibri"). Die Länge des Namens darf nicht größer als 31 Zeichen sein.
     name: getName()
     fullName: getName()
     langs:
@@ -134,7 +134,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)'
-    summary: 'Gibt einen Double-Wert an, der eine Farbe für die Bereichs Schriftart aufhellt oder verdunkelt. Der Wert ist zwischen-1 (am dunkelsten) und 1 (am hellsten), wobei 0 für die ursprüngliche Farbe steht. Ein NULL-Wert gibt an, dass der gesamte Bereich keine einheitliche Schriftart tintAndShade Einstellung aufweist.'
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für die Bereichs Schriftart aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass der gesamte Bereich keine einheitliche Schriftart tintAndShade Einstellung aufweist.'
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -147,7 +147,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)'
-    summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter Excel. RangeUnderlineStyle.
+    summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter ExcelScript. RangeUnderlineStyle.
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -214,7 +214,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setName:member(1)'
-    summary: Name der Schriftart (beispielsweise "Calibri")
+    summary: Name der Schriftart (beispielsweise "Calibri"). Die Länge des Namens darf nicht größer als 31 Zeichen sein.
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -304,7 +304,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)'
-    summary: 'Gibt einen Double-Wert an, der eine Farbe für die Bereichs Schriftart aufhellt oder verdunkelt. Der Wert ist zwischen-1 (am dunkelsten) und 1 (am hellsten), wobei 0 für die ursprüngliche Farbe steht. Ein NULL-Wert gibt an, dass der gesamte Bereich keine einheitliche Schriftart tintAndShade Einstellung aufweist.'
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für die Bereichs Schriftart aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass der gesamte Bereich keine einheitliche Schriftart tintAndShade Einstellung aufweist.'
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -322,7 +322,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)'
-    summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter Excel. RangeUnderlineStyle.
+    summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter ExcelScript. RangeUnderlineStyle.
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

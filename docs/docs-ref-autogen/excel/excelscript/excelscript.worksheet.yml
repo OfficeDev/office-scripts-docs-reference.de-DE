@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    summary: 'Ein Excel-Arbeitsblatt ist ein Raster von Zellen. Sie kann Daten, Tabellen, Diagramme usw. enthalten. Weitere Informationen zum Arbeitsblatt-Objektmodell finden Sie [unter Arbeiten mit Arbeitsblättern mithilfe der Excel-JavaScript-API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets) .<!-- -->.'
+    summary: 'Ein Excel-Arbeitsblatt ist ein Raster von Zellen. Es kann Daten, Tabellen, Diagramme usw. enthalten.'
     name: ExcelScript.Worksheet
     fullName: ExcelScript.Worksheet
     langs:
@@ -24,6 +24,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#copy:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#delete:member(1)'
@@ -36,6 +37,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#getCommentByCell:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getComments:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks:member(1)'
@@ -67,6 +69,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getVisibility:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#removeAllHorizontalPageBreaks:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#removeAllVerticalPageBreaks:member(1)'
@@ -113,7 +116,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: Stellt die Art des Diagramms dar. Weitere Informationen finden Sie unter Excel. ChartType.
+          description: Stellt die Art des Diagramms dar. Weitere Informationen finden Sie unter ExcelScript. ChartType.
           type:
             - 'ExcelScript!ExcelScript.ChartType:enum'
         - id: sourceData
@@ -121,7 +124,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Range:interface'
         - id: seriesBy
-          description: 'Optional. Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden. Weitere Informationen finden Sie unter Excel. ChartSeriesBy.'
+          description: 'Optional. Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden. Weitere Informationen finden Sie unter ExcelScript. ChartSeriesBy.'
           type:
             - 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addComment:member(1)'
@@ -152,7 +155,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addComment~1:complex'
         - id: contentType
-          description: 'Optional. Der Typ des Inhalts, der im Kommentar enthalten ist. Der Standardwert ist Enum.`ContentType.Plain`<!-- -->.'
+          description: 'Optional. Der Typ des Inhalts, der im Kommentar enthalten ist. Der Standardwert ist Enum. `ContentType.Plain`<!-- -->.'
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)'
@@ -170,7 +173,7 @@ items:
         description: ''
       parameters:
         - id: geometricShapeType
-          description: Stellt den Typ des geometrischen Shapes dar. Details finden Sie unter Excel.GeometricShapeType.
+          description: Stellt den Typ des geometrischen Shapes dar. Weitere Informationen finden Sie unter ExcelScript. GeometricShapeType.
           type:
             - 'ExcelScript!ExcelScript.GeometricShapeType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addGroup:member(1)'
@@ -265,7 +268,7 @@ items:
           type:
             - number
         - id: connectorType
-          description: Stellt den Konnektortyp dar. Weitere Informationen finden Sie unter Excel. ConnectorType.
+          description: Stellt den Konnektortyp dar. Weitere Informationen finden Sie unter ExcelScript. ConnectorType.
           type:
             - 'ExcelScript!ExcelScript.ConnectorType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItem:member(1)'
@@ -470,6 +473,32 @@ items:
           description: 'Der Bereich, der unmittelbar nach dem Hinzufügen des Seitenumbruchs eingefügt werden soll.'
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
+    summary: 'Fügt eine neue benutzerdefinierte Eigenschaft hinzu, die dem bereitgestellten Schlüssel zugeordnet wird. Dadurch werden vorhandene benutzerdefinierte Eigenschaften mit diesem Schlüssel überschrieben.'
+    name: 'addWorksheetCustomProperty(key, value)'
+    fullName: 'addWorksheetCustomProperty(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addWorksheetCustomProperty(
+                    key: string,
+                    value: string
+                ): WorksheetCustomProperty;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Der Schlüssel, der das benutzerdefinierte Property-Objekt identifiziert. Dabei wird die Groß-/Kleinschreibung nicht beachtet. Der Schlüssel ist auf 255 Zeichen limitiert (größere Werte führen dazu, dass ein Fehler "InvalidArgument" ausgelöst wird.)'
+          type:
+            - string
+        - id: value
+          description: Der Wert dieser benutzerdefinierten Eigenschaft.
+          type:
+            - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
     summary: Berechnet alle Zellen auf einem Arbeitsblatt.
     name: calculate(markAllDirty)
@@ -697,6 +726,19 @@ items:
       return:
         type:
           - 'ExcelScript!ExcelScript.Worksheet#getComments~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
+    summary: Ruft eine Auflistung von benutzerdefinierten Eigenschaften auf Arbeitsblattebene ab.
+    name: getCustomProperties()
+    fullName: getCustomProperties()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomProperties(): WorksheetCustomProperty[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet#getCustomProperties~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
     summary: 'Bestimmt, ob Excel das Arbeitsblatt bei Bedarf neu berechnen sollte. True, wenn Excel das Arbeitsblatt bei Bedarf neu berechnet. False, falls Excel das Arbeitsblatt nicht neu berechnet.'
@@ -1215,6 +1257,27 @@ items:
         type:
           - 'ExcelScript!ExcelScript.SheetVisibility:enum'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
+    summary: 'Ruft ein Objekt für benutzerdefinierte Eigenschaften über seinen Schlüssel ab, bei dem Groß-/Kleinschreibung nicht beachtet wird. Gibt ein NULL-Objekt zurück, wenn die benutzerdefinierte Eigenschaft nicht vorhanden ist.'
+    name: getWorksheetCustomProperty(key)
+    fullName: getWorksheetCustomProperty(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getWorksheetCustomProperty(
+                    key: string
+                ): WorksheetCustomProperty | undefined;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Der Schlüssel, der das benutzerdefinierte Property-Objekt identifiziert. Dabei wird die Groß-/Kleinschreibung nicht beachtet.'
+          type:
+            - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
     summary: Aktualisiert alle PivotTables in der Sammlung.
     name: refreshAllPivotTables()
@@ -1643,6 +1706,9 @@ references:
         fullName: ExcelScript.Range
       - name: ' | string'
         fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+    name: WorksheetCustomProperty
+    fullName: ExcelScript.WorksheetCustomProperty
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
     name: Worksheet
     fullName: ExcelScript.Worksheet
@@ -1692,6 +1758,15 @@ references:
       - uid: 'ExcelScript!ExcelScript.Comment:interface'
         name: Comment
         fullName: ExcelScript.Comment
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties~0:complex'
+    name: 'WorksheetCustomProperty[]'
+    fullName: 'ExcelScript.WorksheetCustomProperty[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        name: WorksheetCustomProperty
+        fullName: ExcelScript.WorksheetCustomProperty
       - name: '[]'
         fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
@@ -1805,6 +1880,15 @@ references:
   - uid: 'ExcelScript!ExcelScript.SheetVisibility:enum'
     name: SheetVisibility
     fullName: ExcelScript.SheetVisibility
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty~0:complex'
+    name: WorksheetCustomProperty | undefined
+    fullName: ExcelScript.WorksheetCustomProperty | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        name: WorksheetCustomProperty
+        fullName: ExcelScript.WorksheetCustomProperty
+      - name: ' | undefined'
+        fullName: ' | undefined'
   - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
     name: ReplaceCriteria
     fullName: ExcelScript.ReplaceCriteria

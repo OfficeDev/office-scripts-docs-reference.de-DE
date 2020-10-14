@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
-    summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter Excel. ChartUnderlineStyle.
+    summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter ExcelScript. ChartUnderlineStyle.
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
-    summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter Excel. ChartUnderlineStyle.
+    summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter ExcelScript. ChartUnderlineStyle.
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

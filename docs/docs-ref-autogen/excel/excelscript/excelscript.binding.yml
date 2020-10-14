@@ -81,7 +81,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Binding#getType:member(1)'
-    summary: Gibt den Typ der Bindung an. Details finden Sie unter Excel. BindingType.
+    summary: Gibt den Typ der Bindung an. Weitere Informationen finden Sie unter ExcelScript. BindingType.
     name: getType()
     fullName: getType()
     langs:

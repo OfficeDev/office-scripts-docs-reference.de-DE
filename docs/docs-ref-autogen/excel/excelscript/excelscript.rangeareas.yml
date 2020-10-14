@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    summary: 'RangeAreas stellt eine Auflistung von einem oder mehreren rechteckigen Bereichen im gleichen Arbeitsblatt dar. Informationen zur Verwendung von discontinguous-Bereichen finden Sie unter [Arbeiten mit mehreren Bereichen gleichzeitig in Excel-Add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges) .<!-- -->.'
+    summary: RangeAreas stellt eine Auflistung von einem oder mehreren rechteckigen Bereichen im gleichen Arbeitsblatt dar.
     name: ExcelScript.RangeAreas
     fullName: ExcelScript.RangeAreas
     langs:
@@ -52,7 +52,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: Der Typ des hinzuzufügenden bedingten Formats. Weitere Informationen finden Sie unter Excel. ConditionalFormatType.
+          description: Der Typ des hinzuzufügenden bedingten Formats. Weitere Informationen finden Sie unter ExcelScript. ConditionalFormatType.
           type:
             - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
@@ -83,7 +83,7 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: Optional. Bestimmt den Typ der Löschaktion. Weitere Informationen finden Sie unter Excel. ClearApplyTo. Der Standardwert ist "All".
+          description: Optional. Bestimmt den Typ der Löschaktion. Weitere Informationen finden Sie unter ExcelScript. ClearApplyTo. Der Standardwert ist "All".
           type:
             - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'

@@ -50,7 +50,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter Excel. ConditionalRangeBorderIndex.
+          description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter ExcelScript. ConditionalRangeBorderIndex.
           type:
             - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'

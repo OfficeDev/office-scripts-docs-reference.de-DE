@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
-    summary: Die Daten Überprüfungsregel enthält verschiedene Arten der Datenüberprüfung. Sie können jeweils nur eine davon entsprechend dem Excel. datavalidationtype verwenden.
+    summary: Die Daten Überprüfungsregel enthält verschiedene Arten der Datenüberprüfung. Sie können jeweils nur eine davon entsprechend dem ExcelScript. datavalidationtype verwenden.
     name: ExcelScript.DataValidationRule
     fullName: ExcelScript.DataValidationRule
     langs:

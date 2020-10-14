@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
-    summary: 'Art der auf die Schriftart angewendeten Unterstreichung. Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Unterstreichungsarten enthält. Einzelheiten finden Sie unter Excel.ShapeFontUnderlineStyle.'
+    summary: 'Art der auf die Schriftart angewendeten Unterstreichung. Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Unterstreichungsarten enthält. Weitere Informationen finden Sie unter ExcelScript. ShapeFontUnderlineStyle.'
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
-    summary: 'Art der auf die Schriftart angewendeten Unterstreichung. Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Unterstreichungsarten enthält. Einzelheiten finden Sie unter Excel.ShapeFontUnderlineStyle.'
+    summary: 'Art der auf die Schriftart angewendeten Unterstreichung. Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Unterstreichungsarten enthält. Weitere Informationen finden Sie unter ExcelScript. ShapeFontUnderlineStyle.'
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

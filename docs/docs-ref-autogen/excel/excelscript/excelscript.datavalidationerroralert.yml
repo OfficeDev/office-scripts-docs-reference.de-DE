@@ -38,7 +38,7 @@ items:
         type:
           - boolean
   - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
-    summary: Der Warnungstyp für die Datenüberprüfung finden Sie unter Excel. DataValidationAlertStyle for Details.
+    summary: Der Typ der Daten Validierungswarnung finden Sie unter ExcelScript. DataValidationAlertStyle for Details.
     name: style
     fullName: style
     langs:
