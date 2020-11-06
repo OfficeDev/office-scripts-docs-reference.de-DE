@@ -16,13 +16,13 @@ items:
                 name: ArrowheadLength
                 uid: 'excel!Excel.ArrowheadLength:enum'
               - &ref_2
-                name: Arrowheadstyle
+                name: ArrowheadStyle
                 uid: 'excel!Excel.ArrowheadStyle:enum'
               - &ref_3
                 name: ArrowheadWidth
                 uid: 'excel!Excel.ArrowheadWidth:enum'
               - &ref_4
-                name: Autofilltype
+                name: AutoFillType
                 uid: 'excel!Excel.AutoFillType:enum'
               - &ref_5
                 name: BindingType
@@ -31,13 +31,13 @@ items:
                 name: BorderIndex
                 uid: 'excel!Excel.BorderIndex:enum'
               - &ref_7
-                name: Borderlinestyle
+                name: BorderLineStyle
                 uid: 'excel!Excel.BorderLineStyle:enum'
               - &ref_8
                 name: BorderWeight
                 uid: 'excel!Excel.BorderWeight:enum'
               - &ref_9
-                name: Builtstyle
+                name: BuiltInStyle
                 uid: 'excel!Excel.BuiltInStyle:enum'
               - &ref_10
                 name: CalculationMode
@@ -217,7 +217,7 @@ items:
                 name: DataValidationOperator
                 uid: 'excel!Excel.DataValidationOperator:enum'
               - &ref_69
-                name: Datavalidationtype
+                name: DataValidationType
                 uid: 'excel!Excel.DataValidationType:enum'
               - &ref_70
                 name: DeleteShiftDirection
@@ -274,7 +274,7 @@ items:
                 name: PageOrientation
                 uid: 'excel!Excel.PageOrientation:enum'
               - &ref_88
-                name: Papiertyp
+                name: PaperType
                 uid: 'excel!Excel.PaperType:enum'
               - &ref_89
                 name: PictureFormat
@@ -295,13 +295,13 @@ items:
                 name: PrintComments
                 uid: 'excel!Excel.PrintComments:enum'
               - &ref_95
-                name: Printerrortype
+                name: PrintErrorType
                 uid: 'excel!Excel.PrintErrorType:enum'
               - &ref_96
                 name: PrintMarginUnit
                 uid: 'excel!Excel.PrintMarginUnit:enum'
               - &ref_97
-                name: Printorder
+                name: PrintOrder
                 uid: 'excel!Excel.PrintOrder:enum'
               - &ref_98
                 name: ProtectionSelectionMode
@@ -406,7 +406,7 @@ items:
                 name: WorksheetPositionType
                 uid: 'excel!Excel.WorksheetPositionType:enum'
           - *ref_0
-          - name: Anwendung
+          - name: Application
             uid: 'excel!Excel.Application:interface'
           - *ref_1
           - *ref_2
@@ -448,7 +448,7 @@ items:
             uid: 'excel!Excel.CellValueConditionalFormat:interface'
           - name: Diagramm
             uid: 'excel!Excel.Chart:interface'
-          - name: Chart AreaFormat
+          - name: ChartAreaFormat
             uid: 'excel!Excel.ChartAreaFormat:interface'
           - name: ChartAxes
             uid: 'excel!Excel.ChartAxes:interface'
@@ -512,7 +512,7 @@ items:
             uid: 'excel!Excel.ChartLegendEntry:interface'
           - name: ChartLegendEntryCollection
             uid: 'excel!Excel.ChartLegendEntryCollection:interface'
-          - name: Chartlegend Format
+          - name: ChartLegendFormat
             uid: 'excel!Excel.ChartLegendFormat:interface'
           - *ref_31
           - name: ChartLineFormat
@@ -533,7 +533,7 @@ items:
             uid: 'excel!Excel.ChartPlotAreaFormat:interface'
           - *ref_38
           - *ref_39
-          - name: Chart Point
+          - name: ChartPoint
             uid: 'excel!Excel.ChartPoint:interface'
           - name: ChartPointFormat
             uid: 'excel!Excel.ChartPointFormat:interface'
@@ -648,7 +648,7 @@ items:
             uid: 'excel!Excel.CustomProperty:interface'
           - name: CustomPropertyCollection
             uid: 'excel!Excel.CustomPropertyCollection:interface'
-          - name: CustomXMLPart
+          - name: CustomXmlPart
             uid: 'excel!Excel.CustomXmlPart:interface'
           - name: CustomXmlPartCollection
             uid: 'excel!Excel.CustomXmlPartCollection:interface'
@@ -713,7 +713,7 @@ items:
           - *ref_81
           - name: IconSetConditionalFormat
             uid: 'excel!Excel.IconSetConditionalFormat:interface'
-          - name: Image
+          - name: Bild
             uid: 'excel!Excel.Image:interface'
           - *ref_82
           - *ref_83
@@ -801,7 +801,7 @@ items:
             uid: 'excel!Excel.RangeFormat:interface'
           - name: RangeHyperlink
             uid: 'excel!Excel.RangeHyperlink:interface'
-          - name: Bereichsbezug
+          - name: RangeReference
             uid: 'excel!Excel.RangeReference:interface'
           - name: RangeSort
             uid: 'excel!Excel.RangeSort:interface'

@@ -16,13 +16,13 @@ items:
                 name: ArrowheadLength
                 uid: 'ExcelScript!ExcelScript.ArrowheadLength:enum'
               - &ref_2
-                name: Arrowheadstyle
+                name: ArrowheadStyle
                 uid: 'ExcelScript!ExcelScript.ArrowheadStyle:enum'
               - &ref_3
                 name: ArrowheadWidth
                 uid: 'ExcelScript!ExcelScript.ArrowheadWidth:enum'
               - &ref_4
-                name: Autofilltype
+                name: AutoFillType
                 uid: 'ExcelScript!ExcelScript.AutoFillType:enum'
               - &ref_5
                 name: BindingType
@@ -31,13 +31,13 @@ items:
                 name: BorderIndex
                 uid: 'ExcelScript!ExcelScript.BorderIndex:enum'
               - &ref_7
-                name: Borderlinestyle
+                name: BorderLineStyle
                 uid: 'ExcelScript!ExcelScript.BorderLineStyle:enum'
               - &ref_8
                 name: BorderWeight
                 uid: 'ExcelScript!ExcelScript.BorderWeight:enum'
               - &ref_9
-                name: Builtstyle
+                name: BuiltInStyle
                 uid: 'ExcelScript!ExcelScript.BuiltInStyle:enum'
               - &ref_10
                 name: CalculationMode
@@ -220,7 +220,7 @@ items:
                 name: DataValidationOperator
                 uid: 'ExcelScript!ExcelScript.DataValidationOperator:enum'
               - &ref_70
-                name: Datavalidationtype
+                name: DataValidationType
                 uid: 'ExcelScript!ExcelScript.DataValidationType:enum'
               - &ref_71
                 name: DateFilterCondition
@@ -286,7 +286,7 @@ items:
                 name: PageOrientation
                 uid: 'ExcelScript!ExcelScript.PageOrientation:enum'
               - &ref_92
-                name: Papiertyp
+                name: PaperType
                 uid: 'ExcelScript!ExcelScript.PaperType:enum'
               - &ref_93
                 name: PictureFormat
@@ -310,13 +310,13 @@ items:
                 name: PrintComments
                 uid: 'ExcelScript!ExcelScript.PrintComments:enum'
               - &ref_100
-                name: Printerrortype
+                name: PrintErrorType
                 uid: 'ExcelScript!ExcelScript.PrintErrorType:enum'
               - &ref_101
                 name: PrintMarginUnit
                 uid: 'ExcelScript!ExcelScript.PrintMarginUnit:enum'
               - &ref_102
-                name: Printorder
+                name: PrintOrder
                 uid: 'ExcelScript!ExcelScript.PrintOrder:enum'
               - &ref_103
                 name: ProtectionSelectionMode
@@ -427,7 +427,7 @@ items:
                 name: WorksheetPositionType
                 uid: 'ExcelScript!ExcelScript.WorksheetPositionType:enum'
           - *ref_0
-          - name: Anwendung
+          - name: Application
             uid: 'ExcelScript!ExcelScript.Application:interface'
           - *ref_1
           - *ref_2
@@ -467,7 +467,7 @@ items:
             uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat:interface'
           - name: Diagramm
             uid: 'ExcelScript!ExcelScript.Chart:interface'
-          - name: Chart AreaFormat
+          - name: ChartAreaFormat
             uid: 'ExcelScript!ExcelScript.ChartAreaFormat:interface'
           - name: ChartAxes
             uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
@@ -527,7 +527,7 @@ items:
             uid: 'ExcelScript!ExcelScript.ChartLegend:interface'
           - name: ChartLegendEntry
             uid: 'ExcelScript!ExcelScript.ChartLegendEntry:interface'
-          - name: Chartlegend Format
+          - name: ChartLegendFormat
             uid: 'ExcelScript!ExcelScript.ChartLegendFormat:interface'
           - *ref_31
           - name: ChartLineFormat
@@ -548,7 +548,7 @@ items:
             uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat:interface'
           - *ref_38
           - *ref_39
-          - name: Chart Point
+          - name: ChartPoint
             uid: 'ExcelScript!ExcelScript.ChartPoint:interface'
           - name: ChartPointFormat
             uid: 'ExcelScript!ExcelScript.ChartPointFormat:interface'
@@ -646,7 +646,7 @@ items:
             uid: 'ExcelScript!ExcelScript.CustomDataValidation:interface'
           - name: CustomProperty
             uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
-          - name: CustomXMLPart
+          - name: CustomXmlPart
             uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
           - name: DataBarConditionalFormat
             uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat:interface'
@@ -666,7 +666,7 @@ items:
           - *ref_71
           - name: DateTimeDataValidation
             uid: 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
-          - name: DateTimeFormatInfo
+          - name: DatetimeFormatInfo
             uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
           - *ref_72
           - name: DocumentProperties
@@ -785,7 +785,7 @@ items:
             uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
           - name: RangeHyperlink
             uid: 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-          - name: Bereichsbezug
+          - name: RangeReference
             uid: 'ExcelScript!ExcelScript.RangeReference:interface'
           - name: RangeSort
             uid: 'ExcelScript!ExcelScript.RangeSort:interface'
