@@ -1,88 +1,86 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SlicerStyle:interface'
-    summary: 'Stellt ein datenschnitt Format dar, das Formatvorlagenelemente nach Region des datenschnitts definiert.'
-    name: Excel.SlicerStyle
-    fullName: Excel.SlicerStyle
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.SlicerStyle#delete:member(1)'
-      - 'excel!Excel.SlicerStyle#duplicate:member(1)'
-      - 'excel!Excel.SlicerStyle#load:member(1)'
-      - 'excel!Excel.SlicerStyle#name:member'
-      - 'excel!Excel.SlicerStyle#readOnly:member'
-  - uid: 'excel!Excel.SlicerStyle#delete:member(1)'
-    summary: Löscht den SlicerStyle.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.SlicerStyle#duplicate:member(1)'
-    summary: Erstellt ein Duplikat dieses SlicerStyle mit Kopien aller Elemente der Formatvorlage.
-    name: duplicate()
-    fullName: duplicate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'duplicate(): SlicerStyle;'
-      return:
-        type:
-          - 'excel!Excel.SlicerStyle:interface'
-        description: ''
-  - uid: 'excel!Excel.SlicerStyle#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.SlicerStyle#name:member'
-    summary: Ruft den Namen des SlicerStyle ab.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.SlicerStyle#readOnly:member'
-    summary: 'Gibt an, ob dieses SlicerStyle-Objekt schreibgeschützt ist.'
-    name: readOnly
-    fullName: readOnly
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly readOnly: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.SlicerStyle:interface'
-    name: SlicerStyle
-    fullName: Excel.SlicerStyle
+### YamlMime:TSType
+name: Excel.SlicerStyle
+uid: excel!Excel.SlicerStyle:interface
+package: excel!
+fullName: Excel.SlicerStyle
+summary: Stellt ein datenschnitt Format dar, das Formatvorlagenelemente nach Region des datenschnitts definiert.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: name
+  uid: excel!Excel.SlicerStyle#name:member
+  package: excel!
+  fullName: name
+  summary: Ruft den Namen des SlicerStyle ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: readOnly
+  uid: excel!Excel.SlicerStyle#readOnly:member
+  package: excel!
+  fullName: readOnly
+  summary: Gibt an, ob dieses SlicerStyle-Objekt schreibgeschützt ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly readOnly: boolean;'
+    return:
+      type: boolean
+methods:
+- name: delete()
+  uid: excel!Excel.SlicerStyle#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Löscht den SlicerStyle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate()
+  uid: excel!Excel.SlicerStyle#duplicate:member(1)
+  package: excel!
+  fullName: duplicate()
+  summary: Erstellt ein Duplikat dieses SlicerStyle mit Kopien aller Elemente der Formatvorlage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(): SlicerStyle;'
+    return:
+      type: <xref uid="excel!Excel.SlicerStyle:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.SlicerStyle#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 5ccd6b05e4c5cfc096e8de315531a3ecec2fd641
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412888"

@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Placement:enum'
-    summary: 'Gibt an, wie ein Objekt mit seinen zugrunde liegenden Zellen verbunden ist.'
-    name: ExcelScript.Placement
-    fullName: ExcelScript.Placement
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Placement.absolute:member'
-      - 'ExcelScript!ExcelScript.Placement.oneCell:member'
-      - 'ExcelScript!ExcelScript.Placement.twoCell:member'
-  - uid: 'ExcelScript!ExcelScript.Placement.absolute:member'
-    summary: Das Objekt ist frei verschiebbar.
-    name: absolute
-    fullName: absolute
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.Placement.oneCell:member'
-    summary: Das Objekt wird mit den Zellen verschoben und angepasst.
-    name: oneCell
-    fullName: oneCell
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.Placement.twoCell:member'
-    summary: Das Objekt wird mit den Zellen verschoben.
-    name: twoCell
-    fullName: twoCell
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.Placement
+uid: ExcelScript!ExcelScript.Placement:enum
+package: ExcelScript!
+fullName: ExcelScript.Placement
+summary: Gibt an, wie ein Objekt mit seinen zugrunde liegenden Zellen verbunden ist.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: absolute
+  uid: ExcelScript!ExcelScript.Placement.absolute:member
+  package: ExcelScript!
+  summary: Das Objekt ist frei verschiebbar.
+- name: oneCell
+  uid: ExcelScript!ExcelScript.Placement.oneCell:member
+  package: ExcelScript!
+  summary: Das Objekt wird mit den Zellen verschoben und angepasst.
+- name: twoCell
+  uid: ExcelScript!ExcelScript.Placement.twoCell:member
+  package: ExcelScript!
+  summary: Das Objekt wird mit den Zellen verschoben.
+metadata:
+  ms.openlocfilehash: bed1f80265c46b02b792cd5f423cc864dc1c7d76
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412048"

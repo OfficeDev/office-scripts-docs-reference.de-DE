@@ -1,110 +1,91 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
-    summary: Stellt die Excel-PivotHierarchy dar.
-    name: ExcelScript.PivotHierarchy
-    fullName: ExcelScript.PivotHierarchy
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
-      - 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
-      - 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
-      - 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
-      - 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
-    summary: 'Gibt die PivotFields-Objekte zurück, die dem PivotHierarchy-Objekt zugeordnet sind.'
-    name: getFields()
-    fullName: getFields()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFields(): PivotField[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotHierarchy#getFields~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
-    summary: Die ID des PivotHierarchy-Objekts.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
-    summary: Der Name des PivotHierarchy-Objekts
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
-    summary: 'Ruft ein PivotField nach Namen ab. Wenn das PivotField nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getPivotField(name)
-    fullName: getPivotField(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotField(name: string): PivotField | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: 'Name des PivotField, das abgerufen werden soll.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
-    summary: Der Name des PivotHierarchy-Objekts
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-references:
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields~0:complex'
-    name: 'PivotField[]'
-    fullName: 'ExcelScript.PivotField[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
-        name: PivotField
-        fullName: ExcelScript.PivotField
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField~0:complex'
-    name: PivotField | undefined
-    fullName: ExcelScript.PivotField | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
-        name: PivotField
-        fullName: ExcelScript.PivotField
-      - name: ' | undefined'
-        fullName: ' | undefined'
+### YamlMime:TSType
+name: ExcelScript.PivotHierarchy
+uid: ExcelScript!ExcelScript.PivotHierarchy:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotHierarchy
+summary: Stellt die Excel-PivotHierarchy dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFields()
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)
+  package: ExcelScript!
+  fullName: getFields()
+  summary: Gibt die PivotFields-Objekte zurück, die dem PivotHierarchy-Objekt zugeordnet sind.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFields(): PivotField[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Die ID des PivotHierarchy-Objekts.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Der Name des PivotHierarchy-Objekts
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPivotField(name)
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)
+  package: ExcelScript!
+  fullName: getPivotField(name)
+  summary: Ruft ein PivotField nach Namen ab. Wenn das PivotField nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotField(name: string): PivotField | undefined;'
+    parameters:
+    - id: name
+      description: Name des PivotField, das abgerufen werden soll.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Der Name des PivotHierarchy-Objekts
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d309351e36fb6a2514b9dce517212670bf8141ae
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412069"

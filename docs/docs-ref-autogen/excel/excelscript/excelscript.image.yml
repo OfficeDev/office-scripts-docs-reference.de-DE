@@ -1,60 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Image:interface'
-    summary: 'Stellt ein Bild im Arbeitsblatt dar. Um das entsprechende Shape-Objekt abzurufen, verwenden Sie Image. Shape.'
-    name: ExcelScript.Image
-    fullName: ExcelScript.Image
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Image#getId:member(1)'
-      - 'ExcelScript!ExcelScript.Image#getShape:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
-    summary: Gibt das Format des Bilds zurück.
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): PictureFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PictureFormat:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Image#getId:member(1)'
-    summary: Gibt den Shape-Bezeichner für das Image-Objekt an.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Image#getShape:member(1)'
-    summary: 'Gibt das Formobjekt zurück, das dem Bild zugeordnet ist.'
-    name: getShape()
-    fullName: getShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShape(): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
-    name: PictureFormat
-    fullName: ExcelScript.PictureFormat
-  - uid: 'ExcelScript!ExcelScript.Shape:interface'
-    name: Shape
-    fullName: ExcelScript.Shape
+### YamlMime:TSType
+name: ExcelScript.Image
+uid: ExcelScript!ExcelScript.Image:interface
+package: ExcelScript!
+fullName: ExcelScript.Image
+summary: Stellt ein Bild im Arbeitsblatt dar. Um das entsprechende Shape-Objekt abzurufen, verwenden Sie Image. Shape.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.Image#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Gibt das Format des Bilds zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): PictureFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Image#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Gibt den Shape-Bezeichner für das Image-Objekt an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getShape()
+  uid: ExcelScript!ExcelScript.Image#getShape:member(1)
+  package: ExcelScript!
+  fullName: getShape()
+  summary: Gibt das Formobjekt zurück, das dem Bild zugeordnet ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShape(): Shape;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 79a5c551aea428b700a3caa43efab0ea628ef1c0
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412314"

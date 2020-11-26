@@ -1,25 +1,31 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
-    summary: 'Stellt ein geometrisches Shape innerhalb eines Arbeitsblatts dar. Bei einer geometrischen Form kann es sich um ein Rechteck, einen Blockpfeil, ein Formel Symbol, ein Flussdiagrammelement, einen Stern, ein Banner, eine Legende oder eine andere grundlegende Form in Excel handeln.'
-    name: ExcelScript.GeometricShape
-    fullName: ExcelScript.GeometricShape
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
-  - uid: 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
-    summary: Gibt die ID der Form zurück.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.GeometricShape
+uid: ExcelScript!ExcelScript.GeometricShape:interface
+package: ExcelScript!
+fullName: ExcelScript.GeometricShape
+summary: Stellt ein geometrisches Shape innerhalb eines Arbeitsblatts dar. Bei einer geometrischen Form kann es sich um ein Rechteck, einen Blockpfeil, ein Formel Symbol, ein Flussdiagrammelement, einen Stern, ein Banner, eine Legende oder eine andere grundlegende Form in Excel handeln.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getId()
+  uid: ExcelScript!ExcelScript.GeometricShape#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Gibt die ID der Form zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+metadata:
+  ms.openlocfilehash: cf8298436ba13df23d8be7bfd41aee7612240f70
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412461"
