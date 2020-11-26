@@ -1,73 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotHierarchy:interface'
-    summary: Stellt die Excel-PivotHierarchy dar.
-    name: Excel.PivotHierarchy
-    fullName: Excel.PivotHierarchy
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.PivotHierarchy#fields:member'
-      - 'excel!Excel.PivotHierarchy#id:member'
-      - 'excel!Excel.PivotHierarchy#load:member(1)'
-      - 'excel!Excel.PivotHierarchy#name:member'
-  - uid: 'excel!Excel.PivotHierarchy#fields:member'
-    summary: 'Gibt die PivotFields-Objekte zurück, die dem PivotHierarchy-Objekt zugeordnet sind.'
-    name: fields
-    fullName: fields
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fields: PivotFieldCollection;'
-      return:
-        type:
-          - 'excel!Excel.PivotFieldCollection:interface'
-  - uid: 'excel!Excel.PivotHierarchy#id:member'
-    summary: Die ID des PivotHierarchy-Objekts.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotHierarchy#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.PivotHierarchy#name:member'
-    summary: Der Name des PivotHierarchy-Objekts
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: 'excel!Excel.PivotFieldCollection:interface'
-    name: PivotFieldCollection
-    fullName: Excel.PivotFieldCollection
+### YamlMime:TSType
+name: Excel.PivotHierarchy
+uid: excel!Excel.PivotHierarchy:interface
+package: excel!
+fullName: Excel.PivotHierarchy
+summary: Stellt die Excel-PivotHierarchy dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: fields
+  uid: excel!Excel.PivotHierarchy#fields:member
+  package: excel!
+  fullName: fields
+  summary: Gibt die PivotFields-Objekte zurück, die dem PivotHierarchy-Objekt zugeordnet sind.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fields: PivotFieldCollection;'
+    return:
+      type: <xref uid="excel!Excel.PivotFieldCollection:interface" />
+- name: id
+  uid: excel!Excel.PivotHierarchy#id:member
+  package: excel!
+  fullName: id
+  summary: Die ID des PivotHierarchy-Objekts.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: name
+  uid: excel!Excel.PivotHierarchy#name:member
+  package: excel!
+  fullName: name
+  summary: Der Name des PivotHierarchy-Objekts
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.PivotHierarchy#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e195eb7beb05d3f1c56234d30abb26ed769637d1
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413370"

@@ -1,39 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
-    summary: Stellt die Ergebnisse der RemoveDuplicates-Methode für den Bereich dar.
-    name: ExcelScript.RemoveDuplicatesResult
-    fullName: ExcelScript.RemoveDuplicatesResult
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
-      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
-    summary: Die Anzahl der vom Vorgang entfernten doppelten Zeilen.
-    name: getRemoved()
-    fullName: getRemoved()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRemoved(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
-    summary: Die Anzahl der verbleibenden eindeutigen Zeilen im Ergebnisbereich.
-    name: getUniqueRemaining()
-    fullName: getUniqueRemaining()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUniqueRemaining(): number;'
-      return:
-        type:
-          - number
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.RemoveDuplicatesResult
+uid: ExcelScript!ExcelScript.RemoveDuplicatesResult:interface
+package: ExcelScript!
+fullName: ExcelScript.RemoveDuplicatesResult
+summary: Stellt die Ergebnisse der RemoveDuplicates-Methode für den Bereich dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getRemoved()
+  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)
+  package: ExcelScript!
+  fullName: getRemoved()
+  summary: Die Anzahl der vom Vorgang entfernten doppelten Zeilen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRemoved(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUniqueRemaining()
+  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)
+  package: ExcelScript!
+  fullName: getUniqueRemaining()
+  summary: Die Anzahl der verbleibenden eindeutigen Zeilen im Ergebnisbereich.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUniqueRemaining(): number;'
+    return:
+      type: number
+      description: ''
+metadata:
+  ms.openlocfilehash: 1b7a861288171b4c69d9ed8f0cc1089cabf14c16
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411887"

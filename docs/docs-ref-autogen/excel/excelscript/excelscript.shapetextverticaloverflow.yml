@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
-    summary: Gibt den vertikalen Überlauf für den Textrahmen in einem Shape an.
-    name: ExcelScript.ShapeTextVerticalOverflow
-    fullName: ExcelScript.ShapeTextVerticalOverflow
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
-      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
-      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
-    summary: 'Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet.'
-    name: clip
-    fullName: clip
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
-    summary: 'Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet, und ein Auslassungszeichen (...) wird am Ende des sichtbaren Texts angezeigt.'
-    name: ellipsis
-    fullName: ellipsis
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
-    summary: 'Vertikalen Überlauf von Text über den Textrahmen zulassen (kann oben, unten oder an beiden Enden abhängig von der Textausrichtung auftreten).'
-    name: overflow
-    fullName: overflow
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeTextVerticalOverflow
+uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeTextVerticalOverflow
+summary: Gibt den vertikalen Überlauf für den Textrahmen in einem Shape an.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: clip
+  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member
+  package: ExcelScript!
+  summary: Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet.
+- name: ellipsis
+  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member
+  package: ExcelScript!
+  summary: Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet, und ein Auslassungszeichen (...) wird am Ende des sichtbaren Texts angezeigt.
+- name: overflow
+  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member
+  package: ExcelScript!
+  summary: Vertikalen Überlauf von Text über den Textrahmen zulassen (kann oben, unten oder an beiden Enden abhängig von der Textausrichtung auftreten).
+metadata:
+  ms.openlocfilehash: e52155ed38292cb461911c22ce5173e88217f3b5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411775"

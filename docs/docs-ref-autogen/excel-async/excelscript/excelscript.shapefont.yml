@@ -1,110 +1,106 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ShapeFont:interface'
-    summary: 'Stellt die Schriftartattribute für das TextRange-Objekt eines Shapes dar, beispielsweise den Namen der Schriftart, den Schriftgrad und die Farbe.'
-    name: Excel.ShapeFont
-    fullName: Excel.ShapeFont
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ShapeFont#bold:member'
-      - 'excel!Excel.ShapeFont#color:member'
-      - 'excel!Excel.ShapeFont#italic:member'
-      - 'excel!Excel.ShapeFont#load:member(1)'
-      - 'excel!Excel.ShapeFont#name:member'
-      - 'excel!Excel.ShapeFont#size:member'
-      - 'excel!Excel.ShapeFont#underline:member'
-  - uid: 'excel!Excel.ShapeFont#bold:member'
-    summary: 'Stellt den Fett-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl fette als auch nicht fette Abschnitte enthält.'
-    name: bold
-    fullName: bold
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bold: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ShapeFont#color:member'
-    summary: 'HTML-Farb Codedarstellung der Textfarbe (beispielsweise " \# FF0000" steht für rot). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Farben enthält.'
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ShapeFont#italic:member'
-    summary: 'Stellt den Kursiv-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl kursive als auch nicht kursive Abschnitte enthält.'
-    name: italic
-    fullName: italic
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'italic: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ShapeFont#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ShapeFont#name:member'
-    summary: 'Stellt den Namen der Schriftart dar (beispielsweise "Calibri"). Wenn der Text aus komplexen Schriftzeichen oder Ostasiatischen Zeichen besteht, ist dies der entsprechende Schriftartname; andernfalls der lateinische Schriftartname.'
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ShapeFont#size:member'
-    summary: 'Stellt den Schriftgrad in Punkt dar (z. b. 11). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Schriftgraden enthält.'
-    name: size
-    fullName: size
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'size: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ShapeFont#underline:member'
-    summary: 'Art der auf die Schriftart angewendeten Unterstreichung. Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Unterstreichungsarten enthält. Einzelheiten finden Sie unter Excel.ShapeFontUnderlineStyle.'
-    name: underline
-    fullName: underline
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        underline:
-                    | ShapeFontUnderlineStyle
+### YamlMime:TSType
+name: Excel.ShapeFont
+uid: excel!Excel.ShapeFont:interface
+package: excel!
+fullName: Excel.ShapeFont
+summary: Stellt die Schriftartattribute für das TextRange-Objekt eines Shapes dar, beispielsweise den Namen der Schriftart, den Schriftgrad und die Farbe.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: bold
+  uid: excel!Excel.ShapeFont#bold:member
+  package: excel!
+  fullName: bold
+  summary: Stellt den Fett-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl fette als auch nicht fette Abschnitte enthält.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'bold: boolean;'
+    return:
+      type: boolean
+- name: color
+  uid: excel!Excel.ShapeFont#color:member
+  package: excel!
+  fullName: color
+  summary: HTML-Farb Codedarstellung der Textfarbe (beispielsweise " \# FF0000" steht für rot). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Farben enthält.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color: string;'
+    return:
+      type: string
+- name: italic
+  uid: excel!Excel.ShapeFont#italic:member
+  package: excel!
+  fullName: italic
+  summary: Stellt den Kursiv-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl kursive als auch nicht kursive Abschnitte enthält.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'italic: boolean;'
+    return:
+      type: boolean
+- name: name
+  uid: excel!Excel.ShapeFont#name:member
+  package: excel!
+  fullName: name
+  summary: Stellt den Namen der Schriftart dar (beispielsweise "Calibri"). Wenn der Text aus komplexen Schriftzeichen oder Ostasiatischen Zeichen besteht, ist dies der entsprechende Schriftartname; andernfalls der lateinische Schriftartname.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: size
+  uid: excel!Excel.ShapeFont#size:member
+  package: excel!
+  fullName: size
+  summary: Stellt den Schriftgrad in Punkt dar (z. b. 11). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Schriftgraden enthält.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'size: number;'
+    return:
+      type: number
+- name: underline
+  uid: excel!Excel.ShapeFont#underline:member
+  package: excel!
+  fullName: underline
+  summary: Art der auf die Schriftart angewendeten Unterstreichung. Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Unterstreichungsarten enthält. Einzelheiten finden Sie unter Excel.ShapeFontUnderlineStyle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      underline:
+                  | ShapeFontUnderlineStyle
+                  | "None"
+                  | "Single"
+                  | "Double"
+                  | "Heavy"
+                  | "Dotted"
+                  | "DottedHeavy"
+                  | "Dash"
+                  | "DashHeavy"
+                  | "DashLong"
+                  | "DashLongHeavy"
+                  | "DotDash"
+                  | "DotDashHeavy"
+                  | "DotDotDash"
+                  | "DotDotDashHeavy"
+                  | "Wavy"
+                  | "WavyHeavy"
+                  | "WavyDouble";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ShapeFontUnderlineStyle:enum" />
                     | "None"
                     | "Single"
                     | "Double"
@@ -121,91 +117,29 @@ items:
                     | "DotDotDashHeavy"
                     | "Wavy"
                     | "WavyHeavy"
-                    | "WavyDouble";
-      return:
-        type:
-          - 'excel!Excel.ShapeFont#underline~0:complex'
-references:
-  - uid: 'excel!Excel.ShapeFont#underline~0:complex'
-    name: |-
-      | ShapeFontUnderlineStyle
-                  | "None"
-                  | "Single"
-                  | "Double"
-                  | "Heavy"
-                  | "Dotted"
-                  | "DottedHeavy"
-                  | "Dash"
-                  | "DashHeavy"
-                  | "DashLong"
-                  | "DashLongHeavy"
-                  | "DotDash"
-                  | "DotDashHeavy"
-                  | "DotDotDash"
-                  | "DotDotDashHeavy"
-                  | "Wavy"
-                  | "WavyHeavy"
-                  | "WavyDouble"
-    fullName: |-
-      | Excel.ShapeFontUnderlineStyle
-                  | "None"
-                  | "Single"
-                  | "Double"
-                  | "Heavy"
-                  | "Dotted"
-                  | "DottedHeavy"
-                  | "Dash"
-                  | "DashHeavy"
-                  | "DashLong"
-                  | "DashLongHeavy"
-                  | "DotDash"
-                  | "DotDashHeavy"
-                  | "DotDotDash"
-                  | "DotDotDashHeavy"
-                  | "Wavy"
-                  | "WavyHeavy"
-                  | "WavyDouble"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ShapeFontUnderlineStyle:enum'
-        name: ShapeFontUnderlineStyle
-        fullName: Excel.ShapeFontUnderlineStyle
-      - name: |2-
-
-                      | "None"
-                      | "Single"
-                      | "Double"
-                      | "Heavy"
-                      | "Dotted"
-                      | "DottedHeavy"
-                      | "Dash"
-                      | "DashHeavy"
-                      | "DashLong"
-                      | "DashLongHeavy"
-                      | "DotDash"
-                      | "DotDashHeavy"
-                      | "DotDotDash"
-                      | "DotDotDashHeavy"
-                      | "Wavy"
-                      | "WavyHeavy"
-                      | "WavyDouble"
-        fullName: |2-
-
-                      | "None"
-                      | "Single"
-                      | "Double"
-                      | "Heavy"
-                      | "Dotted"
-                      | "DottedHeavy"
-                      | "Dash"
-                      | "DashHeavy"
-                      | "DashLong"
-                      | "DashLongHeavy"
-                      | "DotDash"
-                      | "DotDashHeavy"
-                      | "DotDotDash"
-                      | "DotDotDashHeavy"
-                      | "Wavy"
-                      | "WavyHeavy"
-                      | "WavyDouble"
+                    | "WavyDouble"
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ShapeFont#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 55588c2691d554e3bcf9b41f3a5b60b9b4d156a6
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413031"

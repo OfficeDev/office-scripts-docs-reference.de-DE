@@ -1,183 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.NamedItemCollection:interface'
-    summary: 'Eine Auflistung aller NamedItem-Objekte, die Teil der Arbeitsmappe oder des Arbeitsblatts sind, je nachdem, wie Sie erreicht wurde.'
-    name: Excel.NamedItemCollection
-    fullName: Excel.NamedItemCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.NamedItemCollection#add:member(1)'
-      - 'excel!Excel.NamedItemCollection#addFormulaLocal:member(1)'
-      - 'excel!Excel.NamedItemCollection#getCount:member(1)'
-      - 'excel!Excel.NamedItemCollection#getItem:member(1)'
-      - 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.NamedItemCollection#load:member(1)'
-  - uid: 'excel!Excel.NamedItemCollection#add:member(1)'
-    summary: Fügt einen neuen Namen zur Auflistung des angegebenen Bereichs hinzu.
-    name: 'add(name, reference, comment)'
-    fullName: 'add(name, reference, comment)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        add(
-                    name: string,
-                    reference: Range | string,
-                    comment?: string
-                ): NamedItem;
-      return:
-        type:
-          - 'excel!Excel.NamedItem:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let headerRange = sheet.getRange("A1:D1");
-
-              sheet.names.add("ExpensesHeader", headerRange);
-              let namedItems = sheet.names.load("name, type");
-
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: name
-          description: Der Name des benannten Elements.
-          type:
-            - string
-        - id: reference
-          description: 'Die Formel oder der Bereich, auf die bzw. den der Name verweist.'
-          type:
-            - 'excel!Excel.NamedItemCollection#add~0:complex'
-        - id: comment
-          description: Optional. Der dem benannten Element zugeordnete Kommentar.
-          type:
-            - string
-  - uid: 'excel!Excel.NamedItemCollection#addFormulaLocal:member(1)'
-    summary: Fügt einen neuen Namen zu der Auflistung des angegebenen Bereichs unter Verwendung des Gebietsschemas des Benutzers für die Formel hinzu.
-    name: 'addFormulaLocal(name, formula, comment)'
-    fullName: 'addFormulaLocal(name, formula, comment)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addFormulaLocal(
-                    name: string,
-                    formula: string,
-                    comment?: string
-                ): NamedItem;
-      return:
-        type:
-          - 'excel!Excel.NamedItem:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Der „Name“ des benannten Elements.
-          type:
-            - string
-        - id: formula
-          description: 'Die Formel im Gebietsschema des Benutzers, auf die der Name verweist.'
-          type:
-            - string
-        - id: comment
-          description: Optional. Der dem benannten Element zugeordnete Kommentar.
-          type:
-            - string
-  - uid: 'excel!Excel.NamedItemCollection#getCount:member(1)'
-    summary: Ruft die Anzahl von benannten Elementen in der Auflistung ab.
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.NamedItemCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.NamedItemCollection#getItem:member(1)'
-    summary: Ruft ein NamedItem-Objekt mit seinem Namen ab.
-    name: getItem(name)
-    fullName: getItem(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(name: string): NamedItem;'
-      return:
-        type:
-          - 'excel!Excel.NamedItem:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: NamedItem-Name.
-          type:
-            - string
-  - uid: 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'
-    summary: 'Ruft ein NamedItem-Objekt mit seinem Namen ab. Wenn das nameditem-Objekt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getItemOrNullObject(name)
-    fullName: getItemOrNullObject(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(name: string): NamedItem;'
-      return:
-        type:
-          - 'excel!Excel.NamedItem:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: NamedItem-Name.
-          type:
-            - string
-  - uid: 'excel!Excel.NamedItemCollection#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.NamedItem:interface'
-    name: NamedItem
-    fullName: Excel.NamedItem
-  - uid: 'excel!Excel.NamedItemCollection#add~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.NamedItemCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.NamedItemCollection
+uid: excel!Excel.NamedItemCollection:interface
+package: excel!
+fullName: Excel.NamedItemCollection
+summary: Eine Auflistung aller NamedItem-Objekte, die Teil der Arbeitsmappe oder des Arbeitsblatts sind, je nachdem, wie Sie erreicht wurde.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: add(name, reference, comment)
+  uid: excel!Excel.NamedItemCollection#add:member(1)
+  package: excel!
+  fullName: add(name, reference, comment)
+  summary: Fügt einen neuen Namen zur Auflistung des angegebenen Bereichs hinzu.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      add(
+                  name: string,
+                  reference: Range | string,
+                  comment?: string
+              ): NamedItem;
+    parameters:
+    - id: name
+      description: Der Name des benannten Elements.
+      type: string
+    - id: reference
+      description: Die Formel oder der Bereich, auf die bzw. den der Name verweist.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    - id: comment
+      description: Optional. Der dem benannten Element zugeordnete Kommentar.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.NamedItem:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let headerRange = sheet.getRange(\"A1:D1\");\n\n    sheet.names.add(\"ExpensesHeader\", headerRange);\n    let namedItems = sheet.names.load(\"name, type\");\n\n    await context.sync();\n}\n```"
+- name: addFormulaLocal(name, formula, comment)
+  uid: excel!Excel.NamedItemCollection#addFormulaLocal:member(1)
+  package: excel!
+  fullName: addFormulaLocal(name, formula, comment)
+  summary: Fügt einen neuen Namen zu der Auflistung des angegebenen Bereichs unter Verwendung des Gebietsschemas des Benutzers für die Formel hinzu.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addFormulaLocal(
+                  name: string,
+                  formula: string,
+                  comment?: string
+              ): NamedItem;
+    parameters:
+    - id: name
+      description: Der „Name“ des benannten Elements.
+      type: string
+    - id: formula
+      description: Die Formel im Gebietsschema des Benutzers, auf die der Name verweist.
+      type: string
+    - id: comment
+      description: Optional. Der dem benannten Element zugeordnete Kommentar.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.NamedItem:interface" />
+      description: ''
+- name: getCount()
+  uid: excel!Excel.NamedItemCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: Ruft die Anzahl von benannten Elementen in der Auflistung ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(name)
+  uid: excel!Excel.NamedItemCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(name)
+  summary: Ruft ein NamedItem-Objekt mit seinem Namen ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(name: string): NamedItem;'
+    parameters:
+    - id: name
+      description: NamedItem-Name.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.NamedItem:interface" />
+      description: ''
+- name: getItemOrNullObject(name)
+  uid: excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(name)
+  summary: Ruft ein NamedItem-Objekt mit seinem Namen ab. Wenn das nameditem-Objekt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(name: string): NamedItem;'
+    parameters:
+    - id: name
+      description: NamedItem-Name.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.NamedItem:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.NamedItemCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 447868fa7b4f50f4dc407b286cd22d4b487163c3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413475"

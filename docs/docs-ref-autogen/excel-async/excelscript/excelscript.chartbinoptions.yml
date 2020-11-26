@@ -1,131 +1,120 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartBinOptions:interface'
-    summary: Verkapselt die Intervalloptionen für Histogramme und Pareto-Diagramme.
-    name: Excel.ChartBinOptions
-    fullName: Excel.ChartBinOptions
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartBinOptions#allowOverflow:member'
-      - 'excel!Excel.ChartBinOptions#allowUnderflow:member'
-      - 'excel!Excel.ChartBinOptions#count:member'
-      - 'excel!Excel.ChartBinOptions#load:member(1)'
-      - 'excel!Excel.ChartBinOptions#overflowValue:member'
-      - 'excel!Excel.ChartBinOptions#type:member'
-      - 'excel!Excel.ChartBinOptions#underflowValue:member'
-      - 'excel!Excel.ChartBinOptions#width:member'
-  - uid: 'excel!Excel.ChartBinOptions#allowOverflow:member'
-    summary: 'Gibt an, ob der Container Überlauf in einem Histogramm-oder Pareto-Diagramm aktiviert ist.'
-    name: allowOverflow
-    fullName: allowOverflow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowOverflow: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartBinOptions#allowUnderflow:member'
-    summary: 'Gibt an, ob der Papierkorb Unterlauf in einem Histogramm-oder Pareto-Diagramm aktiviert ist.'
-    name: allowUnderflow
-    fullName: allowUnderflow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowUnderflow: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartBinOptions#count:member'
-    summary: Gibt die Anzahl der Container eines Histogramms oder eines Pareto-Diagramms an.
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartBinOptions#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartBinOptions#overflowValue:member'
-    summary: Gibt den Wert des bin-Überlauf Werts eines Histogramm-oder Pareto-Diagramms an.
-    name: overflowValue
-    fullName: overflowValue
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'overflowValue: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartBinOptions#type:member'
-    summary: Gibt den Typ des Papierkorbs für ein Histogramm-oder Pareto-Diagramm an.
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'type: ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";'
-      return:
-        type:
-          - 'excel!Excel.ChartBinOptions#type~0:complex'
-  - uid: 'excel!Excel.ChartBinOptions#underflowValue:member'
-    summary: Gibt den Wert des Papierkorbs für ein Histogramm-oder Pareto-Diagramm an.
-    name: underflowValue
-    fullName: underflowValue
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'underflowValue: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartBinOptions#width:member'
-    summary: Gibt den Wert der bin-Breite eines Histogramm-oder Pareto-Diagramms an.
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'width: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.ChartBinOptions#type~0:complex'
-    name: ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
-    fullName: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartBinType:enum'
-        name: ChartBinType
-        fullName: Excel.ChartBinType
-      - name: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'
-        fullName: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'
+### YamlMime:TSType
+name: Excel.ChartBinOptions
+uid: excel!Excel.ChartBinOptions:interface
+package: excel!
+fullName: Excel.ChartBinOptions
+summary: Verkapselt die Intervalloptionen für Histogramme und Pareto-Diagramme.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: allowOverflow
+  uid: excel!Excel.ChartBinOptions#allowOverflow:member
+  package: excel!
+  fullName: allowOverflow
+  summary: Gibt an, ob der Container Überlauf in einem Histogramm-oder Pareto-Diagramm aktiviert ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowOverflow: boolean;'
+    return:
+      type: boolean
+- name: allowUnderflow
+  uid: excel!Excel.ChartBinOptions#allowUnderflow:member
+  package: excel!
+  fullName: allowUnderflow
+  summary: Gibt an, ob der Papierkorb Unterlauf in einem Histogramm-oder Pareto-Diagramm aktiviert ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowUnderflow: boolean;'
+    return:
+      type: boolean
+- name: count
+  uid: excel!Excel.ChartBinOptions#count:member
+  package: excel!
+  fullName: count
+  summary: Gibt die Anzahl der Container eines Histogramms oder eines Pareto-Diagramms an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'count: number;'
+    return:
+      type: number
+- name: overflowValue
+  uid: excel!Excel.ChartBinOptions#overflowValue:member
+  package: excel!
+  fullName: overflowValue
+  summary: Gibt den Wert des bin-Überlauf Werts eines Histogramm-oder Pareto-Diagramms an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'overflowValue: number;'
+    return:
+      type: number
+- name: type
+  uid: excel!Excel.ChartBinOptions#type:member
+  package: excel!
+  fullName: type
+  summary: Gibt den Typ des Papierkorbs für ein Histogramm-oder Pareto-Diagramm an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'type: ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";'
+    return:
+      type: <xref uid="excel!Excel.ChartBinType:enum" /> | "Category" | "Auto" | "BinWidth" | "BinCount"
+- name: underflowValue
+  uid: excel!Excel.ChartBinOptions#underflowValue:member
+  package: excel!
+  fullName: underflowValue
+  summary: Gibt den Wert des Papierkorbs für ein Histogramm-oder Pareto-Diagramm an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'underflowValue: number;'
+    return:
+      type: number
+- name: width
+  uid: excel!Excel.ChartBinOptions#width:member
+  package: excel!
+  fullName: width
+  summary: Gibt den Wert der bin-Breite eines Histogramm-oder Pareto-Diagramms an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'width: number;'
+    return:
+      type: number
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartBinOptions#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 416f4544478ca34e9751a8ef2cb1d0398d675aad
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413629"

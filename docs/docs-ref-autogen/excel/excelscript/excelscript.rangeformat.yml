@@ -1,596 +1,520 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
-    summary: 'Gibt ein Formatobjekt zurück, das die Schriftart des Bereichs, Füllung, Rahmen, die Ausrichtung und andere Eigenschaften verschachtelt.'
-    name: ExcelScript.RangeFormat
-    fullName: ExcelScript.RangeFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#autofitColumns:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#autofitRows:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getBorders:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getFill:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getFont:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getIndentLevel:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getProtection:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getRangeBorder:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getReadingOrder:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setIndentLevel:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setReadingOrder:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)'
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)'
-    summary: Passt den Einzug der Bereichs Formatierung an. Der Einzugswert reicht von 0 bis 250 und wird in Zeichen gemessen.
-    name: adjustIndent(amount)
-    fullName: adjustIndent(amount)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'adjustIndent(amount: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: amount
-          description: 'Die Anzahl der Zeichenbereiche, nach denen der aktuelle Einzug angepasst wird. Dieser Wert sollte zwischen-250 und 250 liegen. **Hinweis**: Wenn der Wert die Einrückungsebene oberhalb von 250 erhöht, bleibt die Einzugsebene bei 250. Wenn der Wert die Einrückungsebene unter 0 senken würde, bleibt die Einzugsebene auf ähnliche Weise gleich 0.'
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#autofitColumns:member(1)'
-    summary: 'Ändert die Breite der Spalten des aktuellen Bereichs, um basierend auf den aktuellen Daten in den Spalten die optimale Breite zu erzielen.'
-    name: autofitColumns()
-    fullName: autofitColumns()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'autofitColumns(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#autofitRows:member(1)'
-    summary: 'Ändert die Höhe der Zeilen des aktuellen Bereichs, um basierend auf den aktuellen Daten in den Zeilen die optimale Höhe zu erzielen.'
-    name: autofitRows()
-    fullName: autofitRows()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'autofitRows(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)'
-    summary: 'Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung auf gleiche Verteilung festgelegt ist.'
-    name: getAutoIndent()
-    fullName: getAutoIndent()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAutoIndent(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getBorders:member(1)'
-    summary: 'Auflistung von Border-Objekten, die für den gesamten ausgewählten Bereich gelten.'
-    name: getBorders()
-    fullName: getBorders()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBorders(): RangeBorder[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeFormat#getBorders~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)'
-    summary: 'Gibt die Breite aller Spalten innerhalb des Bereichs an. Wenn die Breite der Spalten nicht gleichmäßig ist, wird Null zurückgegeben.'
-    name: getColumnWidth()
-    fullName: getColumnWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getFill:member(1)'
-    summary: 'Gibt das Fill-Objekt an, das für den gesamten Bereich definiert ist.'
-    name: getFill()
-    fullName: getFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFill(): RangeFill;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeFill:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getFont:member(1)'
-    summary: 'Gibt das Font-Objekt an, das für den gesamten Bereich definiert ist.'
-    name: getFont()
-    fullName: getFont()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFont(): RangeFont;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeFont:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)'
-    summary: Stellt die horizontale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. HorizontalAlignment.
-    name: getHorizontalAlignment()
-    fullName: getHorizontalAlignment()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHorizontalAlignment(): HorizontalAlignment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HorizontalAlignment:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getIndentLevel:member(1)'
-    summary: 'Eine ganze Zahl zwischen 0 und 250, die die Einzugsebene angibt.'
-    name: getIndentLevel()
-    fullName: getIndentLevel()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIndentLevel(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getProtection:member(1)'
-    summary: Gibt das Formatschutz-Objekt für einen Bereich zurück.
-    name: getProtection()
-    fullName: getProtection()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getProtection(): FormatProtection;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FormatProtection:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getRangeBorder:member(1)'
-    summary: 'Ruft ein Rahmen-Objekt ab, das den Namen verwendet'
-    name: getRangeBorder(index)
-    fullName: getRangeBorder(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeBorder:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter ExcelScript. BorderIndex.
-          type:
-            - 'ExcelScript!ExcelScript.BorderIndex:enum'
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)'
-    summary: 'Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.'
-    name: getRangeBorderTintAndShade()
-    fullName: getRangeBorderTintAndShade()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRangeBorderTintAndShade(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getReadingOrder:member(1)'
-    summary: Die Leserichtung für den Bereich.
-    name: getReadingOrder()
-    fullName: getReadingOrder()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getReadingOrder(): ReadingOrder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ReadingOrder:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)'
-    summary: 'Die Höhe aller Zeilen im Bereich. Wenn die Zeilenhöhen nicht einheitlich sind, wird NULL zurückgegeben.'
-    name: getRowHeight()
-    fullName: getRowHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)'
-    summary: 'Gibt an, ob Text automatisch verkleinert wird, sodass er in die verfügbare Spaltenbreite passt.'
-    name: getShrinkToFit()
-    fullName: getShrinkToFit()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShrinkToFit(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)'
-    summary: 'Die Textausrichtung aller Zellen innerhalb des Bereichs. Die Textausrichtung sollte eine ganze Zahl zwischen-90 und 90 oder 180 für vertikal orientierten Text sein. Wenn die Ausrichtung innerhalb eines Bereichs nicht einheitlich ist, wird NULL zurückgegeben.'
-    name: getTextOrientation()
-    fullName: getTextOrientation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTextOrientation(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)'
-    summary: 'Legt fest, ob die Zeilenhöhe des Bereichsobjekts mit der Standardhöhe des Blatts übereinstimmt. Gibt true zurück, wenn die Zeilenhöhe des Range-Objekts der Standardhöhe des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Zeile enthält und die Zeilen nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.'
-    name: getUseStandardHeight()
-    fullName: getUseStandardHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUseStandardHeight(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)'
-    summary: 'Gibt an, ob die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt true zurück, wenn die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Spalte enthält und die Spalten nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.'
-    name: getUseStandardWidth()
-    fullName: getUseStandardWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUseStandardWidth(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)'
-    summary: Stellt die vertikale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. VerticalAlignment.
-    name: getVerticalAlignment()
-    fullName: getVerticalAlignment()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVerticalAlignment(): VerticalAlignment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.VerticalAlignment:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)'
-    summary: 'Gibt an, ob der Text im Objekt von Excel umbrochen wird. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Textumbruch-Einstellung hat'
-    name: getWrapText()
-    fullName: getWrapText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWrapText(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)'
-    summary: 'Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung auf gleiche Verteilung festgelegt ist.'
-    name: setAutoIndent(autoIndent)
-    fullName: setAutoIndent(autoIndent)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAutoIndent(autoIndent: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: autoIndent
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)'
-    summary: 'Gibt die Breite aller Spalten innerhalb des Bereichs an. Wenn die Breite der Spalten nicht gleichmäßig ist, wird Null zurückgegeben.'
-    name: setColumnWidth(columnWidth)
-    fullName: setColumnWidth(columnWidth)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColumnWidth(columnWidth: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: columnWidth
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)'
-    summary: Stellt die horizontale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. HorizontalAlignment.
-    name: setHorizontalAlignment(horizontalAlignment)
-    fullName: setHorizontalAlignment(horizontalAlignment)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: horizontalAlignment
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.HorizontalAlignment:enum'
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setIndentLevel:member(1)'
-    summary: 'Eine ganze Zahl zwischen 0 und 250, die die Einzugsebene angibt.'
-    name: setIndentLevel(indentLevel)
-    fullName: setIndentLevel(indentLevel)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setIndentLevel(indentLevel: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: indentLevel
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)'
-    summary: 'Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.'
-    name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-    fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setRangeBorderTintAndShade(rangeBorderTintAndShade: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rangeBorderTintAndShade
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setReadingOrder:member(1)'
-    summary: Die Leserichtung für den Bereich.
-    name: setReadingOrder(readingOrder)
-    fullName: setReadingOrder(readingOrder)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setReadingOrder(readingOrder: ReadingOrder): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: readingOrder
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ReadingOrder:enum'
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)'
-    summary: 'Die Höhe aller Zeilen im Bereich. Wenn die Zeilenhöhen nicht einheitlich sind, wird NULL zurückgegeben.'
-    name: setRowHeight(rowHeight)
-    fullName: setRowHeight(rowHeight)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setRowHeight(rowHeight: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rowHeight
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)'
-    summary: 'Gibt an, ob Text automatisch verkleinert wird, sodass er in die verfügbare Spaltenbreite passt.'
-    name: setShrinkToFit(shrinkToFit)
-    fullName: setShrinkToFit(shrinkToFit)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShrinkToFit(shrinkToFit: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: shrinkToFit
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)'
-    summary: 'Die Textausrichtung aller Zellen innerhalb des Bereichs. Die Textausrichtung sollte eine ganze Zahl zwischen-90 und 90 oder 180 für vertikal orientierten Text sein. Wenn die Ausrichtung innerhalb eines Bereichs nicht einheitlich ist, wird NULL zurückgegeben.'
-    name: setTextOrientation(textOrientation)
-    fullName: setTextOrientation(textOrientation)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTextOrientation(textOrientation: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: textOrientation
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)'
-    summary: 'Legt fest, ob die Zeilenhöhe des Bereichsobjekts mit der Standardhöhe des Blatts übereinstimmt. Gibt true zurück, wenn die Zeilenhöhe des Range-Objekts der Standardhöhe des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Zeile enthält und die Zeilen nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.'
-    name: setUseStandardHeight(useStandardHeight)
-    fullName: setUseStandardHeight(useStandardHeight)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUseStandardHeight(useStandardHeight: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: useStandardHeight
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)'
-    summary: 'Gibt an, ob die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt true zurück, wenn die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Spalte enthält und die Spalten nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.'
-    name: setUseStandardWidth(useStandardWidth)
-    fullName: setUseStandardWidth(useStandardWidth)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUseStandardWidth(useStandardWidth: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: useStandardWidth
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)'
-    summary: Stellt die vertikale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. VerticalAlignment.
-    name: setVerticalAlignment(verticalAlignment)
-    fullName: setVerticalAlignment(verticalAlignment)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVerticalAlignment(verticalAlignment: VerticalAlignment): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: verticalAlignment
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.VerticalAlignment:enum'
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)'
-    summary: 'Gibt an, ob der Text im Objekt von Excel umbrochen wird. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Textumbruch-Einstellung hat'
-    name: setWrapText(wrapText)
-    fullName: setWrapText(wrapText)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setWrapText(wrapText: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: wrapText
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.RangeFormat#getBorders~0:complex'
-    name: 'RangeBorder[]'
-    fullName: 'ExcelScript.RangeBorder[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.RangeBorder:interface'
-        name: RangeBorder
-        fullName: ExcelScript.RangeBorder
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.RangeFill:interface'
-    name: RangeFill
-    fullName: ExcelScript.RangeFill
-  - uid: 'ExcelScript!ExcelScript.RangeFont:interface'
-    name: RangeFont
-    fullName: ExcelScript.RangeFont
-  - uid: 'ExcelScript!ExcelScript.HorizontalAlignment:enum'
-    name: HorizontalAlignment
-    fullName: ExcelScript.HorizontalAlignment
-  - uid: 'ExcelScript!ExcelScript.FormatProtection:interface'
-    name: FormatProtection
-    fullName: ExcelScript.FormatProtection
-  - uid: 'ExcelScript!ExcelScript.RangeBorder:interface'
-    name: RangeBorder
-    fullName: ExcelScript.RangeBorder
-  - uid: 'ExcelScript!ExcelScript.BorderIndex:enum'
-    name: BorderIndex
-    fullName: ExcelScript.BorderIndex
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
-    name: ReadingOrder
-    fullName: ExcelScript.ReadingOrder
-  - uid: 'ExcelScript!ExcelScript.VerticalAlignment:enum'
-    name: VerticalAlignment
-    fullName: ExcelScript.VerticalAlignment
+### YamlMime:TSType
+name: ExcelScript.RangeFormat
+uid: ExcelScript!ExcelScript.RangeFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.RangeFormat
+summary: Gibt ein Formatobjekt zurück, das die Schriftart des Bereichs, Füllung, Rahmen, die Ausrichtung und andere Eigenschaften verschachtelt.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: adjustIndent(amount)
+  uid: ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)
+  package: ExcelScript!
+  fullName: adjustIndent(amount)
+  summary: Passt den Einzug der Bereichs Formatierung an. Der Einzugswert reicht von 0 bis 250 und wird in Zeichen gemessen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'adjustIndent(amount: number): void;'
+    parameters:
+    - id: amount
+      description: 'Die Anzahl der Zeichenbereiche, nach denen der aktuelle Einzug angepasst wird. Dieser Wert sollte zwischen-250 und 250 liegen. **Hinweis**: Wenn der Wert die Einrückungsebene oberhalb von 250 erhöht, bleibt die Einzugsebene bei 250. Wenn der Wert die Einrückungsebene unter 0 senken würde, bleibt die Einzugsebene auf ähnliche Weise gleich 0.'
+      type: number
+    return:
+      type: void
+      description: ''
+- name: autofitColumns()
+  uid: ExcelScript!ExcelScript.RangeFormat#autofitColumns:member(1)
+  package: ExcelScript!
+  fullName: autofitColumns()
+  summary: Ändert die Breite der Spalten des aktuellen Bereichs, um basierend auf den aktuellen Daten in den Spalten die optimale Breite zu erzielen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autofitColumns(): void;'
+    return:
+      type: void
+      description: ''
+- name: autofitRows()
+  uid: ExcelScript!ExcelScript.RangeFormat#autofitRows:member(1)
+  package: ExcelScript!
+  fullName: autofitRows()
+  summary: Ändert die Höhe der Zeilen des aktuellen Bereichs, um basierend auf den aktuellen Daten in den Zeilen die optimale Höhe zu erzielen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autofitRows(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAutoIndent()
+  uid: ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)
+  package: ExcelScript!
+  fullName: getAutoIndent()
+  summary: Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung auf gleiche Verteilung festgelegt ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAutoIndent(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getBorders()
+  uid: ExcelScript!ExcelScript.RangeFormat#getBorders:member(1)
+  package: ExcelScript!
+  fullName: getBorders()
+  summary: Auflistung von Border-Objekten, die für den gesamten ausgewählten Bereich gelten.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorders(): RangeBorder[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />[]
+      description: ''
+- name: getColumnWidth()
+  uid: ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)
+  package: ExcelScript!
+  fullName: getColumnWidth()
+  summary: Gibt die Breite aller Spalten innerhalb des Bereichs an. Wenn die Breite der Spalten nicht gleichmäßig ist, wird Null zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: getFill()
+  uid: ExcelScript!ExcelScript.RangeFormat#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: Gibt das Fill-Objekt an, das für den gesamten Bereich definiert ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): RangeFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFill:interface" />
+      description: ''
+- name: getFont()
+  uid: ExcelScript!ExcelScript.RangeFormat#getFont:member(1)
+  package: ExcelScript!
+  fullName: getFont()
+  summary: Gibt das Font-Objekt an, das für den gesamten Bereich definiert ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFont(): RangeFont;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFont:interface" />
+      description: ''
+- name: getHorizontalAlignment()
+  uid: ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getHorizontalAlignment()
+  summary: Stellt die horizontale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. HorizontalAlignment.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHorizontalAlignment(): HorizontalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />
+      description: ''
+- name: getIndentLevel()
+  uid: ExcelScript!ExcelScript.RangeFormat#getIndentLevel:member(1)
+  package: ExcelScript!
+  fullName: getIndentLevel()
+  summary: Eine ganze Zahl zwischen 0 und 250, die die Einzugsebene angibt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIndentLevel(): number;'
+    return:
+      type: number
+      description: ''
+- name: getProtection()
+  uid: ExcelScript!ExcelScript.RangeFormat#getProtection:member(1)
+  package: ExcelScript!
+  fullName: getProtection()
+  summary: Gibt das Formatschutz-Objekt für einen Bereich zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProtection(): FormatProtection;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FormatProtection:interface" />
+      description: ''
+- name: getRangeBorder(index)
+  uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorder:member(1)
+  package: ExcelScript!
+  fullName: getRangeBorder(index)
+  summary: Ruft ein Rahmen-Objekt ab, das den Namen verwendet
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
+    parameters:
+    - id: index
+      description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter ExcelScript. BorderIndex.
+      type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
+      description: ''
+- name: getRangeBorderTintAndShade()
+  uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: getRangeBorderTintAndShade()
+  summary: Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeBorderTintAndShade(): number;'
+    return:
+      type: number
+      description: ''
+- name: getReadingOrder()
+  uid: ExcelScript!ExcelScript.RangeFormat#getReadingOrder:member(1)
+  package: ExcelScript!
+  fullName: getReadingOrder()
+  summary: Die Leserichtung für den Bereich.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReadingOrder(): ReadingOrder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />
+      description: ''
+- name: getRowHeight()
+  uid: ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)
+  package: ExcelScript!
+  fullName: getRowHeight()
+  summary: Die Höhe aller Zeilen im Bereich. Wenn die Zeilenhöhen nicht einheitlich sind, wird NULL zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getShrinkToFit()
+  uid: ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)
+  package: ExcelScript!
+  fullName: getShrinkToFit()
+  summary: Gibt an, ob Text automatisch verkleinert wird, sodass er in die verfügbare Spaltenbreite passt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShrinkToFit(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getTextOrientation()
+  uid: ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: getTextOrientation()
+  summary: Die Textausrichtung aller Zellen innerhalb des Bereichs. Die Textausrichtung sollte eine ganze Zahl zwischen-90 und 90 oder 180 für vertikal orientierten Text sein. Wenn die Ausrichtung innerhalb eines Bereichs nicht einheitlich ist, wird NULL zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextOrientation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUseStandardHeight()
+  uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)
+  package: ExcelScript!
+  fullName: getUseStandardHeight()
+  summary: Legt fest, ob die Zeilenhöhe des Bereichsobjekts mit der Standardhöhe des Blatts übereinstimmt. Gibt true zurück, wenn die Zeilenhöhe des Range-Objekts der Standardhöhe des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Zeile enthält und die Zeilen nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseStandardHeight(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getUseStandardWidth()
+  uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)
+  package: ExcelScript!
+  fullName: getUseStandardWidth()
+  summary: Gibt an, ob die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt true zurück, wenn die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Spalte enthält und die Spalten nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseStandardWidth(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getVerticalAlignment()
+  uid: ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getVerticalAlignment()
+  summary: Stellt die vertikale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. VerticalAlignment.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVerticalAlignment(): VerticalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />
+      description: ''
+- name: getWrapText()
+  uid: ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)
+  package: ExcelScript!
+  fullName: getWrapText()
+  summary: Gibt an, ob der Text im Objekt von Excel umbrochen wird. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Textumbruch-Einstellung hat
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWrapText(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setAutoIndent(autoIndent)
+  uid: ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)
+  package: ExcelScript!
+  fullName: setAutoIndent(autoIndent)
+  summary: Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung auf gleiche Verteilung festgelegt ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAutoIndent(autoIndent: boolean): void;'
+    parameters:
+    - id: autoIndent
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setColumnWidth(columnWidth)
+  uid: ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)
+  package: ExcelScript!
+  fullName: setColumnWidth(columnWidth)
+  summary: Gibt die Breite aller Spalten innerhalb des Bereichs an. Wenn die Breite der Spalten nicht gleichmäßig ist, wird Null zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColumnWidth(columnWidth: number): void;'
+    parameters:
+    - id: columnWidth
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setHorizontalAlignment(horizontalAlignment)
+  uid: ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setHorizontalAlignment(horizontalAlignment)
+  summary: Stellt die horizontale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. HorizontalAlignment.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): void;'
+    parameters:
+    - id: horizontalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setIndentLevel(indentLevel)
+  uid: ExcelScript!ExcelScript.RangeFormat#setIndentLevel:member(1)
+  package: ExcelScript!
+  fullName: setIndentLevel(indentLevel)
+  summary: Eine ganze Zahl zwischen 0 und 250, die die Einzugsebene angibt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setIndentLevel(indentLevel: number): void;'
+    parameters:
+    - id: indentLevel
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+  uid: ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+  summary: Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRangeBorderTintAndShade(rangeBorderTintAndShade: number): void;'
+    parameters:
+    - id: rangeBorderTintAndShade
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setReadingOrder(readingOrder)
+  uid: ExcelScript!ExcelScript.RangeFormat#setReadingOrder:member(1)
+  package: ExcelScript!
+  fullName: setReadingOrder(readingOrder)
+  summary: Die Leserichtung für den Bereich.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setReadingOrder(readingOrder: ReadingOrder): void;'
+    parameters:
+    - id: readingOrder
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />
+    return:
+      type: void
+      description: ''
+- name: setRowHeight(rowHeight)
+  uid: ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)
+  package: ExcelScript!
+  fullName: setRowHeight(rowHeight)
+  summary: Die Höhe aller Zeilen im Bereich. Wenn die Zeilenhöhen nicht einheitlich sind, wird NULL zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRowHeight(rowHeight: number): void;'
+    parameters:
+    - id: rowHeight
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setShrinkToFit(shrinkToFit)
+  uid: ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)
+  package: ExcelScript!
+  fullName: setShrinkToFit(shrinkToFit)
+  summary: Gibt an, ob Text automatisch verkleinert wird, sodass er in die verfügbare Spaltenbreite passt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShrinkToFit(shrinkToFit: boolean): void;'
+    parameters:
+    - id: shrinkToFit
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setTextOrientation(textOrientation)
+  uid: ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: setTextOrientation(textOrientation)
+  summary: Die Textausrichtung aller Zellen innerhalb des Bereichs. Die Textausrichtung sollte eine ganze Zahl zwischen-90 und 90 oder 180 für vertikal orientierten Text sein. Wenn die Ausrichtung innerhalb eines Bereichs nicht einheitlich ist, wird NULL zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTextOrientation(textOrientation: number): void;'
+    parameters:
+    - id: textOrientation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setUseStandardHeight(useStandardHeight)
+  uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)
+  package: ExcelScript!
+  fullName: setUseStandardHeight(useStandardHeight)
+  summary: Legt fest, ob die Zeilenhöhe des Bereichsobjekts mit der Standardhöhe des Blatts übereinstimmt. Gibt true zurück, wenn die Zeilenhöhe des Range-Objekts der Standardhöhe des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Zeile enthält und die Zeilen nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseStandardHeight(useStandardHeight: boolean): void;'
+    parameters:
+    - id: useStandardHeight
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setUseStandardWidth(useStandardWidth)
+  uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)
+  package: ExcelScript!
+  fullName: setUseStandardWidth(useStandardWidth)
+  summary: Gibt an, ob die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt true zurück, wenn die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Spalte enthält und die Spalten nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseStandardWidth(useStandardWidth: boolean): void;'
+    parameters:
+    - id: useStandardWidth
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setVerticalAlignment(verticalAlignment)
+  uid: ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setVerticalAlignment(verticalAlignment)
+  summary: Stellt die vertikale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. VerticalAlignment.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVerticalAlignment(verticalAlignment: VerticalAlignment): void;'
+    parameters:
+    - id: verticalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setWrapText(wrapText)
+  uid: ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)
+  package: ExcelScript!
+  fullName: setWrapText(wrapText)
+  summary: Gibt an, ob der Text im Objekt von Excel umbrochen wird. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Textumbruch-Einstellung hat
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setWrapText(wrapText: boolean): void;'
+    parameters:
+    - id: wrapText
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 427882c57a1da4adab9f1e74ed60f018af3fd110
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411922"

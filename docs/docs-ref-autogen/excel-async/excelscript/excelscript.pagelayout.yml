@@ -1,322 +1,205 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PageLayout:interface'
-    summary: 'Stellt Layout-und Druckeinstellungen dar, die keine druckerspezifische Implementierung abhängig sind. Diese Einstellungen umfassen Ränder, Ausrichtung, Seitennummerierung, Titelzeilen und Druckbereich.'
-    name: Excel.PageLayout
-    fullName: Excel.PageLayout
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.PageLayout#blackAndWhite:member'
-      - 'excel!Excel.PageLayout#bottomMargin:member'
-      - 'excel!Excel.PageLayout#centerHorizontally:member'
-      - 'excel!Excel.PageLayout#centerVertically:member'
-      - 'excel!Excel.PageLayout#draftMode:member'
-      - 'excel!Excel.PageLayout#firstPageNumber:member'
-      - 'excel!Excel.PageLayout#footerMargin:member'
-      - 'excel!Excel.PageLayout#getPrintArea:member(1)'
-      - 'excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)'
-      - 'excel!Excel.PageLayout#getPrintTitleColumns:member(1)'
-      - 'excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)'
-      - 'excel!Excel.PageLayout#getPrintTitleRows:member(1)'
-      - 'excel!Excel.PageLayout#getPrintTitleRowsOrNullObject:member(1)'
-      - 'excel!Excel.PageLayout#headerMargin:member'
-      - 'excel!Excel.PageLayout#headersFooters:member'
-      - 'excel!Excel.PageLayout#leftMargin:member'
-      - 'excel!Excel.PageLayout#load:member(1)'
-      - 'excel!Excel.PageLayout#orientation:member'
-      - 'excel!Excel.PageLayout#paperSize:member'
-      - 'excel!Excel.PageLayout#printComments:member'
-      - 'excel!Excel.PageLayout#printErrors:member'
-      - 'excel!Excel.PageLayout#printGridlines:member'
-      - 'excel!Excel.PageLayout#printHeadings:member'
-      - 'excel!Excel.PageLayout#printOrder:member'
-      - 'excel!Excel.PageLayout#rightMargin:member'
-      - 'excel!Excel.PageLayout#setPrintArea:member(1)'
-      - 'excel!Excel.PageLayout#setPrintMargins:member(1)'
-      - 'excel!Excel.PageLayout#setPrintTitleColumns:member(1)'
-      - 'excel!Excel.PageLayout#setPrintTitleRows:member(1)'
-      - 'excel!Excel.PageLayout#topMargin:member'
-      - 'excel!Excel.PageLayout#zoom:member'
-  - uid: 'excel!Excel.PageLayout#blackAndWhite:member'
-    summary: Die Option "Schwarzweißdruck" des Arbeitsblatts.
-    name: blackAndWhite
-    fullName: blackAndWhite
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'blackAndWhite: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PageLayout#bottomMargin:member'
-    summary: 'Der untere Seitenrand des Arbeitsblatts, der für das Drucken in Punkten verwendet werden soll.'
-    name: bottomMargin
-    fullName: bottomMargin
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bottomMargin: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.PageLayout#centerHorizontally:member'
-    summary: 'Das Arbeitsblatt Center horizontal kennzeichnet. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck horizontal zentriert wird.'
-    name: centerHorizontally
-    fullName: centerHorizontally
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'centerHorizontally: boolean;'
-      return:
-        type:
-          - boolean
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let farmSheet = context.workbook.worksheets.getItem("Print");
-              farmSheet.pageLayout.centerHorizontally = true;
-              farmSheet.pageLayout.centerVertically = true;
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.PageLayout#centerVertically:member'
-    summary: 'Das Arbeitsblatt Center Vertical Flag. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck vertikal zentriert wird.'
-    name: centerVertically
-    fullName: centerVertically
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'centerVertically: boolean;'
-      return:
-        type:
-          - boolean
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let farmSheet = context.workbook.worksheets.getItem("Print");
-              farmSheet.pageLayout.centerHorizontally = true;
-              farmSheet.pageLayout.centerVertically = true;
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.PageLayout#draftMode:member'
-    summary: Die Option Entwurfsmodus des Arbeitsblatts. Bei True wird das Blatt ohne Grafiken gedruckt.
-    name: draftMode
-    fullName: draftMode
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'draftMode: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PageLayout#firstPageNumber:member'
-    summary: 'Die erste Seitenzahl des Arbeitsblatts, die gedruckt werden soll. Der Wert NULL stellt die automatische Seitennummerierung dar.'
-    name: firstPageNumber
-    fullName: firstPageNumber
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'firstPageNumber: number | "";'
-      return:
-        type:
-          - number | ""
-  - uid: 'excel!Excel.PageLayout#footerMargin:member'
-    summary: 'Der Fußzeilenrand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.'
-    name: footerMargin
-    fullName: footerMargin
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'footerMargin: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.PageLayout#getPrintArea:member(1)'
-    summary: 'Ruft das RangeAreas-Objekt ab, das aus einem oder mehreren rechteckigen Bereichen besteht und den Druckbereich für das Arbeitsblatt darstellt. Wenn kein Druckbereich vorhanden ist, wird ein ItemNotFound-Fehler ausgelöst.'
-    name: getPrintArea()
-    fullName: getPrintArea()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPrintArea(): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-  - uid: 'excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)'
-    summary: 'Ruft das RangeAreas-Objekt ab, das aus einem oder mehreren rechteckigen Bereichen besteht und den Druckbereich für das Arbeitsblatt darstellt. Wenn kein Druckbereich vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getPrintAreaOrNullObject()
-    fullName: getPrintAreaOrNullObject()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPrintAreaOrNullObject(): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-  - uid: 'excel!Excel.PageLayout#getPrintTitleColumns:member(1)'
-    summary: 'Ruft das Bereichsobjekt ab, das die Titelspalten darstellt.'
-    name: getPrintTitleColumns()
-    fullName: getPrintTitleColumns()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPrintTitleColumns(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)'
-    summary: 'Ruft das Bereichsobjekt ab, das die Titelspalten darstellt. Wenn es nicht festgelegt ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getPrintTitleColumnsOrNullObject()
-    fullName: getPrintTitleColumnsOrNullObject()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPrintTitleColumnsOrNullObject(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.PageLayout#getPrintTitleRows:member(1)'
-    summary: 'Ruft das Bereichsobjekt ab, das die Titelzeilen darstellt.'
-    name: getPrintTitleRows()
-    fullName: getPrintTitleRows()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPrintTitleRows(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.PageLayout#getPrintTitleRowsOrNullObject:member(1)'
-    summary: 'Ruft das Bereichsobjekt ab, das die Titelzeilen darstellt. Wenn es nicht festgelegt ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getPrintTitleRowsOrNullObject()
-    fullName: getPrintTitleRowsOrNullObject()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPrintTitleRowsOrNullObject(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.PageLayout#headerMargin:member'
-    summary: 'Der Kopfzeilenrand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.'
-    name: headerMargin
-    fullName: headerMargin
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'headerMargin: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.PageLayout#headersFooters:member'
-    summary: Kopf- und Fußzeilenkonfiguration für das Arbeitsblatt.
-    name: headersFooters
-    fullName: headersFooters
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly headersFooters: HeaderFooterGroup;'
-      return:
-        type:
-          - 'excel!Excel.HeaderFooterGroup:interface'
-  - uid: 'excel!Excel.PageLayout#leftMargin:member'
-    summary: 'Der linke Rand des Arbeitsblatts in Punkt, der beim Drucken verwendet werden soll.'
-    name: leftMargin
-    fullName: leftMargin
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'leftMargin: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.PageLayout#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.PageLayout#orientation:member'
-    summary: Die Ausrichtung des Arbeitsblatts der Seite.
-    name: orientation
-    fullName: orientation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'orientation: PageOrientation | "Portrait" | "Landscape";'
-      return:
-        type:
-          - 'excel!Excel.PageLayout#orientation~0:complex'
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let farmSheet = context.workbook.worksheets.getItem("Print");
-              farmSheet.pageLayout.orientation = Excel.PageOrientation.landscape;
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.PageLayout#paperSize:member'
-    summary: Das Papierformat des Arbeitsblatts der Seite.
-    name: paperSize
-    fullName: paperSize
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        paperSize:
-                    | PaperType
+### YamlMime:TSType
+name: Excel.PageLayout
+uid: excel!Excel.PageLayout:interface
+package: excel!
+fullName: Excel.PageLayout
+summary: Stellt Layout-und Druckeinstellungen dar, die keine druckerspezifische Implementierung abhängig sind. Diese Einstellungen umfassen Ränder, Ausrichtung, Seitennummerierung, Titelzeilen und Druckbereich.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: blackAndWhite
+  uid: excel!Excel.PageLayout#blackAndWhite:member
+  package: excel!
+  fullName: blackAndWhite
+  summary: Die Option "Schwarzweißdruck" des Arbeitsblatts.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'blackAndWhite: boolean;'
+    return:
+      type: boolean
+- name: bottomMargin
+  uid: excel!Excel.PageLayout#bottomMargin:member
+  package: excel!
+  fullName: bottomMargin
+  summary: Der untere Seitenrand des Arbeitsblatts, der für das Drucken in Punkten verwendet werden soll.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'bottomMargin: number;'
+    return:
+      type: number
+- name: centerHorizontally
+  uid: excel!Excel.PageLayout#centerHorizontally:member
+  package: excel!
+  fullName: centerHorizontally
+  summary: Das Arbeitsblatt Center horizontal kennzeichnet. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck horizontal zentriert wird.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'centerHorizontally: boolean;'
+    return:
+      type: boolean
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let farmSheet = context.workbook.worksheets.getItem(\"Print\");\n    farmSheet.pageLayout.centerHorizontally = true;\n    farmSheet.pageLayout.centerVertically = true;\n    await context.sync();\n}\n```"
+- name: centerVertically
+  uid: excel!Excel.PageLayout#centerVertically:member
+  package: excel!
+  fullName: centerVertically
+  summary: Das Arbeitsblatt Center Vertical Flag. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck vertikal zentriert wird.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'centerVertically: boolean;'
+    return:
+      type: boolean
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let farmSheet = context.workbook.worksheets.getItem(\"Print\");\n    farmSheet.pageLayout.centerHorizontally = true;\n    farmSheet.pageLayout.centerVertically = true;\n    await context.sync();\n}\n```"
+- name: draftMode
+  uid: excel!Excel.PageLayout#draftMode:member
+  package: excel!
+  fullName: draftMode
+  summary: Die Option Entwurfsmodus des Arbeitsblatts. Bei True wird das Blatt ohne Grafiken gedruckt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'draftMode: boolean;'
+    return:
+      type: boolean
+- name: firstPageNumber
+  uid: excel!Excel.PageLayout#firstPageNumber:member
+  package: excel!
+  fullName: firstPageNumber
+  summary: Die erste Seitenzahl des Arbeitsblatts, die gedruckt werden soll. Der Wert NULL stellt die automatische Seitennummerierung dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'firstPageNumber: number | "";'
+    return:
+      type: number | ""
+- name: footerMargin
+  uid: excel!Excel.PageLayout#footerMargin:member
+  package: excel!
+  fullName: footerMargin
+  summary: Der Fußzeilenrand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'footerMargin: number;'
+    return:
+      type: number
+- name: headerMargin
+  uid: excel!Excel.PageLayout#headerMargin:member
+  package: excel!
+  fullName: headerMargin
+  summary: Der Kopfzeilenrand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'headerMargin: number;'
+    return:
+      type: number
+- name: headersFooters
+  uid: excel!Excel.PageLayout#headersFooters:member
+  package: excel!
+  fullName: headersFooters
+  summary: Kopf- und Fußzeilenkonfiguration für das Arbeitsblatt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly headersFooters: HeaderFooterGroup;'
+    return:
+      type: <xref uid="excel!Excel.HeaderFooterGroup:interface" />
+- name: leftMargin
+  uid: excel!Excel.PageLayout#leftMargin:member
+  package: excel!
+  fullName: leftMargin
+  summary: Der linke Rand des Arbeitsblatts in Punkt, der beim Drucken verwendet werden soll.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'leftMargin: number;'
+    return:
+      type: number
+- name: orientation
+  uid: excel!Excel.PageLayout#orientation:member
+  package: excel!
+  fullName: orientation
+  summary: Die Ausrichtung des Arbeitsblatts der Seite.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'orientation: PageOrientation | "Portrait" | "Landscape";'
+    return:
+      type: <xref uid="excel!Excel.PageOrientation:enum" /> | "Portrait" | "Landscape"
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let farmSheet = context.workbook.worksheets.getItem(\"Print\");\n    farmSheet.pageLayout.orientation = Excel.PageOrientation.landscape;\n    await context.sync();\n}\n```"
+- name: paperSize
+  uid: excel!Excel.PageLayout#paperSize:member
+  package: excel!
+  fullName: paperSize
+  summary: Das Papierformat des Arbeitsblatts der Seite.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      paperSize:
+                  | PaperType
+                  | "Letter"
+                  | "LetterSmall"
+                  | "Tabloid"
+                  | "Ledger"
+                  | "Legal"
+                  | "Statement"
+                  | "Executive"
+                  | "A3"
+                  | "A4"
+                  | "A4Small"
+                  | "A5"
+                  | "B4"
+                  | "B5"
+                  | "Folio"
+                  | "Quatro"
+                  | "Paper10x14"
+                  | "Paper11x17"
+                  | "Note"
+                  | "Envelope9"
+                  | "Envelope10"
+                  | "Envelope11"
+                  | "Envelope12"
+                  | "Envelope14"
+                  | "Csheet"
+                  | "Dsheet"
+                  | "Esheet"
+                  | "EnvelopeDL"
+                  | "EnvelopeC5"
+                  | "EnvelopeC3"
+                  | "EnvelopeC4"
+                  | "EnvelopeC6"
+                  | "EnvelopeC65"
+                  | "EnvelopeB4"
+                  | "EnvelopeB5"
+                  | "EnvelopeB6"
+                  | "EnvelopeItaly"
+                  | "EnvelopeMonarch"
+                  | "EnvelopePersonal"
+                  | "FanfoldUS"
+                  | "FanfoldStdGerman"
+                  | "FanfoldLegalGerman";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.PaperType:enum" />
                     | "Letter"
                     | "LetterSmall"
                     | "Tabloid"
@@ -357,517 +240,290 @@ items:
                     | "EnvelopePersonal"
                     | "FanfoldUS"
                     | "FanfoldStdGerman"
-                    | "FanfoldLegalGerman";
-      return:
-        type:
-          - 'excel!Excel.PageLayout#paperSize~0:complex'
-  - uid: 'excel!Excel.PageLayout#printComments:member'
-    summary: 'Gibt an, ob die Kommentare des Arbeitsblatts beim Drucken angezeigt werden sollen.'
-    name: printComments
-    fullName: printComments
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'printComments: PrintComments | "NoComments" | "EndSheet" | "InPlace";'
-      return:
-        type:
-          - 'excel!Excel.PageLayout#printComments~0:complex'
-  - uid: 'excel!Excel.PageLayout#printErrors:member'
-    summary: Die Option Druckfehler des Arbeitsblatts.
-    name: printErrors
-    fullName: printErrors
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        printErrors:
-                    | PrintErrorType
+                    | "FanfoldLegalGerman"
+- name: printComments
+  uid: excel!Excel.PageLayout#printComments:member
+  package: excel!
+  fullName: printComments
+  summary: Gibt an, ob die Kommentare des Arbeitsblatts beim Drucken angezeigt werden sollen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'printComments: PrintComments | "NoComments" | "EndSheet" | "InPlace";'
+    return:
+      type: <xref uid="excel!Excel.PrintComments:enum" /> | "NoComments" | "EndSheet" | "InPlace"
+- name: printErrors
+  uid: excel!Excel.PageLayout#printErrors:member
+  package: excel!
+  fullName: printErrors
+  summary: Die Option Druckfehler des Arbeitsblatts.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      printErrors:
+                  | PrintErrorType
+                  | "AsDisplayed"
+                  | "Blank"
+                  | "Dash"
+                  | "NotAvailable";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.PrintErrorType:enum" />
                     | "AsDisplayed"
                     | "Blank"
                     | "Dash"
-                    | "NotAvailable";
-      return:
-        type:
-          - 'excel!Excel.PageLayout#printErrors~0:complex'
-  - uid: 'excel!Excel.PageLayout#printGridlines:member'
-    summary: 'Gibt an, ob die Gitternetzlinien des Arbeitsblatts gedruckt werden.'
-    name: printGridlines
-    fullName: printGridlines
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'printGridlines: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PageLayout#printHeadings:member'
-    summary: 'Gibt an, ob die Überschriften des Arbeitsblatts gedruckt werden.'
-    name: printHeadings
-    fullName: printHeadings
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'printHeadings: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PageLayout#printOrder:member'
-    summary: Die Option für die Seiten Druckreihenfolge des Arbeitsblatts. Dies gibt die Reihenfolge für die Verarbeitung der gedruckten Seitenzahl an.
-    name: printOrder
-    fullName: printOrder
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'printOrder: PrintOrder | "DownThenOver" | "OverThenDown";'
-      return:
-        type:
-          - 'excel!Excel.PageLayout#printOrder~0:complex'
-  - uid: 'excel!Excel.PageLayout#rightMargin:member'
-    summary: 'Der Rechte Rand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.'
-    name: rightMargin
-    fullName: rightMargin
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'rightMargin: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.PageLayout#setPrintArea:member(1)'
-    summary: Legt den Druckbereich des Arbeitsblatts fest.
-    name: setPrintArea(printArea)
-    fullName: setPrintArea(printArea)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let farmSheet = context.workbook.worksheets.getItem("Print");
-              farmSheet.pageLayout.setPrintArea("A1:D41");
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: printArea
-          description: Der Bereich oder RangeAreas des zu druckenden Inhalts.
-          type:
-            - 'excel!Excel.PageLayout#setPrintArea~0:complex'
-  - uid: 'excel!Excel.PageLayout#setPrintMargins:member(1)'
-    summary: Legt die Seitenränder des Arbeitsblatts mit Einheiten fest.
-    name: 'setPrintMargins(unit, marginOptions)'
-    fullName: 'setPrintMargins(unit, marginOptions)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setPrintMargins(
-                    unit: PrintMarginUnit | "Points" | "Inches" | "Centimeters",
-                    marginOptions: PageLayoutMarginOptions
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: unit
-          description: Maßeinheit für die bereitgestellten Ränder.
-          type:
-            - 'excel!Excel.PageLayout#setPrintMargins~0:complex'
-        - id: marginOptions
-          description: 'Die festzulegenden Rand Werte, die nicht bereitgestellten Ränder bleiben unverändert.'
-          type:
-            - 'excel!Excel.PageLayoutMarginOptions:interface'
-  - uid: 'excel!Excel.PageLayout#setPrintTitleColumns:member(1)'
-    summary: 'Legt die Spalten fest, die die links auf jeder Seite des Arbeitsblatts im Druck zu wiederholenden Zellen enthalten.'
-    name: setPrintTitleColumns(printTitleColumns)
-    fullName: setPrintTitleColumns(printTitleColumns)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: printTitleColumns
-          description: 'Die Spalten, die Links von jeder Seite wiederholt werden sollen, muss die gesamte Spalte überspannen, um gültig zu sein.'
-          type:
-            - 'excel!Excel.PageLayout#setPrintTitleColumns~0:complex'
-  - uid: 'excel!Excel.PageLayout#setPrintTitleRows:member(1)'
-    summary: 'Legt die Zeilen fest, die die oben auf jeder Seite des Arbeitsblatts im Druck zu wiederholenden Zellen enthalten.'
-    name: setPrintTitleRows(printTitleRows)
-    fullName: setPrintTitleRows(printTitleRows)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let farmSheet = context.workbook.worksheets.getItem("Print");
-              farmSheet.pageLayout.setPrintTitleRows("$1:$1");
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: printTitleRows
-          description: 'Die Zeilen, die am oberen Rand jeder Seite wiederholt werden sollen, muss die gesamte Zeile überspannen, um gültig zu sein.'
-          type:
-            - 'excel!Excel.PageLayout#setPrintTitleRows~0:complex'
-  - uid: 'excel!Excel.PageLayout#topMargin:member'
-    summary: 'Der obere Rand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.'
-    name: topMargin
-    fullName: topMargin
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'topMargin: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.PageLayout#zoom:member'
-    summary: 'Die Druck Zoomoptionen des Arbeitsblatts. Das `PageLayoutZoomOptions` Objekt muss als JSON-Objekt festgelegt werden (verwenden Sie `x.zoom = {...}` anstelle von`x.zoom.scale = ...`<!-- -->).'
-    name: zoom
-    fullName: zoom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'zoom: PageLayoutZoomOptions;'
-      return:
-        type:
-          - 'excel!Excel.PageLayoutZoomOptions:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let farmSheet = context.workbook.worksheets.getItem("Print");
-              farmSheet.pageLayout.zoom = { scale: 200 };
-              await context.sync();
-          }
-          ```
-references:
-  - uid: 'excel!Excel.RangeAreas:interface'
-    name: RangeAreas
-    fullName: Excel.RangeAreas
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.HeaderFooterGroup:interface'
-    name: HeaderFooterGroup
-    fullName: Excel.HeaderFooterGroup
-  - uid: 'excel!Excel.PageLayout#orientation~0:complex'
-    name: PageOrientation | "Portrait" | "Landscape"
-    fullName: Excel.PageOrientation | "Portrait" | "Landscape"
-    spec.typeScript:
-      - uid: 'excel!Excel.PageOrientation:enum'
-        name: PageOrientation
-        fullName: Excel.PageOrientation
-      - name: ' | "Portrait" | "Landscape"'
-        fullName: ' | "Portrait" | "Landscape"'
-  - uid: 'excel!Excel.PageLayout#paperSize~0:complex'
-    name: |-
-      | PaperType
-                  | "Letter"
-                  | "LetterSmall"
-                  | "Tabloid"
-                  | "Ledger"
-                  | "Legal"
-                  | "Statement"
-                  | "Executive"
-                  | "A3"
-                  | "A4"
-                  | "A4Small"
-                  | "A5"
-                  | "B4"
-                  | "B5"
-                  | "Folio"
-                  | "Quatro"
-                  | "Paper10x14"
-                  | "Paper11x17"
-                  | "Note"
-                  | "Envelope9"
-                  | "Envelope10"
-                  | "Envelope11"
-                  | "Envelope12"
-                  | "Envelope14"
-                  | "Csheet"
-                  | "Dsheet"
-                  | "Esheet"
-                  | "EnvelopeDL"
-                  | "EnvelopeC5"
-                  | "EnvelopeC3"
-                  | "EnvelopeC4"
-                  | "EnvelopeC6"
-                  | "EnvelopeC65"
-                  | "EnvelopeB4"
-                  | "EnvelopeB5"
-                  | "EnvelopeB6"
-                  | "EnvelopeItaly"
-                  | "EnvelopeMonarch"
-                  | "EnvelopePersonal"
-                  | "FanfoldUS"
-                  | "FanfoldStdGerman"
-                  | "FanfoldLegalGerman"
-    fullName: |-
-      | Excel.PaperType
-                  | "Letter"
-                  | "LetterSmall"
-                  | "Tabloid"
-                  | "Ledger"
-                  | "Legal"
-                  | "Statement"
-                  | "Executive"
-                  | "A3"
-                  | "A4"
-                  | "A4Small"
-                  | "A5"
-                  | "B4"
-                  | "B5"
-                  | "Folio"
-                  | "Quatro"
-                  | "Paper10x14"
-                  | "Paper11x17"
-                  | "Note"
-                  | "Envelope9"
-                  | "Envelope10"
-                  | "Envelope11"
-                  | "Envelope12"
-                  | "Envelope14"
-                  | "Csheet"
-                  | "Dsheet"
-                  | "Esheet"
-                  | "EnvelopeDL"
-                  | "EnvelopeC5"
-                  | "EnvelopeC3"
-                  | "EnvelopeC4"
-                  | "EnvelopeC6"
-                  | "EnvelopeC65"
-                  | "EnvelopeB4"
-                  | "EnvelopeB5"
-                  | "EnvelopeB6"
-                  | "EnvelopeItaly"
-                  | "EnvelopeMonarch"
-                  | "EnvelopePersonal"
-                  | "FanfoldUS"
-                  | "FanfoldStdGerman"
-                  | "FanfoldLegalGerman"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.PaperType:enum'
-        name: PaperType
-        fullName: Excel.PaperType
-      - name: |2-
-
-                      | "Letter"
-                      | "LetterSmall"
-                      | "Tabloid"
-                      | "Ledger"
-                      | "Legal"
-                      | "Statement"
-                      | "Executive"
-                      | "A3"
-                      | "A4"
-                      | "A4Small"
-                      | "A5"
-                      | "B4"
-                      | "B5"
-                      | "Folio"
-                      | "Quatro"
-                      | "Paper10x14"
-                      | "Paper11x17"
-                      | "Note"
-                      | "Envelope9"
-                      | "Envelope10"
-                      | "Envelope11"
-                      | "Envelope12"
-                      | "Envelope14"
-                      | "Csheet"
-                      | "Dsheet"
-                      | "Esheet"
-                      | "EnvelopeDL"
-                      | "EnvelopeC5"
-                      | "EnvelopeC3"
-                      | "EnvelopeC4"
-                      | "EnvelopeC6"
-                      | "EnvelopeC65"
-                      | "EnvelopeB4"
-                      | "EnvelopeB5"
-                      | "EnvelopeB6"
-                      | "EnvelopeItaly"
-                      | "EnvelopeMonarch"
-                      | "EnvelopePersonal"
-                      | "FanfoldUS"
-                      | "FanfoldStdGerman"
-                      | "FanfoldLegalGerman"
-        fullName: |2-
-
-                      | "Letter"
-                      | "LetterSmall"
-                      | "Tabloid"
-                      | "Ledger"
-                      | "Legal"
-                      | "Statement"
-                      | "Executive"
-                      | "A3"
-                      | "A4"
-                      | "A4Small"
-                      | "A5"
-                      | "B4"
-                      | "B5"
-                      | "Folio"
-                      | "Quatro"
-                      | "Paper10x14"
-                      | "Paper11x17"
-                      | "Note"
-                      | "Envelope9"
-                      | "Envelope10"
-                      | "Envelope11"
-                      | "Envelope12"
-                      | "Envelope14"
-                      | "Csheet"
-                      | "Dsheet"
-                      | "Esheet"
-                      | "EnvelopeDL"
-                      | "EnvelopeC5"
-                      | "EnvelopeC3"
-                      | "EnvelopeC4"
-                      | "EnvelopeC6"
-                      | "EnvelopeC65"
-                      | "EnvelopeB4"
-                      | "EnvelopeB5"
-                      | "EnvelopeB6"
-                      | "EnvelopeItaly"
-                      | "EnvelopeMonarch"
-                      | "EnvelopePersonal"
-                      | "FanfoldUS"
-                      | "FanfoldStdGerman"
-                      | "FanfoldLegalGerman"
-  - uid: 'excel!Excel.PageLayout#printComments~0:complex'
-    name: PrintComments | "NoComments" | "EndSheet" | "InPlace"
-    fullName: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
-    spec.typeScript:
-      - uid: 'excel!Excel.PrintComments:enum'
-        name: PrintComments
-        fullName: Excel.PrintComments
-      - name: ' | "NoComments" | "EndSheet" | "InPlace"'
-        fullName: ' | "NoComments" | "EndSheet" | "InPlace"'
-  - uid: 'excel!Excel.PageLayout#printErrors~0:complex'
-    name: |-
-      | PrintErrorType
-                  | "AsDisplayed"
-                  | "Blank"
-                  | "Dash"
-                  | "NotAvailable"
-    fullName: |-
-      | Excel.PrintErrorType
-                  | "AsDisplayed"
-                  | "Blank"
-                  | "Dash"
-                  | "NotAvailable"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.PrintErrorType:enum'
-        name: PrintErrorType
-        fullName: Excel.PrintErrorType
-      - name: |2-
-
-                      | "AsDisplayed"
-                      | "Blank"
-                      | "Dash"
-                      | "NotAvailable"
-        fullName: |2-
-
-                      | "AsDisplayed"
-                      | "Blank"
-                      | "Dash"
-                      | "NotAvailable"
-  - uid: 'excel!Excel.PageLayout#printOrder~0:complex'
-    name: PrintOrder | "DownThenOver" | "OverThenDown"
-    fullName: Excel.PrintOrder | "DownThenOver" | "OverThenDown"
-    spec.typeScript:
-      - uid: 'excel!Excel.PrintOrder:enum'
-        name: PrintOrder
-        fullName: Excel.PrintOrder
-      - name: ' | "DownThenOver" | "OverThenDown"'
-        fullName: ' | "DownThenOver" | "OverThenDown"'
-  - uid: 'excel!Excel.PageLayout#setPrintArea~0:complex'
-    name: Range | RangeAreas | string
-    fullName: Excel.Range | Excel.RangeAreas | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.RangeAreas:interface'
-        name: RangeAreas
-        fullName: Excel.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.PageLayout#setPrintMargins~0:complex'
-    name: PrintMarginUnit | "Points" | "Inches" | "Centimeters"
-    fullName: Excel.PrintMarginUnit | "Points" | "Inches" | "Centimeters"
-    spec.typeScript:
-      - uid: 'excel!Excel.PrintMarginUnit:enum'
-        name: PrintMarginUnit
-        fullName: Excel.PrintMarginUnit
-      - name: ' | "Points" | "Inches" | "Centimeters"'
-        fullName: ' | "Points" | "Inches" | "Centimeters"'
-  - uid: 'excel!Excel.PageLayoutMarginOptions:interface'
-    name: PageLayoutMarginOptions
-    fullName: Excel.PageLayoutMarginOptions
-  - uid: 'excel!Excel.PageLayout#setPrintTitleColumns~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.PageLayout#setPrintTitleRows~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.PageLayoutZoomOptions:interface'
-    name: PageLayoutZoomOptions
-    fullName: Excel.PageLayoutZoomOptions
+                    | "NotAvailable"
+- name: printGridlines
+  uid: excel!Excel.PageLayout#printGridlines:member
+  package: excel!
+  fullName: printGridlines
+  summary: Gibt an, ob die Gitternetzlinien des Arbeitsblatts gedruckt werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'printGridlines: boolean;'
+    return:
+      type: boolean
+- name: printHeadings
+  uid: excel!Excel.PageLayout#printHeadings:member
+  package: excel!
+  fullName: printHeadings
+  summary: Gibt an, ob die Überschriften des Arbeitsblatts gedruckt werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'printHeadings: boolean;'
+    return:
+      type: boolean
+- name: printOrder
+  uid: excel!Excel.PageLayout#printOrder:member
+  package: excel!
+  fullName: printOrder
+  summary: Die Option für die Seiten Druckreihenfolge des Arbeitsblatts. Dies gibt die Reihenfolge für die Verarbeitung der gedruckten Seitenzahl an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'printOrder: PrintOrder | "DownThenOver" | "OverThenDown";'
+    return:
+      type: <xref uid="excel!Excel.PrintOrder:enum" /> | "DownThenOver" | "OverThenDown"
+- name: rightMargin
+  uid: excel!Excel.PageLayout#rightMargin:member
+  package: excel!
+  fullName: rightMargin
+  summary: Der Rechte Rand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'rightMargin: number;'
+    return:
+      type: number
+- name: topMargin
+  uid: excel!Excel.PageLayout#topMargin:member
+  package: excel!
+  fullName: topMargin
+  summary: Der obere Rand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'topMargin: number;'
+    return:
+      type: number
+- name: zoom
+  uid: excel!Excel.PageLayout#zoom:member
+  package: excel!
+  fullName: zoom
+  summary: Die Druck Zoomoptionen des Arbeitsblatts. Das `PageLayoutZoomOptions` Objekt muss als JSON-Objekt festgelegt werden (verwenden Sie `x.zoom = {...}` anstelle von `x.zoom.scale = ...`<!-- -->).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'zoom: PageLayoutZoomOptions;'
+    return:
+      type: <xref uid="excel!Excel.PageLayoutZoomOptions:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let farmSheet = context.workbook.worksheets.getItem(\"Print\");\n    farmSheet.pageLayout.zoom = { scale: 200 };\n    await context.sync();\n}\n```"
+methods:
+- name: getPrintArea()
+  uid: excel!Excel.PageLayout#getPrintArea:member(1)
+  package: excel!
+  fullName: getPrintArea()
+  summary: Ruft das RangeAreas-Objekt ab, das aus einem oder mehreren rechteckigen Bereichen besteht und den Druckbereich für das Arbeitsblatt darstellt. Wenn kein Druckbereich vorhanden ist, wird ein ItemNotFound-Fehler ausgelöst.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintArea(): RangeAreas;'
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getPrintAreaOrNullObject()
+  uid: excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)
+  package: excel!
+  fullName: getPrintAreaOrNullObject()
+  summary: Ruft das RangeAreas-Objekt ab, das aus einem oder mehreren rechteckigen Bereichen besteht und den Druckbereich für das Arbeitsblatt darstellt. Wenn kein Druckbereich vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintAreaOrNullObject(): RangeAreas;'
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getPrintTitleColumns()
+  uid: excel!Excel.PageLayout#getPrintTitleColumns:member(1)
+  package: excel!
+  fullName: getPrintTitleColumns()
+  summary: Ruft das Bereichsobjekt ab, das die Titelspalten darstellt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintTitleColumns(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getPrintTitleColumnsOrNullObject()
+  uid: excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)
+  package: excel!
+  fullName: getPrintTitleColumnsOrNullObject()
+  summary: Ruft das Bereichsobjekt ab, das die Titelspalten darstellt. Wenn es nicht festgelegt ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintTitleColumnsOrNullObject(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getPrintTitleRows()
+  uid: excel!Excel.PageLayout#getPrintTitleRows:member(1)
+  package: excel!
+  fullName: getPrintTitleRows()
+  summary: Ruft das Bereichsobjekt ab, das die Titelzeilen darstellt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintTitleRows(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getPrintTitleRowsOrNullObject()
+  uid: excel!Excel.PageLayout#getPrintTitleRowsOrNullObject:member(1)
+  package: excel!
+  fullName: getPrintTitleRowsOrNullObject()
+  summary: Ruft das Bereichsobjekt ab, das die Titelzeilen darstellt. Wenn es nicht festgelegt ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintTitleRowsOrNullObject(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.PageLayout#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setPrintArea(printArea)
+  uid: excel!Excel.PageLayout#setPrintArea:member(1)
+  package: excel!
+  fullName: setPrintArea(printArea)
+  summary: Legt den Druckbereich des Arbeitsblatts fest.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
+    parameters:
+    - id: printArea
+      description: Der Bereich oder RangeAreas des zu druckenden Inhalts.
+      type: <xref uid="excel!Excel.Range:interface" /> | <xref uid="excel!Excel.RangeAreas:interface" /> | string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let farmSheet = context.workbook.worksheets.getItem(\"Print\");\n    farmSheet.pageLayout.setPrintArea(\"A1:D41\");\n    await context.sync();\n}\n```"
+- name: setPrintMargins(unit, marginOptions)
+  uid: excel!Excel.PageLayout#setPrintMargins:member(1)
+  package: excel!
+  fullName: setPrintMargins(unit, marginOptions)
+  summary: Legt die Seitenränder des Arbeitsblatts mit Einheiten fest.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setPrintMargins(
+                  unit: PrintMarginUnit | "Points" | "Inches" | "Centimeters",
+                  marginOptions: PageLayoutMarginOptions
+              ): void;
+    parameters:
+    - id: unit
+      description: Maßeinheit für die bereitgestellten Ränder.
+      type: <xref uid="excel!Excel.PrintMarginUnit:enum" /> | "Points" | "Inches" | "Centimeters"
+    - id: marginOptions
+      description: Die festzulegenden Rand Werte, die nicht bereitgestellten Ränder bleiben unverändert.
+      type: <xref uid="excel!Excel.PageLayoutMarginOptions:interface" />
+    return:
+      type: void
+      description: ''
+- name: setPrintTitleColumns(printTitleColumns)
+  uid: excel!Excel.PageLayout#setPrintTitleColumns:member(1)
+  package: excel!
+  fullName: setPrintTitleColumns(printTitleColumns)
+  summary: Legt die Spalten fest, die die links auf jeder Seite des Arbeitsblatts im Druck zu wiederholenden Zellen enthalten.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
+    parameters:
+    - id: printTitleColumns
+      description: Die Spalten, die Links von jeder Seite wiederholt werden sollen, muss die gesamte Spalte überspannen, um gültig zu sein.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: setPrintTitleRows(printTitleRows)
+  uid: excel!Excel.PageLayout#setPrintTitleRows:member(1)
+  package: excel!
+  fullName: setPrintTitleRows(printTitleRows)
+  summary: Legt die Zeilen fest, die die oben auf jeder Seite des Arbeitsblatts im Druck zu wiederholenden Zellen enthalten.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
+    parameters:
+    - id: printTitleRows
+      description: Die Zeilen, die am oberen Rand jeder Seite wiederholt werden sollen, muss die gesamte Zeile überspannen, um gültig zu sein.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let farmSheet = context.workbook.worksheets.getItem(\"Print\");\n    farmSheet.pageLayout.setPrintTitleRows(\"$1:$1\");\n    await context.sync();\n}\n```"
+metadata:
+  ms.openlocfilehash: 5a4a43a6753e2519766ceef82d1d3a5f0f91704b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413454"

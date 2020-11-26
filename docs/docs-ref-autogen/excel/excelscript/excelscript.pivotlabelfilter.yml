@@ -1,80 +1,78 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
-    summary: 'Konfigurierbare Vorlage für einen Bezeichnungs Filter, der auf ein PivotField angewendet werden soll. Der `condition` definiert, welche Kriterien festgelegt werden müssen, damit der Filter funktioniert.'
-    name: ExcelScript.PivotLabelFilter
-    fullName: ExcelScript.PivotLabelFilter
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
-      - 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
-      - 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
-      - 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
-      - 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
-    summary: 'Gibt die Bedingung für den Filter an, die die erforderlichen Filterkriterien definiert.'
-    name: condition
-    fullName: condition
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'condition: LabelFilterCondition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
-    summary: 'Bei true werden Elemente, die Kriterien erfüllen, von Filter *ausgeschlossen* . Der Standardwert ist false (Filter, um Elemente einzuschließen, die Kriterien erfüllen).'
-    name: exclusive
-    fullName: exclusive
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'exclusive?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
-    summary: 'Die untere Grenze des Bereichs für die zwischen Filterbedingung. Hinweis: eine numerische Zeichenfolge wird als Zahl behandelt, wenn Sie mit anderen numerischen Zeichenfolgen verglichen wird.'
-    name: lowerBound
-    fullName: lowerBound
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'lowerBound?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
-    summary: 'Die für die Teilzeichenfolge verwendete `BeginsWith`<!-- -->, `EndsWith`<!-- -->und `Contains` Filterbedingungen.'
-    name: substring
-    fullName: substring
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'substring?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
-    summary: 'Die obere Grenze des Bereichs für die zwischen Filterbedingung. Hinweis: eine numerische Zeichenfolge wird als Zahl behandelt, wenn Sie mit anderen numerischen Zeichenfolgen verglichen wird.'
-    name: upperBound
-    fullName: upperBound
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'upperBound?: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
-    name: LabelFilterCondition
-    fullName: ExcelScript.LabelFilterCondition
+### YamlMime:TSType
+name: ExcelScript.PivotLabelFilter
+uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotLabelFilter
+summary: Konfigurierbare Vorlage für einen Bezeichnungs Filter, der auf ein PivotField angewendet werden soll. Der `condition` definiert, welche Kriterien festgelegt werden müssen, damit der Filter funktioniert.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: condition
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#condition:member
+  package: ExcelScript!
+  fullName: condition
+  summary: Gibt die Bedingung für den Filter an, die die erforderlichen Filterkriterien definiert.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'condition: LabelFilterCondition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />
+- name: exclusive
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
+  package: ExcelScript!
+  fullName: exclusive
+  summary: Bei true werden Elemente, die Kriterien erfüllen, von Filter *ausgeschlossen* . Der Standardwert ist false (Filter, um Elemente einzuschließen, die Kriterien erfüllen).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exclusive?: boolean;'
+    return:
+      type: boolean
+- name: lowerBound
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
+  package: ExcelScript!
+  fullName: lowerBound
+  summary: 'Die untere Grenze des Bereichs für die zwischen Filterbedingung. Hinweis: eine numerische Zeichenfolge wird als Zahl behandelt, wenn Sie mit anderen numerischen Zeichenfolgen verglichen wird.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'lowerBound?: string;'
+    return:
+      type: string
+- name: substring
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
+  package: ExcelScript!
+  fullName: substring
+  summary: Die für die Teilzeichenfolge verwendete `BeginsWith`<!-- -->, `EndsWith`<!-- -->und `Contains` Filterbedingungen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'substring?: string;'
+    return:
+      type: string
+- name: upperBound
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
+  package: ExcelScript!
+  fullName: upperBound
+  summary: 'Die obere Grenze des Bereichs für die zwischen Filterbedingung. Hinweis: eine numerische Zeichenfolge wird als Zahl behandelt, wenn Sie mit anderen numerischen Zeichenfolgen verglichen wird.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'upperBound?: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: d030957f0b9d36c810d4e9b9016f5ec9ba5f704a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412055"
