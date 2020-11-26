@@ -1,85 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FilterDatetime:interface'
-    summary: 'Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.'
-    name: Excel.FilterDatetime
-    fullName: Excel.FilterDatetime
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.FilterDatetime#date:member'
-      - 'excel!Excel.FilterDatetime#specificity:member'
-  - uid: 'excel!Excel.FilterDatetime#date:member'
-    summary: Das Datum im ISO8601-Format zum Filtern von Daten.
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'date: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.FilterDatetime#specificity:member'
-    summary: 'Wie spezifisch das Datum zum Aufbewahren von Daten verwendet werden soll. Wenn das Datum beispielsweise 2005-04-02 ist und das Spezifität auf "Month" festgelegt ist, behält der Filtervorgang alle Zeilen mit einem Datum im Monat April 2009.'
-    name: specificity
-    fullName: specificity
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        specificity:
-                    | FilterDatetimeSpecificity
+### YamlMime:TSType
+name: Excel.FilterDatetime
+uid: excel!Excel.FilterDatetime:interface
+package: excel!
+fullName: Excel.FilterDatetime
+summary: Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: date
+  uid: excel!Excel.FilterDatetime#date:member
+  package: excel!
+  fullName: date
+  summary: Das Datum im ISO8601-Format zum Filtern von Daten.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'date: string;'
+    return:
+      type: string
+- name: specificity
+  uid: excel!Excel.FilterDatetime#specificity:member
+  package: excel!
+  fullName: specificity
+  summary: Wie spezifisch das Datum zum Aufbewahren von Daten verwendet werden soll. Wenn das Datum beispielsweise 2005-04-02 ist und das Spezifität auf "Month" festgelegt ist, behält der Filtervorgang alle Zeilen mit einem Datum im Monat April 2009.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      specificity:
+                  | FilterDatetimeSpecificity
+                  | "Year"
+                  | "Month"
+                  | "Day"
+                  | "Hour"
+                  | "Minute"
+                  | "Second";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.FilterDatetimeSpecificity:enum" />
                     | "Year"
                     | "Month"
                     | "Day"
                     | "Hour"
                     | "Minute"
-                    | "Second";
-      return:
-        type:
-          - 'excel!Excel.FilterDatetime#specificity~0:complex'
-references:
-  - uid: 'excel!Excel.FilterDatetime#specificity~0:complex'
-    name: |-
-      | FilterDatetimeSpecificity
-                  | "Year"
-                  | "Month"
-                  | "Day"
-                  | "Hour"
-                  | "Minute"
-                  | "Second"
-    fullName: |-
-      | Excel.FilterDatetimeSpecificity
-                  | "Year"
-                  | "Month"
-                  | "Day"
-                  | "Hour"
-                  | "Minute"
-                  | "Second"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
-        name: FilterDatetimeSpecificity
-        fullName: Excel.FilterDatetimeSpecificity
-      - name: |2-
-
-                      | "Year"
-                      | "Month"
-                      | "Day"
-                      | "Hour"
-                      | "Minute"
-                      | "Second"
-        fullName: |2-
-
-                      | "Year"
-                      | "Month"
-                      | "Day"
-                      | "Hour"
-                      | "Minute"
-                      | "Second"
+                    | "Second"
+metadata:
+  ms.openlocfilehash: 7057a3b8455be4fc1e197dd3bb5579f7a12e6361
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417960"
