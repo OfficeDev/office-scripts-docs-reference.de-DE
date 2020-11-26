@@ -1,86 +1,87 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
-    summary: Stellt ein Slicer-Element in einem datenschnitt dar.
-    name: ExcelScript.SlicerItem
-    fullName: ExcelScript.SlicerItem
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)'
-      - 'ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)'
-      - 'ExcelScript!ExcelScript.SlicerItem#getKey:member(1)'
-      - 'ExcelScript!ExcelScript.SlicerItem#getName:member(1)'
-      - 'ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)'
-  - uid: 'ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)'
-    summary: 'True, wenn das Datenschnittelement Daten aufweist.'
-    name: getHasData()
-    fullName: getHasData()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHasData(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)'
-    summary: 'True, wenn das Datenschnittelement ausgewählt ist. Durch das Festlegen dieses Werts wird der Auswahlstatus anderer SlicerItems nicht gelöscht. Wenn das datenschnitt Element als einziges ausgewählt ist, wird standardmäßig alle Elemente ausgewählt, wenn es deaktiviert ist.'
-    name: getIsSelected()
-    fullName: getIsSelected()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsSelected(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.SlicerItem#getKey:member(1)'
-    summary: 'Stellt den eindeutigen Wert dar, der für das Datenschnittelement steht.'
-    name: getKey()
-    fullName: getKey()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getKey(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.SlicerItem#getName:member(1)'
-    summary: 'Stellt den Titel dar, der in der Benutzeroberfläche angezeigt wird.'
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)'
-    summary: 'True, wenn das Datenschnittelement ausgewählt ist. Durch das Festlegen dieses Werts wird der Auswahlstatus anderer SlicerItems nicht gelöscht. Wenn das datenschnitt Element als einziges ausgewählt ist, wird standardmäßig alle Elemente ausgewählt, wenn es deaktiviert ist.'
-    name: setIsSelected(isSelected)
-    fullName: setIsSelected(isSelected)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setIsSelected(isSelected: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: isSelected
-          description: ''
-          type:
-            - boolean
+### YamlMime:TSType
+name: ExcelScript.SlicerItem
+uid: ExcelScript!ExcelScript.SlicerItem:interface
+package: ExcelScript!
+fullName: ExcelScript.SlicerItem
+summary: Stellt ein Slicer-Element in einem datenschnitt dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getHasData()
+  uid: ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)
+  package: ExcelScript!
+  fullName: getHasData()
+  summary: True, wenn das Datenschnittelement Daten aufweist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHasData(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getIsSelected()
+  uid: ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)
+  package: ExcelScript!
+  fullName: getIsSelected()
+  summary: True, wenn das Datenschnittelement ausgewählt ist. Durch das Festlegen dieses Werts wird der Auswahlstatus anderer SlicerItems nicht gelöscht. Wenn das datenschnitt Element als einziges ausgewählt ist, wird standardmäßig alle Elemente ausgewählt, wenn es deaktiviert ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsSelected(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getKey()
+  uid: ExcelScript!ExcelScript.SlicerItem#getKey:member(1)
+  package: ExcelScript!
+  fullName: getKey()
+  summary: Stellt den eindeutigen Wert dar, der für das Datenschnittelement steht.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getKey(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.SlicerItem#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Stellt den Titel dar, der in der Benutzeroberfläche angezeigt wird.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: setIsSelected(isSelected)
+  uid: ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)
+  package: ExcelScript!
+  fullName: setIsSelected(isSelected)
+  summary: True, wenn das Datenschnittelement ausgewählt ist. Durch das Festlegen dieses Werts wird der Auswahlstatus anderer SlicerItems nicht gelöscht. Wenn das datenschnitt Element als einziges ausgewählt ist, wird standardmäßig alle Elemente ausgewählt, wenn es deaktiviert ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setIsSelected(isSelected: boolean): void;'
+    parameters:
+    - id: isSelected
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 198e28e187b64e9c64d0b94e95fb91eb7720156c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420482"

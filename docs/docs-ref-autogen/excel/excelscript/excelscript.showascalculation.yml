@@ -1,139 +1,81 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
-    summary: Die Berechnungsfunktion für das Datenfeld Data Pivot.
-    name: ExcelScript.ShowAsCalculation
-    fullName: ExcelScript.ShowAsCalculation
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
-      - 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
-    summary: Differenz aus dem angegebenen Basis Feld und Basiselement.
-    name: differenceFrom
-    fullName: differenceFrom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
-    summary: 'Berechnet die Werte wie folgt: ((Wert in Zelle) x (Gesamtsumme der Gesamtergebnisse))/((große Zeilensumme) x (große Spaltensumme))'
-    name: index
-    fullName: index
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
-    summary: Es wird keine Berechnung angewendet.
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
-    summary: Differenz aus dem angegebenen Basis Feld und Basiselement.
-    name: percentDifferenceFrom
-    fullName: percentDifferenceFrom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
-    summary: Prozentsatz des angegebenen Basisfelds und Basiselements.
-    name: percentOf
-    fullName: percentOf
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
-    summary: Prozentsatz der Spaltensumme.
-    name: percentOfColumnTotal
-    fullName: percentOfColumnTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
-    summary: Prozentsatz der Gesamtsumme.
-    name: percentOfGrandTotal
-    fullName: percentOfGrandTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
-    summary: Prozentsatz der Spaltensumme für das angegebene Basis Feld.
-    name: percentOfParentColumnTotal
-    fullName: percentOfParentColumnTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
-    summary: Prozentsatz der Zeilensumme für das angegebene Basis Feld.
-    name: percentOfParentRowTotal
-    fullName: percentOfParentRowTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
-    summary: Prozentsatz der Gesamtsumme für das angegebene Basis Feld.
-    name: percentOfParentTotal
-    fullName: percentOfParentTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
-    summary: Prozentsatz der Zeilensumme.
-    name: percentOfRowTotal
-    fullName: percentOfRowTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
-    summary: Prozentuale laufende Summe des angegebenen Basisfelds.
-    name: percentRunningTotal
-    fullName: percentRunningTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
-    summary: Aufsteigender Rang des angegebenen Basisfelds.
-    name: rankAscending
-    fullName: rankAscending
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
-    summary: Absteigender Rang des angegebenen Basisfelds.
-    name: rankDecending
-    fullName: rankDecending
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
-    summary: Laufende Summe des angegebenen Basisfelds.
-    name: runningTotal
-    fullName: runningTotal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
-    summary: Berechnung ist unbekannt oder nicht unterstützt.
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShowAsCalculation
+uid: ExcelScript!ExcelScript.ShowAsCalculation:enum
+package: ExcelScript!
+fullName: ExcelScript.ShowAsCalculation
+summary: Die Berechnungsfunktion für das Datenfeld Data Pivot.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: differenceFrom
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member
+  package: ExcelScript!
+  summary: Differenz aus dem angegebenen Basis Feld und Basiselement.
+- name: index
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.index:member
+  package: ExcelScript!
+  summary: 'Berechnet die Werte wie folgt: ((Wert in Zelle) x (Gesamtsumme der Gesamtergebnisse))/((große Zeilensumme) x (große Spaltensumme))'
+- name: none
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.none:member
+  package: ExcelScript!
+  summary: Es wird keine Berechnung angewendet.
+- name: percentDifferenceFrom
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member
+  package: ExcelScript!
+  summary: Differenz aus dem angegebenen Basis Feld und Basiselement.
+- name: percentOf
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member
+  package: ExcelScript!
+  summary: Prozentsatz des angegebenen Basisfelds und Basiselements.
+- name: percentOfColumnTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member
+  package: ExcelScript!
+  summary: Prozentsatz der Spaltensumme.
+- name: percentOfGrandTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member
+  package: ExcelScript!
+  summary: Prozentsatz der Gesamtsumme.
+- name: percentOfParentColumnTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member
+  package: ExcelScript!
+  summary: Prozentsatz der Spaltensumme für das angegebene Basis Feld.
+- name: percentOfParentRowTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member
+  package: ExcelScript!
+  summary: Prozentsatz der Zeilensumme für das angegebene Basis Feld.
+- name: percentOfParentTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member
+  package: ExcelScript!
+  summary: Prozentsatz der Gesamtsumme für das angegebene Basis Feld.
+- name: percentOfRowTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member
+  package: ExcelScript!
+  summary: Prozentsatz der Zeilensumme.
+- name: percentRunningTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member
+  package: ExcelScript!
+  summary: Prozentuale laufende Summe des angegebenen Basisfelds.
+- name: rankAscending
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member
+  package: ExcelScript!
+  summary: Aufsteigender Rang des angegebenen Basisfelds.
+- name: rankDecending
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member
+  package: ExcelScript!
+  summary: Absteigender Rang des angegebenen Basisfelds.
+- name: runningTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member
+  package: ExcelScript!
+  summary: Laufende Summe des angegebenen Basisfelds.
+- name: unknown
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.unknown:member
+  package: ExcelScript!
+  summary: Berechnung ist unbekannt oder nicht unterstützt.
+metadata:
+  ms.openlocfilehash: d9b3d7c1f2c5e31154f2b54de141a37ff1afead0
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420496"
