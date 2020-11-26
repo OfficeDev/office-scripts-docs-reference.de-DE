@@ -1,210 +1,165 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.AutoFilter:interface'
-    summary: Stellt das AutoFilter-Objekt dar. AutoFilter wandelt die Werte in der Excel-Spalte basierend auf dem Zelleninhalt in bestimmte Filter um.
-    name: Excel.AutoFilter
-    fullName: Excel.AutoFilter
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.AutoFilter#apply:member(1)'
-      - 'excel!Excel.AutoFilter#clearCriteria:member(1)'
-      - 'excel!Excel.AutoFilter#criteria:member'
-      - 'excel!Excel.AutoFilter#enabled:member'
-      - 'excel!Excel.AutoFilter#getRange:member(1)'
-      - 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
-      - 'excel!Excel.AutoFilter#isDataFiltered:member'
-      - 'excel!Excel.AutoFilter#load:member(1)'
-      - 'excel!Excel.AutoFilter#reapply:member(1)'
-      - 'excel!Excel.AutoFilter#remove:member(1)'
-  - uid: 'excel!Excel.AutoFilter#apply:member(1)'
-    summary: 'Wendet den AutoFilter auf einen Bereich an. Dies filtert die Spalte, wenn Spaltenindex und Filterkriterien angegeben sind.'
-    name: 'apply(range, columnIndex, criteria)'
-    fullName: 'apply(range, columnIndex, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        apply(
-                    range: Range | string,
-                    columnIndex?: number,
-                    criteria?: FilterCriteria
-                ): void;
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              let farmData = sheet.getUsedRange();
-
-              // This filter will only show the rows with the top 25% of values in column 3.
-              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: range
-          description: 'Der Bereich, auf den der AutoFilter angewendet wird.'
-          type:
-            - 'excel!Excel.AutoFilter#apply~0:complex'
-        - id: columnIndex
-          description: 'Der nullbasierte Spaltenindex, auf den der AutoFilter angewendet wird.'
-          type:
-            - number
-        - id: criteria
-          description: Die Filterkriterien.
-          type:
-            - 'excel!Excel.FilterCriteria:interface'
-  - uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
-    summary: Löscht die Filterkriterien von AutoFilter.
-    name: clearCriteria()
-    fullName: clearCriteria()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearCriteria(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.AutoFilter#criteria:member'
-    summary: 'Ein Array, das alle Filterkriterien in dem per AutoFilter gefilterten Bereich enthält.'
-    name: criteria
-    fullName: criteria
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly criteria: FilterCriteria[];'
-      return:
-        type:
-          - 'excel!Excel.AutoFilter#criteria~0:complex'
-  - uid: 'excel!Excel.AutoFilter#enabled:member'
-    summary: 'Gibt an, ob der AutoFilter aktiviert ist.'
-    name: enabled
-    fullName: enabled
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly enabled: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.AutoFilter#getRange:member(1)'
-    summary: 'Gibt das Range-Objekt zurück, das den Bereich darstellt, auf den der AutoFilter angewendet wird.'
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
-    summary: 'Gibt das Range-Objekt zurück, das den Bereich darstellt, auf den der AutoFilter angewendet wird. Wenn dem AutoFilter kein Range-Objekt zugeordnet ist, gibt diese Methode ein NULL-Objekt zurück.'
-    name: getRangeOrNullObject()
-    fullName: getRangeOrNullObject()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRangeOrNullObject(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.AutoFilter#isDataFiltered:member'
-    summary: 'Gibt an, ob der AutoFilter Filterkriterien enthält.'
-    name: isDataFiltered
-    fullName: isDataFiltered
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isDataFiltered: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.AutoFilter#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.AutoFilter#reapply:member(1)'
-    summary: 'Wendet das angegebene Autofilter-Objekt an, das aktuell für den Bereich aktiv ist.'
-    name: reapply()
-    fullName: reapply()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'reapply(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.AutoFilter#remove:member(1)'
-    summary: Entfernt den AutoFilter für den Bereich.
-    name: remove()
-    fullName: remove()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'remove(): void;'
-      return:
-        type:
-          - void
-        description: ''
-references:
-  - uid: 'excel!Excel.AutoFilter#apply~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.FilterCriteria:interface'
-    name: FilterCriteria
-    fullName: Excel.FilterCriteria
-  - uid: 'excel!Excel.AutoFilter#criteria~0:complex'
-    name: 'FilterCriteria[]'
-    fullName: 'Excel.FilterCriteria[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.FilterCriteria:interface'
-        name: FilterCriteria
-        fullName: Excel.FilterCriteria
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
+### YamlMime:TSType
+name: Excel.AutoFilter
+uid: excel!Excel.AutoFilter:interface
+package: excel!
+fullName: Excel.AutoFilter
+summary: Stellt das AutoFilter-Objekt dar. AutoFilter wandelt die Werte in der Excel-Spalte basierend auf dem Zelleninhalt in bestimmte Filter um.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: criteria
+  uid: excel!Excel.AutoFilter#criteria:member
+  package: excel!
+  fullName: criteria
+  summary: Ein Array, das alle Filterkriterien in dem per AutoFilter gefilterten Bereich enthält.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly criteria: FilterCriteria[];'
+    return:
+      type: <xref uid="excel!Excel.FilterCriteria:interface" />[]
+- name: enabled
+  uid: excel!Excel.AutoFilter#enabled:member
+  package: excel!
+  fullName: enabled
+  summary: Gibt an, ob der AutoFilter aktiviert ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly enabled: boolean;'
+    return:
+      type: boolean
+- name: isDataFiltered
+  uid: excel!Excel.AutoFilter#isDataFiltered:member
+  package: excel!
+  fullName: isDataFiltered
+  summary: Gibt an, ob der AutoFilter Filterkriterien enthält.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly isDataFiltered: boolean;'
+    return:
+      type: boolean
+methods:
+- name: apply(range, columnIndex, criteria)
+  uid: excel!Excel.AutoFilter#apply:member(1)
+  package: excel!
+  fullName: apply(range, columnIndex, criteria)
+  summary: Wendet den AutoFilter auf einen Bereich an. Dies filtert die Spalte, wenn Spaltenindex und Filterkriterien angegeben sind.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      apply(
+                  range: Range | string,
+                  columnIndex?: number,
+                  criteria?: FilterCriteria
+              ): void;
+    parameters:
+    - id: range
+      description: Der Bereich, auf den der AutoFilter angewendet wird.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    - id: columnIndex
+      description: Der nullbasierte Spaltenindex, auf den der AutoFilter angewendet wird.
+      type: number
+    - id: criteria
+      description: Die Filterkriterien.
+      type: <xref uid="excel!Excel.FilterCriteria:interface" />
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    let farmData = sheet.getUsedRange();\n\n    // This filter will only show the rows with the top 25% of values in column 3.\n    sheet.autoFilter.apply(farmData, 3, { criterion1: \"25\", filterOn: Excel.FilterOn.topPercent });\n    await context.sync();\n}\n```"
+- name: clearCriteria()
+  uid: excel!Excel.AutoFilter#clearCriteria:member(1)
+  package: excel!
+  fullName: clearCriteria()
+  summary: Löscht die Filterkriterien von AutoFilter.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearCriteria(): void;'
+    return:
+      type: void
+      description: ''
+- name: getRange()
+  uid: excel!Excel.AutoFilter#getRange:member(1)
+  package: excel!
+  fullName: getRange()
+  summary: Gibt das Range-Objekt zurück, das den Bereich darstellt, auf den der AutoFilter angewendet wird.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRangeOrNullObject()
+  uid: excel!Excel.AutoFilter#getRangeOrNullObject:member(1)
+  package: excel!
+  fullName: getRangeOrNullObject()
+  summary: Gibt das Range-Objekt zurück, das den Bereich darstellt, auf den der AutoFilter angewendet wird. Wenn dem AutoFilter kein Range-Objekt zugeordnet ist, gibt diese Methode ein NULL-Objekt zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeOrNullObject(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.AutoFilter#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: reapply()
+  uid: excel!Excel.AutoFilter#reapply:member(1)
+  package: excel!
+  fullName: reapply()
+  summary: Wendet das angegebene Autofilter-Objekt an, das aktuell für den Bereich aktiv ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'reapply(): void;'
+    return:
+      type: void
+      description: ''
+- name: remove()
+  uid: excel!Excel.AutoFilter#remove:member(1)
+  package: excel!
+  fullName: remove()
+  summary: Entfernt den AutoFilter für den Bereich.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'remove(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 61e0a4f92c1a18bb68b5b468d1b822fb6ce501e4
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413891"

@@ -1,37 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria:interface'
-    summary: Stellt die zu verwendenden Arbeitsblatt Suchkriterien dar.
-    name: ExcelScript.WorksheetSearchCriteria
-    fullName: ExcelScript.WorksheetSearchCriteria
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
-      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
-    summary: 'Gibt an, ob die Übereinstimmung vollständig oder partiell sein muss. Eine vollständige Übereinstimmung stimmt mit dem gesamten Inhalt der Zelle überein. Eine partielle Übereinstimmung stimmt mit einer Teilzeichenfolge innerhalb des Inhalts der Zelle überein (beispielsweise `cat` teilweise Übereinstimmungen `caterpillar` und`scatter`<!-- -->). Der Standardwert ist "false" (teilweise).'
-    name: completeMatch
-    fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
-    summary: 'Gibt an, ob bei der Übereinstimmung die Groß-/Kleinschreibung beachtet wird. Der Standardwert ist "false" (nicht beachtet).'
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: ExcelScript.WorksheetSearchCriteria
+uid: ExcelScript!ExcelScript.WorksheetSearchCriteria:interface
+package: ExcelScript!
+fullName: ExcelScript.WorksheetSearchCriteria
+summary: Stellt die zu verwendenden Arbeitsblatt Suchkriterien dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: Gibt an, ob die Übereinstimmung vollständig oder partiell sein muss. Eine vollständige Übereinstimmung stimmt mit dem gesamten Inhalt der Zelle überein. Eine partielle Übereinstimmung stimmt mit einer Teilzeichenfolge innerhalb des Inhalts der Zelle überein (beispielsweise `cat` teilweise Übereinstimmungen `caterpillar` und `scatter`<!-- -->). Der Standardwert ist "false" (teilweise).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: Gibt an, ob bei der Übereinstimmung die Groß-/Kleinschreibung beachtet wird. Der Standardwert ist "false" (nicht beachtet).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 56003b6e099d7730216a7a57188780d6b966aeea
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415127"

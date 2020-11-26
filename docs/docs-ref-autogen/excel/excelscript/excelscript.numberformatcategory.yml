@@ -1,107 +1,65 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory:enum'
-    summary: Stellt eine Kategorie von Zahlenformaten dar.
-    name: ExcelScript.NumberFormatCategory
-    fullName: ExcelScript.NumberFormatCategory
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.accounting:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.currency:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.custom:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.date:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.fraction:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.general:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.number:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.percentage:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.scientific:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.special:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.text:member'
-      - 'ExcelScript!ExcelScript.NumberFormatCategory.time:member'
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.accounting:member'
-    summary: In den Buchhaltungs Formaten werden die Währungssymbole und Dezimalstellen in einer Spalte ausgerichtet.
-    name: accounting
-    fullName: accounting
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.currency:member'
-    summary: 'Währungsformate werden für allgemeine monetäre Werte verwendet. Verwenden Sie Buchhaltungsformate, um Dezimalstellen in einer Spalte auszurichten.'
-    name: currency
-    fullName: currency
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.custom:member'
-    summary: 'Ein benutzerdefiniertes Format, das nicht Bestandteileiner Kategorie ist.'
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.date:member'
-    summary: 'Datumsformate zeigen die Datums-und Uhrzeit Seriennummern als Datumswerte an. Datumsformate, die mit einem Sternchen (*) beginnen, reagieren auf Änderungen in den regionalen Datums-und Uhrzeiteinstellungen, die für das Betriebssystem angegeben sind. Formate ohne Sternchen sind von den Betriebssystem Einstellungen nicht betroffen.'
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.fraction:member'
-    summary: 'Bruchformate zeigen den Zellenwert als ganze Zahl an, wobei der Rest auf den nächstgelegenen Bruchteil gerundet wird.'
-    name: fraction
-    fullName: fraction
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.general:member'
-    summary: Allgemeine Format Zellen weisen kein spezifisches Zahlenformat auf.
-    name: general
-    fullName: general
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.number:member'
-    summary: Nummer wird für die allgemeine Anzeige von Zahlen verwendet. Währung und Buchhaltung bieten eine spezielle Formatierung für monetären Wert.
-    name: number
-    fullName: number
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.percentage:member'
-    summary: In Prozent Formaten wird der Zellenwert mit 100 multipliziert und das Ergebnis mit einem prozentsymbol angezeigt.
-    name: percentage
-    fullName: percentage
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.scientific:member'
-    summary: In wissenschaftlichen Formaten wird der Zellenwert als Zahl zwischen 1 und 10 multipliziert mit einer Potenz von 10 angezeigt.
-    name: scientific
-    fullName: scientific
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.special:member'
-    summary: Spezielle Formate sind für die Verfolgung von Listen-und Datenbankwerten hilfreich.
-    name: special
-    fullName: special
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.text:member'
-    summary: 'Zellen im Text Format werden als Text behandelt, auch wenn sich eine Zahl in der Zelle befindet. Die Zelle wird genau wie eingegeben angezeigt.'
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.NumberFormatCategory.time:member'
-    summary: 'In den Zeitformaten werden die Seriennummern Datum und Uhrzeit als Datumswerte angezeigt. Zeitformate, die mit einem Sternchen (*) beginnen, reagieren auf Änderungen in den regionalen Datums-und Uhrzeiteinstellungen, die für das Betriebssystem angegeben sind. Formate ohne Sternchen sind von den Betriebssystem Einstellungen nicht betroffen.'
-    name: time
-    fullName: time
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.NumberFormatCategory
+uid: ExcelScript!ExcelScript.NumberFormatCategory:enum
+package: ExcelScript!
+fullName: ExcelScript.NumberFormatCategory
+summary: Stellt eine Kategorie von Zahlenformaten dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: accounting
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.accounting:member
+  package: ExcelScript!
+  summary: In den Buchhaltungs Formaten werden die Währungssymbole und Dezimalstellen in einer Spalte ausgerichtet.
+- name: currency
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.currency:member
+  package: ExcelScript!
+  summary: Währungsformate werden für allgemeine monetäre Werte verwendet. Verwenden Sie Buchhaltungsformate, um Dezimalstellen in einer Spalte auszurichten.
+- name: custom
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.custom:member
+  package: ExcelScript!
+  summary: Ein benutzerdefiniertes Format, das nicht Bestandteileiner Kategorie ist.
+- name: date
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.date:member
+  package: ExcelScript!
+  summary: Datumsformate zeigen die Datums-und Uhrzeit Seriennummern als Datumswerte an. Datumsformate, die mit einem Sternchen (*) beginnen, reagieren auf Änderungen in den regionalen Datums-und Uhrzeiteinstellungen, die für das Betriebssystem angegeben sind. Formate ohne Sternchen sind von den Betriebssystem Einstellungen nicht betroffen.
+- name: fraction
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.fraction:member
+  package: ExcelScript!
+  summary: Bruchformate zeigen den Zellenwert als ganze Zahl an, wobei der Rest auf den nächstgelegenen Bruchteil gerundet wird.
+- name: general
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.general:member
+  package: ExcelScript!
+  summary: Allgemeine Format Zellen weisen kein spezifisches Zahlenformat auf.
+- name: number
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.number:member
+  package: ExcelScript!
+  summary: Nummer wird für die allgemeine Anzeige von Zahlen verwendet. Währung und Buchhaltung bieten eine spezielle Formatierung für monetären Wert.
+- name: percentage
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.percentage:member
+  package: ExcelScript!
+  summary: In Prozent Formaten wird der Zellenwert mit 100 multipliziert und das Ergebnis mit einem prozentsymbol angezeigt.
+- name: scientific
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.scientific:member
+  package: ExcelScript!
+  summary: In wissenschaftlichen Formaten wird der Zellenwert als Zahl zwischen 1 und 10 multipliziert mit einer Potenz von 10 angezeigt.
+- name: special
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.special:member
+  package: ExcelScript!
+  summary: Spezielle Formate sind für die Verfolgung von Listen-und Datenbankwerten hilfreich.
+- name: text
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.text:member
+  package: ExcelScript!
+  summary: Zellen im Text Format werden als Text behandelt, auch wenn sich eine Zahl in der Zelle befindet. Die Zelle wird genau wie eingegeben angezeigt.
+- name: time
+  uid: ExcelScript!ExcelScript.NumberFormatCategory.time:member
+  package: ExcelScript!
+  summary: In den Zeitformaten werden die Seriennummern Datum und Uhrzeit als Datumswerte angezeigt. Zeitformate, die mit einem Sternchen (*) beginnen, reagieren auf Änderungen in den regionalen Datums-und Uhrzeiteinstellungen, die für das Betriebssystem angegeben sind. Formate ohne Sternchen sind von den Betriebssystem Einstellungen nicht betroffen.
+metadata:
+  ms.openlocfilehash: 777a00f106fd556e7702ec022cc3baa78008871c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415316"

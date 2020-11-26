@@ -1,80 +1,65 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartFill:interface'
-    summary: Die Füllung für ein Diagrammelement.
-    name: Excel.ChartFill
-    fullName: Excel.ChartFill
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartFill#clear:member(1)'
-      - 'excel!Excel.ChartFill#load:member(1)'
-      - 'excel!Excel.ChartFill#setSolidColor:member(1)'
-  - uid: 'excel!Excel.ChartFill#clear:member(1)'
-    summary: Entfernen der Füllfarbe eines Diagrammelements
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.ChartFill#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartFill#setSolidColor:member(1)'
-    summary: Legt die Füllung eines Diagrammelements auf einfarbige Füllung fest.
-    name: setSolidColor(color)
-    fullName: setSolidColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSolidColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-
-              let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;
-              let point = pointsCollection.getItemAt(2);
-
-              // Set color for chart point.
-              point.format.fill.setSolidColor('red');
-
-              await context.sync();        
-          }
-          ```
-      parameters:
-        - id: color
-          description: 'HTML-Farbcode, der die Hintergrundfarbe des Formulars \# RRGGBB (z.b. "FFA500") oder als benannte HTML-Farbe (beispielsweise "Orange") darstellt.'
-          type:
-            - string
+### YamlMime:TSType
+name: Excel.ChartFill
+uid: excel!Excel.ChartFill:interface
+package: excel!
+fullName: Excel.ChartFill
+summary: Die Füllung für ein Diagrammelement.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: clear()
+  uid: excel!Excel.ChartFill#clear:member(1)
+  package: excel!
+  fullName: clear()
+  summary: Entfernen der Füllfarbe eines Diagrammelements
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.ChartFill#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setSolidColor(color)
+  uid: excel!Excel.ChartFill#setSolidColor:member(1)
+  package: excel!
+  fullName: setSolidColor(color)
+  summary: Legt die Füllung eines Diagrammelements auf einfarbige Füllung fest.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSolidColor(color: string): void;'
+    parameters:
+    - id: color
+      description: HTML-Farbcode, der die Hintergrundfarbe des Formulars \# RRGGBB (z.b. "FFA500") oder als benannte HTML-Farbe (beispielsweise "Orange") darstellt.
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n    let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;\n    let point = pointsCollection.getItemAt(2);\n\n    // Set color for chart point.\n    point.format.fill.setSolidColor('red');\n\n    await context.sync();        \n}\n```"
+metadata:
+  ms.openlocfilehash: a18be61af14a07853b4dc3bde236076faabb3aff
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414999"

@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType:enum'
-    name: ExcelScript.PivotLayoutType
-    fullName: ExcelScript.PivotLayoutType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotLayoutType.compact:member'
-      - 'ExcelScript!ExcelScript.PivotLayoutType.outline:member'
-      - 'ExcelScript!ExcelScript.PivotLayoutType.tabular:member'
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.compact:member'
-    summary: Ein horizontal komprimiertes Formular mit Beschriftungen aus dem nächsten Feld in derselben Spalte.
-    name: compact
-    fullName: compact
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.outline:member'
-    summary: 'Die Elemente der inneren Felder befinden sich in derselben Zeile, in der sich die Elemente und Teilergebnisse von äußeren Feldern immer im unteren Bereich befinden.'
-    name: outline
-    fullName: outline
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType.tabular:member'
-    summary: Die Elemente der inneren Felder befinden sich immer in einer neuen Position relativ zu den Elementen der äußeren Felder.
-    name: tabular
-    fullName: tabular
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.PivotLayoutType
+uid: ExcelScript!ExcelScript.PivotLayoutType:enum
+package: ExcelScript!
+fullName: ExcelScript.PivotLayoutType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: compact
+  uid: ExcelScript!ExcelScript.PivotLayoutType.compact:member
+  package: ExcelScript!
+  summary: Ein horizontal komprimiertes Formular mit Beschriftungen aus dem nächsten Feld in derselben Spalte.
+- name: outline
+  uid: ExcelScript!ExcelScript.PivotLayoutType.outline:member
+  package: ExcelScript!
+  summary: Die Elemente der inneren Felder befinden sich in derselben Zeile, in der sich die Elemente und Teilergebnisse von äußeren Feldern immer im unteren Bereich befinden.
+- name: tabular
+  uid: ExcelScript!ExcelScript.PivotLayoutType.tabular:member
+  package: ExcelScript!
+  summary: Die Elemente der inneren Felder befinden sich immer in einer neuen Position relativ zu den Elementen der äußeren Felder.
+metadata:
+  ms.openlocfilehash: 2c698c1cea3b728857723dbdd00474d8723b9569
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415176"

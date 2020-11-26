@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
-    summary: 'Eine einfache Enumeration für Top/Bottom-Filter, um auszuwählen, ob nach dem oberen n oder unteren n Prozent, der Zahl oder der Summe der Werte gefiltert werden soll.'
-    name: ExcelScript.TopBottomSelectionType
-    fullName: ExcelScript.TopBottomSelectionType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
-      - 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
-      - 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
-    summary: 'Filtert die obere/untere N-Anzahl der Elemente, die vom ausgewählten Wert gemessen werden.'
-    name: items
-    fullName: items
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
-    summary: Filtern Sie die oberen/unteren N% der Elemente nach dem ausgewählten Wert gemessen.
-    name: percent
-    fullName: percent
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
-    summary: 'Filtert die obere/untere N-Summe, gemessen am ausgewählten Wert.'
-    name: sum
-    fullName: sum
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.TopBottomSelectionType
+uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
+package: ExcelScript!
+fullName: ExcelScript.TopBottomSelectionType
+summary: Eine einfache Enumeration für Top/Bottom-Filter, um auszuwählen, ob nach dem oberen n oder unteren n Prozent, der Zahl oder der Summe der Werte gefiltert werden soll.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: items
+  uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
+  package: ExcelScript!
+  summary: Filtert die obere/untere N-Anzahl der Elemente, die vom ausgewählten Wert gemessen werden.
+- name: percent
+  uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
+  package: ExcelScript!
+  summary: Filtern Sie die oberen/unteren N% der Elemente nach dem ausgewählten Wert gemessen.
+- name: sum
+  uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
+  package: ExcelScript!
+  summary: Filtert die obere/untere N-Summe, gemessen am ausgewählten Wert.
+metadata:
+  ms.openlocfilehash: 4772398cc7e7f7f89cef3dcb6148c47eab247ce4
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415169"

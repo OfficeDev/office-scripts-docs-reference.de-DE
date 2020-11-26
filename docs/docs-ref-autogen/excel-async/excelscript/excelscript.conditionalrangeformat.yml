@@ -1,92 +1,84 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
-    summary: 'Ein Format-Objekt, das den Bereich Schriftart, Füllung, Rahmen und andere Eigenschaften des bedingten Formats kapselt.'
-    name: Excel.ConditionalRangeFormat
-    fullName: Excel.ConditionalRangeFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ConditionalRangeFormat#borders:member'
-      - 'excel!Excel.ConditionalRangeFormat#fill:member'
-      - 'excel!Excel.ConditionalRangeFormat#font:member'
-      - 'excel!Excel.ConditionalRangeFormat#load:member(1)'
-      - 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
-  - uid: 'excel!Excel.ConditionalRangeFormat#borders:member'
-    summary: 'Auflistung von Border-Objekten, die auf den allgemeinen bedingten Formatbereich angewendet werden.'
-    name: borders
-    fullName: borders
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly borders: ConditionalRangeBorderCollection;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorderCollection:interface'
-  - uid: 'excel!Excel.ConditionalRangeFormat#fill:member'
-    summary: 'Gibt das Fill-Objekt zurück, das für den allgemeinen bedingten Formatierungsbereich definiert ist.'
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fill: ConditionalRangeFill;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeFill:interface'
-  - uid: 'excel!Excel.ConditionalRangeFormat#font:member'
-    summary: 'Gibt das Font-Objekt zurück, das im allgemeinen bedingten Formatbereich definiert ist.'
-    name: font
-    fullName: font
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly font: ConditionalRangeFont;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeFont:interface'
-  - uid: 'excel!Excel.ConditionalRangeFormat#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
-    summary: 'Stellt den Zahlenformatcode für Excel für den angegebenen Bereich dar. Gelöscht, wenn NULL übergeben wird.'
-    name: numberFormat
-    fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'numberFormat: any;'
-      return:
-        type:
-          - any
-references:
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection:interface'
-    name: ConditionalRangeBorderCollection
-    fullName: Excel.ConditionalRangeBorderCollection
-  - uid: 'excel!Excel.ConditionalRangeFill:interface'
-    name: ConditionalRangeFill
-    fullName: Excel.ConditionalRangeFill
-  - uid: 'excel!Excel.ConditionalRangeFont:interface'
-    name: ConditionalRangeFont
-    fullName: Excel.ConditionalRangeFont
+### YamlMime:TSType
+name: Excel.ConditionalRangeFormat
+uid: excel!Excel.ConditionalRangeFormat:interface
+package: excel!
+fullName: Excel.ConditionalRangeFormat
+summary: Ein Format-Objekt, das den Bereich Schriftart, Füllung, Rahmen und andere Eigenschaften des bedingten Formats kapselt.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: borders
+  uid: excel!Excel.ConditionalRangeFormat#borders:member
+  package: excel!
+  fullName: borders
+  summary: Auflistung von Border-Objekten, die auf den allgemeinen bedingten Formatbereich angewendet werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly borders: ConditionalRangeBorderCollection;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorderCollection:interface" />
+- name: fill
+  uid: excel!Excel.ConditionalRangeFormat#fill:member
+  package: excel!
+  fullName: fill
+  summary: Gibt das Fill-Objekt zurück, das für den allgemeinen bedingten Formatierungsbereich definiert ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fill: ConditionalRangeFill;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeFill:interface" />
+- name: font
+  uid: excel!Excel.ConditionalRangeFormat#font:member
+  package: excel!
+  fullName: font
+  summary: Gibt das Font-Objekt zurück, das im allgemeinen bedingten Formatbereich definiert ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly font: ConditionalRangeFont;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeFont:interface" />
+- name: numberFormat
+  uid: excel!Excel.ConditionalRangeFormat#numberFormat:member
+  package: excel!
+  fullName: numberFormat
+  summary: Stellt den Zahlenformatcode für Excel für den angegebenen Bereich dar. Gelöscht, wenn NULL übergeben wird.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'numberFormat: any;'
+    return:
+      type: any
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ConditionalRangeFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 51aa1fafaa4b4e13877d4df597d8535f8542fbd1
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414174"
