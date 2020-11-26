@@ -1,86 +1,80 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TextRange:interface'
-    summary: 'Enthält den Text, der mit einer Form verknüpft ist, sowie Eigenschaften und Methoden für das Bearbeiten des Texts.'
-    name: Excel.TextRange
-    fullName: Excel.TextRange
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TextRange#font:member'
-      - 'excel!Excel.TextRange#getSubstring:member(1)'
-      - 'excel!Excel.TextRange#load:member(1)'
-      - 'excel!Excel.TextRange#text:member'
-  - uid: 'excel!Excel.TextRange#font:member'
-    summary: 'Gibt ein ShapeFont-Objekt zurück, das die Schriftartattribute für den Textbereich darstellt.'
-    name: font
-    fullName: font
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly font: ShapeFont;'
-      return:
-        type:
-          - 'excel!Excel.ShapeFont:interface'
-  - uid: 'excel!Excel.TextRange#getSubstring:member(1)'
-    summary: Gibt ein TextRange-Objekt für die Teilzeichenfolge im angegebenen Bereich zurück.
-    name: 'getSubstring(start, length)'
-    fullName: 'getSubstring(start, length)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSubstring(start: number, length?: number): TextRange;'
-      return:
-        type:
-          - 'excel!Excel.TextRange:interface'
-        description: ''
-      parameters:
-        - id: start
-          description: 'Der nullbasierte Index des ersten Zeichens, das aus dem Textbereich abgerufen werden soll.'
-          type:
-            - number
-        - id: length
-          description: 'Optional. Die Anzahl der Zeichen, die im neuen Textbereich zurückgegeben werden sollen. Wenn length nicht angegeben wird, werden alle Zeichen vom Anfang bis zum Ende des letzten Absatzes des Textbereichs zurückgegeben.'
-          type:
-            - number
-  - uid: 'excel!Excel.TextRange#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TextRange#text:member'
-    summary: Stellt den unformatierten Textinhalt des Textbereichs dar.
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'text: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: 'excel!Excel.ShapeFont:interface'
-    name: ShapeFont
-    fullName: Excel.ShapeFont
-  - uid: 'excel!Excel.TextRange:interface'
-    name: TextRange
-    fullName: Excel.TextRange
+### YamlMime:TSType
+name: Excel.TextRange
+uid: excel!Excel.TextRange:interface
+package: excel!
+fullName: Excel.TextRange
+summary: Enthält den Text, der mit einer Form verknüpft ist, sowie Eigenschaften und Methoden für das Bearbeiten des Texts.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: font
+  uid: excel!Excel.TextRange#font:member
+  package: excel!
+  fullName: font
+  summary: Gibt ein ShapeFont-Objekt zurück, das die Schriftartattribute für den Textbereich darstellt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly font: ShapeFont;'
+    return:
+      type: <xref uid="excel!Excel.ShapeFont:interface" />
+- name: text
+  uid: excel!Excel.TextRange#text:member
+  package: excel!
+  fullName: text
+  summary: Stellt den unformatierten Textinhalt des Textbereichs dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'text: string;'
+    return:
+      type: string
+methods:
+- name: getSubstring(start, length)
+  uid: excel!Excel.TextRange#getSubstring:member(1)
+  package: excel!
+  fullName: getSubstring(start, length)
+  summary: Gibt ein TextRange-Objekt für die Teilzeichenfolge im angegebenen Bereich zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSubstring(start: number, length?: number): TextRange;'
+    parameters:
+    - id: start
+      description: Der nullbasierte Index des ersten Zeichens, das aus dem Textbereich abgerufen werden soll.
+      type: number
+    - id: length
+      description: Optional. Die Anzahl der Zeichen, die im neuen Textbereich zurückgegeben werden sollen. Wenn length nicht angegeben wird, werden alle Zeichen vom Anfang bis zum Ende des letzten Absatzes des Textbereichs zurückgegeben.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.TextRange:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TextRange#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 1868101ec70abdd715b4335eefea33fb70d3cbe7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418198"

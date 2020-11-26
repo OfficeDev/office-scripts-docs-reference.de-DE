@@ -1,1896 +1,1285 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Workbook:interface'
-    summary: 'Die Arbeitsmappe ist das Objekt auf oberster Ebene , das dazugehörige Arbeitsmappenobjekte wie z. B. Arbeitsblätter, Tabellen, Bereiche usw. enthält.'
-    name: ExcelScript.Workbook
-    fullName: ExcelScript.Workbook
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Workbook#addBinding:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addBindingFromNamedItem:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addBindingFromSelection:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addComment:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addNamedItem:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addPredefinedCellStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addSlicer:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addTable:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addTimelineStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getActiveWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getApplication:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getAutoSave:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getBinding:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getBindings:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getCalculationEngineVersion:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getChartDataPointTrack:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getComment:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getCommentByCell:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getComments:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getDefaultTableStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getFirstWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getLastWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getName:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getNames:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getPivotTables:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getPreviouslySaved:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getProperties:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getProtection:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getSelectedRange:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getSlicer:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getSlicers:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getSlicerStyles:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getTable:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getTables:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getTableStyles:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getTimelineStyles:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#getWorksheets:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#refreshAllPivotTables:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#setChartDataPointTrack:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)'
-      - 'ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Workbook#addBinding:member(1)'
-    summary: Fügt eine neue Bindung an einen bestimmten Bereich hinzu.
-    name: 'addBinding(range, bindingType, id)'
-    fullName: 'addBinding(range, bindingType, id)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addBinding(
-                    range: Range | string,
-                    bindingType: BindingType,
-                    id: string
-                ): Binding;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Binding:interface'
-        description: ''
-      parameters:
-        - id: range
-          description: Bereich für die Bindung. Kann ein Excel-Range-Objekt oder eine Zeichenfolge sein. Eine Zeichenfolge muss die vollständige Adresse einschließlich des Blattnamens enthalten.
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
-        - id: bindingType
-          description: Typ der Bindung. Siehe ExcelScript. BindingType.
-          type:
-            - 'ExcelScript!ExcelScript.BindingType:enum'
-        - id: id
-          description: Name der Bindung.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#addBindingFromNamedItem:member(1)'
-    summary: 'Fügt eine neue Bindung auf Grundlage eines benannten Elements in der Arbeitsmappe hinzu. Wenn das benannte Element auf mehrere Bereiche verweist, wird der Fehler "InvalidReference" zurückgegeben.'
-    name: 'addBindingFromNamedItem(name, bindingType, id)'
-    fullName: 'addBindingFromNamedItem(name, bindingType, id)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addBindingFromNamedItem(
-                    name: string,
-                    bindingType: BindingType,
-                    id: string
-                ): Binding;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Binding:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 'Name, aus dem die Bindung erstellt wird.'
-          type:
-            - string
-        - id: bindingType
-          description: Typ der Bindung. Siehe ExcelScript. BindingType.
-          type:
-            - 'ExcelScript!ExcelScript.BindingType:enum'
-        - id: id
-          description: Name der Bindung.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#addBindingFromSelection:member(1)'
-    summary: 'Fügt eine neue Bindung basierend auf der aktuellen Auswahl hinzu. Wenn die Auswahl mehrere Bereiche aufweist, wird der Fehler "InvalidReference" zurückgegeben.'
-    name: 'addBindingFromSelection(bindingType, id)'
-    fullName: 'addBindingFromSelection(bindingType, id)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addBindingFromSelection(bindingType: BindingType, id: string): Binding;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Binding:interface'
-        description: ''
-      parameters:
-        - id: bindingType
-          description: Typ der Bindung. Siehe ExcelScript. BindingType.
-          type:
-            - 'ExcelScript!ExcelScript.BindingType:enum'
-        - id: id
-          description: Name der Bindung.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#addComment:member(1)'
-    summary: 'Erstellt einen neuen Kommentar mit dem angegebenen Inhalt auf der angegebenen Zelle. `InvalidArgument`Wenn der angegebene Bereich größer als eine Zelle ist, wird ein Fehler ausgelöst.'
-    name: 'addComment(cellAddress, content, contentType)'
-    fullName: 'addComment(cellAddress, content, contentType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addComment(
-                    cellAddress: Range | string,
-                    content: CommentRichContent | string,
-                    contentType?: ContentType
-                ): Comment;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment:interface'
-        description: ''
-      parameters:
-        - id: cellAddress
-          description: 'Die Zelle, der der Kommentar hinzugefügt wird. Dies kann ein Range-Objekt oder eine Zeichenfolge sein. Wenn es sich um eine Zeichenfolge handelt, muss Sie die vollständige Adresse enthalten, einschließlich des Blatt namens. `InvalidArgument`Wenn der angegebene Bereich größer als eine Zelle ist, wird ein Fehler ausgelöst.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addComment~0:complex'
-        - id: content
-          description: Der Inhalt des Kommentars. Dies kann eine Zeichenfolge oder ein CommentRichContent-Objekt sein. Zeichenfolgen werden für nur-Text verwendet. CommentRichContent-Objekte ermöglichen andere Kommentarfeatures wie Erwähnungen.
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
-        - id: contentType
-          description: 'Optional. Der Typ des Inhalts, der im Kommentar enthalten ist. Der Standardwert ist Enum. `ContentType.Plain`<!-- -->.'
-          type:
-            - 'ExcelScript!ExcelScript.ContentType:enum'
-  - uid: 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'
-    summary: Fügt der Arbeitsmappe eine neue benutzerdefinierte XML-Komponente hinzu.
-    name: addCustomXmlPart(xml)
-    fullName: addCustomXmlPart(xml)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addCustomXmlPart(xml: string): CustomXmlPart;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CustomXmlPart:interface'
-        description: ''
-      parameters:
-        - id: xml
-          description: XML-Inhalt. Es muss sich um ein gültiges XML-Fragment handeln.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItem:member(1)'
-    summary: Fügt einen neuen Namen zur Auflistung des angegebenen Bereichs hinzu.
-    name: 'addNamedItem(name, reference, comment)'
-    fullName: 'addNamedItem(name, reference, comment)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addNamedItem(
-                    name: string,
-                    reference: Range | string,
-                    comment?: string
-                ): NamedItem;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.NamedItem:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Der Name des benannten Elements.
-          type:
-            - string
-        - id: reference
-          description: 'Die Formel oder der Bereich, auf die bzw. den der Name verweist.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addNamedItem~0:complex'
-        - id: comment
-          description: Optional. Der dem benannten Element zugeordnete Kommentar.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
-    summary: Fügt einen neuen Namen zu der Auflistung des angegebenen Bereichs unter Verwendung des Gebietsschemas des Benutzers für die Formel hinzu.
-    name: 'addNamedItemFormulaLocal(name, formula, comment)'
-    fullName: 'addNamedItemFormulaLocal(name, formula, comment)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addNamedItemFormulaLocal(
-                    name: string,
-                    formula: string,
-                    comment?: string
-                ): NamedItem;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.NamedItem:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Der „Name“ des benannten Elements.
-          type:
-            - string
-        - id: formula
-          description: 'Die Formel im Gebietsschema des Benutzers, auf die der Name verweist.'
-          type:
-            - string
-        - id: comment
-          description: Optional. Der dem benannten Element zugeordnete Kommentar.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)'
-    summary: 'Fügen Sie eine PivotTable basierend auf den angegebenen Quelldaten hinzu, und fügen Sie Sie in der oberen linken Zelle des Zielbereichs ein.'
-    name: 'addPivotTable(name, source, destination)'
-    fullName: 'addPivotTable(name, source, destination)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addPivotTable(
-                    name: string,
-                    source: Range | string | Table,
-                    destination: Range | string
-                ): PivotTable;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Der Name der neuen PivotTable.
-          type:
-            - string
-        - id: source
-          description: Die Quelldaten für die neue PivotTable kann dies entweder ein Bereich (oder eine Zeichenfolgen Adresse mit dem Arbeitsblattnamen) oder eine Tabelle sein.
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addPivotTable~0:complex'
-        - id: destination
-          description: 'Die Zelle in der oberen linken Ecke des Zielbereichs des PivotTable-Berichts (der Bereich auf dem Arbeitsblatt, in dem der resultierende Bericht platziert wird).'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addPivotTable~1:complex'
-  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)'
-    summary: Erstellt einen leeren PivotTableStyle mit dem angegebenen Namen.
-    name: 'addPivotTableStyle(name, makeUniqueName)'
-    fullName: 'addPivotTableStyle(name, makeUniqueName)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addPivotTableStyle(
-                    name: string,
-                    makeUniqueName?: boolean
-                ): PivotTableStyle;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTableStyle:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 'Der eindeutige Name für den neuen pivottablestyle. Eine ungültige Argumentausnahme wird ausgelöst, wenn der Name bereits verwendet wird.'
-          type:
-            - string
-        - id: makeUniqueName
-          description: 'Optional, standardmäßig auf false festgelegt. Wenn true, werden Zahlen an den Namen angefügt, um ihn eindeutig zu machen, falls erforderlich.'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Workbook#addPredefinedCellStyle:member(1)'
-    summary: Fügt der Sammlung eine neue Formatvorlage hinzu.
-    name: addPredefinedCellStyle(name)
-    fullName: addPredefinedCellStyle(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addPredefinedCellStyle(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: Der Name der hinzuzufügenden Formatvorlage.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer:member(1)'
-    summary: Fügt der Arbeitsmappe einen neuen Datenschnitt hinzu.
-    name: 'addSlicer(slicerSource, sourceField, slicerDestination)'
-    fullName: 'addSlicer(slicerSource, sourceField, slicerDestination)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addSlicer(
-                    slicerSource: string | PivotTable | Table,
-                    sourceField: string | PivotField | number | TableColumn,
-                    slicerDestination?: string | Worksheet
-                ): Slicer;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Slicer:interface'
-        description: ''
-      parameters:
-        - id: slicerSource
-          description: 'Die Datenquelle, auf der der neue datenschnitt basieren soll. Dabei kann es sich um ein PivotTable-Objekt, ein Table-Objekt oder eine Zeichenfolge handeln. Wenn ein PivotTable-Objekt übergeben wird, ist die Datenquelle die Quelle des PivotTable-Objekts. Wenn ein Table-Objekt übergeben wird, ist die Datenquelle das Table-Objekt. Wenn eine Zeichenfolge übergeben wird, wird Sie als Name/ID einer PivotTable/Tabelle interpretiert.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addSlicer~0:complex'
-        - id: sourceField
-          description: 'Das Feld in der Datenquelle, nach dem gefiltert werden soll. Dabei kann es sich um ein PivotField-Objekt, ein Table Column-Objekt, die ID eines PivotField-Objekts oder die ID/Name-Spalte handeln.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addSlicer~1:complex'
-        - id: slicerDestination
-          description: 'Optional. Das Arbeitsblatt, in dem der neue datenschnitt erstellt wird. Dabei kann es sich um ein Worksheet-Objekt oder den Namen/die ID eines Arbeitsblatts handeln. Dieser Parameter kann ausgelassen werden, wenn die Slicer-Auflistung aus dem Arbeitsblatt abgerufen wird.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addSlicer~2:complex'
-  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)'
-    summary: Erstellt einen leeren SlicerStyle mit dem angegebenen Namen.
-    name: 'addSlicerStyle(name, makeUniqueName)'
-    fullName: 'addSlicerStyle(name, makeUniqueName)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addSlicerStyle(name: string, makeUniqueName?: boolean): SlicerStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.SlicerStyle:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 'Der eindeutige Name für die neue SlicerStyle. Eine ungültige Argumentausnahme wird ausgelöst, wenn der Name bereits verwendet wird.'
-          type:
-            - string
-        - id: makeUniqueName
-          description: 'Optional, standardmäßig auf false festgelegt. Wenn true, werden Zahlen an den Namen angefügt, um ihn eindeutig zu machen, falls erforderlich.'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Workbook#addTable:member(1)'
-    summary: "Erstellt eine neue Tabelle. Das Bereichsobjekt oder die Quelladresse bestimmt das Arbeitsblatt, unter dem die Tabelle hinzugefügt wird. Wenn die Tabelle nicht hinzugefügt werden kann (z.\_B. weil die Adresse ungültig ist oder sich die Tabelle mit einer anderen Tabelle überlappen würde), wird ein Fehler ausgelöst."
-    name: 'addTable(address, hasHeaders)'
-    fullName: 'addTable(address, hasHeaders)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Table:interface'
-        description: ''
-      parameters:
-        - id: address
-          description: 'Ein Range-Objekt oder eine Zeichenfolgenadresse oder der Name des Bereichs, der die Datenquelle darstellt. Wenn die Adresse keinen Arbeitsblattnamen enthält, wird das aktuell aktive Blatt verwendet.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#addTable~0:complex'
-        - id: hasHeaders
-          description: 'Boolescher Wert, der angibt, ob die importierten Daten Spaltenüberschriften besitzen. Wenn die Quelle keine Überschriften enthält (d. h. wenn diese Eigenschaft auf falsch festgelegt ist), generiert Excel automatisch eine Überschriftenänderung der Daten nach einer Zeile.'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)'
-    summary: Erstellt einen leeren TableStyle mit dem angegebenen Namen.
-    name: 'addTableStyle(name, makeUniqueName)'
-    fullName: 'addTableStyle(name, makeUniqueName)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addTableStyle(name: string, makeUniqueName?: boolean): TableStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.TableStyle:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 'Der eindeutige Name für den neuen TableStyle. Eine ungültige Argumentausnahme wird ausgelöst, wenn der Name bereits verwendet wird.'
-          type:
-            - string
-        - id: makeUniqueName
-          description: 'Optional, standardmäßig auf false festgelegt. Wenn true, werden Zahlen an den Namen angefügt, um ihn eindeutig zu machen, falls erforderlich.'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Workbook#addTimelineStyle:member(1)'
-    summary: Erstellt einen leeren TimelineStyle mit dem angegebenen Namen.
-    name: 'addTimelineStyle(name, makeUniqueName)'
-    fullName: 'addTimelineStyle(name, makeUniqueName)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addTimelineStyle(name: string, makeUniqueName?: boolean): TimelineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.TimelineStyle:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 'Der eindeutige Name für die neue timelinestyle. Eine ungültige Argumentausnahme wird ausgelöst, wenn der Name bereits verwendet wird.'
-          type:
-            - string
-        - id: makeUniqueName
-          description: 'Optional, standardmäßig auf false festgelegt. Wenn true, werden Zahlen an den Namen angefügt, um ihn eindeutig zu machen, falls erforderlich.'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)'
-    summary: 'Fügt der Arbeitsmappe ein neues Arbeitsblatt hinzu. Das Arbeitsblatt wird automatisch am Ende der vorhandenen Arbeitsblättern hinzugefügt. Wenn Sie das neu hinzugefügte Arbeitsblatt aktivieren möchten, rufen Sie „.activate()“ dazu auf.'
-    name: addWorksheet(name)
-    fullName: addWorksheet(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addWorksheet(name?: string): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 'Optional. Der Name des hinzuzufügenden Arbeitsblatts. Falls angegeben, sollte der Name eindeutig sein. Falls nicht angegeben, bestimmt Excel den Namen des neuen Arbeitsblatts.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)'
-    summary: Ruft die derzeit aktive Zelle aus der Arbeitsmappe ab.
-    name: getActiveCell()
-    fullName: getActiveCell()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getActiveCell(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```javascript
-          /**
-           * This script logs the value of the current active cell. 
-           * If multiple cells are selected, the top-leftmost cell will be logged.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the current active cell in the workbook.
-            let cell = workbook.getActiveCell();
-            console.log(`The current cell's value is ${cell.getValue()}`);
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)'
-    summary: 'Ruft das derzeit aktive Diagramm in der Arbeitsmappe ab. Wenn kein aktives Diagramm vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getActiveChart()
-    fullName: getActiveChart()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getActiveChart(): Chart;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Chart:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)'
-    summary: 'Ruft den derzeit aktiven Datenschnitt in der Arbeitsmappe ab. Wenn kein aktiver Datenschnitt vorhanden ist, wird ein Nullobjekt zurückgegeben.'
-    name: getActiveSlicer()
-    fullName: getActiveSlicer()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getActiveSlicer(): Slicer;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Slicer:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveWorksheet:member(1)'
-    summary: Ruft das derzeit aktive Arbeitsblatt in der Arbeitsmappe ab.
-    name: getActiveWorksheet()
-    fullName: getActiveWorksheet()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getActiveWorksheet(): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getApplication:member(1)'
-    summary: 'Stellt die Excel-Anwendungsinstanz dar, die diese Arbeitsmappe enthält.'
-    name: getApplication()
-    fullName: getApplication()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getApplication(): Application;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Application:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getAutoSave:member(1)'
-    summary: 'Gibt an, ob sich die Arbeitsmappe im Autosave-Modus befindet.'
-    name: getAutoSave()
-    fullName: getAutoSave()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAutoSave(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getBinding:member(1)'
-    summary: 'Ruft ein Binding-Objekt anhand seiner ID ab. Wenn das Binding-Objekt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getBinding(id)
-    fullName: getBinding(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBinding(id: string): Binding | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getBinding~0:complex'
-        description: ''
-      parameters:
-        - id: id
-          description: ID des abzurufenden Binding-Objekts.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getBindings:member(1)'
-    summary: 'Stellt eine Auflistung aller Bindungen dar, die Teil der Arbeitsmappe sind.'
-    name: getBindings()
-    fullName: getBindings()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBindings(): Binding[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getBindings~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getCalculationEngineVersion:member(1)'
-    summary: Gibt eine Nummer zur Version des Excel-Berechnungsmoduls zurück.
-    name: getCalculationEngineVersion()
-    fullName: getCalculationEngineVersion()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCalculationEngineVersion(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getChartDataPointTrack:member(1)'
-    summary: 'True, wenn alle Diagramme in der Arbeitsmappe die tatsächlichen Datenpunkte nachverfolgen, mit denen sie verbunden sind. False, wenn die Diagramme den Index der Datenpunkte nachverfolgen.'
-    name: getChartDataPointTrack()
-    fullName: getChartDataPointTrack()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getChartDataPointTrack(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getComment:member(1)'
-    summary: Ruft einen Kommentar aus der Sammlung basierend auf der ID ab.
-    name: getComment(commentId)
-    fullName: getComment(commentId)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getComment(commentId: string): Comment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment:interface'
-        description: ''
-      parameters:
-        - id: commentId
-          description: Der Bezeichner für den Kommentar.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getCommentByCell:member(1)'
-    summary: Ruft den Kommentar aus der angegebenen Zelle ab.
-    name: getCommentByCell(cellAddress)
-    fullName: getCommentByCell(cellAddress)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCommentByCell(cellAddress: Range | string): Comment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment:interface'
-        description: ''
-      parameters:
-        - id: cellAddress
-          description: 'Die Zelle, auf der sich der Kommentar befindet. Dies kann ein Range-Objekt oder eine Zeichenfolge sein. Wenn es sich um eine Zeichenfolge handelt, muss Sie die vollständige Adresse enthalten, einschließlich des Blatt namens. `InvalidArgument`Wenn der angegebene Bereich größer als eine Zelle ist, wird ein Fehler ausgelöst.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#getCommentByCell~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)'
-    summary: 'Ruft den Kommentar ab, an den die angegebene Antwort angeschlossen ist.'
-    name: getCommentByReplyId(replyId)
-    fullName: getCommentByReplyId(replyId)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCommentByReplyId(replyId: string): Comment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment:interface'
-        description: ''
-      parameters:
-        - id: replyId
-          description: Der Bezeichner der Kommentar Antwort.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getComments:member(1)'
-    summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften Kommentare dar.
-    name: getComments()
-    fullName: getComments()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getComments(): Comment[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getComments~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)'
-    summary: 'Ruft eine benutzerdefinierte XML-Komponente basierend auf ihrer ID ab. Wenn das CustomXMLPart-Objekt nicht vorhanden ist, wird die IsNull-Eigenschaft des Rückgabe Objekts auf true festgelegt.'
-    name: getCustomXmlPart(id)
-    fullName: getCustomXmlPart(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCustomXmlPart(id: string): CustomXmlPart | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart~0:complex'
-        description: ''
-      parameters:
-        - id: id
-          description: 'ID des Objekts, das abgerufen werden soll.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace:member(1)'
-    summary: 'Ruft eine neue bereichsbezogene Sammlung von benutzerdefinierten XML-Komponenten ab, deren Namespaces dem angegebenen Namespace entsprechen.'
-    name: getCustomXmlPartByNamespace(namespaceUri)
-    fullName: getCustomXmlPartByNamespace(namespaceUri)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCustomXmlPartByNamespace(namespaceUri: string): CustomXmlPart[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace~0:complex'
-        description: ''
-      parameters:
-        - id: namespaceUri
-          description: 'Hierbei muss es sich um einen vollqualifizierten Schema-URI handeln. Beispiel: " http://schemas.contoso.com/review/1.0 ".'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts:member(1)'
-    summary: 'Stellt die Auflistung von benutzerdefinierten XML-Parts dar, die in dieser Arbeitsmappe enthalten sind.'
-    name: getCustomXmlParts()
-    fullName: getCustomXmlParts()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCustomXmlParts(): CustomXmlPart[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)'
-    summary: Ruft den Standard-PivotTableStyle für den Bereich des übergeordneten Objekts ab.
-    name: getDefaultPivotTableStyle()
-    fullName: getDefaultPivotTableStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDefaultPivotTableStyle(): PivotTableStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTableStyle:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)'
-    summary: Ruft den Standard-SlicerStyle für den Bereich des übergeordneten Objekts ab.
-    name: getDefaultSlicerStyle()
-    fullName: getDefaultSlicerStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDefaultSlicerStyle(): SlicerStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.SlicerStyle:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultTableStyle:member(1)'
-    summary: Ruft den Standard-TableStyle für den Bereich des übergeordneten Objekts ab.
-    name: getDefaultTableStyle()
-    fullName: getDefaultTableStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDefaultTableStyle(): TableStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.TableStyle:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)'
-    summary: Ruft den Standard-TimelineStyle für den Bereich des übergeordneten Objekts ab.
-    name: getDefaultTimelineStyle()
-    fullName: getDefaultTimelineStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDefaultTimelineStyle(): TimelineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.TimelineStyle:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getFirstWorksheet:member(1)'
-    summary: Ruft das erste Arbeitsblatt in der Sammlung ab.
-    name: getFirstWorksheet(visibleOnly)
-    fullName: getFirstWorksheet(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 'Optional. Bei true werden nur sichtbare Arbeitsblätter berücksichtigt, und alle ausgeblendeten werden übersprungen.'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)'
-    summary: 'Gibt an, ob seit der letzten Speicherung der Arbeitsmappe Änderungen vorgenommen wurden. Sie können diese Eigenschaft auf true festlegen, wenn Sie eine geänderte Arbeitsmappe schließen möchten, ohne Sie zu speichern oder zum Speichern aufgefordert zu werden.'
-    name: getIsDirty()
-    fullName: getIsDirty()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsDirty(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getLastWorksheet:member(1)'
-    summary: Ruft das letzte Arbeitsblatt in der Sammlung ab.
-    name: getLastWorksheet(visibleOnly)
-    fullName: getLastWorksheet(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 'Optional. Bei true werden nur sichtbare Arbeitsblätter berücksichtigt, und alle ausgeblendeten werden übersprungen.'
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Workbook#getName:member(1)'
-    summary: Ruft den Namen der Arbeitsmappe ab.
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)'
-    summary: 'Ruft ein NamedItem-Objekt mit seinem Namen ab. Wenn das nameditem-Objekt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getNamedItem(name)
-    fullName: getNamedItem(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNamedItem(name: string): NamedItem | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getNamedItem~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: NamedItem-Name.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getNames:member(1)'
-    summary: Stellt eine Auflistung der benannten Elemente des Arbeitsmappenbereichs dar (benannte Bereiche und Konstanten).
-    name: getNames()
-    fullName: getNames()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNames(): NamedItem[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getNames~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)'
-    summary: 'Ruft eine PivotTable anhand des Namens ab. Wenn die PivotTable nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getPivotTable(name)
-    fullName: getPivotTable(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotTable(name: string): PivotTable | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getPivotTable~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Name der abzurufenden PivotTable.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTables:member(1)'
-    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften PivotTables dar.
-    name: getPivotTables()
-    fullName: getPivotTables()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotTables(): PivotTable[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getPivotTables~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)'
-    summary: 'Ruft einen PivotTableStyle anhand des Namens ab. Wenn der PivotTableStyle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getPivotTableStyle(name)
-    fullName: getPivotTableStyle(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotTableStyle(name: string): PivotTableStyle | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Name des abzurufenden pivottablestyle.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles:member(1)'
-    summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften PivotTableStyles dar.
-    name: getPivotTableStyles()
-    fullName: getPivotTableStyles()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotTableStyles(): PivotTableStyle[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyle:member(1)'
-    summary: Ruft eine Formatvorlage anhand des Namens ab.
-    name: getPredefinedCellStyle(name)
-    fullName: getPredefinedCellStyle(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPredefinedCellStyle(name: string): PredefinedCellStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 'Name des Formats, das abgerufen werden soll.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles:member(1)'
-    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Formatvorlagen dar.
-    name: getPredefinedCellStyles()
-    fullName: getPredefinedCellStyles()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPredefinedCellStyles(): PredefinedCellStyle[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPreviouslySaved:member(1)'
-    summary: 'Gibt an, ob die Arbeitsmappe jemals lokal oder online gespeichert wurde.'
-    name: getPreviouslySaved()
-    fullName: getPreviouslySaved()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPreviouslySaved(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getProperties:member(1)'
-    summary: Ruft die Arbeitsmappeneigenschaften ab.
-    name: getProperties()
-    fullName: getProperties()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getProperties(): DocumentProperties;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DocumentProperties:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getProtection:member(1)'
-    summary: Gibt das Protection-Objekt für eine Arbeitsmappe zurück.
-    name: getProtection()
-    fullName: getProtection()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getProtection(): WorkbookProtection;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.WorkbookProtection:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)'
-    summary: 'True, wenn die Arbeitsmappe im schreibgeschützten Modus geöffnet ist.'
-    name: getReadOnly()
-    fullName: getReadOnly()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getReadOnly(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSelectedRange:member(1)'
-    summary: 'Ruft den aktuell ausgewählten einzelnen Bereich aus der Arbeitsmappe ab. Wenn mehrere Bereiche ausgewählt sind, wird durch diese Methode ein Fehler ausgelöst.'
-    name: getSelectedRange()
-    fullName: getSelectedRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelectedRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)'
-    summary: 'Ruft die aktuell ausgewählten Bereiche (einen oder mehrere) aus der Arbeitsmappe ab. Gibt im Gegensatz zu getSelectedRange() ein RangeAreas-Objekt zurück, das alle ausgewählten Bereiche darstellt.'
-    name: getSelectedRanges()
-    fullName: getSelectedRanges()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelectedRanges(): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicer:member(1)'
-    summary: 'Ruft einen Datenschnitt anhand seines Namens oder seiner ID ab. Wenn der Datenschnitt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getSlicer(key)
-    fullName: getSlicer(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSlicer(key: string): Slicer | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getSlicer~0:complex'
-        description: ''
-      parameters:
-        - id: key
-          description: 'Der Name oder die ID des datenschnitts, der abgerufen werden soll.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicers:member(1)'
-    summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften Datenschnitte dar.
-    name: getSlicers()
-    fullName: getSlicers()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSlicers(): Slicer[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getSlicers~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)'
-    summary: 'Ruft einen SlicerStyle anhand des Namens ab. Wenn der SlicerStyle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getSlicerStyle(name)
-    fullName: getSlicerStyle(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSlicerStyle(name: string): SlicerStyle | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getSlicerStyle~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: 'Name des SlicerStyle, das abgerufen werden soll.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyles:member(1)'
-    summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften SlicerStyles dar.
-    name: getSlicerStyles()
-    fullName: getSlicerStyles()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSlicerStyles(): SlicerStyle[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getSlicerStyles~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTable:member(1)'
-    summary: 'Ruft eine Tabelle anhand des Namens oder der ID ab. Wenn die Tabelle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getTable(key)
-    fullName: getTable(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTable(key: string): Table | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getTable~0:complex'
-        description: ''
-      parameters:
-        - id: key
-          description: Name oder ID der abzurufenden Tabelle.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTables:member(1)'
-    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Tabellen dar.
-    name: getTables()
-    fullName: getTables()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTables(): Table[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getTables~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)'
-    summary: 'Ruft einen TableStyle anhand des Namens ab. Wenn der TableStyle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getTableStyle(name)
-    fullName: getTableStyle(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTableStyle(name: string): TableStyle | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getTableStyle~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: 'Name des TableStyles, der abgerufen werden soll.'
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyles:member(1)'
-    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften TableStyles dar.
-    name: getTableStyles()
-    fullName: getTableStyles()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTableStyles(): TableStyle[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getTableStyles~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)'
-    summary: 'Ruft einen TimelineStyle anhand des Namens ab. Wenn der TimelineStyle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getTimelineStyle(name)
-    fullName: getTimelineStyle(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTimelineStyle(name: string): TimelineStyle | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getTimelineStyle~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Name des abzurufenden timelinestyle.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyles:member(1)'
-    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften TimelineStyles dar.
-    name: getTimelineStyles()
-    fullName: getTimelineStyles()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTimelineStyles(): TimelineStyle[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getTimelineStyles~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)'
-    summary: 'True, wenn die Berechnungen in dieser Arbeitsmappe nur mit der Genauigkeit durchgeführt werden, mit der die Zahlen angezeigt werden. Daten verlieren dauerhaft die Genauigkeit, wenn diese Eigenschaft von false auf true umgeschaltet wird.'
-    name: getUsePrecisionAsDisplayed()
-    fullName: getUsePrecisionAsDisplayed()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsePrecisionAsDisplayed(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)'
-    summary: 'Ruft das Arbeitsblattobjekt mithilfe des Namens oder der ID ab. Wenn das Arbeitsblatt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.'
-    name: getWorksheet(key)
-    fullName: getWorksheet(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWorksheet(key: string): Worksheet | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getWorksheet~0:complex'
-        description: ''
-      parameters:
-        - id: key
-          description: Der Name oder die ID des Arbeitsblatts.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheets:member(1)'
-    summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Arbeitsblätter dar.
-    name: getWorksheets()
-    fullName: getWorksheets()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWorksheets(): Worksheet[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Workbook#getWorksheets~0:complex'
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```javascript
-          /**
-           * This script logs the names of all the worksheets in the workbook.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get all the worksheets in the workbook. 
-            let sheets = workbook.getWorksheets();
-
-            // Get a list of all the worksheet names.
-            let names = sheets.map ((sheet) => sheet.getName());
-
-            // Write in the console all the worksheet names and the total count.
-            console.log(names);
-            console.log(`Total worksheets inside of this workbook: ${sheets.length}`);
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)'
-    summary: Aktualisiert alle Datenverbindungen.
-    name: refreshAllDataConnections()
-    fullName: refreshAllDataConnections()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'refreshAllDataConnections(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#refreshAllPivotTables:member(1)'
-    summary: Aktualisiert alle PivotTables in der Sammlung.
-    name: refreshAllPivotTables()
-    fullName: refreshAllPivotTables()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'refreshAllPivotTables(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Workbook#setChartDataPointTrack:member(1)'
-    summary: 'True, wenn alle Diagramme in der Arbeitsmappe die tatsächlichen Datenpunkte nachverfolgen, mit denen sie verbunden sind. False, wenn die Diagramme den Index der Datenpunkte nachverfolgen.'
-    name: setChartDataPointTrack(chartDataPointTrack)
-    fullName: setChartDataPointTrack(chartDataPointTrack)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setChartDataPointTrack(chartDataPointTrack: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: chartDataPointTrack
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)'
-    summary: Legt den Standard-PivotTableStyle für die Verwendung im Bereich des übergeordneten Objekts fest.
-    name: setDefaultPivotTableStyle(newDefaultStyle)
-    fullName: setDefaultPivotTableStyle(newDefaultStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setDefaultPivotTableStyle(
-                    newDefaultStyle: PivotTableStyle | string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newDefaultStyle
-          description: 'Das pivottablestyle-Objekt oder der Name des pivottablestyle-Objekts, das als neuer Standardwert verwendet werden soll.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)'
-    summary: Ruft den Standard-SlicerStyle für die Verwendung im Bereich des übergeordneten Objekts ab.
-    name: setDefaultSlicerStyle(newDefaultStyle)
-    fullName: setDefaultSlicerStyle(newDefaultStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDefaultSlicerStyle(newDefaultStyle: SlicerStyle | string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newDefaultStyle
-          description: 'Das SlicerStyle-Objekt oder der Name des SlicerStyle-Objekts, das als neuer Standardwert verwendet werden soll.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle:member(1)'
-    summary: Legt den Standard-TableStyle für die Verwendung im Bereich des übergeordneten Objekts fest.
-    name: setDefaultTableStyle(newDefaultStyle)
-    fullName: setDefaultTableStyle(newDefaultStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDefaultTableStyle(newDefaultStyle: TableStyle | string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newDefaultStyle
-          description: 'Das TableStyle-Objekt oder der Name des TableStyle-Objekts, das als neuer Standardwert verwendet werden soll.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)'
-    summary: Legt den Standard-TimelineStyle für die Verwendung im Bereich des übergeordneten Objekts fest.
-    name: setDefaultTimelineStyle(newDefaultStyle)
-    fullName: setDefaultTimelineStyle(newDefaultStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDefaultTimelineStyle(newDefaultStyle: TimelineStyle | string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newDefaultStyle
-          description: 'Das timelinestyle-Objekt oder der Name des timelinestyle-Objekts, das als neuer Standardwert verwendet werden soll.'
-          type:
-            - 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)'
-    summary: 'Gibt an, ob seit der letzten Speicherung der Arbeitsmappe Änderungen vorgenommen wurden. Sie können diese Eigenschaft auf true festlegen, wenn Sie eine geänderte Arbeitsmappe schließen möchten, ohne Sie zu speichern oder zum Speichern aufgefordert zu werden.'
-    name: setIsDirty(isDirty)
-    fullName: setIsDirty(isDirty)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setIsDirty(isDirty: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: isDirty
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)'
-    summary: 'True, wenn die Berechnungen in dieser Arbeitsmappe nur mit der Genauigkeit durchgeführt werden, mit der die Zahlen angezeigt werden. Daten verlieren dauerhaft die Genauigkeit, wenn diese Eigenschaft von false auf true umgeschaltet wird.'
-    name: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
-    fullName: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUsePrecisionAsDisplayed(usePrecisionAsDisplayed: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: usePrecisionAsDisplayed
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.Binding:interface'
-    name: Binding
-    fullName: ExcelScript.Binding
-  - uid: 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.BindingType:enum'
-    name: BindingType
-    fullName: ExcelScript.BindingType
-  - uid: 'ExcelScript!ExcelScript.Comment:interface'
-    name: Comment
-    fullName: ExcelScript.Comment
-  - uid: 'ExcelScript!ExcelScript.Workbook#addComment~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
-    name: CommentRichContent | string
-    fullName: ExcelScript.CommentRichContent | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
-        name: CommentRichContent
-        fullName: ExcelScript.CommentRichContent
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.ContentType:enum'
-    name: ContentType
-    fullName: ExcelScript.ContentType
-  - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
-    name: CustomXmlPart
-    fullName: ExcelScript.CustomXmlPart
-  - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
-    name: NamedItem
-    fullName: ExcelScript.NamedItem
-  - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItem~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-    name: PivotTable
-    fullName: ExcelScript.PivotTable
-  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable~0:complex'
-    name: Range | string | Table
-    fullName: ExcelScript.Range | string | ExcelScript.Table
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string | '
-        fullName: ' | string | '
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable~1:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: |2-
-           | string
-                  
-        fullName: |2-
-           | string
-                  
-  - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
-    name: PivotTableStyle
-    fullName: ExcelScript.PivotTableStyle
-  - uid: 'ExcelScript!ExcelScript.Slicer:interface'
-    name: Slicer
-    fullName: ExcelScript.Slicer
-  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer~0:complex'
-    name: string | PivotTable | Table
-    fullName: string | ExcelScript.PivotTable | ExcelScript.Table
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-        name: PivotTable
-        fullName: ExcelScript.PivotTable
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer~1:complex'
-    name: string | PivotField | number | TableColumn
-    fullName: string | ExcelScript.PivotField | number | ExcelScript.TableColumn
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
-        name: PivotField
-        fullName: ExcelScript.PivotField
-      - name: ' | number | '
-        fullName: ' | number | '
-      - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
-        name: TableColumn
-        fullName: ExcelScript.TableColumn
-  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer~2:complex'
-    name: string | Worksheet
-    fullName: string | ExcelScript.Worksheet
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-        name: Worksheet
-        fullName: ExcelScript.Worksheet
-  - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
-    name: SlicerStyle
-    fullName: ExcelScript.SlicerStyle
-  - uid: 'ExcelScript!ExcelScript.Table:interface'
-    name: Table
-    fullName: ExcelScript.Table
-  - uid: 'ExcelScript!ExcelScript.Workbook#addTable~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
-    name: TableStyle
-    fullName: ExcelScript.TableStyle
-  - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
-    name: TimelineStyle
-    fullName: ExcelScript.TimelineStyle
-  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    name: Worksheet
-    fullName: ExcelScript.Worksheet
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.Chart:interface'
-    name: Chart
-    fullName: ExcelScript.Chart
-  - uid: 'ExcelScript!ExcelScript.Application:interface'
-    name: Application
-    fullName: ExcelScript.Application
-  - uid: 'ExcelScript!ExcelScript.Workbook#getBinding~0:complex'
-    name: Binding | undefined
-    fullName: ExcelScript.Binding | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Binding:interface'
-        name: Binding
-        fullName: ExcelScript.Binding
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getBindings~0:complex'
-    name: 'Binding[]'
-    fullName: 'ExcelScript.Binding[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Binding:interface'
-        name: Binding
-        fullName: ExcelScript.Binding
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getCommentByCell~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getComments~0:complex'
-    name: 'Comment[]'
-    fullName: 'ExcelScript.Comment[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Comment:interface'
-        name: Comment
-        fullName: ExcelScript.Comment
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart~0:complex'
-    name: CustomXmlPart | undefined
-    fullName: ExcelScript.CustomXmlPart | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
-        name: CustomXmlPart
-        fullName: ExcelScript.CustomXmlPart
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace~0:complex'
-    name: 'CustomXmlPart[]'
-    fullName: 'ExcelScript.CustomXmlPart[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
-        name: CustomXmlPart
-        fullName: ExcelScript.CustomXmlPart
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts~0:complex'
-    name: 'CustomXmlPart[]'
-    fullName: 'ExcelScript.CustomXmlPart[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
-        name: CustomXmlPart
-        fullName: ExcelScript.CustomXmlPart
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getNamedItem~0:complex'
-    name: NamedItem | undefined
-    fullName: ExcelScript.NamedItem | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
-        name: NamedItem
-        fullName: ExcelScript.NamedItem
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getNames~0:complex'
-    name: 'NamedItem[]'
-    fullName: 'ExcelScript.NamedItem[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
-        name: NamedItem
-        fullName: ExcelScript.NamedItem
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTable~0:complex'
-    name: PivotTable | undefined
-    fullName: ExcelScript.PivotTable | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-        name: PivotTable
-        fullName: ExcelScript.PivotTable
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTables~0:complex'
-    name: 'PivotTable[]'
-    fullName: 'ExcelScript.PivotTable[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-        name: PivotTable
-        fullName: ExcelScript.PivotTable
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle~0:complex'
-    name: PivotTableStyle | undefined
-    fullName: ExcelScript.PivotTableStyle | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
-        name: PivotTableStyle
-        fullName: ExcelScript.PivotTableStyle
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles~0:complex'
-    name: 'PivotTableStyle[]'
-    fullName: 'ExcelScript.PivotTableStyle[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
-        name: PivotTableStyle
-        fullName: ExcelScript.PivotTableStyle
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
-    name: PredefinedCellStyle
-    fullName: ExcelScript.PredefinedCellStyle
-  - uid: 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles~0:complex'
-    name: 'PredefinedCellStyle[]'
-    fullName: 'ExcelScript.PredefinedCellStyle[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
-        name: PredefinedCellStyle
-        fullName: ExcelScript.PredefinedCellStyle
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.DocumentProperties:interface'
-    name: DocumentProperties
-    fullName: ExcelScript.DocumentProperties
-  - uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
-    name: WorkbookProtection
-    fullName: ExcelScript.WorkbookProtection
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    name: RangeAreas
-    fullName: ExcelScript.RangeAreas
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicer~0:complex'
-    name: Slicer | undefined
-    fullName: ExcelScript.Slicer | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Slicer:interface'
-        name: Slicer
-        fullName: ExcelScript.Slicer
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicers~0:complex'
-    name: 'Slicer[]'
-    fullName: 'ExcelScript.Slicer[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Slicer:interface'
-        name: Slicer
-        fullName: ExcelScript.Slicer
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyle~0:complex'
-    name: SlicerStyle | undefined
-    fullName: ExcelScript.SlicerStyle | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
-        name: SlicerStyle
-        fullName: ExcelScript.SlicerStyle
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyles~0:complex'
-    name: 'SlicerStyle[]'
-    fullName: 'ExcelScript.SlicerStyle[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
-        name: SlicerStyle
-        fullName: ExcelScript.SlicerStyle
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTable~0:complex'
-    name: Table | undefined
-    fullName: ExcelScript.Table | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTables~0:complex'
-    name: 'Table[]'
-    fullName: 'ExcelScript.Table[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyle~0:complex'
-    name: TableStyle | undefined
-    fullName: ExcelScript.TableStyle | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
-        name: TableStyle
-        fullName: ExcelScript.TableStyle
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyles~0:complex'
-    name: 'TableStyle[]'
-    fullName: 'ExcelScript.TableStyle[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
-        name: TableStyle
-        fullName: ExcelScript.TableStyle
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyle~0:complex'
-    name: TimelineStyle | undefined
-    fullName: ExcelScript.TimelineStyle | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
-        name: TimelineStyle
-        fullName: ExcelScript.TimelineStyle
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyles~0:complex'
-    name: 'TimelineStyle[]'
-    fullName: 'ExcelScript.TimelineStyle[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
-        name: TimelineStyle
-        fullName: ExcelScript.TimelineStyle
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheet~0:complex'
-    name: Worksheet | undefined
-    fullName: ExcelScript.Worksheet | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-        name: Worksheet
-        fullName: ExcelScript.Worksheet
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheets~0:complex'
-    name: 'Worksheet[]'
-    fullName: 'ExcelScript.Worksheet[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-        name: Worksheet
-        fullName: ExcelScript.Worksheet
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle~0:complex'
-    name: PivotTableStyle | string
-    fullName: ExcelScript.PivotTableStyle | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
-        name: PivotTableStyle
-        fullName: ExcelScript.PivotTableStyle
-      - name: |2-
-           | string
-                  
-        fullName: |2-
-           | string
-                  
-  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle~0:complex'
-    name: SlicerStyle | string
-    fullName: ExcelScript.SlicerStyle | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
-        name: SlicerStyle
-        fullName: ExcelScript.SlicerStyle
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle~0:complex'
-    name: TableStyle | string
-    fullName: ExcelScript.TableStyle | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
-        name: TableStyle
-        fullName: ExcelScript.TableStyle
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle~0:complex'
-    name: TimelineStyle | string
-    fullName: ExcelScript.TimelineStyle | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
-        name: TimelineStyle
-        fullName: ExcelScript.TimelineStyle
-      - name: ' | string'
-        fullName: ' | string'
+### YamlMime:TSType
+name: ExcelScript.Workbook
+uid: ExcelScript!ExcelScript.Workbook:interface
+package: ExcelScript!
+fullName: ExcelScript.Workbook
+summary: Die Arbeitsmappe ist das Objekt auf oberster Ebene , das dazugehörige Arbeitsmappenobjekte wie z. B. Arbeitsblätter, Tabellen, Bereiche usw. enthält.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: addBinding(range, bindingType, id)
+  uid: ExcelScript!ExcelScript.Workbook#addBinding:member(1)
+  package: ExcelScript!
+  fullName: addBinding(range, bindingType, id)
+  summary: Fügt eine neue Bindung an einen bestimmten Bereich hinzu.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addBinding(
+                  range: Range | string,
+                  bindingType: BindingType,
+                  id: string
+              ): Binding;
+    parameters:
+    - id: range
+      description: Bereich für die Bindung. Kann ein Excel-Range-Objekt oder eine Zeichenfolge sein. Eine Zeichenfolge muss die vollständige Adresse einschließlich des Blattnamens enthalten.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: bindingType
+      description: Typ der Bindung. Siehe ExcelScript. BindingType.
+      type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
+    - id: id
+      description: Name der Bindung.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Binding:interface" />
+      description: ''
+- name: addBindingFromNamedItem(name, bindingType, id)
+  uid: ExcelScript!ExcelScript.Workbook#addBindingFromNamedItem:member(1)
+  package: ExcelScript!
+  fullName: addBindingFromNamedItem(name, bindingType, id)
+  summary: Fügt eine neue Bindung auf Grundlage eines benannten Elements in der Arbeitsmappe hinzu. Wenn das benannte Element auf mehrere Bereiche verweist, wird der Fehler "InvalidReference" zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addBindingFromNamedItem(
+                  name: string,
+                  bindingType: BindingType,
+                  id: string
+              ): Binding;
+    parameters:
+    - id: name
+      description: Name, aus dem die Bindung erstellt wird.
+      type: string
+    - id: bindingType
+      description: Typ der Bindung. Siehe ExcelScript. BindingType.
+      type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
+    - id: id
+      description: Name der Bindung.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Binding:interface" />
+      description: ''
+- name: addBindingFromSelection(bindingType, id)
+  uid: ExcelScript!ExcelScript.Workbook#addBindingFromSelection:member(1)
+  package: ExcelScript!
+  fullName: addBindingFromSelection(bindingType, id)
+  summary: Fügt eine neue Bindung basierend auf der aktuellen Auswahl hinzu. Wenn die Auswahl mehrere Bereiche aufweist, wird der Fehler "InvalidReference" zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addBindingFromSelection(bindingType: BindingType, id: string): Binding;'
+    parameters:
+    - id: bindingType
+      description: Typ der Bindung. Siehe ExcelScript. BindingType.
+      type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
+    - id: id
+      description: Name der Bindung.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Binding:interface" />
+      description: ''
+- name: addComment(cellAddress, content, contentType)
+  uid: ExcelScript!ExcelScript.Workbook#addComment:member(1)
+  package: ExcelScript!
+  fullName: addComment(cellAddress, content, contentType)
+  summary: Erstellt einen neuen Kommentar mit dem angegebenen Inhalt auf der angegebenen Zelle. `InvalidArgument`Wenn der angegebene Bereich größer als eine Zelle ist, wird ein Fehler ausgelöst.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addComment(
+                  cellAddress: Range | string,
+                  content: CommentRichContent | string,
+                  contentType?: ContentType
+              ): Comment;
+    parameters:
+    - id: cellAddress
+      description: Die Zelle, der der Kommentar hinzugefügt wird. Dies kann ein Range-Objekt oder eine Zeichenfolge sein. Wenn es sich um eine Zeichenfolge handelt, muss Sie die vollständige Adresse enthalten, einschließlich des Blatt namens. `InvalidArgument`Wenn der angegebene Bereich größer als eine Zelle ist, wird ein Fehler ausgelöst.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: content
+      description: Der Inhalt des Kommentars. Dies kann eine Zeichenfolge oder ein CommentRichContent-Objekt sein. Zeichenfolgen werden für nur-Text verwendet. CommentRichContent-Objekte ermöglichen andere Kommentarfeatures wie Erwähnungen.
+      type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
+    - id: contentType
+      description: Optional. Der Typ des Inhalts, der im Kommentar enthalten ist. Der Standardwert ist Enum. `ContentType.Plain`<!-- -->.
+      type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
+      description: ''
+- name: addCustomXmlPart(xml)
+  uid: ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)
+  package: ExcelScript!
+  fullName: addCustomXmlPart(xml)
+  summary: Fügt der Arbeitsmappe eine neue benutzerdefinierte XML-Komponente hinzu.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addCustomXmlPart(xml: string): CustomXmlPart;'
+    parameters:
+    - id: xml
+      description: XML-Inhalt. Es muss sich um ein gültiges XML-Fragment handeln.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />
+      description: ''
+- name: addNamedItem(name, reference, comment)
+  uid: ExcelScript!ExcelScript.Workbook#addNamedItem:member(1)
+  package: ExcelScript!
+  fullName: addNamedItem(name, reference, comment)
+  summary: Fügt einen neuen Namen zur Auflistung des angegebenen Bereichs hinzu.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addNamedItem(
+                  name: string,
+                  reference: Range | string,
+                  comment?: string
+              ): NamedItem;
+    parameters:
+    - id: name
+      description: Der Name des benannten Elements.
+      type: string
+    - id: reference
+      description: Die Formel oder der Bereich, auf die bzw. den der Name verweist.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: comment
+      description: Optional. Der dem benannten Element zugeordnete Kommentar.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
+      description: ''
+- name: addNamedItemFormulaLocal(name, formula, comment)
+  uid: ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)
+  package: ExcelScript!
+  fullName: addNamedItemFormulaLocal(name, formula, comment)
+  summary: Fügt einen neuen Namen zu der Auflistung des angegebenen Bereichs unter Verwendung des Gebietsschemas des Benutzers für die Formel hinzu.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addNamedItemFormulaLocal(
+                  name: string,
+                  formula: string,
+                  comment?: string
+              ): NamedItem;
+    parameters:
+    - id: name
+      description: Der „Name“ des benannten Elements.
+      type: string
+    - id: formula
+      description: Die Formel im Gebietsschema des Benutzers, auf die der Name verweist.
+      type: string
+    - id: comment
+      description: Optional. Der dem benannten Element zugeordnete Kommentar.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
+      description: ''
+- name: addPivotTable(name, source, destination)
+  uid: ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)
+  package: ExcelScript!
+  fullName: addPivotTable(name, source, destination)
+  summary: Fügen Sie eine PivotTable basierend auf den angegebenen Quelldaten hinzu, und fügen Sie Sie in der oberen linken Zelle des Zielbereichs ein.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addPivotTable(
+                  name: string,
+                  source: Range | string | Table,
+                  destination: Range | string
+              ): PivotTable;
+    parameters:
+    - id: name
+      description: Der Name der neuen PivotTable.
+      type: string
+    - id: source
+      description: Die Quelldaten für die neue PivotTable kann dies entweder ein Bereich (oder eine Zeichenfolgen Adresse mit dem Arbeitsblattnamen) oder eine Tabelle sein.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
+    - id: destination
+      description: Die Zelle in der oberen linken Ecke des Zielbereichs des PivotTable-Berichts (der Bereich auf dem Arbeitsblatt, in dem der resultierende Bericht platziert wird).
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
+      description: ''
+- name: addPivotTableStyle(name, makeUniqueName)
+  uid: ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)
+  package: ExcelScript!
+  fullName: addPivotTableStyle(name, makeUniqueName)
+  summary: Erstellt einen leeren PivotTableStyle mit dem angegebenen Namen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addPivotTableStyle(
+                  name: string,
+                  makeUniqueName?: boolean
+              ): PivotTableStyle;
+    parameters:
+    - id: name
+      description: Der eindeutige Name für den neuen pivottablestyle. Eine ungültige Argumentausnahme wird ausgelöst, wenn der Name bereits verwendet wird.
+      type: string
+    - id: makeUniqueName
+      description: Optional, standardmäßig auf false festgelegt. Wenn true, werden Zahlen an den Namen angefügt, um ihn eindeutig zu machen, falls erforderlich.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
+      description: ''
+- name: addPredefinedCellStyle(name)
+  uid: ExcelScript!ExcelScript.Workbook#addPredefinedCellStyle:member(1)
+  package: ExcelScript!
+  fullName: addPredefinedCellStyle(name)
+  summary: Fügt der Sammlung eine neue Formatvorlage hinzu.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addPredefinedCellStyle(name: string): void;'
+    parameters:
+    - id: name
+      description: Der Name der hinzuzufügenden Formatvorlage.
+      type: string
+    return:
+      type: void
+      description: ''
+- name: addSlicer(slicerSource, sourceField, slicerDestination)
+  uid: ExcelScript!ExcelScript.Workbook#addSlicer:member(1)
+  package: ExcelScript!
+  fullName: addSlicer(slicerSource, sourceField, slicerDestination)
+  summary: Fügt der Arbeitsmappe einen neuen Datenschnitt hinzu.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addSlicer(
+                  slicerSource: string | PivotTable | Table,
+                  sourceField: string | PivotField | number | TableColumn,
+                  slicerDestination?: string | Worksheet
+              ): Slicer;
+    parameters:
+    - id: slicerSource
+      description: Die Datenquelle, auf der der neue datenschnitt basieren soll. Dabei kann es sich um ein PivotTable-Objekt, ein Table-Objekt oder eine Zeichenfolge handeln. Wenn ein PivotTable-Objekt übergeben wird, ist die Datenquelle die Quelle des PivotTable-Objekts. Wenn ein Table-Objekt übergeben wird, ist die Datenquelle das Table-Objekt. Wenn eine Zeichenfolge übergeben wird, wird Sie als Name/ID einer PivotTable/Tabelle interpretiert.
+      type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
+    - id: sourceField
+      description: Das Feld in der Datenquelle, nach dem gefiltert werden soll. Dabei kann es sich um ein PivotField-Objekt, ein Table Column-Objekt, die ID eines PivotField-Objekts oder die ID/Name-Spalte handeln.
+      type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
+    - id: slicerDestination
+      description: Optional. Das Arbeitsblatt, in dem der neue datenschnitt erstellt wird. Dabei kann es sich um ein Worksheet-Objekt oder den Namen/die ID eines Arbeitsblatts handeln. Dieser Parameter kann ausgelassen werden, wenn die Slicer-Auflistung aus dem Arbeitsblatt abgerufen wird.
+      type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
+      description: ''
+- name: addSlicerStyle(name, makeUniqueName)
+  uid: ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)
+  package: ExcelScript!
+  fullName: addSlicerStyle(name, makeUniqueName)
+  summary: Erstellt einen leeren SlicerStyle mit dem angegebenen Namen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addSlicerStyle(name: string, makeUniqueName?: boolean): SlicerStyle;'
+    parameters:
+    - id: name
+      description: Der eindeutige Name für die neue SlicerStyle. Eine ungültige Argumentausnahme wird ausgelöst, wenn der Name bereits verwendet wird.
+      type: string
+    - id: makeUniqueName
+      description: Optional, standardmäßig auf false festgelegt. Wenn true, werden Zahlen an den Namen angefügt, um ihn eindeutig zu machen, falls erforderlich.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
+      description: ''
+- name: addTable(address, hasHeaders)
+  uid: ExcelScript!ExcelScript.Workbook#addTable:member(1)
+  package: ExcelScript!
+  fullName: addTable(address, hasHeaders)
+  summary: Erstellt eine neue Tabelle. Das Bereichsobjekt oder die Quelladresse bestimmt das Arbeitsblatt, unter dem die Tabelle hinzugefügt wird. Wenn die Tabelle nicht hinzugefügt werden kann (z. B. weil die Adresse ungültig ist oder sich die Tabelle mit einer anderen Tabelle überlappen würde), wird ein Fehler ausgelöst.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
+    parameters:
+    - id: address
+      description: Ein Range-Objekt oder eine Zeichenfolgenadresse oder der Name des Bereichs, der die Datenquelle darstellt. Wenn die Adresse keinen Arbeitsblattnamen enthält, wird das aktuell aktive Blatt verwendet.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: hasHeaders
+      description: Boolescher Wert, der angibt, ob die importierten Daten Spaltenüberschriften besitzen. Wenn die Quelle keine Überschriften enthält (d. h. wenn diese Eigenschaft auf falsch festgelegt ist), generiert Excel automatisch eine Überschriftenänderung der Daten nach einer Zeile.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
+      description: ''
+- name: addTableStyle(name, makeUniqueName)
+  uid: ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)
+  package: ExcelScript!
+  fullName: addTableStyle(name, makeUniqueName)
+  summary: Erstellt einen leeren TableStyle mit dem angegebenen Namen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addTableStyle(name: string, makeUniqueName?: boolean): TableStyle;'
+    parameters:
+    - id: name
+      description: Der eindeutige Name für den neuen TableStyle. Eine ungültige Argumentausnahme wird ausgelöst, wenn der Name bereits verwendet wird.
+      type: string
+    - id: makeUniqueName
+      description: Optional, standardmäßig auf false festgelegt. Wenn true, werden Zahlen an den Namen angefügt, um ihn eindeutig zu machen, falls erforderlich.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
+      description: ''
+- name: addTimelineStyle(name, makeUniqueName)
+  uid: ExcelScript!ExcelScript.Workbook#addTimelineStyle:member(1)
+  package: ExcelScript!
+  fullName: addTimelineStyle(name, makeUniqueName)
+  summary: Erstellt einen leeren TimelineStyle mit dem angegebenen Namen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addTimelineStyle(name: string, makeUniqueName?: boolean): TimelineStyle;'
+    parameters:
+    - id: name
+      description: Der eindeutige Name für die neue timelinestyle. Eine ungültige Argumentausnahme wird ausgelöst, wenn der Name bereits verwendet wird.
+      type: string
+    - id: makeUniqueName
+      description: Optional, standardmäßig auf false festgelegt. Wenn true, werden Zahlen an den Namen angefügt, um ihn eindeutig zu machen, falls erforderlich.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
+      description: ''
+- name: addWorksheet(name)
+  uid: ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)
+  package: ExcelScript!
+  fullName: addWorksheet(name)
+  summary: Fügt der Arbeitsmappe ein neues Arbeitsblatt hinzu. Das Arbeitsblatt wird automatisch am Ende der vorhandenen Arbeitsblättern hinzugefügt. Wenn Sie das neu hinzugefügte Arbeitsblatt aktivieren möchten, rufen Sie „.activate()“ dazu auf.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addWorksheet(name?: string): Worksheet;'
+    parameters:
+    - id: name
+      description: Optional. Der Name des hinzuzufügenden Arbeitsblatts. Falls angegeben, sollte der Name eindeutig sein. Falls nicht angegeben, bestimmt Excel den Namen des neuen Arbeitsblatts.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: getActiveCell()
+  uid: ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)
+  package: ExcelScript!
+  fullName: getActiveCell()
+  summary: Ruft die derzeit aktive Zelle aus der Arbeitsmappe ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getActiveCell(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```javascript\n/**\n * This script logs the value of the current active cell. \n * If multiple cells are selected, the top-leftmost cell will be logged.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current active cell in the workbook.\n  let cell = workbook.getActiveCell();\n  console.log(`The current cell's value is ${cell.getValue()}`);\n}\n```"
+- name: getActiveChart()
+  uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
+  package: ExcelScript!
+  fullName: getActiveChart()
+  summary: Ruft das derzeit aktive Diagramm in der Arbeitsmappe ab. Wenn kein aktives Diagramm vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getActiveChart(): Chart;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Chart:interface" />
+      description: ''
+- name: getActiveSlicer()
+  uid: ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)
+  package: ExcelScript!
+  fullName: getActiveSlicer()
+  summary: Ruft den derzeit aktiven Datenschnitt in der Arbeitsmappe ab. Wenn kein aktiver Datenschnitt vorhanden ist, wird ein Nullobjekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getActiveSlicer(): Slicer;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
+      description: ''
+- name: getActiveWorksheet()
+  uid: ExcelScript!ExcelScript.Workbook#getActiveWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getActiveWorksheet()
+  summary: Ruft das derzeit aktive Arbeitsblatt in der Arbeitsmappe ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getActiveWorksheet(): Worksheet;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: getApplication()
+  uid: ExcelScript!ExcelScript.Workbook#getApplication:member(1)
+  package: ExcelScript!
+  fullName: getApplication()
+  summary: Stellt die Excel-Anwendungsinstanz dar, die diese Arbeitsmappe enthält.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getApplication(): Application;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Application:interface" />
+      description: ''
+- name: getAutoSave()
+  uid: ExcelScript!ExcelScript.Workbook#getAutoSave:member(1)
+  package: ExcelScript!
+  fullName: getAutoSave()
+  summary: Gibt an, ob sich die Arbeitsmappe im Autosave-Modus befindet.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAutoSave(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getBinding(id)
+  uid: ExcelScript!ExcelScript.Workbook#getBinding:member(1)
+  package: ExcelScript!
+  fullName: getBinding(id)
+  summary: Ruft ein Binding-Objekt anhand seiner ID ab. Wenn das Binding-Objekt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBinding(id: string): Binding | undefined;'
+    parameters:
+    - id: id
+      description: ID des abzurufenden Binding-Objekts.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Binding:interface" /> | undefined
+      description: ''
+- name: getBindings()
+  uid: ExcelScript!ExcelScript.Workbook#getBindings:member(1)
+  package: ExcelScript!
+  fullName: getBindings()
+  summary: Stellt eine Auflistung aller Bindungen dar, die Teil der Arbeitsmappe sind.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBindings(): Binding[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Binding:interface" />[]
+      description: ''
+- name: getCalculationEngineVersion()
+  uid: ExcelScript!ExcelScript.Workbook#getCalculationEngineVersion:member(1)
+  package: ExcelScript!
+  fullName: getCalculationEngineVersion()
+  summary: Gibt eine Nummer zur Version des Excel-Berechnungsmoduls zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCalculationEngineVersion(): number;'
+    return:
+      type: number
+      description: ''
+- name: getChartDataPointTrack()
+  uid: ExcelScript!ExcelScript.Workbook#getChartDataPointTrack:member(1)
+  package: ExcelScript!
+  fullName: getChartDataPointTrack()
+  summary: True, wenn alle Diagramme in der Arbeitsmappe die tatsächlichen Datenpunkte nachverfolgen, mit denen sie verbunden sind. False, wenn die Diagramme den Index der Datenpunkte nachverfolgen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getChartDataPointTrack(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getComment(commentId)
+  uid: ExcelScript!ExcelScript.Workbook#getComment:member(1)
+  package: ExcelScript!
+  fullName: getComment(commentId)
+  summary: Ruft einen Kommentar aus der Sammlung basierend auf der ID ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getComment(commentId: string): Comment;'
+    parameters:
+    - id: commentId
+      description: Der Bezeichner für den Kommentar.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
+      description: ''
+- name: getCommentByCell(cellAddress)
+  uid: ExcelScript!ExcelScript.Workbook#getCommentByCell:member(1)
+  package: ExcelScript!
+  fullName: getCommentByCell(cellAddress)
+  summary: Ruft den Kommentar aus der angegebenen Zelle ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCommentByCell(cellAddress: Range | string): Comment;'
+    parameters:
+    - id: cellAddress
+      description: Die Zelle, auf der sich der Kommentar befindet. Dies kann ein Range-Objekt oder eine Zeichenfolge sein. Wenn es sich um eine Zeichenfolge handelt, muss Sie die vollständige Adresse enthalten, einschließlich des Blatt namens. `InvalidArgument`Wenn der angegebene Bereich größer als eine Zelle ist, wird ein Fehler ausgelöst.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
+      description: ''
+- name: getCommentByReplyId(replyId)
+  uid: ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)
+  package: ExcelScript!
+  fullName: getCommentByReplyId(replyId)
+  summary: Ruft den Kommentar ab, an den die angegebene Antwort angeschlossen ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCommentByReplyId(replyId: string): Comment;'
+    parameters:
+    - id: replyId
+      description: Der Bezeichner der Kommentar Antwort.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
+      description: ''
+- name: getComments()
+  uid: ExcelScript!ExcelScript.Workbook#getComments:member(1)
+  package: ExcelScript!
+  fullName: getComments()
+  summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften Kommentare dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getComments(): Comment[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />[]
+      description: ''
+- name: getCustomXmlPart(id)
+  uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)
+  package: ExcelScript!
+  fullName: getCustomXmlPart(id)
+  summary: Ruft eine benutzerdefinierte XML-Komponente basierend auf ihrer ID ab. Wenn das CustomXMLPart-Objekt nicht vorhanden ist, wird die IsNull-Eigenschaft des Rückgabe Objekts auf true festgelegt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCustomXmlPart(id: string): CustomXmlPart | undefined;'
+    parameters:
+    - id: id
+      description: ID des Objekts, das abgerufen werden soll.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" /> | undefined
+      description: ''
+- name: getCustomXmlPartByNamespace(namespaceUri)
+  uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace:member(1)
+  package: ExcelScript!
+  fullName: getCustomXmlPartByNamespace(namespaceUri)
+  summary: Ruft eine neue bereichsbezogene Sammlung von benutzerdefinierten XML-Komponenten ab, deren Namespaces dem angegebenen Namespace entsprechen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCustomXmlPartByNamespace(namespaceUri: string): CustomXmlPart[];'
+    parameters:
+    - id: namespaceUri
+      description: 'Hierbei muss es sich um einen vollqualifizierten Schema-URI handeln. Beispiel: " http://schemas.contoso.com/review/1.0 ".'
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
+      description: ''
+- name: getCustomXmlParts()
+  uid: ExcelScript!ExcelScript.Workbook#getCustomXmlParts:member(1)
+  package: ExcelScript!
+  fullName: getCustomXmlParts()
+  summary: Stellt die Auflistung von benutzerdefinierten XML-Parts dar, die in dieser Arbeitsmappe enthalten sind.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCustomXmlParts(): CustomXmlPart[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
+      description: ''
+- name: getDefaultPivotTableStyle()
+  uid: ExcelScript!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)
+  package: ExcelScript!
+  fullName: getDefaultPivotTableStyle()
+  summary: Ruft den Standard-PivotTableStyle für den Bereich des übergeordneten Objekts ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDefaultPivotTableStyle(): PivotTableStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
+      description: ''
+- name: getDefaultSlicerStyle()
+  uid: ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)
+  package: ExcelScript!
+  fullName: getDefaultSlicerStyle()
+  summary: Ruft den Standard-SlicerStyle für den Bereich des übergeordneten Objekts ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDefaultSlicerStyle(): SlicerStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
+      description: ''
+- name: getDefaultTableStyle()
+  uid: ExcelScript!ExcelScript.Workbook#getDefaultTableStyle:member(1)
+  package: ExcelScript!
+  fullName: getDefaultTableStyle()
+  summary: Ruft den Standard-TableStyle für den Bereich des übergeordneten Objekts ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDefaultTableStyle(): TableStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
+      description: ''
+- name: getDefaultTimelineStyle()
+  uid: ExcelScript!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)
+  package: ExcelScript!
+  fullName: getDefaultTimelineStyle()
+  summary: Ruft den Standard-TimelineStyle für den Bereich des übergeordneten Objekts ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDefaultTimelineStyle(): TimelineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
+      description: ''
+- name: getFirstWorksheet(visibleOnly)
+  uid: ExcelScript!ExcelScript.Workbook#getFirstWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getFirstWorksheet(visibleOnly)
+  summary: Ruft das erste Arbeitsblatt in der Sammlung ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: Optional. Bei true werden nur sichtbare Arbeitsblätter berücksichtigt, und alle ausgeblendeten werden übersprungen.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: getIsDirty()
+  uid: ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)
+  package: ExcelScript!
+  fullName: getIsDirty()
+  summary: Gibt an, ob seit der letzten Speicherung der Arbeitsmappe Änderungen vorgenommen wurden. Sie können diese Eigenschaft auf true festlegen, wenn Sie eine geänderte Arbeitsmappe schließen möchten, ohne Sie zu speichern oder zum Speichern aufgefordert zu werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsDirty(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getLastWorksheet(visibleOnly)
+  uid: ExcelScript!ExcelScript.Workbook#getLastWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getLastWorksheet(visibleOnly)
+  summary: Ruft das letzte Arbeitsblatt in der Sammlung ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: Optional. Bei true werden nur sichtbare Arbeitsblätter berücksichtigt, und alle ausgeblendeten werden übersprungen.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.Workbook#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Ruft den Namen der Arbeitsmappe ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getNamedItem(name)
+  uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
+  package: ExcelScript!
+  fullName: getNamedItem(name)
+  summary: Ruft ein NamedItem-Objekt mit seinem Namen ab. Wenn das nameditem-Objekt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNamedItem(name: string): NamedItem | undefined;'
+    parameters:
+    - id: name
+      description: NamedItem-Name.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
+      description: ''
+- name: getNames()
+  uid: ExcelScript!ExcelScript.Workbook#getNames:member(1)
+  package: ExcelScript!
+  fullName: getNames()
+  summary: Stellt eine Auflistung der benannten Elemente des Arbeitsmappenbereichs dar (benannte Bereiche und Konstanten).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNames(): NamedItem[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />[]
+      description: ''
+- name: getPivotTable(name)
+  uid: ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)
+  package: ExcelScript!
+  fullName: getPivotTable(name)
+  summary: Ruft eine PivotTable anhand des Namens ab. Wenn die PivotTable nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotTable(name: string): PivotTable | undefined;'
+    parameters:
+    - id: name
+      description: Name der abzurufenden PivotTable.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | undefined
+      description: ''
+- name: getPivotTables()
+  uid: ExcelScript!ExcelScript.Workbook#getPivotTables:member(1)
+  package: ExcelScript!
+  fullName: getPivotTables()
+  summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften PivotTables dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotTables(): PivotTable[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]
+      description: ''
+- name: getPivotTableStyle(name)
+  uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
+  package: ExcelScript!
+  fullName: getPivotTableStyle(name)
+  summary: Ruft einen PivotTableStyle anhand des Namens ab. Wenn der PivotTableStyle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotTableStyle(name: string): PivotTableStyle | undefined;'
+    parameters:
+    - id: name
+      description: Name des abzurufenden pivottablestyle.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" /> | undefined
+      description: ''
+- name: getPivotTableStyles()
+  uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyles:member(1)
+  package: ExcelScript!
+  fullName: getPivotTableStyles()
+  summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften PivotTableStyles dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotTableStyles(): PivotTableStyle[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />[]
+      description: ''
+- name: getPredefinedCellStyle(name)
+  uid: ExcelScript!ExcelScript.Workbook#getPredefinedCellStyle:member(1)
+  package: ExcelScript!
+  fullName: getPredefinedCellStyle(name)
+  summary: Ruft eine Formatvorlage anhand des Namens ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPredefinedCellStyle(name: string): PredefinedCellStyle;'
+    parameters:
+    - id: name
+      description: Name des Formats, das abgerufen werden soll.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PredefinedCellStyle:interface" />
+      description: ''
+- name: getPredefinedCellStyles()
+  uid: ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles:member(1)
+  package: ExcelScript!
+  fullName: getPredefinedCellStyles()
+  summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Formatvorlagen dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPredefinedCellStyles(): PredefinedCellStyle[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PredefinedCellStyle:interface" />[]
+      description: ''
+- name: getPreviouslySaved()
+  uid: ExcelScript!ExcelScript.Workbook#getPreviouslySaved:member(1)
+  package: ExcelScript!
+  fullName: getPreviouslySaved()
+  summary: Gibt an, ob die Arbeitsmappe jemals lokal oder online gespeichert wurde.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPreviouslySaved(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getProperties()
+  uid: ExcelScript!ExcelScript.Workbook#getProperties:member(1)
+  package: ExcelScript!
+  fullName: getProperties()
+  summary: Ruft die Arbeitsmappeneigenschaften ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProperties(): DocumentProperties;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DocumentProperties:interface" />
+      description: ''
+- name: getProtection()
+  uid: ExcelScript!ExcelScript.Workbook#getProtection:member(1)
+  package: ExcelScript!
+  fullName: getProtection()
+  summary: Gibt das Protection-Objekt für eine Arbeitsmappe zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProtection(): WorkbookProtection;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookProtection:interface" />
+      description: ''
+- name: getReadOnly()
+  uid: ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)
+  package: ExcelScript!
+  fullName: getReadOnly()
+  summary: True, wenn die Arbeitsmappe im schreibgeschützten Modus geöffnet ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReadOnly(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSelectedRange()
+  uid: ExcelScript!ExcelScript.Workbook#getSelectedRange:member(1)
+  package: ExcelScript!
+  fullName: getSelectedRange()
+  summary: Ruft den aktuell ausgewählten einzelnen Bereich aus der Arbeitsmappe ab. Wenn mehrere Bereiche ausgewählt sind, wird durch diese Methode ein Fehler ausgelöst.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSelectedRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getSelectedRanges()
+  uid: ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)
+  package: ExcelScript!
+  fullName: getSelectedRanges()
+  summary: Ruft die aktuell ausgewählten Bereiche (einen oder mehrere) aus der Arbeitsmappe ab. Gibt im Gegensatz zu getSelectedRange() ein RangeAreas-Objekt zurück, das alle ausgewählten Bereiche darstellt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSelectedRanges(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getSlicer(key)
+  uid: ExcelScript!ExcelScript.Workbook#getSlicer:member(1)
+  package: ExcelScript!
+  fullName: getSlicer(key)
+  summary: Ruft einen Datenschnitt anhand seines Namens oder seiner ID ab. Wenn der Datenschnitt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSlicer(key: string): Slicer | undefined;'
+    parameters:
+    - id: key
+      description: Der Name oder die ID des datenschnitts, der abgerufen werden soll.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" /> | undefined
+      description: ''
+- name: getSlicers()
+  uid: ExcelScript!ExcelScript.Workbook#getSlicers:member(1)
+  package: ExcelScript!
+  fullName: getSlicers()
+  summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften Datenschnitte dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSlicers(): Slicer[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />[]
+      description: ''
+- name: getSlicerStyle(name)
+  uid: ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)
+  package: ExcelScript!
+  fullName: getSlicerStyle(name)
+  summary: Ruft einen SlicerStyle anhand des Namens ab. Wenn der SlicerStyle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSlicerStyle(name: string): SlicerStyle | undefined;'
+    parameters:
+    - id: name
+      description: Name des SlicerStyle, das abgerufen werden soll.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" /> | undefined
+      description: ''
+- name: getSlicerStyles()
+  uid: ExcelScript!ExcelScript.Workbook#getSlicerStyles:member(1)
+  package: ExcelScript!
+  fullName: getSlicerStyles()
+  summary: Stellt eine Sammlung der mit der Arbeitsmappe verknüpften SlicerStyles dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSlicerStyles(): SlicerStyle[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />[]
+      description: ''
+- name: getTable(key)
+  uid: ExcelScript!ExcelScript.Workbook#getTable:member(1)
+  package: ExcelScript!
+  fullName: getTable(key)
+  summary: Ruft eine Tabelle anhand des Namens oder der ID ab. Wenn die Tabelle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTable(key: string): Table | undefined;'
+    parameters:
+    - id: key
+      description: Name oder ID der abzurufenden Tabelle.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" /> | undefined
+      description: ''
+- name: getTables()
+  uid: ExcelScript!ExcelScript.Workbook#getTables:member(1)
+  package: ExcelScript!
+  fullName: getTables()
+  summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Tabellen dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTables(): Table[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />[]
+      description: ''
+- name: getTableStyle(name)
+  uid: ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)
+  package: ExcelScript!
+  fullName: getTableStyle(name)
+  summary: Ruft einen TableStyle anhand des Namens ab. Wenn der TableStyle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTableStyle(name: string): TableStyle | undefined;'
+    parameters:
+    - id: name
+      description: Name des TableStyles, der abgerufen werden soll.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" /> | undefined
+      description: ''
+- name: getTableStyles()
+  uid: ExcelScript!ExcelScript.Workbook#getTableStyles:member(1)
+  package: ExcelScript!
+  fullName: getTableStyles()
+  summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften TableStyles dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTableStyles(): TableStyle[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />[]
+      description: ''
+- name: getTimelineStyle(name)
+  uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
+  package: ExcelScript!
+  fullName: getTimelineStyle(name)
+  summary: Ruft einen TimelineStyle anhand des Namens ab. Wenn der TimelineStyle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTimelineStyle(name: string): TimelineStyle | undefined;'
+    parameters:
+    - id: name
+      description: Name des abzurufenden timelinestyle.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" /> | undefined
+      description: ''
+- name: getTimelineStyles()
+  uid: ExcelScript!ExcelScript.Workbook#getTimelineStyles:member(1)
+  package: ExcelScript!
+  fullName: getTimelineStyles()
+  summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften TimelineStyles dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTimelineStyles(): TimelineStyle[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />[]
+      description: ''
+- name: getUsePrecisionAsDisplayed()
+  uid: ExcelScript!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)
+  package: ExcelScript!
+  fullName: getUsePrecisionAsDisplayed()
+  summary: True, wenn die Berechnungen in dieser Arbeitsmappe nur mit der Genauigkeit durchgeführt werden, mit der die Zahlen angezeigt werden. Daten verlieren dauerhaft die Genauigkeit, wenn diese Eigenschaft von false auf true umgeschaltet wird.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsePrecisionAsDisplayed(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWorksheet(key)
+  uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet(key)
+  summary: Ruft das Arbeitsblattobjekt mithilfe des Namens oder der ID ab. Wenn das Arbeitsblatt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(key: string): Worksheet | undefined;'
+    parameters:
+    - id: key
+      description: Der Name oder die ID des Arbeitsblatts.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined
+      description: ''
+- name: getWorksheets()
+  uid: ExcelScript!ExcelScript.Workbook#getWorksheets:member(1)
+  package: ExcelScript!
+  fullName: getWorksheets()
+  summary: Stellt eine Auflistung der mit der Arbeitsmappe verknüpften Arbeitsblätter dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheets(): Worksheet[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />[]
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```javascript\n/**\n * This script logs the names of all the worksheets in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n\n  // Get a list of all the worksheet names.\n  let names = sheets.map ((sheet) => sheet.getName());\n\n  // Write in the console all the worksheet names and the total count.\n  console.log(names);\n  console.log(`Total worksheets inside of this workbook: ${sheets.length}`);\n}\n```"
+- name: refreshAllDataConnections()
+  uid: ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)
+  package: ExcelScript!
+  fullName: refreshAllDataConnections()
+  summary: Aktualisiert alle Datenverbindungen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshAllDataConnections(): void;'
+    return:
+      type: void
+      description: ''
+- name: refreshAllPivotTables()
+  uid: ExcelScript!ExcelScript.Workbook#refreshAllPivotTables:member(1)
+  package: ExcelScript!
+  fullName: refreshAllPivotTables()
+  summary: Aktualisiert alle PivotTables in der Sammlung.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshAllPivotTables(): void;'
+    return:
+      type: void
+      description: ''
+- name: setChartDataPointTrack(chartDataPointTrack)
+  uid: ExcelScript!ExcelScript.Workbook#setChartDataPointTrack:member(1)
+  package: ExcelScript!
+  fullName: setChartDataPointTrack(chartDataPointTrack)
+  summary: True, wenn alle Diagramme in der Arbeitsmappe die tatsächlichen Datenpunkte nachverfolgen, mit denen sie verbunden sind. False, wenn die Diagramme den Index der Datenpunkte nachverfolgen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setChartDataPointTrack(chartDataPointTrack: boolean): void;'
+    parameters:
+    - id: chartDataPointTrack
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setDefaultPivotTableStyle(newDefaultStyle)
+  uid: ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)
+  package: ExcelScript!
+  fullName: setDefaultPivotTableStyle(newDefaultStyle)
+  summary: Legt den Standard-PivotTableStyle für die Verwendung im Bereich des übergeordneten Objekts fest.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setDefaultPivotTableStyle(
+                  newDefaultStyle: PivotTableStyle | string
+              ): void;
+    parameters:
+    - id: newDefaultStyle
+      description: Das pivottablestyle-Objekt oder der Name des pivottablestyle-Objekts, das als neuer Standardwert verwendet werden soll.
+      type: "<xref uid=\"ExcelScript!ExcelScript.PivotTableStyle:interface\" /> | string\n        "
+    return:
+      type: void
+      description: ''
+- name: setDefaultSlicerStyle(newDefaultStyle)
+  uid: ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)
+  package: ExcelScript!
+  fullName: setDefaultSlicerStyle(newDefaultStyle)
+  summary: Ruft den Standard-SlicerStyle für die Verwendung im Bereich des übergeordneten Objekts ab.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDefaultSlicerStyle(newDefaultStyle: SlicerStyle | string): void;'
+    parameters:
+    - id: newDefaultStyle
+      description: Das SlicerStyle-Objekt oder der Name des SlicerStyle-Objekts, das als neuer Standardwert verwendet werden soll.
+      type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: setDefaultTableStyle(newDefaultStyle)
+  uid: ExcelScript!ExcelScript.Workbook#setDefaultTableStyle:member(1)
+  package: ExcelScript!
+  fullName: setDefaultTableStyle(newDefaultStyle)
+  summary: Legt den Standard-TableStyle für die Verwendung im Bereich des übergeordneten Objekts fest.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDefaultTableStyle(newDefaultStyle: TableStyle | string): void;'
+    parameters:
+    - id: newDefaultStyle
+      description: Das TableStyle-Objekt oder der Name des TableStyle-Objekts, das als neuer Standardwert verwendet werden soll.
+      type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: setDefaultTimelineStyle(newDefaultStyle)
+  uid: ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)
+  package: ExcelScript!
+  fullName: setDefaultTimelineStyle(newDefaultStyle)
+  summary: Legt den Standard-TimelineStyle für die Verwendung im Bereich des übergeordneten Objekts fest.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDefaultTimelineStyle(newDefaultStyle: TimelineStyle | string): void;'
+    parameters:
+    - id: newDefaultStyle
+      description: Das timelinestyle-Objekt oder der Name des timelinestyle-Objekts, das als neuer Standardwert verwendet werden soll.
+      type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: setIsDirty(isDirty)
+  uid: ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)
+  package: ExcelScript!
+  fullName: setIsDirty(isDirty)
+  summary: Gibt an, ob seit der letzten Speicherung der Arbeitsmappe Änderungen vorgenommen wurden. Sie können diese Eigenschaft auf true festlegen, wenn Sie eine geänderte Arbeitsmappe schließen möchten, ohne Sie zu speichern oder zum Speichern aufgefordert zu werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setIsDirty(isDirty: boolean): void;'
+    parameters:
+    - id: isDirty
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
+  uid: ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)
+  package: ExcelScript!
+  fullName: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
+  summary: True, wenn die Berechnungen in dieser Arbeitsmappe nur mit der Genauigkeit durchgeführt werden, mit der die Zahlen angezeigt werden. Daten verlieren dauerhaft die Genauigkeit, wenn diese Eigenschaft von false auf true umgeschaltet wird.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUsePrecisionAsDisplayed(usePrecisionAsDisplayed: boolean): void;'
+    parameters:
+    - id: usePrecisionAsDisplayed
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 63c89957d0a69f7f4c53440e74567153a98cc4bb
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419250"

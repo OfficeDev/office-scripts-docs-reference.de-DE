@@ -1,177 +1,156 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Application:interface'
-    summary: 'Stellt die Excel-Anwendung dar, die die Arbeitsmappe verwaltet.'
-    name: ExcelScript.Application
-    fullName: ExcelScript.Application
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Application#calculate:member(1)'
-      - 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
-      - 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
-      - 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
-      - 'ExcelScript!ExcelScript.Application#getCultureInfo:member(1)'
-      - 'ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)'
-      - 'ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)'
-      - 'ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)'
-      - 'ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)'
-      - 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Application#calculate:member(1)'
-    summary: Alle in Excel geöffnete Arbeitsmappen werden neu berechnet.
-    name: calculate(calculationType)
-    fullName: calculate(calculationType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'calculate(calculationType: CalculationType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: calculationType
-          description: Gibt den zu verwendenden Berechnungstyp an. Weitere Informationen finden Sie unter ExcelScript. CalculationType.
-          type:
-            - 'ExcelScript!ExcelScript.CalculationType:enum'
-  - uid: 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
-    summary: 'Gibt die Version der Excel-Berechnungsmaschine zurück, die für die letzte vollständige Neuberechnung verwendet wurde.'
-    name: getCalculationEngineVersion()
-    fullName: getCalculationEngineVersion()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCalculationEngineVersion(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
-    summary: 'Gibt den in der Arbeitsmappe verwendeten Berechnungsmodus gemäß der Definition durch die Konstanten in ExcelScript. CalculationMode zurück. Mögliche Werte sind: `Automatic`<!-- -->, wobei Excel Steuerelemente neu berechnen; `AutomaticExceptTables`<!-- -->, wobei Excel Steuerelemente neu berechnen, aber Änderungen in Tabellen ignoriert; `Manual`<!-- -->, wobei die Berechnung erfolgt, wenn der Benutzer sie anfordert.'
-    name: getCalculationMode()
-    fullName: getCalculationMode()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCalculationMode(): CalculationMode;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CalculationMode:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
-    summary: Gibt den Berechnungszustand der Anwendung zurück. Weitere Informationen finden Sie unter ExcelScript. CalculationState.
-    name: getCalculationState()
-    fullName: getCalculationState()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCalculationState(): CalculationState;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CalculationState:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Application#getCultureInfo:member(1)'
-    summary: 'Enthält Informationen basierend auf den aktuellen Systemkultur Einstellungen. Dies umfasst die Kulturnamen, die Zahlenformatierung und andere kulturell abhängige Einstellungen.'
-    name: getCultureInfo()
-    fullName: getCultureInfo()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCultureInfo(): CultureInfo;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CultureInfo:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)'
-    summary: 'Ruft die Zeichenfolge ab, die als Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den lokalen Einstellungen von Excel.'
-    name: getDecimalSeparator()
-    fullName: getDecimalSeparator()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDecimalSeparator(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)'
-    summary: Gibt die Einstellungen für iterative Berechnung zurück. In Excel unter Windows und Mac werden die Einstellungen auf die Excel-Anwendung angewendet. In Excel im Internet und anderen Plattformen werden die Einstellungen auf die aktive Arbeitsmappe angewendet.
-    name: getIterativeCalculation()
-    fullName: getIterativeCalculation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIterativeCalculation(): IterativeCalculation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.IterativeCalculation:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)'
-    summary: 'Ruft die Zeichenfolge ab, die zum Trennen von Zifferngruppen links vom Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den lokalen Einstellungen von Excel.'
-    name: getThousandsSeparator()
-    fullName: getThousandsSeparator()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getThousandsSeparator(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)'
-    summary: 'Gibt an, ob die Systemtrennzeichen von Excel aktiviert sind. Zu den System Trennzeichen gehören das Dezimaltrennzeichen und Tausendertrennzeichen.'
-    name: getUseSystemSeparators()
-    fullName: getUseSystemSeparators()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUseSystemSeparators(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
-    summary: 'Gibt den in der Arbeitsmappe verwendeten Berechnungsmodus gemäß der Definition durch die Konstanten in ExcelScript. CalculationMode zurück. Mögliche Werte sind: `Automatic`<!-- -->, wobei Excel Steuerelemente neu berechnen; `AutomaticExceptTables`<!-- -->, wobei Excel Steuerelemente neu berechnen, aber Änderungen in Tabellen ignoriert; `Manual`<!-- -->, wobei die Berechnung erfolgt, wenn der Benutzer sie anfordert.'
-    name: setCalculationMode(calculationMode)
-    fullName: setCalculationMode(calculationMode)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setCalculationMode(calculationMode: CalculationMode): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: calculationMode
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.CalculationMode:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.CalculationType:enum'
-    name: CalculationType
-    fullName: ExcelScript.CalculationType
-  - uid: 'ExcelScript!ExcelScript.CalculationMode:enum'
-    name: CalculationMode
-    fullName: ExcelScript.CalculationMode
-  - uid: 'ExcelScript!ExcelScript.CalculationState:enum'
-    name: CalculationState
-    fullName: ExcelScript.CalculationState
-  - uid: 'ExcelScript!ExcelScript.CultureInfo:interface'
-    name: CultureInfo
-    fullName: ExcelScript.CultureInfo
-  - uid: 'ExcelScript!ExcelScript.IterativeCalculation:interface'
-    name: IterativeCalculation
-    fullName: ExcelScript.IterativeCalculation
+### YamlMime:TSType
+name: ExcelScript.Application
+uid: ExcelScript!ExcelScript.Application:interface
+package: ExcelScript!
+fullName: ExcelScript.Application
+summary: Stellt die Excel-Anwendung dar, die die Arbeitsmappe verwaltet.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: calculate(calculationType)
+  uid: ExcelScript!ExcelScript.Application#calculate:member(1)
+  package: ExcelScript!
+  fullName: calculate(calculationType)
+  summary: Alle in Excel geöffnete Arbeitsmappen werden neu berechnet.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculate(calculationType: CalculationType): void;'
+    parameters:
+    - id: calculationType
+      description: Gibt den zu verwendenden Berechnungstyp an. Weitere Informationen finden Sie unter ExcelScript. CalculationType.
+      type: <xref uid="ExcelScript!ExcelScript.CalculationType:enum" />
+    return:
+      type: void
+      description: ''
+- name: getCalculationEngineVersion()
+  uid: ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)
+  package: ExcelScript!
+  fullName: getCalculationEngineVersion()
+  summary: Gibt die Version der Excel-Berechnungsmaschine zurück, die für die letzte vollständige Neuberechnung verwendet wurde.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCalculationEngineVersion(): number;'
+    return:
+      type: number
+      description: ''
+- name: getCalculationMode()
+  uid: ExcelScript!ExcelScript.Application#getCalculationMode:member(1)
+  package: ExcelScript!
+  fullName: getCalculationMode()
+  summary: 'Gibt den in der Arbeitsmappe verwendeten Berechnungsmodus gemäß der Definition durch die Konstanten in ExcelScript. CalculationMode zurück. Mögliche Werte sind: `Automatic`<!-- -->, wobei Excel Steuerelemente neu berechnen; `AutomaticExceptTables`<!-- -->, wobei Excel Steuerelemente neu berechnen, aber Änderungen in Tabellen ignoriert; `Manual`<!-- -->, wobei die Berechnung erfolgt, wenn der Benutzer sie anfordert.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCalculationMode(): CalculationMode;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CalculationMode:enum" />
+      description: ''
+- name: getCalculationState()
+  uid: ExcelScript!ExcelScript.Application#getCalculationState:member(1)
+  package: ExcelScript!
+  fullName: getCalculationState()
+  summary: Gibt den Berechnungszustand der Anwendung zurück. Weitere Informationen finden Sie unter ExcelScript. CalculationState.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCalculationState(): CalculationState;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CalculationState:enum" />
+      description: ''
+- name: getCultureInfo()
+  uid: ExcelScript!ExcelScript.Application#getCultureInfo:member(1)
+  package: ExcelScript!
+  fullName: getCultureInfo()
+  summary: Enthält Informationen basierend auf den aktuellen Systemkultur Einstellungen. Dies umfasst die Kulturnamen, die Zahlenformatierung und andere kulturell abhängige Einstellungen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCultureInfo(): CultureInfo;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CultureInfo:interface" />
+      description: ''
+- name: getDecimalSeparator()
+  uid: ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)
+  package: ExcelScript!
+  fullName: getDecimalSeparator()
+  summary: Ruft die Zeichenfolge ab, die als Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den lokalen Einstellungen von Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDecimalSeparator(): string;'
+    return:
+      type: string
+      description: ''
+- name: getIterativeCalculation()
+  uid: ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)
+  package: ExcelScript!
+  fullName: getIterativeCalculation()
+  summary: Gibt die Einstellungen für iterative Berechnung zurück. In Excel unter Windows und Mac werden die Einstellungen auf die Excel-Anwendung angewendet. In Excel im Internet und anderen Plattformen werden die Einstellungen auf die aktive Arbeitsmappe angewendet.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIterativeCalculation(): IterativeCalculation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.IterativeCalculation:interface" />
+      description: ''
+- name: getThousandsSeparator()
+  uid: ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)
+  package: ExcelScript!
+  fullName: getThousandsSeparator()
+  summary: Ruft die Zeichenfolge ab, die zum Trennen von Zifferngruppen links vom Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den lokalen Einstellungen von Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getThousandsSeparator(): string;'
+    return:
+      type: string
+      description: ''
+- name: getUseSystemSeparators()
+  uid: ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)
+  package: ExcelScript!
+  fullName: getUseSystemSeparators()
+  summary: Gibt an, ob die Systemtrennzeichen von Excel aktiviert sind. Zu den System Trennzeichen gehören das Dezimaltrennzeichen und Tausendertrennzeichen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseSystemSeparators(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setCalculationMode(calculationMode)
+  uid: ExcelScript!ExcelScript.Application#setCalculationMode:member(1)
+  package: ExcelScript!
+  fullName: setCalculationMode(calculationMode)
+  summary: 'Gibt den in der Arbeitsmappe verwendeten Berechnungsmodus gemäß der Definition durch die Konstanten in ExcelScript. CalculationMode zurück. Mögliche Werte sind: `Automatic`<!-- -->, wobei Excel Steuerelemente neu berechnen; `AutomaticExceptTables`<!-- -->, wobei Excel Steuerelemente neu berechnen, aber Änderungen in Tabellen ignoriert; `Manual`<!-- -->, wobei die Berechnung erfolgt, wenn der Benutzer sie anfordert.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setCalculationMode(calculationMode: CalculationMode): void;'
+    parameters:
+    - id: calculationMode
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.CalculationMode:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 3bb99af272686a3303d2564bbed7e972f6cde6e7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418128"

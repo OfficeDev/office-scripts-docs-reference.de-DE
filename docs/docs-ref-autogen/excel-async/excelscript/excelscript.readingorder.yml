@@ -1,37 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ReadingOrder:enum'
-    name: Excel.ReadingOrder
-    fullName: Excel.ReadingOrder
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ReadingOrder.context:member'
-      - 'excel!Excel.ReadingOrder.leftToRight:member'
-      - 'excel!Excel.ReadingOrder.rightToLeft:member'
-  - uid: 'excel!Excel.ReadingOrder.context:member'
-    summary: 'Die Leserichtung wird durch die Sprache des ersten eingegebenen Zeichens bestimmt. Wenn zuerst ein Zeichen einer Rechts-nach-Links-Sprache eingegeben wird, ist die Leserichtung von rechts nach links. Wird zunächst ein Zeichen einer Links-nach-Rechts-Sprache eingegeben, so ist die Leserichtung von links nach rechts.'
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Context"'
-  - uid: 'excel!Excel.ReadingOrder.leftToRight:member'
-    summary: Leserichtung von links nach rechts
-    name: leftToRight
-    fullName: leftToRight
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LeftToRight"'
-  - uid: 'excel!Excel.ReadingOrder.rightToLeft:member'
-    summary: Leserichtung von rechts nach links
-    name: rightToLeft
-    fullName: rightToLeft
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RightToLeft"'
+### YamlMime:TSEnum
+name: Excel.ReadingOrder
+uid: excel!Excel.ReadingOrder:enum
+package: excel!
+fullName: Excel.ReadingOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: context
+  uid: excel!Excel.ReadingOrder.context:member
+  package: excel!
+  summary: Die Leserichtung wird durch die Sprache des ersten eingegebenen Zeichens bestimmt. Wenn zuerst ein Zeichen einer Rechts-nach-Links-Sprache eingegeben wird, ist die Leserichtung von rechts nach links. Wird zunächst ein Zeichen einer Links-nach-Rechts-Sprache eingegeben, so ist die Leserichtung von links nach rechts.
+- name: leftToRight
+  uid: excel!Excel.ReadingOrder.leftToRight:member
+  package: excel!
+  summary: Leserichtung von links nach rechts
+- name: rightToLeft
+  uid: excel!Excel.ReadingOrder.rightToLeft:member
+  package: excel!
+  summary: Leserichtung von rechts nach links
+metadata:
+  ms.openlocfilehash: 04b866773dea46f4ae6cc6c0accf8de351004716
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418667"
