@@ -1,815 +1,682 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Chart:interface'
-    summary: Steht für ein Diagrammobjekt in einer Arbeitsmappe.
-    name: ExcelScript.Chart
-    fullName: ExcelScript.Chart
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Chart#activate:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#addChartSeries:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#delete:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getAxes:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getCategoryLabelLevel:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getChartType:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getDataLabels:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getDisplayBlanksAs:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getHeight:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getId:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getImage:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getLeft:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getLegend:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getName:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getPivotOptions:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getPlotArea:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getPlotBy:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getPlotVisibleOnly:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getSeries:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getSeriesNameLevel:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getShowAllFieldButtons:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getShowDataLabelsOverMaximum:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getTitle:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getTop:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getWidth:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#getWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setCategoryLabelLevel:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setChartType:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setData:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setDisplayBlanksAs:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setHeight:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setLeft:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setName:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setPlotBy:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setPlotVisibleOnly:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setPosition:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setSeriesNameLevel:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setShowAllFieldButtons:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setShowDataLabelsOverMaximum:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setTop:member(1)'
-      - 'ExcelScript!ExcelScript.Chart#setWidth:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Chart#activate:member(1)'
-    summary: Aktiviert das Diagramm auf der Excel-Benutzeroberfläche.
-    name: activate()
-    fullName: activate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'activate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#addChartSeries:member(1)'
-    summary: 'Fügt der Sammlung eine neue Reihe hinzu. Die neue hinzugefügte Datenreihe ist erst dann sichtbar, wenn die festgelegten Werte/x-Achsenwerte/Blasengrößen dafür (je nach Diagrammtyp).'
-    name: 'addChartSeries(name, index)'
-    fullName: 'addChartSeries(name, index)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addChartSeries(name?: string, index?: number): ChartSeries;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartSeries:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: Optional. Der Name der Datenreihe.
-          type:
-            - string
-        - id: index
-          description: Optional. Indexwert der hinzuzufügenden Datenreihe. Nullindiziert.
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Chart#delete:member(1)'
-    summary: Löscht das Diagrammobjekt.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getAxes:member(1)'
-    summary: Die Achsen des Diagramms.
-    name: getAxes()
-    fullName: getAxes()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAxes(): ChartAxes;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxes:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getCategoryLabelLevel:member(1)'
-    summary: 'Gibt eine ChartCategoryLabelLevel-Aufzählungskonstante an, die sich auf die Ebene bezieht, aus der die Kategorie-Beschriftungen stammen.'
-    name: getCategoryLabelLevel()
-    fullName: getCategoryLabelLevel()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCategoryLabelLevel(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getChartType:member(1)'
-    summary: Gibt den Typ des Diagramms an. Weitere Informationen finden Sie unter ExcelScript. ChartType.
-    name: getChartType()
-    fullName: getChartType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getChartType(): ChartType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getDataLabels:member(1)'
-    summary: Stellt die Datenbeschriftungen im Diagramm dar.
-    name: getDataLabels()
-    fullName: getDataLabels()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataLabels(): ChartDataLabels;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartDataLabels:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getDisplayBlanksAs:member(1)'
-    summary: 'Gibt an, wie leere Zellen in einem Diagramm geplottet werden.'
-    name: getDisplayBlanksAs()
-    fullName: getDisplayBlanksAs()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDisplayBlanksAs(): ChartDisplayBlanksAs;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartDisplayBlanksAs:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getFormat:member(1)'
-    summary: Kapselt die Formateigenschaften für den Diagrammbereich.
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartAreaFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAreaFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getHeight:member(1)'
-    summary: Gibt die Höhe des Chart-Objekts in Punkten an.
-    name: getHeight()
-    fullName: getHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getId:member(1)'
-    summary: Die eindeutige ID des Diagramms.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getImage:member(1)'
-    summary: 'Rendert das Diagramm als base64-codiertes Bild durch Skalierung, um es an die angegebenen Maße anzupassen. Das Seitenverhältnis wird im Rahmen der Größenänderung beibehalten.'
-    name: 'getImage(width, height, fittingMode)'
-    fullName: 'getImage(width, height, fittingMode)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getImage(
-                    width?: number,
-                    height?: number,
-                    fittingMode?: ImageFittingMode
-                ): string;
-      return:
-        type:
-          - string
-        description: ''
-      parameters:
-        - id: width
-          description: (Optional) Die gewünschte Breite des resultierenden Bildes.
-          type:
-            - number
-        - id: height
-          description: (Optional) Die gewünschte Höhe des resultierenden Bildes.
-          type:
-            - number
-        - id: fittingMode
-          description: 'Optional Die Methode, mit der das Diagramm auf die angegebenen Dimensionen skaliert wird (wenn Höhe und Breite festgelegt sind).'
-          type:
-            - 'ExcelScript!ExcelScript.ImageFittingMode:enum'
-  - uid: 'ExcelScript!ExcelScript.Chart#getLeft:member(1)'
-    summary: Der Abstand von der linken Seite des Diagramms zu dem Ursprung des Arbeitsblatts (in Punkten).
-    name: getLeft()
-    fullName: getLeft()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeft(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getLegend:member(1)'
-    summary: Die Legende für das Diagramm.
-    name: getLegend()
-    fullName: getLegend()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLegend(): ChartLegend;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartLegend:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getName:member(1)'
-    summary: Gibt den Namen eines Chart-Objekts an.
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getPivotOptions:member(1)'
-    summary: Verkapselt die Optionen für ein PivotChart.
-    name: getPivotOptions()
-    fullName: getPivotOptions()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotOptions(): ChartPivotOptions;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartPivotOptions:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getPlotArea:member(1)'
-    summary: Die plotArea-Eigenschaft für das Diagramm.
-    name: getPlotArea()
-    fullName: getPlotArea()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPlotArea(): ChartPlotArea;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartPlotArea:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getPlotBy:member(1)'
-    summary: 'Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden.'
-    name: getPlotBy()
-    fullName: getPlotBy()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPlotBy(): ChartPlotBy;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartPlotBy:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getPlotVisibleOnly:member(1)'
-    summary: '„True“, wenn nur sichtbare Zellen dargestellt werden. „False“, wenn sowohl sichtbare als auch ausgeblendete Zellen dargestellt werden.'
-    name: getPlotVisibleOnly()
-    fullName: getPlotVisibleOnly()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPlotVisibleOnly(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getSeries:member(1)'
-    summary: Eine einzelne Datenreihe oder eine Sammlung von Datenreihen im Diagramm.
-    name: getSeries()
-    fullName: getSeries()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSeries(): ChartSeries[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Chart#getSeries~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getSeriesNameLevel:member(1)'
-    summary: 'Gibt eine ChartSeriesNameLevel-Aufzählungskonstante an, die sich auf die Ebene bezieht, aus der die Datenreihennamen stammen.'
-    name: getSeriesNameLevel()
-    fullName: getSeriesNameLevel()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSeriesNameLevel(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getShowAllFieldButtons:member(1)'
-    summary: 'Gibt an, ob alle Feldschaltflächen in einem PivotChart angezeigt werden sollen.'
-    name: getShowAllFieldButtons()
-    fullName: getShowAllFieldButtons()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowAllFieldButtons(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getShowDataLabelsOverMaximum:member(1)'
-    summary: 'Gibt an, ob die Datenbeschriftungen angezeigt werden sollen, wenn der Wert größer als der Maximalwert auf der Größenachse ist. Wenn die Größenachse kleiner als die Größe der Datenpunkte wurde, können Sie diese Eigenschaft verwenden, um festzulegen, ob die Datenbeschriftungen angezeigt werden sollen. Diese Eigenschaft kann nur auf 2D-Diagramme angewendet werden.'
-    name: getShowDataLabelsOverMaximum()
-    fullName: getShowDataLabelsOverMaximum()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowDataLabelsOverMaximum(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getStyle:member(1)'
-    summary: Gibt die Diagrammformatvorlage für das Diagramm an.
-    name: getStyle()
-    fullName: getStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getStyle(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getTitle:member(1)'
-    summary: 'Gibt den Titel des angegebenen Diagramms an, einschließlich des Texts, der Sichtbarkeit, der Position und der Formatierung des Titels.'
-    name: getTitle()
-    fullName: getTitle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTitle(): ChartTitle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTitle:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getTop:member(1)'
-    summary: Gibt den Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand von Zeile 1 (auf einem Arbeitsblatt) oder zum oberen Rand des Diagrammbereichs (in einem Diagramm) an.
-    name: getTop()
-    fullName: getTop()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTop(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getWidth:member(1)'
-    summary: Gibt die Breite des Chart-Objekts in Punkten an.
-    name: getWidth()
-    fullName: getWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#getWorksheet:member(1)'
-    summary: 'Das Arbeitsblatt, das das aktuelle Diagramm enthält.'
-    name: getWorksheet()
-    fullName: getWorksheet()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWorksheet(): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Chart#setCategoryLabelLevel:member(1)'
-    summary: 'Gibt eine ChartCategoryLabelLevel-Aufzählungskonstante an, die sich auf die Ebene bezieht, aus der die Kategorie-Beschriftungen stammen.'
-    name: setCategoryLabelLevel(categoryLabelLevel)
-    fullName: setCategoryLabelLevel(categoryLabelLevel)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setCategoryLabelLevel(categoryLabelLevel: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: categoryLabelLevel
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Chart#setChartType:member(1)'
-    summary: Gibt den Typ des Diagramms an. Weitere Informationen finden Sie unter ExcelScript. ChartType.
-    name: setChartType(chartType)
-    fullName: setChartType(chartType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setChartType(chartType: ChartType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: chartType
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartType:enum'
-  - uid: 'ExcelScript!ExcelScript.Chart#setData:member(1)'
-    summary: Setzt die Quelldaten für das Diagramm zurück.
-    name: 'setData(sourceData, seriesBy)'
-    fullName: 'setData(sourceData, seriesBy)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setData(sourceData: Range, seriesBy?: ChartSeriesBy): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceData
-          description: 'Das Range-Objekt, das den Quelldaten entspricht.'
-          type:
-            - 'ExcelScript!ExcelScript.Range:interface'
-        - id: seriesBy
-          description: 'Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden. Kann einer der folgenden Werte sein: Auto (Standard), Zeilen und Spalten. Weitere Informationen finden Sie unter ExcelScript. ChartSeriesBy.'
-          type:
-            - 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
-  - uid: 'ExcelScript!ExcelScript.Chart#setDisplayBlanksAs:member(1)'
-    summary: 'Gibt an, wie leere Zellen in einem Diagramm geplottet werden.'
-    name: setDisplayBlanksAs(displayBlanksAs)
-    fullName: setDisplayBlanksAs(displayBlanksAs)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDisplayBlanksAs(displayBlanksAs: ChartDisplayBlanksAs): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: displayBlanksAs
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartDisplayBlanksAs:enum'
-  - uid: 'ExcelScript!ExcelScript.Chart#setHeight:member(1)'
-    summary: Gibt die Höhe des Chart-Objekts in Punkten an.
-    name: setHeight(height)
-    fullName: setHeight(height)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setHeight(height: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: height
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Chart#setLeft:member(1)'
-    summary: Der Abstand von der linken Seite des Diagramms zu dem Ursprung des Arbeitsblatts (in Punkten).
-    name: setLeft(left)
-    fullName: setLeft(left)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLeft(left: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: left
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Chart#setName:member(1)'
-    summary: Gibt den Namen eines Chart-Objekts an.
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Chart#setPlotBy:member(1)'
-    summary: 'Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden.'
-    name: setPlotBy(plotBy)
-    fullName: setPlotBy(plotBy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPlotBy(plotBy: ChartPlotBy): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: plotBy
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartPlotBy:enum'
-  - uid: 'ExcelScript!ExcelScript.Chart#setPlotVisibleOnly:member(1)'
-    summary: '„True“, wenn nur sichtbare Zellen dargestellt werden. „False“, wenn sowohl sichtbare als auch ausgeblendete Zellen dargestellt werden.'
-    name: setPlotVisibleOnly(plotVisibleOnly)
-    fullName: setPlotVisibleOnly(plotVisibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPlotVisibleOnly(plotVisibleOnly: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: plotVisibleOnly
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Chart#setPosition:member(1)'
-    summary: Positioniert das Diagramm im Verhältnis zu den Zellen im Arbeitsblatt.
-    name: 'setPosition(startCell, endCell)'
-    fullName: 'setPosition(startCell, endCell)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPosition(startCell: Range | string, endCell?: Range | string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: startCell
-          description: 'Die Startzelle. An diese Position wird das Diagramm verschoben. Die Startzelle ist die obere linke oder die obere rechte Zelle, abhängig davon, ob die eingestellte Textrichtung des Benutzers von links nach rechts oder von rechts nach links ist.'
-          type:
-            - 'ExcelScript!ExcelScript.Chart#setPosition~0:complex'
-        - id: endCell
-          description: '(Optional) Die Endzelle. Wenn angegeben, werden Breite und Höhe des Diagramms so eingestellt, dass diese Zelle/dieser Bereich vollständig bedeckt ist.'
-          type:
-            - 'ExcelScript!ExcelScript.Chart#setPosition~1:complex'
-  - uid: 'ExcelScript!ExcelScript.Chart#setSeriesNameLevel:member(1)'
-    summary: 'Gibt eine ChartSeriesNameLevel-Aufzählungskonstante an, die sich auf die Ebene bezieht, aus der die Datenreihennamen stammen.'
-    name: setSeriesNameLevel(seriesNameLevel)
-    fullName: setSeriesNameLevel(seriesNameLevel)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSeriesNameLevel(seriesNameLevel: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: seriesNameLevel
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Chart#setShowAllFieldButtons:member(1)'
-    summary: 'Gibt an, ob alle Feldschaltflächen in einem PivotChart angezeigt werden sollen.'
-    name: setShowAllFieldButtons(showAllFieldButtons)
-    fullName: setShowAllFieldButtons(showAllFieldButtons)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowAllFieldButtons(showAllFieldButtons: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showAllFieldButtons
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Chart#setShowDataLabelsOverMaximum:member(1)'
-    summary: 'Gibt an, ob die Datenbeschriftungen angezeigt werden sollen, wenn der Wert größer als der Maximalwert auf der Größenachse ist. Wenn die Größenachse kleiner als die Größe der Datenpunkte wurde, können Sie diese Eigenschaft verwenden, um festzulegen, ob die Datenbeschriftungen angezeigt werden sollen. Diese Eigenschaft kann nur auf 2D-Diagramme angewendet werden.'
-    name: setShowDataLabelsOverMaximum(showDataLabelsOverMaximum)
-    fullName: setShowDataLabelsOverMaximum(showDataLabelsOverMaximum)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowDataLabelsOverMaximum(showDataLabelsOverMaximum: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showDataLabelsOverMaximum
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Chart#setStyle:member(1)'
-    summary: Gibt die Diagrammformatvorlage für das Diagramm an.
-    name: setStyle(style)
-    fullName: setStyle(style)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setStyle(style: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: style
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Chart#setTop:member(1)'
-    summary: Gibt den Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand von Zeile 1 (auf einem Arbeitsblatt) oder zum oberen Rand des Diagrammbereichs (in einem Diagramm) an.
-    name: setTop(top)
-    fullName: setTop(top)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTop(top: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: top
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Chart#setWidth:member(1)'
-    summary: Gibt die Breite des Chart-Objekts in Punkten an.
-    name: setWidth(width)
-    fullName: setWidth(width)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setWidth(width: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: width
-          description: ''
-          type:
-            - number
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartSeries:interface'
-    name: ChartSeries
-    fullName: ExcelScript.ChartSeries
-  - uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
-    name: ChartAxes
-    fullName: ExcelScript.ChartAxes
-  - uid: 'ExcelScript!ExcelScript.ChartType:enum'
-    name: ChartType
-    fullName: ExcelScript.ChartType
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabels:interface'
-    name: ChartDataLabels
-    fullName: ExcelScript.ChartDataLabels
-  - uid: 'ExcelScript!ExcelScript.ChartDisplayBlanksAs:enum'
-    name: ChartDisplayBlanksAs
-    fullName: ExcelScript.ChartDisplayBlanksAs
-  - uid: 'ExcelScript!ExcelScript.ChartAreaFormat:interface'
-    name: ChartAreaFormat
-    fullName: ExcelScript.ChartAreaFormat
-  - uid: 'ExcelScript!ExcelScript.ImageFittingMode:enum'
-    name: ImageFittingMode
-    fullName: ExcelScript.ImageFittingMode
-  - uid: 'ExcelScript!ExcelScript.ChartLegend:interface'
-    name: ChartLegend
-    fullName: ExcelScript.ChartLegend
-  - uid: 'ExcelScript!ExcelScript.ChartPivotOptions:interface'
-    name: ChartPivotOptions
-    fullName: ExcelScript.ChartPivotOptions
-  - uid: 'ExcelScript!ExcelScript.ChartPlotArea:interface'
-    name: ChartPlotArea
-    fullName: ExcelScript.ChartPlotArea
-  - uid: 'ExcelScript!ExcelScript.ChartPlotBy:enum'
-    name: ChartPlotBy
-    fullName: ExcelScript.ChartPlotBy
-  - uid: 'ExcelScript!ExcelScript.Chart#getSeries~0:complex'
-    name: 'ChartSeries[]'
-    fullName: 'ExcelScript.ChartSeries[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.ChartSeries:interface'
-        name: ChartSeries
-        fullName: ExcelScript.ChartSeries
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.ChartTitle:interface'
-    name: ChartTitle
-    fullName: ExcelScript.ChartTitle
-  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    name: Worksheet
-    fullName: ExcelScript.Worksheet
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
-    name: ChartSeriesBy
-    fullName: ExcelScript.ChartSeriesBy
-  - uid: 'ExcelScript!ExcelScript.Chart#setPosition~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.Chart#setPosition~1:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
+### YamlMime:TSType
+name: ExcelScript.Chart
+uid: ExcelScript!ExcelScript.Chart:interface
+package: ExcelScript!
+fullName: ExcelScript.Chart
+summary: Steht für ein Diagrammobjekt in einer Arbeitsmappe.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: activate()
+  uid: ExcelScript!ExcelScript.Chart#activate:member(1)
+  package: ExcelScript!
+  fullName: activate()
+  summary: Aktiviert das Diagramm auf der Excel-Benutzeroberfläche.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'activate(): void;'
+    return:
+      type: void
+      description: ''
+- name: addChartSeries(name, index)
+  uid: ExcelScript!ExcelScript.Chart#addChartSeries:member(1)
+  package: ExcelScript!
+  fullName: addChartSeries(name, index)
+  summary: Fügt der Sammlung eine neue Reihe hinzu. Die neue hinzugefügte Datenreihe ist erst dann sichtbar, wenn die festgelegten Werte/x-Achsenwerte/Blasengrößen dafür (je nach Diagrammtyp).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addChartSeries(name?: string, index?: number): ChartSeries;'
+    parameters:
+    - id: name
+      description: Optional. Der Name der Datenreihe.
+      type: string
+    - id: index
+      description: Optional. Indexwert der hinzuzufügenden Datenreihe. Nullindiziert.
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartSeries:interface" />
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.Chart#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Löscht das Diagrammobjekt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAxes()
+  uid: ExcelScript!ExcelScript.Chart#getAxes:member(1)
+  package: ExcelScript!
+  fullName: getAxes()
+  summary: Die Achsen des Diagramms.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAxes(): ChartAxes;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxes:interface" />
+      description: ''
+- name: getCategoryLabelLevel()
+  uid: ExcelScript!ExcelScript.Chart#getCategoryLabelLevel:member(1)
+  package: ExcelScript!
+  fullName: getCategoryLabelLevel()
+  summary: Gibt eine ChartCategoryLabelLevel-Aufzählungskonstante an, die sich auf die Ebene bezieht, aus der die Kategorie-Beschriftungen stammen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCategoryLabelLevel(): number;'
+    return:
+      type: number
+      description: ''
+- name: getChartType()
+  uid: ExcelScript!ExcelScript.Chart#getChartType:member(1)
+  package: ExcelScript!
+  fullName: getChartType()
+  summary: Gibt den Typ des Diagramms an. Weitere Informationen finden Sie unter ExcelScript. ChartType.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getChartType(): ChartType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartType:enum" />
+      description: ''
+- name: getDataLabels()
+  uid: ExcelScript!ExcelScript.Chart#getDataLabels:member(1)
+  package: ExcelScript!
+  fullName: getDataLabels()
+  summary: Stellt die Datenbeschriftungen im Diagramm dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataLabels(): ChartDataLabels;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabels:interface" />
+      description: ''
+- name: getDisplayBlanksAs()
+  uid: ExcelScript!ExcelScript.Chart#getDisplayBlanksAs:member(1)
+  package: ExcelScript!
+  fullName: getDisplayBlanksAs()
+  summary: Gibt an, wie leere Zellen in einem Diagramm geplottet werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDisplayBlanksAs(): ChartDisplayBlanksAs;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartDisplayBlanksAs:enum" />
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.Chart#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Kapselt die Formateigenschaften für den Diagrammbereich.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartAreaFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAreaFormat:interface" />
+      description: ''
+- name: getHeight()
+  uid: ExcelScript!ExcelScript.Chart#getHeight:member(1)
+  package: ExcelScript!
+  fullName: getHeight()
+  summary: Gibt die Höhe des Chart-Objekts in Punkten an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Chart#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Die eindeutige ID des Diagramms.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getImage(width, height, fittingMode)
+  uid: ExcelScript!ExcelScript.Chart#getImage:member(1)
+  package: ExcelScript!
+  fullName: getImage(width, height, fittingMode)
+  summary: Rendert das Diagramm als base64-codiertes Bild durch Skalierung, um es an die angegebenen Maße anzupassen. Das Seitenverhältnis wird im Rahmen der Größenänderung beibehalten.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getImage(
+                  width?: number,
+                  height?: number,
+                  fittingMode?: ImageFittingMode
+              ): string;
+    parameters:
+    - id: width
+      description: (Optional) Die gewünschte Breite des resultierenden Bildes.
+      type: number
+    - id: height
+      description: (Optional) Die gewünschte Höhe des resultierenden Bildes.
+      type: number
+    - id: fittingMode
+      description: Optional Die Methode, mit der das Diagramm auf die angegebenen Dimensionen skaliert wird (wenn Höhe und Breite festgelegt sind).
+      type: <xref uid="ExcelScript!ExcelScript.ImageFittingMode:enum" />
+    return:
+      type: string
+      description: ''
+- name: getLeft()
+  uid: ExcelScript!ExcelScript.Chart#getLeft:member(1)
+  package: ExcelScript!
+  fullName: getLeft()
+  summary: Der Abstand von der linken Seite des Diagramms zu dem Ursprung des Arbeitsblatts (in Punkten).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeft(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLegend()
+  uid: ExcelScript!ExcelScript.Chart#getLegend:member(1)
+  package: ExcelScript!
+  fullName: getLegend()
+  summary: Die Legende für das Diagramm.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLegend(): ChartLegend;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartLegend:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.Chart#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Gibt den Namen eines Chart-Objekts an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPivotOptions()
+  uid: ExcelScript!ExcelScript.Chart#getPivotOptions:member(1)
+  package: ExcelScript!
+  fullName: getPivotOptions()
+  summary: Verkapselt die Optionen für ein PivotChart.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotOptions(): ChartPivotOptions;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartPivotOptions:interface" />
+      description: ''
+- name: getPlotArea()
+  uid: ExcelScript!ExcelScript.Chart#getPlotArea:member(1)
+  package: ExcelScript!
+  fullName: getPlotArea()
+  summary: Die plotArea-Eigenschaft für das Diagramm.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPlotArea(): ChartPlotArea;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartPlotArea:interface" />
+      description: ''
+- name: getPlotBy()
+  uid: ExcelScript!ExcelScript.Chart#getPlotBy:member(1)
+  package: ExcelScript!
+  fullName: getPlotBy()
+  summary: Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPlotBy(): ChartPlotBy;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartPlotBy:enum" />
+      description: ''
+- name: getPlotVisibleOnly()
+  uid: ExcelScript!ExcelScript.Chart#getPlotVisibleOnly:member(1)
+  package: ExcelScript!
+  fullName: getPlotVisibleOnly()
+  summary: „True“, wenn nur sichtbare Zellen dargestellt werden. „False“, wenn sowohl sichtbare als auch ausgeblendete Zellen dargestellt werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPlotVisibleOnly(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSeries()
+  uid: ExcelScript!ExcelScript.Chart#getSeries:member(1)
+  package: ExcelScript!
+  fullName: getSeries()
+  summary: Eine einzelne Datenreihe oder eine Sammlung von Datenreihen im Diagramm.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSeries(): ChartSeries[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartSeries:interface" />[]
+      description: ''
+- name: getSeriesNameLevel()
+  uid: ExcelScript!ExcelScript.Chart#getSeriesNameLevel:member(1)
+  package: ExcelScript!
+  fullName: getSeriesNameLevel()
+  summary: Gibt eine ChartSeriesNameLevel-Aufzählungskonstante an, die sich auf die Ebene bezieht, aus der die Datenreihennamen stammen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSeriesNameLevel(): number;'
+    return:
+      type: number
+      description: ''
+- name: getShowAllFieldButtons()
+  uid: ExcelScript!ExcelScript.Chart#getShowAllFieldButtons:member(1)
+  package: ExcelScript!
+  fullName: getShowAllFieldButtons()
+  summary: Gibt an, ob alle Feldschaltflächen in einem PivotChart angezeigt werden sollen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowAllFieldButtons(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowDataLabelsOverMaximum()
+  uid: ExcelScript!ExcelScript.Chart#getShowDataLabelsOverMaximum:member(1)
+  package: ExcelScript!
+  fullName: getShowDataLabelsOverMaximum()
+  summary: Gibt an, ob die Datenbeschriftungen angezeigt werden sollen, wenn der Wert größer als der Maximalwert auf der Größenachse ist. Wenn die Größenachse kleiner als die Größe der Datenpunkte wurde, können Sie diese Eigenschaft verwenden, um festzulegen, ob die Datenbeschriftungen angezeigt werden sollen. Diese Eigenschaft kann nur auf 2D-Diagramme angewendet werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowDataLabelsOverMaximum(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getStyle()
+  uid: ExcelScript!ExcelScript.Chart#getStyle:member(1)
+  package: ExcelScript!
+  fullName: getStyle()
+  summary: Gibt die Diagrammformatvorlage für das Diagramm an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getStyle(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTitle()
+  uid: ExcelScript!ExcelScript.Chart#getTitle:member(1)
+  package: ExcelScript!
+  fullName: getTitle()
+  summary: Gibt den Titel des angegebenen Diagramms an, einschließlich des Texts, der Sichtbarkeit, der Position und der Formatierung des Titels.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTitle(): ChartTitle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTitle:interface" />
+      description: ''
+- name: getTop()
+  uid: ExcelScript!ExcelScript.Chart#getTop:member(1)
+  package: ExcelScript!
+  fullName: getTop()
+  summary: Gibt den Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand von Zeile 1 (auf einem Arbeitsblatt) oder zum oberen Rand des Diagrammbereichs (in einem Diagramm) an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTop(): number;'
+    return:
+      type: number
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.Chart#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: Gibt die Breite des Chart-Objekts in Punkten an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: getWorksheet()
+  uid: ExcelScript!ExcelScript.Chart#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet()
+  summary: Das Arbeitsblatt, das das aktuelle Diagramm enthält.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(): Worksheet;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: setCategoryLabelLevel(categoryLabelLevel)
+  uid: ExcelScript!ExcelScript.Chart#setCategoryLabelLevel:member(1)
+  package: ExcelScript!
+  fullName: setCategoryLabelLevel(categoryLabelLevel)
+  summary: Gibt eine ChartCategoryLabelLevel-Aufzählungskonstante an, die sich auf die Ebene bezieht, aus der die Kategorie-Beschriftungen stammen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setCategoryLabelLevel(categoryLabelLevel: number): void;'
+    parameters:
+    - id: categoryLabelLevel
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setChartType(chartType)
+  uid: ExcelScript!ExcelScript.Chart#setChartType:member(1)
+  package: ExcelScript!
+  fullName: setChartType(chartType)
+  summary: Gibt den Typ des Diagramms an. Weitere Informationen finden Sie unter ExcelScript. ChartType.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setChartType(chartType: ChartType): void;'
+    parameters:
+    - id: chartType
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartType:enum" />
+    return:
+      type: void
+      description: ''
+- name: setData(sourceData, seriesBy)
+  uid: ExcelScript!ExcelScript.Chart#setData:member(1)
+  package: ExcelScript!
+  fullName: setData(sourceData, seriesBy)
+  summary: Setzt die Quelldaten für das Diagramm zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setData(sourceData: Range, seriesBy?: ChartSeriesBy): void;'
+    parameters:
+    - id: sourceData
+      description: Das Range-Objekt, das den Quelldaten entspricht.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+    - id: seriesBy
+      description: 'Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden. Kann einer der folgenden Werte sein: Auto (Standard), Zeilen und Spalten. Weitere Informationen finden Sie unter ExcelScript. ChartSeriesBy.'
+      type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
+    return:
+      type: void
+      description: ''
+- name: setDisplayBlanksAs(displayBlanksAs)
+  uid: ExcelScript!ExcelScript.Chart#setDisplayBlanksAs:member(1)
+  package: ExcelScript!
+  fullName: setDisplayBlanksAs(displayBlanksAs)
+  summary: Gibt an, wie leere Zellen in einem Diagramm geplottet werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDisplayBlanksAs(displayBlanksAs: ChartDisplayBlanksAs): void;'
+    parameters:
+    - id: displayBlanksAs
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartDisplayBlanksAs:enum" />
+    return:
+      type: void
+      description: ''
+- name: setHeight(height)
+  uid: ExcelScript!ExcelScript.Chart#setHeight:member(1)
+  package: ExcelScript!
+  fullName: setHeight(height)
+  summary: Gibt die Höhe des Chart-Objekts in Punkten an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHeight(height: number): void;'
+    parameters:
+    - id: height
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setLeft(left)
+  uid: ExcelScript!ExcelScript.Chart#setLeft:member(1)
+  package: ExcelScript!
+  fullName: setLeft(left)
+  summary: Der Abstand von der linken Seite des Diagramms zu dem Ursprung des Arbeitsblatts (in Punkten).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLeft(left: number): void;'
+    parameters:
+    - id: left
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.Chart#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Gibt den Namen eines Chart-Objekts an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPlotBy(plotBy)
+  uid: ExcelScript!ExcelScript.Chart#setPlotBy:member(1)
+  package: ExcelScript!
+  fullName: setPlotBy(plotBy)
+  summary: Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPlotBy(plotBy: ChartPlotBy): void;'
+    parameters:
+    - id: plotBy
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartPlotBy:enum" />
+    return:
+      type: void
+      description: ''
+- name: setPlotVisibleOnly(plotVisibleOnly)
+  uid: ExcelScript!ExcelScript.Chart#setPlotVisibleOnly:member(1)
+  package: ExcelScript!
+  fullName: setPlotVisibleOnly(plotVisibleOnly)
+  summary: „True“, wenn nur sichtbare Zellen dargestellt werden. „False“, wenn sowohl sichtbare als auch ausgeblendete Zellen dargestellt werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPlotVisibleOnly(plotVisibleOnly: boolean): void;'
+    parameters:
+    - id: plotVisibleOnly
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setPosition(startCell, endCell)
+  uid: ExcelScript!ExcelScript.Chart#setPosition:member(1)
+  package: ExcelScript!
+  fullName: setPosition(startCell, endCell)
+  summary: Positioniert das Diagramm im Verhältnis zu den Zellen im Arbeitsblatt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPosition(startCell: Range | string, endCell?: Range | string): void;'
+    parameters:
+    - id: startCell
+      description: Die Startzelle. An diese Position wird das Diagramm verschoben. Die Startzelle ist die obere linke oder die obere rechte Zelle, abhängig davon, ob die eingestellte Textrichtung des Benutzers von links nach rechts oder von rechts nach links ist.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: endCell
+      description: (Optional) Die Endzelle. Wenn angegeben, werden Breite und Höhe des Diagramms so eingestellt, dass diese Zelle/dieser Bereich vollständig bedeckt ist.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: setSeriesNameLevel(seriesNameLevel)
+  uid: ExcelScript!ExcelScript.Chart#setSeriesNameLevel:member(1)
+  package: ExcelScript!
+  fullName: setSeriesNameLevel(seriesNameLevel)
+  summary: Gibt eine ChartSeriesNameLevel-Aufzählungskonstante an, die sich auf die Ebene bezieht, aus der die Datenreihennamen stammen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSeriesNameLevel(seriesNameLevel: number): void;'
+    parameters:
+    - id: seriesNameLevel
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setShowAllFieldButtons(showAllFieldButtons)
+  uid: ExcelScript!ExcelScript.Chart#setShowAllFieldButtons:member(1)
+  package: ExcelScript!
+  fullName: setShowAllFieldButtons(showAllFieldButtons)
+  summary: Gibt an, ob alle Feldschaltflächen in einem PivotChart angezeigt werden sollen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowAllFieldButtons(showAllFieldButtons: boolean): void;'
+    parameters:
+    - id: showAllFieldButtons
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowDataLabelsOverMaximum(showDataLabelsOverMaximum)
+  uid: ExcelScript!ExcelScript.Chart#setShowDataLabelsOverMaximum:member(1)
+  package: ExcelScript!
+  fullName: setShowDataLabelsOverMaximum(showDataLabelsOverMaximum)
+  summary: Gibt an, ob die Datenbeschriftungen angezeigt werden sollen, wenn der Wert größer als der Maximalwert auf der Größenachse ist. Wenn die Größenachse kleiner als die Größe der Datenpunkte wurde, können Sie diese Eigenschaft verwenden, um festzulegen, ob die Datenbeschriftungen angezeigt werden sollen. Diese Eigenschaft kann nur auf 2D-Diagramme angewendet werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowDataLabelsOverMaximum(showDataLabelsOverMaximum: boolean): void;'
+    parameters:
+    - id: showDataLabelsOverMaximum
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setStyle(style)
+  uid: ExcelScript!ExcelScript.Chart#setStyle:member(1)
+  package: ExcelScript!
+  fullName: setStyle(style)
+  summary: Gibt die Diagrammformatvorlage für das Diagramm an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setStyle(style: number): void;'
+    parameters:
+    - id: style
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTop(top)
+  uid: ExcelScript!ExcelScript.Chart#setTop:member(1)
+  package: ExcelScript!
+  fullName: setTop(top)
+  summary: Gibt den Abstand (in Punkt) vom oberen Rand des Objekts zum oberen Rand von Zeile 1 (auf einem Arbeitsblatt) oder zum oberen Rand des Diagrammbereichs (in einem Diagramm) an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTop(top: number): void;'
+    parameters:
+    - id: top
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setWidth(width)
+  uid: ExcelScript!ExcelScript.Chart#setWidth:member(1)
+  package: ExcelScript!
+  fullName: setWidth(width)
+  summary: Gibt die Breite des Chart-Objekts in Punkten an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setWidth(width: number): void;'
+    parameters:
+    - id: width
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 16db85eee5fc6327494e016ddfc9584f3d263d5c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420160"
