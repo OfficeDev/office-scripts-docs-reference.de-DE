@@ -1,114 +1,113 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry:interface'
-    summary: Stellt das legendEntry in legendEntryCollection dar.
-    name: ExcelScript.ChartLegendEntry
-    fullName: ExcelScript.ChartLegendEntry
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)'
-      - 'ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)'
-    summary: Gibt die Höhe des legendEntry in der Diagrammlegende an.
-    name: getHeight()
-    fullName: getHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)'
-    summary: Gibt den Index des legendEntry in der Diagrammlegende an.
-    name: getIndex()
-    fullName: getIndex()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIndex(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)'
-    summary: Gibt den linken Rand eines Diagramm legendEntrys an.
-    name: getLeft()
-    fullName: getLeft()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeft(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)'
-    summary: Gibt den oberen Rand eines Diagramm legendEntrys an.
-    name: getTop()
-    fullName: getTop()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTop(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)'
-    summary: Stellt den sichtbaren Teil eines Diagrammlegendeneintrags dar.
-    name: getVisible()
-    fullName: getVisible()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)'
-    summary: Die Breite des LegendEntry-Objekts in der Legende des Diagramms.
-    name: getWidth()
-    fullName: getWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)'
-    summary: Stellt den sichtbaren Teil eines Diagrammlegendeneintrags dar.
-    name: setVisible(visible)
-    fullName: setVisible(visible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visible
-          description: ''
-          type:
-            - boolean
+### YamlMime:TSType
+name: ExcelScript.ChartLegendEntry
+uid: ExcelScript!ExcelScript.ChartLegendEntry:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartLegendEntry
+summary: Stellt das legendEntry in legendEntryCollection dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getHeight()
+  uid: ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)
+  package: ExcelScript!
+  fullName: getHeight()
+  summary: Gibt die Höhe des legendEntry in der Diagrammlegende an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getIndex()
+  uid: ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)
+  package: ExcelScript!
+  fullName: getIndex()
+  summary: Gibt den Index des legendEntry in der Diagrammlegende an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIndex(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLeft()
+  uid: ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)
+  package: ExcelScript!
+  fullName: getLeft()
+  summary: Gibt den linken Rand eines Diagramm legendEntrys an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeft(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTop()
+  uid: ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)
+  package: ExcelScript!
+  fullName: getTop()
+  summary: Gibt den oberen Rand eines Diagramm legendEntrys an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTop(): number;'
+    return:
+      type: number
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: Stellt den sichtbaren Teil eines Diagrammlegendeneintrags dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: Die Breite des LegendEntry-Objekts in der Legende des Diagramms.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: Stellt den sichtbaren Teil eines Diagrammlegendeneintrags dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 8bce41532fd56c707fdc407fcb976525c2738314
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419768"

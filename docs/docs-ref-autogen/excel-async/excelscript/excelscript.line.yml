@@ -1,494 +1,312 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Line:interface'
-    summary: Stellt eine Hilfslinie innerhalb eines Arbeitsblatts dar. Verwenden Sie zum Abrufen des entsprechenden Shape-Objekts`Line.shape`<!-- -->.
-    name: Excel.Line
-    fullName: Excel.Line
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Line#beginArrowheadLength:member'
-      - 'excel!Excel.Line#beginArrowheadStyle:member'
-      - 'excel!Excel.Line#beginArrowheadWidth:member'
-      - 'excel!Excel.Line#beginConnectedShape:member'
-      - 'excel!Excel.Line#beginConnectedSite:member'
-      - 'excel!Excel.Line#connectBeginShape:member(1)'
-      - 'excel!Excel.Line#connectEndShape:member(1)'
-      - 'excel!Excel.Line#connectorType:member'
-      - 'excel!Excel.Line#disconnectBeginShape:member(1)'
-      - 'excel!Excel.Line#disconnectEndShape:member(1)'
-      - 'excel!Excel.Line#endArrowheadLength:member'
-      - 'excel!Excel.Line#endArrowheadStyle:member'
-      - 'excel!Excel.Line#endArrowheadWidth:member'
-      - 'excel!Excel.Line#endConnectedShape:member'
-      - 'excel!Excel.Line#endConnectedSite:member'
-      - 'excel!Excel.Line#id:member'
-      - 'excel!Excel.Line#isBeginConnected:member'
-      - 'excel!Excel.Line#isEndConnected:member'
-      - 'excel!Excel.Line#load:member(1)'
-      - 'excel!Excel.Line#shape:member'
-  - uid: 'excel!Excel.Line#beginArrowheadLength:member'
-    summary: Stellt die Länge der Pfeilspitze am Anfang der angegebenen Linie dar.
-    name: beginArrowheadLength
-    fullName: beginArrowheadLength
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'beginArrowheadLength: ArrowheadLength | "Short" | "Medium" | "Long";'
-      return:
-        type:
-          - 'excel!Excel.Line#beginArrowheadLength~0:complex'
-  - uid: 'excel!Excel.Line#beginArrowheadStyle:member'
-    summary: Stellt das Format der Pfeilspitze am Anfang der angegebenen Linie dar.
-    name: beginArrowheadStyle
-    fullName: beginArrowheadStyle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        beginArrowheadStyle:
-                    | ArrowheadStyle
+### YamlMime:TSType
+name: Excel.Line
+uid: excel!Excel.Line:interface
+package: excel!
+fullName: Excel.Line
+summary: Stellt eine Hilfslinie innerhalb eines Arbeitsblatts dar. Verwenden Sie zum Abrufen des entsprechenden Shape-Objekts `Line.shape`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: beginArrowheadLength
+  uid: excel!Excel.Line#beginArrowheadLength:member
+  package: excel!
+  fullName: beginArrowheadLength
+  summary: Stellt die Länge der Pfeilspitze am Anfang der angegebenen Linie dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'beginArrowheadLength: ArrowheadLength | "Short" | "Medium" | "Long";'
+    return:
+      type: <xref uid="excel!Excel.ArrowheadLength:enum" /> | "Short" | "Medium" | "Long"
+- name: beginArrowheadStyle
+  uid: excel!Excel.Line#beginArrowheadStyle:member
+  package: excel!
+  fullName: beginArrowheadStyle
+  summary: Stellt das Format der Pfeilspitze am Anfang der angegebenen Linie dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      beginArrowheadStyle:
+                  | ArrowheadStyle
+                  | "None"
+                  | "Triangle"
+                  | "Stealth"
+                  | "Diamond"
+                  | "Oval"
+                  | "Open";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ArrowheadStyle:enum" />
                     | "None"
                     | "Triangle"
                     | "Stealth"
                     | "Diamond"
                     | "Oval"
-                    | "Open";
-      return:
-        type:
-          - 'excel!Excel.Line#beginArrowheadStyle~0:complex'
-  - uid: 'excel!Excel.Line#beginArrowheadWidth:member'
-    summary: Stellt die Breite der Pfeilspitze am Anfang der angegebenen Linie dar.
-    name: beginArrowheadWidth
-    fullName: beginArrowheadWidth
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'beginArrowheadWidth: ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
-      return:
-        type:
-          - 'excel!Excel.Line#beginArrowheadWidth~0:complex'
-  - uid: 'excel!Excel.Line#beginConnectedShape:member'
-    summary: 'Stellt die Form dar, an die der Anfang der angegebenen Linie angefügt ist.'
-    name: beginConnectedShape
-    fullName: beginConnectedShape
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly beginConnectedShape: Shape;'
-      return:
-        type:
-          - 'excel!Excel.Shape:interface'
-  - uid: 'excel!Excel.Line#beginConnectedSite:member'
-    summary: 'Stellt die Verbindungsseite dar, mit der der Anfang einer Verbindung verbunden ist. Gibt NULL zurück, wenn der Anfang der Linie nicht an eine Form angefügt ist.'
-    name: beginConnectedSite
-    fullName: beginConnectedSite
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly beginConnectedSite: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Line#connectBeginShape:member(1)'
-    summary: Fügt den Anfang der angegebenen Verbindung an eine angegebene Form an.
-    name: 'connectBeginShape(shape, connectionSite)'
-    fullName: 'connectBeginShape(shape, connectionSite)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              let line = shapes.getItem("StraightLine").line;
-              line.connectBeginShape(shapes.getItem("Left"), 2);
-              line.connectEndShape(shapes.getItem("Right"), 0);
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: shape
-          description: 'Das Shape, das verbunden werden soll.'
-          type:
-            - 'excel!Excel.Shape:interface'
-        - id: connectionSite
-          description: 'Die Verbindungs Website auf dem Shape, an das der Anfang der Verbindung angefügt ist. Muss eine ganze Zahl zwischen 0 (einschließlich) und der Anzahl der Verbindungs Sites der angegebenen Form (exklusiv) sein.'
-          type:
-            - number
-  - uid: 'excel!Excel.Line#connectEndShape:member(1)'
-    summary: Fügt das Ende der angegebenen Verbindung an eine angegebene Form an.
-    name: 'connectEndShape(shape, connectionSite)'
-    fullName: 'connectEndShape(shape, connectionSite)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              let line = shapes.getItem("StraightLine").line;
-              line.connectBeginShape(shapes.getItem("Left"), 2);
-              line.connectEndShape(shapes.getItem("Right"), 0);
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: shape
-          description: 'Das Shape, das verbunden werden soll.'
-          type:
-            - 'excel!Excel.Shape:interface'
-        - id: connectionSite
-          description: 'Die Verbindungs Website auf dem Shape, an das das Ende der Verbindung angefügt ist. Muss eine ganze Zahl zwischen 0 (einschließlich) und der Anzahl der Verbindungs Sites der angegebenen Form (exklusiv) sein.'
-          type:
-            - number
-  - uid: 'excel!Excel.Line#connectorType:member'
-    summary: Stellt den Verbindertyp für die Linie dar.
-    name: connectorType
-    fullName: connectorType
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'connectorType: ConnectorType | "Straight" | "Elbow" | "Curve";'
-      return:
-        type:
-          - 'excel!Excel.Line#connectorType~0:complex'
-  - uid: 'excel!Excel.Line#disconnectBeginShape:member(1)'
-    summary: Löst den Anfang der angegebenen Verbindung von einer Form.
-    name: disconnectBeginShape()
-    fullName: disconnectBeginShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'disconnectBeginShape(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              let line = shapes.getItem("StraightLine").line;
-              line.disconnectBeginShape();
-              line.disconnectEndShape();
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Line#disconnectEndShape:member(1)'
-    summary: Löst das Ende der angegebenen Verbindung von einer Form.
-    name: disconnectEndShape()
-    fullName: disconnectEndShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'disconnectEndShape(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              let line = shapes.getItem("StraightLine").line;
-              line.disconnectBeginShape();
-              line.disconnectEndShape();
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Line#endArrowheadLength:member'
-    summary: Stellt die Länge der Pfeilspitze am Ende der angegebenen Linie dar.
-    name: endArrowheadLength
-    fullName: endArrowheadLength
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'endArrowheadLength: ArrowheadLength | "Short" | "Medium" | "Long";'
-      return:
-        type:
-          - 'excel!Excel.Line#endArrowheadLength~0:complex'
-  - uid: 'excel!Excel.Line#endArrowheadStyle:member'
-    summary: Stellt das Format der Pfeilspitze am Ende der angegebenen Linie dar.
-    name: endArrowheadStyle
-    fullName: endArrowheadStyle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        endArrowheadStyle:
-                    | ArrowheadStyle
+                    | "Open"
+- name: beginArrowheadWidth
+  uid: excel!Excel.Line#beginArrowheadWidth:member
+  package: excel!
+  fullName: beginArrowheadWidth
+  summary: Stellt die Breite der Pfeilspitze am Anfang der angegebenen Linie dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'beginArrowheadWidth: ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
+    return:
+      type: <xref uid="excel!Excel.ArrowheadWidth:enum" /> | "Narrow" | "Medium" | "Wide"
+- name: beginConnectedShape
+  uid: excel!Excel.Line#beginConnectedShape:member
+  package: excel!
+  fullName: beginConnectedShape
+  summary: Stellt die Form dar, an die der Anfang der angegebenen Linie angefügt ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly beginConnectedShape: Shape;'
+    return:
+      type: <xref uid="excel!Excel.Shape:interface" />
+- name: beginConnectedSite
+  uid: excel!Excel.Line#beginConnectedSite:member
+  package: excel!
+  fullName: beginConnectedSite
+  summary: Stellt die Verbindungsseite dar, mit der der Anfang einer Verbindung verbunden ist. Gibt NULL zurück, wenn der Anfang der Linie nicht an eine Form angefügt ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly beginConnectedSite: number;'
+    return:
+      type: number
+- name: connectorType
+  uid: excel!Excel.Line#connectorType:member
+  package: excel!
+  fullName: connectorType
+  summary: Stellt den Verbindertyp für die Linie dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'connectorType: ConnectorType | "Straight" | "Elbow" | "Curve";'
+    return:
+      type: <xref uid="excel!Excel.ConnectorType:enum" /> | "Straight" | "Elbow" | "Curve"
+- name: endArrowheadLength
+  uid: excel!Excel.Line#endArrowheadLength:member
+  package: excel!
+  fullName: endArrowheadLength
+  summary: Stellt die Länge der Pfeilspitze am Ende der angegebenen Linie dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'endArrowheadLength: ArrowheadLength | "Short" | "Medium" | "Long";'
+    return:
+      type: <xref uid="excel!Excel.ArrowheadLength:enum" /> | "Short" | "Medium" | "Long"
+- name: endArrowheadStyle
+  uid: excel!Excel.Line#endArrowheadStyle:member
+  package: excel!
+  fullName: endArrowheadStyle
+  summary: Stellt das Format der Pfeilspitze am Ende der angegebenen Linie dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      endArrowheadStyle:
+                  | ArrowheadStyle
+                  | "None"
+                  | "Triangle"
+                  | "Stealth"
+                  | "Diamond"
+                  | "Oval"
+                  | "Open";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ArrowheadStyle:enum" />
                     | "None"
                     | "Triangle"
                     | "Stealth"
                     | "Diamond"
                     | "Oval"
-                    | "Open";
-      return:
-        type:
-          - 'excel!Excel.Line#endArrowheadStyle~0:complex'
-  - uid: 'excel!Excel.Line#endArrowheadWidth:member'
-    summary: Stellt die Breite der Pfeilspitze am Ende der angegebenen Linie dar.
-    name: endArrowheadWidth
-    fullName: endArrowheadWidth
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'endArrowheadWidth: ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
-      return:
-        type:
-          - 'excel!Excel.Line#endArrowheadWidth~0:complex'
-  - uid: 'excel!Excel.Line#endConnectedShape:member'
-    summary: 'Stellt die Form dar, an die das Ende der angegebenen Linie angefügt ist.'
-    name: endConnectedShape
-    fullName: endConnectedShape
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly endConnectedShape: Shape;'
-      return:
-        type:
-          - 'excel!Excel.Shape:interface'
-  - uid: 'excel!Excel.Line#endConnectedSite:member'
-    summary: 'Stellt die Verbindungsseite dar, mit der das Ende einer Verbindung verbunden ist. Gibt NULL zurück, wenn das Ende der Linie nicht an eine Form angefügt ist.'
-    name: endConnectedSite
-    fullName: endConnectedSite
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly endConnectedSite: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Line#id:member'
-    summary: Gibt den Shape-Bezeichner an.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Line#isBeginConnected:member'
-    summary: 'Gibt an, ob der Anfang der angegebenen Verbindung mit einer Form verbunden ist.'
-    name: isBeginConnected
-    fullName: isBeginConnected
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isBeginConnected: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Line#isEndConnected:member'
-    summary: 'Gibt an, ob das Ende der angegebenen Position mit einer Form verbunden ist.'
-    name: isEndConnected
-    fullName: isEndConnected
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isEndConnected: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Line#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Line#shape:member'
-    summary: 'Gibt das Formobjekt zurück, das der Linie zugeordnet ist.'
-    name: shape
-    fullName: shape
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly shape: Shape;'
-      return:
-        type:
-          - 'excel!Excel.Shape:interface'
-references:
-  - uid: 'excel!Excel.Line#beginArrowheadLength~0:complex'
-    name: ArrowheadLength | "Short" | "Medium" | "Long"
-    fullName: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
-    spec.typeScript:
-      - uid: 'excel!Excel.ArrowheadLength:enum'
-        name: ArrowheadLength
-        fullName: Excel.ArrowheadLength
-      - name: ' | "Short" | "Medium" | "Long"'
-        fullName: ' | "Short" | "Medium" | "Long"'
-  - uid: 'excel!Excel.Line#beginArrowheadStyle~0:complex'
-    name: |-
-      | ArrowheadStyle
-                  | "None"
-                  | "Triangle"
-                  | "Stealth"
-                  | "Diamond"
-                  | "Oval"
-                  | "Open"
-    fullName: |-
-      | Excel.ArrowheadStyle
-                  | "None"
-                  | "Triangle"
-                  | "Stealth"
-                  | "Diamond"
-                  | "Oval"
-                  | "Open"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ArrowheadStyle:enum'
-        name: ArrowheadStyle
-        fullName: Excel.ArrowheadStyle
-      - name: |2-
-
-                      | "None"
-                      | "Triangle"
-                      | "Stealth"
-                      | "Diamond"
-                      | "Oval"
-                      | "Open"
-        fullName: |2-
-
-                      | "None"
-                      | "Triangle"
-                      | "Stealth"
-                      | "Diamond"
-                      | "Oval"
-                      | "Open"
-  - uid: 'excel!Excel.Line#beginArrowheadWidth~0:complex'
-    name: ArrowheadWidth | "Narrow" | "Medium" | "Wide"
-    fullName: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
-    spec.typeScript:
-      - uid: 'excel!Excel.ArrowheadWidth:enum'
-        name: ArrowheadWidth
-        fullName: Excel.ArrowheadWidth
-      - name: ' | "Narrow" | "Medium" | "Wide"'
-        fullName: ' | "Narrow" | "Medium" | "Wide"'
-  - uid: 'excel!Excel.Shape:interface'
-    name: Shape
-    fullName: Excel.Shape
-  - uid: 'excel!Excel.Line#connectorType~0:complex'
-    name: ConnectorType | "Straight" | "Elbow" | "Curve"
-    fullName: Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
-    spec.typeScript:
-      - uid: 'excel!Excel.ConnectorType:enum'
-        name: ConnectorType
-        fullName: Excel.ConnectorType
-      - name: ' | "Straight" | "Elbow" | "Curve"'
-        fullName: ' | "Straight" | "Elbow" | "Curve"'
-  - uid: 'excel!Excel.Line#endArrowheadLength~0:complex'
-    name: ArrowheadLength | "Short" | "Medium" | "Long"
-    fullName: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
-    spec.typeScript:
-      - uid: 'excel!Excel.ArrowheadLength:enum'
-        name: ArrowheadLength
-        fullName: Excel.ArrowheadLength
-      - name: ' | "Short" | "Medium" | "Long"'
-        fullName: ' | "Short" | "Medium" | "Long"'
-  - uid: 'excel!Excel.Line#endArrowheadStyle~0:complex'
-    name: |-
-      | ArrowheadStyle
-                  | "None"
-                  | "Triangle"
-                  | "Stealth"
-                  | "Diamond"
-                  | "Oval"
-                  | "Open"
-    fullName: |-
-      | Excel.ArrowheadStyle
-                  | "None"
-                  | "Triangle"
-                  | "Stealth"
-                  | "Diamond"
-                  | "Oval"
-                  | "Open"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ArrowheadStyle:enum'
-        name: ArrowheadStyle
-        fullName: Excel.ArrowheadStyle
-      - name: |2-
-
-                      | "None"
-                      | "Triangle"
-                      | "Stealth"
-                      | "Diamond"
-                      | "Oval"
-                      | "Open"
-        fullName: |2-
-
-                      | "None"
-                      | "Triangle"
-                      | "Stealth"
-                      | "Diamond"
-                      | "Oval"
-                      | "Open"
-  - uid: 'excel!Excel.Line#endArrowheadWidth~0:complex'
-    name: ArrowheadWidth | "Narrow" | "Medium" | "Wide"
-    fullName: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
-    spec.typeScript:
-      - uid: 'excel!Excel.ArrowheadWidth:enum'
-        name: ArrowheadWidth
-        fullName: Excel.ArrowheadWidth
-      - name: ' | "Narrow" | "Medium" | "Wide"'
-        fullName: ' | "Narrow" | "Medium" | "Wide"'
+                    | "Open"
+- name: endArrowheadWidth
+  uid: excel!Excel.Line#endArrowheadWidth:member
+  package: excel!
+  fullName: endArrowheadWidth
+  summary: Stellt die Breite der Pfeilspitze am Ende der angegebenen Linie dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'endArrowheadWidth: ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
+    return:
+      type: <xref uid="excel!Excel.ArrowheadWidth:enum" /> | "Narrow" | "Medium" | "Wide"
+- name: endConnectedShape
+  uid: excel!Excel.Line#endConnectedShape:member
+  package: excel!
+  fullName: endConnectedShape
+  summary: Stellt die Form dar, an die das Ende der angegebenen Linie angefügt ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly endConnectedShape: Shape;'
+    return:
+      type: <xref uid="excel!Excel.Shape:interface" />
+- name: endConnectedSite
+  uid: excel!Excel.Line#endConnectedSite:member
+  package: excel!
+  fullName: endConnectedSite
+  summary: Stellt die Verbindungsseite dar, mit der das Ende einer Verbindung verbunden ist. Gibt NULL zurück, wenn das Ende der Linie nicht an eine Form angefügt ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly endConnectedSite: number;'
+    return:
+      type: number
+- name: id
+  uid: excel!Excel.Line#id:member
+  package: excel!
+  fullName: id
+  summary: Gibt den Shape-Bezeichner an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: isBeginConnected
+  uid: excel!Excel.Line#isBeginConnected:member
+  package: excel!
+  fullName: isBeginConnected
+  summary: Gibt an, ob der Anfang der angegebenen Verbindung mit einer Form verbunden ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly isBeginConnected: boolean;'
+    return:
+      type: boolean
+- name: isEndConnected
+  uid: excel!Excel.Line#isEndConnected:member
+  package: excel!
+  fullName: isEndConnected
+  summary: Gibt an, ob das Ende der angegebenen Position mit einer Form verbunden ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly isEndConnected: boolean;'
+    return:
+      type: boolean
+- name: shape
+  uid: excel!Excel.Line#shape:member
+  package: excel!
+  fullName: shape
+  summary: Gibt das Formobjekt zurück, das der Linie zugeordnet ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly shape: Shape;'
+    return:
+      type: <xref uid="excel!Excel.Shape:interface" />
+methods:
+- name: connectBeginShape(shape, connectionSite)
+  uid: excel!Excel.Line#connectBeginShape:member(1)
+  package: excel!
+  fullName: connectBeginShape(shape, connectionSite)
+  summary: Fügt den Anfang der angegebenen Verbindung an eine angegebene Form an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
+    parameters:
+    - id: shape
+      description: Das Shape, das verbunden werden soll.
+      type: <xref uid="excel!Excel.Shape:interface" />
+    - id: connectionSite
+      description: Die Verbindungs Website auf dem Shape, an das der Anfang der Verbindung angefügt ist. Muss eine ganze Zahl zwischen 0 (einschließlich) und der Anzahl der Verbindungs Sites der angegebenen Form (exklusiv) sein.
+      type: number
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let shapes = context.workbook.worksheets.getItem(\"Shapes\").shapes;\n    let line = shapes.getItem(\"StraightLine\").line;\n    line.connectBeginShape(shapes.getItem(\"Left\"), 2);\n    line.connectEndShape(shapes.getItem(\"Right\"), 0);\n    await context.sync();\n}\n```"
+- name: connectEndShape(shape, connectionSite)
+  uid: excel!Excel.Line#connectEndShape:member(1)
+  package: excel!
+  fullName: connectEndShape(shape, connectionSite)
+  summary: Fügt das Ende der angegebenen Verbindung an eine angegebene Form an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
+    parameters:
+    - id: shape
+      description: Das Shape, das verbunden werden soll.
+      type: <xref uid="excel!Excel.Shape:interface" />
+    - id: connectionSite
+      description: Die Verbindungs Website auf dem Shape, an das das Ende der Verbindung angefügt ist. Muss eine ganze Zahl zwischen 0 (einschließlich) und der Anzahl der Verbindungs Sites der angegebenen Form (exklusiv) sein.
+      type: number
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let shapes = context.workbook.worksheets.getItem(\"Shapes\").shapes;\n    let line = shapes.getItem(\"StraightLine\").line;\n    line.connectBeginShape(shapes.getItem(\"Left\"), 2);\n    line.connectEndShape(shapes.getItem(\"Right\"), 0);\n    await context.sync();\n}\n```"
+- name: disconnectBeginShape()
+  uid: excel!Excel.Line#disconnectBeginShape:member(1)
+  package: excel!
+  fullName: disconnectBeginShape()
+  summary: Löst den Anfang der angegebenen Verbindung von einer Form.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'disconnectBeginShape(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let shapes = context.workbook.worksheets.getItem(\"Shapes\").shapes;\n    let line = shapes.getItem(\"StraightLine\").line;\n    line.disconnectBeginShape();\n    line.disconnectEndShape();\n    await context.sync();\n}\n```"
+- name: disconnectEndShape()
+  uid: excel!Excel.Line#disconnectEndShape:member(1)
+  package: excel!
+  fullName: disconnectEndShape()
+  summary: Löst das Ende der angegebenen Verbindung von einer Form.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'disconnectEndShape(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let shapes = context.workbook.worksheets.getItem(\"Shapes\").shapes;\n    let line = shapes.getItem(\"StraightLine\").line;\n    line.disconnectBeginShape();\n    line.disconnectEndShape();\n    await context.sync();\n}\n```"
+- name: load(propertyNames)
+  uid: excel!Excel.Line#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: c5599a458c6307a8560eaf9c01caf407f55e184e
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419073"

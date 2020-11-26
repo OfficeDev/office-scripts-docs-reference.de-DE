@@ -1,72 +1,74 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
-    summary: Stellt eine benutzerdefinierte Eigenschaft auf Arbeitsblattebene dar.
-    name: ExcelScript.WorksheetCustomProperty
-    fullName: ExcelScript.WorksheetCustomProperty
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
-      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
-      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
-      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
-    summary: Löscht die benutzerdefinierte Eigenschaft.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
-    summary: 'Ruft den Schlüssel der benutzerdefinierten Eigenschaft ab. Bei benutzerdefinierten Eigenschafts Tasten wird die Groß-/Kleinschreibung nicht beachtet. Der Schlüssel ist auf 255 Zeichen limitiert (größere Werte führen dazu, dass ein Fehler "InvalidArgument" ausgelöst wird.)'
-    name: getKey()
-    fullName: getKey()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getKey(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
-    summary: Ruft den Wert der benutzerdefinierten Eigenschaft ab oder legt ihn fest.
-    name: getValue()
-    fullName: getValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValue(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
-    summary: Ruft den Wert der benutzerdefinierten Eigenschaft ab oder legt ihn fest.
-    name: setValue(value)
-    fullName: setValue(value)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setValue(value: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: value
-          description: ''
-          type:
-            - string
+### YamlMime:TSType
+name: ExcelScript.WorksheetCustomProperty
+uid: ExcelScript!ExcelScript.WorksheetCustomProperty:interface
+package: ExcelScript!
+fullName: ExcelScript.WorksheetCustomProperty
+summary: Stellt eine benutzerdefinierte Eigenschaft auf Arbeitsblattebene dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: delete()
+  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Löscht die benutzerdefinierte Eigenschaft.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getKey()
+  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)
+  package: ExcelScript!
+  fullName: getKey()
+  summary: Ruft den Schlüssel der benutzerdefinierten Eigenschaft ab. Bei benutzerdefinierten Eigenschafts Tasten wird die Groß-/Kleinschreibung nicht beachtet. Der Schlüssel ist auf 255 Zeichen limitiert (größere Werte führen dazu, dass ein Fehler "InvalidArgument" ausgelöst wird.)
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getKey(): string;'
+    return:
+      type: string
+      description: ''
+- name: getValue()
+  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)
+  package: ExcelScript!
+  fullName: getValue()
+  summary: Ruft den Wert der benutzerdefinierten Eigenschaft ab oder legt ihn fest.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValue(): string;'
+    return:
+      type: string
+      description: ''
+- name: setValue(value)
+  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)
+  package: ExcelScript!
+  fullName: setValue(value)
+  summary: Ruft den Wert der benutzerdefinierten Eigenschaft ab oder legt ihn fest.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setValue(value: string): void;'
+    parameters:
+    - id: value
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 663e655b4570ccbf1294b000127f86bf21e2d844
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419236"

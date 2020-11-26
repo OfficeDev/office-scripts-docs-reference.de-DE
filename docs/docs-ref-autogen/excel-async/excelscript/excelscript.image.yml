@@ -1,136 +1,88 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Image:interface'
-    summary: 'Stellt ein Bild im Arbeitsblatt dar. Um das entsprechende Shape-Objekt abzurufen, verwenden Sie Image. Shape.'
-    name: Excel.Image
-    fullName: Excel.Image
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Image#format:member'
-      - 'excel!Excel.Image#id:member'
-      - 'excel!Excel.Image#load:member(1)'
-      - 'excel!Excel.Image#shape:member'
-  - uid: 'excel!Excel.Image#format:member'
-    summary: Gibt das Format des Bilds zurück.
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        readonly format:
-                    | PictureFormat
+### YamlMime:TSType
+name: Excel.Image
+uid: excel!Excel.Image:interface
+package: excel!
+fullName: Excel.Image
+summary: Stellt ein Bild im Arbeitsblatt dar. Um das entsprechende Shape-Objekt abzurufen, verwenden Sie Image. Shape.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: format
+  uid: excel!Excel.Image#format:member
+  package: excel!
+  fullName: format
+  summary: Gibt das Format des Bilds zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      readonly format:
+                  | PictureFormat
+                  | "Unknown"
+                  | "Bmp"
+                  | "Jpeg"
+                  | "Gif"
+                  | "Png"
+                  | "Svg";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.PictureFormat:enum" />
                     | "Unknown"
                     | "Bmp"
                     | "Jpeg"
                     | "Gif"
                     | "Png"
-                    | "Svg";
-      return:
-        type:
-          - 'excel!Excel.Image#format~0:complex'
-        description: |-
-
-
-          #### <a name="examples"></a>Beispiele
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Shapes");
-              let image = sheet.shapes.getItem("Image").image;
-              image.load("format");
-              await context.sync();
-
-              console.log("The image's format is: " + image.format);
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Image#id:member'
-    summary: Gibt den Shape-Bezeichner für das Image-Objekt an.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Image#load:member(1)'
-    summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Sie müssen `context.sync()` vor dem Lesen der Eigenschaften aufrufen.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 'Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.'
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Image#shape:member'
-    summary: 'Gibt das Formobjekt zurück, das dem Bild zugeordnet ist.'
-    name: shape
-    fullName: shape
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly shape: Shape;'
-      return:
-        type:
-          - 'excel!Excel.Shape:interface'
-references:
-  - uid: 'excel!Excel.Image#format~0:complex'
-    name: |-
-      | PictureFormat
-                  | "Unknown"
-                  | "Bmp"
-                  | "Jpeg"
-                  | "Gif"
-                  | "Png"
-                  | "Svg"
-    fullName: |-
-      | Excel.PictureFormat
-                  | "Unknown"
-                  | "Bmp"
-                  | "Jpeg"
-                  | "Gif"
-                  | "Png"
-                  | "Svg"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.PictureFormat:enum'
-        name: PictureFormat
-        fullName: Excel.PictureFormat
-      - name: |2-
-
-                      | "Unknown"
-                      | "Bmp"
-                      | "Jpeg"
-                      | "Gif"
-                      | "Png"
-                      | "Svg"
-        fullName: |2-
-
-                      | "Unknown"
-                      | "Bmp"
-                      | "Jpeg"
-                      | "Gif"
-                      | "Png"
-                      | "Svg"
-  - uid: 'excel!Excel.Shape:interface'
-    name: Shape
-    fullName: Excel.Shape
+                    | "Svg"
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Shapes\");\n    let image = sheet.shapes.getItem(\"Image\").image;\n    image.load(\"format\");\n    await context.sync();\n\n    console.log(\"The image's format is: \" + image.format);\n    await context.sync();\n}\n```"
+- name: id
+  uid: excel!Excel.Image#id:member
+  package: excel!
+  fullName: id
+  summary: Gibt den Shape-Bezeichner für das Image-Objekt an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: shape
+  uid: excel!Excel.Image#shape:member
+  package: excel!
+  fullName: shape
+  summary: Gibt das Formobjekt zurück, das dem Bild zugeordnet ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly shape: Shape;'
+    return:
+      type: <xref uid="excel!Excel.Shape:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.Image#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Stellt einen Befehl zum Laden der angegebenen Eigenschaften des Objekts in die Warteschlange ein. Vor dem Lesen der Eigenschaften müssen Sie "`context.sync()`" aufrufen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Eine durch trennzeichengetrennte Zeichenfolge oder ein Array von Zeichenfolgen, die die zu ladenden Eigenschaften angeben.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 178634e6313c6a9a14dad95a502fcd3c1337a302
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419084"
