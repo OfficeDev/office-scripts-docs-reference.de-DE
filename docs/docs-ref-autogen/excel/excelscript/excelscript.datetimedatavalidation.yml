@@ -1,82 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
-    summary: Stellt die Daten Überprüfungskriterien für Datum dar.
-    name: ExcelScript.DateTimeDataValidation
-    fullName: ExcelScript.DateTimeDataValidation
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member'
-      - 'ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member'
-      - 'ExcelScript!ExcelScript.DateTimeDataValidation#operator:member'
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member'
-    summary: 'Gibt den rechten Operanden an, wenn die Operator-Eigenschaft auf einen binären Operator wie GreaterThan festgelegt ist (der linke Operand ist der Wert, den der Benutzer in die Zelle eingeben möchte). Gibt mit den dreistelligen Operatoren zwischen und NotBetween den untergeordneten Operanden an. Wenn Sie den Wert festlegen, kann er als Datum, als Range-Objekt oder als Zeichenfolgenformel übergeben werden (wobei die Zeichenfolge entweder ein stringified-Datum/eine Uhrzeit im ISO8601-Format, ein Zellbezug wie "= a1" oder eine Formel wie "= min (a1, B1)" ist. Wenn der Wert abgerufen wird, wird er immer als Zeichenfolgenformel zurückgegeben, beispielsweise: "= 10", "= a1", "= Sum (a1: B5)" usw.'
-    name: formula1
-    fullName: formula1
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula1: string | Date | Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DateTimeDataValidation#formula1~0:complex'
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member'
-    summary: 'Gibt mit den dreistelligen Operatoren zwischen und NotBetween den oberen gebundenen Operanden an. Wird nicht mit den binären Operatoren wie GreaterThan verwendet. Wenn Sie den Wert festlegen, kann er als Datum, als Range-Objekt oder als Zeichenfolge übergeben werden (wobei die Zeichenfolge entweder ein stringified-Datum/eine Uhrzeit im ISO8601-Format, ein Zellbezug wie "= a1" oder eine Formel wie "= min (a1, B1)" ist.) Wenn der Wert abgerufen wird, wird er immer als Zeichenfolgenformel zurückgegeben, beispielsweise: "= 10", "= a1", "= Sum (a1: B5)" usw.'
-    name: formula2
-    fullName: formula2
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula2?: string | Date | Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DateTimeDataValidation#formula2~0:complex'
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#operator:member'
-    summary: 'Der Operator, der zum Überprüfen der Daten verwendet wird.'
-    name: operator
-    fullName: operator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'operator: DataValidationOperator;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataValidationOperator:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#formula1~0:complex'
-    name: string | Date | Range
-    fullName: string | Date | ExcelScript.Range
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: '!Date:interface'
-        name: Date
-        fullName: Date
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#formula2~0:complex'
-    name: string | Date | Range
-    fullName: string | Date | ExcelScript.Range
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: '!Date:interface'
-        name: Date
-        fullName: Date
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.DataValidationOperator:enum'
-    name: DataValidationOperator
-    fullName: ExcelScript.DataValidationOperator
+### YamlMime:TSType
+name: ExcelScript.DateTimeDataValidation
+uid: ExcelScript!ExcelScript.DateTimeDataValidation:interface
+package: ExcelScript!
+fullName: ExcelScript.DateTimeDataValidation
+summary: Stellt die Daten Überprüfungskriterien für Datum dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formula1
+  uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member
+  package: ExcelScript!
+  fullName: formula1
+  summary: 'Gibt den rechten Operanden an, wenn die Operator-Eigenschaft auf einen binären Operator wie GreaterThan festgelegt ist (der linke Operand ist der Wert, den der Benutzer in die Zelle eingeben möchte). Gibt mit den dreistelligen Operatoren zwischen und NotBetween den untergeordneten Operanden an. Wenn Sie den Wert festlegen, kann er als Datum, als Range-Objekt oder als Zeichenfolgenformel übergeben werden (wobei die Zeichenfolge entweder ein stringified-Datum/eine Uhrzeit im ISO8601-Format, ein Zellbezug wie "= a1" oder eine Formel wie "= min (a1, B1)" ist. Wenn der Wert abgerufen wird, wird er immer als Zeichenfolgenformel zurückgegeben, beispielsweise: "= 10", "= a1", "= Sum (a1: B5)" usw.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula1: string | Date | Range;'
+    return:
+      type: string | Date | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+- name: formula2
+  uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member
+  package: ExcelScript!
+  fullName: formula2
+  summary: 'Gibt mit den dreistelligen Operatoren zwischen und NotBetween den oberen gebundenen Operanden an. Wird nicht mit den binären Operatoren wie GreaterThan verwendet. Wenn Sie den Wert festlegen, kann er als Datum, als Range-Objekt oder als Zeichenfolge übergeben werden (wobei die Zeichenfolge entweder ein stringified-Datum/eine Uhrzeit im ISO8601-Format, ein Zellbezug wie "= a1" oder eine Formel wie "= min (a1, B1)" ist.) Wenn der Wert abgerufen wird, wird er immer als Zeichenfolgenformel zurückgegeben, beispielsweise: "= 10", "= a1", "= Sum (a1: B5)" usw.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula2?: string | Date | Range;'
+    return:
+      type: string | Date | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+- name: operator
+  uid: ExcelScript!ExcelScript.DateTimeDataValidation#operator:member
+  package: ExcelScript!
+  fullName: operator
+  summary: Der Operator, der zum Überprüfen der Daten verwendet wird.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'operator: DataValidationOperator;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
+metadata:
+  ms.openlocfilehash: e996fdc017fd932a17031a0bb57255f84f01759c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415430"

@@ -1,341 +1,247 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    summary: 'Ein Objekt, das den Bereich, das Format, die Regel und andere Eigenschaften einer bedingten Formatierung kapselt.'
-    name: ExcelScript.ConditionalFormat
-    fullName: ExcelScript.ConditionalFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalFormat#delete:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#delete:member(1)'
-    summary: Löscht dieses bedingte Format.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)'
-    summary: 'Gibt die bedingten Formateigenschaften des Zellenwerts zurück, wenn es sich bei dem aktuellen bedingten Format um einen cellvalue-Typ handelt. Beispielsweise zum Formatieren aller Zellen zwischen 5 und 10.'
-    name: getCellValue()
-    fullName: getCellValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCellValue(): CellValueConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getCellValue~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)'
-    summary: 'Gibt die ColorScale bedingten Formateigenschaften zurück, wenn das aktuelle bedingte Format ein ColorScale-Typ ist.'
-    name: getColorScale()
-    fullName: getColorScale()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColorScale(): ColorScaleConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getColorScale~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)'
-    summary: 'Gibt die benutzerdefinierten bedingten Formateigenschaften zurück, wenn das aktuelle bedingte Format ein benutzerdefinierter Typ ist.'
-    name: getCustom()
-    fullName: getCustom()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCustom(): CustomConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getCustom~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)'
-    summary: 'Gibt die Eigenschaften des Datenbalkens zurück, wenn es sich bei dem aktuellen bedingten Format um einen Datenbalken handelt.'
-    name: getDataBar()
-    fullName: getDataBar()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataBar(): DataBarConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getDataBar~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)'
-    summary: 'Gibt die bedingten Formateigenschaften von Iconset zurück, wenn es sich bei dem aktuellen bedingten Format um einen Iconset-Typ handelt.'
-    name: getIconSet()
-    fullName: getIconSet()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIconSet(): IconSetConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getIconSet~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)'
-    summary: Die Priorität des bedingten Formats in der aktuellen ConditionalFormatCollection.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
-    summary: Gibt das bedingte Format der voreingestellten Kriterien zurück. Weitere Informationen finden Sie unter ExcelScript. PresetCriteriaConditionalFormat.
-    name: getPreset()
-    fullName: getPreset()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPreset(): PresetCriteriaConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getPreset~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)'
-    summary: 'Die Priorität (oder der Index) innerhalb der bedingten Format Auflistung, in der sich dieses bedingte Format derzeit befindet. Wenn Sie dies ändern, werden auch die Prioritäten anderer bedingter Formate geändert, um eine zusammenhängende Prioritätsreihenfolge zuzulassen. Verwenden Sie eine negative Priorität, um von der Rückseite aus zu beginnen. Prioritäten, die größer als Grenzwertesind, werden abgerufen und auf die maximale (oder minimale, wenn negative) Priorität festgelegt. Beachten Sie auch, dass Sie beim Ändern der Priorität eine neue Kopie des Objekts an dieser neuen Prioritätsposition erneut abrufen müssen, wenn Sie weitere Änderungen daran vornehmen möchten.'
-    name: getPriority()
-    fullName: getPriority()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPriority(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)'
-    summary: 'Gibt den Bereich zurück, auf den das bedingte-Format angewendet wird, oder ein NULL-Objekt, wenn das bedingte Format auf mehrere Bereiche angewendet wird.'
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)'
-    summary: 'Gibt die RangeAreas zurück, die einen oder mehrere rechteckige Bereiche umfassen und auf die das bedingte Format angewendet werden soll.'
-    name: getRanges()
-    fullName: getRanges()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRanges(): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)'
-    summary: 'Wenn die Bedingungen dieses bedingten Formats erfüllt sind, werden keine Formate niedrigerer Priorität für diese Zelle wirksam. NULL für databars, Symbolsätze und colorscales, da kein Konzept von StopIfTrue für diese vorhanden ist'
-    name: getStopIfTrue()
-    fullName: getStopIfTrue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getStopIfTrue(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)'
-    summary: 'Gibt die spezifischen Text bedingten Formateigenschaften zurück, wenn es sich bei dem aktuellen bedingten Format um einen Texttyp handelt. Beispielsweise zum Formatieren von Zellen, die dem Wort "Text" entsprechen.'
-    name: getTextComparison()
-    fullName: getTextComparison()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTextComparison(): TextConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getTextComparison~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)'
-    summary: 'Gibt die oberen/unteren bedingten Formateigenschaften zurück, wenn es sich bei dem aktuellen bedingten Format um einen untersten Typ handelt. Zum Beispiel, um die oberen 10% oder die unteren 10 Elemente zu formatieren.'
-    name: getTopBottom()
-    fullName: getTopBottom()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTopBottom(): TopBottomConditionalFormat | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat#getTopBottom~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)'
-    summary: Ein Typ von bedingter Formatierung. Es kann jeweils nur eine festgelegt werden.
-    name: getType()
-    fullName: getType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getType(): ConditionalFormatType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)'
-    summary: 'Die Priorität (oder der Index) innerhalb der bedingten Format Auflistung, in der sich dieses bedingte Format derzeit befindet. Wenn Sie dies ändern, werden auch die Prioritäten anderer bedingter Formate geändert, um eine zusammenhängende Prioritätsreihenfolge zuzulassen. Verwenden Sie eine negative Priorität, um von der Rückseite aus zu beginnen. Prioritäten, die größer als Grenzwertesind, werden abgerufen und auf die maximale (oder minimale, wenn negative) Priorität festgelegt. Beachten Sie auch, dass Sie beim Ändern der Priorität eine neue Kopie des Objekts an dieser neuen Prioritätsposition erneut abrufen müssen, wenn Sie weitere Änderungen daran vornehmen möchten.'
-    name: setPriority(priority)
-    fullName: setPriority(priority)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPriority(priority: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: priority
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)'
-    summary: 'Wenn die Bedingungen dieses bedingten Formats erfüllt sind, werden keine Formate niedrigerer Priorität für diese Zelle wirksam. NULL für databars, Symbolsätze und colorscales, da kein Konzept von StopIfTrue für diese vorhanden ist'
-    name: setStopIfTrue(stopIfTrue)
-    fullName: setStopIfTrue(stopIfTrue)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setStopIfTrue(stopIfTrue: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: stopIfTrue
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCellValue~0:complex'
-    name: CellValueConditionalFormat | undefined
-    fullName: ExcelScript.CellValueConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat:interface'
-        name: CellValueConditionalFormat
-        fullName: ExcelScript.CellValueConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getColorScale~0:complex'
-    name: ColorScaleConditionalFormat | undefined
-    fullName: ExcelScript.ColorScaleConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface'
-        name: ColorScaleConditionalFormat
-        fullName: ExcelScript.ColorScaleConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCustom~0:complex'
-    name: CustomConditionalFormat | undefined
-    fullName: ExcelScript.CustomConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CustomConditionalFormat:interface'
-        name: CustomConditionalFormat
-        fullName: ExcelScript.CustomConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getDataBar~0:complex'
-    name: DataBarConditionalFormat | undefined
-    fullName: ExcelScript.DataBarConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.DataBarConditionalFormat:interface'
-        name: DataBarConditionalFormat
-        fullName: ExcelScript.DataBarConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getIconSet~0:complex'
-    name: IconSetConditionalFormat | undefined
-    fullName: ExcelScript.IconSetConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat:interface'
-        name: IconSetConditionalFormat
-        fullName: ExcelScript.IconSetConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset~0:complex'
-    name: PresetCriteriaConditionalFormat | undefined
-    fullName: ExcelScript.PresetCriteriaConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface'
-        name: PresetCriteriaConditionalFormat
-        fullName: ExcelScript.PresetCriteriaConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    name: RangeAreas
-    fullName: ExcelScript.RangeAreas
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTextComparison~0:complex'
-    name: TextConditionalFormat | undefined
-    fullName: ExcelScript.TextConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TextConditionalFormat:interface'
-        name: TextConditionalFormat
-        fullName: ExcelScript.TextConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTopBottom~0:complex'
-    name: TopBottomConditionalFormat | undefined
-    fullName: ExcelScript.TopBottomConditionalFormat | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.TopBottomConditionalFormat:interface'
-        name: TopBottomConditionalFormat
-        fullName: ExcelScript.TopBottomConditionalFormat
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
-    name: ConditionalFormatType
-    fullName: ExcelScript.ConditionalFormatType
+### YamlMime:TSType
+name: ExcelScript.ConditionalFormat
+uid: ExcelScript!ExcelScript.ConditionalFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalFormat
+summary: Ein Objekt, das den Bereich, das Format, die Regel und andere Eigenschaften einer bedingten Formatierung kapselt.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: delete()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Löscht dieses bedingte Format.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getCellValue()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)
+  package: ExcelScript!
+  fullName: getCellValue()
+  summary: Gibt die bedingten Formateigenschaften des Zellenwerts zurück, wenn es sich bei dem aktuellen bedingten Format um einen cellvalue-Typ handelt. Beispielsweise zum Formatieren aller Zellen zwischen 5 und 10.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCellValue(): CellValueConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellValueConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getColorScale()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
+  package: ExcelScript!
+  fullName: getColorScale()
+  summary: Gibt die ColorScale bedingten Formateigenschaften zurück, wenn das aktuelle bedingte Format ein ColorScale-Typ ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColorScale(): ColorScaleConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getCustom()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)
+  package: ExcelScript!
+  fullName: getCustom()
+  summary: Gibt die benutzerdefinierten bedingten Formateigenschaften zurück, wenn das aktuelle bedingte Format ein benutzerdefinierter Typ ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCustom(): CustomConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getDataBar()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)
+  package: ExcelScript!
+  fullName: getDataBar()
+  summary: Gibt die Eigenschaften des Datenbalkens zurück, wenn es sich bei dem aktuellen bedingten Format um einen Datenbalken handelt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataBar(): DataBarConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataBarConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getIconSet()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)
+  package: ExcelScript!
+  fullName: getIconSet()
+  summary: Gibt die bedingten Formateigenschaften von Iconset zurück, wenn es sich bei dem aktuellen bedingten Format um einen Iconset-Typ handelt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIconSet(): IconSetConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.IconSetConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Die Priorität des bedingten Formats in der aktuellen ConditionalFormatCollection.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPreset()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)
+  package: ExcelScript!
+  fullName: getPreset()
+  summary: Gibt das bedingte Format der voreingestellten Kriterien zurück. Weitere Informationen finden Sie unter ExcelScript. PresetCriteriaConditionalFormat.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPreset(): PresetCriteriaConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getPriority()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)
+  package: ExcelScript!
+  fullName: getPriority()
+  summary: Die Priorität (oder der Index) innerhalb der bedingten Format Auflistung, in der sich dieses bedingte Format derzeit befindet. Wenn Sie dies ändern, werden auch die Prioritäten anderer bedingter Formate geändert, um eine zusammenhängende Prioritätsreihenfolge zuzulassen. Verwenden Sie eine negative Priorität, um von der Rückseite aus zu beginnen. Prioritäten, die größer als Grenzwertesind, werden abgerufen und auf die maximale (oder minimale, wenn negative) Priorität festgelegt. Beachten Sie auch, dass Sie beim Ändern der Priorität eine neue Kopie des Objekts an dieser neuen Prioritätsposition erneut abrufen müssen, wenn Sie weitere Änderungen daran vornehmen möchten.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPriority(): number;'
+    return:
+      type: number
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: Gibt den Bereich zurück, auf den das bedingte-Format angewendet wird, oder ein NULL-Objekt, wenn das bedingte Format auf mehrere Bereiche angewendet wird.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRanges()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)
+  package: ExcelScript!
+  fullName: getRanges()
+  summary: Gibt die RangeAreas zurück, die einen oder mehrere rechteckige Bereiche umfassen und auf die das bedingte Format angewendet werden soll.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRanges(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getStopIfTrue()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)
+  package: ExcelScript!
+  fullName: getStopIfTrue()
+  summary: Wenn die Bedingungen dieses bedingten Formats erfüllt sind, werden keine Formate niedrigerer Priorität für diese Zelle wirksam. NULL für databars, Symbolsätze und colorscales, da kein Konzept von StopIfTrue für diese vorhanden ist
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getStopIfTrue(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getTextComparison()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)
+  package: ExcelScript!
+  fullName: getTextComparison()
+  summary: Gibt die spezifischen Text bedingten Formateigenschaften zurück, wenn es sich bei dem aktuellen bedingten Format um einen Texttyp handelt. Beispielsweise zum Formatieren von Zellen, die dem Wort "Text" entsprechen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextComparison(): TextConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TextConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getTopBottom()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)
+  package: ExcelScript!
+  fullName: getTopBottom()
+  summary: Gibt die oberen/unteren bedingten Formateigenschaften zurück, wenn es sich bei dem aktuellen bedingten Format um einen untersten Typ handelt. Zum Beispiel, um die oberen 10% oder die unteren 10 Elemente zu formatieren.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTopBottom(): TopBottomConditionalFormat | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TopBottomConditionalFormat:interface" /> | undefined
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: Ein Typ von bedingter Formatierung. Es kann jeweils nur eine festgelegt werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): ConditionalFormatType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
+      description: ''
+- name: setPriority(priority)
+  uid: ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)
+  package: ExcelScript!
+  fullName: setPriority(priority)
+  summary: Die Priorität (oder der Index) innerhalb der bedingten Format Auflistung, in der sich dieses bedingte Format derzeit befindet. Wenn Sie dies ändern, werden auch die Prioritäten anderer bedingter Formate geändert, um eine zusammenhängende Prioritätsreihenfolge zuzulassen. Verwenden Sie eine negative Priorität, um von der Rückseite aus zu beginnen. Prioritäten, die größer als Grenzwertesind, werden abgerufen und auf die maximale (oder minimale, wenn negative) Priorität festgelegt. Beachten Sie auch, dass Sie beim Ändern der Priorität eine neue Kopie des Objekts an dieser neuen Prioritätsposition erneut abrufen müssen, wenn Sie weitere Änderungen daran vornehmen möchten.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPriority(priority: number): void;'
+    parameters:
+    - id: priority
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setStopIfTrue(stopIfTrue)
+  uid: ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)
+  package: ExcelScript!
+  fullName: setStopIfTrue(stopIfTrue)
+  summary: Wenn die Bedingungen dieses bedingten Formats erfüllt sind, werden keine Formate niedrigerer Priorität für diese Zelle wirksam. NULL für databars, Symbolsätze und colorscales, da kein Konzept von StopIfTrue für diese vorhanden ist
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setStopIfTrue(stopIfTrue: boolean): void;'
+    parameters:
+    - id: stopIfTrue
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: feaf6283a35e8ddcbf05ec4ed806dfb460ffc46b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415883"

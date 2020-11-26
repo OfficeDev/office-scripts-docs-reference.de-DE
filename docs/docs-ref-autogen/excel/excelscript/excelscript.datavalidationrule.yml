@@ -1,115 +1,102 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
-    summary: Die Daten Überprüfungsregel enthält verschiedene Arten der Datenüberprüfung. Sie können jeweils nur eine davon entsprechend dem ExcelScript. datavalidationtype verwenden.
-    name: ExcelScript.DataValidationRule
-    fullName: ExcelScript.DataValidationRule
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DataValidationRule#custom:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#date:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#decimal:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#list:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#textLength:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#time:member'
-      - 'ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#custom:member'
-    summary: Kriterien für eine benutzerdefinierte Datenüberprüfung.
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'custom?: CustomDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CustomDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#date:member'
-    summary: Kriterien für die Datenüberprüfung.
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'date?: DateTimeDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#decimal:member'
-    summary: Kriterien für die dezimale Datenüberprüfung.
-    name: decimal
-    fullName: decimal
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'decimal?: BasicDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BasicDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#list:member'
-    summary: Führt die Kriterien für die Datenüberprüfung auf.
-    name: list
-    fullName: list
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'list?: ListDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ListDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#textLength:member'
-    summary: Kriterien für die TextLength-Datenüberprüfung
-    name: textLength
-    fullName: textLength
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'textLength?: BasicDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BasicDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#time:member'
-    summary: Kriterien für die Zeitdatenüberprüfung.
-    name: time
-    fullName: time
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'time?: DateTimeDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
-  - uid: 'ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member'
-    summary: Kriterien für die WholeNumber-Datenüberprüfung
-    name: wholeNumber
-    fullName: wholeNumber
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'wholeNumber?: BasicDataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BasicDataValidation:interface'
-references:
-  - uid: 'ExcelScript!ExcelScript.CustomDataValidation:interface'
-    name: CustomDataValidation
-    fullName: ExcelScript.CustomDataValidation
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
-    name: DateTimeDataValidation
-    fullName: ExcelScript.DateTimeDataValidation
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation:interface'
-    name: BasicDataValidation
-    fullName: ExcelScript.BasicDataValidation
-  - uid: 'ExcelScript!ExcelScript.ListDataValidation:interface'
-    name: ListDataValidation
-    fullName: ExcelScript.ListDataValidation
+### YamlMime:TSType
+name: ExcelScript.DataValidationRule
+uid: ExcelScript!ExcelScript.DataValidationRule:interface
+package: ExcelScript!
+fullName: ExcelScript.DataValidationRule
+summary: Die Daten Überprüfungsregel enthält verschiedene Arten der Datenüberprüfung. Sie können jeweils nur eine davon entsprechend dem ExcelScript. datavalidationtype verwenden.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: custom
+  uid: ExcelScript!ExcelScript.DataValidationRule#custom:member
+  package: ExcelScript!
+  fullName: custom
+  summary: Kriterien für eine benutzerdefinierte Datenüberprüfung.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'custom?: CustomDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomDataValidation:interface" />
+- name: date
+  uid: ExcelScript!ExcelScript.DataValidationRule#date:member
+  package: ExcelScript!
+  fullName: date
+  summary: Kriterien für die Datenüberprüfung.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'date?: DateTimeDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />
+- name: decimal
+  uid: ExcelScript!ExcelScript.DataValidationRule#decimal:member
+  package: ExcelScript!
+  fullName: decimal
+  summary: Kriterien für die dezimale Datenüberprüfung.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'decimal?: BasicDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
+- name: list
+  uid: ExcelScript!ExcelScript.DataValidationRule#list:member
+  package: ExcelScript!
+  fullName: list
+  summary: Führt die Kriterien für die Datenüberprüfung auf.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'list?: ListDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ListDataValidation:interface" />
+- name: textLength
+  uid: ExcelScript!ExcelScript.DataValidationRule#textLength:member
+  package: ExcelScript!
+  fullName: textLength
+  summary: Kriterien für die TextLength-Datenüberprüfung
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'textLength?: BasicDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
+- name: time
+  uid: ExcelScript!ExcelScript.DataValidationRule#time:member
+  package: ExcelScript!
+  fullName: time
+  summary: Kriterien für die Zeitdatenüberprüfung.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'time?: DateTimeDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DateTimeDataValidation:interface" />
+- name: wholeNumber
+  uid: ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member
+  package: ExcelScript!
+  fullName: wholeNumber
+  summary: Kriterien für die WholeNumber-Datenüberprüfung
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'wholeNumber?: BasicDataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
+metadata:
+  ms.openlocfilehash: 06c10b581e27d5f81cb480765f4307b769ef0b2e
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415505"
