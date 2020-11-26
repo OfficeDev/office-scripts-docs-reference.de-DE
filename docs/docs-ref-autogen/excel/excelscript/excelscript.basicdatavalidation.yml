@@ -1,72 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation:interface'
-    summary: Stellt die grundlegenden Typen Daten Überprüfungskriterien dar.
-    name: ExcelScript.BasicDataValidation
-    fullName: ExcelScript.BasicDataValidation
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.BasicDataValidation#formula1:member'
-      - 'ExcelScript!ExcelScript.BasicDataValidation#formula2:member'
-      - 'ExcelScript!ExcelScript.BasicDataValidation#operator:member'
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula1:member'
-    summary: 'Gibt den rechten Operanden an, wenn die Operator-Eigenschaft auf einen binären Operator wie GreaterThan festgelegt ist (der linke Operand ist der Wert, den der Benutzer in die Zelle eingeben möchte). Gibt mit den dreistelligen Operatoren zwischen und NotBetween den untergeordneten Operanden an. Wenn beispielsweise Formel 1 auf 10 und Operator auf GreaterThan festzulegen, bedeutet dies, dass gültige Daten für den Bereich größer als 10 sein müssen. Wenn Sie den Wert festlegen, kann er als Zahl, als Range-Objekt oder als Zeichenfolge Formel übergeben werden (wobei die Zeichenfolge entweder eine stringified-Zahl, ein Zellbezug wie "= a1" oder eine Formel wie "= min (a1, B1)" ist). Wenn der Wert abgerufen wird, wird er immer als Zeichenfolgenformel zurückgegeben, beispielsweise: "= 10", "= a1", "= Sum (a1: B5)" usw.'
-    name: formula1
-    fullName: formula1
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula1: string | number | Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BasicDataValidation#formula1~0:complex'
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula2:member'
-    summary: 'Gibt mit den dreistelligen Operatoren zwischen und NotBetween den oberen gebundenen Operanden an. Wird nicht mit den binären Operatoren wie GreaterThan verwendet. Wenn Sie den Wert festlegen, kann er als Zahl, als Range-Objekt oder als Zeichenfolge Formel übergeben werden (wobei die Zeichenfolge entweder eine stringified-Zahl, ein Zellbezug wie "= a1" oder eine Formel wie "= min (a1, B1)" ist). Wenn der Wert abgerufen wird, wird er immer als Zeichenfolgenformel zurückgegeben, beispielsweise: "= 10", "= a1", "= Sum (a1: B5)" usw.'
-    name: formula2
-    fullName: formula2
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula2?: string | number | Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BasicDataValidation#formula2~0:complex'
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#operator:member'
-    summary: 'Der Operator, der zum Überprüfen der Daten verwendet wird.'
-    name: operator
-    fullName: operator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'operator: DataValidationOperator;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataValidationOperator:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula1~0:complex'
-    name: string | number | Range
-    fullName: string | number | ExcelScript.Range
-    spec.typeScript:
-      - name: 'string | number | '
-        fullName: 'string | number | '
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula2~0:complex'
-    name: string | number | Range
-    fullName: string | number | ExcelScript.Range
-    spec.typeScript:
-      - name: 'string | number | '
-        fullName: 'string | number | '
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.DataValidationOperator:enum'
-    name: DataValidationOperator
-    fullName: ExcelScript.DataValidationOperator
+### YamlMime:TSType
+name: ExcelScript.BasicDataValidation
+uid: ExcelScript!ExcelScript.BasicDataValidation:interface
+package: ExcelScript!
+fullName: ExcelScript.BasicDataValidation
+summary: Stellt die grundlegenden Typen Daten Überprüfungskriterien dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formula1
+  uid: ExcelScript!ExcelScript.BasicDataValidation#formula1:member
+  package: ExcelScript!
+  fullName: formula1
+  summary: 'Gibt den rechten Operanden an, wenn die Operator-Eigenschaft auf einen binären Operator wie GreaterThan festgelegt ist (der linke Operand ist der Wert, den der Benutzer in die Zelle eingeben möchte). Gibt mit den dreistelligen Operatoren zwischen und NotBetween den untergeordneten Operanden an. Wenn beispielsweise Formel 1 auf 10 und Operator auf GreaterThan festzulegen, bedeutet dies, dass gültige Daten für den Bereich größer als 10 sein müssen. Wenn Sie den Wert festlegen, kann er als Zahl, als Range-Objekt oder als Zeichenfolge Formel übergeben werden (wobei die Zeichenfolge entweder eine stringified-Zahl, ein Zellbezug wie "= a1" oder eine Formel wie "= min (a1, B1)" ist). Wenn der Wert abgerufen wird, wird er immer als Zeichenfolgenformel zurückgegeben, beispielsweise: "= 10", "= a1", "= Sum (a1: B5)" usw.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula1: string | number | Range;'
+    return:
+      type: string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+- name: formula2
+  uid: ExcelScript!ExcelScript.BasicDataValidation#formula2:member
+  package: ExcelScript!
+  fullName: formula2
+  summary: 'Gibt mit den dreistelligen Operatoren zwischen und NotBetween den oberen gebundenen Operanden an. Wird nicht mit den binären Operatoren wie GreaterThan verwendet. Wenn Sie den Wert festlegen, kann er als Zahl, als Range-Objekt oder als Zeichenfolge Formel übergeben werden (wobei die Zeichenfolge entweder eine stringified-Zahl, ein Zellbezug wie "= a1" oder eine Formel wie "= min (a1, B1)" ist). Wenn der Wert abgerufen wird, wird er immer als Zeichenfolgenformel zurückgegeben, beispielsweise: "= 10", "= a1", "= Sum (a1: B5)" usw.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula2?: string | number | Range;'
+    return:
+      type: string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+- name: operator
+  uid: ExcelScript!ExcelScript.BasicDataValidation#operator:member
+  package: ExcelScript!
+  fullName: operator
+  summary: Der Operator, der zum Überprüfen der Daten verwendet wird.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'operator: DataValidationOperator;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
+metadata:
+  ms.openlocfilehash: 2838d9862880de654555b397ba920d1eb4f30619
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417292"

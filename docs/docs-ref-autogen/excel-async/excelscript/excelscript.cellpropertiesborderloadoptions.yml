@@ -1,63 +1,66 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions:interface'
-    summary: 'Gibt an, welche Eigenschaften für das Objekt zu laden sind `format.borders` .'
-    name: Excel.CellPropertiesBorderLoadOptions
-    fullName: Excel.CellPropertiesBorderLoadOptions
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.CellPropertiesBorderLoadOptions#color:member'
-      - 'excel!Excel.CellPropertiesBorderLoadOptions#style:member'
-      - 'excel!Excel.CellPropertiesBorderLoadOptions#tintAndShade:member'
-      - 'excel!Excel.CellPropertiesBorderLoadOptions#weight:member'
-  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#color:member'
-    summary: 'Gibt an, ob für die `color` Eigenschaft laden.'
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#style:member'
-    summary: 'Gibt an, ob für die `style` Eigenschaft laden.'
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'style?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#tintAndShade:member'
-    summary: 'Gibt an, ob für die `tintAndShade` Eigenschaft laden.'
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#weight:member'
-    summary: 'Gibt an, ob für die `weight` Eigenschaft laden.'
-    name: weight
-    fullName: weight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'weight?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: Excel.CellPropertiesBorderLoadOptions
+uid: excel!Excel.CellPropertiesBorderLoadOptions:interface
+package: excel!
+fullName: Excel.CellPropertiesBorderLoadOptions
+summary: Gibt an, welche Eigenschaften für das Objekt zu laden sind `format.borders` .
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: excel!Excel.CellPropertiesBorderLoadOptions#color:member
+  package: excel!
+  fullName: color
+  summary: Gibt an, ob für die `color` Eigenschaft laden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: boolean;'
+    return:
+      type: boolean
+- name: style
+  uid: excel!Excel.CellPropertiesBorderLoadOptions#style:member
+  package: excel!
+  fullName: style
+  summary: Gibt an, ob für die `style` Eigenschaft laden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style?: boolean;'
+    return:
+      type: boolean
+- name: tintAndShade
+  uid: excel!Excel.CellPropertiesBorderLoadOptions#tintAndShade:member
+  package: excel!
+  fullName: tintAndShade
+  summary: Gibt an, ob für die `tintAndShade` Eigenschaft laden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'tintAndShade?: boolean;'
+    return:
+      type: boolean
+- name: weight
+  uid: excel!Excel.CellPropertiesBorderLoadOptions#weight:member
+  package: excel!
+  fullName: weight
+  summary: Gibt an, ob für die `weight` Eigenschaft laden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'weight?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 232874cfa69b43096eb18a1fe2c966a89677cf42
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417820"
