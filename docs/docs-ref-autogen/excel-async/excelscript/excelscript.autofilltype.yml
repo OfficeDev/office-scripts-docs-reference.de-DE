@@ -12,54 +12,66 @@ fields:
   uid: excel!Excel.AutoFillType.fillCopy:member
   package: excel!
   summary: Füllt die benachbarten Zellen mit Daten die ausgewählten Daten.
+  value: "\"FillCopy\""
 - name: fillDays
   uid: excel!Excel.AutoFillType.fillDays:member
   package: excel!
   summary: Eine Version von "FillSeries" für Datumsangaben, die das Muster je nach Kontext entweder am Tag des Monats oder am Wochentag basieren.
+  value: "\"FillDays\""
 - name: fillDefault
   uid: excel!Excel.AutoFillType.fillDefault:member
   package: excel!
   summary: Füllt die benachbarten Zellen mit Daten die ausgewählten Daten.
+  value: "\"FillDefault\""
 - name: fillFormats
   uid: excel!Excel.AutoFillType.fillFormats:member
   package: excel!
   summary: Füllt die benachbarten Zellen mit den ausgewählten Formeln.
+  value: "\"FillFormats\""
 - name: fillMonths
   uid: excel!Excel.AutoFillType.fillMonths:member
   package: excel!
   summary: Eine Version von "FillSeries" für Datumsangaben, die das Muster auf dem Monat basieren.
+  value: "\"FillMonths\""
 - name: fillSeries
   uid: excel!Excel.AutoFillType.fillSeries:member
   package: excel!
   summary: Füllt die benachbarten Zellen mit Daten auf, die einem Muster in den kopierten Zellen folgen.
+  value: "\"FillSeries\""
 - name: fillValues
   uid: excel!Excel.AutoFillType.fillValues:member
   package: excel!
   summary: Füllt die benachbarten Zellen mit den ausgewählten Werten.
+  value: "\"FillValues\""
 - name: fillWeekdays
   uid: excel!Excel.AutoFillType.fillWeekdays:member
   package: excel!
   summary: Eine Version von "FillSeries" für Datumsangaben, die das Muster am Wochentag und nur an Werktagen basieren.
+  value: "\"FillWeekdays\""
 - name: fillYears
   uid: excel!Excel.AutoFillType.fillYears:member
   package: excel!
   summary: Eine Version von "FillSeries" für Datumsangaben, die das Muster auf dem Jahr basieren.
+  value: "\"FillYears\""
 - name: flashFill
   uid: excel!Excel.AutoFillType.flashFill:member
   package: excel!
   summary: Füllt die benachbarten Zellen mithilfe des FlashFill-Features von Excel auf.
+  value: "\"FlashFill\""
 - name: growthTrend
   uid: excel!Excel.AutoFillType.growthTrend:member
   package: excel!
   summary: Eine Version von "FillSeries" für Zahlen, die die Werte in den benachbarten Zellen nach einem Wachstumstrend Modell ausfüllt.
+  value: "\"GrowthTrend\""
 - name: linearTrend
   uid: excel!Excel.AutoFillType.linearTrend:member
   package: excel!
   summary: Eine Version von "FillSeries" für Zahlen, die die Werte in den benachbarten Zellen gemäß einem linearen Trendmodell ausfüllt.
+  value: "\"LinearTrend\""
 metadata:
-  ms.openlocfilehash: 9a8870d3aa61cdf73c7ed2b1a0ee1885549cbb79
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: add16fdb3f03d45af68a590226f3a2bde8514c08
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414492"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554517"
