@@ -483,7 +483,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: Ruft ein Diagramm über seinen Namen ab. Wenn mehrere Diagramme mit demselben Namen vorhanden sind, wird das erste zurückgegeben. Wenn das Diagramm nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  summary: Ruft ein Diagramm über seinen Namen ab. Wenn mehrere Diagramme mit demselben Namen vorhanden sind, wird das erste zurückgegeben. Wenn das Diagramm nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -655,7 +655,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Ruft ein NamedItem-Objekt mit seinem Namen ab. Wenn das nameditem-Objekt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  summary: Ruft ein `NamedItem` Objekt mit seinem Namen ab. Wenn das Objekt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -685,7 +685,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: Ruft das Arbeitsblatt ab, das diesem folgt. Wenn keine Arbeitsblätter folgen, wird diese Methode ein NULL-Objekt zurückgegeben.
+  summary: Ruft das Arbeitsblatt ab, das diesem folgt. Wenn nach diesem keine Arbeitsblätter vorhanden sind, gibt diese Methode ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -910,7 +910,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Ruft einen Datenschnitt anhand seines Namens oder seiner ID ab. Wenn der Datenschnitt nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  summary: Ruft einen datenschnitt mithilfe des Namens oder der ID ab. Wenn der datenschnitt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -979,7 +979,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Ruft eine Tabelle anhand des Namens oder der ID ab. Wenn die Tabelle nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  summary: Ruft eine Tabelle anhand des Namens oder der ID ab. Wenn die Tabelle nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1009,7 +1009,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Der verwendete Bereich ist der kleinste Bereich, der mindestens eine der Zellen umfasst, die einen Wert enthalten oder denen eine Formatierung zugewiesen wurde. Wenn das gesamte Arbeitsblatt leer ist, gibt diese Funktion ein NULL-Objekt zurück.
+  summary: ''
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: Ruft ein Objekt für benutzerdefinierte Eigenschaften über seinen Schlüssel ab, bei dem Groß-/Kleinschreibung nicht beachtet wird. Gibt ein NULL-Objekt zurück, wenn die benutzerdefinierte Eigenschaft nicht vorhanden ist.
+  summary: Ruft ein Objekt für benutzerdefinierte Eigenschaften über seinen Schlüssel ab, bei dem Groß-/Kleinschreibung nicht beachtet wird. Wenn die benutzerdefinierte Eigenschaft nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1292,9 +1292,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c647b16d668a36d1fe00a7b6c3422e9cd1d9a5c7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 76406c9a40bad3c850c09cdb198eabdad4a2b1c3
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415148"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554062"

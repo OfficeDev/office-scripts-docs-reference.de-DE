@@ -265,7 +265,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Gibt das RangeAreas-Objekt zurück, das die Schnittmenge der angegebenen Bereiche oder RangeAreas darstellt. Wenn keine Schnittmenge gefunden wird, wird ein NULL-Objekt zurückgegeben.
+  summary: Gibt das RangeAreas-Objekt zurück, das die Schnittmenge der angegebenen Bereiche oder RangeAreas darstellt. Wenn keine Schnittmenge gefunden wird, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -386,7 +386,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)
   package: ExcelScript!
   fullName: getUsedRangeAreas(valuesOnly)
-  summary: Gibt das verwendete RangeAreas zurück, das alle verwendeten Bereiche einzelner rechteckiger Bereiche im RangeAreas-Objekt umfasst. Wenn in der RangeAreas keine Zellen verwendet werden, wird ein NULL-Objekt zurückgegeben.
+  summary: Gibt das verwendete RangeAreas zurück, das alle verwendeten Bereiche einzelner rechteckiger Bereiche im RangeAreas-Objekt umfasst. Wenn keine Zellen in der RangeAreas verwendet werden, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -443,9 +443,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c32fbe6396b0e5ae78ec78536f827a98e1b2c360
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: da8fcd2adf7d4a33bbe25dd802fd0585a738557c
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416645"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554545"

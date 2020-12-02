@@ -12,22 +12,26 @@ fields:
   uid: excel!Excel.HeaderFooterState.default:member
   package: excel!
   summary: Für alle Seiten, die gedruckt werden, wird nur eine allgemeine Kopfzeile/Fußzeile verwendet.
+  value: "\"Default\""
 - name: firstAndDefault
   uid: excel!Excel.HeaderFooterState.firstAndDefault:member
   package: excel!
   summary: Es gibt eine separate Kopfzeile/Fußzeile für die erste Seite und eine allgemeine Kopfzeile/Fußzeile, die für alle anderen Seiten verwendet wird.
+  value: "\"FirstAndDefault\""
 - name: firstOddAndEven
   uid: excel!Excel.HeaderFooterState.firstOddAndEven:member
   package: excel!
   summary: Es gibt eine separate Kopfzeile/Fußzeile der ersten Seite, dann gibt es eine separate Kopfzeile/Fußzeile für ungerade und gerade Seiten.
+  value: "\"FirstOddAndEven\""
 - name: oddAndEven
   uid: excel!Excel.HeaderFooterState.oddAndEven:member
   package: excel!
   summary: Es gibt eine andere Kopfzeile/Fußzeile für ungerade und gerade Seiten.
+  value: "\"OddAndEven\""
 metadata:
-  ms.openlocfilehash: 1a8c7b34c962f89abd69eb6516c42cdd74de7bfa
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d569d6574f6014a14dd41cf0df5d76b5e7f33005
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419113"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553780"
