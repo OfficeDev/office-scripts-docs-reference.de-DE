@@ -473,7 +473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: Stellt die Zellformel in der Notation im Format A1 dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch zeilenindex 0 und Spaltenindex 0) zurückgegeben.
+  summary: Stellt die Zellformel in der A1-Notation dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch zeilenindex 0 und Spaltenindex 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -772,6 +772,19 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
       description: ''
+- name: getNumberFormatCategory()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatCategory()
+  summary: Gibt die Zahlenformatkategorie der ersten Zelle im Bereich an (dargestellt durch den Zeilenindex 0 und den Spaltenindex 0).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatCategory(): NumberFormatCategory;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />
+      description: ''
 - name: getNumberFormatLocal()
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
@@ -802,7 +815,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
-  summary: Stellt den Zahlenformatcode von Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersistenz `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
+  summary: Stellt den Zahlenformatcode von Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoercion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1236,7 +1249,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Gibt an, wie der Bereich nach Zeilen oder Spalten gruppieren werden kann. Ein Fehler wird ausgelöst, wenn sich die Gruppenoption von der Bereichs- oder Eigenschaftsoption unterscheidet (d. h. `InvalidArgument` `isEntireRow` "true" und `isEntireColumn` `range.isEntireRow` `groupOption` "ByColumns" oder "True" ist und `range.isEntireColumn` `groupOption` "ByRows" ist).
+      description: Gibt an, wie der Bereich nach Zeilen oder Spalten gruppieren werden kann. Ein Fehler wird ausgelöst, wenn sich die Gruppenoption von der Bereichs- oder Eigenschaftsoption unterscheidet (d. h. `InvalidArgument` `isEntireRow` "true" und `isEntireColumn` `range.isEntireRow` `groupOption` "ByColumns" oder `range.isEntireColumn` "True" und `groupOption` "ByRows") ist.
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1408,7 +1421,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Legt die Zellformel in der A1-Notation fest. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt die Zellformel in der Notation im Format A1 fest. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1720,9 +1733,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8f16fa6c9b84bdd42fd68e8d9be7402164c40531
-  ms.sourcegitcommit: 2166f15e1168b1b453872c5840431e960dc909df
+  ms.openlocfilehash: 0f16a00124cd360f9a0ac72ab7a7bcf96af7930a
+  ms.sourcegitcommit: 2224b5a1c9da58cc58b310ccbdc0b58c63ab501b
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/08/2021
-  ms.locfileid: "49784457"
+  ms.lasthandoff: 02/03/2021
+  ms.locfileid: "50091815"
