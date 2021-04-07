@@ -25,10 +25,10 @@ methods:
               ): CommentReply;
     parameters:
     - id: content
-      description: Der Inhalt des Kommentars. Hierbei kann es sich um eine Zeichenfolge oder eine Schnittstelle CommentRichContent (beispielsweise für Kommentare mit Erwähnungen) handeln.
+      description: Der Inhalt des Kommentars. Dies kann eine Zeichenfolge oder ein Objekt sein (z. B. für Kommentare `CommentRichContent` mit Erwähnungen).
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Optional. Der Typ des Inhalts, der im Kommentar enthalten ist. Der Standardwert ist Enum. `ContentType.Plain`<!-- -->.
+      description: Optional. Der Inhaltstyp, der im Kommentar enthalten ist. Der Standardwert ist enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
@@ -84,7 +84,7 @@ methods:
     content: 'getCommentReply(commentReplyId: string): CommentReply;'
     parameters:
     - id: commentReplyId
-      description: Der Bezeichner für die Kommentar Antwort.
+      description: Der Bezeichner für die Kommentarantwort.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getContent:member(1)
   package: ExcelScript!
   fullName: getContent()
-  summary: Der Inhalt des Kommentars. Die Zeichenfolge ist nur-Text.
+  summary: Der Inhalt des Kommentars. Die Zeichenfolge ist Nur-Text.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -119,7 +119,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getCreationDate:member(1)
   package: ExcelScript!
   fullName: getCreationDate()
-  summary: Ruft den Erstellungszeitpunkt des Kommentars ab. Gibt Null zurück, wenn der Kommentar aus einer Notiz konvertiert wurde, da der Kommentar kein Erstellungsdatum hat.
+  summary: Ruft den Erstellungszeitpunkt des Kommentars ab. Gibt `null` zurück, ob der Kommentar aus einer Notiz konvertiert wurde, da der Kommentar kein Erstellungsdatum hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Gibt den Kommentar Bezeichner an.
+  summary: Gibt den Kommentarbezeichner an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -158,7 +158,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getMentions:member(1)
   package: ExcelScript!
   fullName: getMentions()
-  summary: Ruft die Entitäten (z. b. Personen) ab, die in Kommentaren erwähnt werden.
+  summary: Ruft die Entitäten (z. B. Personen) ab, die in Kommentaren erwähnt werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -184,7 +184,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getResolved:member(1)
   package: ExcelScript!
   fullName: getResolved()
-  summary: Der Kommentar Threadstatus. Der Wert "true" bedeutet, dass der Kommentar Thread aufgelöst wird.
+  summary: Der Kommentarthreadstatus. Ein Wert von `true` bedeutet, dass der Kommentarthread aufgelöst wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -197,7 +197,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getRichContent:member(1)
   package: ExcelScript!
   fullName: getRichContent()
-  summary: Ruft den umfangreichen Kommentar Inhalt ab (beispielsweise Erwähnungen in Kommentaren). Diese Zeichenfolge soll Endbenutzern nicht angezeigt werden. Das Add-in sollte nur dazu verwendet werden, um umfangreiche Kommentar Inhalte zu analysieren.
+  summary: Ruft den reichhaltigen Kommentarinhalt ab (z. B. Erwähnungen in Kommentaren). Diese Zeichenfolge ist nicht für Endbenutzer gedacht. Ihr Add-In sollte dies nur zum Analysieren von Rich-Comment-Inhalten verwenden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -210,7 +210,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#setContent:member(1)
   package: ExcelScript!
   fullName: setContent(content)
-  summary: Der Inhalt des Kommentars. Die Zeichenfolge ist nur-Text.
+  summary: Der Inhalt des Kommentars. Die Zeichenfolge ist Nur-Text.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -227,7 +227,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#setResolved:member(1)
   package: ExcelScript!
   fullName: setResolved(resolved)
-  summary: Der Kommentar Threadstatus. Der Wert "true" bedeutet, dass der Kommentar Thread aufgelöst wird.
+  summary: Der Kommentarthreadstatus. Ein Wert von `true` bedeutet, dass der Kommentarthread aufgelöst wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -244,7 +244,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#updateMentions:member(1)
   package: ExcelScript!
   fullName: updateMentions(contentWithMentions)
-  summary: Aktualisiert den Kommentar Inhalt mit einer speziell formatierten Zeichenfolge und einer Liste von Erwähnungen.
+  summary: Aktualisiert den Kommentarinhalt mit einer speziell formatierten Zeichenfolge und einer Liste von Erwähnungen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -252,15 +252,15 @@ methods:
     content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
     parameters:
     - id: contentWithMentions
-      description: Der Inhalt des Kommentars. Dies enthält eine speziell formatierte Zeichenfolge und eine Liste von Erwähnungen, die in der Zeichenfolge analysiert werden, wenn Sie von Excel angezeigt werden.
+      description: Der Inhalt des Kommentars. Dies enthält eine speziell formatierte Zeichenfolge und eine Liste von Erwähnungen, die in der Zeichenfolge analysiert werden, wenn sie von Excel angezeigt wird.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 99f2cf48b37e0d1b0db82fa78492b823e4d5eee7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3417d9212461ffdd5ba0314f41491575206a4e65
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415974"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606778"

@@ -3,7 +3,7 @@ name: ExcelScript.ChartFont
 uid: ExcelScript!ExcelScript.ChartFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartFont
-summary: Dieses Objekt stellt die Zeichenformatierung (Schriftart, Schriftgrad, Farbe usw.) für ein Diagrammobjekt dar.
+summary: Dieses Objekt stellt die Schriftartattribute (z. B. Schriftartname, Schriftgrad und Farbe) für ein Diagrammobjekt dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: HTML-Farb Codedarstellung der Textfarbe (beispielsweise \# FF0000 stellt rot dar).
+  summary: HTML-Farbcodedarstellung der Textfarbe (z. B. \# FF0000 steht für Rot).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Name der Schriftart (beispielsweise "Calibri")
+  summary: Schriftartname (z. B. "Calibri")
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getSize:member(1)
   package: ExcelScript!
   fullName: getSize()
-  summary: Größe der Schriftart (z. b. 11)
+  summary: Schriftgrad (z. B. 11)
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter ExcelScript. ChartUnderlineStyle.
+  summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere `ExcelScript.ChartUnderlineStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: HTML-Farb Codedarstellung der Textfarbe (beispielsweise \# FF0000 stellt rot dar).
+  summary: HTML-Farbcodedarstellung der Textfarbe (z. B. \# FF0000 steht für Rot).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Name der Schriftart (beispielsweise "Calibri")
+  summary: Schriftartname (z. B. "Calibri")
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setSize:member(1)
   package: ExcelScript!
   fullName: setSize(size)
-  summary: Größe der Schriftart (z. b. 11)
+  summary: Schriftgrad (z. B. 11)
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter ExcelScript. ChartUnderlineStyle.
+  summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere `ExcelScript.ChartUnderlineStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ef4d91ec8835380a3af1b0de7def9ab52d8dda8c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 58486871c20f86feee8008975bd8790f284b09d0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419936"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606899"

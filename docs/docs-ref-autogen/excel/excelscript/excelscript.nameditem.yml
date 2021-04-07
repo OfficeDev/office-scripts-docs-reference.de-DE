@@ -3,7 +3,7 @@ name: ExcelScript.NamedItem
 uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: Stellt einen definierten Namen für einen Zellbereich oder einen Wert dar. Namen können primitive benannte Objekte sein (wie im Typ unten zu sehen), Range-Objekt oder einen Verweis auf einen Bereich. Dieses Objekt kann zum Abrufen des mit Namen verknüpften Bereichsobjekts verwendet werden.
+summary: Stellt einen definierten Namen für einen Zellbereich oder einen Wert dar. Namen können primitive benannte Objekte (wie im folgenden Typ dargestellt), Bereichsobjekt oder ein Verweis auf einen Bereich sein. Dieses Objekt kann zum Abrufen des mit Namen verknüpften Bereichsobjekts verwendet werden.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
   package: ExcelScript!
   fullName: getComment()
-  summary: Gibt den diesem Namen zugeordneten Kommentar an.
+  summary: Gibt den Kommentar an, der diesem Namen zugeordnet ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: Die Formel des benannten Elements. Formel beginnt immer mit einem "=".
+  summary: Die Formel des benannten Elements. Formeln beginnen immer mit einem Gleichheitszeichen ("=").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
   package: ExcelScript!
   fullName: getScope()
-  summary: 'Gibt an, ob der Name auf die Arbeitsmappe oder auf ein bestimmtes Arbeitsblatt beschränkt ist. Mögliche Werte sind: Arbeitsblatt, Arbeitsmappe.'
+  summary: 'Gibt an, ob der Name auf die Arbeitsmappe oder ein bestimmtes Arbeitsblatt begrenzt ist. Mögliche Werte sind: Worksheet, Workbook.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Gibt den Typ des Werts an, der von der Formel des Namens zurückgegeben wird. Weitere Informationen finden Sie unter ExcelScript. NamedItemType.
+  summary: Gibt den Typ des Werts an, der von der Formel des Namens zurückgegeben wird. Weitere `ExcelScript.NamedItemType` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: Gibt das Arbeitsblatt zurück, in das das benannte Element den Bereich hat. Wenn das Element stattdessen auf die Arbeitsmappe beschränkt ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
+  summary: Gibt das Arbeitsblatt zurück, auf das das benannte Element begrenzt ist. Wenn das Element stattdessen auf die Arbeitsmappe festgelegt ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
   package: ExcelScript!
   fullName: setComment(comment)
-  summary: Gibt den diesem Namen zugeordneten Kommentar an.
+  summary: Gibt den Kommentar an, der diesem Namen zugeordnet ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Die Formel des benannten Elements. Formel beginnt immer mit einem "=".
+  summary: Die Formel des benannten Elements. Formeln beginnen immer mit einem Gleichheitszeichen ("=").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 64b38b2371d79f40394f2bfb6db981b9f56f740b
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 03b2b429178a6d8ad6d13a13c28271340d8c23ef
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554757"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606420"

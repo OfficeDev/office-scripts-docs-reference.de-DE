@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getAutoText:member(1)
   package: ExcelScript!
   fullName: getAutoText()
-  summary: Gibt an, ob Datenbeschriftungen automatisch einen geeigneten Text basierend auf dem Kontext generieren.
+  summary: Gibt an, ob Datenbeschriftungen automatisch den entsprechenden Text basierend auf dem Kontext generieren.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Gibt das Format von Diagrammdaten Beschriftungen an, das Füllungs-und Schriftartformatierungen enthält.
+  summary: Gibt das Format von Diagrammdatenbeschriftungen an, das Füllungs- und Schriftartformatierung umfasst.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Gibt die horizontale Ausrichtung für die Diagrammdaten Beschriftung an. Weitere Informationen finden Sie unter ExcelScript. ChartTextHorizontalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textorientierung der Datenbeschriftung 0 ist.
+  summary: Gibt die horizontale Ausrichtung für die Diagrammdatenbeschriftung an. Weitere `ExcelScript.ChartTextHorizontalAlignment` Informationen finden Sie unter. Diese Eigenschaft ist nur gültig, wenn `TextOrientation` die der Datenbeschriftung 0 ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: getLinkNumberFormat()
-  summary: Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist. Wenn wahr, ändert sich das Zahlenformat in den Bezeichnungen, wenn es sich in den Zellen ändert.
+  summary: Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist. If `true`<!-- -->ändert sich das Zahlenformat in den Beschriftungen, wenn es sich in den Zellen ändert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: DataLabelPosition-Wert, der die Position der Datenbeschriftung darstellt. Weitere Informationen finden Sie unter ExcelScript. ChartDataLabelPosition.
+  summary: Wert, der die Position der Datenbeschriftung darstellt. Weitere `ExcelScript.ChartDataLabelPosition` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowBubbleSize:member(1)
   package: ExcelScript!
   fullName: getShowBubbleSize()
-  summary: Gibt an, ob die Daten Beschriftungs Blasengröße sichtbar ist.
+  summary: Gibt an, ob die Größe der Datenbeschriftungsblase sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowCategoryName:member(1)
   package: ExcelScript!
   fullName: getShowCategoryName()
-  summary: Gibt an, ob der Name der Daten Beschriftungskategorie sichtbar ist.
+  summary: Gibt an, ob der Name der Datenbeschriftungskategorie sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowLegendKey:member(1)
   package: ExcelScript!
   fullName: getShowLegendKey()
-  summary: Gibt an, ob der Legendenschlüssel für die Datenbeschriftung sichtbar ist.
+  summary: Gibt an, ob der Legendenschlüssel der Datenbeschriftung sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowSeriesName:member(1)
   package: ExcelScript!
   fullName: getShowSeriesName()
-  summary: Gibt an, ob der Name der Daten Beschriftungs Reihe sichtbar ist.
+  summary: Gibt an, ob der Datenbeschriftungsreihenname sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getShowValue:member(1)
   package: ExcelScript!
   fullName: getShowValue()
-  summary: Gibt an, ob der Wert der Datenbeschriftung sichtbar ist.
+  summary: Gibt an, ob der Datenbeschriftungswert sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Stellt den Winkel dar, an dem der Text für Datenbeschriftungen ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von-90 bis 90 oder die ganze Zahl 180 für vertikal orientierten Text sein.
+  summary: Stellt den Winkel dar, an dem der Text für Datenbeschriftungen ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von -90 bis 90 oder die ganze Zahl 180 für vertikal ausgerichteten Text sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Stellt die vertikale Ausrichtung der Diagrammdatenbeschriftung dar. Weitere Informationen finden Sie unter ExcelScript. ChartTextVerticalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textorientierung der Datenbeschriftung-90, 90 oder 180 ist.
+  summary: Stellt die vertikale Ausrichtung der Diagrammdatenbeschriftung dar. Weitere `ExcelScript.ChartTextVerticalAlignment` Informationen finden Sie unter. Diese Eigenschaft ist nur gültig, wenn die Datenbeschriftung `TextOrientation` -90, 90 oder 180 ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setAutoText:member(1)
   package: ExcelScript!
   fullName: setAutoText(autoText)
-  summary: Gibt an, ob Datenbeschriftungen automatisch einen geeigneten Text basierend auf dem Kontext generieren.
+  summary: Gibt an, ob Datenbeschriftungen automatisch den entsprechenden Text basierend auf dem Kontext generieren.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Gibt die horizontale Ausrichtung für die Diagrammdaten Beschriftung an. Weitere Informationen finden Sie unter ExcelScript. ChartTextHorizontalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textorientierung der Datenbeschriftung 0 ist.
+  summary: Gibt die horizontale Ausrichtung für die Diagrammdatenbeschriftung an. Weitere `ExcelScript.ChartTextHorizontalAlignment` Informationen finden Sie unter. Diese Eigenschaft ist nur gültig, wenn `TextOrientation` die der Datenbeschriftung 0 ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist. Wenn wahr, ändert sich das Zahlenformat in den Bezeichnungen, wenn es sich in den Zellen ändert.
+  summary: Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist. If `true`<!-- -->ändert sich das Zahlenformat in den Beschriftungen, wenn es sich in den Zellen ändert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -279,7 +279,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: DataLabelPosition-Wert, der die Position der Datenbeschriftung darstellt. Weitere Informationen finden Sie unter ExcelScript. ChartDataLabelPosition.
+  summary: Wert, der die Position der Datenbeschriftung darstellt. Weitere `ExcelScript.ChartDataLabelPosition` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -313,7 +313,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowBubbleSize:member(1)
   package: ExcelScript!
   fullName: setShowBubbleSize(showBubbleSize)
-  summary: Gibt an, ob die Daten Beschriftungs Blasengröße sichtbar ist.
+  summary: Gibt an, ob die Größe der Datenbeschriftungsblase sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -330,7 +330,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowCategoryName:member(1)
   package: ExcelScript!
   fullName: setShowCategoryName(showCategoryName)
-  summary: Gibt an, ob der Name der Daten Beschriftungskategorie sichtbar ist.
+  summary: Gibt an, ob der Name der Datenbeschriftungskategorie sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowLegendKey:member(1)
   package: ExcelScript!
   fullName: setShowLegendKey(showLegendKey)
-  summary: Gibt an, ob der Legendenschlüssel für die Datenbeschriftung sichtbar ist.
+  summary: Gibt an, ob der Legendenschlüssel der Datenbeschriftung sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -381,7 +381,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowSeriesName:member(1)
   package: ExcelScript!
   fullName: setShowSeriesName(showSeriesName)
-  summary: Gibt an, ob der Name der Daten Beschriftungs Reihe sichtbar ist.
+  summary: Gibt an, ob der Datenbeschriftungsreihenname sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -398,7 +398,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setShowValue:member(1)
   package: ExcelScript!
   fullName: setShowValue(showValue)
-  summary: Gibt an, ob der Wert der Datenbeschriftung sichtbar ist.
+  summary: Gibt an, ob der Datenbeschriftungswert sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -415,7 +415,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Stellt den Winkel dar, an dem der Text für Datenbeschriftungen ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von-90 bis 90 oder die ganze Zahl 180 für vertikal orientierten Text sein.
+  summary: Stellt den Winkel dar, an dem der Text für Datenbeschriftungen ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von -90 bis 90 oder die ganze Zahl 180 für vertikal ausgerichteten Text sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -432,7 +432,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabels#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Stellt die vertikale Ausrichtung der Diagrammdatenbeschriftung dar. Weitere Informationen finden Sie unter ExcelScript. ChartTextVerticalAlignment. Diese Eigenschaft ist nur gültig, wenn die Textorientierung der Datenbeschriftung-90, 90 oder 180 ist.
+  summary: Stellt die vertikale Ausrichtung der Diagrammdatenbeschriftung dar. Weitere `ExcelScript.ChartTextVerticalAlignment` Informationen finden Sie unter. Diese Eigenschaft ist nur gültig, wenn die Datenbeschriftung `TextOrientation` -90, 90 oder 180 ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -449,9 +449,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 87f3332eb1117170cf55d85aa4d78ec99c04d964
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 37ac26179da2d14e0172d354ecaac9be23fda9fd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416939"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606906"

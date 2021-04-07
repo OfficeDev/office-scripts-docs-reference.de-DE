@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getAutoFormat:member(1)
   package: ExcelScript!
   fullName: getAutoFormat()
-  summary: Gibt an, ob die Formatierung beim Aktualisieren oder beim Verschieben von Feldern automatisch formatiert wird.
+  summary: Gibt an, ob die Formatierung automatisch formatiert wird, wenn sie aktualisiert wird oder wenn Felder verschoben werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -60,7 +60,7 @@ methods:
     content: 'getDataHierarchy(cell: Range | string): DataPivotHierarchy;'
     parameters:
     - id: cell
-      description: Eine einzelne Zelle innerhalb des PivotTable-Daten Texts.
+      description: Eine einzelne Zelle im PivotTable-Datentext.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: getPreserveFormatting()
-  summary: Gibt an, ob die Formatierung beibehalten wird, wenn der Bericht durch Vorgänge wie Pivotieren, Sortieren oder Ändern von Seitenfeldelementen aktualisiert oder neu berechnet wird.
+  summary: Gibt an, ob die Formatierung beibehalten wird, wenn der Bericht durch Vorgänge wie das Pivotieren, Sortieren oder Ändern von Seitenfeldelementen aktualisiert oder neu berechnet wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getShowColumnGrandTotals:member(1)
   package: ExcelScript!
   fullName: getShowColumnGrandTotals()
-  summary: Gibt an, ob der PivotTable-Bericht Gesamtergebnisse für Spalten anzeigt.
+  summary: Gibt an, ob im PivotTable-Bericht Die Gesamtsummen für Spalten angezeigt werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getShowRowGrandTotals:member(1)
   package: ExcelScript!
   fullName: getShowRowGrandTotals()
-  summary: Gibt an, ob im PivotTable-Bericht Gesamtergebnisse für Zeilen angezeigt werden.
+  summary: Gibt an, ob im PivotTable-Bericht Die Gesamtsummen für Zeilen angezeigt werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getSubtotalLocation:member(1)
   package: ExcelScript!
   fullName: getSubtotalLocation()
-  summary: Diese Eigenschaft gibt das SubtotalLocationType-Objekt aller Felder in PivotTable an. Wenn Felder verschiedenen Status aufweisen, lautet dies NULL.
+  summary: Diese Eigenschaft gibt das `SubtotalLocationType` aller Felder in der PivotTable an. Wenn Felder unterschiedliche Zustände haben, wird dies `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setAutoFormat:member(1)
   package: ExcelScript!
   fullName: setAutoFormat(autoFormat)
-  summary: Gibt an, ob die Formatierung beim Aktualisieren oder beim Verschieben von Feldern automatisch formatiert wird.
+  summary: Gibt an, ob die Formatierung automatisch formatiert wird, wenn sie aktualisiert wird oder wenn Felder verschoben werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -211,7 +211,7 @@ methods:
     content: 'setAutoSortOnCell(cell: Range | string, sortBy: SortBy): void;'
     parameters:
     - id: cell
-      description: Eine einzelne zu verwendende Zelle Abrufen der Kriterien aus für die Anwendung der Auto Sortierung.
+      description: Eine einzelne Zelle, die die Kriterien für die Anwendung der Autosortierung verwenden soll.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: sortBy
       description: Die Richtung der Sortierung.
@@ -257,7 +257,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: setPreserveFormatting(preserveFormatting)
-  summary: Gibt an, ob die Formatierung beibehalten wird, wenn der Bericht durch Vorgänge wie Pivotieren, Sortieren oder Ändern von Seitenfeldelementen aktualisiert oder neu berechnet wird.
+  summary: Gibt an, ob die Formatierung beibehalten wird, wenn der Bericht durch Vorgänge wie das Pivotieren, Sortieren oder Ändern von Seitenfeldelementen aktualisiert oder neu berechnet wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -274,7 +274,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setShowColumnGrandTotals:member(1)
   package: ExcelScript!
   fullName: setShowColumnGrandTotals(showColumnGrandTotals)
-  summary: Gibt an, ob der PivotTable-Bericht Gesamtergebnisse für Spalten anzeigt.
+  summary: Gibt an, ob im PivotTable-Bericht Die Gesamtsummen für Spalten angezeigt werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -291,7 +291,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setShowRowGrandTotals:member(1)
   package: ExcelScript!
   fullName: setShowRowGrandTotals(showRowGrandTotals)
-  summary: Gibt an, ob im PivotTable-Bericht Gesamtergebnisse für Zeilen angezeigt werden.
+  summary: Gibt an, ob im PivotTable-Bericht Die Gesamtsummen für Zeilen angezeigt werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setSubtotalLocation:member(1)
   package: ExcelScript!
   fullName: setSubtotalLocation(subtotalLocation)
-  summary: Diese Eigenschaft gibt das SubtotalLocationType-Objekt aller Felder in PivotTable an. Wenn Felder verschiedenen Status aufweisen, lautet dies NULL.
+  summary: Diese Eigenschaft gibt das `SubtotalLocationType` aller Felder in der PivotTable an. Wenn Felder unterschiedliche Zustände haben, wird dies `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -322,9 +322,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: edb6b050eb6f004b74bf38c57764bf5292367016
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4612183d3dca994b991b7f65659024e46fb06a13
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416736"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607193"

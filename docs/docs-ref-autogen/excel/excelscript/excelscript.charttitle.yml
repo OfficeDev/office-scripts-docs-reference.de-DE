@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Gibt die Höhe des Diagrammtitels in Punkten zurück. NULL, wenn Diagrammtitel nicht sichtbar ist.
+  summary: Gibt die Höhe des Diagrammtitels in Punkten zurück. Der Wert `null` ist, wenn der Diagrammtitel nicht sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Gibt den Abstand zwischen dem linken Rand des Diagrammtitels und dem linken Rand des Diagrammbereichs in Punkten an. NULL, wenn Diagrammtitel nicht sichtbar ist.
+  summary: Gibt den Abstand (in Punkt) vom linken Rand des Diagrammtitels zum linken Rand des Diagrammbereichs an. Der Wert `null` ist, wenn der Diagrammtitel nicht sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)
   package: ExcelScript!
   fullName: getOverlay()
-  summary: Gibt an, ob der Diagrammtitel im Diagramm überlagert wird.
+  summary: Gibt an, ob der Diagrammtitel das Diagramm überlagert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Gibt die Position des Diagrammtitels an. Weitere Informationen finden Sie unter ExcelScript. ChartTitlePosition.
+  summary: Gibt die Position des Diagrammtitels an. Weitere `ExcelScript.ChartTitlePosition` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)
   package: ExcelScript!
   fullName: getSubstring(start, length)
-  summary: Rufen Sie die Teilzeichenfolge eines Diagrammtitels ab. Positions Umbruch '<!-- -->\\<!-- -->n ' zählt auch ein Zeichen.
+  summary: Get the substring of a chart title. Zeilenbruch '<!-- -->\\<!-- -->n' zählt ein Zeichen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,10 +112,10 @@ methods:
     content: 'getSubstring(start: number, length: number): ChartFormatString;'
     parameters:
     - id: start
-      description: Start Position der Teilzeichenfolge, die abgerufen werden soll. Position beginnen mit 0.
+      description: Startposition der abzurufenden Teilzeichenfolge. Nullindiziert.
       type: number
     - id: length
-      description: Die Länge der Teilzeichenfolge, die abgerufen werden soll.
+      description: Länge der abzurufenden Teilzeichenfolge.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartFormatString:interface" />
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Gibt den Titel Text des Diagramms an.
+  summary: Gibt den Titeltext des Diagramms an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Gibt den Winkel an, an dem der Text für den Diagrammtitel ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von-90 bis 90 oder die ganze Zahl 180 für vertikal orientierten Text sein.
+  summary: Gibt den Winkel an, an dem der Text für den Diagrammtitel ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von -90 bis 90 oder die ganze Zahl 180 für vertikal ausgerichteten Text sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -150,7 +150,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Gibt den Abstand zwischen dem oberen Rand des Diagrammtitels und dem oberen Rand des Diagrammbereichs in Punkten an. NULL, wenn Diagrammtitel nicht sichtbar ist.
+  summary: Gibt den Abstand (in Punkt) vom oberen Rand des Diagrammtitels zum oberen Rand des Diagrammbereichs an. Der Wert `null` ist, wenn der Diagrammtitel nicht sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Gibt die vertikale Ausrichtung des Diagrammtitels an. Weitere Informationen finden Sie unter ExcelScript. ChartTextVerticalAlignment.
+  summary: Gibt die vertikale Ausrichtung des Diagrammtitels an. Weitere `ExcelScript.ChartTextVerticalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Gibt an, ob der Diagrammtitel visibile ist.
+  summary: Gibt an, ob der Diagrammtitel sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -189,7 +189,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Gibt die Breite des Diagrammtitels in Punkten an. NULL, wenn Diagrammtitel nicht sichtbar ist.
+  summary: Gibt die Breite des Diagrammtitels in Punkt an. Der Wert `null` ist, wenn der Diagrammtitel nicht sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -210,7 +210,7 @@ methods:
     content: 'setFormula(formula: string): void;'
     parameters:
     - id: formula
-      description: Eine Zeichenfolge, die die festzulegende Formel darstellt.
+      description: Eine Zeichenfolge, die die zu setzende Formel darstellt.
       type: string
     return:
       type: void
@@ -239,7 +239,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Gibt den Abstand zwischen dem linken Rand des Diagrammtitels und dem linken Rand des Diagrammbereichs in Punkten an. NULL, wenn Diagrammtitel nicht sichtbar ist.
+  summary: Gibt den Abstand (in Punkt) vom linken Rand des Diagrammtitels zum linken Rand des Diagrammbereichs an. Der Wert `null` ist, wenn der Diagrammtitel nicht sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -256,7 +256,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)
   package: ExcelScript!
   fullName: setOverlay(overlay)
-  summary: Gibt an, ob der Diagrammtitel im Diagramm überlagert wird.
+  summary: Gibt an, ob der Diagrammtitel das Diagramm überlagert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Gibt die Position des Diagrammtitels an. Weitere Informationen finden Sie unter ExcelScript. ChartTitlePosition.
+  summary: Gibt die Position des Diagrammtitels an. Weitere `ExcelScript.ChartTitlePosition` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -307,7 +307,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setText:member(1)
   package: ExcelScript!
   fullName: setText(text)
-  summary: Gibt den Titel Text des Diagramms an.
+  summary: Gibt den Titeltext des Diagramms an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -324,7 +324,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Gibt den Winkel an, an dem der Text für den Diagrammtitel ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von-90 bis 90 oder die ganze Zahl 180 für vertikal orientierten Text sein.
+  summary: Gibt den Winkel an, an dem der Text für den Diagrammtitel ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von -90 bis 90 oder die ganze Zahl 180 für vertikal ausgerichteten Text sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -341,7 +341,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Gibt den Abstand zwischen dem oberen Rand des Diagrammtitels und dem oberen Rand des Diagrammbereichs in Punkten an. NULL, wenn Diagrammtitel nicht sichtbar ist.
+  summary: Gibt den Abstand (in Punkt) vom oberen Rand des Diagrammtitels zum oberen Rand des Diagrammbereichs an. Der Wert `null` ist, wenn der Diagrammtitel nicht sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -358,7 +358,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Gibt die vertikale Ausrichtung des Diagrammtitels an. Weitere Informationen finden Sie unter ExcelScript. ChartTextVerticalAlignment.
+  summary: Gibt die vertikale Ausrichtung des Diagrammtitels an. Weitere `ExcelScript.ChartTextVerticalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -378,7 +378,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Gibt an, ob der Diagrammtitel visibile ist.
+  summary: Gibt an, ob der Diagrammtitel sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -392,9 +392,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 068cdd5d4997a8dcbd9b8aa9c66996f10ec1078f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2a11e3c2b3d30f2807b1e5385eadc6d355bfbecf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416862"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606836"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextRange#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Gibt ein ShapeFont-Objekt zurück, das die Schriftartattribute für den Textbereich darstellt.
+  summary: Gibt ein `ShapeFont` Objekt zurück, das die Schriftartattribute für den Textbereich darstellt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,10 +34,10 @@ methods:
     content: 'getSubstring(start: number, length?: number): TextRange;'
     parameters:
     - id: start
-      description: Der nullbasierte Index des ersten Zeichens, das aus dem Textbereich abgerufen werden soll.
+      description: Der nullbasierte Index des ersten Zeichens, das aus dem Textbereich erhalten werden soll.
       type: number
     - id: length
-      description: Optional. Die Anzahl der Zeichen, die im neuen Textbereich zurückgegeben werden sollen. Wenn length nicht angegeben wird, werden alle Zeichen vom Anfang bis zum Ende des letzten Absatzes des Textbereichs zurückgegeben.
+      description: Optional. Die Anzahl der Zeichen, die im neuen Textbereich zurückgegeben werden sollen. Wenn die Länge nicht angegeben wird, werden alle Zeichen vom Anfang bis zum Ende des letzten Absatzes des Textbereichs zurückgegeben.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.TextRange:interface" />
@@ -73,9 +73,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6a02ebe67d08adff8c825586a96ada8c4177a1d4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b83f4e4ba30aafab3008fd7370d17230213f13f3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420237"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605283"

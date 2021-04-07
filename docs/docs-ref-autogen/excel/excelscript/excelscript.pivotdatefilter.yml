@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#comparator:member
   package: ExcelScript!
   fullName: comparator
-  summary: Der Komparator ist der statische Wert, mit dem andere Werte verglichen werden. Der Typ des Vergleichs wird durch die Bedingung definiert.
+  summary: Der Vergleichswert ist der statische Wert, mit dem andere Werte verglichen werden. Der Vergleichstyp wird durch die Bedingung definiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#condition:member
   package: ExcelScript!
   fullName: condition
-  summary: Gibt die Bedingung für den Filter an, die die erforderlichen Filterkriterien definiert.
+  summary: Gibt die Bedingung für den Filter an, der die erforderlichen Filterkriterien definiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: Bei true werden Elemente, die Kriterien erfüllen, von Filter *ausgeschlossen* . Der Standardwert ist false (Filter, um Elemente einzuschließen, die Kriterien erfüllen).
+  summary: If `true`<!-- -->, filter *schließt Elemente* aus, die Kriterien erfüllen. Der Standardwert ist `false` (Filter, um Elemente zu enthalten, die Kriterien erfüllen).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: Die untere Grenze des Bereichs für die `Between` Filterbedingung.
+  summary: Die Untergrenze des Bereichs für die `between` Filterbedingung.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: Die obere Grenze des Bereichs für die `Between` Filterbedingung.
+  summary: Die Obere Grenze des Bereichs für die `between` Filterbedingung.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member
   package: ExcelScript!
   fullName: wholeDays
-  summary: For <Schlüsselwort><!-- -->, `Before`<!-- -->, `After`<!-- -->und `Between` Filterbedingungen gibt an, ob Vergleiche als ganze Tage ausgeführt werden sollen.
+  summary: For <Schlüsselwort><!-- -->, `before`<!-- -->, `after`<!-- -->und `between` Filterbedingungen, gibt an, ob Vergleiche als ganze Tage vorgenommen werden sollen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,9 +82,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 50b2f14b12d33ae4786ce8fd4838d8c8ade4a3bd
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 905fcb75ff1228a38409d7e7d9d860ac4725350d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415274"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607214"

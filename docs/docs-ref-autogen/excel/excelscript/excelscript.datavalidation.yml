@@ -3,7 +3,7 @@ name: ExcelScript.DataValidation
 uid: ExcelScript!ExcelScript.DataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidation
-summary: Stellt die Datenüberprüfung dar, die auf den aktuellen Bereich angewendet wird.
+summary: Stellt die auf den aktuellen Bereich angewendete Datenüberprüfung dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: getIgnoreBlanks()
-  summary: Gibt an, ob die Datenüberprüfung für leere Zellen durchgeführt wird, es wird standardmäßig auf true festgelegt.
+  summary: Gibt an, ob die Datenüberprüfung für leere Zellen durchgeführt wird. Standard ist `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)
   package: ExcelScript!
   fullName: getInvalidCells()
-  summary: Gibt ein RangeAreas-Objekt, das einen oder mehrere rechteckige Bereiche umfasst, mit ungültigen Zellwerten zurück. Wenn alle Zellwerte gültig sind, gibt diese Funktion NULL zurück.
+  summary: Gibt ein `RangeAreas` Objekt mit einem oder mehreren rechteckigen Bereichen mit ungültigen Zellwerten zurück. Wenn alle Zellwerte gültig sind, gibt diese Funktion `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: Daten Überprüfungsregel, die unterschiedliche Typen von Daten Überprüfungskriterien enthält.
+  summary: Datenüberprüfungsregel, die verschiedene Typen von Datenüberprüfungskriterien enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Typ der Datenüberprüfung, weitere Informationen finden Sie unter ExcelScript. datavalidationtype.
+  summary: Der Typ der Datenüberprüfung finden Sie `ExcelScript.DataValidationType` unter Details.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
   package: ExcelScript!
   fullName: getValid()
-  summary: Gibt an, ob alle Zellwerte entsprechend den Datenüberprüfungsregeln gültig sind. Gibt true zurück, wenn alle Zellenwerte gültig sind, oder false, wenn alle Zellenwerte ungültig sind. Gibt NULL zurück, wenn es sowohl gültige als auch ungültige Zellenwerte innerhalb des Bereichs gibt.
+  summary: Gibt an, ob alle Zellwerte entsprechend den Datenüberprüfungsregeln gültig sind. Gibt `true` zurück, ob alle Zellwerte gültig sind oder `false` ob alle Zellwerte ungültig sind. Gibt zurück, ob innerhalb des Bereichs gültige und `null` ungültige Zellwerte enthalten sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: setIgnoreBlanks(ignoreBlanks)
-  summary: Gibt an, ob die Datenüberprüfung für leere Zellen durchgeführt wird, es wird standardmäßig auf true festgelegt.
+  summary: Gibt an, ob die Datenüberprüfung für leere Zellen durchgeführt wird. Standard ist `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setRule:member(1)
   package: ExcelScript!
   fullName: setRule(rule)
-  summary: Daten Überprüfungsregel, die unterschiedliche Typen von Daten Überprüfungskriterien enthält.
+  summary: Datenüberprüfungsregel, die verschiedene Typen von Datenüberprüfungskriterien enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,9 +182,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0a1ef3975375fe45241680d6b0228b2ba31aefd0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c6d3151f99740e7628302eb6bea65e58fe153cc6
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415561"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606537"

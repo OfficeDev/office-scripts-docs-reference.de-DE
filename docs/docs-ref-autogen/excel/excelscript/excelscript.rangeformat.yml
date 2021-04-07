@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)
   package: ExcelScript!
   fullName: adjustIndent(amount)
-  summary: Passt den Einzug der Bereichs Formatierung an. Der Einzugswert reicht von 0 bis 250 und wird in Zeichen gemessen.
+  summary: Passt den Einzug der Bereichsformatierung an. Der Einzugswert liegt zwischen 0 und 250 und wird in Zeichen gemessen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'adjustIndent(amount: number): void;'
     parameters:
     - id: amount
-      description: 'Die Anzahl der Zeichenbereiche, nach denen der aktuelle Einzug angepasst wird. Dieser Wert sollte zwischen-250 und 250 liegen. **Hinweis**: Wenn der Wert die Einrückungsebene oberhalb von 250 erhöht, bleibt die Einzugsebene bei 250. Wenn der Wert die Einrückungsebene unter 0 senken würde, bleibt die Einzugsebene auf ähnliche Weise gleich 0.'
+      description: Die Anzahl der Zeichenräume, um die der aktuelle Einzug angepasst wird. Dieser Wert sollte zwischen -250 und 250 liegen. **Hinweis:** Wenn der Betrag die Einzugsebene über 250 erhöhen würde, bleibt die Einzugsebene bei 250. Wenn der Betrag die Einzugsebene unter 0 senken würde, bleibt die Einzugsebene 0.
       type: number
     return:
       type: void
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)
   package: ExcelScript!
   fullName: getAutoIndent()
-  summary: Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung auf gleiche Verteilung festgelegt ist.
+  summary: Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung auf die gleiche Verteilung festgelegt ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)
   package: ExcelScript!
   fullName: getColumnWidth()
-  summary: Gibt die Breite aller Spalten innerhalb des Bereichs an. Wenn die Breite der Spalten nicht gleichmäßig ist, wird Null zurückgegeben.
+  summary: Gibt die Breite aller Kolums innerhalb des Bereichs an. Wenn die Spaltenbreiten nicht einheitlich sind, `null` wird zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Stellt die horizontale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. HorizontalAlignment.
+  summary: Stellt die horizontale Ausrichtung für das angegebene Objekt dar. Weitere `ExcelScript.HorizontalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
     content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
     parameters:
     - id: index
-      description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter ExcelScript. BorderIndex.
+      description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere `ExcelScript.BorderIndex` Informationen finden Sie unter.
       type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: getRangeBorderTintAndShade()
-  summary: Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.
+  summary: Gibt ein Double an, das eine Farbe für Bereichsränder hellt oder abdunkriert. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein `null` Wert gibt an, dass die gesamte Rahmensammlung keine einheitliche Einstellung `tintAndShade` hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -203,7 +203,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)
   package: ExcelScript!
   fullName: getRowHeight()
-  summary: Die Höhe aller Zeilen im Bereich. Wenn die Zeilenhöhen nicht einheitlich sind, wird NULL zurückgegeben.
+  summary: Die Höhe aller Zeilen im Bereich. Wenn die Zeilenhöhen nicht einheitlich sind, `null` wird zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -216,7 +216,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)
   package: ExcelScript!
   fullName: getShrinkToFit()
-  summary: Gibt an, ob Text automatisch verkleinert wird, sodass er in die verfügbare Spaltenbreite passt.
+  summary: Gibt an, ob Text automatisch verkleinert wird, um in die verfügbare Spaltenbreite zu passen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -229,7 +229,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Die Textausrichtung aller Zellen innerhalb des Bereichs. Die Textausrichtung sollte eine ganze Zahl zwischen-90 und 90 oder 180 für vertikal orientierten Text sein. Wenn die Ausrichtung innerhalb eines Bereichs nicht einheitlich ist, wird NULL zurückgegeben.
+  summary: Die Textausrichtung aller Zellen innerhalb des Bereichs. Die Textausrichtung sollte eine ganze Zahl von -90 bis 90 oder 180 für vertikal ausgerichteten Text sein. Wenn die Ausrichtung innerhalb eines Bereichs nicht einheitlich ist, wird `null` dies zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)
   package: ExcelScript!
   fullName: getUseStandardHeight()
-  summary: Legt fest, ob die Zeilenhöhe des Bereichsobjekts mit der Standardhöhe des Blatts übereinstimmt. Gibt true zurück, wenn die Zeilenhöhe des Range-Objekts der Standardhöhe des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Zeile enthält und die Zeilen nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.
+  summary: 'Bestimmt, ob die Zeilenhöhe des Objekts `Range` der Standardhöhe des Blatts entspricht. Gibt `true` zurück, ob die Zeilenhöhe des `Range` Objekts der Standardhöhe des Blatts entspricht. Gibt zurück, ob der Bereich mehr als eine Zeile enthält und die Zeilen nicht alle dieselbe `null` Höhe haben. Gibt `false` andernfalls zurück. Hinweis: Diese Eigenschaft ist nur für die `true`<!-- -->. Das Festlegen auf `false` hat keine Auswirkung.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)
   package: ExcelScript!
   fullName: getUseStandardWidth()
-  summary: Gibt an, ob die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt true zurück, wenn die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Spalte enthält und die Spalten nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.
+  summary: 'Gibt an, ob die Spaltenbreite des Objekts `Range` der Standardbreite des Blatts entspricht. Gibt `true` zurück, ob die Spaltenbreite des `Range` Objekts der Standardbreite des Blatts entspricht. Gibt zurück, ob der Bereich mehr als eine Spalte enthält und die Spalten nicht alle dieselbe `null` Höhe haben. Gibt `false` andernfalls zurück. Hinweis: Diese Eigenschaft ist nur für die `true`<!-- -->. Das Festlegen auf `false` hat keine Auswirkung.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -268,7 +268,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Stellt die vertikale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. VerticalAlignment.
+  summary: Stellt die vertikale Ausrichtung für das angegebene Objekt dar. Weitere `ExcelScript.VerticalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -281,7 +281,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)
   package: ExcelScript!
   fullName: getWrapText()
-  summary: Gibt an, ob der Text im Objekt von Excel umbrochen wird. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Textumbruch-Einstellung hat
+  summary: Gibt an, ob Excel den Text im Objekt umschließt. Ein Wert gibt an, dass der gesamte Bereich keine einheitliche `null` Umbrucheinstellung hat
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -294,7 +294,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)
   package: ExcelScript!
   fullName: setAutoIndent(autoIndent)
-  summary: Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung auf gleiche Verteilung festgelegt ist.
+  summary: Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung auf die gleiche Verteilung festgelegt ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -311,7 +311,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)
   package: ExcelScript!
   fullName: setColumnWidth(columnWidth)
-  summary: Gibt die Breite aller Spalten innerhalb des Bereichs an. Wenn die Breite der Spalten nicht gleichmäßig ist, wird Null zurückgegeben.
+  summary: Gibt die Breite aller Kolums innerhalb des Bereichs an. Wenn die Spaltenbreiten nicht einheitlich sind, `null` wird zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -328,7 +328,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Stellt die horizontale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. HorizontalAlignment.
+  summary: Stellt die horizontale Ausrichtung für das angegebene Objekt dar. Weitere `ExcelScript.HorizontalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -362,7 +362,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-  summary: Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.
+  summary: Gibt ein Double an, das eine Farbe für Bereichsränder hellt oder abdunkriert. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein `null` Wert gibt an, dass die gesamte Rahmensammlung keine einheitliche Einstellung `tintAndShade` hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -396,7 +396,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)
   package: ExcelScript!
   fullName: setRowHeight(rowHeight)
-  summary: Die Höhe aller Zeilen im Bereich. Wenn die Zeilenhöhen nicht einheitlich sind, wird NULL zurückgegeben.
+  summary: Die Höhe aller Zeilen im Bereich. Wenn die Zeilenhöhen nicht einheitlich sind, `null` wird zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -413,7 +413,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)
   package: ExcelScript!
   fullName: setShrinkToFit(shrinkToFit)
-  summary: Gibt an, ob Text automatisch verkleinert wird, sodass er in die verfügbare Spaltenbreite passt.
+  summary: Gibt an, ob Text automatisch verkleinert wird, um in die verfügbare Spaltenbreite zu passen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -430,7 +430,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Die Textausrichtung aller Zellen innerhalb des Bereichs. Die Textausrichtung sollte eine ganze Zahl zwischen-90 und 90 oder 180 für vertikal orientierten Text sein. Wenn die Ausrichtung innerhalb eines Bereichs nicht einheitlich ist, wird NULL zurückgegeben.
+  summary: Die Textausrichtung aller Zellen innerhalb des Bereichs. Die Textausrichtung sollte eine ganze Zahl von -90 bis 90 oder 180 für vertikal ausgerichteten Text sein. Wenn die Ausrichtung innerhalb eines Bereichs nicht einheitlich ist, wird `null` dies zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)
   package: ExcelScript!
   fullName: setUseStandardHeight(useStandardHeight)
-  summary: Legt fest, ob die Zeilenhöhe des Bereichsobjekts mit der Standardhöhe des Blatts übereinstimmt. Gibt true zurück, wenn die Zeilenhöhe des Range-Objekts der Standardhöhe des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Zeile enthält und die Zeilen nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.
+  summary: 'Bestimmt, ob die Zeilenhöhe des Objekts `Range` der Standardhöhe des Blatts entspricht. Gibt `true` zurück, ob die Zeilenhöhe des `Range` Objekts der Standardhöhe des Blatts entspricht. Gibt zurück, ob der Bereich mehr als eine Zeile enthält und die Zeilen nicht alle dieselbe `null` Höhe haben. Gibt `false` andernfalls zurück. Hinweis: Diese Eigenschaft ist nur für die `true`<!-- -->. Das Festlegen auf `false` hat keine Auswirkung.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -464,7 +464,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)
   package: ExcelScript!
   fullName: setUseStandardWidth(useStandardWidth)
-  summary: Gibt an, ob die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt true zurück, wenn die Spaltenbreite des Range-Objekts der Standardbreite des Blatts entspricht. Gibt NULL zurück, wenn der Bereich mehr als eine Spalte enthält und die Spalten nicht alle dieselbe Höhe aufweisen. Gibt andernfalls false zurück.
+  summary: 'Gibt an, ob die Spaltenbreite des Objekts `Range` der Standardbreite des Blatts entspricht. Gibt `true` zurück, ob die Spaltenbreite des `Range` Objekts der Standardbreite des Blatts entspricht. Gibt zurück, ob der Bereich mehr als eine Spalte enthält und die Spalten nicht alle dieselbe `null` Höhe haben. Gibt `false` andernfalls zurück. Hinweis: Diese Eigenschaft ist nur für die `true`<!-- -->. Das Festlegen auf `false` hat keine Auswirkung.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -481,7 +481,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Stellt die vertikale Ausrichtung für das angegebene Objekt dar. Weitere Informationen finden Sie unter ExcelScript. VerticalAlignment.
+  summary: Stellt die vertikale Ausrichtung für das angegebene Objekt dar. Weitere `ExcelScript.VerticalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -498,7 +498,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)
   package: ExcelScript!
   fullName: setWrapText(wrapText)
-  summary: Gibt an, ob der Text im Objekt von Excel umbrochen wird. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Textumbruch-Einstellung hat
+  summary: Gibt an, ob Excel den Text im Objekt umschließt. Ein Wert gibt an, dass der gesamte Bereich keine einheitliche `null` Umbrucheinstellung hat
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -512,9 +512,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 427882c57a1da4adab9f1e74ed60f018af3fd110
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d1ab7aaf1d0c3966e7137f58c35b5fc3d0d9e557
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411922"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607165"

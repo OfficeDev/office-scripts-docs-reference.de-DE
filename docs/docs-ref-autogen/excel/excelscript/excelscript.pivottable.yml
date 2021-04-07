@@ -103,7 +103,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: getAllowMultipleFiltersPerField()
-  summary: Gibt an, ob die PivotTable die Anwendung mehrerer PivotFilters in einem bestimmten PivotField in der Tabelle zulässt.
+  summary: Gibt an, ob die PivotTable die Anwendung mehrerer PivotFilter auf ein bestimmtes PivotField in der Tabelle zulässt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: Ruft das RowColumnPivotHierarchy-Objekt anhand des Namens ab. Wenn der RowColumnPivotHierarchy nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
+  summary: Ruft das RowColumnPivotHierarchy-Objekt anhand des Namens ab. Wenn rowColumnPivotHierarchy nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
     content: 'getColumnHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Name des RowColumnPivotHierarchy, das abgerufen werden soll.
+      description: Name der RowColumnPivotHierarchy, die abgerufen werden soll.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" /> | undefined
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: Ruft das DataPivotHierarchy-Objekt anhand des Namens ab. Wenn der DataPivotHierarchy nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
+  summary: Ruft das DataPivotHierarchy-Objekt anhand des Namens ab. Wenn dataPivotHierarchy nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,7 +167,7 @@ methods:
     content: 'getDataHierarchy(name: string): DataPivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Name des DataPivotHierarchy, das abgerufen werden soll.
+      description: Name der dataPivotHierarchy, die abgerufen werden soll.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" /> | undefined
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: getEnableDataValueEditing()
-  summary: Gibt an, ob die PivotTable das Bearbeiten von Werten im Daten Text durch den Benutzer zulässt.
+  summary: Gibt an, ob die PivotTable die Bearbeitung von Werten im Datentext durch den Benutzer zulässt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: Ruft das FilterPivotHierarchy-Objekt anhand des Namens ab. Wenn der FilterPivotHierarchy nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
+  summary: Ruft das FilterPivotHierarchy-Objekt anhand des Namens ab. Wenn filterPivotHierarchy nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -210,7 +210,7 @@ methods:
     content: 'getFilterHierarchy(name: string): FilterPivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Name des FilterPivotHierarchy, das abgerufen werden soll.
+      description: Name der filterPivotHierarchy, die abgerufen werden soll.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.FilterPivotHierarchy:interface" /> | undefined
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: Ruft das PivotHierarchy-Objekt anhand des Namens ab. Wenn der PivotHierarchy nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
+  summary: Ruft das PivotHierarchy-Objekt anhand des Namens ab. Wenn pivotHierarchy nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -240,7 +240,7 @@ methods:
     content: 'getHierarchy(name: string): PivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Name des PivotHierarchy, das abgerufen werden soll.
+      description: Name der abzurufende PivotHierarchy.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" /> | undefined
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Die ID der PivotTable.
+  summary: DIE ID der PivotTable.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: Ruft das RowColumnPivotHierarchy-Objekt anhand des Namens ab. Wenn der RowColumnPivotHierarchy nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
+  summary: Ruft das RowColumnPivotHierarchy-Objekt anhand des Namens ab. Wenn rowColumnPivotHierarchy nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -309,7 +309,7 @@ methods:
     content: 'getRowHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Name des RowColumnPivotHierarchy, das abgerufen werden soll.
+      description: Name der RowColumnPivotHierarchy, die abgerufen werden soll.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" /> | undefined
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-  summary: Gibt an, ob die PivotTable die Anwendung mehrerer PivotFilters in einem bestimmten PivotField in der Tabelle zulässt.
+  summary: Gibt an, ob die PivotTable die Anwendung mehrerer PivotFilter auf ein bestimmtes PivotField in der Tabelle zulässt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -451,7 +451,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: setEnableDataValueEditing(enableDataValueEditing)
-  summary: Gibt an, ob die PivotTable das Bearbeiten von Werten im Daten Text durch den Benutzer zulässt.
+  summary: Gibt an, ob die PivotTable die Bearbeitung von Werten im Datentext durch den Benutzer zulässt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cae3d58cfae8798085df614005461abe574927ec
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 46b240d2029153fbbc2cbcfca1d15f2e54430414
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554608"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606378"

@@ -3,7 +3,7 @@ name: ExcelScript.ChartFormatString
 uid: ExcelScript!ExcelScript.ChartFormatString:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartFormatString
-summary: Stellt die Teilzeichenfolge in Diagramm bezogenen Objekten dar, die Text enthalten, wie ChartTitle-Objekt, ChartAxisTitle-Objekt usw.
+summary: Represents the substring in chart related objects that contain text, like a `ChartTitle` object or `ChartAxisTitle` object.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Stellt die Schriftartattribute, wie Schriftartname, Schriftgrad, Farbe usw. des Diagramms Characters-Objekts dar.
+  summary: Stellt die Schriftartattribute dar, z. B. Schriftartenname, Schriftgrad und Farbe eines Diagrammzeichenobjekts.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -23,9 +23,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 7f4eca8722a3d7be62cb047ff2e679a4da3ac7a9
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 09e640d730e96f3d0b653d78688c6e88bc07fb98
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416876"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606579"

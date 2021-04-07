@@ -29,7 +29,7 @@ methods:
       description: Optional. Gibt die relative Position der neuen Spalte an. Bei NULL oder -1 erfolgt die Erweiterung am Ende. Spalten mit einem höheren Index werden auf die Seite verschoben. Nullindiziert.
       type: number
     - id: values
-      description: Optional. Ein 1-dimensionales Array mit unformatierten Werten der Tabellenspalte.
+      description: Optional. Ein 1-dimensionales Array unformatierter Werte der Tabellenspalte.
       type: (boolean | string | number)[]
     - id: name
       description: Optional. Gibt den Namen der neuen Spalte an. Bei NULL wird der Standardname verwendet.
@@ -52,7 +52,7 @@ methods:
       description: Optional. Gibt die relative Position der neuen Zeile an. Bei NULL oder -1 erfolgt die Erweiterung am Ende. Alle Zeilen unterhalb der eingefügten Zeile werden nach unten verschoben. Nullindiziert.
       type: number
     - id: values
-      description: Optional. Ein 1-dimensionales Array mit unformatierten Werten der Tabellenzeile.
+      description: Optional. Ein 1-dimensionales Array unformatierter Werte der Tabellenzeile.
       type: (boolean | string | number)[]
     return:
       type: void
@@ -120,7 +120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)
   package: ExcelScript!
   fullName: deleteRowsAt(index, count)
-  summary: Löscht eine angegebene Anzahl von Zeilen an einem bestimmten Index.
+  summary: Löschen Sie eine angegebene Anzahl von Zeilen an einem bestimmten Index.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -128,10 +128,10 @@ methods:
     content: 'deleteRowsAt(index: number, count?: number): void;'
     parameters:
     - id: index
-      description: 'Der Indexwert der zu löschenden Zeile. Vorsicht: der Index der Zeile wurde möglicherweise ab dem Zeitpunkt verschoben, zu dem Sie den zu verwendenden Wert für die Entfernung bestimmt haben.'
+      description: 'Der Indexwert der zu löschende Zeile. Vorsicht: Der Index der Zeile wurde möglicherweise von dem Zeitpunkt verschoben, zu dem Sie den wert für die Entfernung bestimmt haben.'
       type: number
     - id: count
-      description: Die Anzahl der zu löschenden Zeilen. Standardmäßig wird eine einzelne Zeile gelöscht.
+      description: 'Anzahl der zu löschende Zeilen. Standardmäßig wird eine einzelne Zeile gelöscht. Hinweis: Das Gleichzeitige Löschen von mehr als 1000 Zeilen kann zu einem Power Automate-Timeout führen.'
       type: number
     return:
       type: void
@@ -140,7 +140,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getAutoFilter:member(1)
   package: ExcelScript!
   fullName: getAutoFilter()
-  summary: Stellt das AutoFilter-Objekt der Tabelle dar.
+  summary: Represents the `AutoFilter` object of the table.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -161,7 +161,7 @@ methods:
     content: 'getColumn(key: number | string): TableColumn | undefined;'
     parameters:
     - id: key
-      description: Spaltenname oder -ID.
+      description: Spaltenname oder ID.
       type: number | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
   package: ExcelScript!
   fullName: getColumnById(key)
-  summary: Ruft ein Column-Objekt anhand der ID ab. Wenn die Spalte nicht vorhanden ist, wird undefined zurückgegeben.
+  summary: Ruft ein Spaltenobjekt nach ID ab. Wenn die Spalte nicht vorhanden ist, wird undefined zurückgeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -187,7 +187,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
   package: ExcelScript!
   fullName: getColumnByName(key)
-  summary: Ruft ein Column-Objekt anhand des Namens ab. Wenn die Spalte nicht vorhanden ist, wird undefined zurückgegeben.
+  summary: Ruft ein Spaltenobjekt nach Name ab. Wenn die Spalte nicht vorhanden ist, wird undefined zurückgeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
     content: 'getColumnByName(key: string): TableColumn | undefined;'
     parameters:
     - id: key
-      description: Spalten Name.
+      description: Spaltenname.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
@@ -217,7 +217,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getHeaderRowRange:member(1)
   package: ExcelScript!
   fullName: getHeaderRowRange()
-  summary: Ruft das Bereichsobjekt ab, das mit der Kopfzeile der Tabelle verknüpft ist.
+  summary: Ruft das Bereichsobjekt ab, das mit der Überschriftenzeile der Tabelle verknüpft ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -230,7 +230,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)
   package: ExcelScript!
   fullName: getHighlightFirstColumn()
-  summary: Gibt an, ob die erste Spalte eine spezielle Formatierung enthält.
+  summary: Gibt an, ob die erste Spalte spezielle Formatierungen enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -243,7 +243,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)
   package: ExcelScript!
   fullName: getHighlightLastColumn()
-  summary: Gibt an, ob die letzte Spalte eine spezielle Formatierung enthält.
+  summary: Gibt an, ob die letzte Spalte spezielle Formatierungen enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedTableStyle()
-  summary: 'Konstanter Wert, der das Tabellenformat darstellt. Mögliche Werte sind: "TableStyleLight1" bis "TableStyleLight21", "TableStyleMedium1" bis "TableStyleMedium28", "TableStyleDark1" bis "TableStyleDark11". Es kann ebenfalls eine in der Arbeitsmappe vorhandene benutzerdefinierte Formatierung angegeben werden.'
+  summary: 'Konstantenwert, der die Tabellenformatvorlage darstellt. Mögliche Werte sind: "TableStyleLight1" über "TableStyleLight21", "TableStyleMedium1" über "TableStyleMedium28", "TableStyleDark1" bis "TableStyleDark11". Es kann ebenfalls eine in der Arbeitsmappe vorhandene benutzerdefinierte Formatierung angegeben werden.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: getShowBandedColumns()
-  summary: Gibt an, ob die Spalten eine Gebänderte Formatierung aufweisen, in der Ungerade Spalten anders hervorgehoben werden als gerade, um das Lesen der Tabelle zu vereinfachen.
+  summary: Gibt an, ob die Spalten eine gebänderte Formatierung anzeigen, bei der ungerade Spalten anders hervorgehoben werden als gleichmäßige Spalten, um das Lesen der Tabelle zu vereinfachen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
   package: ExcelScript!
   fullName: getShowBandedRows()
-  summary: Gibt an, ob die Zeilen eine Band Formatierung aufweisen, in der ungerade Zeilen anders hervorgehoben werden als gerade, um das Lesen der Tabelle zu vereinfachen.
+  summary: Gibt an, ob in den Zeilen eine gebänderte Formatierung angezeigt wird, bei der ungerade Zeilen anders hervorgehoben werden als gleichmäßige Zeilen, um das Lesen der Tabelle zu vereinfachen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -373,7 +373,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)
   package: ExcelScript!
   fullName: getShowFilterButton()
-  summary: Gibt an, ob die Filterschaltflächen am oberen Rand jeder Spaltenüberschrift sichtbar sind. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.
+  summary: Gibt an, ob die Filterschaltflächen am oberen Rand jeder Spaltenüberschrift angezeigt werden. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -386,7 +386,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowHeaders:member(1)
   package: ExcelScript!
   fullName: getShowHeaders()
-  summary: Gibt an, ob die Überschriftenzeile sichtbar ist. Dieser Wert kann festgelegt werden, um die Kopfzeile anzuzeigen, oder sie zu entfernen.
+  summary: Gibt an, ob die Kopfzeile sichtbar ist. Dieser Wert kann festgelegt werden, um die Kopfzeile anzuzeigen, oder sie zu entfernen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -399,7 +399,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowTotals:member(1)
   package: ExcelScript!
   fullName: getShowTotals()
-  summary: Gibt an, ob die Zeile Summe angezeigt wird. Dieser Wert kann so festgelegt werden, dass die Ergebniszeile angezeigt oder ausgeblendet wird.
+  summary: Gibt an, ob die gesamte Zeile sichtbar ist. Dieser Wert kann so festgelegt werden, dass die Ergebniszeile angezeigt oder ausgeblendet wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -464,7 +464,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)
   package: ExcelScript!
   fullName: setHighlightFirstColumn(highlightFirstColumn)
-  summary: Gibt an, ob die erste Spalte eine spezielle Formatierung enthält.
+  summary: Gibt an, ob die erste Spalte spezielle Formatierungen enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -481,7 +481,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)
   package: ExcelScript!
   fullName: setHighlightLastColumn(highlightLastColumn)
-  summary: Gibt an, ob die letzte Spalte eine spezielle Formatierung enthält.
+  summary: Gibt an, ob die letzte Spalte spezielle Formatierungen enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -515,7 +515,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedTableStyle(predefinedTableStyle)
-  summary: 'Konstanter Wert, der das Tabellenformat darstellt. Mögliche Werte sind: "TableStyleLight1" bis "TableStyleLight21", "TableStyleMedium1" bis "TableStyleMedium28", "TableStyleDark1" bis "TableStyleDark11". Es kann ebenfalls eine in der Arbeitsmappe vorhandene benutzerdefinierte Formatierung angegeben werden.'
+  summary: 'Konstantenwert, der die Tabellenformatvorlage darstellt. Mögliche Werte sind: "TableStyleLight1" über "TableStyleLight21", "TableStyleMedium1" über "TableStyleMedium28", "TableStyleDark1" bis "TableStyleDark11". Es kann ebenfalls eine in der Arbeitsmappe vorhandene benutzerdefinierte Formatierung angegeben werden.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -532,7 +532,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: setShowBandedColumns(showBandedColumns)
-  summary: Gibt an, ob die Spalten eine Gebänderte Formatierung aufweisen, in der Ungerade Spalten anders hervorgehoben werden als gerade, um das Lesen der Tabelle zu vereinfachen.
+  summary: Gibt an, ob die Spalten eine gebänderte Formatierung anzeigen, bei der ungerade Spalten anders hervorgehoben werden als gleichmäßige Spalten, um das Lesen der Tabelle zu vereinfachen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -549,7 +549,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
   package: ExcelScript!
   fullName: setShowBandedRows(showBandedRows)
-  summary: Gibt an, ob die Zeilen eine Band Formatierung aufweisen, in der ungerade Zeilen anders hervorgehoben werden als gerade, um das Lesen der Tabelle zu vereinfachen.
+  summary: Gibt an, ob in den Zeilen eine gebänderte Formatierung angezeigt wird, bei der ungerade Zeilen anders hervorgehoben werden als gleichmäßige Zeilen, um das Lesen der Tabelle zu vereinfachen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)
   package: ExcelScript!
   fullName: setShowFilterButton(showFilterButton)
-  summary: Gibt an, ob die Filterschaltflächen am oberen Rand jeder Spaltenüberschrift sichtbar sind. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.
+  summary: Gibt an, ob die Filterschaltflächen am oberen Rand jeder Spaltenüberschrift angezeigt werden. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -583,7 +583,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowHeaders:member(1)
   package: ExcelScript!
   fullName: setShowHeaders(showHeaders)
-  summary: Gibt an, ob die Überschriftenzeile sichtbar ist. Dieser Wert kann festgelegt werden, um die Kopfzeile anzuzeigen, oder sie zu entfernen.
+  summary: Gibt an, ob die Kopfzeile sichtbar ist. Dieser Wert kann festgelegt werden, um die Kopfzeile anzuzeigen, oder sie zu entfernen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -600,7 +600,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowTotals:member(1)
   package: ExcelScript!
   fullName: setShowTotals(showTotals)
-  summary: Gibt an, ob die Zeile Summe angezeigt wird. Dieser Wert kann so festgelegt werden, dass die Ergebniszeile angezeigt oder ausgeblendet wird.
+  summary: Gibt an, ob die gesamte Zeile sichtbar ist. Dieser Wert kann so festgelegt werden, dass die Ergebniszeile angezeigt oder ausgeblendet wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -614,9 +614,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ecc5b6e0aacfab67e2748147c15fb32e2f7dbd59
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: fda7deca11fe0eae9282d9c9c54ac289e4e39df4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554743"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605248"

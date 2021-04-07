@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFont
 uid: ExcelScript!ExcelScript.ConditionalRangeFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFont
-summary: Dieses Objekt stellt die Schriftattribute (Schriftschnitt, Farbe usw.) für ein Objekt dar.
+summary: Dieses Objekt stellt die Schriftartattribute (Schriftart, Farbe usw.) für ein Objekt dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: HTML-Farb Codedarstellung der Textfarbe (beispielsweise \# FF0000 stellt rot dar).
+  summary: HTML-Farbcodedarstellung der Textfarbe (z. B. \# FF0000 steht für Rot).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: Gibt an, ob die Schriftart kursiv formatiert ist.
+  summary: Gibt an, ob die Schriftart italisch ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getStrikethrough:member(1)
   package: ExcelScript!
   fullName: getStrikethrough()
-  summary: Gibt den durchgestrichen Status der Schriftart an.
+  summary: Gibt den Durchschlagsstatus der Schriftart an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Der Typ der Unterstreichung, der auf die Schriftart angewendet wird. Weitere Informationen finden Sie unter ExcelScript. ConditionalRangeFontUnderlineStyle.
+  summary: Der Unterstreichungstyp, der auf die Schriftart angewendet wird. Weitere `ExcelScript.ConditionalRangeFontUnderlineStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: HTML-Farb Codedarstellung der Textfarbe (beispielsweise \# FF0000 stellt rot dar).
+  summary: HTML-Farbcodedarstellung der Textfarbe (z. B. \# FF0000 steht für Rot).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: Gibt an, ob die Schriftart kursiv formatiert ist.
+  summary: Gibt an, ob die Schriftart italisch ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setStrikethrough:member(1)
   package: ExcelScript!
   fullName: setStrikethrough(strikethrough)
-  summary: Gibt den durchgestrichen Status der Schriftart an.
+  summary: Gibt den Durchschlagsstatus der Schriftart an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Der Typ der Unterstreichung, der auf die Schriftart angewendet wird. Weitere Informationen finden Sie unter ExcelScript. ConditionalRangeFontUnderlineStyle.
+  summary: Der Unterstreichungstyp, der auf die Schriftart angewendet wird. Weitere `ExcelScript.ConditionalRangeFontUnderlineStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4b59e433ac3535d4aa352158485d17289731760a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0baa0c9251cd94135e208c7592d45e78dace77ca
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419369"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606710"

@@ -3,7 +3,7 @@ name: ExcelScript.BasicDataValidation
 uid: ExcelScript!ExcelScript.BasicDataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.BasicDataValidation
-summary: Stellt die grundlegenden Typen Daten Überprüfungskriterien dar.
+summary: Stellt die grundlegenden Typdatenüberprüfungskriterien dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.BasicDataValidation#formula1:member
   package: ExcelScript!
   fullName: formula1
-  summary: 'Gibt den rechten Operanden an, wenn die Operator-Eigenschaft auf einen binären Operator wie GreaterThan festgelegt ist (der linke Operand ist der Wert, den der Benutzer in die Zelle eingeben möchte). Gibt mit den dreistelligen Operatoren zwischen und NotBetween den untergeordneten Operanden an. Wenn beispielsweise Formel 1 auf 10 und Operator auf GreaterThan festzulegen, bedeutet dies, dass gültige Daten für den Bereich größer als 10 sein müssen. Wenn Sie den Wert festlegen, kann er als Zahl, als Range-Objekt oder als Zeichenfolge Formel übergeben werden (wobei die Zeichenfolge entweder eine stringified-Zahl, ein Zellbezug wie "= a1" oder eine Formel wie "= min (a1, B1)" ist). Wenn der Wert abgerufen wird, wird er immer als Zeichenfolgenformel zurückgegeben, beispielsweise: "= 10", "= a1", "= Sum (a1: B5)" usw.'
+  summary: Gibt den rechten Operanden an, wenn die Operatoreigenschaft auf einen binären Operator wie GreaterThan festgelegt ist (der linke Operand ist der Wert, den der Benutzer in die Zelle eingeben möchte). Gibt bei den ternären Operatoren Between und NotBetween den untergebundenen Operanden an. Wenn Sie beispielsweise Formel1 auf 10 und Operator auf GreaterThan festlegen, müssen gültige Daten für den Bereich größer als 10 sein. Beim Festlegen des Werts kann er als Zahl, als Bereichsobjekt oder als Zeichenfolgenformel übergeben werden (wobei die Zeichenfolge entweder eine zeichenfolgengestrichene Zahl, ein Zellverweis wie "=A1" oder eine Formel wie "=MIN(A1, B1)") ist. Beim Abrufen des Werts wird er immer als Zeichenfolgenformel zurückgegeben, z. B. "=10", "=A1", "=SUM(A1:B5)"usw.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.BasicDataValidation#formula2:member
   package: ExcelScript!
   fullName: formula2
-  summary: 'Gibt mit den dreistelligen Operatoren zwischen und NotBetween den oberen gebundenen Operanden an. Wird nicht mit den binären Operatoren wie GreaterThan verwendet. Wenn Sie den Wert festlegen, kann er als Zahl, als Range-Objekt oder als Zeichenfolge Formel übergeben werden (wobei die Zeichenfolge entweder eine stringified-Zahl, ein Zellbezug wie "= a1" oder eine Formel wie "= min (a1, B1)" ist). Wenn der Wert abgerufen wird, wird er immer als Zeichenfolgenformel zurückgegeben, beispielsweise: "= 10", "= a1", "= Sum (a1: B5)" usw.'
+  summary: Gibt mit den ternären Operatoren Between und NotBetween den operanden oberen Rahmen an. Wird nicht mit den binären Operatoren verwendet, z. B. GreaterThan. Beim Festlegen des Werts kann er als Zahl, als Bereichsobjekt oder als Zeichenfolgenformel übergeben werden (wobei die Zeichenfolge entweder eine zeichenfolgengestrichene Zahl, ein Zellverweis wie "=A1" oder eine Formel wie "=MIN(A1, B1)") ist. Beim Abrufen des Werts wird er immer als Zeichenfolgenformel zurückgegeben, z. B. "=10", "=A1", "=SUM(A1:B5)"usw.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
 metadata:
-  ms.openlocfilehash: 2838d9862880de654555b397ba920d1eb4f30619
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 698ac0ea4a88c50a3297755a09bc30f79077d21d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417292"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606621"

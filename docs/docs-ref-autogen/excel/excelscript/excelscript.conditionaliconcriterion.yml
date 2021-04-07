@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalIconCriterion
 uid: ExcelScript!ExcelScript.ConditionalIconCriterion:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalIconCriterion
-summary: Stellt ein Symbol Kriterium dar, das einen Typ, einen Wert, einen Operator und ein optionales benutzerdefiniertes Symbol enthält, wenn kein Iconset verwendet wird.
+summary: Stellt ein Symbolkriterium dar, das einen Typ, einen Wert, einen Operator und ein optionales benutzerdefiniertes Symbol enthält, wenn kein Symbolsatz verwendet wird.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalIconCriterion#customIcon:member
   package: ExcelScript!
   fullName: customIcon
-  summary: Das benutzerdefinierte Symbol für das aktuelle Kriterium, sofern verschieden vom Standard-IconSet; andernfalls wird NULL zurückgegeben.
+  summary: Das benutzerdefinierte Symbol für das aktuelle Kriterium wird zurückgegeben, wenn es sich vom Standardsymbolsatz `null` unterscheiden sollte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalIconCriterion#operator:member
   package: ExcelScript!
   fullName: operator
-  summary: GreaterThan oder GreaterThanOrEqual für jeden Typ des Regel Typs für das bedingte Symbol Format.
+  summary: '`greaterThan` oder `greaterThanOrEqual` für jeden Regeltyp für das bedingte Symbolformat.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum" />
 metadata:
-  ms.openlocfilehash: 9b3036c3ec274c8ee615228c09544491621f56b8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b083df158cdb7cae996211669a2da4cc707b7d58
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419460"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607081"

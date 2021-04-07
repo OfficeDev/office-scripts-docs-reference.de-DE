@@ -3,7 +3,7 @@ name: ExcelScript.SlicerSortType
 uid: ExcelScript!ExcelScript.SlicerSortType:enum
 package: ExcelScript!
 fullName: ExcelScript.SlicerSortType
-summary: Gibt das Sortierungsverhalten der Slicer. SortBy-API an.
+summary: Gibt das Sortierverhalten des Datenschnitts für `Slicer.sortBy`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,19 +11,19 @@ fields:
 - name: ascending
   uid: ExcelScript!ExcelScript.SlicerSortType.ascending:member
   package: ExcelScript!
-  summary: Sortiert datenschnitt Elemente in aufsteigender Reihenfolge nach Elementbeschriftungen.
+  summary: Sortieren Sie Datenschnittelemente in aufsteigender Reihenfolge nach Elementbeschriftungen.
 - name: dataSourceOrder
   uid: ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member
   package: ExcelScript!
-  summary: Sortieren von Slicer-Elementen in der von der Datenquelle bereitgestellten Reihenfolge.
+  summary: Sortieren Sie Datenschnittelemente in der von der Datenquelle angegebenen Reihenfolge.
 - name: descending
   uid: ExcelScript!ExcelScript.SlicerSortType.descending:member
   package: ExcelScript!
-  summary: Sortieren von datenschnitt Elementen in absteigender Reihenfolge nach Elementbeschriftungen.
+  summary: Sortieren Sie Datenschnittelemente in absteigender Reihenfolge nach Elementbeschriftungen.
 metadata:
-  ms.openlocfilehash: 5b56c58547f73ee6fdbcc145985c6bfc2526d6c3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: db45ddcb1ff4913f4f4d76e9303660517f95a4a4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420475"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606004"

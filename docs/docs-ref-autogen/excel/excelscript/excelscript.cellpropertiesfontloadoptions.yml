@@ -3,7 +3,7 @@ name: ExcelScript.CellPropertiesFontLoadOptions
 uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.CellPropertiesFontLoadOptions
-summary: Gibt an, welche Eigenschaften für das Objekt zu laden sind `format.font` .
+summary: Gibt an, welche Eigenschaften für das Objekt geladen `format.font` werden.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#bold:member
   package: ExcelScript!
   fullName: bold
-  summary: Gibt an, ob für die `bold` Eigenschaft laden.
+  summary: Gibt an, ob die Eigenschaft geladen `bold` werden soll.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#color:member
   package: ExcelScript!
   fullName: color
-  summary: Gibt an, ob für die `color` Eigenschaft laden.
+  summary: Gibt an, ob die Eigenschaft geladen `color` werden soll.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#italic:member
   package: ExcelScript!
   fullName: italic
-  summary: Gibt an, ob für die `italic` Eigenschaft laden.
+  summary: Gibt an, ob die Eigenschaft geladen `italic` werden soll.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#name:member
   package: ExcelScript!
   fullName: name
-  summary: Gibt an, ob für die `name` Eigenschaft laden.
+  summary: Gibt an, ob die Eigenschaft geladen `name` werden soll.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#size:member
   package: ExcelScript!
   fullName: size
-  summary: Gibt an, ob für die `size` Eigenschaft laden.
+  summary: Gibt an, ob die Eigenschaft geladen `size` werden soll.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member
   package: ExcelScript!
   fullName: strikethrough
-  summary: Gibt an, ob für die `strikethrough` Eigenschaft laden.
+  summary: Gibt an, ob die Eigenschaft geladen `strikethrough` werden soll.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#subscript:member
   package: ExcelScript!
   fullName: subscript
-  summary: Gibt an, ob für die `subscript` Eigenschaft laden.
+  summary: Gibt an, ob die Eigenschaft geladen `subscript` werden soll.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,7 +97,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#superscript:member
   package: ExcelScript!
   fullName: superscript
-  summary: Gibt an, ob für die `superscript` Eigenschaft laden.
+  summary: Gibt an, ob die Eigenschaft geladen `superscript` werden soll.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,7 +109,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member
   package: ExcelScript!
   fullName: tintAndShade
-  summary: Gibt an, ob für die `tintAndShade` Eigenschaft laden.
+  summary: Gibt an, ob die Eigenschaft geladen `tintAndShade` werden soll.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#underline:member
   package: ExcelScript!
   fullName: underline
-  summary: Gibt an, ob für die `underline` Eigenschaft laden.
+  summary: Gibt an, ob die Eigenschaft geladen `underline` werden soll.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 20b3d4cc2181d279a9f8453648d2eed1300d1016
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a98813f764c076b1ee587c32fab9b81c9c2775a7
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417128"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606969"

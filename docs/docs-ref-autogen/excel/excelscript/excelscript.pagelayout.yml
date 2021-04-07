@@ -3,7 +3,7 @@ name: ExcelScript.PageLayout
 uid: ExcelScript!ExcelScript.PageLayout:interface
 package: ExcelScript!
 fullName: ExcelScript.PageLayout
-summary: Stellt Layout-und Druckeinstellungen dar, die keine druckerspezifische Implementierung abhängig sind. Diese Einstellungen umfassen Ränder, Ausrichtung, Seitennummerierung, Titelzeilen und Druckbereich.
+summary: Stellt Layout- und Druckeinstellungen dar, die nicht von einer druckerspezifischen Implementierung abhängig sind. Diese Einstellungen umfassen Ränder, Ausrichtung, Seitennummerierung, Titelzeilen und Druckbereich.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getBlackAndWhite:member(1)
   package: ExcelScript!
   fullName: getBlackAndWhite()
-  summary: Die Option "Schwarzweißdruck" des Arbeitsblatts.
+  summary: Die Schwarzweißdruckoption des Arbeitsblatts.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getCenterHorizontally:member(1)
   package: ExcelScript!
   fullName: getCenterHorizontally()
-  summary: Das Arbeitsblatt Center horizontal kennzeichnet. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck horizontal zentriert wird.
+  summary: Das zentriert angeordnete Horizontale Flag des Arbeitsblatts. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck horizontal zentriert wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getCenterVertically:member(1)
   package: ExcelScript!
   fullName: getCenterVertically()
-  summary: Das Arbeitsblatt Center Vertical Flag. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck vertikal zentriert wird.
+  summary: Vertikales Zentrieren des Arbeitsblatts. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck vertikal zentriert wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getDraftMode:member(1)
   package: ExcelScript!
   fullName: getDraftMode()
-  summary: Die Option Entwurfsmodus des Arbeitsblatts. Bei True wird das Blatt ohne Grafiken gedruckt.
+  summary: Die Entwurfsmodusoption des Arbeitsblatts. If `true`<!-- -->wird das Blatt ohne Grafiken gedruckt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: getFirstPageNumber()
-  summary: Die erste Seitenzahl des Arbeitsblatts, die gedruckt werden soll. Der Wert NULL stellt die automatische Seitennummerierung dar.
+  summary: Die erste seitenzahl des Arbeitsblatts, die gedruckt werden soll. Ein `null` Wert stellt die automatische Seitennummerierung dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFooterMargin:member(1)
   package: ExcelScript!
   fullName: getFooterMargin()
-  summary: Der Fußzeilenrand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  summary: Der Fußzeilenrand des Arbeitsblatts in Punkt zur Verwendung beim Drucken.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getHeaderMargin:member(1)
   package: ExcelScript!
   fullName: getHeaderMargin()
-  summary: Der Kopfzeilenrand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  summary: Der Kopfzeilenrand des Arbeitsblatts in Punkten, der beim Drucken verwendet werden kann.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getLeftMargin:member(1)
   package: ExcelScript!
   fullName: getLeftMargin()
-  summary: Der linke Rand des Arbeitsblatts in Punkt, der beim Drucken verwendet werden soll.
+  summary: Der linke Rand des Arbeitsblatts in Punkten, der beim Drucken verwendet werden kann.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: Die Ausrichtung des Arbeitsblatts der Seite.
+  summary: Die Ausrichtung des Arbeitsblatts auf der Seite.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintArea:member(1)
   package: ExcelScript!
   fullName: getPrintArea()
-  summary: Ruft das RangeAreas-Objekt ab, das aus einem oder mehreren rechteckigen Bereichen besteht und den Druckbereich für das Arbeitsblatt darstellt. Wenn kein Druckbereich vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
+  summary: Ruft das `RangeAreas` Objekt ab, das einen oder mehrere rechteckige Bereiche umfasst, das den Druckbereich für das Arbeitsblatt darstellt. Wenn kein Druckbereich besteht, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintErrors:member(1)
   package: ExcelScript!
   fullName: getPrintErrors()
-  summary: Die Option Druckfehler des Arbeitsblatts.
+  summary: Die Druckfehleroption des Arbeitsblatts.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -234,7 +234,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintOrder:member(1)
   package: ExcelScript!
   fullName: getPrintOrder()
-  summary: Die Option für die Seiten Druckreihenfolge des Arbeitsblatts. Dies gibt die Reihenfolge für die Verarbeitung der gedruckten Seitenzahl an.
+  summary: Die Seitendruckreihenfolge des Arbeitsblatts. Dies gibt die Reihenfolge für die Verarbeitung der gedruckten Seitenzahl an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getRightMargin:member(1)
   package: ExcelScript!
   fullName: getRightMargin()
-  summary: Der Rechte Rand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  summary: Der rechte Rand des Arbeitsblatts in Punkt, der beim Drucken verwendet werden kann.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getTopMargin:member(1)
   package: ExcelScript!
   fullName: getTopMargin()
-  summary: Der obere Rand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  summary: Der obere Rand des Arbeitsblatts in Punkten, der beim Drucken verwendet werden kann.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -299,7 +299,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getZoom:member(1)
   package: ExcelScript!
   fullName: getZoom()
-  summary: Die Druck Zoomoptionen des Arbeitsblatts. Das `PageLayoutZoomOptions` Objekt muss als JSON-Objekt festgelegt werden (verwenden Sie `x.zoom = {...}` anstelle von `x.zoom.scale = ...`<!-- -->).
+  summary: Die Druckzoomoptionen des Arbeitsblatts. Das `PageLayoutZoomOptions` Objekt muss als JSON-Objekt festgelegt werden (verwenden sie anstelle `x.zoom = {...}` von `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -312,7 +312,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setBlackAndWhite:member(1)
   package: ExcelScript!
   fullName: setBlackAndWhite(blackAndWhite)
-  summary: Die Option "Schwarzweißdruck" des Arbeitsblatts.
+  summary: Die Schwarzweißdruckoption des Arbeitsblatts.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -346,7 +346,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setCenterHorizontally:member(1)
   package: ExcelScript!
   fullName: setCenterHorizontally(centerHorizontally)
-  summary: Das Arbeitsblatt Center horizontal kennzeichnet. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck horizontal zentriert wird.
+  summary: Das zentriert angeordnete Horizontale Flag des Arbeitsblatts. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck horizontal zentriert wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -363,7 +363,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setCenterVertically:member(1)
   package: ExcelScript!
   fullName: setCenterVertically(centerVertically)
-  summary: Das Arbeitsblatt Center Vertical Flag. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck vertikal zentriert wird.
+  summary: Vertikales Zentrieren des Arbeitsblatts. Diese Kennzeichnung bestimmt, ob das Arbeitsblatt beim Druck vertikal zentriert wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -380,7 +380,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setDraftMode:member(1)
   package: ExcelScript!
   fullName: setDraftMode(draftMode)
-  summary: Die Option Entwurfsmodus des Arbeitsblatts. Bei True wird das Blatt ohne Grafiken gedruckt.
+  summary: Die Entwurfsmodusoption des Arbeitsblatts. If `true`<!-- -->wird das Blatt ohne Grafiken gedruckt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -397,7 +397,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: setFirstPageNumber(firstPageNumber)
-  summary: Die erste Seitenzahl des Arbeitsblatts, die gedruckt werden soll. Der Wert NULL stellt die automatische Seitennummerierung dar.
+  summary: Die erste seitenzahl des Arbeitsblatts, die gedruckt werden soll. Ein `null` Wert stellt die automatische Seitennummerierung dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -414,7 +414,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFooterMargin:member(1)
   package: ExcelScript!
   fullName: setFooterMargin(footerMargin)
-  summary: Der Fußzeilenrand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  summary: Der Fußzeilenrand des Arbeitsblatts in Punkt zur Verwendung beim Drucken.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setHeaderMargin:member(1)
   package: ExcelScript!
   fullName: setHeaderMargin(headerMargin)
-  summary: Der Kopfzeilenrand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  summary: Der Kopfzeilenrand des Arbeitsblatts in Punkten, der beim Drucken verwendet werden kann.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -448,7 +448,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setLeftMargin:member(1)
   package: ExcelScript!
   fullName: setLeftMargin(leftMargin)
-  summary: Der linke Rand des Arbeitsblatts in Punkt, der beim Drucken verwendet werden soll.
+  summary: Der linke Rand des Arbeitsblatts in Punkten, der beim Drucken verwendet werden kann.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -465,7 +465,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: Die Ausrichtung des Arbeitsblatts der Seite.
+  summary: Die Ausrichtung des Arbeitsblatts auf der Seite.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -507,7 +507,7 @@ methods:
     content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
     parameters:
     - id: printArea
-      description: Der Bereich oder RangeAreas des zu druckenden Inhalts.
+      description: Der Bereich oder die Bereiche des zu druckten Inhalts.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     return:
       type: void
@@ -533,7 +533,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintErrors:member(1)
   package: ExcelScript!
   fullName: setPrintErrors(printErrors)
-  summary: Die Option Druckfehler des Arbeitsblatts.
+  summary: Die Druckfehleroption des Arbeitsblatts.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -599,7 +599,7 @@ methods:
       description: Maßeinheit für die bereitgestellten Ränder.
       type: <xref uid="ExcelScript!ExcelScript.PrintMarginUnit:enum" />
     - id: marginOptions
-      description: Die festzulegenden Rand Werte, die nicht bereitgestellten Ränder bleiben unverändert.
+      description: Zu legende Randwerte. Nicht bereitgestellte Ränder bleiben unverändert.
       type: <xref uid="ExcelScript!ExcelScript.PageLayoutMarginOptions:interface" />
     return:
       type: void
@@ -608,7 +608,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintOrder:member(1)
   package: ExcelScript!
   fullName: setPrintOrder(printOrder)
-  summary: Die Option für die Seiten Druckreihenfolge des Arbeitsblatts. Dies gibt die Reihenfolge für die Verarbeitung der gedruckten Seitenzahl an.
+  summary: Die Seitendruckreihenfolge des Arbeitsblatts. Dies gibt die Reihenfolge für die Verarbeitung der gedruckten Seitenzahl an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -633,7 +633,7 @@ methods:
     content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
     parameters:
     - id: printTitleColumns
-      description: Die Spalten, die Links von jeder Seite wiederholt werden sollen, muss die gesamte Spalte überspannen, um gültig zu sein.
+      description: Die Spalten, die links von jeder Seite wiederholt werden sollen. Der Bereich muss die gesamte Spalte umfassen, um gültig zu sein.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -650,7 +650,7 @@ methods:
     content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
     parameters:
     - id: printTitleRows
-      description: Die Zeilen, die am oberen Rand jeder Seite wiederholt werden sollen, muss die gesamte Zeile überspannen, um gültig zu sein.
+      description: Die Zeilen, die oben auf jeder Seite wiederholt werden sollen. Der Bereich muss die gesamte Zeile umfassen, damit er gültig ist.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -659,7 +659,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setRightMargin:member(1)
   package: ExcelScript!
   fullName: setRightMargin(rightMargin)
-  summary: Der Rechte Rand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  summary: Der rechte Rand des Arbeitsblatts in Punkt, der beim Drucken verwendet werden kann.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -676,7 +676,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setTopMargin:member(1)
   package: ExcelScript!
   fullName: setTopMargin(topMargin)
-  summary: Der obere Rand des Arbeitsblatts (in Punkten), der beim Drucken verwendet werden soll.
+  summary: Der obere Rand des Arbeitsblatts in Punkten, der beim Drucken verwendet werden kann.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -693,7 +693,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setZoom:member(1)
   package: ExcelScript!
   fullName: setZoom(zoom)
-  summary: Die Druck Zoomoptionen des Arbeitsblatts. Das `PageLayoutZoomOptions` Objekt muss als JSON-Objekt festgelegt werden (verwenden Sie `x.zoom = {...}` anstelle von `x.zoom.scale = ...`<!-- -->).
+  summary: Die Druckzoomoptionen des Arbeitsblatts. Das `PageLayoutZoomOptions` Objekt muss als JSON-Objekt festgelegt werden (verwenden sie anstelle `x.zoom = {...}` von `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -707,9 +707,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c66cd735b4fd357bcd164da80cd31bf6c71e7272
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: aae80d1e742b409dc59fde56b83a1f03f64fc177
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554622"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606413"

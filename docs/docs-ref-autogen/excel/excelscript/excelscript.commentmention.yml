@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#email:member
   package: ExcelScript!
   fullName: email
-  summary: Die e-Mail-Adresse der Entität, die in Comment erwähnt wird.
+  summary: Die E-Mail-Adresse der Entität, die in einem Kommentar erwähnt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#id:member
   package: ExcelScript!
   fullName: id
-  summary: Die ID der Entität. Die ID entspricht einem der IDs in `CommentRichContent.richContent`<!-- -->.
+  summary: Die ID der Entität. Die ID entspricht einer der IDs in `CommentRichContent.richContent`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#name:member
   package: ExcelScript!
   fullName: name
-  summary: Der Name der Entität, die in Comment erwähnt wird.
+  summary: Der Name der Entität, die in einem Kommentar erwähnt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 82bf472cdb4e1dae90dc50e8f4d52deae37ed1ef
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 44c3197151b14d7a6954531d9e086f9fe33a53a6
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419509"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606786"

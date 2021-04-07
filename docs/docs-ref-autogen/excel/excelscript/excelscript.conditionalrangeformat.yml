@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFormat
 uid: ExcelScript!ExcelScript.ConditionalRangeFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFormat
-summary: Ein Format-Objekt, das den Bereich Schriftart, Füllung, Rahmen und andere Eigenschaften des bedingten Formats kapselt.
+summary: Ein Formatobjekt, das die Schriftart, Füllung, Rahmen und andere Eigenschaften des Bereichs für bedingte Formate kapselt.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)
   package: ExcelScript!
   fullName: getBorders()
-  summary: Auflistung von Border-Objekten, die auf den allgemeinen bedingten Formatbereich angewendet werden.
+  summary: Auflistung von Rahmenobjekten, die für den gesamten bereich des bedingten Formats gelten.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ methods:
               ): ConditionalRangeBorder;
     parameters:
     - id: index
-      description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter ExcelScript. ConditionalRangeBorderIndex.
+      description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere `ExcelScript.ConditionalRangeBorderIndex` Informationen finden Sie unter.
       type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
@@ -46,7 +46,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)
   package: ExcelScript!
   fullName: getConditionalRangeBorderBottom()
-  summary: Ruft die untere Rahmenlinie ab.
+  summary: Ruft den unteren Rahmen ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Gibt das Fill-Objekt zurück, das für den allgemeinen bedingten Formatierungsbereich definiert ist.
+  summary: Gibt das fill-Objekt zurück, das im bereich des allgemeinen bedingten Formats definiert ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Gibt das Font-Objekt zurück, das im allgemeinen bedingten Formatbereich definiert ist.
+  summary: Gibt das font-Objekt zurück, das im bereich des allgemeinen bedingten Formats definiert ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Stellt den Zahlenformatcode für Excel für den angegebenen Bereich dar. Gelöscht, wenn NULL übergeben wird.
+  summary: Stellt den Zahlenformatcode von Excel für den angegebenen Bereich dar. Cleared, `null` wenn übergeben wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Stellt den Zahlenformatcode für Excel für den angegebenen Bereich dar. Gelöscht, wenn NULL übergeben wird.
+  summary: Stellt den Zahlenformatcode von Excel für den angegebenen Bereich dar. Cleared, `null` wenn übergeben wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,9 +151,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: be58369049f9a2cb9cd0fe4054310f143edad700
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e63b2c2a317b000595bc16de7e43ca89a08fa57a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419376"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606703"

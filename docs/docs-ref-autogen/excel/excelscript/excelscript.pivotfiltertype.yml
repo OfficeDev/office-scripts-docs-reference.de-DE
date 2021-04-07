@@ -3,7 +3,7 @@ name: ExcelScript.PivotFilterType
 uid: ExcelScript!ExcelScript.PivotFilterType:enum
 package: ExcelScript!
 fullName: ExcelScript.PivotFilterType
-summary: Eine einfache Enumeration, die einen Filtertyp für ein PivotField-Element darstellt.
+summary: Eine einfache Enumeration, die einen Filtertyp für ein PivotField darstellt.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,11 +11,11 @@ fields:
 - name: date
   uid: ExcelScript!ExcelScript.PivotFilterType.date:member
   package: ExcelScript!
-  summary: 'Filtert PivotItems mit einem Datum anstelle einer Bezeichnung. Hinweis: ein PivotField kann nicht gleichzeitig einen Bezeichnungs Filter und einen Datumsfilter anwenden.'
+  summary: 'Filtert PivotItems mit einem Datum an stelle einer Bezeichnung. Hinweis: Ein PivotField kann nicht gleichzeitig einen Bezeichnungsfilter und einen Datumsfilter anwenden.'
 - name: label
   uid: ExcelScript!ExcelScript.PivotFilterType.label:member
   package: ExcelScript!
-  summary: 'Filtert PivotItems basierend auf Ihren Bezeichnungen. Hinweis: ein PivotField kann nicht gleichzeitig einen Bezeichnungs Filter und einen Datumsfilter anwenden.'
+  summary: 'Filtert PivotItems basierend auf ihren Bezeichnungen. Hinweis: Ein PivotField kann nicht gleichzeitig einen Bezeichnungsfilter und einen Datumsfilter anwenden.'
 - name: manual
   uid: ExcelScript!ExcelScript.PivotFilterType.manual:member
   package: ExcelScript!
@@ -23,15 +23,15 @@ fields:
 - name: unknown
   uid: ExcelScript!ExcelScript.PivotFilterType.unknown:member
   package: ExcelScript!
-  summary: PivotFilterType ist unbekannt oder nicht unterstützt.
+  summary: '`PivotFilterType` ist unbekannt oder wird nicht unterstützt.'
 - name: value
   uid: ExcelScript!ExcelScript.PivotFilterType.value:member
   package: ExcelScript!
-  summary: Filter basierend auf dem Wert eines PivotItem in Bezug auf ein DataPivotHierarchy.
+  summary: Filter basierend auf dem Wert eines PivotItem in Bezug auf ein `DataPivotHierarchy`<!-- -->.
 metadata:
-  ms.openlocfilehash: 3c8b99c254d001d641d6a9cb6ae7de55c404b69a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 156d677d365b0975bf3c8238594d3c39348a5afa
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415246"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607011"
