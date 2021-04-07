@@ -21,7 +21,7 @@ methods:
     content: 'freezeAt(frozenRange: Range | string): void;'
     parameters:
     - id: frozenRange
-      description: Ein Range-Wert, der die einzufrierenden Zellen darstellt, oder NULL, um alle fixierten Bereiche zu entfernen.
+      description: Ein Bereich, der die zellen darstellt, die fixiert werden sollen, oder `null` um alle fixierten Bereiche zu entfernen.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)
   package: ExcelScript!
   fullName: freezeColumns(count)
-  summary: Fixieren Sie die erste Spalte oder Spalten des Arbeitsblatts an der richtigen Stelle.
+  summary: Fixieren Sie die erste Spalte oder Spalten des Arbeitsblatts.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -38,7 +38,7 @@ methods:
     content: 'freezeColumns(count?: number): void;'
     parameters:
     - id: count
-      description: Optionale Anzahl der anzufrierenden Spalten oder NULL zum Aufheben der Fixierung aller Spalten
+      description: Optionale Anzahl von Spalten, die eingefroren werden sollen, oder Null, um die Sperrung aller Spalten auf eiskalt zu machen
       type: number
     return:
       type: void
@@ -47,7 +47,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)
   package: ExcelScript!
   fullName: freezeRows(count)
-  summary: Fixieren Sie die oberste Zeile oder Zeilen des Arbeitsblatts an der richtigen Stelle.
+  summary: Fixieren Sie die oberste Zeile oder Zeilen des Arbeitsblatts.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -55,7 +55,7 @@ methods:
     content: 'freezeRows(count?: number): void;'
     parameters:
     - id: count
-      description: Optionale Anzahl der einzufrierenden Zeilen oder NULL zum Aufheben der Fixierung aller Zeilen
+      description: Optionale Anzahl von Zeilen, die eingefroren werden sollen, oder Null, um die Sperrung aller Zeilen auf eiskalt zu machen.
       type: number
     return:
       type: void
@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: Ruft den Bereich ab, der die fixierten Zellen in der aktiven Ansicht des Arbeitsblatts beschreibt. Der fixierte Bereich entspricht Zellen, die im oberen und linken Bereich fixiert sind. Wenn kein fixierter Bereich vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
+  summary: Ruft den Bereich ab, der die fixierten Zellen in der aktiven Ansicht des Arbeitsblatts beschreibt. Der fixierte Bereich entspricht Zellen, die im oberen und linken Bereich fixiert sind. Wenn kein fixierter Bereich vor ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6e5fbac54802cd580aee48a168245ddc3f4bb59a
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 3ee4e99a62a7adfff3ab84a75424673c3cb9f59c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554048"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607277"

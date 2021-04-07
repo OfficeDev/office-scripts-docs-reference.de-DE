@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getAutoIndent:member(1)
   package: ExcelScript!
   fullName: getAutoIndent()
-  summary: Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung in einer Zelle auf gleiche Verteilung festgelegt ist.
+  summary: Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung in einer Zelle auf die gleiche Verteilung festgelegt ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getBorders:member(1)
   package: ExcelScript!
   fullName: getBorders()
-  summary: Eine Auflistung von vier Rahmenobjekten, die die vier Rahmenlinien eines Bereichs- oder Style-Objekts darstellen.
+  summary: Eine Auflistung von vier Rahmenobjekten, die die Formatvorlage der vier Rahmen darstellen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Der Inhalt der Formatvorlage.
+  summary: Die Füllung der Formatvorlage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Gibt ein Schriftartobjekt zurück, das die Schriftart der Formatvorlage darstellt.
+  summary: Ein `Font` Objekt, das die Schriftart der Formatvorlage darstellt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Stellt die horizontale Ausrichtung für den Stil dar. Weitere Informationen finden Sie unter ExcelScript. HorizontalAlignment.
+  summary: Stellt die horizontale Ausrichtung für den Stil dar. Weitere `ExcelScript.HorizontalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeAlignment:member(1)
   package: ExcelScript!
   fullName: getIncludeAlignment()
-  summary: Gibt an, ob die Formatvorlage die Eigenschaften autoindent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel und textorientation enthält.
+  summary: Gibt an, ob die Formatvorlage die Eigenschaften auto einzug, horizontale Ausrichtung, vertikale Ausrichtung, Umbruchtext, Einzugsebene und Textausrichtung enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeBorder:member(1)
   package: ExcelScript!
   fullName: getIncludeBorder()
-  summary: Gibt an, ob die Formatvorlage die Eigenschaften Color, ColorIndex, Linienart und Gewichtungs Rahmen enthält.
+  summary: Gibt an, ob die Formatvorlage die Eigenschaften Farbe, Farbindex, Linienformatvorlage und Gewichtungsrand enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeFont:member(1)
   package: ExcelScript!
   fullName: getIncludeFont()
-  summary: Gibt an, ob die Formatvorlage die Schriftarteigenschaften background, Bold, Color, ColorIndex, FontStyle, kursiv, Name, Größe, durchgestrichen, tiefgestellt, hochgestellt und unterstrichen enthält.
+  summary: Gibt an, ob die Formatvorlage die Eigenschaften Background, Bold, Color, Color Index, Font Style, italic, name, size, strikethrough, subscript, superscript und underline enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeNumber:member(1)
   package: ExcelScript!
   fullName: getIncludeNumber()
-  summary: Gibt an, ob die Formatvorlage die NumberFormat-Eigenschaft enthält.
+  summary: Gibt an, ob die Formatvorlage die Zahlenformateigenschaft enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludePatterns:member(1)
   package: ExcelScript!
   fullName: getIncludePatterns()
-  summary: Gibt an, ob die Formatvorlage die Interior-Eigenschaften Color, ColorIndex, InvertIfNegative, pattern, PatternColor und PatternColorIndex enthält.
+  summary: Gibt an, ob die Formatvorlage die Eigenschaften farbe, farbindex, invertieren, wenn negativ, Muster, Musterfarbe und Musterfarbe index interior enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeProtection:member(1)
   package: ExcelScript!
   fullName: getIncludeProtection()
-  summary: Gibt an, ob die Formatvorlage die Eigenschaften FormulaHidden und Locked Protection enthält.
+  summary: Gibt an, ob die Formatvorlage die Eigenschaften "Ausgeblendet" und "Gesperrt" enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -268,7 +268,7 @@ methods:
     content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
     parameters:
     - id: index
-      description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere Informationen finden Sie unter ExcelScript. BorderIndex.
+      description: Index-Wert des abzurufenden Rahmen-Objekts. Weitere `ExcelScript.BorderIndex` Informationen finden Sie unter.
       type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
@@ -277,7 +277,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: getRangeBorderTintAndShade()
-  summary: Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.
+  summary: Gibt ein Double an, das eine Farbe für Bereichsränder hellt oder abdunkriert. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein `null` Wert gibt an, dass die gesamte Rahmensammlung keine einheitliche Einstellung `tintAndShade` hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getShrinkToFit:member(1)
   package: ExcelScript!
   fullName: getShrinkToFit()
-  summary: Gibt an, ob Text automatisch verkleinert wird, sodass er in die verfügbare Spaltenbreite passt.
+  summary: Gibt an, ob Text automatisch verkleinert wird, um in die verfügbare Spaltenbreite zu passen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -329,7 +329,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Gibt die vertikale Ausrichtung für die Formatvorlage an. Weitere Informationen finden Sie unter ExcelScript. VerticalAlignment.
+  summary: Gibt die vertikale Ausrichtung für die Formatvorlage an. Weitere `ExcelScript.VerticalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -342,7 +342,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getWrapText:member(1)
   package: ExcelScript!
   fullName: getWrapText()
-  summary: Gibt an, ob der Text im Objekt von Excel umbrochen wird.
+  summary: Gibt an, ob Excel den Text im Objekt umschließt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setAutoIndent:member(1)
   package: ExcelScript!
   fullName: setAutoIndent(autoIndent)
-  summary: Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung in einer Zelle auf gleiche Verteilung festgelegt ist.
+  summary: Gibt an, ob Text automatisch eingezogen wird, wenn die Textausrichtung in einer Zelle auf die gleiche Verteilung festgelegt ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -389,7 +389,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Stellt die horizontale Ausrichtung für den Stil dar. Weitere Informationen finden Sie unter ExcelScript. HorizontalAlignment.
+  summary: Stellt die horizontale Ausrichtung für den Stil dar. Weitere `ExcelScript.HorizontalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -406,7 +406,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeAlignment:member(1)
   package: ExcelScript!
   fullName: setIncludeAlignment(includeAlignment)
-  summary: Gibt an, ob die Formatvorlage die Eigenschaften autoindent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel und textorientation enthält.
+  summary: Gibt an, ob die Formatvorlage die Eigenschaften auto einzug, horizontale Ausrichtung, vertikale Ausrichtung, Umbruchtext, Einzugsebene und Textausrichtung enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -423,7 +423,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeBorder:member(1)
   package: ExcelScript!
   fullName: setIncludeBorder(includeBorder)
-  summary: Gibt an, ob die Formatvorlage die Eigenschaften Color, ColorIndex, Linienart und Gewichtungs Rahmen enthält.
+  summary: Gibt an, ob die Formatvorlage die Eigenschaften Farbe, Farbindex, Linienformatvorlage und Gewichtungsrand enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -440,7 +440,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeFont:member(1)
   package: ExcelScript!
   fullName: setIncludeFont(includeFont)
-  summary: Gibt an, ob die Formatvorlage die Schriftarteigenschaften background, Bold, Color, ColorIndex, FontStyle, kursiv, Name, Größe, durchgestrichen, tiefgestellt, hochgestellt und unterstrichen enthält.
+  summary: Gibt an, ob die Formatvorlage die Eigenschaften Background, Bold, Color, Color Index, Font Style, italic, name, size, strikethrough, subscript, superscript und underline enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -457,7 +457,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeNumber:member(1)
   package: ExcelScript!
   fullName: setIncludeNumber(includeNumber)
-  summary: Gibt an, ob die Formatvorlage die NumberFormat-Eigenschaft enthält.
+  summary: Gibt an, ob die Formatvorlage die Zahlenformateigenschaft enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -474,7 +474,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludePatterns:member(1)
   package: ExcelScript!
   fullName: setIncludePatterns(includePatterns)
-  summary: Gibt an, ob die Formatvorlage die Interior-Eigenschaften Color, ColorIndex, InvertIfNegative, pattern, PatternColor und PatternColorIndex enthält.
+  summary: Gibt an, ob die Formatvorlage die Eigenschaften farbe, farbindex, invertieren, wenn negativ, Muster, Musterfarbe und Musterfarbe index interior enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -491,7 +491,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeProtection:member(1)
   package: ExcelScript!
   fullName: setIncludeProtection(includeProtection)
-  summary: Gibt an, ob die Formatvorlage die Eigenschaften FormulaHidden und Locked Protection enthält.
+  summary: Gibt an, ob die Formatvorlage die Eigenschaften "Ausgeblendet" und "Gesperrt" enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -576,7 +576,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-  summary: Gibt einen Double-Wert an, der eine Farbe für Bereichsränder aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass die gesamte Rahmen Auflistungen keine einheitliche tintAndShade-Einstellung aufweisen.
+  summary: Gibt ein Double an, das eine Farbe für Bereichsränder hellt oder abdunkriert. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein `null` Wert gibt an, dass die gesamte Rahmensammlung keine einheitliche Einstellung `tintAndShade` hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -610,7 +610,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setShrinkToFit:member(1)
   package: ExcelScript!
   fullName: setShrinkToFit(shrinkToFit)
-  summary: Gibt an, ob Text automatisch verkleinert wird, sodass er in die verfügbare Spaltenbreite passt.
+  summary: Gibt an, ob Text automatisch verkleinert wird, um in die verfügbare Spaltenbreite zu passen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Gibt die vertikale Ausrichtung für die Formatvorlage an. Weitere Informationen finden Sie unter ExcelScript. VerticalAlignment.
+  summary: Gibt die vertikale Ausrichtung für die Formatvorlage an. Weitere `ExcelScript.VerticalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -661,7 +661,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setWrapText:member(1)
   package: ExcelScript!
   fullName: setWrapText(wrapText)
-  summary: Gibt an, ob der Text im Objekt von Excel umbrochen wird.
+  summary: Gibt an, ob Excel den Text im Objekt umschließt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -675,9 +675,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5969a129dc30629684c79765be7c43892cf87600
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 90d16417266aad48b871faec7c48f2fd03d52985
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416701"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607445"

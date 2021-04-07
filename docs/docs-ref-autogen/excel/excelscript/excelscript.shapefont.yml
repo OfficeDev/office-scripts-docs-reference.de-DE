@@ -3,7 +3,7 @@ name: ExcelScript.ShapeFont
 uid: ExcelScript!ExcelScript.ShapeFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeFont
-summary: Stellt die Schriftartattribute für das TextRange-Objekt eines Shapes dar, beispielsweise den Namen der Schriftart, den Schriftgrad und die Farbe.
+summary: Stellt die Schriftartattribute, z. B. Schriftartenname, Schriftgrad und Farbe, für das Objekt eines Shapes `TextRange` dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: Stellt den Fett-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl fette als auch nicht fette Abschnitte enthält.
+  summary: Stellt den Fett-Status der Schriftart dar. Gibt `null` zurück, wenn fett formatierte und nicht fett `TextRange` formatierte Textfragmente enthalten sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: HTML-Farb Codedarstellung der Textfarbe (beispielsweise " \# FF0000" steht für rot). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Farben enthält.
+  summary: HTML-Farbcodedarstellung der Textfarbe (z. B. \# "FF0000" steht für Rot). Gibt `null` zurück, wenn `TextRange` der Textfragmente mit unterschiedlichen Farben enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: Stellt den Kursiv-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl kursive als auch nicht kursive Abschnitte enthält.
+  summary: Stellt den Kursiv-Status der Schriftart dar. Gibt `null` zurück, ob `TextRange` sowohl italische als auch nicht italische Textfragmente enthalten sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Stellt den Namen der Schriftart dar (beispielsweise "Calibri"). Wenn der Text aus komplexen Schriftzeichen oder Ostasiatischen Zeichen besteht, ist dies der entsprechende Schriftartname; andernfalls der lateinische Schriftartname.
+  summary: Stellt den Schriftartennamen dar (z. B. "Calibri"). Wenn es sich bei dem Text um ein komplexes Skript oder eine ostasiatische Sprache handelt, ist dies der entsprechende Schriftartname. Andernfalls ist es der lateinische Schriftartname.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getSize:member(1)
   package: ExcelScript!
   fullName: getSize()
-  summary: Stellt den Schriftgrad in Punkt dar (z. b. 11). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Schriftgraden enthält.
+  summary: Stellt die Schriftgröße in Punkt dar (z. B. 11). Gibt `null` zurück, wenn `TextRange` der Textfragmente mit unterschiedlichen Schriftgraden enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Art der auf die Schriftart angewendeten Unterstreichung. Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Unterstreichungsarten enthält. Weitere Informationen finden Sie unter ExcelScript. ShapeFontUnderlineStyle.
+  summary: Art der auf die Schriftart angewendeten Unterstreichung. Gibt `null` zurück, wenn `TextRange` der Textfragmente mit unterschiedlichen Unterstreichungsformatvorlagen enthält. Weitere `ExcelScript.ShapeFontUnderlineStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: Stellt den Fett-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl fette als auch nicht fette Abschnitte enthält.
+  summary: Stellt den Fett-Status der Schriftart dar. Gibt `null` zurück, wenn fett formatierte und nicht fett `TextRange` formatierte Textfragmente enthalten sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: HTML-Farb Codedarstellung der Textfarbe (beispielsweise " \# FF0000" steht für rot). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Farben enthält.
+  summary: HTML-Farbcodedarstellung der Textfarbe (z. B. \# "FF0000" steht für Rot). Gibt `null` zurück, wenn `TextRange` der Textfragmente mit unterschiedlichen Farben enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: Stellt den Kursiv-Status der Schriftart dar. Gibt NULL zurück, wenn das TextRange-Objekt sowohl kursive als auch nicht kursive Abschnitte enthält.
+  summary: Stellt den Kursiv-Status der Schriftart dar. Gibt `null` zurück, ob `TextRange` sowohl italische als auch nicht italische Textfragmente enthalten sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Stellt den Namen der Schriftart dar (beispielsweise "Calibri"). Wenn der Text aus komplexen Schriftzeichen oder Ostasiatischen Zeichen besteht, ist dies der entsprechende Schriftartname; andernfalls der lateinische Schriftartname.
+  summary: Stellt den Schriftartennamen dar (z. B. "Calibri"). Wenn es sich bei dem Text um ein komplexes Skript oder eine ostasiatische Sprache handelt, ist dies der entsprechende Schriftartname. Andernfalls ist es der lateinische Schriftartname.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setSize:member(1)
   package: ExcelScript!
   fullName: setSize(size)
-  summary: Stellt den Schriftgrad in Punkt dar (z. b. 11). Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Schriftgraden enthält.
+  summary: Stellt die Schriftgröße in Punkt dar (z. B. 11). Gibt `null` zurück, wenn `TextRange` der Textfragmente mit unterschiedlichen Schriftgraden enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Art der auf die Schriftart angewendeten Unterstreichung. Gibt NULL zurück, wenn das TextRange-Objekt Textabschnitte mit verschiedenen Unterstreichungsarten enthält. Weitere Informationen finden Sie unter ExcelScript. ShapeFontUnderlineStyle.
+  summary: Art der auf die Schriftart angewendeten Unterstreichung. Gibt `null` zurück, wenn `TextRange` der Textfragmente mit unterschiedlichen Unterstreichungsformatvorlagen enthält. Weitere `ExcelScript.ShapeFontUnderlineStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6b66c4e96e389d47663061a6e517e950dca9b0d2
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 924be3475b94ead2e38bc97980c97bb046cb5707
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420650"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607382"

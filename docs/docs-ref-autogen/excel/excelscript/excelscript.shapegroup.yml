@@ -3,7 +3,7 @@ name: ExcelScript.ShapeGroup
 uid: ExcelScript!ExcelScript.ShapeGroup:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeGroup
-summary: Stellt eine Shape-Gruppe innerhalb eines Arbeitsblatts dar. Verwenden Sie zum Abrufen des entsprechenden Shape-Objekts `ShapeGroup.shape`<!-- -->.
+summary: Stellt eine Formgruppe innerhalb eines Arbeitsblatts dar. Um das entsprechende Objekt zu `Shape` erhalten, verwenden Sie `ShapeGroup.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)
   package: ExcelScript!
   fullName: getGroupShape()
-  summary: Gibt das Formobjekt zurück, das der Gruppe zugeordnet ist.
+  summary: Gibt das `Shape` objekt zurück, das der Gruppe zugeordnet ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Gibt den Shape-Bezeichner an.
+  summary: Gibt den Formbezeichner an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)
   package: ExcelScript!
   fullName: getShape(key)
-  summary: Ruft eine Form anhand ihres Namens oder ihrer ID ab.
+  summary: Ruft ein Shape mit seinem Namen oder seiner ID ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -47,7 +47,7 @@ methods:
     content: 'getShape(key: string): Shape;'
     parameters:
     - id: key
-      description: Der Name oder die ID der Form, die abgerufen werden soll.
+      description: Der Name oder die ID der abzurufende Form.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)
   package: ExcelScript!
   fullName: getShapes()
-  summary: Gibt die Sammlung von Shape-Objekten zurück.
+  summary: Gibt die Auflistung von Objekten `Shape` zurück.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 7aa8ade3b8eb551378ae316ced0864f037bee30f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cc1e9a9a08dfbf3710f374a5e254984a8314df9c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420636"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607375"
