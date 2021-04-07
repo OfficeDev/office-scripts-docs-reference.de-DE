@@ -21,7 +21,7 @@ methods:
     content: 'calculate(calculationType: CalculationType): void;'
     parameters:
     - id: calculationType
-      description: Gibt den zu verwendenden Berechnungstyp an. Weitere Informationen finden Sie unter ExcelScript. CalculationType.
+      description: Gibt den zu verwendenden Berechnungstyp an. Weitere `ExcelScript.CalculationType` Informationen finden Sie unter.
       type: <xref uid="ExcelScript!ExcelScript.CalculationType:enum" />
     return:
       type: void
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationMode:member(1)
   package: ExcelScript!
   fullName: getCalculationMode()
-  summary: 'Gibt den in der Arbeitsmappe verwendeten Berechnungsmodus gemäß der Definition durch die Konstanten in ExcelScript. CalculationMode zurück. Mögliche Werte sind: `Automatic`<!-- -->, wobei Excel Steuerelemente neu berechnen; `AutomaticExceptTables`<!-- -->, wobei Excel Steuerelemente neu berechnen, aber Änderungen in Tabellen ignoriert; `Manual`<!-- -->, wobei die Berechnung erfolgt, wenn der Benutzer sie anfordert.'
+  summary: 'Gibt den berechnungsmodus zurück, der in der Arbeitsmappe verwendet wird, wie durch die Konstanten in `ExcelScript.CalculationMode`<!-- -->. Mögliche Werte sind: `Automatic`<!-- -->, wobei Excel die Neuberechnung steuert; `AutomaticExceptTables`<!-- -->, wobei Excel die Neuberechnung steuert, aber Änderungen in Tabellen ignoriert; `Manual`<!-- -->, wobei die Berechnung durchgeführt wird, wenn der Benutzer sie anfordert.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationState:member(1)
   package: ExcelScript!
   fullName: getCalculationState()
-  summary: Gibt den Berechnungszustand der Anwendung zurück. Weitere Informationen finden Sie unter ExcelScript. CalculationState.
+  summary: Gibt den Berechnungszustand der Anwendung zurück. Weitere `ExcelScript.CalculationState` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCultureInfo:member(1)
   package: ExcelScript!
   fullName: getCultureInfo()
-  summary: Enthält Informationen basierend auf den aktuellen Systemkultur Einstellungen. Dies umfasst die Kulturnamen, die Zahlenformatierung und andere kulturell abhängige Einstellungen.
+  summary: Stellt Informationen basierend auf den aktuellen Systemkultureinstellungen zur Verfügung. Dazu gehören die Kulturnamen, die Zahlenformatierung und andere kulturabhängige Einstellungen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)
   package: ExcelScript!
   fullName: getDecimalSeparator()
-  summary: Ruft die Zeichenfolge ab, die als Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den lokalen Einstellungen von Excel.
+  summary: Ruft die Zeichenfolge ab, die als Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den lokalen Excel-Einstellungen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)
   package: ExcelScript!
   fullName: getIterativeCalculation()
-  summary: Gibt die Einstellungen für iterative Berechnung zurück. In Excel unter Windows und Mac werden die Einstellungen auf die Excel-Anwendung angewendet. In Excel im Internet und anderen Plattformen werden die Einstellungen auf die aktive Arbeitsmappe angewendet.
+  summary: Gibt die iterativen Berechnungseinstellungen zurück. In Excel unter Windows und Mac gelten die Einstellungen für die Excel-Anwendung. In Excel im Web und anderen Plattformen gelten die Einstellungen für die aktive Arbeitsmappe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)
   package: ExcelScript!
   fullName: getThousandsSeparator()
-  summary: Ruft die Zeichenfolge ab, die zum Trennen von Zifferngruppen links vom Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den lokalen Einstellungen von Excel.
+  summary: Ruft die Zeichenfolge ab, die zum Trennen von Zifferngruppen links vom Dezimaltrennzeichen für numerische Werte verwendet wird. Dies basiert auf den lokalen Excel-Einstellungen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)
   package: ExcelScript!
   fullName: getUseSystemSeparators()
-  summary: Gibt an, ob die Systemtrennzeichen von Excel aktiviert sind. Zu den System Trennzeichen gehören das Dezimaltrennzeichen und Tausendertrennzeichen.
+  summary: Gibt an, ob die Systemtrennzeichen von Excel aktiviert sind. Systemtrennzeichen umfassen das Dezimaltrennzeichen und das Tausendertrennzeichen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#setCalculationMode:member(1)
   package: ExcelScript!
   fullName: setCalculationMode(calculationMode)
-  summary: 'Gibt den in der Arbeitsmappe verwendeten Berechnungsmodus gemäß der Definition durch die Konstanten in ExcelScript. CalculationMode zurück. Mögliche Werte sind: `Automatic`<!-- -->, wobei Excel Steuerelemente neu berechnen; `AutomaticExceptTables`<!-- -->, wobei Excel Steuerelemente neu berechnen, aber Änderungen in Tabellen ignoriert; `Manual`<!-- -->, wobei die Berechnung erfolgt, wenn der Benutzer sie anfordert.'
+  summary: 'Gibt den berechnungsmodus zurück, der in der Arbeitsmappe verwendet wird, wie durch die Konstanten in `ExcelScript.CalculationMode`<!-- -->. Mögliche Werte sind: `Automatic`<!-- -->, wobei Excel die Neuberechnung steuert; `AutomaticExceptTables`<!-- -->, wobei Excel die Neuberechnung steuert, aber Änderungen in Tabellen ignoriert; `Manual`<!-- -->, wobei die Berechnung durchgeführt wird, wenn der Benutzer sie anfordert.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -148,9 +148,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3bb99af272686a3303d2564bbed7e972f6cde6e7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cdcd7a220d23bc540129c9547789a241c15fd3b2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418128"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606635"

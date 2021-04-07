@@ -3,7 +3,7 @@ name: ExcelScript.LabelFilterCondition
 uid: ExcelScript!ExcelScript.LabelFilterCondition:enum
 package: ExcelScript!
 fullName: ExcelScript.LabelFilterCondition
-summary: Enum, die alle akzeptierten Bedingungen darstellt, nach denen ein Bezeichnungs Filter angewendet werden kann. Wird verwendet, um den Typ des PivotFilter zu konfigurieren, der auf das Feld angewendet wird. `PivotFilter.criteria.exclusive` kann auf true festgelegt werden, um viele dieser Bedingungen umzukehren.
+summary: Enumeration, die alle akzeptierten Bedingungen darstellt, unter denen ein Bezeichnungsfilter angewendet werden kann. Wird verwendet, um den Typ von PivotFilter zu konfigurieren, der auf das Feld angewendet wird. `PivotFilter.criteria.exclusive` kann so festgelegt `true` werden, dass viele dieser Bedingungen invertiert werden.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -12,7 +12,7 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member
   package: ExcelScript!
   summary: >-
-    Bezeichnung beginnt mit Teil Zeichenfolgen Kriterium.
+    Die Bezeichnung beginnt mit dem Kriterium der Teilzeichenfolge.
 
 
     Erforderliche Kriterien: {`substring`<!-- -->}<!-- -->. Optionale Kriterien: {`exclusive`<!-- -->}<!-- -->.
@@ -28,7 +28,7 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.contains:member
   package: ExcelScript!
   summary: >-
-    Label enthält ein Teil Zeichenfolgen Kriterium.
+    Bezeichnung enthält Das Kriterium der Teilzeichenfolge.
 
 
     Erforderliche Kriterien: {`substring`<!-- -->}<!-- -->. Optionale Kriterien: {`exclusive`<!-- -->}<!-- -->.
@@ -36,7 +36,7 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member
   package: ExcelScript!
   summary: >-
-    Beschriftung endet mit Teil Zeichenfolgen Kriterium.
+    Bezeichnung endet mit Unterzeichenfolgenkriterium.
 
 
     Erforderliche Kriterien: {`substring`<!-- -->}<!-- -->. Optionale Kriterien: {`exclusive`<!-- -->}<!-- -->.
@@ -52,7 +52,7 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member
   package: ExcelScript!
   summary: >-
-    Kriterium größer als Komparator.
+    Größer als vergleichskriterium.
 
 
     Erforderliche Kriterien: {`comparator`<!-- -->}<!-- -->.
@@ -60,7 +60,7 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member
   package: ExcelScript!
   summary: >-
-    Größer als oder gleich Vergleichskriterium.
+    Größer als oder gleich dem Vergleichskriterium.
 
 
     Erforderliche Kriterien: {`comparator`<!-- -->}<!-- -->.
@@ -68,7 +68,7 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member
   package: ExcelScript!
   summary: >-
-    Weniger als Vergleichskriterium.
+    Kleiner als vergleichskriterium.
 
 
     Erforderliche Kriterien: {`comparator`<!-- -->}<!-- -->.
@@ -76,18 +76,18 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member
   package: ExcelScript!
   summary: >-
-    Kleiner als oder gleich Vergleichskriterium.
+    Kleiner oder gleich vergleichskriterium.
 
 
     Erforderliche Kriterien: {`comparator`<!-- -->}<!-- -->.
 - name: unknown
   uid: ExcelScript!ExcelScript.LabelFilterCondition.unknown:member
   package: ExcelScript!
-  summary: LabelFilterCondition ist unbekannt oder nicht unterstützt.
+  summary: '`LabelFilterCondition` ist unbekannt oder wird nicht unterstützt.'
 metadata:
-  ms.openlocfilehash: a594c7298529f819089b8b9985157fbc7d064e3d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 971720fcb310dec1604bf18761b42f0ea34421a9
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415407"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606434"

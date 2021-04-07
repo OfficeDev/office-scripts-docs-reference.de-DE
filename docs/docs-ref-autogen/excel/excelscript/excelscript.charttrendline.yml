@@ -3,7 +3,7 @@ name: ExcelScript.ChartTrendline
 uid: ExcelScript!ExcelScript.ChartTrendline:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartTrendline
-summary: Dieses Objekt stellt die Attribute für ein Diagramm-Trendlinien Objekt dar.
+summary: Dieses Objekt stellt die Attribute für ein Diagrammtrendlinienobjekt dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)
   package: ExcelScript!
   fullName: getIntercept()
-  summary: Gibt den Abfang Wert der Trendlinie an.
+  summary: Gibt den Abfangwert der Trendlinie an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)
   package: ExcelScript!
   fullName: getMovingAveragePeriod()
-  summary: Stellt den Zeitraum einer Diagramm Trendlinie dar. Gilt nur für Trendlinie mit MovingAverage-Typ.
+  summary: Stellt den Zeitraum einer Diagrammtrendlinie dar. Gilt nur für Trendlinien mit dem Typ `MovingAverage`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Gibt den Namen der Trendlinie zurück. Kann auf einen Zeichenfolgenwert festgelegt werden, oder auf einen null-Wert und entspricht automatischen Werten. Der zurückgegebene Wert ist immer eine Zeichenfolge.
+  summary: Gibt den Namen der Trendlinie zurück. Kann auf einen Zeichenfolgenwert festgelegt werden, ein `null` Wert stellt automatische Werte dar. Der zurückgegebene Wert ist immer eine Zeichenfolge.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)
   package: ExcelScript!
   fullName: getPolynomialOrder()
-  summary: Stellt die Reihenfolge einer Diagramm Trendlinie dar. Gilt nur für Trendlinie mit polynomtyp.
+  summary: Stellt die Reihenfolge einer Diagrammtrendlinie dar. Gilt nur für Trendlinien mit dem Typ `Polynomial`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)
   package: ExcelScript!
   fullName: getShowRSquared()
-  summary: True, wenn das Bestimmtheitsmaß für die Trendlinie im Diagramm angezeigt wird.
+  summary: True, wenn der r-squared-Wert für die Trendlinie im Diagramm angezeigt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -203,7 +203,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)
   package: ExcelScript!
   fullName: setIntercept(intercept)
-  summary: Gibt den Abfang Wert der Trendlinie an.
+  summary: Gibt den Abfangwert der Trendlinie an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -220,7 +220,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)
   package: ExcelScript!
   fullName: setMovingAveragePeriod(movingAveragePeriod)
-  summary: Stellt den Zeitraum einer Diagramm Trendlinie dar. Gilt nur für Trendlinie mit MovingAverage-Typ.
+  summary: Stellt den Zeitraum einer Diagrammtrendlinie dar. Gilt nur für Trendlinien mit dem Typ `MovingAverage`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -237,7 +237,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Gibt den Namen der Trendlinie zurück. Kann auf einen Zeichenfolgenwert festgelegt werden, oder auf einen null-Wert und entspricht automatischen Werten. Der zurückgegebene Wert ist immer eine Zeichenfolge.
+  summary: Gibt den Namen der Trendlinie zurück. Kann auf einen Zeichenfolgenwert festgelegt werden, ein `null` Wert stellt automatische Werte dar. Der zurückgegebene Wert ist immer eine Zeichenfolge.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -254,7 +254,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)
   package: ExcelScript!
   fullName: setPolynomialOrder(polynomialOrder)
-  summary: Stellt die Reihenfolge einer Diagramm Trendlinie dar. Gilt nur für Trendlinie mit polynomtyp.
+  summary: Stellt die Reihenfolge einer Diagrammtrendlinie dar. Gilt nur für Trendlinien mit dem Typ `Polynomial`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -288,7 +288,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)
   package: ExcelScript!
   fullName: setShowRSquared(showRSquared)
-  summary: True, wenn das Bestimmtheitsmaß für die Trendlinie im Diagramm angezeigt wird.
+  summary: True, wenn der r-squared-Wert für die Trendlinie im Diagramm angezeigt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -319,9 +319,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f529a31774e6430cd11a32826f876b48d7c3c43c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5ce9ab90bf97fbe09577aca7d44bfa1d09f59414
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416002"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606815"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFill#clear:member(1)
   package: ExcelScript!
   fullName: clear()
-  summary: Entfernen der Füllfarbe eines Diagrammelements
+  summary: Die Füllfarbe eines Diagrammelements wird geräumt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,15 +34,15 @@ methods:
     content: 'setSolidColor(color: string): void;'
     parameters:
     - id: color
-      description: HTML-Farbcode, der die Hintergrundfarbe des Formulars \# RRGGBB (z.b. "FFA500") oder als benannte HTML-Farbe (beispielsweise "Orange") darstellt.
+      description: HTML-Farbcode, der die Farbe des Hintergrunds darstellt, in der Form \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange").
       type: string
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d33b09062079157785b412603d9f36f7736e6d92
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e90710f2f898cebee541ca3eb4eb9923eb8dfe14
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416890"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606586"

@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)
   package: ExcelScript!
   fullName: getHasDataLabel()
-  summary: Stellt dar, ob ein Datenpunkt eine Datenbeschriftung aufweist. Gilt nicht für Oberflächendiagramme.
+  summary: Gibt an, ob ein Datenpunkt über eine Datenbeschriftung verfügt. Gilt nicht für Oberflächendiagramme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerBackgroundColor()
-  summary: HTML-Farb Codedarstellung der Marker-Hintergrundfarbe des Datenpunkts (beispielsweise \# FF0000 stellt rot dar).
+  summary: HTML-Farbcodedarstellung der Markerhintergrundfarbe eines Datenpunkts (z. B. \# FF0000 steht für Rot).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerForegroundColor()
-  summary: HTML-Farb Codedarstellung der Marker-Vordergrundfarbe des Datenpunkts (beispielsweise \# FF0000 stellt rot dar).
+  summary: HTML-Farbcodedarstellung der Vordergrundfarbe des Markers eines Datenpunkts (z. B. \# FF0000 steht für Rot).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)
   package: ExcelScript!
   fullName: getMarkerSize()
-  summary: Stellt die Markergröße eines Datenpunkts dar.
+  summary: Stellt die Markierungsgröße eines Datenpunkts dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)
   package: ExcelScript!
   fullName: getMarkerStyle()
-  summary: Stellt den Markerstil eines Diagrammdatenpunkts dar. Weitere Informationen finden Sie unter ExcelScript. ChartMarkerStyle.
+  summary: Stellt den Markerstil eines Diagrammdatenpunkts dar. Weitere `ExcelScript.ChartMarkerStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)
   package: ExcelScript!
   fullName: setHasDataLabel(hasDataLabel)
-  summary: Stellt dar, ob ein Datenpunkt eine Datenbeschriftung aufweist. Gilt nicht für Oberflächendiagramme.
+  summary: Gibt an, ob ein Datenpunkt über eine Datenbeschriftung verfügt. Gilt nicht für Oberflächendiagramme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerBackgroundColor(markerBackgroundColor)
-  summary: HTML-Farb Codedarstellung der Marker-Hintergrundfarbe des Datenpunkts (beispielsweise \# FF0000 stellt rot dar).
+  summary: HTML-Farbcodedarstellung der Markerhintergrundfarbe eines Datenpunkts (z. B. \# FF0000 steht für Rot).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerForegroundColor(markerForegroundColor)
-  summary: HTML-Farb Codedarstellung der Marker-Vordergrundfarbe des Datenpunkts (beispielsweise \# FF0000 stellt rot dar).
+  summary: HTML-Farbcodedarstellung der Vordergrundfarbe des Markers eines Datenpunkts (z. B. \# FF0000 steht für Rot).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)
   package: ExcelScript!
   fullName: setMarkerSize(markerSize)
-  summary: Stellt die Markergröße eines Datenpunkts dar.
+  summary: Stellt die Markierungsgröße eines Datenpunkts dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -185,7 +185,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)
   package: ExcelScript!
   fullName: setMarkerStyle(markerStyle)
-  summary: Stellt den Markerstil eines Diagrammdatenpunkts dar. Weitere Informationen finden Sie unter ExcelScript. ChartMarkerStyle.
+  summary: Stellt den Markerstil eines Diagrammdatenpunkts dar. Weitere `ExcelScript.ChartMarkerStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,9 +199,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d11ca64902c23c50ed0f8ae592d26c935e90319d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: aad9a80594512307275935c6921b43f74220bd16
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419621"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606864"

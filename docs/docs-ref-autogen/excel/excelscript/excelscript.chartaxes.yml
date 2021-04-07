@@ -34,10 +34,10 @@ methods:
     content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
     parameters:
     - id: type
-      description: Gibt den Achsentyp an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisType.
+      description: Gibt den Achsentyp an. Weitere `ExcelScript.ChartAxisType` Informationen finden Sie unter.
       type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
     - id: group
-      description: Optional. Gibt die Achsengruppe an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisGroup.
+      description: Optional. Gibt die Achsengruppe an. Weitere `ExcelScript.ChartAxisGroup` Informationen finden Sie unter.
       type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
@@ -46,7 +46,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)
   package: ExcelScript!
   fullName: getSeriesAxis()
-  summary: Stellt die Reihenachse eines dreidimensionalen Diagramms dar.
+  summary: Stellt die Datenreihenachse eines 3D-Diagramms dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,9 +69,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 5228c8107a7d138be68485c568f89a67578a44dd
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3e931303394e4db4ad29430321ba35ee32ca4018
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420111"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606948"

@@ -3,7 +3,7 @@ name: ExcelScript.IconSetConditionalFormat
 uid: ExcelScript!ExcelScript.IconSetConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.IconSetConditionalFormat
-summary: Stellt ein Iconset-Kriterium für bedingte Formatierung dar.
+summary: Stellt ein Symbolsatzkriterium für die bedingte Formatierung dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getCriteria:member(1)
   package: ExcelScript!
   fullName: getCriteria()
-  summary: Ein Array von Kriterien und IconSets für die Regeln und potenziellen benutzerdefinierten Symbole für bedingte Symbole. Beachten Sie, dass für das erste Kriterium nur das benutzerdefinierte Symbol geändert werden kann, während Typ, Formel und Operator beim Festlegen ignoriert werden.
+  summary: Ein Array von Kriterien und Symbolsätzen für die Regeln und potenziellen benutzerdefinierten Symbole für bedingte Symbole. Beachten Sie, dass beim ersten Kriterium nur das benutzerdefinierte Symbol geändert werden kann, während Typ, Formel und Operator beim Festlegen ignoriert werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: getReverseIconOrder()
-  summary: Wenn true, werden die Symbol Reihenfolgen für das Iconset umgekehrt. Beachten Sie, dass dies nicht festgelegt werden kann, wenn benutzerdefinierte Symbole verwendet werden.
+  summary: If `true`<!-- -->, kehrt die Symbolbestellungen für den Symbolsatz um. Beachten Sie, dass dies nicht festgelegt werden kann, wenn benutzerdefinierte Symbole verwendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getShowIconOnly:member(1)
   package: ExcelScript!
   fullName: getShowIconOnly()
-  summary: Wenn „true“, werden die Werte ausgeblendet und nur die Symbole angezeigt.
+  summary: If `true`<!-- -->blendet die Werte aus und zeigt nur Symbole an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: Wenn dieser Wert festgelegt ist, wird die Iconset-Option für das bedingte Format angezeigt.
+  summary: Wenn festgelegt, wird die Symbolsatzoption für das bedingte Format angezeigt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setCriteria:member(1)
   package: ExcelScript!
   fullName: setCriteria(criteria)
-  summary: Ein Array von Kriterien und IconSets für die Regeln und potenziellen benutzerdefinierten Symbole für bedingte Symbole. Beachten Sie, dass für das erste Kriterium nur das benutzerdefinierte Symbol geändert werden kann, während Typ, Formel und Operator beim Festlegen ignoriert werden.
+  summary: Ein Array von Kriterien und Symbolsätzen für die Regeln und potenziellen benutzerdefinierten Symbole für bedingte Symbole. Beachten Sie, dass beim ersten Kriterium nur das benutzerdefinierte Symbol geändert werden kann, während Typ, Formel und Operator beim Festlegen ignoriert werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: setReverseIconOrder(reverseIconOrder)
-  summary: Wenn true, werden die Symbol Reihenfolgen für das Iconset umgekehrt. Beachten Sie, dass dies nicht festgelegt werden kann, wenn benutzerdefinierte Symbole verwendet werden.
+  summary: If `true`<!-- -->, kehrt die Symbolbestellungen für den Symbolsatz um. Beachten Sie, dass dies nicht festgelegt werden kann, wenn benutzerdefinierte Symbole verwendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setShowIconOnly:member(1)
   package: ExcelScript!
   fullName: setShowIconOnly(showIconOnly)
-  summary: Wenn „true“, werden die Werte ausgeblendet und nur die Symbole angezeigt.
+  summary: If `true`<!-- -->blendet die Werte aus und zeigt nur Symbole an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -116,7 +116,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: Wenn dieser Wert festgelegt ist, wird die Iconset-Option für das bedingte Format angezeigt.
+  summary: Wenn festgelegt, wird die Symbolsatzoption für das bedingte Format angezeigt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 097baba5d4e77c03e543300da7c48c70638dd62c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0fd12949aad6fc518834dfe02a0fd9aa01dae20a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412328"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607228"

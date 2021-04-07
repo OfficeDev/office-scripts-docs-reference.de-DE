@@ -3,7 +3,7 @@ name: ExcelScript.ListDataValidation
 uid: ExcelScript!ExcelScript.ListDataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.ListDataValidation
-summary: Stellt die Listendaten Überprüfungskriterien dar.
+summary: Represents the List data validation criteria.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member
   package: ExcelScript!
   fullName: inCellDropDown
-  summary: Zeigt die Liste in der Zelldropdownliste an. Standardeinstellung ist „true“.
+  summary: Gibt an, ob die Liste in einer Zelle angezeigt werden soll. Die Standardeinstellung ist `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ListDataValidation#source:member
   package: ExcelScript!
   fullName: source
-  summary: Quelle der Liste für die Datenüberprüfung Wenn Sie den Wert festlegen, kann er als Excel Range-Objekt oder als Zeichenfolge übergeben werden, die Komma getrennte Zahl, Boolean oder Date enthält.
+  summary: Quelle der Liste für die Datenüberprüfung Beim Festlegen des Werts kann er als Objekt oder als Zeichenfolge übergeben werden, die eine durch Kommas getrennte `Range` Zahl, einen booleschen Wert oder ein Datum enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: string | <xref uid="ExcelScript!ExcelScript.Range:interface" />
 metadata:
-  ms.openlocfilehash: cf8940b22ffc0ff1b79c1a55297fc2f97e4b43ea
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 9b241254b4ff28826e267a10e68a801a7535d4bf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412181"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607221"

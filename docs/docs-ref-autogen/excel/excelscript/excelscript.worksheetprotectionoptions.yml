@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member
   package: ExcelScript!
   fullName: allowAutoFilter
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen der Verwendung der automatischen Filterfunktion dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, die die Verwendung des AutoFilter-Features ermöglicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member
   package: ExcelScript!
   fullName: allowDeleteColumns
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen des Löschens von Spalten dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, die das Löschen von Spalten ermöglicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member
   package: ExcelScript!
   fullName: allowDeleteRows
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen des Löschens von Zeilen dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, die das Löschen von Zeilen ermöglicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member
   package: ExcelScript!
   fullName: allowEditObjects
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen der Bearbeitung von Objekten dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, die die Bearbeitung von Objekten ermöglicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member
   package: ExcelScript!
   fullName: allowEditScenarios
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen der Bearbeitung von Szenarien dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, die die Bearbeitung von Szenarien ermöglicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member
   package: ExcelScript!
   fullName: allowFormatCells
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen des Formatierens von Zellen dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, mit der die Formatierung von Zellen ermöglicht wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member
   package: ExcelScript!
   fullName: allowFormatColumns
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen des Formatierens von Spalten dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, mit der die Formatierung von Spalten ermöglicht wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,7 +97,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member
   package: ExcelScript!
   fullName: allowFormatRows
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen des Formatierens von Zeilen dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, mit der die Formatierung von Zeilen ermöglicht wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,7 +109,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member
   package: ExcelScript!
   fullName: allowInsertColumns
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen des Einfügens von Spalten dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, die das Einfügen von Spalten ermöglicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member
   package: ExcelScript!
   fullName: allowInsertHyperlinks
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen des Einfügens von Links dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, die das Einfügen von Hyperlinks ermöglicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,7 +133,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member
   package: ExcelScript!
   fullName: allowInsertRows
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen des Einfügens von Zeilen dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, die das Einfügen von Zeilen ermöglicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -145,7 +145,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member
   package: ExcelScript!
   fullName: allowPivotTables
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen der Verwendung des PivotTable-Features dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, die die Verwendung des PivotTable-Features ermöglicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -157,7 +157,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member
   package: ExcelScript!
   fullName: allowSort
-  summary: Stellt die Arbeitsblatt-Schutzoption zum Zulassen der Verwendung der Sortierfunktion dar.
+  summary: Stellt die Arbeitsblattschutzoption dar, die die Verwendung des Sortierfeatures ermöglicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -178,9 +178,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ProtectionSelectionMode:enum" />
 metadata:
-  ms.openlocfilehash: d4d1d23a781e1be35d76429ab5af1d60d5d696c5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0772bfad59e8d426f5f989afdd69557ba5d49c10
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419229"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605290"

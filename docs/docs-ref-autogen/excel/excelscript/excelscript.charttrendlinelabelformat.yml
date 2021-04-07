@@ -3,7 +3,7 @@ name: ExcelScript.ChartTrendlineLabelFormat
 uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartTrendlineLabelFormat
-summary: Kapselt die Formateigenschaften für die Diagramm Trendlinienbeschriftung.
+summary: Kapselt die Formateigenschaften für die Diagrammtrendlinienbeschriftung.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Gibt das Rahmenformat an, das Farbe, Linienart und Gewicht enthält.
+  summary: Gibt das Rahmenformat an, das Farbe, Linienstil und Gewichtung umfasst.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Gibt das Füllformat der aktuellen Diagramm Trendlinienbeschriftung an.
+  summary: Gibt das Füllformat der aktuellen Diagrammtrendlinienbeschriftung an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Gibt die Schriftattribute (Schriftartname, Schriftgrad, Farbe usw.) für eine Diagramm Trendlinienbeschriftung an.
+  summary: Gibt die Schriftartattribute (z. B. Schriftartenname, Schriftgrad und Farbe) für eine Diagrammtrendlinienbeschriftung an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 0830f7c4527fd1b5b50b2ed8b04de4f42d839c38
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: bd5eb3a45779061c21b69399056af9b1ce764cdd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419502"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606794"

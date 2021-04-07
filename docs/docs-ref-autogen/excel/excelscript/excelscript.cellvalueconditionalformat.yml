@@ -3,7 +3,7 @@ name: ExcelScript.CellValueConditionalFormat
 uid: ExcelScript!ExcelScript.CellValueConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.CellValueConditionalFormat
-summary: Stellt ein bedingtes Zellenwert Format dar.
+summary: Stellt ein bedingtes Zellenwertformat dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.CellValueConditionalFormat#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Gibt ein Format-Objekt zurück, das die Schriftart, Füllung, Rahmen und andere Eigenschaften für bedingte Formate kapselt.
+  summary: Gibt ein Formatobjekt zurück, das die Eigenschaften Schriftart, Füllung, Rahmen und andere bedingte Formate kapselt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CellValueConditionalFormat#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: Gibt das Rule-Objekt für dieses bedingte Format an.
+  summary: Gibt das Regelobjekt für dieses bedingte Format an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.CellValueConditionalFormat#setRule:member(1)
   package: ExcelScript!
   fullName: setRule(rule)
-  summary: Gibt das Rule-Objekt für dieses bedingte Format an.
+  summary: Gibt das Regelobjekt für dieses bedingte Format an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,9 +53,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e11b3923d72e3d1b348c24bb07ab4d8088476a8d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c47186e09ea2838f1facb336a4390f299546d887
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417114"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606962"

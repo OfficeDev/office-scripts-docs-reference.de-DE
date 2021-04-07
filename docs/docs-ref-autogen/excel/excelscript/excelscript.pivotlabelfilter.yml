@@ -3,7 +3,7 @@ name: ExcelScript.PivotLabelFilter
 uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotLabelFilter
-summary: Konfigurierbare Vorlage für einen Bezeichnungs Filter, der auf ein PivotField angewendet werden soll. Der `condition` definiert, welche Kriterien festgelegt werden müssen, damit der Filter funktioniert.
+summary: Konfigurierbare Vorlage für einen Bezeichnungsfilter, der auf ein PivotField angewendet werden soll. Der `condition` definiert, welche Kriterien festgelegt werden müssen, damit der Filter funktioniert.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#condition:member
   package: ExcelScript!
   fullName: condition
-  summary: Gibt die Bedingung für den Filter an, die die erforderlichen Filterkriterien definiert.
+  summary: Gibt die Bedingung für den Filter an, der die erforderlichen Filterkriterien definiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: Bei true werden Elemente, die Kriterien erfüllen, von Filter *ausgeschlossen* . Der Standardwert ist false (Filter, um Elemente einzuschließen, die Kriterien erfüllen).
+  summary: If `true`<!-- -->, filter *schließt Elemente* aus, die Kriterien erfüllen. Der Standardwert ist `false` (Filter, um Elemente zu enthalten, die Kriterien erfüllen).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: 'Die untere Grenze des Bereichs für die zwischen Filterbedingung. Hinweis: eine numerische Zeichenfolge wird als Zahl behandelt, wenn Sie mit anderen numerischen Zeichenfolgen verglichen wird.'
+  summary: 'Die Untergrenze des Bereichs für die `between` Filterbedingung. Hinweis: Eine numerische Zeichenfolge wird beim Vergleich mit anderen numerischen Zeichenfolgen als Zahl behandelt.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
   package: ExcelScript!
   fullName: substring
-  summary: Die für die Teilzeichenfolge verwendete `BeginsWith`<!-- -->, `EndsWith`<!-- -->und `Contains` Filterbedingungen.
+  summary: Die unterzeichenfolge, die für `beginsWith`<!-- -->, `endsWith`<!-- -->und `contains` Filterbedingungen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: 'Die obere Grenze des Bereichs für die zwischen Filterbedingung. Hinweis: eine numerische Zeichenfolge wird als Zahl behandelt, wenn Sie mit anderen numerischen Zeichenfolgen verglichen wird.'
+  summary: 'Die Obere Grenze des Bereichs für die `between` Filterbedingung. Hinweis: Eine numerische Zeichenfolge wird beim Vergleich mit anderen numerischen Zeichenfolgen als Zahl behandelt.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -70,9 +70,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: d030957f0b9d36c810d4e9b9016f5ec9ba5f704a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c6080eb33854c086d20c526e506de43a898f0463
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412055"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606385"

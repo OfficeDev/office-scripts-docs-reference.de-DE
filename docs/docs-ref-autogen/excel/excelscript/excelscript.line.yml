@@ -3,7 +3,7 @@ name: ExcelScript.Line
 uid: ExcelScript!ExcelScript.Line:interface
 package: ExcelScript!
 fullName: ExcelScript.Line
-summary: Stellt eine Hilfslinie innerhalb eines Arbeitsblatts dar. Verwenden Sie zum Abrufen des entsprechenden Shape-Objekts `Line.shape`<!-- -->.
+summary: Stellt eine Zeile innerhalb eines Arbeitsblatts dar. Um das entsprechende Objekt zu `Shape` erhalten, verwenden Sie `Line.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,10 +21,10 @@ methods:
     content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
     parameters:
     - id: shape
-      description: Das Shape, das verbunden werden soll.
+      description: Das Shape, das eine Verbindung herstellen soll.
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
     - id: connectionSite
-      description: Die Verbindungs Website auf dem Shape, an das der Anfang der Verbindung angefügt ist. Muss eine ganze Zahl zwischen 0 (einschließlich) und der Anzahl der Verbindungs Sites der angegebenen Form (exklusiv) sein.
+      description: Die Verbindungsstelle auf dem Shape, an das der Anfang der Verbindung angefügt ist. Muss eine ganze Zahl zwischen 0 (einschließlich) und der Anzahl der Verbindungsstandorte der angegebenen Form (exklusiv) sein.
       type: number
     return:
       type: void
@@ -41,10 +41,10 @@ methods:
     content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
     parameters:
     - id: shape
-      description: Das Shape, das verbunden werden soll.
+      description: Das Shape, das eine Verbindung herstellen soll.
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
     - id: connectionSite
-      description: Die Verbindungs Website auf dem Shape, an das das Ende der Verbindung angefügt ist. Muss eine ganze Zahl zwischen 0 (einschließlich) und der Anzahl der Verbindungs Sites der angegebenen Form (exklusiv) sein.
+      description: Die Verbindungsstelle auf dem Shape, an das das Ende der Verbindung angefügt ist. Muss eine ganze Zahl zwischen 0 (einschließlich) und der Anzahl der Verbindungsstandorte der angegebenen Form (exklusiv) sein.
       type: number
     return:
       type: void
@@ -131,7 +131,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getBeginConnectedSite:member(1)
   package: ExcelScript!
   fullName: getBeginConnectedSite()
-  summary: Stellt die Verbindungsseite dar, mit der der Anfang einer Verbindung verbunden ist. Gibt NULL zurück, wenn der Anfang der Linie nicht an eine Form angefügt ist.
+  summary: Stellt die Verbindungsseite dar, mit der der Anfang einer Verbindung verbunden ist. Gibt `null` zurück, wenn der Anfang der Linie keinem Shape zugeordnet ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -209,7 +209,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getEndConnectedSite:member(1)
   package: ExcelScript!
   fullName: getEndConnectedSite()
-  summary: Stellt die Verbindungsseite dar, mit der das Ende einer Verbindung verbunden ist. Gibt NULL zurück, wenn das Ende der Linie nicht an eine Form angefügt ist.
+  summary: Stellt die Verbindungsseite dar, mit der das Ende einer Verbindung verbunden ist. Gibt `null` zurück, wenn das Ende der Linie keinem Shape zugeordnet ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -222,7 +222,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Gibt den Shape-Bezeichner an.
+  summary: Gibt den Formbezeichner an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -235,7 +235,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getIsBeginConnected:member(1)
   package: ExcelScript!
   fullName: getIsBeginConnected()
-  summary: Gibt an, ob der Anfang der angegebenen Verbindung mit einer Form verbunden ist.
+  summary: Gibt an, ob der Anfang der angegebenen Linie mit einer Form verbunden ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -248,7 +248,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getIsEndConnected:member(1)
   package: ExcelScript!
   fullName: getIsEndConnected()
-  summary: Gibt an, ob das Ende der angegebenen Position mit einer Form verbunden ist.
+  summary: Gibt an, ob das Ende der angegebenen Linie mit einer Form verbunden ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -261,7 +261,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getShape:member(1)
   package: ExcelScript!
   fullName: getShape()
-  summary: Gibt das Formobjekt zurück, das der Linie zugeordnet ist.
+  summary: Gibt das `Shape` objekt zurück, das der Zeile zugeordnet ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -390,9 +390,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 07e52040452894f6382b0b022b9642037d8d4168
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 629957813ed37575e86ba1cf38ed57403a7d2b20
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412258"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606427"

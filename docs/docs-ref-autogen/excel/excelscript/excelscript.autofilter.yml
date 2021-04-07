@@ -3,7 +3,7 @@ name: ExcelScript.AutoFilter
 uid: ExcelScript!ExcelScript.AutoFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.AutoFilter
-summary: Stellt das AutoFilter-Objekt dar. AutoFilter wandelt die Werte in der Excel-Spalte basierend auf dem Zelleninhalt in bestimmte Filter um.
+summary: Represents the `AutoFilter` object. AutoFilter wandelt die Werte in der Spalte Excel basierend auf dem Zellinhalt in bestimmte Filter um.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Gibt das `Range` Objekt zurück, das den Bereich darstellt, auf den der `AutoFilter` angewendet wird. Wenn kein `Range` Objekt dem zugeordnet ist `AutoFilter`<!-- -->, gibt diese Methode ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
+  summary: Gibt das `Range` Objekt zurück, das den Bereich darstellt, auf den der AutoFilter angewendet wird. Wenn dem AutoFilter kein Objekt zugeordnet ist, gibt diese Methode ein Objekt zurück, dessen `Range` Eigenschaft auf festgelegt `isNullObject` ist. `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1dbc1c191f25e138a30a64923da20b27f0f1d6d8
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: a865026c221bc283e64e00b8829f0eb05148ec61
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554667"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606614"

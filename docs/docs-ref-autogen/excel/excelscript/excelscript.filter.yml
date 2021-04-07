@@ -81,7 +81,7 @@ methods:
   uid: ExcelScript!ExcelScript.Filter#applyCustomFilter:member(1)
   package: ExcelScript!
   fullName: applyCustomFilter(criteria1, criteria2, oper)
-  summary: Wendet den Filter "Icon" auf die Spalte für die angegebenen Kriterien-Zeichenfolgen an.
+  summary: Wenden Sie einen "Symbol"-Filter auf die Spalte für die angegebenen Kriterienzeichenfolgen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.Filter#applyIconFilter:member(1)
   package: ExcelScript!
   fullName: applyIconFilter(icon)
-  summary: Wendet den Filter "Icon" auf die Spalte für das angegebene Symbol an.
+  summary: Wenden Sie einen "Symbol"-Filter auf die Spalte für das angegebene Symbol an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
     content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
     parameters:
     - id: values
-      description: Die Liste der anzuzeigenden Werte. Hierbei muss es sich um ein Array von Zeichenfolgen oder ein Array von ExcelScript. FilterDateTime-Objekten handeln.
+      description: Die Liste der anzuzeigenden Werte. Dies muss ein Array von Zeichenfolgen oder ein Array von Objekten `ExcelScript.FilterDateTime` sein.
       type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
     return:
       type: void
@@ -234,9 +234,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 342de2634a064df6aaca42af8d6d475321ca9c0c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6e78989be8f08913ef4f140e12f158a4dfe02bba
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412580"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607032"

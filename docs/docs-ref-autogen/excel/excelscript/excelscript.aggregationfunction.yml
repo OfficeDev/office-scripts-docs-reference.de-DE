@@ -3,7 +3,7 @@ name: ExcelScript.AggregationFunction
 uid: ExcelScript!ExcelScript.AggregationFunction:enum
 package: ExcelScript!
 fullName: ExcelScript.AggregationFunction
-summary: Aggregationsfunktion für das Daten Pivot-Feld.
+summary: Aggregationsfunktion für dataPivotField.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,59 +11,59 @@ fields:
 - name: automatic
   uid: ExcelScript!ExcelScript.AggregationFunction.automatic:member
   package: ExcelScript!
-  summary: In Excel wird die Aggregation automatisch basierend auf den Datenelementen ausgewählt.
+  summary: Excel wählt die Aggregation automatisch basierend auf den Datenelementen aus.
 - name: average
   uid: ExcelScript!ExcelScript.AggregationFunction.average:member
   package: ExcelScript!
-  summary: Aggregat mit dem Mittelwert der Daten, äquivalent zur Average-Funktion.
+  summary: Aggregat mithilfe des Mittelwerts der Daten, entsprechend der AVERAGE-Funktion.
 - name: count
   uid: ExcelScript!ExcelScript.AggregationFunction.count:member
   package: ExcelScript!
-  summary: Aggregat mit der Anzahl der Elemente in den Daten, äquivalent zur COUNTA-Funktion.
+  summary: Aggregat mithilfe der Anzahl der Elemente in den Daten, entsprechend der COUNTA-Funktion.
 - name: countNumbers
   uid: ExcelScript!ExcelScript.AggregationFunction.countNumbers:member
   package: ExcelScript!
-  summary: Aggregat mit der Anzahl von Zahlen in den Daten, äquivalent zur Count-Funktion.
+  summary: Aggregat mithilfe der Anzahl von Zahlen in den Daten, die der COUNT-Funktion entspricht.
 - name: max
   uid: ExcelScript!ExcelScript.AggregationFunction.max:member
   package: ExcelScript!
-  summary: Aggregat mit dem Höchstwert der Daten, äquivalent zur Max-Funktion.
+  summary: Aggregat mithilfe des maximalen Werts der Daten, der der MAX-Funktion entspricht.
 - name: min
   uid: ExcelScript!ExcelScript.AggregationFunction.min:member
   package: ExcelScript!
-  summary: Aggregat mit dem Minimalwert der Daten, äquivalent zur Min-Funktion.
+  summary: Aggregat mithilfe des Minimalwerts der Daten, entsprechend der MIN-Funktion.
 - name: product
   uid: ExcelScript!ExcelScript.AggregationFunction.product:member
   package: ExcelScript!
-  summary: Aggregat mit dem Produkt der Daten, das der Produktfunktion entspricht.
+  summary: Aggregat mithilfe des Produkts der Daten, entsprechend der PRODUCT-Funktion.
 - name: standardDeviation
   uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member
   package: ExcelScript!
-  summary: Aggregat mit der Standardabweichung der Daten, die der StDev-Funktion entspricht.
+  summary: Aggregat mithilfe der Standardabweichung der Daten, die der STDEV-Funktion entspricht.
 - name: standardDeviationP
   uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member
   package: ExcelScript!
-  summary: Aggregat mit der Standardabweichung der Daten, die der StDevP-Funktion entspricht.
+  summary: Aggregat mithilfe der Standardabweichung der Daten, die der STDEVP-Funktion entspricht.
 - name: sum
   uid: ExcelScript!ExcelScript.AggregationFunction.sum:member
   package: ExcelScript!
-  summary: Aggregat mit der Summe der Daten, die der Sum-Funktion entspricht.
+  summary: Aggregat mithilfe der Summe der Daten, die der SUM-Funktion entspricht.
 - name: unknown
   uid: ExcelScript!ExcelScript.AggregationFunction.unknown:member
   package: ExcelScript!
-  summary: Aggregation-Funktion ist unbekannt oder nicht unterstützt.
+  summary: Die Aggregationsfunktion ist unbekannt oder wird nicht unterstützt.
 - name: variance
   uid: ExcelScript!ExcelScript.AggregationFunction.variance:member
   package: ExcelScript!
-  summary: Aggregat mit der Varianz der Daten, äquivalent zur Var-Funktion.
+  summary: Aggregat mithilfe der Varianz der Daten, entsprechend der VAR-Funktion.
 - name: varianceP
   uid: ExcelScript!ExcelScript.AggregationFunction.varianceP:member
   package: ExcelScript!
-  summary: Aggregat mit der Varianz der Daten, äquivalent zur Varianzen-Funktion.
+  summary: Aggregat mithilfe der Varianz der Daten, die der VARP-Funktion entspricht.
 metadata:
-  ms.openlocfilehash: fd80d4534a8db2e7a409a6b8e45e529b9bfcaddc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e7c0e255ebfdaf6446c2c8cca20171cff0fdcbcf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417370"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606696"

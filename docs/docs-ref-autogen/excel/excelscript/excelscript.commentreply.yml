@@ -3,7 +3,7 @@ name: ExcelScript.CommentReply
 uid: ExcelScript!ExcelScript.CommentReply:interface
 package: ExcelScript!
 fullName: ExcelScript.CommentReply
-summary: Stellt eine Kommentar Antwort in der Arbeitsmappe dar.
+summary: Stellt eine Kommentarantwort in der Arbeitsmappe dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getContent:member(1)
   package: ExcelScript!
   fullName: getContent()
-  summary: Der Inhalt der Kommentar Antwort. Die Zeichenfolge ist nur-Text.
+  summary: Der Inhalt der Kommentarantwort. Die Zeichenfolge ist Nur-Text.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Gibt den Kommentar Antwort Bezeichner an.
+  summary: Gibt den Kommentarantwortbezeichner an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: Ruft die Zelle ab, in der sich diese Kommentar Antwort befindet.
+  summary: Ruft die Zelle ab, in der sich diese Kommentarantwort befindet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getMentions:member(1)
   package: ExcelScript!
   fullName: getMentions()
-  summary: Die in Kommentaren erwähnten Entitäten (beispielsweise Personen).
+  summary: Die Entitäten (z. B. Personen), die in Kommentaren erwähnt werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getResolved:member(1)
   package: ExcelScript!
   fullName: getResolved()
-  summary: Der Kommentar Antwortstatus. Der Wert "true" bedeutet, dass die Antwort den Zustand "aufgelöst" aufweist.
+  summary: Der Kommentarantwortstatus. Ein Wert von `true` bedeutet, dass sich die Antwort im aufgelösten Zustand befindet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getRichContent:member(1)
   package: ExcelScript!
   fullName: getRichContent()
-  summary: Der umfangreiche Kommentar Inhalt (beispielsweise Erwähnungen in Kommentaren). Diese Zeichenfolge soll Endbenutzern nicht angezeigt werden. Das Add-in sollte nur dazu verwendet werden, um umfangreiche Kommentar Inhalte zu analysieren.
+  summary: Der umfangreiche Kommentarinhalt (z. B. Erwähnungen in Kommentaren). Diese Zeichenfolge ist nicht für Endbenutzer gedacht. Ihr Add-In sollte dies nur zum Analysieren von Rich-Comment-Inhalten verwenden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#setContent:member(1)
   package: ExcelScript!
   fullName: setContent(content)
-  summary: Der Inhalt der Kommentar Antwort. Die Zeichenfolge ist nur-Text.
+  summary: Der Inhalt der Kommentarantwort. Die Zeichenfolge ist Nur-Text.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#updateMentions:member(1)
   package: ExcelScript!
   fullName: updateMentions(contentWithMentions)
-  summary: Aktualisiert den Kommentar Inhalt mit einer speziell formatierten Zeichenfolge und einer Liste von Erwähnungen.
+  summary: Aktualisiert den Kommentarinhalt mit einer speziell formatierten Zeichenfolge und einer Liste von Erwähnungen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,15 +194,15 @@ methods:
     content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
     parameters:
     - id: contentWithMentions
-      description: Der Inhalt des Kommentars. Dies enthält eine speziell formatierte Zeichenfolge und eine Liste von Erwähnungen, die in der Zeichenfolge analysiert werden, wenn Sie von Excel angezeigt werden.
+      description: Der Inhalt des Kommentars. Dies enthält eine speziell formatierte Zeichenfolge und eine Liste von Erwähnungen, die in der Zeichenfolge analysiert werden, wenn sie von Excel angezeigt wird.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 31bdb0a4b91653fb02a9f9d3d5612bc4de4dcc97
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 979eadeede217100141cf9aa45a39fbaf0c6ab6f
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416799"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606770"

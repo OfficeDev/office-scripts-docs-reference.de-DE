@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)
   package: ExcelScript!
   fullName: getAlignment()
-  summary: Gibt die Ausrichtung für die angegebene Achsen Teilstrichbeschriftung an. Ausführliche Informationen finden Sie unter ExcelScript. ChartTextHorizontalAlignment.
+  summary: Gibt die Ausrichtung für die angegebene Achsenstrichbeschriftung an. Weitere `ExcelScript.ChartTextHorizontalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)
   package: ExcelScript!
   fullName: getAxisGroup()
-  summary: Gibt die Gruppe für die angegebene Achse an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisGroup.
+  summary: Gibt die Gruppe für die angegebene Achse an. Weitere `ExcelScript.ChartAxisGroup` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)
   package: ExcelScript!
   fullName: getCategoryType()
-  summary: Gibt den Typ der Rubrikenachse an.
+  summary: Gibt den Kategorieachsentyp an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)
   package: ExcelScript!
   fullName: getCustomDisplayUnit()
-  summary: Gibt den Wert der benutzerdefinierten Achsenanzeige Einheit an. Verwenden Sie zum Festlegen dieser Eigenschaft die SetCustomDisplayUnit(double)-Methode.
+  summary: Gibt den Wert der benutzerdefinierten Achsenanzeigeeinheit an. Verwenden Sie zum Festlegen dieser Eigenschaft die `SetCustomDisplayUnit(double)` -Methode.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)
   package: ExcelScript!
   fullName: getDisplayUnit()
-  summary: Die Anzeigeeinheit für die Achse. Weitere Informationen finden Sie unter ExcelScript. ChartAxisDisplayUnit.
+  summary: Die Anzeigeeinheit für die Achse. Weitere `ExcelScript.ChartAxisDisplayUnit` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Gibt die Höhe der Diagrammachse in Punkten an. NULL, wenn die Achse nicht sichtbar ist.
+  summary: Gibt die Höhe der Diagrammachse in Punkt an. Gibt `null` zurück, wenn die Achse nicht sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)
   package: ExcelScript!
   fullName: getIsBetweenCategories()
-  summary: Gibt an, ob die Größenachse die Rubrikenachse zwischen den Kategorien kreuzt.
+  summary: Gibt an, ob die Wertachse die Rubrikenachse zwischen Kategorien durchquert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Gibt den Abstand zwischen dem linken Rand der Achse und der linken Seite des Diagrammbereichs in Punkten an. NULL, wenn die Achse nicht sichtbar ist.
+  summary: Gibt den Abstand (in Punkt) vom linken Rand der Achse zur linken Seite des Diagrammbereichs an. Gibt `null` zurück, wenn die Achse nicht sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: getLinkNumberFormat()
-  summary: Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist. Wenn wahr, ändert sich das Zahlenformat in den Bezeichnungen, wenn es sich in den Zellen ändert.
+  summary: Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist. If `true`<!-- -->ändert sich das Zahlenformat in den Beschriftungen, wenn es sich in den Zellen ändert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)
   package: ExcelScript!
   fullName: getLogBase()
-  summary: Gibt die Basis des Logarithmus an, wenn Logarithmische Skalen verwendet werden.
+  summary: Gibt die Basis des Logarithmus an, wenn logarithmische Skalierungen verwendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)
   package: ExcelScript!
   fullName: getMajorGridlines()
-  summary: Gibt ein Gitternetzlinien-Objekt zurück, das die Hauptgitternetzlinien für die angegebene Achse darstellt.
+  summary: Gibt ein Objekt zurück, das die Hauptgitternetzlinien für die angegebene Achse darstellt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)
   package: ExcelScript!
   fullName: getMajorTickMark()
-  summary: Gibt den Typ der Haupt Teilstrich Markierung für die angegebene Achse an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisTickMark.
+  summary: Gibt den Typ des Hauptstrichs für die angegebene Achse an. Weitere `ExcelScript.ChartAxisTickMark` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: getMajorTimeUnitScale()
-  summary: Gibt den Haupt Wert der Skalen Einheit für die Rubrikenachse an, wenn die kategorietype-Eigenschaft auf Zeitskala festgelegt ist.
+  summary: Gibt den Hauptwert für die Einheitenskala für die Rubrikenachse an, wenn `categoryType` die Eigenschaft auf festgelegt ist. `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)
   package: ExcelScript!
   fullName: getMajorUnit()
-  summary: Gibt das Intervall zwischen zwei Haupt Teilstrichen an.
+  summary: Gibt das Intervall zwischen zwei Hauptstrichen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -221,7 +221,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)
   package: ExcelScript!
   fullName: getMaximum()
-  summary: Gibt den Maximalwert auf der Größenachse an.
+  summary: Gibt den maximalen Wert auf der Wertachse an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -234,7 +234,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)
   package: ExcelScript!
   fullName: getMinimum()
-  summary: Gibt den Minimalwert auf der Größenachse an.
+  summary: Gibt den Minimalwert auf der Wertachse an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)
   package: ExcelScript!
   fullName: getMinorGridlines()
-  summary: Gibt ein Gitternetzlinien-Objekt zurück, das die Hilfsgitternetzlinien für die angegebene Achse darstellt.
+  summary: Gibt ein Objekt zurück, das die Nebengitternetzlinien für die angegebene Achse darstellt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)
   package: ExcelScript!
   fullName: getMinorTickMark()
-  summary: Gibt den Typ der geringfügigen Teilstrich Markierung für die angegebene Achse an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisTickMark.
+  summary: Gibt den Typ des Nebenstrichs für die angegebene Achse an. Weitere `ExcelScript.ChartAxisTickMark` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: getMinorTimeUnitScale()
-  summary: Gibt den kleineren Einheiten Skalierungswert für die Rubrikenachse an, wenn die kategorietype-Eigenschaft auf Zeitskala festgelegt ist.
+  summary: Gibt den Untergeordneten Einheitenskalenwert für die Rubrikenachse an, wenn `categoryType` die Eigenschaft auf festgelegt ist `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)
   package: ExcelScript!
   fullName: getMinorUnit()
-  summary: Gibt das Intervall zwischen zwei neben Teilstrichen an.
+  summary: Gibt das Intervall zwischen zwei Nebenstrichen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -299,7 +299,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)
   package: ExcelScript!
   fullName: getMultiLevel()
-  summary: Gibt an, ob eine Achse mehrstufig ist.
+  summary: Gibt an, ob eine Achse mehrere Ebenen hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -312,7 +312,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Gibt den Formatcode für die Achsen Teilstrichbeschriftung an.
+  summary: Gibt den Formatcode für die Achsenstrichbeschriftung an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -325,7 +325,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)
   package: ExcelScript!
   fullName: getOffset()
-  summary: Gibt den Abstand zwischen den Beschriftungsebenen und den Abstand zwischen der ersten Ebene und der Achsenlinie an. Der Wert sollte eine ganze Zahl zwischen 0 und 1000 sein.
+  summary: Gibt den Abstand zwischen den Beschriftungsebenen und dem Abstand zwischen der ersten Ebene und der Achsenlinie an. Der Wert sollte eine ganze Zahl zwischen 0 und 1000 sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -338,7 +338,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Gibt die angegebene Achsenposition an, an der sich die andere Achse kreuzt. Weitere Informationen finden Sie unter ExcelScript. ChartAxisPosition.
+  summary: Gibt die angegebene Achsenposition an, an der sich die andere Achse kreuzt. Weitere `ExcelScript.ChartAxisPosition` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -351,7 +351,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)
   package: ExcelScript!
   fullName: getPositionAt()
-  summary: Gibt die angegebene Achsenposition an, an der sich die andere Achse kreuzt. Sie sollten die SetPositionAt(double)-Methode verwenden, um diese Eigenschaft festzulegen.
+  summary: Gibt die Achsenposition an, an der sich die andere Achse kreuzt. Sie sollten die `SetPositionAt(double)` -Methode verwenden, um diese Eigenschaft zu festlegen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -364,7 +364,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)
   package: ExcelScript!
   fullName: getReversePlotOrder()
-  summary: Gibt an, ob Excel Datenpunkte vom letzten bis zum ersten Diagramm zeichnet.
+  summary: Gibt an, ob Excel Datenpunkte vom letzten zum ersten Diagramm zeichnet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -377,7 +377,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)
   package: ExcelScript!
   fullName: getScaleType()
-  summary: Gibt den Skalierungs der Größenachse an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisScaleType.
+  summary: Gibt den Skalierungstyp der Wertachse an. Weitere `ExcelScript.ChartAxisScaleType` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -390,7 +390,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)
   package: ExcelScript!
   fullName: getShowDisplayUnitLabel()
-  summary: Gibt an, ob die Achsenanzeige Einheitenbezeichnung sichtbar ist.
+  summary: Gibt an, ob die Beschriftung der Achsenanzeigeeinheit sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -403,7 +403,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Gibt den Winkel an, an dem der Text für die Teilstrichbeschriftung der Diagrammachse ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von-90 bis 90 oder die ganze Zahl 180 für vertikal orientierten Text sein.
+  summary: Gibt den Winkel an, an dem der Text für die Teilstrichbeschriftung der Diagrammachse ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von -90 bis 90 oder die ganze Zahl 180 für vertikal ausgerichteten Text sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -416,7 +416,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)
   package: ExcelScript!
   fullName: getTickLabelPosition()
-  summary: Gibt die Position der Teilstrichbeschriftungen der angegebenen Achse an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisTickLabelPosition.
+  summary: Gibt die Position der Teilstrichbeschriftungen der angegebenen Achse an. Weitere `ExcelScript.ChartAxisTickLabelPosition` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -429,7 +429,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)
   package: ExcelScript!
   fullName: getTickLabelSpacing()
-  summary: Gibt die Anzahl von Kategorien oder Datenreihen zwischen Teilstrichbeschriftungen an. Kann ein Wert zwischen 1 und 31999 sein.
+  summary: Gibt die Anzahl der Kategorien oder Datenreihen zwischen Teilstrichbeschriftungen an. Kann ein Wert zwischen 1 und 31999 sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -442,7 +442,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)
   package: ExcelScript!
   fullName: getTickMarkSpacing()
-  summary: Gibt die Anzahl von Kategorien oder Datenreihen zwischen Teilstrichen an.
+  summary: Gibt die Anzahl der Kategorien oder Datenreihen zwischen Teilstrichen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -468,7 +468,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Gibt den Abstand zwischen dem oberen Rand der Achse und dem oberen Rand des Diagrammbereichs in Punkten an. NULL, wenn die Achse nicht sichtbar ist.
+  summary: Gibt den Abstand (in Punkt) vom oberen Rand der Achse zum oberen Rand des Diagrammbereichs an. Gibt `null` zurück, wenn die Achse nicht sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -481,7 +481,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Gibt den Achsentyp an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisType.
+  summary: Gibt den Achsentyp an. Weitere `ExcelScript.ChartAxisType` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -507,7 +507,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Gibt die Breite der Diagrammachse in Punkten an. NULL, wenn die Achse nicht sichtbar ist.
+  summary: Gibt die Breite der Diagrammachse in Punkt an. Gibt `null` zurück, wenn die Achse nicht sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -520,7 +520,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)
   package: ExcelScript!
   fullName: setAlignment(alignment)
-  summary: Gibt die Ausrichtung für die angegebene Achsen Teilstrichbeschriftung an. Ausführliche Informationen finden Sie unter ExcelScript. ChartTextHorizontalAlignment.
+  summary: Gibt die Ausrichtung für die angegebene Achsenstrichbeschriftung an. Weitere `ExcelScript.ChartTextHorizontalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -562,7 +562,7 @@ methods:
     content: 'setCategoryNames(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: Das den Quelldaten entsprechende Range-Objekt.
+      description: Das `Range` Objekt, das den Quelldaten entspricht.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -571,7 +571,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)
   package: ExcelScript!
   fullName: setCategoryType(categoryType)
-  summary: Gibt den Typ der Rubrikenachse an.
+  summary: Gibt den Kategorieachsentyp an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -605,7 +605,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)
   package: ExcelScript!
   fullName: setDisplayUnit(displayUnit)
-  summary: Die Anzeigeeinheit für die Achse. Weitere Informationen finden Sie unter ExcelScript. ChartAxisDisplayUnit.
+  summary: Die Anzeigeeinheit für die Achse. Weitere `ExcelScript.ChartAxisDisplayUnit` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -622,7 +622,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)
   package: ExcelScript!
   fullName: setIsBetweenCategories(isBetweenCategories)
-  summary: Gibt an, ob die Größenachse die Rubrikenachse zwischen den Kategorien kreuzt.
+  summary: Gibt an, ob die Wertachse die Rubrikenachse zwischen Kategorien durchquert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -639,7 +639,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist. Wenn wahr, ändert sich das Zahlenformat in den Bezeichnungen, wenn es sich in den Zellen ändert.
+  summary: Gibt an, ob das Zahlenformat mit den Zellen verknüpft ist. If `true`<!-- -->ändert sich das Zahlenformat in den Beschriftungen, wenn es sich in den Zellen ändert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -656,7 +656,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)
   package: ExcelScript!
   fullName: setLogBase(logBase)
-  summary: Gibt die Basis des Logarithmus an, wenn Logarithmische Skalen verwendet werden.
+  summary: Gibt die Basis des Logarithmus an, wenn logarithmische Skalierungen verwendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -673,7 +673,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)
   package: ExcelScript!
   fullName: setMajorTickMark(majorTickMark)
-  summary: Gibt den Typ der Haupt Teilstrich Markierung für die angegebene Achse an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisTickMark.
+  summary: Gibt den Typ des Hauptstrichs für die angegebene Achse an. Weitere `ExcelScript.ChartAxisTickMark` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -690,7 +690,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: setMajorTimeUnitScale(majorTimeUnitScale)
-  summary: Gibt den Haupt Wert der Skalen Einheit für die Rubrikenachse an, wenn die kategorietype-Eigenschaft auf Zeitskala festgelegt ist.
+  summary: Gibt den Hauptwert für die Einheitenskala für die Rubrikenachse an, wenn `categoryType` die Eigenschaft auf festgelegt ist. `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -707,7 +707,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)
   package: ExcelScript!
   fullName: setMajorUnit(majorUnit)
-  summary: Gibt das Intervall zwischen zwei Haupt Teilstrichen an.
+  summary: Gibt das Intervall zwischen zwei Hauptstrichen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -724,7 +724,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)
   package: ExcelScript!
   fullName: setMaximum(maximum)
-  summary: Gibt den Maximalwert auf der Größenachse an.
+  summary: Gibt den maximalen Wert auf der Wertachse an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -741,7 +741,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)
   package: ExcelScript!
   fullName: setMinimum(minimum)
-  summary: Gibt den Minimalwert auf der Größenachse an.
+  summary: Gibt den Minimalwert auf der Wertachse an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -758,7 +758,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)
   package: ExcelScript!
   fullName: setMinorTickMark(minorTickMark)
-  summary: Gibt den Typ der geringfügigen Teilstrich Markierung für die angegebene Achse an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisTickMark.
+  summary: Gibt den Typ des Nebenstrichs für die angegebene Achse an. Weitere `ExcelScript.ChartAxisTickMark` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -775,7 +775,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: setMinorTimeUnitScale(minorTimeUnitScale)
-  summary: Gibt den kleineren Einheiten Skalierungswert für die Rubrikenachse an, wenn die kategorietype-Eigenschaft auf Zeitskala festgelegt ist.
+  summary: Gibt den Untergeordneten Einheitenskalenwert für die Rubrikenachse an, wenn `categoryType` die Eigenschaft auf festgelegt ist `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -792,7 +792,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)
   package: ExcelScript!
   fullName: setMinorUnit(minorUnit)
-  summary: Gibt das Intervall zwischen zwei neben Teilstrichen an.
+  summary: Gibt das Intervall zwischen zwei Nebenstrichen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -809,7 +809,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)
   package: ExcelScript!
   fullName: setMultiLevel(multiLevel)
-  summary: Gibt an, ob eine Achse mehrstufig ist.
+  summary: Gibt an, ob eine Achse mehrere Ebenen hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -826,7 +826,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Gibt den Formatcode für die Achsen Teilstrichbeschriftung an.
+  summary: Gibt den Formatcode für die Achsenstrichbeschriftung an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -843,7 +843,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)
   package: ExcelScript!
   fullName: setOffset(offset)
-  summary: Gibt den Abstand zwischen den Beschriftungsebenen und den Abstand zwischen der ersten Ebene und der Achsenlinie an. Der Wert sollte eine ganze Zahl zwischen 0 und 1000 sein.
+  summary: Gibt den Abstand zwischen den Beschriftungsebenen und dem Abstand zwischen der ersten Ebene und der Achsenlinie an. Der Wert sollte eine ganze Zahl zwischen 0 und 1000 sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -860,7 +860,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Gibt die angegebene Achsenposition an, an der sich die andere Achse kreuzt. Weitere Informationen finden Sie unter ExcelScript. ChartAxisPosition.
+  summary: Gibt die angegebene Achsenposition an, an der sich die andere Achse kreuzt. Weitere `ExcelScript.ChartAxisPosition` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -885,7 +885,7 @@ methods:
     content: 'setPositionAt(value: number): void;'
     parameters:
     - id: value
-      description: Benutzerdefinierter Wert der Kreuzungen bei
+      description: Benutzerdefinierter Wert des Übergangspunkts.
       type: number
     return:
       type: void
@@ -894,7 +894,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)
   package: ExcelScript!
   fullName: setReversePlotOrder(reversePlotOrder)
-  summary: Gibt an, ob Excel Datenpunkte vom letzten bis zum ersten Diagramm zeichnet.
+  summary: Gibt an, ob Excel Datenpunkte vom letzten zum ersten Diagramm zeichnet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -911,7 +911,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)
   package: ExcelScript!
   fullName: setScaleType(scaleType)
-  summary: Gibt den Skalierungs der Größenachse an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisScaleType.
+  summary: Gibt den Skalierungstyp der Wertachse an. Weitere `ExcelScript.ChartAxisScaleType` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -928,7 +928,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)
   package: ExcelScript!
   fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
-  summary: Gibt an, ob die Achsenanzeige Einheitenbezeichnung sichtbar ist.
+  summary: Gibt an, ob die Beschriftung der Achsenanzeigeeinheit sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -945,7 +945,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Gibt den Winkel an, an dem der Text für die Teilstrichbeschriftung der Diagrammachse ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von-90 bis 90 oder die ganze Zahl 180 für vertikal orientierten Text sein.
+  summary: Gibt den Winkel an, an dem der Text für die Teilstrichbeschriftung der Diagrammachse ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von -90 bis 90 oder die ganze Zahl 180 für vertikal ausgerichteten Text sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -962,7 +962,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)
   package: ExcelScript!
   fullName: setTickLabelPosition(tickLabelPosition)
-  summary: Gibt die Position der Teilstrichbeschriftungen der angegebenen Achse an. Weitere Informationen finden Sie unter ExcelScript. ChartAxisTickLabelPosition.
+  summary: Gibt die Position der Teilstrichbeschriftungen der angegebenen Achse an. Weitere `ExcelScript.ChartAxisTickLabelPosition` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -982,7 +982,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)
   package: ExcelScript!
   fullName: setTickLabelSpacing(tickLabelSpacing)
-  summary: Gibt die Anzahl von Kategorien oder Datenreihen zwischen Teilstrichbeschriftungen an. Kann ein Wert zwischen 1 und 31999 sein.
+  summary: Gibt die Anzahl der Kategorien oder Datenreihen zwischen Teilstrichbeschriftungen an. Kann ein Wert zwischen 1 und 31999 sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -999,7 +999,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)
   package: ExcelScript!
   fullName: setTickMarkSpacing(tickMarkSpacing)
-  summary: Gibt die Anzahl von Kategorien oder Datenreihen zwischen Teilstrichen an.
+  summary: Gibt die Anzahl der Kategorien oder Datenreihen zwischen Teilstrichen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1030,9 +1030,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a8c050c98e73332c5362ffa16f3b35306b331810
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 758f8cb951ab73f11cc4c5aa49a03ffb1a7dd2eb
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417100"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606941"

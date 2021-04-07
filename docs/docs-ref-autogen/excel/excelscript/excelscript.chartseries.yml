@@ -21,7 +21,7 @@ methods:
     content: 'addChartTrendline(type?: ChartTrendlineType): ChartTrendline;'
     parameters:
     - id: type
-      description: Gibt den Typ der Trendlinie an. Der Standardwert ist "Linear". Weitere Informationen finden Sie unter ExcelScript. ChartTrendline.
+      description: Gibt den Trendlinientyp an. Der Standardwert ist "Linear". Weitere `ExcelScript.ChartTrendline` Informationen finden Sie unter.
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendlineType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendline:interface" />
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getChartTrendline:member(1)
   package: ExcelScript!
   fullName: getChartTrendline(index)
-  summary: Ruft das Trendlinien-Objekt anhand des Index ab, der die Einfügereihenfolge im Elementarray darstellt.
+  summary: Ruft ein Trendlinienobjekt nach Index ab, bei dem es sich um die Einfügereihenfolge im Items-Array handelt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -103,7 +103,7 @@ methods:
     content: 'getChartTrendline(index: number): ChartTrendline;'
     parameters:
     - id: index
-      description: Stellt die einfügungsreihenfolge in items-Array dar.
+      description: Stellt die Einfügereihenfolge im Items-Array dar.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendline:interface" />
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getChartType:member(1)
   package: ExcelScript!
   fullName: getChartType()
-  summary: Stellt den Diagrammtyp einer Reihe dar. Weitere Informationen finden Sie unter ExcelScript. ChartType.
+  summary: Stellt den Diagrammtyp einer Reihe dar. Weitere `ExcelScript.ChartType` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDataLabels:member(1)
   package: ExcelScript!
   fullName: getDataLabels()
-  summary: Eine Sammlung aller dataLabels-Objekte in der Datenreihe.
+  summary: Stellt eine Auflistung aller Datenbeschriftungen in der Datenreihe dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDimensionValues:member(1)
   package: ExcelScript!
   fullName: getDimensionValues(dimension)
-  summary: Ruft die Werte aus einer einzelnen Dimension der Diagrammdatenreihe ab. Dabei kann es sich entweder um Kategorien Werte oder Datenwerte handeln, je nachdem, welche Dimension angegeben wurde und wie die Daten für die Diagrammreihe zugeordnet werden.
+  summary: Ruft die Werte aus einer einzelnen Dimension der Diagrammreihe ab. Dies kann entweder Kategoriewerte oder Datenwerte sein, je nachdem, welche Dimension angegeben ist und wie die Daten für die Diagrammreihe zugeordnet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -146,7 +146,7 @@ methods:
     content: 'getDimensionValues(dimension: ChartSeriesDimension): string[];'
     parameters:
     - id: dimension
-      description: die Dimension der Achse, in der die Daten aus
+      description: Die Dimension der Achse, von der die Daten sind.
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesDimension:enum" />
     return:
       type: string[]
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDoughnutHoleSize:member(1)
   package: ExcelScript!
   fullName: getDoughnutHoleSize()
-  summary: Stellt die Innenringgröße einer Diagrammreihe dar. Gilt nur für Ring- und DoughnutExploded-Diagramme. Löst eine ungültige Argumentausnahme für ungültige Diagramme aus.
+  summary: Stellt die Innenringgröße einer Diagrammreihe dar. Nur gültig für explodierte Ring- und Ringdiagramme. Gibt einen Fehler `InvalidArgument` für ungültige Diagramme aus.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getExplosion:member(1)
   package: ExcelScript!
   fullName: getExplosion()
-  summary: Gibt den Explosions Wert für ein Kreisdiagramm oder ein Ringdiagramm Segment an. Gibt 0 (null) zurück, wenn keine Explosion vorliegt (die Spitze des Segments befindet sich in der Mitte des Kreisdiagramms).
+  summary: Gibt den Explosionswert für ein Kreis- oder Ringdiagrammsegment an. Gibt 0 (null) zurück, wenn keine Explosion vorliegt (die Spitze des Segments befindet sich in der Mitte des Kreisdiagramms).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getFirstSliceAngle:member(1)
   package: ExcelScript!
   fullName: getFirstSliceAngle()
-  summary: Gibt den Winkel des ersten Kreisdiagramms oder Ringdiagramm Segments in Grad (im Uhrzeigersinn von vertikal) an. Gilt nur für Kreis-, 3D-Kreis- und Ringdiagramme. Dies kann ein Wert von 0 bis 360 sein.
+  summary: Gibt den Winkel des ersten Kreis- oder Ringdiagrammschnitts in Grad (im Uhrzeigersinn von vertikal) an. Gilt nur für Kreis-, 3D-Kreis- und Ringdiagramme. Dies kann ein Wert von 0 bis 360 sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -220,7 +220,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGapWidth:member(1)
   package: ExcelScript!
   fullName: getGapWidth()
-  summary: Stellt die Abstandsbreite einer Diagrammreihe dar. Gilt nur für Balken-und Säulendiagramme, aber auch für bestimmte Klassen von Zeile-und Kreisdiagrammen. Löst eine ungültige Argumentausnahme für ungültige Diagramme aus.
+  summary: Stellt die Abstandsbreite einer Diagrammreihe dar. Nur gültig für Balken- und Spaltendiagramme sowie bestimmte Klassen von Linien- und Kreisdiagrammen. Gibt eine ungültige Argumentausnahme für ungültige Diagramme aus.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -233,7 +233,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumColor:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumColor()
-  summary: Gibt die Farbe für den maximalen Wert einer Region Map-Diagrammreihe an.
+  summary: Gibt die Farbe für den maximal zulässigen Wert einer Diagrammreihe einer Region an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -246,7 +246,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumType:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumType()
-  summary: Gibt den Typ für den maximalen Wert einer Region Map-Diagrammreihe an.
+  summary: Gibt den Typ für den maximal zulässigen Wert einer Diagrammreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMaximumValue:member(1)
   package: ExcelScript!
   fullName: getGradientMaximumValue()
-  summary: Gibt den Maximalwert einer Diagrammreihe für eine Regionskarte an.
+  summary: Gibt den maximal zulässigen Wert einer Diagrammreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -272,7 +272,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointColor:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointColor()
-  summary: Gibt die Farbe des Mittelpunkt Werts einer Regionskarten-Diagrammreihe an.
+  summary: Gibt die Farbe für den Mittelpunktwert einer Diagrammreihe für Regionenkarten an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -285,7 +285,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointType:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointType()
-  summary: Gibt den Typ des Mittelpunkt Werts einer Regionskarten-Diagrammreihe an.
+  summary: Gibt den Typ für den Mittelpunktwert einer Kartenreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -298,7 +298,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMidpointValue:member(1)
   package: ExcelScript!
   fullName: getGradientMidpointValue()
-  summary: Gibt den Wert des Mittelpunkts einer Regionskarten-Diagrammreihe an.
+  summary: Gibt den Mittelpunktwert einer Diagrammreihe für Regionenkarten an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -311,7 +311,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumColor:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumColor()
-  summary: Gibt die Farbe für den Minimalwert einer Regionskarten-Diagrammreihe an.
+  summary: Gibt die Farbe für den Minimalwert einer Kartenreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -324,7 +324,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumType:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumType()
-  summary: Gibt den Typ für den Minimalwert einer Regions-Map-Diagrammreihe an.
+  summary: Gibt den Typ für den Minimalwert einer Kartenreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -337,7 +337,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientMinimumValue:member(1)
   package: ExcelScript!
   fullName: getGradientMinimumValue()
-  summary: Gibt den Minimalwert einer Diagrammreihe für eine Regionskarte an.
+  summary: Gibt den Minimalwert einer Diagrammreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -350,7 +350,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGradientStyle:member(1)
   package: ExcelScript!
   fullName: getGradientStyle()
-  summary: Gibt die Art des Datenreihen Verlaufs eines Bereichs Karten Diagramms an.
+  summary: Gibt die Farbverlaufsart der Datenreihe eines Regionendiagramms an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -376,7 +376,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getInvertColor:member(1)
   package: ExcelScript!
   fullName: getInvertColor()
-  summary: Gibt die Füllungsfarbe für negative Datenpunkte in einer Datenreihe an.
+  summary: Gibt die Füllfarbe für negative Datenpunkte in einer Datenreihe an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -389,7 +389,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getInvertIfNegative:member(1)
   package: ExcelScript!
   fullName: getInvertIfNegative()
-  summary: True, wenn Excel das Muster im Element invertiert, wenn es eine negative Zahl entspricht.
+  summary: True, wenn Excel das Muster im Element invertiert, wenn es einer negativen Zahl entspricht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -454,7 +454,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerStyle:member(1)
   package: ExcelScript!
   fullName: getMarkerStyle()
-  summary: Gibt das Markierungs Format einer Diagrammreihe an. Weitere Informationen finden Sie unter ExcelScript. ChartMarkerStyle.
+  summary: Gibt die Markierungsart einer Diagrammreihe an. Weitere `ExcelScript.ChartMarkerStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -467,7 +467,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Gibt den Namen einer Datenreihe in einem Diagramm an. Die Länge des Namens sollte nicht größer als 255 Zeichen sein.
+  summary: Gibt den Namen einer Datenreihe in einem Diagramm an. Die Länge des Namens darf nicht größer als 255 Zeichen sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -480,7 +480,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getOverlap:member(1)
   package: ExcelScript!
   fullName: getOverlap()
-  summary: Gibt an, wie Balken und Spalten angeordnet sind. Kann ein Wert zwischen-100 und 100 sein. Gilt nur für 2D-Balken- und 2D-Säulendiagramme.
+  summary: Gibt an, wie Balken und Spalten angeordnet sind. Kann ein Wert zwischen –100 und 100 sein. Gilt nur für 2D-Balken- und 2D-Säulendiagramme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -493,7 +493,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getParentLabelStrategy:member(1)
   package: ExcelScript!
   fullName: getParentLabelStrategy()
-  summary: Gibt den Bereich der übergeordneten Beschriftungs Reihe für ein TreeMap-Diagramm an.
+  summary: Gibt den Strategiebereich der übergeordneten Beschriftung der Datenreihe für ein Strukturkartendiagramm an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -506,7 +506,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getPlotOrder:member(1)
   package: ExcelScript!
   fullName: getPlotOrder()
-  summary: Gibt die Zeichnungsreihenfolge einer Diagrammreihe in der Diagrammgruppe an.
+  summary: Gibt die Zeichnungsreihenfolge einer Diagrammreihe innerhalb der Diagrammgruppe an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -545,7 +545,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowConnectorLines:member(1)
   package: ExcelScript!
   fullName: getShowConnectorLines()
-  summary: Gibt an, ob Verbindungslinien in Wasserfall Diagrammen angezeigt werden.
+  summary: Gibt an, ob Verbindungslinien in Wasserfalldiagrammen angezeigt werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -558,7 +558,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowLeaderLines:member(1)
   package: ExcelScript!
   fullName: getShowLeaderLines()
-  summary: Gibt an, ob für jede Datenbeschriftung in der Datenreihe Führungslinien angezeigt werden.
+  summary: Gibt an, ob Führungslinien für jede Datenbeschriftung in der Datenreihe angezeigt werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -584,7 +584,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSmooth:member(1)
   package: ExcelScript!
   fullName: getSmooth()
-  summary: Gibt an, ob die Datenreihe glatt ist. Gilt nur für einzeilige und Punktdiagramme.
+  summary: Gibt an, ob die Datenreihe reibungslos ist. Gilt nur für Linien- und Punktdiagramme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -623,7 +623,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getTrendlines:member(1)
   package: ExcelScript!
   fullName: getTrendlines()
-  summary: Die Sammlung von Trendlinien in der Datenreihe.
+  summary: Die Auflistung der Trendlinien in der Datenreihe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -636,7 +636,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getVaryByCategories:member(1)
   package: ExcelScript!
   fullName: getVaryByCategories()
-  summary: True, wenn Excel jeder Datenpunktmarkierung eine andere Farbe oder ein Muster zuweist. Das Diagramm darf nur eine Datenreihe enthalten.
+  summary: True, wenn Excel jedem Datenmarker eine andere Farbe oder ein anderes Muster zurent. Das Diagramm darf nur eine Datenreihe enthalten.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -717,7 +717,7 @@ methods:
     content: 'setBubbleSizes(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: Das den Quelldaten entsprechende Range-Objekt.
+      description: Das `Range` Objekt, das den Quelldaten entspricht.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -726,7 +726,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setChartType:member(1)
   package: ExcelScript!
   fullName: setChartType(chartType)
-  summary: Stellt den Diagrammtyp einer Reihe dar. Weitere Informationen finden Sie unter ExcelScript. ChartType.
+  summary: Stellt den Diagrammtyp einer Reihe dar. Weitere `ExcelScript.ChartType` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -743,7 +743,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setDoughnutHoleSize:member(1)
   package: ExcelScript!
   fullName: setDoughnutHoleSize(doughnutHoleSize)
-  summary: Stellt die Innenringgröße einer Diagrammreihe dar. Gilt nur für Ring- und DoughnutExploded-Diagramme. Löst eine ungültige Argumentausnahme für ungültige Diagramme aus.
+  summary: Stellt die Innenringgröße einer Diagrammreihe dar. Nur gültig für explodierte Ring- und Ringdiagramme. Gibt einen Fehler `InvalidArgument` für ungültige Diagramme aus.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -760,7 +760,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setExplosion:member(1)
   package: ExcelScript!
   fullName: setExplosion(explosion)
-  summary: Gibt den Explosions Wert für ein Kreisdiagramm oder ein Ringdiagramm Segment an. Gibt 0 (null) zurück, wenn keine Explosion vorliegt (die Spitze des Segments befindet sich in der Mitte des Kreisdiagramms).
+  summary: Gibt den Explosionswert für ein Kreis- oder Ringdiagrammsegment an. Gibt 0 (null) zurück, wenn keine Explosion vorliegt (die Spitze des Segments befindet sich in der Mitte des Kreisdiagramms).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -794,7 +794,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setFirstSliceAngle:member(1)
   package: ExcelScript!
   fullName: setFirstSliceAngle(firstSliceAngle)
-  summary: Gibt den Winkel des ersten Kreisdiagramms oder Ringdiagramm Segments in Grad (im Uhrzeigersinn von vertikal) an. Gilt nur für Kreis-, 3D-Kreis- und Ringdiagramme. Dies kann ein Wert von 0 bis 360 sein.
+  summary: Gibt den Winkel des ersten Kreis- oder Ringdiagrammschnitts in Grad (im Uhrzeigersinn von vertikal) an. Gilt nur für Kreis-, 3D-Kreis- und Ringdiagramme. Dies kann ein Wert von 0 bis 360 sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -811,7 +811,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGapWidth:member(1)
   package: ExcelScript!
   fullName: setGapWidth(gapWidth)
-  summary: Stellt die Abstandsbreite einer Diagrammreihe dar. Gilt nur für Balken-und Säulendiagramme, aber auch für bestimmte Klassen von Zeile-und Kreisdiagrammen. Löst eine ungültige Argumentausnahme für ungültige Diagramme aus.
+  summary: Stellt die Abstandsbreite einer Diagrammreihe dar. Nur gültig für Balken- und Spaltendiagramme sowie bestimmte Klassen von Linien- und Kreisdiagrammen. Gibt eine ungültige Argumentausnahme für ungültige Diagramme aus.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -828,7 +828,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumColor:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumColor(gradientMaximumColor)
-  summary: Gibt die Farbe für den maximalen Wert einer Region Map-Diagrammreihe an.
+  summary: Gibt die Farbe für den maximal zulässigen Wert einer Diagrammreihe einer Region an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumType:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumType(gradientMaximumType)
-  summary: Gibt den Typ für den maximalen Wert einer Region Map-Diagrammreihe an.
+  summary: Gibt den Typ für den maximal zulässigen Wert einer Diagrammreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -865,7 +865,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMaximumValue:member(1)
   package: ExcelScript!
   fullName: setGradientMaximumValue(gradientMaximumValue)
-  summary: Gibt den Maximalwert einer Diagrammreihe für eine Regionskarte an.
+  summary: Gibt den maximal zulässigen Wert einer Diagrammreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -882,7 +882,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointColor:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointColor(gradientMidpointColor)
-  summary: Gibt die Farbe des Mittelpunkt Werts einer Regionskarten-Diagrammreihe an.
+  summary: Gibt die Farbe für den Mittelpunktwert einer Diagrammreihe für Regionenkarten an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -899,7 +899,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointType:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointType(gradientMidpointType)
-  summary: Gibt den Typ des Mittelpunkt Werts einer Regionskarten-Diagrammreihe an.
+  summary: Gibt den Typ für den Mittelpunktwert einer Kartenreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -919,7 +919,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMidpointValue:member(1)
   package: ExcelScript!
   fullName: setGradientMidpointValue(gradientMidpointValue)
-  summary: Gibt den Wert des Mittelpunkts einer Regionskarten-Diagrammreihe an.
+  summary: Gibt den Mittelpunktwert einer Diagrammreihe für Regionenkarten an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -936,7 +936,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumColor:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumColor(gradientMinimumColor)
-  summary: Gibt die Farbe für den Minimalwert einer Regionskarten-Diagrammreihe an.
+  summary: Gibt die Farbe für den Minimalwert einer Kartenreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -953,7 +953,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumType:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumType(gradientMinimumType)
-  summary: Gibt den Typ für den Minimalwert einer Regions-Map-Diagrammreihe an.
+  summary: Gibt den Typ für den Minimalwert einer Kartenreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -973,7 +973,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientMinimumValue:member(1)
   package: ExcelScript!
   fullName: setGradientMinimumValue(gradientMinimumValue)
-  summary: Gibt den Minimalwert einer Diagrammreihe für eine Regionskarte an.
+  summary: Gibt den Minimalwert einer Diagrammreihe für Regionen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -990,7 +990,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGradientStyle:member(1)
   package: ExcelScript!
   fullName: setGradientStyle(gradientStyle)
-  summary: Gibt die Art des Datenreihen Verlaufs eines Bereichs Karten Diagramms an.
+  summary: Gibt die Farbverlaufsart der Datenreihe eines Regionendiagramms an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1024,7 +1024,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setInvertColor:member(1)
   package: ExcelScript!
   fullName: setInvertColor(invertColor)
-  summary: Gibt die Füllungsfarbe für negative Datenpunkte in einer Datenreihe an.
+  summary: Gibt die Füllfarbe für negative Datenpunkte in einer Datenreihe an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1041,7 +1041,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setInvertIfNegative:member(1)
   package: ExcelScript!
   fullName: setInvertIfNegative(invertIfNegative)
-  summary: True, wenn Excel das Muster im Element invertiert, wenn es eine negative Zahl entspricht.
+  summary: True, wenn Excel das Muster im Element invertiert, wenn es einer negativen Zahl entspricht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1109,7 +1109,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerStyle:member(1)
   package: ExcelScript!
   fullName: setMarkerStyle(markerStyle)
-  summary: Gibt das Markierungs Format einer Diagrammreihe an. Weitere Informationen finden Sie unter ExcelScript. ChartMarkerStyle.
+  summary: Gibt die Markierungsart einer Diagrammreihe an. Weitere `ExcelScript.ChartMarkerStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1126,7 +1126,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Gibt den Namen einer Datenreihe in einem Diagramm an. Die Länge des Namens sollte nicht größer als 255 Zeichen sein.
+  summary: Gibt den Namen einer Datenreihe in einem Diagramm an. Die Länge des Namens darf nicht größer als 255 Zeichen sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1143,7 +1143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setOverlap:member(1)
   package: ExcelScript!
   fullName: setOverlap(overlap)
-  summary: Gibt an, wie Balken und Spalten angeordnet sind. Kann ein Wert zwischen-100 und 100 sein. Gilt nur für 2D-Balken- und 2D-Säulendiagramme.
+  summary: Gibt an, wie Balken und Spalten angeordnet sind. Kann ein Wert zwischen –100 und 100 sein. Gilt nur für 2D-Balken- und 2D-Säulendiagramme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1160,7 +1160,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setParentLabelStrategy:member(1)
   package: ExcelScript!
   fullName: setParentLabelStrategy(parentLabelStrategy)
-  summary: Gibt den Bereich der übergeordneten Beschriftungs Reihe für ein TreeMap-Diagramm an.
+  summary: Gibt den Strategiebereich der übergeordneten Beschriftung der Datenreihe für ein Strukturkartendiagramm an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1180,7 +1180,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setPlotOrder:member(1)
   package: ExcelScript!
   fullName: setPlotOrder(plotOrder)
-  summary: Gibt die Zeichnungsreihenfolge einer Diagrammreihe in der Diagrammgruppe an.
+  summary: Gibt die Zeichnungsreihenfolge einer Diagrammreihe innerhalb der Diagrammgruppe an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1214,7 +1214,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowConnectorLines:member(1)
   package: ExcelScript!
   fullName: setShowConnectorLines(showConnectorLines)
-  summary: Gibt an, ob Verbindungslinien in Wasserfall Diagrammen angezeigt werden.
+  summary: Gibt an, ob Verbindungslinien in Wasserfalldiagrammen angezeigt werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1231,7 +1231,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowLeaderLines:member(1)
   package: ExcelScript!
   fullName: setShowLeaderLines(showLeaderLines)
-  summary: Gibt an, ob für jede Datenbeschriftung in der Datenreihe Führungslinien angezeigt werden.
+  summary: Gibt an, ob Führungslinien für jede Datenbeschriftung in der Datenreihe angezeigt werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1265,7 +1265,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSmooth:member(1)
   package: ExcelScript!
   fullName: setSmooth(smooth)
-  summary: Gibt an, ob die Datenreihe glatt ist. Gilt nur für einzeilige und Punktdiagramme.
+  summary: Gibt an, ob die Datenreihe reibungslos ist. Gilt nur für Linien- und Punktdiagramme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1316,7 +1316,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(sourceData)
-  summary: Legt die Werte für eine Diagrammreihe fest. Für Punktdiagramme sind dies die Y-Achsen-Werte.
+  summary: Legt die Werte für eine Diagrammreihe fest. Bei Punktdiagrammen bezieht er sich auf y-Achsen-Werte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1324,7 +1324,7 @@ methods:
     content: 'setValues(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: Das den Quelldaten entsprechende Range-Objekt.
+      description: Das `Range` Objekt, das den Quelldaten entspricht.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -1333,7 +1333,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setVaryByCategories:member(1)
   package: ExcelScript!
   fullName: setVaryByCategories(varyByCategories)
-  summary: True, wenn Excel jeder Datenpunktmarkierung eine andere Farbe oder ein Muster zuweist. Das Diagramm darf nur eine Datenreihe enthalten.
+  summary: True, wenn Excel jedem Datenmarker eine andere Farbe oder ein anderes Muster zurent. Das Diagramm darf nur eine Datenreihe enthalten.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1358,15 +1358,15 @@ methods:
     content: 'setXAxisValues(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: Das den Quelldaten entsprechende Range-Objekt.
+      description: Das `Range` Objekt, das den Quelldaten entspricht.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8b9c62141ae265c4c4435ac88caf93de77fd4d84
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 81c5a9a881511db17fcc6ac1650410ef94dc472d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419600"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606850"

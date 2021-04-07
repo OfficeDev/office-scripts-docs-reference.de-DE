@@ -3,7 +3,7 @@ name: ExcelScript.DataValidationErrorAlert
 uid: ExcelScript!ExcelScript.DataValidationErrorAlert:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidationErrorAlert
-summary: Stellt die Eigenschaften der Fehlerbenachrichtigung für die Datenüberprüfung dar.
+summary: Stellt die Fehlerwarnungseigenschaften für die Datenüberprüfung dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#message:member
   package: ExcelScript!
   fullName: message
-  summary: Steht für die Fehlermeldung.
+  summary: Stellt die Fehlermeldung dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
   package: ExcelScript!
   fullName: showAlert
-  summary: Gibt an, ob ein Fehler Warndialogfeld angezeigt wird, wenn ein Benutzer ungültige Daten eingibt. Der Standardwert ist „true“.
+  summary: Gibt an, ob ein Fehlerbenachrichtigungsdialogfeld angezeigt werden soll, wenn ein Benutzer ungültige Daten eingibt. Die Standardeinstellung ist `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
   package: ExcelScript!
   fullName: style
-  summary: Der Typ der Daten Validierungswarnung finden Sie unter ExcelScript. DataValidationAlertStyle for Details.
+  summary: Details zum Warnungstyp für die `ExcelScript.DataValidationAlertStyle` Datenüberprüfung finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#title:member
   package: ExcelScript!
   fullName: title
-  summary: Der Titel des Dialogfelds mit der Fehlermeldung.
+  summary: Represents the error alert dialog title.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 03292fc7608c01c280e7eb5e22dc9fe5bb89f659
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 64aa138911f1d67dd1bf48512168281cbacfda3b
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415547"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606523"
