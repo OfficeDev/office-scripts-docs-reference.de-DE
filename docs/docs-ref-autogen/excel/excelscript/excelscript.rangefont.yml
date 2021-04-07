@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: Stellt den Fett-Status der Schriftart dar.
+  summary: Stellt den fett formatierten Status der Schriftart dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: HTML-Farb Codedarstellung der Textfarbe (beispielsweise \# FF0000 stellt rot dar).
+  summary: HTML-Farbcodedarstellung der Textfarbe (z. B. \# FF0000 steht für Rot).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: Gibt den kursiven Status der Schriftart an.
+  summary: Gibt den italischen Status der Schriftart an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Name der Schriftart (beispielsweise "Calibri"). Die Länge des Namens darf nicht größer als 31 Zeichen sein.
+  summary: Schriftartname (z. B. "Calibri"). Die Länge des Namens darf nicht größer als 31 Zeichen sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)
   package: ExcelScript!
   fullName: getStrikethrough()
-  summary: Gibt den durchgestrichen Status der Schriftart an. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Durchgestrichen-Einstellung hat.
+  summary: Gibt den Durchschlagsstatus der Schriftart an. Ein Wert gibt an, dass der gesamte Bereich keine einheitliche `null` Durchschlagsdurchschlagseinstellung hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)
   package: ExcelScript!
   fullName: getSubscript()
-  summary: Gibt den tiefgestellten Status der Schriftart an. Gibt true zurück, wenn alle Schriftarten des Bereichs Tiefgestellt sind. Gibt false zurück, wenn alle Schriftarten des Bereichs hochgestellt oder normal sind (weder hochgestellt noch Tiefgestellt). Gibt andernfalls NULL zurück.
+  summary: Gibt den Subscriptstatus der Schriftart an. Gibt `true` zurück, ob alle Schriftarten des Bereichs subscript sind. Gibt zurück, ob alle Schriftarten des Bereichs hochgestellt oder `false` normal sind (weder hochgestellt noch subscript). Gibt `null` andernfalls zurück.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)
   package: ExcelScript!
   fullName: getSuperscript()
-  summary: Gibt den Superscript-Status der Schriftart an. Gibt true zurück, wenn alle Schriftarten des Bereichs hochgestellt sind. Gibt false zurück, wenn alle Schriftarten des Bereichs Tiefgestellt oder normal sind (weder hochgestellt noch Tiefgestellt). Gibt andernfalls NULL zurück.
+  summary: Gibt den Hochgestellten status der Schriftart an. Gibt `true` zurück, ob alle Schriftarten des Bereichs hochgestellt sind. Gibt `false` zurück, ob alle Schriftarten des Bereichs subscript oder normal sind (weder hochgestellt noch subscript). Gibt `null` andernfalls zurück.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: Gibt einen Double-Wert an, der eine Farbe für die Bereichs Schriftart aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass der gesamte Bereich keine einheitliche Schriftart tintAndShade Einstellung aufweist.
+  summary: Gibt ein Double an, das eine Farbe für die Bereichsschriftart hellt oder abdunkriert. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein Wert gibt an, dass der gesamte Bereich keine einheitliche `null` `tintAndShade` Schriftarteneinstellung hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter ExcelScript. RangeUnderlineStyle.
+  summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere `ExcelScript.RangeUnderlineStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: Stellt den Fett-Status der Schriftart dar.
+  summary: Stellt den fett formatierten Status der Schriftart dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: HTML-Farb Codedarstellung der Textfarbe (beispielsweise \# FF0000 stellt rot dar).
+  summary: HTML-Farbcodedarstellung der Textfarbe (z. B. \# FF0000 steht für Rot).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: Gibt den kursiven Status der Schriftart an.
+  summary: Gibt den italischen Status der Schriftart an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Name der Schriftart (beispielsweise "Calibri"). Die Länge des Namens darf nicht größer als 31 Zeichen sein.
+  summary: Schriftartname (z. B. "Calibri"). Die Länge des Namens darf nicht größer als 31 Zeichen sein.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -228,7 +228,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)
   package: ExcelScript!
   fullName: setStrikethrough(strikethrough)
-  summary: Gibt den durchgestrichen Status der Schriftart an. Ein Nullwert gibt an, dass der gesamte Bereich keine einheitliche Durchgestrichen-Einstellung hat.
+  summary: Gibt den Durchschlagsstatus der Schriftart an. Ein Wert gibt an, dass der gesamte Bereich keine einheitliche `null` Durchschlagsdurchschlagseinstellung hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)
   package: ExcelScript!
   fullName: setSubscript(subscript)
-  summary: Gibt den tiefgestellten Status der Schriftart an. Gibt true zurück, wenn alle Schriftarten des Bereichs Tiefgestellt sind. Gibt false zurück, wenn alle Schriftarten des Bereichs hochgestellt oder normal sind (weder hochgestellt noch Tiefgestellt). Gibt andernfalls NULL zurück.
+  summary: Gibt den Subscriptstatus der Schriftart an. Gibt `true` zurück, ob alle Schriftarten des Bereichs subscript sind. Gibt zurück, ob alle Schriftarten des Bereichs hochgestellt oder `false` normal sind (weder hochgestellt noch subscript). Gibt `null` andernfalls zurück.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)
   package: ExcelScript!
   fullName: setSuperscript(superscript)
-  summary: Gibt den Superscript-Status der Schriftart an. Gibt true zurück, wenn alle Schriftarten des Bereichs hochgestellt sind. Gibt false zurück, wenn alle Schriftarten des Bereichs Tiefgestellt oder normal sind (weder hochgestellt noch Tiefgestellt). Gibt andernfalls NULL zurück.
+  summary: Gibt den Hochgestellten status der Schriftart an. Gibt `true` zurück, ob alle Schriftarten des Bereichs hochgestellt sind. Gibt `false` zurück, ob alle Schriftarten des Bereichs subscript oder normal sind (weder hochgestellt noch subscript). Gibt `null` andernfalls zurück.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -279,7 +279,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: Gibt einen Double-Wert an, der eine Farbe für die Bereichs Schriftart aufhellt oder verdunkelt, wobei der Wert zwischen-1 (am dunkelsten) und 1 (am hellsten) mit 0 für die ursprüngliche Farbe liegt. Ein NULL-Wert gibt an, dass der gesamte Bereich keine einheitliche Schriftart tintAndShade Einstellung aufweist.
+  summary: Gibt ein Double an, das eine Farbe für die Bereichsschriftart hellt oder abdunkriert. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein Wert gibt an, dass der gesamte Bereich keine einheitliche `null` `tintAndShade` Schriftarteneinstellung hat.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -296,7 +296,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere Informationen finden Sie unter ExcelScript. RangeUnderlineStyle.
+  summary: Art der auf die Schriftart angewendeten Unterstreichung. Weitere `ExcelScript.RangeUnderlineStyle` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -310,9 +310,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 781829703544f58260b7c42b429af492f6d99846
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f7f26828af5dee973e65c3e48089a1c2ce1b2ebd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416617"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607431"

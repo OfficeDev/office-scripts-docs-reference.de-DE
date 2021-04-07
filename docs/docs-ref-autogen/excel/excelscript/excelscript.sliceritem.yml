@@ -3,7 +3,7 @@ name: ExcelScript.SlicerItem
 uid: ExcelScript!ExcelScript.SlicerItem:interface
 package: ExcelScript!
 fullName: ExcelScript.SlicerItem
-summary: Stellt ein Slicer-Element in einem datenschnitt dar.
+summary: Stellt ein Datenschnittelement in einem Datenschnitt dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)
   package: ExcelScript!
   fullName: getHasData()
-  summary: True, wenn das Datenschnittelement Daten aufweist.
+  summary: Der Wert `true` ist, wenn das Datenschnittelement Daten enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)
   package: ExcelScript!
   fullName: getIsSelected()
-  summary: True, wenn das Datenschnittelement ausgewählt ist. Durch das Festlegen dieses Werts wird der Auswahlstatus anderer SlicerItems nicht gelöscht. Wenn das datenschnitt Element als einziges ausgewählt ist, wird standardmäßig alle Elemente ausgewählt, wenn es deaktiviert ist.
+  summary: Der Wert `true` ist, wenn das Datenschnittelement ausgewählt ist. Durch Festlegen dieses Werts wird der ausgewählte Status anderer Datenschnittelemente nicht geräumt. Wenn das Datenschnittelement standardmäßig das einzige ausgewählte Element ist, werden bei deaktivierter Auswahl alle Elemente ausgewählt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Stellt den Titel dar, der in der Benutzeroberfläche angezeigt wird.
+  summary: Represents the title displayed in the Excel UI.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)
   package: ExcelScript!
   fullName: setIsSelected(isSelected)
-  summary: True, wenn das Datenschnittelement ausgewählt ist. Durch das Festlegen dieses Werts wird der Auswahlstatus anderer SlicerItems nicht gelöscht. Wenn das datenschnitt Element als einziges ausgewählt ist, wird standardmäßig alle Elemente ausgewählt, wenn es deaktiviert ist.
+  summary: Der Wert `true` ist, wenn das Datenschnittelement ausgewählt ist. Durch Festlegen dieses Werts wird der ausgewählte Status anderer Datenschnittelemente nicht geräumt. Wenn das Datenschnittelement standardmäßig das einzige ausgewählte Element ist, werden bei deaktivierter Auswahl alle Elemente ausgewählt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 198e28e187b64e9c64d0b94e95fb91eb7720156c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cdfae7429391b3992f4f885b23794f5876c6c7fd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420482"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607354"

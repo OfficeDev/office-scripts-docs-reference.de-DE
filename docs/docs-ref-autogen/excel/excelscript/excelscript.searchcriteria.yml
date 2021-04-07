@@ -3,7 +3,7 @@ name: ExcelScript.SearchCriteria
 uid: ExcelScript!ExcelScript.SearchCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.SearchCriteria
-summary: Stellt die zu verwendenden Suchkriterien dar.
+summary: Stellt die zu verwendende Suchkriterien dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.SearchCriteria#completeMatch:member
   package: ExcelScript!
   fullName: completeMatch
-  summary: Gibt an, ob die Übereinstimmung vollständig oder partiell sein muss. Eine vollständige Übereinstimmung stimmt mit dem gesamten Inhalt der Zelle überein. Eine partielle Übereinstimmung stimmt mit einer Teilzeichenfolge innerhalb des Inhalts der Zelle überein (beispielsweise `cat` teilweise Übereinstimmungen `caterpillar` und `scatter`<!-- -->). Der Standardwert ist "false" (teilweise).
+  summary: Gibt an, ob die Übereinstimmung vollständig oder teilweise sein muss. Eine vollständige Übereinstimmung entspricht dem gesamten Inhalt der Zelle. Eine Teilab übereinstimmung entspricht einer Teilzeichenfolge innerhalb des Zellinhalts (z. B. `cat` teilweise übereinstimmungen `caterpillar` und `scatter`<!-- -->). Der Standardwert ist `false` (teilweise).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.SearchCriteria#matchCase:member
   package: ExcelScript!
   fullName: matchCase
-  summary: Gibt an, ob bei der Übereinstimmung die Groß-/Kleinschreibung beachtet wird. Der Standardwert ist "false" (nicht beachtet).
+  summary: Gibt an, ob bei der Übereinstimmung die Zwischenfalle beachtet wird. Der Standardwert ist `false` (groß-/kleinschreibungsunabhängige Groß-/Kleinschreibung).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.SearchCriteria#searchDirection:member
   package: ExcelScript!
   fullName: searchDirection
-  summary: Gibt die Suchrichtung an. Der Standardwert ist vorwärts. Weitere Informationen finden Sie unter ExcelScript. SearchDirection.
+  summary: Gibt die Suchrichtung an. Der Standardwert ist vorwärts. Sieh `ExcelScript.SearchDirection`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />
 metadata:
-  ms.openlocfilehash: d89bc86f6e879e686895008e09b83f2c36780279
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4a5a44cf76a45689d6c5f0c38356a3700f188890
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420671"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607403"

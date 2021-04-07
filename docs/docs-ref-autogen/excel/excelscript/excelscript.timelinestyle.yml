@@ -3,7 +3,7 @@ name: ExcelScript.TimelineStyle
 uid: ExcelScript!ExcelScript.TimelineStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.TimelineStyle
-summary: Stellt ein Zeitachsen Format dar, das Formatvorlagenelemente nach Region in der Zeitachse definiert.
+summary: Represents a `TimelineStyle`<!-- -->, das Formatelemente nach Region in der Zeitachse definiert.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: Löscht den TableStyle.
+  summary: Löscht die Tabellenformatvorlage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)
   package: ExcelScript!
   fullName: duplicate()
-  summary: Erstellt ein Duplikat dieses TimelineStyle mit Kopien aller Elemente der Formatvorlage.
+  summary: Erstellt ein Duplikat dieser Zeitachsenformatvorlage mit Kopien aller Formatvorlageelemente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Ruft den Namen des TimelineStyle ab.
+  summary: Ruft den Namen des Zeitachsenformats ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: Gibt an, ob dieses TimelineStyle-Objekt schreibgeschützt ist.
+  summary: Gibt an, ob `TimelineStyle` dieses Objekt schreibgeschützt ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.TimelineStyle#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Ruft den Namen des TimelineStyle ab.
+  summary: Ruft den Namen des Zeitachsenformats ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a4d97d4186cb7205120ef385bc86dc38baaccdd3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a671d8ba98954f11ace4057a0918a04c88feb0a0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411733"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607305"

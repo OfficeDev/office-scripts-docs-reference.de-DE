@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Stellt die horizontale Ausrichtung des Textrahmens dar. Weitere Informationen finden Sie unter ExcelScript. ShapeTextHorizontalAlignment.
+  summary: Stellt die horizontale Ausrichtung des Textrahmens dar. Weitere `ExcelScript.ShapeTextHorizontalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: getHorizontalOverflow()
-  summary: Stellt das horizontale Überlaufverhalten des Textrahmens dar. Weitere Informationen finden Sie unter ExcelScript. ShapeTextHorizontalOverflow.
+  summary: Stellt das horizontale Überlaufverhalten des Textrahmens dar. Weitere `ExcelScript.ShapeTextHorizontalOverflow` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: Stellt den Winkel dar, an dem der Text für den Textrahmen ausgerichtet ist. Weitere Informationen finden Sie unter ExcelScript. ShapeTextOrientation.
+  summary: Stellt den Winkel dar, an dem der Text für den Textrahmen ausgerichtet ist. Weitere `ExcelScript.ShapeTextOrientation` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getReadingOrder:member(1)
   package: ExcelScript!
   fullName: getReadingOrder()
-  summary: Stellt die Lesereihenfolge des Textrahmens dar, entweder von links nach rechts oder von rechts nach links. Weitere Informationen finden Sie unter ExcelScript. ShapeTextReadingOrder.
+  summary: Stellt die Lesereihenfolge des Textrahmens dar, entweder von links nach rechts oder von rechts nach links. Weitere `ExcelScript.ShapeTextReadingOrder` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getTextRange:member(1)
   package: ExcelScript!
   fullName: getTextRange()
-  summary: Stellt den Text dar, der an eine Form im Textrahmen angefügt ist, sowie Eigenschaften und Methoden für das Bearbeiten des Texts. Weitere Informationen finden Sie unter ExcelScript. TextRange.
+  summary: Stellt den Text dar, der an eine Form im Textrahmen angefügt ist, sowie Eigenschaften und Methoden für das Bearbeiten des Texts. Weitere `ExcelScript.TextRange` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Stellt die vertikale Ausrichtung des Textrahmens dar. Weitere Informationen finden Sie unter ExcelScript. ShapeTextVerticalAlignment.
+  summary: Stellt die vertikale Ausrichtung des Textrahmens dar. Weitere `ExcelScript.ShapeTextVerticalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: getVerticalOverflow()
-  summary: Stellt das vertikale Überlaufverhalten des Textrahmens dar. Weitere Informationen finden Sie unter ExcelScript. ShapeTextVerticalOverflow.
+  summary: Stellt das vertikale Überlaufverhalten des Textrahmens dar. Weitere `ExcelScript.ShapeTextVerticalOverflow` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -229,7 +229,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Stellt die horizontale Ausrichtung des Textrahmens dar. Weitere Informationen finden Sie unter ExcelScript. ShapeTextHorizontalAlignment.
+  summary: Stellt die horizontale Ausrichtung des Textrahmens dar. Weitere `ExcelScript.ShapeTextHorizontalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: setHorizontalOverflow(horizontalOverflow)
-  summary: Stellt das horizontale Überlaufverhalten des Textrahmens dar. Weitere Informationen finden Sie unter ExcelScript. ShapeTextHorizontalOverflow.
+  summary: Stellt das horizontale Überlaufverhalten des Textrahmens dar. Weitere `ExcelScript.ShapeTextHorizontalOverflow` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: Stellt den Winkel dar, an dem der Text für den Textrahmen ausgerichtet ist. Weitere Informationen finden Sie unter ExcelScript. ShapeTextOrientation.
+  summary: Stellt den Winkel dar, an dem der Text für den Textrahmen ausgerichtet ist. Weitere `ExcelScript.ShapeTextOrientation` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setReadingOrder:member(1)
   package: ExcelScript!
   fullName: setReadingOrder(readingOrder)
-  summary: Stellt die Lesereihenfolge des Textrahmens dar, entweder von links nach rechts oder von rechts nach links. Weitere Informationen finden Sie unter ExcelScript. ShapeTextReadingOrder.
+  summary: Stellt die Lesereihenfolge des Textrahmens dar, entweder von links nach rechts oder von rechts nach links. Weitere `ExcelScript.ShapeTextReadingOrder` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -354,7 +354,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Stellt die vertikale Ausrichtung des Textrahmens dar. Weitere Informationen finden Sie unter ExcelScript. ShapeTextVerticalAlignment.
+  summary: Stellt die vertikale Ausrichtung des Textrahmens dar. Weitere `ExcelScript.ShapeTextVerticalAlignment` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -374,7 +374,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: setVerticalOverflow(verticalOverflow)
-  summary: Stellt das vertikale Überlaufverhalten des Textrahmens dar. Weitere Informationen finden Sie unter ExcelScript. ShapeTextVerticalOverflow.
+  summary: Stellt das vertikale Überlaufverhalten des Textrahmens dar. Weitere `ExcelScript.ShapeTextVerticalOverflow` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -388,9 +388,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5ecc8ca404ec0d89960a592962c74e1f4e0fd5ce
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cea8dceea74129d42e754dfb4acde0c1518acd90
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419264"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607312"

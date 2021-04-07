@@ -3,7 +3,7 @@ name: ExcelScript.WorksheetSearchCriteria
 uid: ExcelScript!ExcelScript.WorksheetSearchCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.WorksheetSearchCriteria
-summary: Stellt die zu verwendenden Arbeitsblatt Suchkriterien dar.
+summary: Represents the worksheet search criteria to be used.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member
   package: ExcelScript!
   fullName: completeMatch
-  summary: Gibt an, ob die Übereinstimmung vollständig oder partiell sein muss. Eine vollständige Übereinstimmung stimmt mit dem gesamten Inhalt der Zelle überein. Eine partielle Übereinstimmung stimmt mit einer Teilzeichenfolge innerhalb des Inhalts der Zelle überein (beispielsweise `cat` teilweise Übereinstimmungen `caterpillar` und `scatter`<!-- -->). Der Standardwert ist "false" (teilweise).
+  summary: Gibt an, ob die Übereinstimmung vollständig oder teilweise sein muss. Eine vollständige Übereinstimmung entspricht dem gesamten Inhalt der Zelle. Eine Teilab übereinstimmung entspricht einer Teilzeichenfolge innerhalb des Zellinhalts (z. B. `cat` teilweise übereinstimmungen `caterpillar` und `scatter`<!-- -->). Der Standardwert ist `false` (teilweise).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member
   package: ExcelScript!
   fullName: matchCase
-  summary: Gibt an, ob bei der Übereinstimmung die Groß-/Kleinschreibung beachtet wird. Der Standardwert ist "false" (nicht beachtet).
+  summary: Gibt an, ob bei der Übereinstimmung die Zwischenfalle beachtet wird. Der Standardwert ist `false` (groß-/kleinschreibungsunabhängige Groß-/Kleinschreibung).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 56003b6e099d7730216a7a57188780d6b966aeea
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 393ff5521f0413ca8b03d8013cf6735fa24696bc
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415127"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607263"

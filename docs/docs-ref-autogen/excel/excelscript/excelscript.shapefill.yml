@@ -3,7 +3,7 @@ name: ExcelScript.ShapeFill
 uid: ExcelScript!ExcelScript.ShapeFill:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeFill
-summary: Stellt die Füllungsformatierung eines Shape-Objekts dar.
+summary: Stellt die Füllformatierung eines Shape-Objekts dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)
   package: ExcelScript!
   fullName: getForegroundColor()
-  summary: Stellt die Vordergrundfarbe der Formfüllung im HTML-Farbformat, der Form \# RRGGBB (z.b. "FFA500") oder als benannte HTML-Farbe (beispielsweise "Orange") dar.
+  summary: Stellt die Vordergrundfarbe der Formfüllung im HTML-Farbformat in der Form \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange") dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)
   package: ExcelScript!
   fullName: getTransparency()
-  summary: Gibt den Transparenz Prozentsatz der Füllung als Wert von 0,0 (deckend) bis 1,0 (Clear) an. Gibt NULL zurück, wenn der Formtyp keine Transparenz unterstützt oder die Formfüllung eine inkonsistente Transparenz aufweist, etwa bei einem Verlaufsfarbtyp.
+  summary: Gibt den Transparenzprozentsatz der Füllung als Wert zwischen 0,0 (undurchsichtig) und 1,0 (klar) an. Gibt zurück, ob der Formtyp keine Transparenz unterstützt oder die Formfüllung eine inkonsistente Transparenz besitzt, z. B. bei einem `null` Farbverlaufsfüllungstyp.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Gibt den Füllungstyp der Form zurück. Weitere Informationen finden Sie unter ExcelScript. ShapeFillType.
+  summary: Gibt den Füllungstyp der Form zurück. Weitere `ExcelScript.ShapeFillType` Informationen finden Sie unter.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)
   package: ExcelScript!
   fullName: setForegroundColor(foregroundColor)
-  summary: Stellt die Vordergrundfarbe der Formfüllung im HTML-Farbformat, der Form \# RRGGBB (z.b. "FFA500") oder als benannte HTML-Farbe (beispielsweise "Orange") dar.
+  summary: Stellt die Vordergrundfarbe der Formfüllung im HTML-Farbformat in der Form \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange") dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -90,7 +90,7 @@ methods:
     content: 'setSolidColor(color: string): void;'
     parameters:
     - id: color
-      description: Eine Zeichenfolge, die die Füllfarbe im HTML-Farbformat darstellt, der Form \# RRGGBB (beispielsweise "FFA500") oder als benannte HTML-Farbe (beispielsweise "Orange").
+      description: Eine Zeichenfolge, die die Füllfarbe im HTML-Farbformat im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "orange") darstellt.
       type: string
     return:
       type: void
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)
   package: ExcelScript!
   fullName: setTransparency(transparency)
-  summary: Gibt den Transparenz Prozentsatz der Füllung als Wert von 0,0 (deckend) bis 1,0 (Clear) an. Gibt NULL zurück, wenn der Formtyp keine Transparenz unterstützt oder die Formfüllung eine inkonsistente Transparenz aufweist, etwa bei einem Verlaufsfarbtyp.
+  summary: Gibt den Transparenzprozentsatz der Füllung als Wert zwischen 0,0 (undurchsichtig) und 1,0 (klar) an. Gibt zurück, ob der Formtyp keine Transparenz unterstützt oder die Formfüllung eine inkonsistente Transparenz besitzt, z. B. bei einem `null` Farbverlaufsfüllungstyp.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -113,9 +113,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 48b38d153693b4ffc41e670286c67f362dd83c89
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5c00db0f8c8884c051c570938f1141d2c08bbd94
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420657"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607389"
