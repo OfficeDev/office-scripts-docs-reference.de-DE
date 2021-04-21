@@ -11,7 +11,7 @@ fields:
 - name: automatic
   uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
   package: ExcelScript!
-  summary: Das standardmäßige neuberechnungs Verhalten, bei dem Excel neue Formelergebnisse jedes Mal berechnet, wenn die relevanten Daten geändert werden.
+  summary: Das Standardmäßige Neuberechnungsverhalten, bei dem Excel jedes Mal neue Formelergebnisse berechnet, wenn die relevanten Daten geändert werden.
 - name: automaticExceptTables
   uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
   package: ExcelScript!
@@ -19,11 +19,11 @@ fields:
 - name: manual
   uid: ExcelScript!ExcelScript.CalculationMode.manual:member
   package: ExcelScript!
-  summary: Berechnungen treten nur auf, wenn der Benutzer oder das Add-in diese anfordert.
+  summary: Berechnungen erfolgen nur, wenn der Benutzer oder das Add-In sie anfordert.
 metadata:
-  ms.openlocfilehash: 21802549487f1e9e5b59b90c31094a5d2cdfc0c5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f7df42bfa4aee3c3bd6e39aabfc1140e64088d58
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417226"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913985"

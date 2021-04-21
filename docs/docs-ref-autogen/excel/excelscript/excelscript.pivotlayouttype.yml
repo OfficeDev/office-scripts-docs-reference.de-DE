@@ -15,15 +15,15 @@ fields:
 - name: outline
   uid: ExcelScript!ExcelScript.PivotLayoutType.outline:member
   package: ExcelScript!
-  summary: Die Elemente der inneren Felder befinden sich in derselben Zeile, in der sich die Elemente und Teilergebnisse von äußeren Feldern immer im unteren Bereich befinden.
+  summary: Die Elemente der inneren Felder befinden sich in derselben Zeile wie die Elemente der äußeren Felder, und Untersummen befinden sich immer unten.
 - name: tabular
   uid: ExcelScript!ExcelScript.PivotLayoutType.tabular:member
   package: ExcelScript!
-  summary: Die Elemente der inneren Felder befinden sich immer in einer neuen Position relativ zu den Elementen der äußeren Felder.
+  summary: Die Elemente der inneren Felder befinden sich immer in einer neuen Zeile relativ zu den Elementen der äußeren Felder.
 metadata:
-  ms.openlocfilehash: 2c698c1cea3b728857723dbdd00474d8723b9569
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 00e8342cd618db35b9f2f4a49bf8ab454be15c58
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415176"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913540"

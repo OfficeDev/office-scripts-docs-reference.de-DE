@@ -11,19 +11,19 @@ fields:
 - name: full
   uid: ExcelScript!ExcelScript.CalculationType.full:member
   package: ExcelScript!
-  summary: Dadurch werden alle Zellen als verschmutzt markiert und anschließend neu berechnet.
+  summary: Dadurch werden alle Zellen als "dirty" markieren und dann neu berechnet.
 - name: fullRebuild
   uid: ExcelScript!ExcelScript.CalculationType.fullRebuild:member
   package: ExcelScript!
-  summary: Dadurch wird die vollständige Abhängigkeitskette neu erstellt, alle Zellen als verschmutzt markiert und neu berechnet.
+  summary: Dadurch wird die gesamte Abhängigkeitskette neu erstellt, alle Zellen als "dirty" markieren und dann neu berechnet.
 - name: recalculate
   uid: ExcelScript!ExcelScript.CalculationType.recalculate:member
   package: ExcelScript!
-  summary: Berechnet alle Zellen neu, die Excel als verschmutzt markiert hat, also abhängige Elemente flüchtiger oder geänderter Daten und Zellen, die programmgesteuert als verschmutzt markiert wurden.
+  summary: Berechnet alle Zellen neu, die Excel als geändert markiert hat, d. h. abhängig von volatilen oder geänderten Daten und Zellen, die programmgesteuert als geändert markiert wurden.
 metadata:
-  ms.openlocfilehash: 8e772f6bfbf855d21f480d9a024c4e6c73eee2c8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 8ea006b639ccac5ebe3f44e5c3cf960973b79665
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417212"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913978"

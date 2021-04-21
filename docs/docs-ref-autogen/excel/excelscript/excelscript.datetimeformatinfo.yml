@@ -3,7 +3,7 @@ name: ExcelScript.DatetimeFormatInfo
 uid: ExcelScript!ExcelScript.DatetimeFormatInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.DatetimeFormatInfo
-summary: Definiert das kulturell geeignete Format für die Anzeige von Zahlen. Dies basiert auf den aktuellen Systemkultur Einstellungen.
+summary: Definiert das kulturell geeignete Format der Anzeige von Zahlen. Dies basiert auf den aktuellen Systemkultureinstellungen.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)
   package: ExcelScript!
   fullName: getLongTimePattern()
-  summary: Ruft die Formatzeichenfolge für einen Wert vom Typ Long Time ab. Dies basiert auf den aktuellen Systemeinstellungen.
+  summary: Ruft die Formatzeichenfolge für einen langfristigen Wert ab. Dies basiert auf den aktuellen Systemeinstellungen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -75,9 +75,9 @@ methods:
       type: string
       description: ''
 metadata:
-  ms.openlocfilehash: a0ef9ff40580d0e29330b73b2f05c382fd73f777
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 41c906081273622c3070f65ff6c49fa4f3931586
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415435"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914471"

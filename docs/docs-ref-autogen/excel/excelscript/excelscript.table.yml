@@ -460,6 +460,23 @@ methods:
     return:
       type: void
       description: ''
+- name: resize(newRange)
+  uid: ExcelScript!ExcelScript.Table#resize:member(1)
+  package: ExcelScript!
+  fullName: resize(newRange)
+  summary: Ändern Sie die Größe der Tabelle auf den neuen Bereich. Der neue Bereich muss mit dem ursprünglichen Tabellenbereich überlappen, und die Kopfzeilen (oder der obere Rand der Tabelle) müssen sich in derselben Zeile enthalten.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'resize(newRange: Range | string): void;'
+    parameters:
+    - id: newRange
+      description: Das Bereichsobjekt oder die Bereichsadresse, mit der die neue Größe der Tabelle bestimmt wird.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
 - name: setHighlightFirstColumn(highlightFirstColumn)
   uid: ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)
   package: ExcelScript!
@@ -614,9 +631,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: fda7deca11fe0eae9282d9c9c54ac289e4e39df4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 9b5569c566237ce34403752541bc7ebcfc4f4f17
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51605248"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913342"
