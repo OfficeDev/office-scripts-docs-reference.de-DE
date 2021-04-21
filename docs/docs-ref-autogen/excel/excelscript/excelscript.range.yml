@@ -456,6 +456,30 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
+- name: getExtendedRange(direction, activeCell)
+  uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
+  package: ExcelScript!
+  fullName: getExtendedRange(direction, activeCell)
+  summary: Gibt ein Range-Objekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält, basierend auf der angegebenen Richtung. Dies entspricht dem Strg+Umschalt+Pfeiltastenverhalten in der Excel unter Windows-Benutzeroberfläche.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getExtendedRange(
+                  direction: KeyboardDirection,
+                  activeCell?: Range | string
+              ): Range;
+    parameters:
+    - id: direction
+      description: Die Richtung von der aktiven Zelle.
+      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
+    - id: activeCell
+      description: Die aktive Zelle in diesem Bereich. Standardmäßig ist die aktive Zelle die obere linke Zelle des Bereichs. Wenn sich die aktive Zelle nicht in diesem Bereich befindet, wird ein Fehler ausgelöst.
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
 - name: getFormat()
   uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
   package: ExcelScript!
@@ -733,19 +757,6 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
       description: ''
-- name: getMergedAreas()
-  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
-  package: ExcelScript!
-  fullName: getMergedAreas()
-  summary: Gibt ein `RangeAreas` Objekt zurück, das die zusammengeführten Bereiche in diesem Bereich darstellt. Beachten Sie, dass ein Fehler ausgelöst wird, wenn die Anzahl der zusammengeführten Bereiche in diesem Bereich größer als 512 `InvalidOperation` ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMergedAreas(): RangeAreas;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
 - name: getNumberFormat()
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
@@ -873,6 +884,30 @@ methods:
     content: 'getPredefinedCellStyle(): string;'
     return:
       type: string
+      description: ''
+- name: getRangeEdge(direction, activeCell)
+  uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
+  package: ExcelScript!
+  fullName: getRangeEdge(direction, activeCell)
+  summary: Gibt ein Range-Objekt zurück, das die Edgezelle des Datenbereichs ist, die der angegebenen Richtung entspricht. Dies entspricht dem Strg+Pfeil-Tastenverhalten in der Excel unter Windows-Benutzeroberfläche.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getRangeEdge(
+                  direction: KeyboardDirection,
+                  activeCell?: Range | string
+              ): Range;
+    parameters:
+    - id: direction
+      description: Die Richtung von der aktiven Zelle.
+      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
+    - id: activeCell
+      description: Die aktive Zelle in diesem Bereich. Standardmäßig ist die aktive Zelle die obere linke Zelle des Bereichs. Wenn sich die aktive Zelle nicht in diesem Bereich befindet, wird ein Fehler ausgelöst.
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
 - name: getResizedRange(deltaRows, deltaColumns)
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
@@ -1733,9 +1768,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 14625f148749589d974e094e1dc33f24a04b8a06
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: da511bf9e95a19149c3cf48a6df97c9a50ba5299
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607186"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914258"

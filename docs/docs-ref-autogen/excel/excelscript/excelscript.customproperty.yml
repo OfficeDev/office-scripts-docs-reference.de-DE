@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getKey:member(1)
   package: ExcelScript!
   fullName: getKey()
-  summary: Der Schlüssel der benutzerdefinierten Eigenschaft. Der Schlüssel ist auf 255 Zeichen außerhalb von Excel im Internet eingeschränkt (größere Tasten werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).
+  summary: Der Schlüssel der benutzerdefinierten Eigenschaft. Der Schlüssel ist auf 255 Zeichen außerhalb von Excel im Web beschränkt (größere Tasten werden auf anderen Plattformen automatisch auf 255 Zeichen gekürzt).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: Der Wert der benutzerdefinierten Eigenschaft. Der Wert ist auf 255 Zeichen außerhalb von Excel im Internet eingeschränkt (größere Werte werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).
+  summary: Der Wert der benutzerdefinierten Eigenschaft. Der Wert ist auf 255 Zeichen außerhalb von Excel im Web beschränkt (größere Werte werden auf anderen Plattformen automatisch auf 255 Zeichen gekürzt).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: Der Wert der benutzerdefinierten Eigenschaft. Der Wert ist auf 255 Zeichen außerhalb von Excel im Internet eingeschränkt (größere Werte werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).
+  summary: Der Wert der benutzerdefinierten Eigenschaft. Der Wert ist auf 255 Zeichen außerhalb von Excel im Web beschränkt (größere Werte werden auf anderen Plattformen automatisch auf 255 Zeichen gekürzt).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c1a2f549413c7c33b66a60e232fb80bfeb60658a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 816d6f4b2634092596bba7e6f92e5d414be58d7b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415603"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914492"

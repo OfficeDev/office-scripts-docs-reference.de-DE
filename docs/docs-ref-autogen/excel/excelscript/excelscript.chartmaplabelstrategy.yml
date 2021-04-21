@@ -3,7 +3,7 @@ name: ExcelScript.ChartMapLabelStrategy
 uid: ExcelScript!ExcelScript.ChartMapLabelStrategy:enum
 package: ExcelScript!
 fullName: ExcelScript.ChartMapLabelStrategy
-summary: Stellt die Bereichsebene eines Diagrammreihen Layouts dar. Dies gilt nur für Regionen-Karten Diagramme.
+summary: Stellt die Regionsebene eines Diagrammreihenlayouts dar. Dies gilt nur für Regionenkartendiagramme.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: 794b18c670d058bc02231eab01dc2b20a0959d2b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 7277cd970c073ca308d4cbc890de47e636f69427
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416145"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51912011"

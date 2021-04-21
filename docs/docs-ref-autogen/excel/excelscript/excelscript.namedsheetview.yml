@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: ExcelScript.NamedSheetView
+uid: ExcelScript!ExcelScript.NamedSheetView:interface
+package: ExcelScript!
+fullName: ExcelScript.NamedSheetView
+summary: Stellt eine benannte Blattansicht eines Arbeitsblatts dar. In einer Blattansicht werden die Sortier- und Filterregeln für ein bestimmtes Arbeitsblatt gespeichert. Jede Blattansicht (auch eine temporäre Blattansicht) verfügt über einen eindeutigen Namen mit Arbeitsblattbereich, der für den Zugriff auf die Ansicht verwendet wird.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: activate()
+  uid: ExcelScript!ExcelScript.NamedSheetView#activate:member(1)
+  package: ExcelScript!
+  fullName: activate()
+  summary: Aktiviert diese Blattansicht. Dies entspricht der Verwendung von "Switch To" in der Excel-Benutzeroberfläche.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'activate(): void;'
+    return:
+      type: void
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.NamedSheetView#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Entfernt die Blattansicht aus dem Arbeitsblatt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate(name)
+  uid: ExcelScript!ExcelScript.NamedSheetView#duplicate:member(1)
+  package: ExcelScript!
+  fullName: duplicate(name)
+  summary: Erstellt eine Kopie dieser Blattansicht.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(name?: string): NamedSheetView;'
+    parameters:
+    - id: name
+      description: Der Name der duplizierten Blattansicht. Wenn kein Name angegeben wird, wird ein Name generiert.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.NamedSheetView#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Ruft den Namen der Blattansicht ab oder legt den Namen fest. Der name der temporären Blattansicht ist die leere Zeichenfolge (""). Durch das Benennen der Ansicht mithilfe der name-Eigenschaft wird die Blattansicht gespeichert.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.NamedSheetView#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Ruft den Namen der Blattansicht ab oder legt den Namen fest. Der name der temporären Blattansicht ist die leere Zeichenfolge (""). Durch das Benennen der Ansicht mithilfe der name-Eigenschaft wird die Blattansicht gespeichert.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 1db6ac57a9824763fd56594c4d8e94abb9ad9211
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913684"

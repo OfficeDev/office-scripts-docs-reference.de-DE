@@ -3,7 +3,7 @@ name: ExcelScript.DocumentProperties
 uid: ExcelScript!ExcelScript.DocumentProperties:interface
 package: ExcelScript!
 fullName: ExcelScript.DocumentProperties
-summary: Stellt Arbeitsmappen-Eigenschaften dar.
+summary: Stellt Arbeitsmappeneigenschaften dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,10 +21,10 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: Erforderlich. Der Schlüssel der benutzerdefinierten Eigenschaft, bei dem die Groß-/Kleinschreibung nicht beachtet wird. Der Schlüssel ist auf 255 Zeichen außerhalb von Excel im Internet eingeschränkt (größere Tasten werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).
+      description: Erforderlich.  Der Schlüssel der benutzerdefinierten Eigenschaft, bei dem die Groß-/Kleinschreibung nicht beachtet wird. Der Schlüssel ist auf 255 Zeichen außerhalb von Excel im Web beschränkt (größere Tasten werden auf anderen Plattformen automatisch auf 255 Zeichen gekürzt).
       type: string
     - id: value
-      description: Erforderlich. Der Wert der benutzerdefinierten Eigenschaft. Der Wert ist auf 255 Zeichen außerhalb von Excel im Internet eingeschränkt (größere Werte werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).
+      description: Erforderlich.  Der Wert der benutzerdefinierten Eigenschaft. Der Wert ist auf 255 Zeichen außerhalb von Excel im Web beschränkt (größere Werte werden auf anderen Plattformen automatisch auf 255 Zeichen gekürzt).
       type: any
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
@@ -132,7 +132,7 @@ methods:
     content: 'getCustomProperty(key: string): CustomProperty | undefined;'
     parameters:
     - id: key
-      description: Erforderlich. Der Schlüssel, der das benutzerdefinierte Property-Objekt identifiziert.
+      description: Erforderlich.  Der Schlüssel, der das benutzerdefinierte Eigenschaftsobjekt identifiziert.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" /> | undefined
@@ -167,7 +167,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)
   package: ExcelScript!
   fullName: getManager()
-  summary: Der Manager der Arbeitsmappe.
+  summary: Der Vorgesetzte der Arbeitsmappe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -304,7 +304,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)
   package: ExcelScript!
   fullName: setManager(manager)
-  summary: Der Manager der Arbeitsmappe.
+  summary: Der Vorgesetzte der Arbeitsmappe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5eab007d84d344b973beabd9d62c7753486d3895
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: b6ba5c9e2e1da6c6fddfee819fc8bc43a4cf24a9
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554653"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914415"
