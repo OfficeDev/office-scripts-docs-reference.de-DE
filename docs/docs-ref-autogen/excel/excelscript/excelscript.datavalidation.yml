@@ -3,7 +3,7 @@ name: ExcelScript.DataValidation
 uid: ExcelScript!ExcelScript.DataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidation
-summary: Stellt die auf den aktuellen Bereich angewendete Datenüberprüfung dar.
+summary: Stellt die Datenüberprüfung dar, die auf den aktuellen Bereich angewendet wird.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: getIgnoreBlanks()
-  summary: Gibt an, ob die Datenüberprüfung für leere Zellen durchgeführt wird. Standard ist `true`<!-- -->.
+  summary: Gibt an, ob die Datenüberprüfung für leere Zellen durchgeführt wird. Der Standardwert ist `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)
   package: ExcelScript!
   fullName: getInvalidCells()
-  summary: Gibt ein `RangeAreas` Objekt mit einem oder mehreren rechteckigen Bereichen mit ungültigen Zellwerten zurück. Wenn alle Zellwerte gültig sind, gibt diese Funktion `null`<!-- -->.
+  summary: Gibt ein `RangeAreas` Objekt zurück, das einen oder mehrere rechteckige Bereiche mit ungültigen Zellwerten umfasst. Wenn alle Zellwerte gültig sind, gibt diese Funktion `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: Datenüberprüfungsregel, die verschiedene Typen von Datenüberprüfungskriterien enthält.
+  summary: Datenüberprüfungsregel, die unterschiedliche Typen von Datenüberprüfungskriterien enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Der Typ der Datenüberprüfung finden Sie `ExcelScript.DataValidationType` unter Details.
+  summary: Den Typ der Datenüberprüfung finden Sie unter `ExcelScript.DataValidationType` Details .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,12 +99,12 @@ methods:
     content: 'getType(): DataValidationType;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationType:enum" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This sample reads and logs the data validation type of the currently selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently selected range.\n  let range = workbook.getSelectedRange();\n\n  // Get the type (`DataValidationType`) of data validation applied to the range.\n  let validationType = range.getDataValidation().getType();\n\n  /*\n   * Log the data validation type.\n   * If the range has a single value, it logs that type.\n   * If the range doesn't have data validation applied, it logs \"None\".\n   * If the range has multiple different types of data validation, it logs \"Inconsistent\" or \"MixedCriteria\".\n   */\n  console.log(validationType.toString());\n}\n```"
 - name: getValid()
   uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
   package: ExcelScript!
   fullName: getValid()
-  summary: Gibt an, ob alle Zellwerte entsprechend den Datenüberprüfungsregeln gültig sind. Gibt `true` zurück, ob alle Zellwerte gültig sind oder `false` ob alle Zellwerte ungültig sind. Gibt zurück, ob innerhalb des Bereichs gültige und `null` ungültige Zellwerte enthalten sind.
+  summary: Gibt an, ob alle Zellwerte entsprechend den Datenüberprüfungsregeln gültig sind. Gibt `true` zurück, ob alle Zellwerte gültig sind oder `false` wenn alle Zellwerte ungültig sind. Gibt `null` zurück, ob sowohl gültige als auch ungültige Zellwerte innerhalb des Bereichs vorhanden sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: setIgnoreBlanks(ignoreBlanks)
-  summary: Gibt an, ob die Datenüberprüfung für leere Zellen durchgeführt wird. Standard ist `true`<!-- -->.
+  summary: Gibt an, ob die Datenüberprüfung für leere Zellen durchgeführt wird. Der Standardwert ist `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setRule:member(1)
   package: ExcelScript!
   fullName: setRule(rule)
-  summary: Datenüberprüfungsregel, die verschiedene Typen von Datenüberprüfungskriterien enthält.
+  summary: Datenüberprüfungsregel, die unterschiedliche Typen von Datenüberprüfungskriterien enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,9 +182,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 07fe11781815fa27d718d4e9b0ea512e6cb2925d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.openlocfilehash: 367e9601e90532f9d877e5c1432caf6681b56117
+  ms.sourcegitcommit: 0b4ded26cbb2aa6e90e05b3e0af88b67da159021
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913695"
+  ms.lasthandoff: 07/15/2021
+  ms.locfileid: "53451607"

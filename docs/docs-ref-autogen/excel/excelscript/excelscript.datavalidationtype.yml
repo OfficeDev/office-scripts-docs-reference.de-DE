@@ -3,8 +3,8 @@ name: ExcelScript.DataValidationType
 uid: ExcelScript!ExcelScript.DataValidationType:enum
 package: ExcelScript!
 fullName: ExcelScript.DataValidationType
-summary: Represents the data validation type enum.
-remarks: ''
+summary: Stellt die Datenüberprüfungstyp-Enumeration dar.
+remarks: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This sample reads and logs the data validation type of the currently selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently selected range.\n  let range = workbook.getSelectedRange();\n\n  // Get the type (`DataValidationType`) of data validation applied to the range.\n  let validationType = range.getDataValidation().getType();\n\n  /*\n   * Log the data validation type.\n   * If the range has a single value, it logs that type.\n   * If the range doesn't have data validation applied, it logs \"None\".\n   * If the range has multiple different types of data validation, it logs \"Inconsistent\" or \"MixedCriteria\".\n   */\n  console.log(validationType.toString());\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
@@ -19,11 +19,11 @@ fields:
 - name: decimal
   uid: ExcelScript!ExcelScript.DataValidationType.decimal:member
   package: ExcelScript!
-  summary: Der Typ der Dezimaldatenüberprüfung.
+  summary: Der Dezimaldatenüberprüfungstyp.
 - name: inconsistent
   uid: ExcelScript!ExcelScript.DataValidationType.inconsistent:member
   package: ExcelScript!
-  summary: Inkonsistent bedeutet, dass der Bereich über eine inkonsistente Datenüberprüfung verfügt, was darauf hinweist, dass für verschiedene Zellen unterschiedliche Regeln gelten.
+  summary: Inkonsistent bedeutet, dass der Bereich eine inkonsistente Datenüberprüfung aufweist, was bedeutet, dass unterschiedliche Regeln für unterschiedliche Zellen vorhanden sind.
 - name: list
   uid: ExcelScript!ExcelScript.DataValidationType.list:member
   package: ExcelScript!
@@ -35,11 +35,11 @@ fields:
 - name: none
   uid: ExcelScript!ExcelScript.DataValidationType.none:member
   package: ExcelScript!
-  summary: None bedeutet, dass ein beliebiger Wert zulässig ist, der angibt, dass der Bereich keine Datenüberprüfung enthält.
+  summary: None means allow any value, indicating that there is no data validation in the range.
 - name: textLength
   uid: ExcelScript!ExcelScript.DataValidationType.textLength:member
   package: ExcelScript!
-  summary: Der Textlängendatenüberprüfungstyp.
+  summary: Der Textlängen-Datenüberprüfungstyp.
 - name: time
   uid: ExcelScript!ExcelScript.DataValidationType.time:member
   package: ExcelScript!
@@ -47,11 +47,11 @@ fields:
 - name: wholeNumber
   uid: ExcelScript!ExcelScript.DataValidationType.wholeNumber:member
   package: ExcelScript!
-  summary: Der Typ der Datenüberprüfung für ganze Zahlen.
+  summary: Die gesamte Zahl des Datenüberprüfungstyps.
 metadata:
-  ms.openlocfilehash: 654b4ba3b2602f74a5090ba9f6bf1ca0fe2cc101
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.openlocfilehash: 9b0bb4199eff15b3613be84d248341a5484a2bd8
+  ms.sourcegitcommit: 0b4ded26cbb2aa6e90e05b3e0af88b67da159021
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913660"
+  ms.lasthandoff: 07/15/2021
+  ms.locfileid: "53451600"
