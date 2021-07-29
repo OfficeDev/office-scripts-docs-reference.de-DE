@@ -35,11 +35,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      autoFill(
-                  destinationRange?: Range | string,
-                  autoFillType?: AutoFillType
-              ): void;
+    content: 'autoFill( destinationRange?: Range | string, autoFillType?: AutoFillType ): void;'
     parameters:
     - id: destinationRange
       description: Der Zielbereich für AutoFill. Wenn der Zielbereich `null`<!-- -->werden die Daten basierend auf den umgebenden Zellen ausgefüllt (dies ist das Verhalten beim Doppelklicken auf den Füllpunkt des Ui-Bereichs).
@@ -115,13 +111,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      copyFrom(
-                  sourceRange: Range | RangeAreas | string,
-                  copyType?: RangeCopyType,
-                  skipBlanks?: boolean,
-                  transpose?: boolean
-              ): void;
+    content: 'copyFrom( sourceRange: Range | RangeAreas | string, copyType?: RangeCopyType, skipBlanks?: boolean, transpose?: boolean ): void;'
     parameters:
     - id: sourceRange
       description: Der Quellbereich oder `RangeAreas` aus dem kopiert werden soll. Wenn die Quelle `RangeAreas` mehrere Bereiche aufweist, muss ihr Formular erstellt werden können, indem vollständige Zeilen oder Spalten aus einem rechteckigen Bereich entfernt werden.
@@ -465,11 +455,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getExtendedRange(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getExtendedRange( direction: KeyboardDirection, activeCell?: Range | string ): Range;'
     parameters:
     - id: direction
       description: Die Richtung der aktiven Zelle.
@@ -813,7 +799,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: Stellt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt die Zelle Excel Zahlenformatcode für den angegebenen Bereich dar, basierend auf den Spracheinstellungen des Benutzers. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -907,11 +893,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getRangeEdge(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getRangeEdge( direction: KeyboardDirection, activeCell?: Range | string ): Range;'
     parameters:
     - id: direction
       description: Die Richtung der aktiven Zelle.
@@ -1067,17 +1049,13 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getSpecialCells(
-                  cellType: SpecialCellType,
-                  cellValueType?: SpecialCellValueType
-              ): RangeAreas;
+    content: 'getSpecialCells( cellType: SpecialCellType, cellValueType?: SpecialCellValueType ): RangeAreas;'
     parameters:
     - id: cellType
       description: Der Typ der einzuschließenden Zellen.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: Wenn `cellType` entweder `constants` oder `formulas`<!-- -->wird dieses Argument verwendet, um zu bestimmen, welche Zelltypen in das Ergebnis einbezogen werden sollen. Diese Werte können kombiniert werden, um mehr als einen Typ zurückzugeben. Standardmäßig werden alle Konstanten oder Formeln unabhängig vom Typ ausgewählt.
+      description: Wenn `cellType` entweder `constants` oder `formulas`<!-- -->wird dieses Argument verwendet, um zu bestimmen, welche Zelltypen in das Ergebnis einbezogen werden sollen. Diese Werte können kombiniert werden, um mehrere Typen zurückzugeben. Standardmäßig werden alle Konstanten oder Formeln unabhängig vom Typ ausgewählt.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1203,7 +1181,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValue(): string | number | boolean;'
+    content: 'getValue(): string | Anzahl | boolescher Wert;'
     return:
       type: string | number | boolean
       description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
@@ -1379,11 +1357,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      removeDuplicates(
-                  columns: number[],
-                  includesHeader: boolean
-              ): RemoveDuplicatesResult;
+    content: 'removeDuplicates( columns: number[], includesHeader: boolean ): RemoveDuplicatesResult;'
     parameters:
     - id: columns
       description: Die Spalten innerhalb des Bereichs, die Duplikate enthalten können. Es muss mindestens eine Spalte angegeben werden. Nullindiziert.
@@ -1403,12 +1377,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      replaceAll(
-                  text: string,
-                  replacement: string,
-                  criteria: ReplaceCriteria
-              ): number;
+    content: 'replaceAll( text: string, replacement: string, criteria: ReplaceCriteria ): number;'
     parameters:
     - id: text
       description: Zu suchende Zeichenfolge.
@@ -1588,7 +1557,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Legt die Zelle Excel Zahlenformatcode für den angegebenen Bereich fest. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt den Zell- Excel Zahlenformatcode für den angegebenen Bereich fest. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1690,7 +1659,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: Legt den Rohwert des angegebenen Bereichs fest. Die festgelegten Daten können vom Typ Zeichenfolge, Zahl oder boolescher Wert sein. `null`wert wird ignoriert (in Excel nicht festgelegt oder überschrieben). Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt den Rohwert des angegebenen Bereichs fest. Die festgelegten Daten können vom Typ Zeichenfolge, Zahl oder boolescher Wert sein. `null`wert wird ignoriert (nicht festgelegt oder in Excel überschrieben). Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1707,7 +1676,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: Stellt die Rohwerte des angegebenen Bereichs dar. Bei den zurückgegebenen Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Zellen, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück. Wenn der zurückgegebene Wert mit einem Pluszeichen ("+"), minus ("-") oder Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
+  summary: Legt die Rohwerte des angegebenen Bereichs fest. Bei den bereitgestellten Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Wenn der angegebene Wert mit einem Pluszeichen ("+"), einem Minuszeichen ("-") oder einem Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1781,9 +1750,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 39db0f5c0479064f14f416e076ab7292688f1055
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
+  ms.openlocfilehash: bc3d9a01cbb2a67d6461bbbd97c67014fae0e2fc
+  ms.sourcegitcommit: 95be94d379c5184e2db071999e3367c51e927a27
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068289"
+  ms.lasthandoff: 07/28/2021
+  ms.locfileid: "53617913"
