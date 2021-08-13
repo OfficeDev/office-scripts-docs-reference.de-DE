@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeFillType
-uid: ExcelScript!ExcelScript.ShapeFillType:enum
+uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeFillType
 summary: Gibt den Füllungstyp einer Form an.
@@ -8,34 +8,27 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: gradient
-  uid: ExcelScript!ExcelScript.ShapeFillType.gradient:member
-  package: ExcelScript!
-  summary: Graduelle Füllung.
-- name: mixed
-  uid: ExcelScript!ExcelScript.ShapeFillType.mixed:member
-  package: ExcelScript!
-  summary: Gemischte Füllung.
-- name: noFill
-  uid: ExcelScript!ExcelScript.ShapeFillType.noFill:member
-  package: ExcelScript!
-  summary: Keine Füllung.
-- name: pattern
-  uid: ExcelScript!ExcelScript.ShapeFillType.pattern:member
-  package: ExcelScript!
-  summary: Musterfüllung.
-- name: pictureAndTexture
-  uid: ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member
-  package: ExcelScript!
-  summary: Füllbereich für Grafik und Textur.
-- name: solid
-  uid: ExcelScript!ExcelScript.ShapeFillType.solid:member
-  package: ExcelScript!
-  summary: Uni.
-metadata:
-  ms.openlocfilehash: 45fe6ba829de5ab95a7aaa2fb1bb37750f649038
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411796"
+  - name: gradient
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
+    package: ExcelScript!
+    summary: Graduelle Füllung.
+  - name: mixed
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
+    package: ExcelScript!
+    summary: Gemischte Füllung.
+  - name: noFill
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
+    package: ExcelScript!
+    summary: Keine Füllung.
+  - name: pattern
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
+    package: ExcelScript!
+    summary: Musterfüllung.
+  - name: pictureAndTexture
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
+    package: ExcelScript!
+    summary: Bild- und Texturfüllung.
+  - name: solid
+    uid: 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
+    package: ExcelScript!
+    summary: Uni.

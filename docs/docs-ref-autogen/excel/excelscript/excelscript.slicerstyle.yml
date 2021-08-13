@@ -1,87 +1,80 @@
 ### YamlMime:TSType
 name: ExcelScript.SlicerStyle
-uid: ExcelScript!ExcelScript.SlicerStyle:interface
+uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
 package: ExcelScript!
 fullName: ExcelScript.SlicerStyle
-summary: Stellt eine Datenschnittart dar, die Formatelemente nach Bereich des Datenschnitts definiert.
+summary: 'Stellt eine Datenschnittformatvorlage dar, die Formatvorlagenelemente nach Bereich des Datenschnitts definiert.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.SlicerStyle#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Löscht die Datenschnittart.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: duplicate()
-  uid: ExcelScript!ExcelScript.SlicerStyle#duplicate:member(1)
-  package: ExcelScript!
-  fullName: duplicate()
-  summary: Erstellt ein Duplikat dieser Datenschnittformatvorlage mit Kopien aller Formatvorlageelemente.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'duplicate(): SlicerStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.SlicerStyle#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Ruft den Namen des Datenschnittformats ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getReadOnly()
-  uid: ExcelScript!ExcelScript.SlicerStyle#getReadOnly:member(1)
-  package: ExcelScript!
-  fullName: getReadOnly()
-  summary: Gibt an, ob `SlicerStyle` dieses Objekt schreibgeschützt ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReadOnly(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.SlicerStyle#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Ruft den Namen des Datenschnittformats ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: c3448893055a3b1b2f82a30144d868794044c3d5
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914146"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.SlicerStyle#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Löscht die Datenschnittart.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: duplicate()
+    uid: 'ExcelScript!ExcelScript.SlicerStyle#duplicate:member(1)'
+    package: ExcelScript!
+    fullName: duplicate()
+    summary: Erstellt ein Duplikat dieses Datenschnittformats mit Kopien aller Formatvorlagenelemente.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'duplicate(): SlicerStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.SlicerStyle#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Ruft den Namen der Datenschnittformatvorlage ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getReadOnly()
+    uid: 'ExcelScript!ExcelScript.SlicerStyle#getReadOnly:member(1)'
+    package: ExcelScript!
+    fullName: getReadOnly()
+    summary: 'Gibt an, ob dieses `SlicerStyle` Objekt schreibgeschützt ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.SlicerStyle#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Ruft den Namen der Datenschnittformatvorlage ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

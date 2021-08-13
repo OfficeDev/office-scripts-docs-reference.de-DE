@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PrintMarginUnit
-uid: ExcelScript!ExcelScript.PrintMarginUnit:enum
+uid: 'ExcelScript!ExcelScript.PrintMarginUnit:enum'
 package: ExcelScript!
 fullName: ExcelScript.PrintMarginUnit
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: centimeters
-  uid: ExcelScript!ExcelScript.PrintMarginUnit.centimeters:member
-  package: ExcelScript!
-  summary: Weisen Sie die Seitenränder in Zentimetern zu.
-- name: inches
-  uid: ExcelScript!ExcelScript.PrintMarginUnit.inches:member
-  package: ExcelScript!
-  summary: Zuweisen der Seitenränder in Zoll.
-- name: points
-  uid: ExcelScript!ExcelScript.PrintMarginUnit.points:member
-  package: ExcelScript!
-  summary: Zuweisen der Seitenränder in Punkt. Ein Zeiger ist 1/72 Zoll.
-metadata:
-  ms.openlocfilehash: b9f154f4a174cd83796bbf533b83308515508442
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416673"
+  - name: centimeters
+    uid: 'ExcelScript!ExcelScript.PrintMarginUnit.centimeters:member'
+    package: ExcelScript!
+    summary: Weisen Sie die Seitenränder in Zentimetern zu.
+  - name: inches
+    uid: 'ExcelScript!ExcelScript.PrintMarginUnit.inches:member'
+    package: ExcelScript!
+    summary: Weisen Sie die Seitenränder in Zoll zu.
+  - name: points
+    uid: 'ExcelScript!ExcelScript.PrintMarginUnit.points:member'
+    package: ExcelScript!
+    summary: Weisen Sie die Seitenränder in Punkt zu. Ein Punkt beträgt 1/72 Zoll.

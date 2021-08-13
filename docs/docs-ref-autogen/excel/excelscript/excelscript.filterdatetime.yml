@@ -1,42 +1,35 @@
 ### YamlMime:TSType
 name: ExcelScript.FilterDatetime
-uid: ExcelScript!ExcelScript.FilterDatetime:interface
+uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
 package: ExcelScript!
 fullName: ExcelScript.FilterDatetime
-summary: Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.
+summary: 'Stellt dar, wie ein Datum beim Filtern nach Werten gefiltert wird.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: date
-  uid: ExcelScript!ExcelScript.FilterDatetime#date:member
-  package: ExcelScript!
-  fullName: date
-  summary: Das Datum im ISO8601-Format zum Filtern von Daten.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'date: string;'
-    return:
-      type: string
-- name: specificity
-  uid: ExcelScript!ExcelScript.FilterDatetime#specificity:member
-  package: ExcelScript!
-  fullName: specificity
-  summary: Wie spezifisch das Datum zum Speichern von Daten verwendet werden soll. Wenn das Datum z. B. 2005-04-02 ist und die Spezifikation auf "Monat" festgelegt ist, werden beim Filtervorgang alle Zeilen mit einem Datum im Monat April 2005 behalten.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'specificity: FilterDatetimeSpecificity;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum" />
-metadata:
-  ms.openlocfilehash: bda4d979c4c6a409f4f3caf7e7db4e28966f3891
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914401"
+  - name: date
+    uid: 'ExcelScript!ExcelScript.FilterDatetime#date:member'
+    package: ExcelScript!
+    fullName: date
+    summary: Das Datum im ISO8601-Format zum Filtern von Daten.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'date: string;'
+      return:
+        type: string
+  - name: specificity
+    uid: 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
+    package: ExcelScript!
+    fullName: specificity
+    summary: 'Gibt an, wie das Datum zum Aufbewahren von Daten verwendet werden soll. Wenn z. B. das Datum 2005-04-02 ist und die Spezifikation auf "month" festgelegt ist, werden alle Zeilen mit einem Datum im Monat April 2005 beibehalten.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'specificity: FilterDatetimeSpecificity;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum" />'

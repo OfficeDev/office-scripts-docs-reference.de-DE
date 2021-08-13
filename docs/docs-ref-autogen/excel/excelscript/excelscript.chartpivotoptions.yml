@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartPivotOptions
-uid: ExcelScript!ExcelScript.ChartPivotOptions:interface
+uid: 'ExcelScript!ExcelScript.ChartPivotOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartPivotOptions
 summary: Verkapselt die Optionen für das PivotChart.
@@ -9,133 +9,126 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getShowAxisFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowAxisFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowAxisFieldButtons()
-  summary: Gibt an, ob die Achsenfeldschaltflächen in einem PivotChart angezeigt werden. Die Eigenschaft entspricht dem Befehl "Achsenfeldschaltflächen anzeigen" in der Dropdownliste "Feldschaltflächen" der Registerkarte "Analysieren", die verfügbar ist, wenn ein `showAxisFieldButtons` PivotChart ausgewählt ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowAxisFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowLegendFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowLegendFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowLegendFieldButtons()
-  summary: Gibt an, ob die Legendenfeldschaltflächen in einem PivotChart angezeigt werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowLegendFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowReportFilterFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowReportFilterFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowReportFilterFieldButtons()
-  summary: Gibt an, ob die Berichtsfilterfeldschaltflächen in einem PivotChart angezeigt werden sollen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowReportFilterFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowValueFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowValueFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowValueFieldButtons()
-  summary: Gibt an, ob die Schaltflächen des Anzeigewertfelds in einem PivotChart angezeigt werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowValueFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setShowAxisFieldButtons(showAxisFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowAxisFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowAxisFieldButtons(showAxisFieldButtons)
-  summary: Gibt an, ob die Achsenfeldschaltflächen in einem PivotChart angezeigt werden. Die Eigenschaft entspricht dem Befehl "Achsenfeldschaltflächen anzeigen" in der Dropdownliste "Feldschaltflächen" der Registerkarte "Analysieren", die verfügbar ist, wenn ein `showAxisFieldButtons` PivotChart ausgewählt ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowAxisFieldButtons(showAxisFieldButtons: boolean): void;'
-    parameters:
-    - id: showAxisFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowLegendFieldButtons(showLegendFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowLegendFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowLegendFieldButtons(showLegendFieldButtons)
-  summary: Gibt an, ob die Legendenfeldschaltflächen in einem PivotChart angezeigt werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowLegendFieldButtons(showLegendFieldButtons: boolean): void;'
-    parameters:
-    - id: showLegendFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowReportFilterFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
-  summary: Gibt an, ob die Berichtsfilterfeldschaltflächen in einem PivotChart angezeigt werden sollen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setShowReportFilterFieldButtons(
-                  showReportFilterFieldButtons: boolean
-              ): void;
-    parameters:
-    - id: showReportFilterFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowValueFieldButtons(showValueFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowValueFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowValueFieldButtons(showValueFieldButtons)
-  summary: Gibt an, ob die Schaltflächen des Anzeigewertfelds in einem PivotChart angezeigt werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowValueFieldButtons(showValueFieldButtons: boolean): void;'
-    parameters:
-    - id: showValueFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 2b62f48341a400860e419e75d062157439d8429f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51912047"
+  - name: getShowAxisFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowAxisFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowAxisFieldButtons()
+    summary: 'Gibt an, ob die Achsenfeldschaltflächen auf einem PivotChart angezeigt werden sollen. The `showAxisFieldButtons` property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowAxisFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowLegendFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowLegendFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowLegendFieldButtons()
+    summary: 'Gibt an, ob die Legendenfeldschaltflächen in einem PivotChart angezeigt werden sollen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowLegendFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowReportFilterFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowReportFilterFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowReportFilterFieldButtons()
+    summary: 'Gibt an, ob die Berichtsfilterfeldschaltflächen auf einem PivotChart angezeigt werden sollen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowReportFilterFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowValueFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowValueFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowValueFieldButtons()
+    summary: 'Gibt an, ob die Schaltflächen für das Anzeigen von Wertfeldern in einem PivotChart angezeigt werden sollen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowValueFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setShowAxisFieldButtons(showAxisFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowAxisFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowAxisFieldButtons(showAxisFieldButtons)
+    summary: 'Gibt an, ob die Achsenfeldschaltflächen auf einem PivotChart angezeigt werden sollen. The `showAxisFieldButtons` property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowAxisFieldButtons(showAxisFieldButtons: boolean): void;'
+      parameters:
+        - id: showAxisFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowLegendFieldButtons(showLegendFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowLegendFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowLegendFieldButtons(showLegendFieldButtons)
+    summary: 'Gibt an, ob die Legendenfeldschaltflächen in einem PivotChart angezeigt werden sollen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowLegendFieldButtons(showLegendFieldButtons: boolean): void;'
+      parameters:
+        - id: showLegendFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowReportFilterFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
+    summary: 'Gibt an, ob die Berichtsfilterfeldschaltflächen auf einem PivotChart angezeigt werden sollen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setShowReportFilterFieldButtons(
+                    showReportFilterFieldButtons: boolean
+                ): void;
+      parameters:
+        - id: showReportFilterFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowValueFieldButtons(showValueFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowValueFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowValueFieldButtons(showValueFieldButtons)
+    summary: 'Gibt an, ob die Schaltflächen für das Anzeigen von Wertfeldern in einem PivotChart angezeigt werden sollen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowValueFieldButtons(showValueFieldButtons: boolean): void;'
+      parameters:
+        - id: showValueFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

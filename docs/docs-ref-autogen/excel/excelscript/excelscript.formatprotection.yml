@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.FormatProtection
-uid: ExcelScript!ExcelScript.FormatProtection:interface
+uid: 'ExcelScript!ExcelScript.FormatProtection:interface'
 package: ExcelScript!
 fullName: ExcelScript.FormatProtection
 summary: Stellt den Formatschutz eines Bereichsobjekts dar.
@@ -9,70 +9,63 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormulaHidden()
-  uid: ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)
-  package: ExcelScript!
-  fullName: getFormulaHidden()
-  summary: Gibt an, ob excel die Formel für die Zellen im Bereich ausblendet. Ein Wert gibt an, dass für den gesamten Bereich keine einheitliche Formel `null` ausgeblendet ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormulaHidden(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getLocked()
-  uid: ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)
-  package: ExcelScript!
-  fullName: getLocked()
-  summary: Gibt an, ob Excel die Zellen im Objekt sperrt. Ein Wert gibt an, dass der gesamte Bereich keine einheitliche `null` Sperreinstellung hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLocked(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setFormulaHidden(formulaHidden)
-  uid: ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)
-  package: ExcelScript!
-  fullName: setFormulaHidden(formulaHidden)
-  summary: Gibt an, ob excel die Formel für die Zellen im Bereich ausblendet. Ein Wert gibt an, dass für den gesamten Bereich keine einheitliche Formel `null` ausgeblendet ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormulaHidden(formulaHidden: boolean): void;'
-    parameters:
-    - id: formulaHidden
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setLocked(locked)
-  uid: ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)
-  package: ExcelScript!
-  fullName: setLocked(locked)
-  summary: Gibt an, ob Excel die Zellen im Objekt sperrt. Ein Wert gibt an, dass der gesamte Bereich keine einheitliche `null` Sperreinstellung hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLocked(locked: boolean): void;'
-    parameters:
-    - id: locked
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 92a93cd71d6058c3046040ca18d3e0de87fcdb9f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913639"
+  - name: getFormulaHidden()
+    uid: 'ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)'
+    package: ExcelScript!
+    fullName: getFormulaHidden()
+    summary: 'Gibt an, ob Excel die Formel für die Zellen im Bereich ausblendet. Ein `null` Wert gibt an, dass für den gesamten Bereich keine einheitliche Formeleinstellung ausgeblendet ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormulaHidden(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getLocked()
+    uid: 'ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)'
+    package: ExcelScript!
+    fullName: getLocked()
+    summary: 'Gibt an, ob Excel die Zellen im Objekt sperrt. Ein `null` Wert gibt an, dass der gesamte Bereich keine einheitliche Sperreinstellung hat.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLocked(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setFormulaHidden(formulaHidden)
+    uid: 'ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)'
+    package: ExcelScript!
+    fullName: setFormulaHidden(formulaHidden)
+    summary: 'Gibt an, ob Excel die Formel für die Zellen im Bereich ausblendet. Ein `null` Wert gibt an, dass für den gesamten Bereich keine einheitliche Formeleinstellung ausgeblendet ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormulaHidden(formulaHidden: boolean): void;'
+      parameters:
+        - id: formulaHidden
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setLocked(locked)
+    uid: 'ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)'
+    package: ExcelScript!
+    fullName: setLocked(locked)
+    summary: 'Gibt an, ob Excel die Zellen im Objekt sperrt. Ein `null` Wert gibt an, dass der gesamte Bereich keine einheitliche Sperreinstellung hat.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLocked(locked: boolean): void;'
+      parameters:
+        - id: locked
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

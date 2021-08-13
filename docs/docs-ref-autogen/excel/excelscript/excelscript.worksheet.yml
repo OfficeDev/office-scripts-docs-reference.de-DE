@@ -1,1386 +1,1592 @@
 ### YamlMime:TSType
 name: ExcelScript.Worksheet
-uid: ExcelScript!ExcelScript.Worksheet:interface
+uid: 'ExcelScript!ExcelScript.Worksheet:interface'
 package: ExcelScript!
 fullName: ExcelScript.Worksheet
-summary: Ein Excel-Arbeitsblatt ist ein Raster von Zellen. Es kann Daten, Tabellen, Diagramme usw. enthalten.
+summary: 'Ein Excel-Arbeitsblatt ist ein Raster von Zellen. Es kann Daten, Tabellen, Diagramme usw. enthalten.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: activate()
-  uid: ExcelScript!ExcelScript.Worksheet#activate:member(1)
-  package: ExcelScript!
-  fullName: activate()
-  summary: Aktivieren Sie das Arbeitsblatt in der Excel-Benutzeroberfläche.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'activate(): void;'
-    return:
-      type: void
-      description: ''
-- name: addChart(type, sourceData, seriesBy)
-  uid: ExcelScript!ExcelScript.Worksheet#addChart:member(1)
-  package: ExcelScript!
-  fullName: addChart(type, sourceData, seriesBy)
-  summary: Erstellt ein neues Diagramm.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addChart(
-                  type: ChartType,
-                  sourceData: Range,
-                  seriesBy?: ChartSeriesBy
-              ): Chart;
-    parameters:
-    - id: type
-      description: Stellt die Art des Diagramms dar. Weitere `ExcelScript.ChartType` Informationen finden Sie unter.
-      type: <xref uid="ExcelScript!ExcelScript.ChartType:enum" />
-    - id: sourceData
-      description: Das `Range` Objekt, das den Quelldaten entspricht.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-    - id: seriesBy
-      description: Optional. Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden. Weitere `ExcelScript.ChartSeriesBy` Informationen finden Sie unter.
-      type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Chart:interface" />
-      description: ''
-- name: addComment(cellAddress, content, contentType)
-  uid: ExcelScript!ExcelScript.Worksheet#addComment:member(1)
-  package: ExcelScript!
-  fullName: addComment(cellAddress, content, contentType)
-  summary: Erstellt einen neuen Kommentar mit dem angegebenen Inhalt auf der angegebenen Zelle. Wenn der bereitgestellte Bereich größer als eine Zelle ist, wird `InvalidArgument` ein Fehler ausgelöst.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addComment(
-                  cellAddress: Range | string,
-                  content: CommentRichContent | string,
-                  contentType?: ContentType
-              ): Comment;
-    parameters:
-    - id: cellAddress
-      description: Die Zelle, der der Kommentar hinzugefügt wird. Dies kann ein `Range` Objekt oder eine Zeichenfolge sein. Wenn es sich um eine Zeichenfolge ist, muss sie die vollständige Adresse einschließlich des Blattnamens enthalten. Wenn der bereitgestellte Bereich größer als eine Zelle ist, wird `InvalidArgument` ein Fehler ausgelöst.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    - id: content
-      description: Der Inhalt des Kommentars. Dies kann eine Zeichenfolge oder ein `CommentRichContent` Objekt sein. Zeichenfolgen werden für Nur-Text verwendet. `CommentRichContent` Objekte ermöglichen andere Kommentarfeatures, z. B. Erwähnungen.
-      type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
-    - id: contentType
-      description: Optional. Der Inhaltstyp, der im Kommentar enthalten ist. Der Standardwert ist enum `ContentType.Plain`<!-- -->.
-      type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
-      description: ''
-- name: addGeometricShape(geometricShapeType)
-  uid: ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)
-  package: ExcelScript!
-  fullName: addGeometricShape(geometricShapeType)
-  summary: Fügt dem Arbeitsblatt eine geometrische Form hinzu. Gibt ein `Shape` Objekt zurück, das die neue Form darstellt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
-    parameters:
-    - id: geometricShapeType
-      description: Stellt den Typ der geometrischen Form dar. Weitere `ExcelScript.GeometricShapeType` Informationen finden Sie unter.
-      type: <xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: addGroup(values)
-  uid: ExcelScript!ExcelScript.Worksheet#addGroup:member(1)
-  package: ExcelScript!
-  fullName: addGroup(values)
-  summary: Gruppiert eine Teilmenge von Formen auf dem Arbeitsblatt dieser Sammlung. Gibt ein `Shape` Objekt zurück, das die neue Gruppe von Formen darstellt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addGroup(values: Array<string | Shape>): Shape;'
-    parameters:
-    - id: values
-      description: Ein Array von Shape-IDs oder Shape-Objekten.
-      type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.Shape:interface" />&gt;
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: addHorizontalPageBreak(pageBreakRange)
-  uid: ExcelScript!ExcelScript.Worksheet#addHorizontalPageBreak:member(1)
-  package: ExcelScript!
-  fullName: addHorizontalPageBreak(pageBreakRange)
-  summary: Fügt vor der oberen linken Zelle des angegebenen Bereichs einen Seitenumbruch hinzu.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addHorizontalPageBreak(pageBreakRange: Range | string): PageBreak;'
-    parameters:
-    - id: pageBreakRange
-      description: Der Bereich unmittelbar nach dem Seitenwechsel, der hinzugefügt werden soll.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />
-      description: ''
-- name: addImage(base64ImageString)
-  uid: ExcelScript!ExcelScript.Worksheet#addImage:member(1)
-  package: ExcelScript!
-  fullName: addImage(base64ImageString)
-  summary: Erstellt ein Bild aus einer base64-codierten Zeichenfolge und fügt es dem Arbeitsblatt hinzu. Gibt das `Shape` Objekt zurück, das das neue Bild darstellt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addImage(base64ImageString: string): Shape;'
-    parameters:
-    - id: base64ImageString
-      description: Eine base64-codierte Zeichenfolge, die ein Bild im JPEG- oder PNG-Format darstellt.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```typescript\n/**\n * This sample copies an image from a URL. This could be used to copy photos that a colleague stored in a shared folder to a related workbook.\n */\nasync function main(workbook: ExcelScript.Workbook) {\n  // Fetch the image from a URL.\n  const link = \"https://raw.githubusercontent.com/OfficeDev/office-scripts-docs/master/docs/images/git-octocat.png\";\n  const response = await fetch(link);\n\n  // Store the response as an ArrayBuffer, since it is a raw image file.\n  const data = await response.arrayBuffer();\n\n  // Convert the image data into a base64-encoded string.\n  const image = convertToBase64(data);\n\n  // Add the image to the current worksheet.\n  workbook.getActiveWorksheet().addImage(image)\n}\n\n/**\n * Converts an ArrayBuffer containing a .png image into a base64-encoded string.\n */\nfunction convertToBase64(input: ArrayBuffer) {\n  const uInt8Array = new Uint8Array(input);\n  const count = uInt8Array.length;\n\n  // Allocate the necessary space up front.\n  const charCodeArray = new Array(count) \n  \n  // Convert every entry in the array to a character.\n  for (let i = count; i >= 0; i--) { \n    charCodeArray[i] = String.fromCharCode(uInt8Array[i]);\n  }\n\n  // Convert the characters to base64.\n  const base64 = btoa(charCodeArray.join(''));\n  return base64;\n}\n```"
-- name: addLine(startLeft, startTop, endLeft, endTop, connectorType)
-  uid: ExcelScript!ExcelScript.Worksheet#addLine:member(1)
-  package: ExcelScript!
-  fullName: addLine(startLeft, startTop, endLeft, endTop, connectorType)
-  summary: Fügt einem Arbeitsblatt eine Linie hinzu. Gibt ein `Shape` Objekt zurück, das die neue Zeile darstellt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addLine(
-                  startLeft: number,
-                  startTop: number,
-                  endLeft: number,
-                  endTop: number,
-                  connectorType?: ConnectorType
-              ): Shape;
-    parameters:
-    - id: startLeft
-      description: Der Abstand (in Punkt) vom Anfang der Linie zur linken Seite des Arbeitsblatts.
-      type: number
-    - id: startTop
-      description: Der Abstand (in Punkt) vom Anfang der Linie zum oberen Rand des Arbeitsblatts.
-      type: number
-    - id: endLeft
-      description: Der Abstand (in Punkt) vom Ende der Linie nach links vom Arbeitsblatt.
-      type: number
-    - id: endTop
-      description: Der Abstand (in Punkt) vom Ende der Linie zum oberen Rand des Arbeitsblatts.
-      type: number
-    - id: connectorType
-      description: Stellt den Connectortyp dar. Weitere `ExcelScript.ConnectorType` Informationen finden Sie unter.
-      type: <xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: addNamedItem(name, reference, comment)
-  uid: ExcelScript!ExcelScript.Worksheet#addNamedItem:member(1)
-  package: ExcelScript!
-  fullName: addNamedItem(name, reference, comment)
-  summary: Fügt einen neuen Namen zur Auflistung des angegebenen Bereichs hinzu.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addNamedItem(
-                  name: string,
-                  reference: Range | string,
-                  comment?: string
-              ): NamedItem;
-    parameters:
-    - id: name
-      description: Der Name des benannten Elements.
-      type: string
-    - id: reference
-      description: Die Formel oder der Bereich, auf die bzw. den der Name verweist.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    - id: comment
-      description: Optional. Der Dem benannten Element zugeordnete Kommentar.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
-      description: ''
-- name: addNamedItemFormulaLocal(name, formula, comment)
-  uid: ExcelScript!ExcelScript.Worksheet#addNamedItemFormulaLocal:member(1)
-  package: ExcelScript!
-  fullName: addNamedItemFormulaLocal(name, formula, comment)
-  summary: Fügt einen neuen Namen zu der Auflistung des angegebenen Bereichs unter Verwendung des Gebietsschemas des Benutzers für die Formel hinzu.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addNamedItemFormulaLocal(
-                  name: string,
-                  formula: string,
-                  comment?: string
-              ): NamedItem;
-    parameters:
-    - id: name
-      description: Der Name des benannten Elements.
-      type: string
-    - id: formula
-      description: Die Formel im Gebietsschema des Benutzers, auf die der Name verweist.
-      type: string
-    - id: comment
-      description: Optional. Der Dem benannten Element zugeordnete Kommentar.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
-      description: ''
-- name: addNamedSheetView(name)
-  uid: ExcelScript!ExcelScript.Worksheet#addNamedSheetView:member(1)
-  package: ExcelScript!
-  fullName: addNamedSheetView(name)
-  summary: Erstellt eine neue Blattansicht mit dem angegebenen Namen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addNamedSheetView(name: string): NamedSheetView;'
-    parameters:
-    - id: name
-      description: Der Name der zu erstellende Blattansicht. Gibt einen Fehler zurück, wenn der bereitgestellte Name bereits vorhanden ist, leer ist oder ein vom Arbeitsblatt reservierter Name ist.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
-      description: ''
-- name: addPivotTable(name, source, destination)
-  uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
-  package: ExcelScript!
-  fullName: addPivotTable(name, source, destination)
-  summary: Fügen Sie eine PivotTable basierend auf den angegebenen Quelldaten hinzu, und fügen Sie sie in der oberen linken Zelle des Zielbereichs ein.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addPivotTable(
-                  name: string,
-                  source: Range | string | Table,
-                  destination: Range | string
-              ): PivotTable;
-    parameters:
-    - id: name
-      description: Der Name der neuen PivotTable.
-      type: string
-    - id: source
-      description: Die Quelldaten für die neue PivotTable, dies kann entweder ein Bereich (oder eine Zeichenfolgenadresse einschließlich des Arbeitsblattnamens) oder eine Tabelle sein.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
-    - id: destination
-      description: Die Zelle in der oberen linken Ecke des Zielbereichs des PivotTable-Berichts (der Bereich auf dem Arbeitsblatt, in dem der resultierende Bericht platziert wird).
-      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
-      description: ''
-- name: addSlicer(slicerSource, sourceField, slicerDestination)
-  uid: ExcelScript!ExcelScript.Worksheet#addSlicer:member(1)
-  package: ExcelScript!
-  fullName: addSlicer(slicerSource, sourceField, slicerDestination)
-  summary: Fügt der Arbeitsmappe einen neuen Datenschnitt hinzu.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addSlicer(
-                  slicerSource: string | PivotTable | Table,
-                  sourceField: string | PivotField | number | TableColumn,
-                  slicerDestination?: string | Worksheet
-              ): Slicer;
-    parameters:
-    - id: slicerSource
-      description: Die Datenquelle, auf der der neue Datenschnitt basiert. Es kann ein `PivotTable` Objekt, ein `Table` Objekt oder eine Zeichenfolge sein. Wenn ein PivotTable-Objekt übergeben wird, ist die Datenquelle die Quelle des `PivotTable` Objekts. Wenn ein `Table` Objekt übergeben wird, ist die Datenquelle das `Table` Objekt. Wenn eine Zeichenfolge übergeben wird, wird sie als Name oder ID einer PivotTable oder Tabelle interpretiert.
-      type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
-    - id: sourceField
-      description: Das Feld in der Datenquelle, nach der gefiltert werden soll. Es kann ein `PivotField` Objekt, ein Objekt, die ID eines oder `TableColumn` der Name oder die ID `PivotField` eines `TableColumn`<!-- -->.
-      type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
-    - id: slicerDestination
-      description: Optional. Das Arbeitsblatt, in dem der neue Datenschnitt erstellt wird. Dies kann ein `Worksheet` Objekt oder der Name oder die ID eines Arbeitsblatts sein. Dieser Parameter kann ausgelassen werden, wenn die Datenschnittsammlung aus einem Arbeitsblatt abgerufen wird.
-      type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
-      description: ''
-- name: addTable(address, hasHeaders)
-  uid: ExcelScript!ExcelScript.Worksheet#addTable:member(1)
-  package: ExcelScript!
-  fullName: addTable(address, hasHeaders)
-  summary: Erstellt eine neue Tabelle. Das Bereichsobjekt oder die Quelladresse bestimmt das Arbeitsblatt, unter dem die Tabelle hinzugefügt wird. Wenn die Tabelle nicht hinzugefügt werden kann (z. B. weil die Adresse ungültig ist oder die Tabelle mit einer anderen Tabelle überlappen würde), wird ein Fehler ausgelöst.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
-    parameters:
-    - id: address
-      description: Ein `Range` Objekt oder eine Zeichenfolgenadresse oder ein Name des Bereichs, der die Datenquelle darstellt. Wenn die Adresse keinen Arbeitsblattnamen enthält, wird das aktuell aktive Blatt verwendet.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    - id: hasHeaders
-      description: Ein boolescher Wert, der angibt, ob die importierten Daten Spaltenbeschriftungen enthalten. Wenn die Quelle keine Kopfzeilen enthält (d. h. wenn diese Eigenschaft auf `false`<!-- -->), Excel automatisch eine Kopfzeile generiert und die Daten um eine Zeile nach unten verschieben.
-      type: boolean
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Create a table with the used cells.\n  let usedRange = selectedSheet.getUsedRange();\n  let newTable = selectedSheet.addTable(usedRange, true);\n\n  // Sort the table using the first column.\n  newTable.getSort().apply([{ key: 0, ascending: true }]);\n}\n```"
-- name: addTextBox(text)
-  uid: ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)
-  package: ExcelScript!
-  fullName: addTextBox(text)
-  summary: Fügt dem Arbeitsblatt ein Textfeld mit dem angegebenen Text als Inhalt hinzu. Gibt ein `Shape` Objekt zurück, das das neue Textfeld darstellt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addTextBox(text?: string): Shape;'
-    parameters:
-    - id: text
-      description: Stellt den Text dar, der im erstellten Textfeld angezeigt wird.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: addVerticalPageBreak(pageBreakRange)
-  uid: ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak:member(1)
-  package: ExcelScript!
-  fullName: addVerticalPageBreak(pageBreakRange)
-  summary: Fügt vor der oberen linken Zelle des angegebenen Bereichs einen Seitenumbruch hinzu.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addVerticalPageBreak(pageBreakRange: Range | string): PageBreak;'
-    parameters:
-    - id: pageBreakRange
-      description: Der Bereich unmittelbar nach dem Seitenwechsel, der hinzugefügt werden soll.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />
-      description: ''
-- name: addWorksheetCustomProperty(key, value)
-  uid: ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)
-  package: ExcelScript!
-  fullName: addWorksheetCustomProperty(key, value)
-  summary: Fügt eine neue benutzerdefinierte Eigenschaft hinzu, die dem bereitgestellten Schlüssel zufügt. Dadurch werden vorhandene benutzerdefinierte Eigenschaften mit diesem Schlüssel überschrieben.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addWorksheetCustomProperty(
-                  key: string,
-                  value: string
-              ): WorksheetCustomProperty;
-    parameters:
-    - id: key
-      description: Der Schlüssel, der das benutzerdefinierte Eigenschaftsobjekt identifiziert. Die Groß-/Kleinschreibung wird nicht beachtet. Der Schlüssel ist auf 255 Zeichen beschränkt (größere Werte führen zu einem `InvalidArgument` Fehler.)
-      type: string
-    - id: value
-      description: Der Wert dieser benutzerdefinierten Eigenschaft.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" />
-      description: ''
-- name: calculate(markAllDirty)
-  uid: ExcelScript!ExcelScript.Worksheet#calculate:member(1)
-  package: ExcelScript!
-  fullName: calculate(markAllDirty)
-  summary: Berechnet alle Zellen auf einem Arbeitsblatt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'calculate(markAllDirty: boolean): void;'
-    parameters:
-    - id: markAllDirty
-      description: True, um alle als "dirty" zu markieren.
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: copy(positionType, relativeTo)
-  uid: ExcelScript!ExcelScript.Worksheet#copy:member(1)
-  package: ExcelScript!
-  fullName: copy(positionType, relativeTo)
-  summary: Kopiert ein Arbeitsblatt und platziert es an der angegebenen Position.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      copy(
-                  positionType?: WorksheetPositionType,
-                  relativeTo?: Worksheet
-              ): Worksheet;
-    parameters:
-    - id: positionType
-      description: Der Speicherort in der Arbeitsmappe, an dem das neu erstellte Arbeitsblatt eingefügt werden soll. Der Standardwert ist "None", wodurch das Arbeitsblatt am Anfang des Arbeitsblatts eingefügt wird.
-      type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
-    - id: relativeTo
-      description: Das vorhandene Arbeitsblatt, das die Position des neu erstellten Arbeitsblatts bestimmt. Dies ist nur erforderlich, `positionType` wenn "Before" oder "After" ist.
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
-- name: delete()
-  uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Löscht das Arbeitsblatt aus der Arbeitsmappe. Beachten Sie, dass beim Festlegen der Sichtbarkeit des Arbeitsblatts auf "VeryHidden" der Löschvorgang mit einer Ausnahme `InvalidOperation` fehlschlägt. Sie sollten zunächst die Sichtbarkeit in ausgeblendet oder sichtbar ändern, bevor Sie sie löschen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * The following scripts removes the first worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first worksheet.\n  let sheet = workbook.getWorksheets()[0];\n\n  // Remove that worksheet from the workbook.\n  sheet.delete();\n}\n```"
-- name: enterTemporaryNamedSheetView()
-  uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
-  package: ExcelScript!
-  fullName: enterTemporaryNamedSheetView()
-  summary: Erstellt und aktiviert eine neue temporäre Blattansicht. Temporäre Ansichten werden entfernt, wenn sie die Anwendung schließen, die temporäre Ansicht mit der Exit-Methode beenden oder zu einer anderen Blattansicht wechseln. Die temporäre Blattansicht kann auch mit der leeren Zeichenfolge ("") acccessed werden, wenn die temporäre Ansicht vorhanden ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'enterTemporaryNamedSheetView(): NamedSheetView;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
-      description: ''
-- name: exitActiveNamedSheetView()
-  uid: ExcelScript!ExcelScript.Worksheet#exitActiveNamedSheetView:member(1)
-  package: ExcelScript!
-  fullName: exitActiveNamedSheetView()
-  summary: Beendet die aktuell aktive Blattansicht.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'exitActiveNamedSheetView(): void;'
-    return:
-      type: void
-      description: ''
-- name: findAll(text, criteria)
-  uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
-  package: ExcelScript!
-  fullName: findAll(text, criteria)
-  summary: Sucht alle Vorkommen der angegebenen Zeichenfolge basierend auf den angegebenen Kriterien und gibt sie als Objekt zurück, das einen `RangeAreas` oder mehrere rechteckige Bereiche umfasst.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
-    parameters:
-    - id: text
-      description: Die zu suchende Zeichenfolge.
-      type: string
-    - id: criteria
-      description: Zusätzliche Suchkriterien, z. B. ob die Suche mit der gesamten Zelle übereinstimmen muss oder ob die Kleinschreibung beachtet werden muss.
-      type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
-- name: getActiveNamedSheetView()
-  uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
-  package: ExcelScript!
-  fullName: getActiveNamedSheetView()
-  summary: Ruft die aktuell aktive Blattansicht des Arbeitsblatts ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getActiveNamedSheetView(): NamedSheetView;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
-      description: ''
-- name: getAutoFilter()
-  uid: ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)
-  package: ExcelScript!
-  fullName: getAutoFilter()
-  summary: Represents the `AutoFilter` object of the worksheet.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAutoFilter(): AutoFilter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: ''
-- name: getCell(row, column)
-  uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
-  package: ExcelScript!
-  fullName: getCell(row, column)
-  summary: Ruft das `Range` Objekt ab, das die einzelne Zelle basierend auf Zeilen- und Spaltennummern enthält. Die Zelle kann sich außerhalb der Grenzen ihres übergeordneten Bereichs befinden, solange sie innerhalb des Arbeitsblattrasters bleibt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCell(row: number, column: number): Range;'
-    parameters:
-    - id: row
-      description: Die Zeilenanzahl der abzurufenden Zelle. Nullindiziert.
-      type: number
-    - id: column
-      description: Die Spaltenanzahl der abzurufenden Zelle. Nullindiziert.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getChart(name)
-  uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
-  package: ExcelScript!
-  fullName: getChart(name)
-  summary: Ruft ein Diagramm über seinen Namen ab. Wenn mehrere Diagramme mit demselben Namen vorhanden sind, wird das erste zurückgegeben. Wenn das Diagramm nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getChart(name: string): Chart | undefined;'
-    parameters:
-    - id: name
-      description: Der Name des abzurufenden Diagramms.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Chart:interface" /> | undefined
-      description: ''
-- name: getCharts()
-  uid: ExcelScript!ExcelScript.Worksheet#getCharts:member(1)
-  package: ExcelScript!
-  fullName: getCharts()
-  summary: Gibt eine Auflistung von Diagrammen zurück, die Teil des Arbeitsblatts sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCharts(): Chart[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Chart:interface" />[]
-      description: ''
-- name: getComment(commentId)
-  uid: ExcelScript!ExcelScript.Worksheet#getComment:member(1)
-  package: ExcelScript!
-  fullName: getComment(commentId)
-  summary: Ruft einen Kommentar aus der Sammlung basierend auf der ID ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getComment(commentId: string): Comment;'
-    parameters:
-    - id: commentId
-      description: Der Bezeichner für den Kommentar.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
-      description: ''
-- name: getCommentByCell(cellAddress)
-  uid: ExcelScript!ExcelScript.Worksheet#getCommentByCell:member(1)
-  package: ExcelScript!
-  fullName: getCommentByCell(cellAddress)
-  summary: Ruft den Kommentar aus der angegebenen Zelle ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCommentByCell(cellAddress: Range | string): Comment;'
-    parameters:
-    - id: cellAddress
-      description: Die Zelle, in der sich der Kommentar befindet. Dies kann ein `Range` Objekt oder eine Zeichenfolge sein. Wenn es sich um eine Zeichenfolge ist, muss sie die vollständige Adresse einschließlich des Blattnamens enthalten. Wenn der bereitgestellte Bereich größer als eine Zelle ist, wird `InvalidArgument` ein Fehler ausgelöst.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
-      description: ''
-- name: getCommentByReplyId(replyId)
-  uid: ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)
-  package: ExcelScript!
-  fullName: getCommentByReplyId(replyId)
-  summary: Ruft den Kommentar ab, mit dem die angegebene Antwort verbunden ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCommentByReplyId(replyId: string): Comment;'
-    parameters:
-    - id: replyId
-      description: Der Bezeichner der Kommentarantwort.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
-      description: ''
-- name: getComments()
-  uid: ExcelScript!ExcelScript.Worksheet#getComments:member(1)
-  package: ExcelScript!
-  fullName: getComments()
-  summary: Gibt eine Sammlung aller Kommentarobjekte auf dem Arbeitsblatt zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getComments(): Comment[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />[]
-      description: ''
-- name: getCustomProperties()
-  uid: ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)
-  package: ExcelScript!
-  fullName: getCustomProperties()
-  summary: Ruft eine Auflistung benutzerdefinierter Eigenschaften auf Arbeitsblattebene ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCustomProperties(): WorksheetCustomProperty[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" />[]
-      description: ''
-- name: getEnableCalculation()
-  uid: ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)
-  package: ExcelScript!
-  fullName: getEnableCalculation()
-  summary: Bestimmt, Excel das Arbeitsblatt bei Bedarf neu berechnet werden soll. True, Excel das Arbeitsblatt bei Bedarf neu berechnet. False, falls Excel das Arbeitsblatt nicht neu berechnet.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEnableCalculation(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getFreezePanes()
-  uid: ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)
-  package: ExcelScript!
-  fullName: getFreezePanes()
-  summary: Ruft ein Objekt ab, mit dem fixierte Bereiche im Arbeitsblatt bearbeitet werden können.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFreezePanes(): WorksheetFreezePanes;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.WorksheetFreezePanes:interface" />
-      description: ''
-- name: getHorizontalPageBreaks()
-  uid: ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks:member(1)
-  package: ExcelScript!
-  fullName: getHorizontalPageBreaks()
-  summary: Ruft die Sammlung der horizontalen Seitenumbrüche für das Arbeitsblatt ab. Diese Sammlung enthält nur manuelle Seitenumbrüche.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHorizontalPageBreaks(): PageBreak[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />[]
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.Worksheet#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Gibt einen Wert zurück, der das Arbeitsblatt in einer bestimmten Arbeitsmappe eindeutig identifiziert. Der Wert des Bezeichners bleibt unverändert, auch wenn das Arbeitsblatt umbenannt oder verschoben wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.Worksheet#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Der Anzeigename des Arbeitsblatts.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This sample gets all the worksheet names in the workbook.\n * It then logs those names to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Create an array to hold the worksheet names.\n    let worksheetNames = [];\n\n    // Iterate over the worksheet collection in the workbook.\n    for (let worksheet of workbook.getWorksheets()) {\n        worksheetNames.push(worksheet.getName());\n    }\n\n    // Log the array of worksheet names.\n    console.log(worksheetNames);\n}\n```"
-- name: getNamedItem(name)
-  uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
-  package: ExcelScript!
-  fullName: getNamedItem(name)
-  summary: Ruft ein `NamedItem` Objekt mit seinem Namen ab. Wenn das Objekt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNamedItem(name: string): NamedItem | undefined;'
-    parameters:
-    - id: name
-      description: Nameditem-Name.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
-      description: ''
-- name: getNamedSheetView(key)
-  uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetView:member(1)
-  package: ExcelScript!
-  fullName: getNamedSheetView(key)
-  summary: Ruft eine Blattansicht mit ihrem Namen ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNamedSheetView(key: string): NamedSheetView;'
-    parameters:
-    - id: key
-      description: Der Name der Blattansicht, bei dem die Kleinschreibung beachtet wird. Verwenden Sie die leere Zeichenfolge (""), um die temporäre Blattansicht zu erhalten, wenn die temporäre Ansicht vorhanden ist.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
-      description: ''
-- name: getNamedSheetViews()
-  uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetViews:member(1)
-  package: ExcelScript!
-  fullName: getNamedSheetViews()
-  summary: Gibt eine Auflistung von Blattansichten zurück, die im Arbeitsblatt vorhanden sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNamedSheetViews(): NamedSheetView[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />[]
-      description: ''
-- name: getNames()
-  uid: ExcelScript!ExcelScript.Worksheet#getNames:member(1)
-  package: ExcelScript!
-  fullName: getNames()
-  summary: Auflistung von Namen im Bereich des aktuellen Arbeitsblatts.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNames(): NamedItem[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />[]
-      description: ''
-- name: getNext(visibleOnly)
-  uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
-  package: ExcelScript!
-  fullName: getNext(visibleOnly)
-  summary: Ruft das Arbeitsblatt ab, das auf dieses folgt. Wenn diesem Arbeitsblatt keine Arbeitsblätter folgen, gibt diese Methode ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNext(visibleOnly?: boolean): Worksheet;'
-    parameters:
-    - id: visibleOnly
-      description: Optional. If `true`<!-- -->berücksichtigt nur sichtbare Arbeitsblätter und überspringt ausgeblendete Arbeitsblätter.
-      type: boolean
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
-- name: getPageLayout()
-  uid: ExcelScript!ExcelScript.Worksheet#getPageLayout:member(1)
-  package: ExcelScript!
-  fullName: getPageLayout()
-  summary: Ruft das `PageLayout` Objekt des Arbeitsblatts ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPageLayout(): PageLayout;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PageLayout:interface" />
-      description: ''
-- name: getPivotTable(name)
-  uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
-  package: ExcelScript!
-  fullName: getPivotTable(name)
-  summary: Ruft eine PivotTable anhand des Namens ab. Wenn die PivotTable nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPivotTable(name: string): PivotTable | undefined;'
-    parameters:
-    - id: name
-      description: Name der abzurufenden PivotTable.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | undefined
-      description: ''
-- name: getPivotTables()
-  uid: ExcelScript!ExcelScript.Worksheet#getPivotTables:member(1)
-  package: ExcelScript!
-  fullName: getPivotTables()
-  summary: Die Sammlung von PivotTables, die Teil des Arbeitsblatts sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPivotTables(): PivotTable[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]
-      description: ''
-- name: getPosition()
-  uid: ExcelScript!ExcelScript.Worksheet#getPosition:member(1)
-  package: ExcelScript!
-  fullName: getPosition()
-  summary: Die nullbasiert Position des Arbeitsblatts in der Arbeitsmappe.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPosition(): number;'
-    return:
-      type: number
-      description: ''
-- name: getPrevious(visibleOnly)
-  uid: ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)
-  package: ExcelScript!
-  fullName: getPrevious(visibleOnly)
-  summary: Ruft das Arbeitsblatt ab, das diesem Arbeitsblatt vorangegangen ist. Wenn es keine vorherigen Arbeitsblätter gibt, gibt diese Methode ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
-    parameters:
-    - id: visibleOnly
-      description: Optional. If `true`<!-- -->berücksichtigt nur sichtbare Arbeitsblätter und überspringt ausgeblendete Arbeitsblätter.
-      type: boolean
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
-- name: getProtection()
-  uid: ExcelScript!ExcelScript.Worksheet#getProtection:member(1)
-  package: ExcelScript!
-  fullName: getProtection()
-  summary: Gibt das Blattschutzobjekt für ein Arbeitsblatt zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getProtection(): WorksheetProtection;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.WorksheetProtection:interface" />
-      description: ''
-- name: getRange(address)
-  uid: ExcelScript!ExcelScript.Worksheet#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange(address)
-  summary: Ruft das Objekt ab, das einen einzelnen rechteckigen Zellenblock darstellt, der `Range` durch die Adresse oder den Namen angegeben wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(address?: string): Range;'
-    parameters:
-    - id: address
-      description: 'Optional. Die Zeichenfolge, die die Adresse oder den Namen des Bereichs darstellt. Beispiel: "A1:B2". Wenn nichts angegeben ist, wird der gesamte Arbeitsblattbereich zurückgegeben.'
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
-- name: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
-  package: ExcelScript!
-  fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: Ruft das Objekt ab, das bei einem bestimmten Zeilenindex und Spaltenindex beginnt und eine bestimmte Anzahl von `Range` Zeilen und Spalten umfasst.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      getRangeByIndexes(
-                  startRow: number,
-                  startColumn: number,
-                  rowCount: number,
-                  columnCount: number
-              ): Range;
-    parameters:
-    - id: startRow
-      description: Startzeile (nullindizierung).
-      type: number
-    - id: startColumn
-      description: Startspalte (nullindizierung).
-      type: number
-    - id: rowCount
-      description: Anzahl der Zeilen, die in den Bereich enthalten sein sollen.
-      type: number
-    - id: columnCount
-      description: Die Anzahl der Spalten, die in den Bereich enthalten sein sollen.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRanges(address)
-  uid: ExcelScript!ExcelScript.Worksheet#getRanges:member(1)
-  package: ExcelScript!
-  fullName: getRanges(address)
-  summary: Ruft das `RangeAreas` Objekt ab, das einen oder mehrere Blöcke rechteckiger Bereiche darstellt, die durch die Adresse oder den Namen angegeben werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRanges(address?: string): RangeAreas;'
-    parameters:
-    - id: address
-      description: 'Optional. Eine Zeichenfolge, die die durch Kommas getrennten Adressen oder Namen der einzelnen Bereiche enthält. Beispiel: "A1:B2, A5:B5". Wenn nicht angegeben, wird ein RangeArea-Objekt für das gesamte Arbeitsblatt zurückgegeben.'
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
-- name: getShape(key)
-  uid: ExcelScript!ExcelScript.Worksheet#getShape:member(1)
-  package: ExcelScript!
-  fullName: getShape(key)
-  summary: Ruft ein Shape mit seinem Namen oder seiner ID ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShape(key: string): Shape;'
-    parameters:
-    - id: key
-      description: Name oder ID des abzurufende Shapes.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: ''
-- name: getShapes()
-  uid: ExcelScript!ExcelScript.Worksheet#getShapes:member(1)
-  package: ExcelScript!
-  fullName: getShapes()
-  summary: Gibt die Sammlung aller Formobjekte auf dem Arbeitsblatt zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShapes(): Shape[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />[]
-      description: ''
-- name: getShowGridlines()
-  uid: ExcelScript!ExcelScript.Worksheet#getShowGridlines:member(1)
-  package: ExcelScript!
-  fullName: getShowGridlines()
-  summary: Gibt an, ob Gitternetzlinien für den Benutzer sichtbar sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowGridlines(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowHeadings()
-  uid: ExcelScript!ExcelScript.Worksheet#getShowHeadings:member(1)
-  package: ExcelScript!
-  fullName: getShowHeadings()
-  summary: Gibt an, ob Überschriften für den Benutzer sichtbar sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowHeadings(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getSlicer(key)
-  uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
-  package: ExcelScript!
-  fullName: getSlicer(key)
-  summary: Ruft einen Datenschnitt mit seinem Namen oder seiner ID ab. Wenn der Datenschnitt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSlicer(key: string): Slicer | undefined;'
-    parameters:
-    - id: key
-      description: Name oder ID des datenschnitts, der abgerufen werden soll.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" /> | undefined
-      description: ''
-- name: getSlicers()
-  uid: ExcelScript!ExcelScript.Worksheet#getSlicers:member(1)
-  package: ExcelScript!
-  fullName: getSlicers()
-  summary: Gibt eine Auflistung von Datenschnitten zurück, die Teil des Arbeitsblatts sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSlicers(): Slicer[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />[]
-      description: ''
-- name: getStandardHeight()
-  uid: ExcelScript!ExcelScript.Worksheet#getStandardHeight:member(1)
-  package: ExcelScript!
-  fullName: getStandardHeight()
-  summary: Gibt die Standardhöhe (Standard) aller Zeilen in der Arbeitsmappe in Punkt zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getStandardHeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: getStandardWidth()
-  uid: ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)
-  package: ExcelScript!
-  fullName: getStandardWidth()
-  summary: Gibt die Standardbreite (Standardbreite) aller Spalten im Arbeitsblatt an. Eine Einheit der Spaltenbreite entspricht der Breite eines Zeichens im Format Normal. Für proportionale Schriftarten wird die Breite des Zeichens 0 (Null) verwendet.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getStandardWidth(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTabColor()
-  uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
-  package: ExcelScript!
-  fullName: getTabColor()
-  summary: Die Registerkartenfarbe des Arbeitsblatts. Beim Abrufen der Registerkartenfarbe wird der Wert angezeigt, wenn das Arbeitsblatt nicht sichtbar ist. `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf automatisch festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe im Format \# RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "automatische" Farbe oder andernfalls eine echte Farbe zu setzen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTabColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTable(key)
-  uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
-  package: ExcelScript!
-  fullName: getTable(key)
-  summary: Ruft eine Tabelle anhand des Namens oder der ID ab. Wenn die Tabelle nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTable(key: string): Table | undefined;'
-    parameters:
-    - id: key
-      description: Name oder ID der abzurufenden Tabelle.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Table:interface" /> | undefined
-      description: ''
-- name: getTables()
-  uid: ExcelScript!ExcelScript.Worksheet#getTables:member(1)
-  package: ExcelScript!
-  fullName: getTables()
-  summary: Gibt die Sammlung von Tabellen zurück, die Teil des Arbeitsblatts sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTables(): Table[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />[]
-      description: ''
-- name: getUsedRange(valuesOnly)
-  uid: ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)
-  package: ExcelScript!
-  fullName: getUsedRange(valuesOnly)
-  summary: ''
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUsedRange(valuesOnly?: boolean): Range;'
-    parameters:
-    - id: valuesOnly
-      description: Optional. Betrachtet nur Zellen mit Werten als verwendet.
-      type: boolean
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getVerticalPageBreaks()
-  uid: ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks:member(1)
-  package: ExcelScript!
-  fullName: getVerticalPageBreaks()
-  summary: Ruft die Sammlung der vertikalen Seitenumbrüche für das Arbeitsblatt ab. Diese Sammlung enthält nur manuelle Seitenumbrüche.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVerticalPageBreaks(): PageBreak[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PageBreak:interface" />[]
-      description: ''
-- name: getVisibility()
-  uid: ExcelScript!ExcelScript.Worksheet#getVisibility:member(1)
-  package: ExcelScript!
-  fullName: getVisibility()
-  summary: Die Sichtbarkeit des Arbeitsblatts.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisibility(): SheetVisibility;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SheetVisibility:enum" />
-      description: ''
-- name: getWorksheetCustomProperty(key)
-  uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
-  package: ExcelScript!
-  fullName: getWorksheetCustomProperty(key)
-  summary: Ruft ein Objekt für benutzerdefinierte Eigenschaften über seinen Schlüssel ab, bei dem Groß-/Kleinschreibung nicht beachtet wird. Wenn die benutzerdefinierte Eigenschaft nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf festgelegt ist. `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      getWorksheetCustomProperty(
-                  key: string
-              ): WorksheetCustomProperty | undefined;
-    parameters:
-    - id: key
-      description: Der Schlüssel, der das benutzerdefinierte Eigenschaftsobjekt identifiziert. Die Groß-/Kleinschreibung wird nicht beachtet.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" /> | undefined
-      description: ''
-- name: refreshAllPivotTables()
-  uid: ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)
-  package: ExcelScript!
-  fullName: refreshAllPivotTables()
-  summary: Aktualisiert alle PivotTables in der Sammlung.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'refreshAllPivotTables(): void;'
-    return:
-      type: void
-      description: ''
-- name: removeAllHorizontalPageBreaks()
-  uid: ExcelScript!ExcelScript.Worksheet#removeAllHorizontalPageBreaks:member(1)
-  package: ExcelScript!
-  fullName: removeAllHorizontalPageBreaks()
-  summary: Setzt alle manuellen Seitenumbrüche in der Sammlung zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'removeAllHorizontalPageBreaks(): void;'
-    return:
-      type: void
-      description: ''
-- name: removeAllVerticalPageBreaks()
-  uid: ExcelScript!ExcelScript.Worksheet#removeAllVerticalPageBreaks:member(1)
-  package: ExcelScript!
-  fullName: removeAllVerticalPageBreaks()
-  summary: Setzt alle manuellen Seitenumbrüche in der Sammlung zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'removeAllVerticalPageBreaks(): void;'
-    return:
-      type: void
-      description: ''
-- name: replaceAll(text, replacement, criteria)
-  uid: ExcelScript!ExcelScript.Worksheet#replaceAll:member(1)
-  package: ExcelScript!
-  fullName: replaceAll(text, replacement, criteria)
-  summary: Sucht und ersetzt die angegebene Zeichenfolge auf der Grundlage der auf dem aktuellen Arbeitsblatt angegebenen Kriterien.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      replaceAll(
-                  text: string,
-                  replacement: string,
-                  criteria: ReplaceCriteria
-              ): number;
-    parameters:
-    - id: text
-      description: Zu suchende Zeichenfolge.
-      type: string
-    - id: replacement
-      description: Die Zeichenfolge, die die ursprüngliche Zeichenfolge ersetzt.
-      type: string
-    - id: criteria
-      description: Zusätzliche Ersetzungskriterien.
-      type: <xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />
-    return:
-      type: number
-      description: ''
-- name: setEnableCalculation(enableCalculation)
-  uid: ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)
-  package: ExcelScript!
-  fullName: setEnableCalculation(enableCalculation)
-  summary: Bestimmt, Excel das Arbeitsblatt bei Bedarf neu berechnet werden soll. True, Excel das Arbeitsblatt bei Bedarf neu berechnet. False, falls Excel das Arbeitsblatt nicht neu berechnet.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setEnableCalculation(enableCalculation: boolean): void;'
-    parameters:
-    - id: enableCalculation
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.Worksheet#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Der Anzeigename des Arbeitsblatts.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This sample renames a worksheet from \"Sheet1\" to \"SALES\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a worksheet named \"Sheet1\".\n  const sheet = workbook.getWorksheet('Sheet1'); \n\n  // Set its name to SALES.\n  sheet.setName('SALES');\n}\n```"
-- name: setPosition(position)
-  uid: ExcelScript!ExcelScript.Worksheet#setPosition:member(1)
-  package: ExcelScript!
-  fullName: setPosition(position)
-  summary: Die nullbasiert Position des Arbeitsblatts in der Arbeitsmappe.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPosition(position: number): void;'
-    parameters:
-    - id: position
-      description: ''
-      type: number
-    return:
-      type: void
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This sample sets the worksheet named \"SALES\" as the first sheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a worksheet named \"SALES\".\n  const sheet = workbook.getWorksheet('SALES'); \n  // Position the worksheet at the beginning of the workbook.\n  sheet.setPosition(0);\n}\n```"
-- name: setShowGridlines(showGridlines)
-  uid: ExcelScript!ExcelScript.Worksheet#setShowGridlines:member(1)
-  package: ExcelScript!
-  fullName: setShowGridlines(showGridlines)
-  summary: Gibt an, ob Gitternetzlinien für den Benutzer sichtbar sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowGridlines(showGridlines: boolean): void;'
-    parameters:
-    - id: showGridlines
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowHeadings(showHeadings)
-  uid: ExcelScript!ExcelScript.Worksheet#setShowHeadings:member(1)
-  package: ExcelScript!
-  fullName: setShowHeadings(showHeadings)
-  summary: Gibt an, ob Überschriften für den Benutzer sichtbar sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowHeadings(showHeadings: boolean): void;'
-    parameters:
-    - id: showHeadings
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setStandardWidth(standardWidth)
-  uid: ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)
-  package: ExcelScript!
-  fullName: setStandardWidth(standardWidth)
-  summary: Gibt die Standardbreite (Standardbreite) aller Spalten im Arbeitsblatt an. Eine Einheit der Spaltenbreite entspricht der Breite eines Zeichens im Format Normal. Für proportionale Schriftarten wird die Breite des Zeichens 0 (Null) verwendet.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setStandardWidth(standardWidth: number): void;'
-    parameters:
-    - id: standardWidth
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTabColor(tabColor)
-  uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
-  package: ExcelScript!
-  fullName: setTabColor(tabColor)
-  summary: Die Registerkartenfarbe des Arbeitsblatts. Beim Abrufen der Registerkartenfarbe wird der Wert angezeigt, wenn das Arbeitsblatt nicht sichtbar ist. `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf automatisch festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe im Format \# RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "automatische" Farbe oder andernfalls eine echte Farbe zu setzen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTabColor(tabColor: string): void;'
-    parameters:
-    - id: tabColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script sets the tab color of every worksheet in the workbook to red.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n  \n  // Set the tab color of each worksheet to a random color.\n  for (let sheet of sheets) {    \n    // Set the color of the current worksheet's tab to red.\n    sheet.setTabColor(\"red\");\n  }\n}\n```"
-- name: setVisibility(visibility)
-  uid: ExcelScript!ExcelScript.Worksheet#setVisibility:member(1)
-  package: ExcelScript!
-  fullName: setVisibility(visibility)
-  summary: Die Sichtbarkeit des Arbeitsblatts.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisibility(visibility: SheetVisibility): void;'
-    parameters:
-    - id: visibility
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.SheetVisibility:enum" />
-    return:
-      type: void
-      description: ''
-- name: showOutlineLevels(rowLevels, columnLevels)
-  uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
-  package: ExcelScript!
-  fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: Zeigt Zeilen- oder Spaltengruppen nach ihren Gliederungsebenen an. Gliederung von Gruppen und Zusammenfassung einer Datenliste im Arbeitsblatt. Die Parameter and geben an, wie viele Ebenen der Gliederung `rowLevels` `columnLevels` angezeigt werden sollen. Der zulässige Argumentbereich liegt zwischen 0 und 8. Der Wert 0 ändert die aktuelle Anzeige nicht. Ein Wert, der größer als die aktuelle Anzahl von Ebenen ist, zeigt alle Ebenen an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
-    parameters:
-    - id: rowLevels
-      description: Die Anzahl der Zeilenebenen einer Gliederung, die angezeigt werden soll.
-      type: number
-    - id: columnLevels
-      description: Die Anzahl der Spaltenebenen einer Gliederung, die angezeigt werden soll.
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 885ec166ed147b719bc96d8a092e0230fa0da1ca
-  ms.sourcegitcommit: 02aeeff79f2bdb28393fdcacd6266820f7c4d085
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 05/20/2021
-  ms.locfileid: "52589299"
+  - name: activate()
+    uid: 'ExcelScript!ExcelScript.Worksheet#activate:member(1)'
+    package: ExcelScript!
+    fullName: activate()
+    summary: Aktivieren Sie das Arbeitsblatt in der Excel-Benutzeroberfläche.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'addChart(type, sourceData, seriesBy)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#addChart:member(1)'
+    package: ExcelScript!
+    fullName: 'addChart(type, sourceData, seriesBy)'
+    summary: Erstellt ein neues Diagramm.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addChart(
+                    type: ChartType,
+                    sourceData: Range,
+                    seriesBy?: ChartSeriesBy
+                ): Chart;
+      parameters:
+        - id: type
+          description: Stellt die Art des Diagramms dar. Weitere Informationen finden Sie `ExcelScript.ChartType` unter.
+          type: '<xref uid="ExcelScript!ExcelScript.ChartType:enum" />'
+        - id: sourceData
+          description: 'Das `Range` Objekt, das den Quelldaten entspricht.'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        - id: seriesBy
+          description: 'Optional. Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden. Weitere Informationen finden Sie `ExcelScript.ChartSeriesBy` unter.'
+          type: '<xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Chart:interface" />'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```TypeScript
+          /**
+           * This sample creates a column-clustered chart based on the current worksheet's data.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the current worksheet.
+            let selectedSheet = workbook.getActiveWorksheet();
+
+            // Get the data range.
+            let range = selectedSheet.getUsedRange();
+
+            // Insert a chart using the data on the current worksheet.
+            let chart = selectedSheet.addChart(ExcelScript.ChartType.columnClustered, range);
+
+            // Name the chart for easy access in other scripts.
+            chart.setName("ColumnChart");
+          }
+          ```
+  - name: 'addComment(cellAddress, content, contentType)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#addComment:member(1)'
+    package: ExcelScript!
+    fullName: 'addComment(cellAddress, content, contentType)'
+    summary: 'Erstellt einen neuen Kommentar mit dem angegebenen Inhalt auf der angegebenen Zelle. Wenn `InvalidArgument` der angegebene Bereich größer als eine Zelle ist, wird ein Fehler ausgelöst.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addComment(
+                    cellAddress: Range | string,
+                    content: CommentRichContent | string,
+                    contentType?: ContentType
+                ): Comment;
+      parameters:
+        - id: cellAddress
+          description: 'Die Zelle, der der Kommentar hinzugefügt wird. Dies kann ein `Range` Objekt oder eine Zeichenfolge sein. Wenn es sich um eine Zeichenfolge handelt, muss sie die vollständige Adresse einschließlich des Blattnamens enthalten. Wenn `InvalidArgument` der angegebene Bereich größer als eine Zelle ist, wird ein Fehler ausgelöst.'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+        - id: content
+          description: 'Der Inhalt des Kommentars. Dies kann eine Zeichenfolge oder ein `CommentRichContent` Objekt sein. Zeichenfolgen werden für Nur-Text verwendet. `CommentRichContent` -Objekte ermöglichen andere Kommentarfeatures, z. B. Erwähnungen.'
+          type: '<xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string'
+        - id: contentType
+          description: 'Optional. Der Inhaltstyp, der im Kommentar enthalten ist. Der Standardwert ist Enumeration. `ContentType.Plain`<!-- -->.'
+          type: '<xref uid="ExcelScript!ExcelScript.ContentType:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Comment:interface" />'
+        description: ''
+  - name: addGeometricShape(geometricShapeType)
+    uid: 'ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)'
+    package: ExcelScript!
+    fullName: addGeometricShape(geometricShapeType)
+    summary: 'Fügt dem Arbeitsblatt eine geometrische Form hinzu. Gibt ein `Shape` Objekt zurück, das die neue Form darstellt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
+      parameters:
+        - id: geometricShapeType
+          description: Stellt den Typ der geometrischen Form dar. Weitere Informationen finden Sie `ExcelScript.GeometricShapeType` unter.
+          type: '<xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: addGroup(values)
+    uid: 'ExcelScript!ExcelScript.Worksheet#addGroup:member(1)'
+    package: ExcelScript!
+    fullName: addGroup(values)
+    summary: 'Gruppiert eine Teilmenge von Formen auf dem Arbeitsblatt dieser Sammlung. Gibt ein `Shape` Objekt zurück, das die neue Gruppe von Formen darstellt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addGroup(values: Array<string | Shape>): Shape;'
+      parameters:
+        - id: values
+          description: Ein Array von Shape-IDs oder Shape-Objekten.
+          type: 'Array&lt;string | <xref uid="ExcelScript!ExcelScript.Shape:interface" />&gt;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: addHorizontalPageBreak(pageBreakRange)
+    uid: 'ExcelScript!ExcelScript.Worksheet#addHorizontalPageBreak:member(1)'
+    package: ExcelScript!
+    fullName: addHorizontalPageBreak(pageBreakRange)
+    summary: Fügt vor der oberen linken Zelle des angegebenen Bereichs einen Seitenumbruch hinzu.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addHorizontalPageBreak(pageBreakRange: Range | string): PageBreak;'
+      parameters:
+        - id: pageBreakRange
+          description: 'Der Bereich unmittelbar nach dem Seitenwechsel, der hinzugefügt werden soll.'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PageBreak:interface" />'
+        description: ''
+  - name: addImage(base64ImageString)
+    uid: 'ExcelScript!ExcelScript.Worksheet#addImage:member(1)'
+    package: ExcelScript!
+    fullName: addImage(base64ImageString)
+    summary: 'Erstellt ein Bild aus einer base64-codierten Zeichenfolge und fügt es dem Arbeitsblatt hinzu. Gibt das `Shape` Objekt zurück, das das neue Bild darstellt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addImage(base64ImageString: string): Shape;'
+      parameters:
+        - id: base64ImageString
+          description: 'Eine base64-codierte Zeichenfolge, die ein Bild im JPEG- oder PNG-Format darstellt.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```typescript
+          /**
+           * This sample copies an image from a URL. This could be used to copy photos that a colleague stored in a shared folder to a related workbook.
+           */
+          async function main(workbook: ExcelScript.Workbook) {
+            // Fetch the image from a URL.
+            const link = "https://raw.githubusercontent.com/OfficeDev/office-scripts-docs/master/docs/images/git-octocat.png";
+            const response = await fetch(link);
+
+            // Store the response as an ArrayBuffer, since it is a raw image file.
+            const data = await response.arrayBuffer();
+
+            // Convert the image data into a base64-encoded string.
+            const image = convertToBase64(data);
+
+            // Add the image to the current worksheet.
+            workbook.getActiveWorksheet().addImage(image)
+          }
+
+          /**
+           * Converts an ArrayBuffer containing a .png image into a base64-encoded string.
+           */
+          function convertToBase64(input: ArrayBuffer) {
+            const uInt8Array = new Uint8Array(input);
+            const count = uInt8Array.length;
+
+            // Allocate the necessary space up front.
+            const charCodeArray = new Array(count) 
+            
+            // Convert every entry in the array to a character.
+            for (let i = count; i >= 0; i--) { 
+              charCodeArray[i] = String.fromCharCode(uInt8Array[i]);
+            }
+
+            // Convert the characters to base64.
+            const base64 = btoa(charCodeArray.join(''));
+            return base64;
+          }
+          ```
+  - name: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#addLine:member(1)'
+    package: ExcelScript!
+    fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
+    summary: 'Fügt einem Arbeitsblatt eine Linie hinzu. Gibt ein `Shape` Objekt zurück, das die neue Zeile darstellt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addLine(
+                    startLeft: number,
+                    startTop: number,
+                    endLeft: number,
+                    endTop: number,
+                    connectorType?: ConnectorType
+                ): Shape;
+      parameters:
+        - id: startLeft
+          description: Der Abstand (in Punkt) vom Anfang der Zeile zur linken Seite des Arbeitsblatts.
+          type: number
+        - id: startTop
+          description: Der Abstand zwischen dem Anfang der Zeile und dem oberen Rand des Arbeitsblatts in Punkt.
+          type: number
+        - id: endLeft
+          description: Der Abstand zwischen dem Ende der Zeile und der linken Seite des Arbeitsblatts in Punkt.
+          type: number
+        - id: endTop
+          description: Der Abstand (in Punkt) vom Ende der Zeile zum oberen Rand des Arbeitsblatts.
+          type: number
+        - id: connectorType
+          description: Stellt den Verbindertyp dar. Weitere Informationen finden Sie `ExcelScript.ConnectorType` unter.
+          type: '<xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: 'addNamedItem(name, reference, comment)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItem:member(1)'
+    package: ExcelScript!
+    fullName: 'addNamedItem(name, reference, comment)'
+    summary: Fügt einen neuen Namen zur Auflistung des angegebenen Bereichs hinzu.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addNamedItem(
+                    name: string,
+                    reference: Range | string,
+                    comment?: string
+                ): NamedItem;
+      parameters:
+        - id: name
+          description: Der Name des benannten Elements.
+          type: string
+        - id: reference
+          description: 'Die Formel oder der Bereich, auf die bzw. den der Name verweist.'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+        - id: comment
+          description: Optional. Der dem benannten Element zugeordnete Kommentar.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedItem:interface" />'
+        description: ''
+  - name: 'addNamedItemFormulaLocal(name, formula, comment)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItemFormulaLocal:member(1)'
+    package: ExcelScript!
+    fullName: 'addNamedItemFormulaLocal(name, formula, comment)'
+    summary: Fügt einen neuen Namen zu der Auflistung des angegebenen Bereichs unter Verwendung des Gebietsschemas des Benutzers für die Formel hinzu.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addNamedItemFormulaLocal(
+                    name: string,
+                    formula: string,
+                    comment?: string
+                ): NamedItem;
+      parameters:
+        - id: name
+          description: Der Name des benannten Elements.
+          type: string
+        - id: formula
+          description: 'Die Formel im Gebietsschema des Benutzers, auf die der Name verweist.'
+          type: string
+        - id: comment
+          description: Optional. Der dem benannten Element zugeordnete Kommentar.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedItem:interface" />'
+        description: ''
+  - name: addNamedSheetView(name)
+    uid: 'ExcelScript!ExcelScript.Worksheet#addNamedSheetView:member(1)'
+    package: ExcelScript!
+    fullName: addNamedSheetView(name)
+    summary: Erstellt eine neue Blattansicht mit dem Angegebenen Namen.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addNamedSheetView(name: string): NamedSheetView;'
+      parameters:
+        - id: name
+          description: 'Der Name der zu erstellenden Blattansicht. Löst einen Fehler aus, wenn der angegebene Name bereits vorhanden, leer oder vom Arbeitsblatt reserviert ist.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />'
+        description: ''
+  - name: 'addPivotTable(name, source, destination)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)'
+    package: ExcelScript!
+    fullName: 'addPivotTable(name, source, destination)'
+    summary: 'Fügen Sie eine PivotTable basierend auf den angegebenen Quelldaten hinzu, und fügen Sie sie in der oberen linken Zelle des Zielbereichs ein.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addPivotTable(
+                    name: string,
+                    source: Range | string | Table,
+                    destination: Range | string
+                ): PivotTable;
+      parameters:
+        - id: name
+          description: Der Name der neuen PivotTable.
+          type: string
+        - id: source
+          description: Die Quelldaten für die neue PivotTable können ein Bereich (oder eine Zeichenfolgenadresse einschließlich des Arbeitsblattnamens) oder eine Tabelle sein.
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />'
+        - id: destination
+          description: 'Die Zelle in der oberen linken Ecke des Zielbereichs des PivotTable-Berichts (der Bereich auf dem Arbeitsblatt, in dem der resultierende Bericht platziert wird).'
+          type: |-
+            <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+                    
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotTable:interface" />'
+        description: ''
+  - name: 'addSlicer(slicerSource, sourceField, slicerDestination)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#addSlicer:member(1)'
+    package: ExcelScript!
+    fullName: 'addSlicer(slicerSource, sourceField, slicerDestination)'
+    summary: Fügt der Arbeitsmappe einen neuen Datenschnitt hinzu.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addSlicer(
+                    slicerSource: string | PivotTable | Table,
+                    sourceField: string | PivotField | number | TableColumn,
+                    slicerDestination?: string | Worksheet
+                ): Slicer;
+      parameters:
+        - id: slicerSource
+          description: 'Die Datenquelle, auf der der neue Datenschnitt basiert. Dabei kann es sich um ein `PivotTable` Objekt, ein `Table` Objekt oder eine Zeichenfolge handeln. Wenn ein PivotTable-Objekt übergeben wird, ist die Datenquelle die Quelle des `PivotTable` Objekts. Wenn ein `Table` Objekt übergeben wird, ist die Datenquelle das `Table` Objekt. Wenn eine Zeichenfolge übergeben wird, wird sie als Name oder ID einer PivotTable oder Tabelle interpretiert.'
+          type: 'string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />'
+        - id: sourceField
+          description: 'Das Feld in der Datenquelle, nach dem gefiltert werden soll. Dabei kann es sich um ein `PivotField` Objekt, ein `TableColumn` Objekt, die ID eines `PivotField` Objekts oder den Namen oder die ID eines `TableColumn`<!-- -->.'
+          type: 'string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />'
+        - id: slicerDestination
+          description: 'Optional. Das Arbeitsblatt, in dem der neue Datenschnitt erstellt wird. Dabei kann es sich um ein `Worksheet` Objekt oder den Namen oder die ID eines Arbeitsblatts handeln. Dieser Parameter kann ausgelassen werden, wenn die Datenschnittauflistung aus einem Arbeitsblatt abgerufen wird.'
+          type: 'string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Slicer:interface" />'
+        description: ''
+  - name: 'addTable(address, hasHeaders)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
+    package: ExcelScript!
+    fullName: 'addTable(address, hasHeaders)'
+    summary: 'Erstellt eine neue Tabelle. Das Bereichsobjekt oder die Quelladresse bestimmt das Arbeitsblatt, unter dem die Tabelle hinzugefügt wird. Wenn die Tabelle nicht hinzugefügt werden kann (z. B. weil die Adresse ungültig ist oder die Tabelle mit einer anderen Tabelle überlappen würde), wird ein Fehler ausgelöst.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
+      parameters:
+        - id: address
+          description: 'Ein `Range` Objekt oder eine Zeichenfolgenadresse oder der Name des Bereichs, der die Datenquelle darstellt. Wenn die Adresse keinen Arbeitsblattnamen enthält, wird das aktuell aktive Blatt verwendet.'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+        - id: hasHeaders
+          description: 'Ein boolescher Wert, der angibt, ob die importierten Daten Spaltenbeschriftungen aufweisen. Wenn die Quelle keine Kopfzeilen enthält (d. h., wenn diese Eigenschaft auf `false`<!-- -->), Excel automatisch eine Kopfzeile generiert und die Daten um eine Zeile nach unten verschiebt.'
+          type: boolean
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Table:interface" />'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```TypeScript
+          /**
+           * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the current worksheet.
+            let selectedSheet = workbook.getActiveWorksheet();
+
+            // Create a table with the used cells.
+            let usedRange = selectedSheet.getUsedRange();
+            let newTable = selectedSheet.addTable(usedRange, true);
+
+            // Sort the table using the first column.
+            newTable.getSort().apply([{ key: 0, ascending: true }]);
+          }
+          ```
+  - name: addTextBox(text)
+    uid: 'ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)'
+    package: ExcelScript!
+    fullName: addTextBox(text)
+    summary: 'Fügt dem Arbeitsblatt ein Textfeld mit dem angegebenen Text als Inhalt hinzu. Gibt ein `Shape` Objekt zurück, das das neue Textfeld darstellt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addTextBox(text?: string): Shape;'
+      parameters:
+        - id: text
+          description: 'Stellt den Text dar, der im erstellten Textfeld angezeigt wird.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: addVerticalPageBreak(pageBreakRange)
+    uid: 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak:member(1)'
+    package: ExcelScript!
+    fullName: addVerticalPageBreak(pageBreakRange)
+    summary: Fügt vor der oberen linken Zelle des angegebenen Bereichs einen Seitenumbruch hinzu.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addVerticalPageBreak(pageBreakRange: Range | string): PageBreak;'
+      parameters:
+        - id: pageBreakRange
+          description: 'Der Bereich unmittelbar nach dem Seitenwechsel, der hinzugefügt werden soll.'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PageBreak:interface" />'
+        description: ''
+  - name: 'addWorksheetCustomProperty(key, value)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
+    package: ExcelScript!
+    fullName: 'addWorksheetCustomProperty(key, value)'
+    summary: 'Fügt eine neue benutzerdefinierte Eigenschaft hinzu, die dem bereitgestellten Schlüssel zugeordnet ist. Dadurch werden vorhandene benutzerdefinierte Eigenschaften mit diesem Schlüssel überschrieben.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addWorksheetCustomProperty(
+                    key: string,
+                    value: string
+                ): WorksheetCustomProperty;
+      parameters:
+        - id: key
+          description: 'Der Schlüssel, der das benutzerdefinierte Eigenschaftsobjekt identifiziert. Groß-/Kleinschreibung wird nicht beachtet. Der Schlüssel ist auf 255 Zeichen beschränkt (größere Werte führen dazu, dass ein `InvalidArgument` Fehler ausgelöst wird.)'
+          type: string
+        - id: value
+          description: Der Wert dieser benutzerdefinierten Eigenschaft.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" />'
+        description: ''
+  - name: calculate(markAllDirty)
+    uid: 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
+    package: ExcelScript!
+    fullName: calculate(markAllDirty)
+    summary: Berechnet alle Zellen auf einem Arbeitsblatt.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calculate(markAllDirty: boolean): void;'
+      parameters:
+        - id: markAllDirty
+          description: 'True, um alle als geändert zu markieren.'
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'copy(positionType, relativeTo)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#copy:member(1)'
+    package: ExcelScript!
+    fullName: 'copy(positionType, relativeTo)'
+    summary: Kopiert ein Arbeitsblatt und platziert es an der angegebenen Position.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        copy(
+                    positionType?: WorksheetPositionType,
+                    relativeTo?: Worksheet
+                ): Worksheet;
+      parameters:
+        - id: positionType
+          description: 'Der Speicherort in der Arbeitsmappe, an dem das neu erstellte Arbeitsblatt platziert werden soll. Der Standardwert ist "None", wodurch das Arbeitsblatt am Anfang des Arbeitsblatts eingefügt wird.'
+          type: '<xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />'
+        - id: relativeTo
+          description: 'Das vorhandene Arbeitsblatt, das die Position des neu erstellten Arbeitsblatts bestimmt. Dies ist nur erforderlich, wenn `positionType` es sich um "Before" oder "After" handelt.'
+          type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
+        description: ''
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.Worksheet#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: 'Löscht das Arbeitsblatt aus der Arbeitsmappe. Wenn die Sichtbarkeit des Arbeitsblatts auf "VeryHidden" festgelegt ist, schlägt der Löschvorgang mit einer `InvalidOperation` Ausnahme fehl. Sie sollten die Sichtbarkeit zuerst in ausgeblendet oder sichtbar ändern, bevor Sie sie löschen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```TypeScript
+          /**
+           * The following scripts removes the first worksheet in the workbook.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the first worksheet.
+            let sheet = workbook.getWorksheets()[0];
+
+            // Remove that worksheet from the workbook.
+            sheet.delete();
+          }
+          ```
+  - name: enterTemporaryNamedSheetView()
+    uid: 'ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)'
+    package: ExcelScript!
+    fullName: enterTemporaryNamedSheetView()
+    summary: 'Erstellt und aktiviert eine neue temporäre Blattansicht. Temporäre Ansichten werden entfernt, wenn sie die Anwendung schließen, die temporäre Ansicht mit der Exit-Methode beenden oder zu einer anderen Blattansicht wechseln. Die temporäre Blattansicht kann auch mit der leeren Zeichenfolge ("") versehen werden, wenn die temporäre Ansicht vorhanden ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enterTemporaryNamedSheetView(): NamedSheetView;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />'
+        description: ''
+  - name: exitActiveNamedSheetView()
+    uid: 'ExcelScript!ExcelScript.Worksheet#exitActiveNamedSheetView:member(1)'
+    package: ExcelScript!
+    fullName: exitActiveNamedSheetView()
+    summary: Beendet die aktuell aktive Blattansicht.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'exitActiveNamedSheetView(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'findAll(text, criteria)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#findAll:member(1)'
+    package: ExcelScript!
+    fullName: 'findAll(text, criteria)'
+    summary: 'Sucht alle Vorkommen der angegebenen Zeichenfolge basierend auf den angegebenen Kriterien und gibt sie als `RangeAreas` Objekt zurück, das einen oder mehrere rechteckige Bereiche umfasst.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
+      parameters:
+        - id: text
+          description: Die zu suchde Zeichenfolge.
+          type: string
+        - id: criteria
+          description: 'Zusätzliche Suchkriterien, einschließlich, ob die Suche mit der gesamten Zelle übereinstimmen muss oder groß-/kleinschreibung beachtet werden muss.'
+          type: '<xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
+        description: ''
+  - name: getActiveNamedSheetView()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)'
+    package: ExcelScript!
+    fullName: getActiveNamedSheetView()
+    summary: Ruft die aktuell aktive Blattansicht des Arbeitsblatts ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getActiveNamedSheetView(): NamedSheetView;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />'
+        description: ''
+  - name: getAutoFilter()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)'
+    package: ExcelScript!
+    fullName: getAutoFilter()
+    summary: Stellt das `AutoFilter` Objekt des Arbeitsblatts dar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAutoFilter(): AutoFilter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />'
+        description: ''
+  - name: 'getCell(row, column)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#getCell:member(1)'
+    package: ExcelScript!
+    fullName: 'getCell(row, column)'
+    summary: 'Ruft das `Range` Objekt ab, das die einzelne Zelle basierend auf Zeilen- und Spaltennummern enthält. Die Zelle kann sich außerhalb des übergeordneten Bereichs befinden, solange sie im Arbeitsblattraster bleibt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCell(row: number, column: number): Range;'
+      parameters:
+        - id: row
+          description: Die Zeilenanzahl der abzurufenden Zelle. Nullindiziert.
+          type: number
+        - id: column
+          description: Die Spaltenanzahl der abzurufenden Zelle. Nullindiziert.
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getChart(name)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getChart:member(1)'
+    package: ExcelScript!
+    fullName: getChart(name)
+    summary: 'Ruft ein Diagramm über seinen Namen ab. Wenn mehrere Diagramme mit demselben Namen vorhanden sind, wird das erste zurückgegeben. Wenn das Diagramm nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getChart(name: string): Chart | undefined;'
+      parameters:
+        - id: name
+          description: Der Name des abzurufenden Diagramms.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Chart:interface" /> | undefined'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```TypeScript
+          /**
+           * This sample moves an existing chart to a specific place on the worksheet.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the current worksheet.
+            let selectedSheet = workbook.getActiveWorksheet();
+            
+            // Get an existing chart named "ColumnChart".
+            let chart = selectedSheet.getChart("ColumnChart");
+
+            // Place the chart over the range "F1:L13".
+            chart.setPosition("F1", "L13");
+          }
+          ```
+  - name: getCharts()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getCharts:member(1)'
+    package: ExcelScript!
+    fullName: getCharts()
+    summary: 'Gibt eine Auflistung von Diagrammen zurück, die Teil des Arbeitsblatts sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCharts(): Chart[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Chart:interface" />[]'
+        description: ''
+  - name: getComment(commentId)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getComment:member(1)'
+    package: ExcelScript!
+    fullName: getComment(commentId)
+    summary: Ruft einen Kommentar aus der Sammlung basierend auf der ID ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getComment(commentId: string): Comment;'
+      parameters:
+        - id: commentId
+          description: Der Bezeichner für den Kommentar.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Comment:interface" />'
+        description: ''
+  - name: getCommentByCell(cellAddress)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getCommentByCell:member(1)'
+    package: ExcelScript!
+    fullName: getCommentByCell(cellAddress)
+    summary: Ruft den Kommentar aus der angegebenen Zelle ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCommentByCell(cellAddress: Range | string): Comment;'
+      parameters:
+        - id: cellAddress
+          description: 'Die Zelle, in der sich der Kommentar befindet. Dies kann ein `Range` Objekt oder eine Zeichenfolge sein. Wenn es sich um eine Zeichenfolge handelt, muss sie die vollständige Adresse einschließlich des Blattnamens enthalten. Wenn `InvalidArgument` der angegebene Bereich größer als eine Zelle ist, wird ein Fehler ausgelöst.'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Comment:interface" />'
+        description: ''
+  - name: getCommentByReplyId(replyId)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)'
+    package: ExcelScript!
+    fullName: getCommentByReplyId(replyId)
+    summary: 'Ruft den Kommentar ab, mit dem die angegebene Antwort verbunden ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCommentByReplyId(replyId: string): Comment;'
+      parameters:
+        - id: replyId
+          description: Der Bezeichner der Kommentarantwort.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Comment:interface" />'
+        description: ''
+  - name: getComments()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getComments:member(1)'
+    package: ExcelScript!
+    fullName: getComments()
+    summary: Gibt eine Sammlung aller Kommentarobjekte auf dem Arbeitsblatt zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getComments(): Comment[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Comment:interface" />[]'
+        description: ''
+  - name: getCustomProperties()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
+    package: ExcelScript!
+    fullName: getCustomProperties()
+    summary: Ruft eine Auflistung benutzerdefinierter Eigenschaften auf Arbeitsblattebene ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCustomProperties(): WorksheetCustomProperty[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" />[]'
+        description: ''
+  - name: getEnableCalculation()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
+    package: ExcelScript!
+    fullName: getEnableCalculation()
+    summary: 'Bestimmt, ob Excel das Arbeitsblatt bei Bedarf neu berechnen soll. True, wenn Excel das Arbeitsblatt bei Bedarf neu berechnet. False, falls Excel das Arbeitsblatt nicht neu berechnet.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEnableCalculation(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getFreezePanes()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)'
+    package: ExcelScript!
+    fullName: getFreezePanes()
+    summary: 'Ruft ein Objekt ab, mit dem fixierte Fensterausschnitte auf dem Arbeitsblatt bearbeitet werden können.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFreezePanes(): WorksheetFreezePanes;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.WorksheetFreezePanes:interface" />'
+        description: ''
+  - name: getHorizontalPageBreaks()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks:member(1)'
+    package: ExcelScript!
+    fullName: getHorizontalPageBreaks()
+    summary: Ruft die Sammlung der horizontalen Seitenumbrüche für das Arbeitsblatt ab. Diese Sammlung enthält nur manuelle Seitenumbrüche.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHorizontalPageBreaks(): PageBreak[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PageBreak:interface" />[]'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: 'Gibt einen Wert zurück, der das Arbeitsblatt in einer bestimmten Arbeitsmappe eindeutig identifiziert. Der Wert des Bezeichners bleibt unverändert, auch wenn das Arbeitsblatt umbenannt oder verschoben wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Der Anzeigename des Arbeitsblatts.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```TypeScript
+          /**
+           * This sample gets all the worksheet names in the workbook.
+           * It then logs those names to the console.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+              // Create an array to hold the worksheet names.
+              let worksheetNames = [];
+
+              // Iterate over the worksheet collection in the workbook.
+              for (let worksheet of workbook.getWorksheets()) {
+                  worksheetNames.push(worksheet.getName());
+              }
+
+              // Log the array of worksheet names.
+              console.log(worksheetNames);
+          }
+          ```
+  - name: getNamedItem(name)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)'
+    package: ExcelScript!
+    fullName: getNamedItem(name)
+    summary: 'Ruft ein `NamedItem` Objekt anhand seines Namens ab. Wenn das Objekt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNamedItem(name: string): NamedItem | undefined;'
+      parameters:
+        - id: name
+          description: Nameditem-Name.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined'
+        description: ''
+  - name: getNamedSheetView(key)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getNamedSheetView:member(1)'
+    package: ExcelScript!
+    fullName: getNamedSheetView(key)
+    summary: Ruft eine Blattansicht mit ihrem Namen ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNamedSheetView(key: string): NamedSheetView;'
+      parameters:
+        - id: key
+          description: 'Der Name der Blattansicht, bei dem die Groß-/Kleinschreibung beachtet wird. Verwenden Sie die leere Zeichenfolge (""), um die temporäre Blattansicht abzurufen, wenn die temporäre Ansicht vorhanden ist.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />'
+        description: ''
+  - name: getNamedSheetViews()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getNamedSheetViews:member(1)'
+    package: ExcelScript!
+    fullName: getNamedSheetViews()
+    summary: 'Gibt eine Auflistung von Blattansichten zurück, die im Arbeitsblatt vorhanden sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNamedSheetViews(): NamedSheetView[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />[]'
+        description: ''
+  - name: getNames()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getNames:member(1)'
+    package: ExcelScript!
+    fullName: getNames()
+    summary: Auflistung von Namen im Bereich des aktuellen Arbeitsblatts.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNames(): NamedItem[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedItem:interface" />[]'
+        description: ''
+  - name: getNext(visibleOnly)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getNext:member(1)'
+    package: ExcelScript!
+    fullName: getNext(visibleOnly)
+    summary: 'Ruft das Arbeitsblatt ab, das auf dieses folgt. Wenn diesem keine Arbeitsblätter folgen, gibt diese Methode ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNext(visibleOnly?: boolean): Worksheet;'
+      parameters:
+        - id: visibleOnly
+          description: Optional. Wenn `true`<!-- -->berücksichtigt nur sichtbare Arbeitsblätter und überspringt alle ausgeblendeten Arbeitsblätter.
+          type: boolean
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
+        description: ''
+  - name: getPageLayout()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getPageLayout:member(1)'
+    package: ExcelScript!
+    fullName: getPageLayout()
+    summary: Ruft das `PageLayout` Objekt des Arbeitsblatts ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPageLayout(): PageLayout;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PageLayout:interface" />'
+        description: ''
+  - name: getPivotTable(name)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)'
+    package: ExcelScript!
+    fullName: getPivotTable(name)
+    summary: 'Ruft eine PivotTable anhand des Namens ab. Wenn die PivotTable nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPivotTable(name: string): PivotTable | undefined;'
+      parameters:
+        - id: name
+          description: Name der abzurufenden PivotTable.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | undefined'
+        description: ''
+  - name: getPivotTables()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getPivotTables:member(1)'
+    package: ExcelScript!
+    fullName: getPivotTables()
+    summary: 'Die Sammlung von PivotTables, die Teil des Arbeitsblatts sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPivotTables(): PivotTable[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]'
+        description: ''
+  - name: getPosition()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getPosition:member(1)'
+    package: ExcelScript!
+    fullName: getPosition()
+    summary: Die nullbasiert Position des Arbeitsblatts in der Arbeitsmappe.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPosition(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getPrevious(visibleOnly)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)'
+    package: ExcelScript!
+    fullName: getPrevious(visibleOnly)
+    summary: 'Ruft das Arbeitsblatt ab, das vor diesem Arbeitsblatt steht. Wenn keine vorherigen Arbeitsblätter vorhanden sind, gibt diese Methode ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
+      parameters:
+        - id: visibleOnly
+          description: Optional. Wenn `true`<!-- -->berücksichtigt nur sichtbare Arbeitsblätter und überspringt alle ausgeblendeten Arbeitsblätter.
+          type: boolean
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
+        description: ''
+  - name: getProtection()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getProtection:member(1)'
+    package: ExcelScript!
+    fullName: getProtection()
+    summary: Gibt das Blattschutzobjekt für ein Arbeitsblatt zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getProtection(): WorksheetProtection;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.WorksheetProtection:interface" />'
+        description: ''
+  - name: getRange(address)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange(address)
+    summary: 'Ruft das Objekt ab, das `Range` einen einzelnen rechteckigen Zellenblock darstellt, der durch die Adresse oder den Namen angegeben wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(address?: string): Range;'
+      parameters:
+        - id: address
+          description: 'Optional. Die Zeichenfolge, die die Adresse oder den Namen des Bereichs darstellt. Beispiel: "A1:B2". Wenn nichts angegeben ist, wird der gesamte Arbeitsblattbereich zurückgegeben.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```TypeScript
+          /**
+           * This sample reads the value of A1 and prints it to the console.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the current worksheet.
+            let selectedSheet = workbook.getActiveWorksheet();
+
+            // Get the value of cell A1.
+            let range = selectedSheet.getRange("A1");
+            
+            // Print the value of A1.
+            console.log(range.getValue());
+          }
+          ```
+  - name: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)'
+    package: ExcelScript!
+    fullName: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
+    summary: 'Ruft das Objekt ab, das `Range` mit einem bestimmten Zeilen- und Spaltenindex beginnt und eine bestimmte Anzahl von Zeilen und Spalten umfasst.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        getRangeByIndexes(
+                    startRow: number,
+                    startColumn: number,
+                    rowCount: number,
+                    columnCount: number
+                ): Range;
+      parameters:
+        - id: startRow
+          description: Startzeile (nullindiziert).
+          type: number
+        - id: startColumn
+          description: Startspalte (nullindiziert).
+          type: number
+        - id: rowCount
+          description: 'Anzahl der Zeilen, die in den Bereich eingeschlossen werden sollen.'
+          type: number
+        - id: columnCount
+          description: 'Anzahl der Spalten, die in den Bereich eingeschlossen werden sollen.'
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRanges(address)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getRanges:member(1)'
+    package: ExcelScript!
+    fullName: getRanges(address)
+    summary: 'Ruft das Objekt ab, das `RangeAreas` einen oder mehrere Blöcke rechteckiger Bereiche darstellt, die durch die Adresse oder den Namen angegeben werden.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRanges(address?: string): RangeAreas;'
+      parameters:
+        - id: address
+          description: 'Optional. Eine Zeichenfolge, die die durch Trennzeichen getrennten Adressen oder Namen der einzelnen Bereiche enthält. Beispiel: "A1:B2, A5:B5". Wenn nicht angegeben, wird ein RangeArea-Objekt für das gesamte Arbeitsblatt zurückgegeben.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
+        description: ''
+  - name: getShape(key)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getShape:member(1)'
+    package: ExcelScript!
+    fullName: getShape(key)
+    summary: Ruft ein Shape anhand seines Namens oder seiner ID ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShape(key: string): Shape;'
+      parameters:
+        - id: key
+          description: Name oder ID des abzurufenden Shapes.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
+        description: ''
+  - name: getShapes()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getShapes:member(1)'
+    package: ExcelScript!
+    fullName: getShapes()
+    summary: Gibt die Sammlung aller Formobjekte auf dem Arbeitsblatt zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShapes(): Shape[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />[]'
+        description: ''
+  - name: getShowGridlines()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getShowGridlines:member(1)'
+    package: ExcelScript!
+    fullName: getShowGridlines()
+    summary: 'Gibt an, ob Gitternetzlinien für den Benutzer sichtbar sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowGridlines(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowHeadings()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getShowHeadings:member(1)'
+    package: ExcelScript!
+    fullName: getShowHeadings()
+    summary: 'Gibt an, ob Überschriften für den Benutzer sichtbar sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowHeadings(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getSlicer(key)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)'
+    package: ExcelScript!
+    fullName: getSlicer(key)
+    summary: 'Ruft einen Datenschnitt anhand seines Namens oder seiner ID ab. Wenn der Datenschnitt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSlicer(key: string): Slicer | undefined;'
+      parameters:
+        - id: key
+          description: Name oder ID des abzurufenden Datenschnitts.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Slicer:interface" /> | undefined'
+        description: ''
+  - name: getSlicers()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getSlicers:member(1)'
+    package: ExcelScript!
+    fullName: getSlicers()
+    summary: 'Gibt eine Auflistung von Datenschnitten zurück, die Teil des Arbeitsblatts sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSlicers(): Slicer[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Slicer:interface" />[]'
+        description: ''
+  - name: getStandardHeight()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getStandardHeight:member(1)'
+    package: ExcelScript!
+    fullName: getStandardHeight()
+    summary: Gibt die Standardhöhe (Standard) aller Zeilen in der Arbeitsmappe in Punkt zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStandardHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getStandardWidth()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)'
+    package: ExcelScript!
+    fullName: getStandardWidth()
+    summary: "Gibt die Standardbreite (Standard) aller Spalten im Arbeitsblatt an. Eine Einheit der Spaltenbreite entspricht der Breite eines Zeichens im Format Normal. Für proportionale Schriftarten wird die Breite des Zeichens\_0 (Null) verwendet."
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStandardWidth(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTabColor()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)'
+    package: ExcelScript!
+    fullName: getTabColor()
+    summary: 'Die Registerkartenfarbe des Arbeitsblatts. Wenn das Arbeitsblatt nicht sichtbar ist, lautet der Wert beim Abrufen der Registerkartenfarbe `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf "Automatisch" festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe im Format \# RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "automatische" Farbe oder andernfalls eine echte Farbe festzulegen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTabColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTable(key)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getTable:member(1)'
+    package: ExcelScript!
+    fullName: getTable(key)
+    summary: 'Ruft eine Tabelle anhand des Namens oder der ID ab. Wenn die Tabelle nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTable(key: string): Table | undefined;'
+      parameters:
+        - id: key
+          description: Name oder ID der abzurufenden Tabelle.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Table:interface" /> | undefined'
+        description: ''
+  - name: getTables()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getTables:member(1)'
+    package: ExcelScript!
+    fullName: getTables()
+    summary: 'Gibt die Sammlung von Tabellen zurück, die Teil des Arbeitsblatts sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTables(): Table[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Table:interface" />[]'
+        description: ''
+  - name: getUsedRange(valuesOnly)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)'
+    package: ExcelScript!
+    fullName: getUsedRange(valuesOnly)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUsedRange(valuesOnly?: boolean): Range;'
+      parameters:
+        - id: valuesOnly
+          description: Optional. Betrachtet nur Zellen mit Werten als verwendet.
+          type: boolean
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getVerticalPageBreaks()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks:member(1)'
+    package: ExcelScript!
+    fullName: getVerticalPageBreaks()
+    summary: Ruft die Sammlung der vertikalen Seitenumbrüche für das Arbeitsblatt ab. Diese Sammlung enthält nur manuelle Seitenumbrüche.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVerticalPageBreaks(): PageBreak[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PageBreak:interface" />[]'
+        description: ''
+  - name: getVisibility()
+    uid: 'ExcelScript!ExcelScript.Worksheet#getVisibility:member(1)'
+    package: ExcelScript!
+    fullName: getVisibility()
+    summary: Die Sichtbarkeit des Arbeitsblatts.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisibility(): SheetVisibility;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SheetVisibility:enum" />'
+        description: ''
+  - name: getWorksheetCustomProperty(key)
+    uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
+    package: ExcelScript!
+    fullName: getWorksheetCustomProperty(key)
+    summary: 'Ruft ein Objekt für benutzerdefinierte Eigenschaften über seinen Schlüssel ab, bei dem Groß-/Kleinschreibung nicht beachtet wird. Wenn die benutzerdefinierte Eigenschaft nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        getWorksheetCustomProperty(
+                    key: string
+                ): WorksheetCustomProperty | undefined;
+      parameters:
+        - id: key
+          description: 'Der Schlüssel, der das benutzerdefinierte Eigenschaftsobjekt identifiziert. Groß-/Kleinschreibung wird nicht beachtet.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" /> | undefined'
+        description: ''
+  - name: refreshAllPivotTables()
+    uid: 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
+    package: ExcelScript!
+    fullName: refreshAllPivotTables()
+    summary: Aktualisiert alle PivotTables in der Sammlung.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'refreshAllPivotTables(): void;'
+      return:
+        type: void
+        description: ''
+  - name: removeAllHorizontalPageBreaks()
+    uid: 'ExcelScript!ExcelScript.Worksheet#removeAllHorizontalPageBreaks:member(1)'
+    package: ExcelScript!
+    fullName: removeAllHorizontalPageBreaks()
+    summary: Setzt alle manuellen Seitenumbrüche in der Sammlung zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeAllHorizontalPageBreaks(): void;'
+      return:
+        type: void
+        description: ''
+  - name: removeAllVerticalPageBreaks()
+    uid: 'ExcelScript!ExcelScript.Worksheet#removeAllVerticalPageBreaks:member(1)'
+    package: ExcelScript!
+    fullName: removeAllVerticalPageBreaks()
+    summary: Setzt alle manuellen Seitenumbrüche in der Sammlung zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeAllVerticalPageBreaks(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'replaceAll(text, replacement, criteria)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#replaceAll:member(1)'
+    package: ExcelScript!
+    fullName: 'replaceAll(text, replacement, criteria)'
+    summary: Sucht und ersetzt die angegebene Zeichenfolge auf der Grundlage der auf dem aktuellen Arbeitsblatt angegebenen Kriterien.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        replaceAll(
+                    text: string,
+                    replacement: string,
+                    criteria: ReplaceCriteria
+                ): number;
+      parameters:
+        - id: text
+          description: Zu suchende Zeichenfolge.
+          type: string
+        - id: replacement
+          description: 'Die Zeichenfolge, die die ursprüngliche Zeichenfolge ersetzt.'
+          type: string
+        - id: criteria
+          description: Zusätzliche Ersetzungskriterien.
+          type: '<xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />'
+      return:
+        type: number
+        description: ''
+  - name: setEnableCalculation(enableCalculation)
+    uid: 'ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)'
+    package: ExcelScript!
+    fullName: setEnableCalculation(enableCalculation)
+    summary: 'Bestimmt, ob Excel das Arbeitsblatt bei Bedarf neu berechnen soll. True, wenn Excel das Arbeitsblatt bei Bedarf neu berechnet. False, falls Excel das Arbeitsblatt nicht neu berechnet.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEnableCalculation(enableCalculation: boolean): void;'
+      parameters:
+        - id: enableCalculation
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.Worksheet#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Der Anzeigename des Arbeitsblatts.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```TypeScript
+          /**
+           * This sample renames a worksheet from "Sheet1" to "SALES".
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get a worksheet named "Sheet1".
+            const sheet = workbook.getWorksheet('Sheet1'); 
+
+            // Set its name to SALES.
+            sheet.setName('SALES');
+          }
+          ```
+  - name: setPosition(position)
+    uid: 'ExcelScript!ExcelScript.Worksheet#setPosition:member(1)'
+    package: ExcelScript!
+    fullName: setPosition(position)
+    summary: Die nullbasiert Position des Arbeitsblatts in der Arbeitsmappe.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPosition(position: number): void;'
+      parameters:
+        - id: position
+          description: ''
+          type: number
+      return:
+        type: void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```TypeScript
+          /**
+           * This sample sets the worksheet named "SALES" as the first sheet in the workbook.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get a worksheet named "SALES".
+            const sheet = workbook.getWorksheet('SALES'); 
+            // Position the worksheet at the beginning of the workbook.
+            sheet.setPosition(0);
+          }
+          ```
+  - name: setShowGridlines(showGridlines)
+    uid: 'ExcelScript!ExcelScript.Worksheet#setShowGridlines:member(1)'
+    package: ExcelScript!
+    fullName: setShowGridlines(showGridlines)
+    summary: 'Gibt an, ob Gitternetzlinien für den Benutzer sichtbar sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowGridlines(showGridlines: boolean): void;'
+      parameters:
+        - id: showGridlines
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowHeadings(showHeadings)
+    uid: 'ExcelScript!ExcelScript.Worksheet#setShowHeadings:member(1)'
+    package: ExcelScript!
+    fullName: setShowHeadings(showHeadings)
+    summary: 'Gibt an, ob Überschriften für den Benutzer sichtbar sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowHeadings(showHeadings: boolean): void;'
+      parameters:
+        - id: showHeadings
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setStandardWidth(standardWidth)
+    uid: 'ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)'
+    package: ExcelScript!
+    fullName: setStandardWidth(standardWidth)
+    summary: "Gibt die Standardbreite (Standard) aller Spalten im Arbeitsblatt an. Eine Einheit der Spaltenbreite entspricht der Breite eines Zeichens im Format Normal. Für proportionale Schriftarten wird die Breite des Zeichens\_0 (Null) verwendet."
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStandardWidth(standardWidth: number): void;'
+      parameters:
+        - id: standardWidth
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTabColor(tabColor)
+    uid: 'ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)'
+    package: ExcelScript!
+    fullName: setTabColor(tabColor)
+    summary: 'Die Registerkartenfarbe des Arbeitsblatts. Wenn das Arbeitsblatt nicht sichtbar ist, lautet der Wert beim Abrufen der Registerkartenfarbe `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf "Automatisch" festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe im Format \# RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "automatische" Farbe oder andernfalls eine echte Farbe festzulegen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTabColor(tabColor: string): void;'
+      parameters:
+        - id: tabColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: |-
+
+
+          #### <a name="examples"></a>Beispiele
+
+          ```TypeScript
+          /**
+           * This script sets the tab color of every worksheet in the workbook to red.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get all the worksheets in the workbook. 
+            let sheets = workbook.getWorksheets();
+            
+            // Set the tab color of each worksheet to a random color.
+            for (let sheet of sheets) {    
+              // Set the color of the current worksheet's tab to red.
+              sheet.setTabColor("red");
+            }
+          }
+          ```
+  - name: setVisibility(visibility)
+    uid: 'ExcelScript!ExcelScript.Worksheet#setVisibility:member(1)'
+    package: ExcelScript!
+    fullName: setVisibility(visibility)
+    summary: Die Sichtbarkeit des Arbeitsblatts.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisibility(visibility: SheetVisibility): void;'
+      parameters:
+        - id: visibility
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.SheetVisibility:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: 'showOutlineLevels(rowLevels, columnLevels)'
+    uid: 'ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)'
+    package: ExcelScript!
+    fullName: 'showOutlineLevels(rowLevels, columnLevels)'
+    summary: 'Zeigt Zeilen- oder Spaltengruppen nach ihren Gliederungsebenen an. Gliederung von Gruppen und Zusammenfassung einer Liste von Daten im Arbeitsblatt. Die `rowLevels` und die Parameter geben `columnLevels` an, wie viele Ebenen der Gliederung angezeigt werden. Der zulässige Argumentbereich liegt zwischen 0 und 8. Der Wert 0 ändert die aktuelle Anzeige nicht. Ein Wert, der größer als die aktuelle Anzahl von Ebenen ist, zeigt alle Ebenen an.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
+      parameters:
+        - id: rowLevels
+          description: Die Anzahl der Anzuzeigenden Zeilenebenen einer Gliederung.
+          type: number
+        - id: columnLevels
+          description: Die Anzahl der Spaltenebenen einer anzuzeigenden Gliederung.
+          type: number
+      return:
+        type: void
+        description: ''
