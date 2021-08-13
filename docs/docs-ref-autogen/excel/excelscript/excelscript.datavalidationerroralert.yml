@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DataValidationErrorAlert
-uid: ExcelScript!ExcelScript.DataValidationErrorAlert:interface
+uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
 package: ExcelScript!
 fullName: ExcelScript.DataValidationErrorAlert
 summary: Stellt die Fehlerwarnungseigenschaften für die Datenüberprüfung dar.
@@ -9,58 +9,51 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: message
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#message:member
-  package: ExcelScript!
-  fullName: message
-  summary: Stellt die Fehlermeldung dar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'message: string;'
-    return:
-      type: string
-- name: showAlert
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
-  package: ExcelScript!
-  fullName: showAlert
-  summary: Gibt an, ob ein Fehlerbenachrichtigungsdialogfeld angezeigt werden soll, wenn ein Benutzer ungültige Daten eingibt. Die Standardeinstellung ist `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'showAlert: boolean;'
-    return:
-      type: boolean
-- name: style
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
-  package: ExcelScript!
-  fullName: style
-  summary: Details zum Warnungstyp für die `ExcelScript.DataValidationAlertStyle` Datenüberprüfung finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'style: DataValidationAlertStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />
-- name: title
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#title:member
-  package: ExcelScript!
-  fullName: title
-  summary: Represents the error alert dialog title.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'title: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: 9d8d4761c2e4e0870d03a3c1fafb66a46d9a839a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913674"
+  - name: message
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+    package: ExcelScript!
+    fullName: message
+    summary: Stellt die Fehlermeldung dar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string;'
+      return:
+        type: string
+  - name: showAlert
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+    package: ExcelScript!
+    fullName: showAlert
+    summary: 'Gibt an, ob ein Fehlerwarnungsdialogfeld angezeigt werden soll, wenn ein Benutzer ungültige Daten eingibt. Der Standardwert ist `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAlert: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+    package: ExcelScript!
+    fullName: style
+    summary: Den Warnungstyp der Datenüberprüfung finden Sie `ExcelScript.DataValidationAlertStyle` unter "Details".
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style: DataValidationAlertStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />'
+  - name: title
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+    package: ExcelScript!
+    fullName: title
+    summary: Stellt den Titel des Dialogfelds "Fehlerwarnung" dar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title: string;'
+      return:
+        type: string

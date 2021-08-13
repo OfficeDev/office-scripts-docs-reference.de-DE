@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeFill
-uid: ExcelScript!ExcelScript.RangeFill:interface
+uid: 'ExcelScript!ExcelScript.RangeFill:interface'
 package: ExcelScript!
 fullName: ExcelScript.RangeFill
 summary: Stellt den Hintergrund eines Bereichsobjekts dar.
@@ -9,173 +9,166 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.RangeFill#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: Setzt den Hintergrund des Bereichs zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: 'HTML-Farbcode, der die Farbe des Hintergrunds darstellt, in der Form \# RRGGBB (z. B. "FFA500") oder als benannte #A0 (z. B. "orange")'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPattern()
-  uid: ExcelScript!ExcelScript.RangeFill#getPattern:member(1)
-  package: ExcelScript!
-  fullName: getPattern()
-  summary: Das Muster eines Bereichs. Weitere `ExcelScript.FillPattern` Informationen finden Sie unter. LinearGradient und RectangularGradient werden nicht unterstützt. Ein Wert gibt an, dass der gesamte Bereich keine einheitliche `null` Mustereinstellung hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPattern(): FillPattern;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
-      description: ''
-- name: getPatternColor()
-  uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
-  package: ExcelScript!
-  fullName: getPatternColor()
-  summary: 'Der HTML-Farbcode, der die Farbe des Bereichsmusters in der Form \# RRGGBB (z. B. "FFA500") oder als benannte #A0 (z. B. "Orange") darstellt.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPatternColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPatternTintAndShade()
-  uid: ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: getPatternTintAndShade()
-  summary: Gibt ein Double an, das eine Musterfarbe für die Bereichsfüllung aufleuchtet oder abdunkriert. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein `null` Wert gibt an, dass der Bereich keine einheitlichen Einstellungen `patternTintAndShade` hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPatternTintAndShade(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTintAndShade()
-  uid: ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: getTintAndShade()
-  summary: Gibt einen Double-Wert an, der eine Farbe für die Bereichsfüllung hellt oder abdunkriert. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein `null` Wert gibt an, dass der Bereich keine einheitlichen Einstellungen `tintAndShade` hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTintAndShade(): number;'
-    return:
-      type: number
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: 'HTML-Farbcode, der die Farbe des Hintergrunds darstellt, in der Form \# RRGGBB (z. B. "FFA500") oder als benannte #A0 (z. B. "orange")'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPattern(pattern)
-  uid: ExcelScript!ExcelScript.RangeFill#setPattern:member(1)
-  package: ExcelScript!
-  fullName: setPattern(pattern)
-  summary: Das Muster eines Bereichs. Weitere `ExcelScript.FillPattern` Informationen finden Sie unter. LinearGradient und RectangularGradient werden nicht unterstützt. Ein Wert gibt an, dass der gesamte Bereich keine einheitliche `null` Mustereinstellung hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPattern(pattern: FillPattern): void;'
-    parameters:
-    - id: pattern
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
-    return:
-      type: void
-      description: ''
-- name: setPatternColor(patternColor)
-  uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
-  package: ExcelScript!
-  fullName: setPatternColor(patternColor)
-  summary: 'Der HTML-Farbcode, der die Farbe des Bereichsmusters in der Form \# RRGGBB (z. B. "FFA500") oder als benannte #A0 (z. B. "Orange") darstellt.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPatternColor(patternColor: string): void;'
-    parameters:
-    - id: patternColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPatternTintAndShade(patternTintAndShade)
-  uid: ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: setPatternTintAndShade(patternTintAndShade)
-  summary: Gibt ein Double an, das eine Musterfarbe für die Bereichsfüllung aufleuchtet oder abdunkriert. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein `null` Wert gibt an, dass der Bereich keine einheitlichen Einstellungen `patternTintAndShade` hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPatternTintAndShade(patternTintAndShade: number): void;'
-    parameters:
-    - id: patternTintAndShade
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTintAndShade(tintAndShade)
-  uid: ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: setTintAndShade(tintAndShade)
-  summary: Gibt einen Double-Wert an, der eine Farbe für die Bereichsfüllung hellt oder abdunkriert. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein `null` Wert gibt an, dass der Bereich keine einheitlichen Einstellungen `tintAndShade` hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTintAndShade(tintAndShade: number): void;'
-    parameters:
-    - id: tintAndShade
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: dafa67da456c4e91adef5f2af1b7f06b3460152d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914244"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.RangeFill#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: Setzt den Hintergrund des Bereichs zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: 'HTML-Farbcode, der die Farbe des Hintergrunds darstellt, im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange")'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPattern()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
+    package: ExcelScript!
+    fullName: getPattern()
+    summary: 'Das Muster eines Bereichs. Weitere Informationen finden Sie `ExcelScript.FillPattern` unter. LinearGradient und RectangularGradient werden nicht unterstützt. Ein `null` Wert gibt an, dass der gesamte Bereich keine einheitliche Mustereinstellung aufweist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPattern(): FillPattern;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FillPattern:enum" />'
+        description: ''
+  - name: getPatternColor()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)'
+    package: ExcelScript!
+    fullName: getPatternColor()
+    summary: 'Der HTML-Farbcode, der die Farbe des Bereichsmusters im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange") darstellt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPatternColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPatternTintAndShade()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: getPatternTintAndShade()
+    summary: 'Gibt einen Double-Wert an, der eine Musterfarbe für die Bereichsfüllung aufhellt oder abdunkelt. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster), mit 0 für die Originalfarbe. Ein `null` Wert gibt an, dass der Bereich keine einheitlichen `patternTintAndShade` Einstellungen aufweist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPatternTintAndShade(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTintAndShade()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: getTintAndShade()
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für die Bereichsfüllung aufhellt oder abdunkelt. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster), mit 0 für die Originalfarbe. Ein `null` Wert gibt an, dass der Bereich keine einheitlichen `tintAndShade` Einstellungen aufweist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTintAndShade(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: 'HTML-Farbcode, der die Farbe des Hintergrunds darstellt, im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange")'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPattern(pattern)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
+    package: ExcelScript!
+    fullName: setPattern(pattern)
+    summary: 'Das Muster eines Bereichs. Weitere Informationen finden Sie `ExcelScript.FillPattern` unter. LinearGradient und RectangularGradient werden nicht unterstützt. Ein `null` Wert gibt an, dass der gesamte Bereich keine einheitliche Mustereinstellung aufweist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPattern(pattern: FillPattern): void;'
+      parameters:
+        - id: pattern
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.FillPattern:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setPatternColor(patternColor)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)'
+    package: ExcelScript!
+    fullName: setPatternColor(patternColor)
+    summary: 'Der HTML-Farbcode, der die Farbe des Bereichsmusters im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange") darstellt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPatternColor(patternColor: string): void;'
+      parameters:
+        - id: patternColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPatternTintAndShade(patternTintAndShade)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: setPatternTintAndShade(patternTintAndShade)
+    summary: 'Gibt einen Double-Wert an, der eine Musterfarbe für die Bereichsfüllung aufhellt oder abdunkelt. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster), mit 0 für die Originalfarbe. Ein `null` Wert gibt an, dass der Bereich keine einheitlichen `patternTintAndShade` Einstellungen aufweist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPatternTintAndShade(patternTintAndShade: number): void;'
+      parameters:
+        - id: patternTintAndShade
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTintAndShade(tintAndShade)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: setTintAndShade(tintAndShade)
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für die Bereichsfüllung aufhellt oder abdunkelt. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster), mit 0 für die Originalfarbe. Ein `null` Wert gibt an, dass der Bereich keine einheitlichen `tintAndShade` Einstellungen aufweist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTintAndShade(tintAndShade: number): void;'
+      parameters:
+        - id: tintAndShade
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

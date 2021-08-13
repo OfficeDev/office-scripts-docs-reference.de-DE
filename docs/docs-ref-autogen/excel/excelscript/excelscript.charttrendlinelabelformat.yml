@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartTrendlineLabelFormat
-uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartTrendlineLabelFormat
 summary: Kapselt die Formateigenschaften für die Diagrammtrendlinienbeschriftung.
@@ -9,49 +9,42 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorder()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getBorder:member(1)
-  package: ExcelScript!
-  fullName: getBorder()
-  summary: Gibt das Rahmenformat an, das Farbe, Linienstil und Gewichtung umfasst.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorder(): ChartBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: Gibt das Füllformat der aktuellen Diagrammtrendlinienbeschriftung an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Gibt die Schriftartattribute (z. B. Schriftartenname, Schriftgrad und Farbe) für eine Diagrammtrendlinienbeschriftung an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 1f2e513507dd716804ca316d62016579c072b710
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914520"
+  - name: getBorder()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getBorder:member(1)'
+    package: ExcelScript!
+    fullName: getBorder()
+    summary: 'Gibt das Rahmenformat an, das Farbe, Linienart und Stärke umfasst.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: Gibt das Füllformat der aktuellen Diagrammtrendlinienbeschriftung an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Gibt die Schriftattribute (z. B. Schriftartname, Schriftgrad und Farbe) für eine Diagrammtrendlinienbeschriftung an.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

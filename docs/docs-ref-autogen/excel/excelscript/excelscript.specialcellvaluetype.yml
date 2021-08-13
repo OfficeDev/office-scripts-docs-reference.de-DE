@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SpecialCellValueType
-uid: ExcelScript!ExcelScript.SpecialCellValueType:enum
+uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
 package: ExcelScript!
 fullName: ExcelScript.SpecialCellValueType
 summary: ''
@@ -8,70 +8,63 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: all
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.all:member
-  package: ExcelScript!
-  summary: Zellen mit Fehlern, booleschen, numerischen oder Zeichenfolgenwerten.
-- name: errors
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errors:member
-  package: ExcelScript!
-  summary: Zellen mit Fehlern.
-- name: errorsLogical
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member
-  package: ExcelScript!
-  summary: Zellen mit Fehlern oder booleschen Werten.
-- name: errorsLogicalNumber
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member
-  package: ExcelScript!
-  summary: Zellen mit Fehlern, booleschen oder numerischen Werten.
-- name: errorsLogicalText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member
-  package: ExcelScript!
-  summary: Zellen mit Fehlern, booleschen Werten oder Zeichenfolgenwerten.
-- name: errorsNumbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member
-  package: ExcelScript!
-  summary: Zellen mit Fehlern oder numerischen Werten.
-- name: errorsNumberText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member
-  package: ExcelScript!
-  summary: Zellen mit Fehlern, numerischen Werten oder Zeichenfolgenwerten.
-- name: errorsText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member
-  package: ExcelScript!
-  summary: Zellen mit Fehlern oder Zeichenfolgenwerten.
-- name: logical
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logical:member
-  package: ExcelScript!
-  summary: Zellen mit einem booleschen Wert.
-- name: logicalNumbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member
-  package: ExcelScript!
-  summary: Zellen mit einem booleschen oder numerischen Wert.
-- name: logicalNumbersText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member
-  package: ExcelScript!
-  summary: Zellen mit einem booleschen, numerischen oder Zeichenfolgenwert.
-- name: logicalText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member
-  package: ExcelScript!
-  summary: Zellen mit einem booleschen wert oder einem Zeichenfolgenwert.
-- name: numbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbers:member
-  package: ExcelScript!
-  summary: Zellen mit einem numerischen Wert.
-- name: numbersText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member
-  package: ExcelScript!
-  summary: Zellen mit einem numerischen wert oder einem Zeichenfolgenwert.
-- name: text
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.text:member
-  package: ExcelScript!
-  summary: Zellen mit einem Zeichenfolgenwert.
-metadata:
-  ms.openlocfilehash: 93f2ab2e05785f1f93bc26839d20d9c060205384
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607340"
+  - name: all
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
+    package: ExcelScript!
+    summary: 'Zellen mit Fehlern, booleschen, numerischen oder Zeichenfolgenwerten.'
+  - name: errors
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
+    package: ExcelScript!
+    summary: Zellen mit Fehlern.
+  - name: errorsLogical
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
+    package: ExcelScript!
+    summary: Zellen mit Fehlern oder booleschen Werten.
+  - name: errorsLogicalNumber
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
+    package: ExcelScript!
+    summary: 'Zellen mit Fehlern, booleschen oder numerischen Werten.'
+  - name: errorsLogicalText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
+    package: ExcelScript!
+    summary: 'Zellen mit Fehlern, booleschen Werten oder Zeichenfolgenwerten.'
+  - name: errorsNumbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
+    package: ExcelScript!
+    summary: Zellen mit Fehlern oder numerischen Werten.
+  - name: errorsNumberText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
+    package: ExcelScript!
+    summary: 'Zellen mit Fehlern, numerischen Werten oder Zeichenfolgenwerten.'
+  - name: errorsText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
+    package: ExcelScript!
+    summary: Zellen mit Fehlern oder Zeichenfolgenwerten.
+  - name: logical
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
+    package: ExcelScript!
+    summary: Zellen mit einem booleschen Wert.
+  - name: logicalNumbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
+    package: ExcelScript!
+    summary: Zellen mit einem booleschen oder numerischen Wert.
+  - name: logicalNumbersText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
+    package: ExcelScript!
+    summary: 'Zellen mit einem booleschen, numerischen oder Zeichenfolgenwert.'
+  - name: logicalText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
+    package: ExcelScript!
+    summary: Zellen mit einem booleschen oder Zeichenfolgenwert.
+  - name: numbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
+    package: ExcelScript!
+    summary: Zellen mit einem numerischen Wert.
+  - name: numbersText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
+    package: ExcelScript!
+    summary: Zellen mit einem numerischen oder Zeichenfolgenwert.
+  - name: text
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
+    package: ExcelScript!
+    summary: Zellen mit einem Zeichenfolgenwert.

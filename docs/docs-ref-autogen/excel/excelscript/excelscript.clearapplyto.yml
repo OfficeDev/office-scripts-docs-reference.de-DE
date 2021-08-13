@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ClearApplyTo
-uid: ExcelScript!ExcelScript.ClearApplyTo:enum
+uid: 'ExcelScript!ExcelScript.ClearApplyTo:enum'
 package: ExcelScript!
 fullName: ExcelScript.ClearApplyTo
 summary: ''
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: all
-  uid: ExcelScript!ExcelScript.ClearApplyTo.all:member
-  package: ExcelScript!
-  summary: ''
-- name: contents
-  uid: ExcelScript!ExcelScript.ClearApplyTo.contents:member
-  package: ExcelScript!
-  summary: Der Inhalt des Bereichs wird geräumt.
-- name: formats
-  uid: ExcelScript!ExcelScript.ClearApplyTo.formats:member
-  package: ExcelScript!
-  summary: Entfernt alle Formatierungen für den Bereich.
-- name: hyperlinks
-  uid: ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member
-  package: ExcelScript!
-  summary: Entfernt alle Hyperlinks, lässt jedoch alle Inhalte und Formatierungen intakt.
-- name: removeHyperlinks
-  uid: ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member
-  package: ExcelScript!
-  summary: Entfernt Hyperlinks und Formatierungen für die Zelle, lässt jedoch Inhalte, bedingte Formate und Datenüberprüfung unverändert.
-metadata:
-  ms.openlocfilehash: 71f3e0f6a14f8aff49e539b9078306047c60a77d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913908"
+  - name: all
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.all:member'
+    package: ExcelScript!
+    summary: ''
+  - name: contents
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.contents:member'
+    package: ExcelScript!
+    summary: Löscht den Inhalt des Bereichs.
+  - name: formats
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.formats:member'
+    package: ExcelScript!
+    summary: Löscht alle Formatierungen für den Bereich.
+  - name: hyperlinks
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member'
+    package: ExcelScript!
+    summary: 'Löscht alle Hyperlinks, lässt jedoch alle Inhalte und Formatierungen erhalten.'
+  - name: removeHyperlinks
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member'
+    package: ExcelScript!
+    summary: 'Entfernt Hyperlinks und Formatierungen für die Zelle, lässt jedoch Inhalte, bedingte Formate und Datenüberprüfungen erhalten.'

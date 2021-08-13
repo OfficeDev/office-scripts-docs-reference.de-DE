@@ -1,42 +1,35 @@
 ### YamlMime:TSType
 name: ExcelScript.ListDataValidation
-uid: ExcelScript!ExcelScript.ListDataValidation:interface
+uid: 'ExcelScript!ExcelScript.ListDataValidation:interface'
 package: ExcelScript!
 fullName: ExcelScript.ListDataValidation
-summary: Represents the List data validation criteria.
+summary: Stellt die Kriterien für die Gültigkeitsprüfung von Listendaten dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: inCellDropDown
-  uid: ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member
-  package: ExcelScript!
-  fullName: inCellDropDown
-  summary: Gibt an, ob die Liste in einer Zelle angezeigt werden soll. Die Standardeinstellung ist `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'inCellDropDown: boolean;'
-    return:
-      type: boolean
-- name: source
-  uid: ExcelScript!ExcelScript.ListDataValidation#source:member
-  package: ExcelScript!
-  fullName: source
-  summary: Quelle der Liste für die Datenüberprüfung Beim Festlegen des Werts kann er als Objekt oder als Zeichenfolge übergeben werden, die eine durch Kommas getrennte `Range` Zahl, einen booleschen Wert oder ein Datum enthält.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'source: string | Range;'
-    return:
-      type: string | <xref uid="ExcelScript!ExcelScript.Range:interface" />
-metadata:
-  ms.openlocfilehash: fdc280019cb5828cac3464e444d69ce01a971b16
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914352"
+  - name: inCellDropDown
+    uid: 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
+    package: ExcelScript!
+    fullName: inCellDropDown
+    summary: 'Gibt an, ob die Liste in einer Zell-Dropdownliste angezeigt werden soll. Der Standardwert ist `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inCellDropDown: boolean;'
+      return:
+        type: boolean
+  - name: source
+    uid: 'ExcelScript!ExcelScript.ListDataValidation#source:member'
+    package: ExcelScript!
+    fullName: source
+    summary: 'Quelle der Liste für die Datenüberprüfung Beim Festlegen des Werts kann er als Objekt oder als Zeichenfolge übergeben `Range` werden, die eine durch Trennzeichen getrennte Zahl, einen booleschen Wert oder ein Datum enthält.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: string | Range;'
+      return:
+        type: 'string | <xref uid="ExcelScript!ExcelScript.Range:interface" />'

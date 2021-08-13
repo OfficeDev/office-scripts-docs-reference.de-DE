@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.TableColumn
-uid: ExcelScript!ExcelScript.TableColumn:interface
+uid: 'ExcelScript!ExcelScript.TableColumn:interface'
 package: ExcelScript!
 fullName: ExcelScript.TableColumn
 summary: Stellt eine Spalte in einer Tabelle dar.
@@ -9,144 +9,137 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.TableColumn#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Löscht die Spalte aus der Tabelle.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getFilter()
-  uid: ExcelScript!ExcelScript.TableColumn#getFilter:member(1)
-  package: ExcelScript!
-  fullName: getFilter()
-  summary: Ruft den auf die Spalte angewendeten Filter ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFilter(): Filter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Filter:interface" />
-      description: ''
-- name: getHeaderRowRange()
-  uid: ExcelScript!ExcelScript.TableColumn#getHeaderRowRange:member(1)
-  package: ExcelScript!
-  fullName: getHeaderRowRange()
-  summary: Ruft das Bereichsobjekt ab, das mit der Überschriftenzeile der Spalte verknüpft ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeaderRowRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.TableColumn#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Gibt einen eindeutigen Schlüssel an, der die Spalte in der Tabelle angibt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): number;'
-    return:
-      type: number
-      description: ''
-- name: getIndex()
-  uid: ExcelScript!ExcelScript.TableColumn#getIndex:member(1)
-  package: ExcelScript!
-  fullName: getIndex()
-  summary: Gibt die Indexnummer der Spalte in der Spaltenauflistung der Tabelle zurück. Nullindiziert.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIndex(): number;'
-    return:
-      type: number
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.TableColumn#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Gibt den Namen der Tabellenspalte an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRange()
-  uid: ExcelScript!ExcelScript.TableColumn#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange()
-  summary: Ruft das Bereichsobjekt ab, das mit der gesamten Spalte verknüpft ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRangeBetweenHeaderAndTotal()
-  uid: ExcelScript!ExcelScript.TableColumn#getRangeBetweenHeaderAndTotal:member(1)
-  package: ExcelScript!
-  fullName: getRangeBetweenHeaderAndTotal()
-  summary: Ruft das Bereichsobjekt ab, das mit dem Datenteil der Spalte verknüpft ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRangeBetweenHeaderAndTotal(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getTotalRowRange()
-  uid: ExcelScript!ExcelScript.TableColumn#getTotalRowRange:member(1)
-  package: ExcelScript!
-  fullName: getTotalRowRange()
-  summary: Ruft das Bereichsobjekt ab, das mit der Ergebniszeile der Spalte verknüpft ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTotalRowRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.TableColumn#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Gibt den Namen der Tabellenspalte an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: e520c3880c65cec7a37cc089a9e35f1179c2b687
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914132"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.TableColumn#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Löscht die Spalte aus der Tabelle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getFilter()
+    uid: 'ExcelScript!ExcelScript.TableColumn#getFilter:member(1)'
+    package: ExcelScript!
+    fullName: getFilter()
+    summary: Ruft den auf die Spalte angewendeten Filter ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFilter(): Filter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Filter:interface" />'
+        description: ''
+  - name: getHeaderRowRange()
+    uid: 'ExcelScript!ExcelScript.TableColumn#getHeaderRowRange:member(1)'
+    package: ExcelScript!
+    fullName: getHeaderRowRange()
+    summary: 'Ruft das Bereichsobjekt ab, das mit der Überschriftenzeile der Spalte verknüpft ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeaderRowRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.TableColumn#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: 'Gibt einen eindeutigen Schlüssel an, der die Spalte in der Tabelle angibt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getIndex()
+    uid: 'ExcelScript!ExcelScript.TableColumn#getIndex:member(1)'
+    package: ExcelScript!
+    fullName: getIndex()
+    summary: Gibt die Indexnummer der Spalte in der Spaltenauflistung der Tabelle zurück. Nullindiziert.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIndex(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.TableColumn#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Gibt den Namen der Tabellenspalte an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRange()
+    uid: 'ExcelScript!ExcelScript.TableColumn#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange()
+    summary: 'Ruft das Bereichsobjekt ab, das mit der gesamten Spalte verknüpft ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRangeBetweenHeaderAndTotal()
+    uid: 'ExcelScript!ExcelScript.TableColumn#getRangeBetweenHeaderAndTotal:member(1)'
+    package: ExcelScript!
+    fullName: getRangeBetweenHeaderAndTotal()
+    summary: 'Ruft das Bereichsobjekt ab, das mit dem Datenteil der Spalte verknüpft ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRangeBetweenHeaderAndTotal(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getTotalRowRange()
+    uid: 'ExcelScript!ExcelScript.TableColumn#getTotalRowRange:member(1)'
+    package: ExcelScript!
+    fullName: getTotalRowRange()
+    summary: 'Ruft das Bereichsobjekt ab, das mit der Ergebniszeile der Spalte verknüpft ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTotalRowRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.TableColumn#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Gibt den Namen der Tabellenspalte an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

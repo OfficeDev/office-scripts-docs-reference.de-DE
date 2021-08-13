@@ -1,54 +1,47 @@
 ### YamlMime:TSType
 name: ExcelScript.DataValidationPrompt
-uid: ExcelScript!ExcelScript.DataValidationPrompt:interface
+uid: 'ExcelScript!ExcelScript.DataValidationPrompt:interface'
 package: ExcelScript!
 fullName: ExcelScript.DataValidationPrompt
-summary: Stellt die Benutzeraufforderungseigenschaften für die Datenüberprüfung dar.
+summary: Stellt die Eigenschaften der Benutzeraufforderung für die Datenüberprüfung dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: message
-  uid: ExcelScript!ExcelScript.DataValidationPrompt#message:member
-  package: ExcelScript!
-  fullName: message
-  summary: Gibt die Meldung der Eingabeaufforderung an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'message: string;'
-    return:
-      type: string
-- name: showPrompt
-  uid: ExcelScript!ExcelScript.DataValidationPrompt#showPrompt:member
-  package: ExcelScript!
-  fullName: showPrompt
-  summary: Gibt an, ob eine Eingabeaufforderung angezeigt wird, wenn ein Benutzer eine Zelle mit Datenüberprüfung auswählt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'showPrompt: boolean;'
-    return:
-      type: boolean
-- name: title
-  uid: ExcelScript!ExcelScript.DataValidationPrompt#title:member
-  package: ExcelScript!
-  fullName: title
-  summary: Gibt den Titel für die Eingabeaufforderung an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'title: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: 19034794c229abf7f140b73412e08361de43f189
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913667"
+  - name: message
+    uid: 'ExcelScript!ExcelScript.DataValidationPrompt#message:member'
+    package: ExcelScript!
+    fullName: message
+    summary: Gibt die Meldung der Eingabeaufforderung an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string;'
+      return:
+        type: string
+  - name: showPrompt
+    uid: 'ExcelScript!ExcelScript.DataValidationPrompt#showPrompt:member'
+    package: ExcelScript!
+    fullName: showPrompt
+    summary: 'Gibt an, ob eine Eingabeaufforderung angezeigt wird, wenn ein Benutzer eine Zelle mit Datenüberprüfung auswählt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showPrompt: boolean;'
+      return:
+        type: boolean
+  - name: title
+    uid: 'ExcelScript!ExcelScript.DataValidationPrompt#title:member'
+    package: ExcelScript!
+    fullName: title
+    summary: Gibt den Titel für die Eingabeaufforderung an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title: string;'
+      return:
+        type: string

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.SlicerItem
-uid: ExcelScript!ExcelScript.SlicerItem:interface
+uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
 package: ExcelScript!
 fullName: ExcelScript.SlicerItem
 summary: Stellt ein Datenschnittelement in einem Datenschnitt dar.
@@ -9,79 +9,72 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getHasData()
-  uid: ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)
-  package: ExcelScript!
-  fullName: getHasData()
-  summary: Der Wert `true` ist, wenn das Datenschnittelement Daten enthält.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHasData(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getIsSelected()
-  uid: ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)
-  package: ExcelScript!
-  fullName: getIsSelected()
-  summary: Der Wert `true` ist, wenn das Datenschnittelement ausgewählt ist. Durch Festlegen dieses Werts wird der ausgewählte Status anderer Datenschnittelemente nicht geräumt. Wenn das Datenschnittelement standardmäßig das einzige ausgewählte Element ist, werden bei deaktivierter Auswahl alle Elemente ausgewählt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsSelected(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getKey()
-  uid: ExcelScript!ExcelScript.SlicerItem#getKey:member(1)
-  package: ExcelScript!
-  fullName: getKey()
-  summary: Stellt den eindeutigen Wert dar, der für das Datenschnittelement steht.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getKey(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.SlicerItem#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Represents the title displayed in the Excel UI.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: setIsSelected(isSelected)
-  uid: ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)
-  package: ExcelScript!
-  fullName: setIsSelected(isSelected)
-  summary: Der Wert `true` ist, wenn das Datenschnittelement ausgewählt ist. Durch Festlegen dieses Werts wird der ausgewählte Status anderer Datenschnittelemente nicht geräumt. Wenn das Datenschnittelement standardmäßig das einzige ausgewählte Element ist, werden bei deaktivierter Auswahl alle Elemente ausgewählt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setIsSelected(isSelected: boolean): void;'
-    parameters:
-    - id: isSelected
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 10c0521469d6d8f2a916ba92fb907da2b1ef9d4c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914153"
+  - name: getHasData()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)'
+    package: ExcelScript!
+    fullName: getHasData()
+    summary: 'Der Wert `true` ist, wenn das Datenschnittelement Daten enthält.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHasData(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getIsSelected()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)'
+    package: ExcelScript!
+    fullName: getIsSelected()
+    summary: 'Der Wert `true` ist, wenn das Datenschnittelement ausgewählt ist. Durch Festlegen dieses Werts wird der ausgewählte Status anderer Datenschnittelemente nicht gelöscht. Standardmäßig werden alle Elemente ausgewählt, wenn das Datenschnittelement das einzige ausgewählte Element ist, wenn es deaktiviert wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsSelected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getKey()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getKey:member(1)'
+    package: ExcelScript!
+    fullName: getKey()
+    summary: 'Stellt den eindeutigen Wert dar, der für das Datenschnittelement steht.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: 'Stellt den Titel dar, der auf der Excel Benutzeroberfläche angezeigt wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setIsSelected(isSelected)
+    uid: 'ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)'
+    package: ExcelScript!
+    fullName: setIsSelected(isSelected)
+    summary: 'Der Wert `true` ist, wenn das Datenschnittelement ausgewählt ist. Durch Festlegen dieses Werts wird der ausgewählte Status anderer Datenschnittelemente nicht gelöscht. Standardmäßig werden alle Elemente ausgewählt, wenn das Datenschnittelement das einzige ausgewählte Element ist, wenn es deaktiviert wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setIsSelected(isSelected: boolean): void;'
+      parameters:
+        - id: isSelected
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

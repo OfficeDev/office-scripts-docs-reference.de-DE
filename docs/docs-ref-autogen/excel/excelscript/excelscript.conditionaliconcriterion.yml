@@ -1,66 +1,59 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalIconCriterion
-uid: ExcelScript!ExcelScript.ConditionalIconCriterion:interface
+uid: 'ExcelScript!ExcelScript.ConditionalIconCriterion:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalIconCriterion
-summary: Stellt ein Symbolkriterium dar, das einen Typ, einen Wert, einen Operator und ein optionales benutzerdefiniertes Symbol enthält, wenn kein Symbolsatz verwendet wird.
+summary: 'Stellt ein Symbolkriterium dar, das einen Typ, einen Wert, einen Operator und ein optionales benutzerdefiniertes Symbol enthält, wenn kein Symbolsatz verwendet wird.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: customIcon
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterion#customIcon:member
-  package: ExcelScript!
-  fullName: customIcon
-  summary: Das benutzerdefinierte Symbol für das aktuelle Kriterium wird zurückgegeben, wenn es sich vom Standardsymbolsatz `null` unterscheiden sollte.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'customIcon?: Icon;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
-- name: formula
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterion#formula:member
-  package: ExcelScript!
-  fullName: formula
-  summary: Eine Zahl oder eine Formel, je nach Typ.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula: string;'
-    return:
-      type: string
-- name: operator
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterion#operator:member
-  package: ExcelScript!
-  fullName: operator
-  summary: '`greaterThan` oder `greaterThanOrEqual` für jeden Regeltyp für das bedingte Symbolformat.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'operator: ConditionalIconCriterionOperator;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalIconCriterionOperator:enum" />
-- name: type
-  uid: ExcelScript!ExcelScript.ConditionalIconCriterion#type:member
-  package: ExcelScript!
-  fullName: type
-  summary: Die Basis für die bedingte Symbolformel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'type: ConditionalFormatIconRuleType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum" />
-metadata:
-  ms.openlocfilehash: 935df823942bbf9c9e6edfd28ed75ea430240bc3
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913809"
+  - name: customIcon
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterion#customIcon:member'
+    package: ExcelScript!
+    fullName: customIcon
+    summary: 'Das benutzerdefinierte Symbol für das aktuelle Kriterium wird zurückgegeben, sofern es sich vom Standardsymbolsatz `null` unterscheidet.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customIcon?: Icon;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Icon:interface" />'
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterion#formula:member'
+    package: ExcelScript!
+    fullName: formula
+    summary: 'Eine Zahl oder eine Formel, je nach Typ.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula: string;'
+      return:
+        type: string
+  - name: operator
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterion#operator:member'
+    package: ExcelScript!
+    fullName: operator
+    summary: '`greaterThan` oder `greaterThanOrEqual` für jeden Regeltyp für das bedingte Symbolformat.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator: ConditionalIconCriterionOperator;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalIconCriterionOperator:enum" />'
+  - name: type
+    uid: 'ExcelScript!ExcelScript.ConditionalIconCriterion#type:member'
+    package: ExcelScript!
+    fullName: type
+    summary: Die Basis für die bedingte Symbolformel.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ConditionalFormatIconRuleType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum" />'

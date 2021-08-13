@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SortBy
-uid: ExcelScript!ExcelScript.SortBy:enum
+uid: 'ExcelScript!ExcelScript.SortBy:enum'
 package: ExcelScript!
 fullName: ExcelScript.SortBy
 summary: Stellt die Sortierrichtung dar.
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: ascending
-  uid: ExcelScript!ExcelScript.SortBy.ascending:member
-  package: ExcelScript!
-  summary: Aufsteigende Sortierung. Kleinstes bis größtes oder A bis Z.
-- name: descending
-  uid: ExcelScript!ExcelScript.SortBy.descending:member
-  package: ExcelScript!
-  summary: Absteigend sortiert. Größten bis kleinsten oder Z bis A.
-metadata:
-  ms.openlocfilehash: ac1f6680ff327f4fedd3b7521ebd3a130bd4f077
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420440"
+  - name: ascending
+    uid: 'ExcelScript!ExcelScript.SortBy.ascending:member'
+    package: ExcelScript!
+    summary: Aufsteigende Sortierung. Kleinste bis größte oder A bis Z.
+  - name: descending
+    uid: 'ExcelScript!ExcelScript.SortBy.descending:member'
+    package: ExcelScript!
+    summary: Absteigende Sortierung. Größter Wert bis zum kleinsten Wert oder Z bis A.

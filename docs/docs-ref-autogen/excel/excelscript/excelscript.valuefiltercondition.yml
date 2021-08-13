@@ -1,85 +1,70 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ValueFilterCondition
-uid: ExcelScript!ExcelScript.ValueFilterCondition:enum
+uid: 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
 package: ExcelScript!
 fullName: ExcelScript.ValueFilterCondition
-summary: Enumeration, die alle akzeptierten Bedingungen darstellt, unter denen ein Wertfilter angewendet werden kann. Wird verwendet, um den Typ von PivotFilter zu konfigurieren, der auf das Feld angewendet wird. `PivotFilter.exclusive` kann so festgelegt `true` werden, dass viele dieser Bedingungen invertiert werden.
+summary: 'Enumeration, die alle akzeptierten Bedingungen darstellt, mit denen ein Wertfilter angewendet werden kann. Wird verwendet, um den Typ des PivotFilters zu konfigurieren, der auf das Feld angewendet wird. `PivotFilter.exclusive` kann so eingestellt `true` werden, dass viele dieser Bedingungen invertiert werden.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: between
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.between:member
-  package: ExcelScript!
-  summary: >-
-    Zwischen `lowerBound` und `upperBound` Kriterien.
+  - name: between
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
+    package: ExcelScript!
+    summary: |-
+      Zwischen `lowerBound` und `upperBound` Kriterien.
 
+      Erforderliche Kriterien: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optionale Kriterien: {`exclusive`<!-- -->}<!-- -->.
+  - name: bottomN
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
+    package: ExcelScript!
+    summary: |-
+      In bottom N (`threshold`<!-- -->) \[ items, percent, sum \] of value category.
 
-    Erforderliche Kriterien: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optionale Kriterien: {`exclusive`<!-- -->}<!-- -->.
-- name: bottomN
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member
-  package: ExcelScript!
-  summary: >-
-    Unten N (`threshold`<!-- -->) \[ Elemente, Prozent, Summe \] der Wertkategorie.
+      Erforderliche Kriterien: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+  - name: equals
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
+    package: ExcelScript!
+    summary: |-
+      Entspricht dem Vergleichskriterium.
 
+      Erforderliche Kriterien: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Optionale Kriterien: {`exclusive`<!-- -->}<!-- -->.
+  - name: greaterThan
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
+    package: ExcelScript!
+    summary: |-
+      Größer als vergleichskriterium.
 
-    Erforderliche Kriterien: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-- name: equals
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.equals:member
-  package: ExcelScript!
-  summary: >-
-    Entspricht dem Vergleichskriterium.
+      Erforderliche Kriterien: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: greaterThanOrEqualTo
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
+    package: ExcelScript!
+    summary: |-
+      Größer als oder gleich dem Vergleichskriterium.
 
+      Erforderliche Kriterien: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: lessThan
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
+    package: ExcelScript!
+    summary: |-
+      Kleiner als vergleichskriterium.
 
-    Erforderliche Kriterien: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Optionale Kriterien: {`exclusive`<!-- -->}<!-- -->.
-- name: greaterThan
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member
-  package: ExcelScript!
-  summary: >-
-    Größer als vergleichskriterium.
+      Erforderliche Kriterien: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: lessThanOrEqualTo
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
+    package: ExcelScript!
+    summary: |-
+      Kleiner als oder gleich dem Vergleichskriterium.
 
+      Erforderliche Kriterien: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+  - name: topN
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
+    package: ExcelScript!
+    summary: |-
+      In top N (`threshold`<!-- -->) \[ items, percent, sum \] of value category.
 
-    Erforderliche Kriterien: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: greaterThanOrEqualTo
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member
-  package: ExcelScript!
-  summary: >-
-    Größer als oder gleich dem Vergleichskriterium.
-
-
-    Erforderliche Kriterien: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: lessThan
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member
-  package: ExcelScript!
-  summary: >-
-    Kleiner als vergleichskriterium.
-
-
-    Erforderliche Kriterien: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: lessThanOrEqualTo
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member
-  package: ExcelScript!
-  summary: >-
-    Kleiner oder gleich vergleichskriterium.
-
-
-    Erforderliche Kriterien: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-- name: topN
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.topN:member
-  package: ExcelScript!
-  summary: >-
-    In top N (`threshold`<!-- -->) \[ Elemente, Prozent, Summe \] der Wertkategorie.
-
-
-    Erforderliche Kriterien: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
-- name: unknown
-  uid: ExcelScript!ExcelScript.ValueFilterCondition.unknown:member
-  package: ExcelScript!
-  summary: '`ValueFilterCondition` ist unbekannt oder wird nicht unterstützt.'
-metadata:
-  ms.openlocfilehash: 74b546f8625a2e025318666956c019507d604c3e
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914614"
+      Erforderliche Kriterien: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
+    package: ExcelScript!
+    summary: '`ValueFilterCondition` unbekannt oder nicht unterstützt.'

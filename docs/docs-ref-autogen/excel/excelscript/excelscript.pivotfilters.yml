@@ -1,66 +1,59 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotFilters
-uid: ExcelScript!ExcelScript.PivotFilters:interface
+uid: 'ExcelScript!ExcelScript.PivotFilters:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotFilters
-summary: Eine Schnittstelle, die alle PivotFilter darstellt, die derzeit auf ein bestimmtes PivotField angewendet werden.
+summary: 'Eine Schnittstelle, die alle PivotFilter darstellt, die derzeit auf ein bestimmtes PivotField angewendet werden.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: dateFilter
-  uid: ExcelScript!ExcelScript.PivotFilters#dateFilter:member
-  package: ExcelScript!
-  fullName: dateFilter
-  summary: Der aktuell angewendete Datumsfilter des PivotFields. Diese Eigenschaft `null` ist, wenn kein Wertfilter angewendet wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'dateFilter?: PivotDateFilter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotDateFilter:interface" />
-- name: labelFilter
-  uid: ExcelScript!ExcelScript.PivotFilters#labelFilter:member
-  package: ExcelScript!
-  fullName: labelFilter
-  summary: Der aktuell angewendete Bezeichnungsfilter des PivotFields. Diese Eigenschaft `null` ist, wenn kein Wertfilter angewendet wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'labelFilter?: PivotLabelFilter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotLabelFilter:interface" />
-- name: manualFilter
-  uid: ExcelScript!ExcelScript.PivotFilters#manualFilter:member
-  package: ExcelScript!
-  fullName: manualFilter
-  summary: Der aktuell angewendete manuelle Filter des PivotFields. Diese Eigenschaft `null` ist, wenn kein Wertfilter angewendet wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'manualFilter?: PivotManualFilter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotManualFilter:interface" />
-- name: valueFilter
-  uid: ExcelScript!ExcelScript.PivotFilters#valueFilter:member
-  package: ExcelScript!
-  fullName: valueFilter
-  summary: Der aktuell angewendete Wertfilter des PivotFields. Diese Eigenschaft `null` ist, wenn kein Wertfilter angewendet wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'valueFilter?: PivotValueFilter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotValueFilter:interface" />
-metadata:
-  ms.openlocfilehash: 8cdd6cabb9376a1a50fff52faabea26061a8266f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914314"
+  - name: dateFilter
+    uid: 'ExcelScript!ExcelScript.PivotFilters#dateFilter:member'
+    package: ExcelScript!
+    fullName: dateFilter
+    summary: 'Der aktuell angewendete Datumsfilter des PivotFields. Diese Eigenschaft `null` ist, wenn kein Wertfilter angewendet wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dateFilter?: PivotDateFilter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotDateFilter:interface" />'
+  - name: labelFilter
+    uid: 'ExcelScript!ExcelScript.PivotFilters#labelFilter:member'
+    package: ExcelScript!
+    fullName: labelFilter
+    summary: 'Der aktuell angewendete Bezeichnungsfilter des PivotFields. Diese Eigenschaft `null` ist, wenn kein Wertfilter angewendet wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'labelFilter?: PivotLabelFilter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotLabelFilter:interface" />'
+  - name: manualFilter
+    uid: 'ExcelScript!ExcelScript.PivotFilters#manualFilter:member'
+    package: ExcelScript!
+    fullName: manualFilter
+    summary: 'Der aktuell angewendete manuelle Filter des PivotFields. Diese Eigenschaft `null` ist, wenn kein Wertfilter angewendet wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'manualFilter?: PivotManualFilter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotManualFilter:interface" />'
+  - name: valueFilter
+    uid: 'ExcelScript!ExcelScript.PivotFilters#valueFilter:member'
+    package: ExcelScript!
+    fullName: valueFilter
+    summary: 'Der aktuell angewendete Wertfilter des PivotFields. Diese Eigenschaft `null` ist, wenn kein Wertfilter angewendet wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueFilter?: PivotValueFilter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotValueFilter:interface" />'

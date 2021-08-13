@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeSort
-uid: ExcelScript!ExcelScript.RangeSort:interface
+uid: 'ExcelScript!ExcelScript.RangeSort:interface'
 package: ExcelScript!
 fullName: ExcelScript.RangeSort
 summary: Verwaltet Sortiervorgänge für `Range` Objekte.
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: apply(fields, matchCase, hasHeaders, orientation, method)
-  uid: ExcelScript!ExcelScript.RangeSort#apply:member(1)
-  package: ExcelScript!
-  fullName: apply(fields, matchCase, hasHeaders, orientation, method)
-  summary: Führt einen Sortiervorgang aus.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      apply(
-                  fields: SortField[],
-                  matchCase?: boolean,
-                  hasHeaders?: boolean,
-                  orientation?: SortOrientation,
-                  method?: SortMethod
-              ): void;
-    parameters:
-    - id: fields
-      description: Die Liste der Bedingungen, nach denen sortiert werden soll.
-      type: <xref uid="ExcelScript!ExcelScript.SortField:interface" />[]
-    - id: matchCase
-      description: Optional. Gibt an, ob sich die Groß-/Kleinschreibung auf die Zeichenfolgensortierung auswirkt.
-      type: boolean
-    - id: hasHeaders
-      description: Optional. Gibt an, ob der Bereich eine Kopfzeile aufweist.
-      type: boolean
-    - id: orientation
-      description: Optional. Gibt an, ob der Vorgang Zeilen oder Spalten sortiert.
-      type: <xref uid="ExcelScript!ExcelScript.SortOrientation:enum" />
-    - id: method
-      description: Optional. Die Sortiermethode für chinesische Zeichen.
-      type: <xref uid="ExcelScript!ExcelScript.SortMethod:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: aac26f2501cc8107831122b3f171fc7a52403333
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607417"
+  - name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    uid: 'ExcelScript!ExcelScript.RangeSort#apply:member(1)'
+    package: ExcelScript!
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    summary: Führt einen Sortiervorgang aus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        apply(
+                    fields: SortField[],
+                    matchCase?: boolean,
+                    hasHeaders?: boolean,
+                    orientation?: SortOrientation,
+                    method?: SortMethod
+                ): void;
+      parameters:
+        - id: fields
+          description: 'Die Liste der Bedingungen, nach denen sortiert werden soll.'
+          type: '<xref uid="ExcelScript!ExcelScript.SortField:interface" />[]'
+        - id: matchCase
+          description: 'Optional. Gibt an, ob sich die Groß-/Kleinschreibung auf die Zeichenfolgensortierung auswirkt.'
+          type: boolean
+        - id: hasHeaders
+          description: 'Optional. Gibt an, ob der Bereich eine Kopfzeile aufweist.'
+          type: boolean
+        - id: orientation
+          description: 'Optional. Gibt an, ob der Vorgang Zeilen oder Spalten sortiert.'
+          type: '<xref uid="ExcelScript!ExcelScript.SortOrientation:enum" />'
+        - id: method
+          description: Optional. Die Sortiermethode für chinesische Zeichen.
+          type: '<xref uid="ExcelScript!ExcelScript.SortMethod:enum" />'
+      return:
+        type: void
+        description: ''

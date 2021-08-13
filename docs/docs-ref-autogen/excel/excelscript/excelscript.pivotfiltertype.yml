@@ -1,37 +1,30 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PivotFilterType
-uid: ExcelScript!ExcelScript.PivotFilterType:enum
+uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
 package: ExcelScript!
 fullName: ExcelScript.PivotFilterType
-summary: Eine einfache Enumeration, die einen Filtertyp für ein PivotField darstellt.
+summary: 'Eine einfache Enumeration, die einen Filtertyp für ein PivotField darstellt.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: date
-  uid: ExcelScript!ExcelScript.PivotFilterType.date:member
-  package: ExcelScript!
-  summary: 'Filtert PivotItems mit einem Datum an stelle einer Bezeichnung. Hinweis: Ein PivotField kann nicht gleichzeitig einen Bezeichnungsfilter und einen Datumsfilter anwenden.'
-- name: label
-  uid: ExcelScript!ExcelScript.PivotFilterType.label:member
-  package: ExcelScript!
-  summary: 'Filtert PivotItems basierend auf ihren Bezeichnungen. Hinweis: Ein PivotField kann nicht gleichzeitig einen Bezeichnungsfilter und einen Datumsfilter anwenden.'
-- name: manual
-  uid: ExcelScript!ExcelScript.PivotFilterType.manual:member
-  package: ExcelScript!
-  summary: Filtert bestimmte manuell ausgewählte PivotItems aus der PivotTable.
-- name: unknown
-  uid: ExcelScript!ExcelScript.PivotFilterType.unknown:member
-  package: ExcelScript!
-  summary: '`PivotFilterType` ist unbekannt oder wird nicht unterstützt.'
-- name: value
-  uid: ExcelScript!ExcelScript.PivotFilterType.value:member
-  package: ExcelScript!
-  summary: Filter basierend auf dem Wert eines PivotItem in Bezug auf ein `DataPivotHierarchy`<!-- -->.
-metadata:
-  ms.openlocfilehash: f070c217d5b4a7958666c25a9971c8c8eaffb8f4
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914307"
+  - name: date
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+    package: ExcelScript!
+    summary: 'Filtert PivotItems mit einem Datum anstelle einer Beschriftung. Hinweis: Auf ein PivotField kann nicht gleichzeitig ein Bezeichnungsfilter und ein Datumsfilter angewendet werden.'
+  - name: label
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+    package: ExcelScript!
+    summary: 'Filtert PivotItems basierend auf ihren Beschriftungen. Hinweis: Auf ein PivotField kann nicht gleichzeitig ein Bezeichnungsfilter und ein Datumsfilter angewendet werden.'
+  - name: manual
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+    package: ExcelScript!
+    summary: Filtert bestimmte manuell ausgewählte PivotItems aus der PivotTable.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+    package: ExcelScript!
+    summary: '`PivotFilterType` unbekannt oder nicht unterstützt.'
+  - name: value
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+    package: ExcelScript!
+    summary: Filter basierend auf dem Wert eines PivotItem in Bezug auf `DataPivotHierarchy`<!-- -->.

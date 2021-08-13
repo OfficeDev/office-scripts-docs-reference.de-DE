@@ -1,121 +1,114 @@
 ### YamlMime:TSType
 name: ExcelScript.ShapeFill
-uid: ExcelScript!ExcelScript.ShapeFill:interface
+uid: 'ExcelScript!ExcelScript.ShapeFill:interface'
 package: ExcelScript!
 fullName: ExcelScript.ShapeFill
-summary: Stellt die Füllformatierung eines Shape-Objekts dar.
+summary: Stellt die Füllungsformatierung eines Formobjekts dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.ShapeFill#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: Löscht die Füllungsformatierung dieser Form.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getForegroundColor()
-  uid: ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)
-  package: ExcelScript!
-  fullName: getForegroundColor()
-  summary: Stellt die Vordergrundfarbe der Formfüllung im HTML-Farbformat in der Form \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange") dar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getForegroundColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTransparency()
-  uid: ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)
-  package: ExcelScript!
-  fullName: getTransparency()
-  summary: Gibt den Transparenzprozentsatz der Füllung als Wert zwischen 0,0 (undurchsichtig) und 1,0 (klar) an. Gibt zurück, ob der Formtyp keine Transparenz unterstützt oder die Formfüllung eine inkonsistente Transparenz besitzt, z. B. bei einem `null` Farbverlaufsfüllungstyp.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTransparency(): number;'
-    return:
-      type: number
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.ShapeFill#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: Gibt den Füllungstyp der Form zurück. Weitere `ExcelScript.ShapeFillType` Informationen finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): ShapeFillType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFillType:enum" />
-      description: ''
-- name: setForegroundColor(foregroundColor)
-  uid: ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)
-  package: ExcelScript!
-  fullName: setForegroundColor(foregroundColor)
-  summary: Stellt die Vordergrundfarbe der Formfüllung im HTML-Farbformat in der Form \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange") dar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setForegroundColor(foregroundColor: string): void;'
-    parameters:
-    - id: foregroundColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setSolidColor(color)
-  uid: ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)
-  package: ExcelScript!
-  fullName: setSolidColor(color)
-  summary: Legt die Füllungsformatierung der Form auf einfarbige Füllung fest. Dadurch wird der Füllungstyp in "Einfarbig" geändert.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSolidColor(color: string): void;'
-    parameters:
-    - id: color
-      description: Eine Zeichenfolge, die die Füllfarbe im HTML-Farbformat im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "orange") darstellt.
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setTransparency(transparency)
-  uid: ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)
-  package: ExcelScript!
-  fullName: setTransparency(transparency)
-  summary: Gibt den Transparenzprozentsatz der Füllung als Wert zwischen 0,0 (undurchsichtig) und 1,0 (klar) an. Gibt zurück, ob der Formtyp keine Transparenz unterstützt oder die Formfüllung eine inkonsistente Transparenz besitzt, z. B. bei einem `null` Farbverlaufsfüllungstyp.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTransparency(transparency: number): void;'
-    parameters:
-    - id: transparency
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 62c912b1bff56417669beddab76781e11a03624c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914202"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: Löscht die Füllungsformatierung dieser Form.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getForegroundColor()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)'
+    package: ExcelScript!
+    fullName: getForegroundColor()
+    summary: 'Stellt die Vordergrundfarbe der Formfüllung im HTML-Farbformat, im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange") dar.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getForegroundColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTransparency()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)'
+    package: ExcelScript!
+    fullName: getTransparency()
+    summary: 'Gibt den Transparenzprozentsatz der Füllung als Wert von 0,0 (undurchsichtig) bis 1,0 (klar) an. Gibt `null` zurück, ob der Formtyp keine Transparenz unterstützt oder die Füllung der Form inkonsistente Transparenz aufweist, z. B. bei einem Farbverlaufstyp.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTransparency(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: Gibt den Füllungstyp der Form zurück. Weitere Informationen finden Sie `ExcelScript.ShapeFillType` unter.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): ShapeFillType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShapeFillType:enum" />'
+        description: ''
+  - name: setForegroundColor(foregroundColor)
+    uid: 'ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)'
+    package: ExcelScript!
+    fullName: setForegroundColor(foregroundColor)
+    summary: 'Stellt die Vordergrundfarbe der Formfüllung im HTML-Farbformat, im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange") dar.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setForegroundColor(foregroundColor: string): void;'
+      parameters:
+        - id: foregroundColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setSolidColor(color)
+    uid: 'ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)'
+    package: ExcelScript!
+    fullName: setSolidColor(color)
+    summary: Legt die Füllungsformatierung der Form auf einfarbige Füllung fest. Dadurch wird der Füllungstyp in "Einfarbig" geändert.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      parameters:
+        - id: color
+          description: 'Eine Zeichenfolge, die die Füllfarbe im HTML-Farbformat, im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange") darstellt.'
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setTransparency(transparency)
+    uid: 'ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)'
+    package: ExcelScript!
+    fullName: setTransparency(transparency)
+    summary: 'Gibt den Transparenzprozentsatz der Füllung als Wert von 0,0 (undurchsichtig) bis 1,0 (klar) an. Gibt `null` zurück, ob der Formtyp keine Transparenz unterstützt oder die Füllung der Form inkonsistente Transparenz aufweist, z. B. bei einem Farbverlaufstyp.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTransparency(transparency: number): void;'
+      parameters:
+        - id: transparency
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

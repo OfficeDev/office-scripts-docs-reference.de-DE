@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.TopBottomSelectionType
-uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
+uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
 package: ExcelScript!
 fullName: ExcelScript.TopBottomSelectionType
-summary: Eine einfache Enumeration für Filter von oben/unten, um auszuwählen, ob nach den oberen N oder unteren N Prozent, der Zahl oder der Summe von Werten gefiltert werden soll.
+summary: 'Eine einfache Enumeration für Filter oben/unten, um auszuwählen, ob nach dem oberen oder unteren N-Prozentwert, der Zahl oder der Summe der Werte gefiltert werden soll.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: items
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
-  package: ExcelScript!
-  summary: Filtern Sie die obere/untere N-Anzahl von Elementen, gemessen am ausgewählten Wert.
-- name: percent
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
-  package: ExcelScript!
-  summary: Filtern Sie den oberen/unteren N Prozentwert der Elemente, gemessen am ausgewählten Wert.
-- name: sum
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
-  package: ExcelScript!
-  summary: Filtern Sie die N-Summe oben/unten nach dem gewählten Wert.
-metadata:
-  ms.openlocfilehash: c58781b98eee7b27807577f9f00af54e048877a9
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914670"
+  - name: items
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+    package: ExcelScript!
+    summary: Filtern Der oberen/unteren N-Anzahl von Elementen wird anhand des ausgewählten Werts gemessen.
+  - name: percent
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+    package: ExcelScript!
+    summary: Filtern Sie die oberen/unteren N Prozent der Elemente gemäß dem ausgewählten Wert.
+  - name: sum
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+    package: ExcelScript!
+    summary: Filtern Sie die obere/untere N-Summe nach dem ausgewählten Wert.

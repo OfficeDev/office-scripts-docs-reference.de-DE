@@ -1,54 +1,47 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalCellValueRule
-uid: ExcelScript!ExcelScript.ConditionalCellValueRule:interface
+uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalCellValueRule
-summary: Represents a cell value conditional format rule.
+summary: Stellt eine Regel zur bedingten Formatierung von Zellwerten dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: formula1
-  uid: ExcelScript!ExcelScript.ConditionalCellValueRule#formula1:member
-  package: ExcelScript!
-  fullName: formula1
-  summary: Die Formel, falls erforderlich, für die die Regel für das bedingte Format ausgewertet werden soll.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula1: string;'
-    return:
-      type: string
-- name: formula2
-  uid: ExcelScript!ExcelScript.ConditionalCellValueRule#formula2:member
-  package: ExcelScript!
-  fullName: formula2
-  summary: Die Formel, falls erforderlich, für die die Regel für das bedingte Format ausgewertet werden soll.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula2?: string;'
-    return:
-      type: string
-- name: operator
-  uid: ExcelScript!ExcelScript.ConditionalCellValueRule#operator:member
-  package: ExcelScript!
-  fullName: operator
-  summary: Der Operator des bedingten Zellwertformats.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'operator: ConditionalCellValueOperator;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalCellValueOperator:enum" />
-metadata:
-  ms.openlocfilehash: 960bf880edb42dc6460045d3f4628dd872ec6ad6
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914027"
+  - name: formula1
+    uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule#formula1:member'
+    package: ExcelScript!
+    fullName: formula1
+    summary: 'Die Formel, falls erforderlich, für die die Regel für bedingtes Format ausgewertet werden soll.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula1: string;'
+      return:
+        type: string
+  - name: formula2
+    uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule#formula2:member'
+    package: ExcelScript!
+    fullName: formula2
+    summary: 'Die Formel, falls erforderlich, für die die Regel für bedingtes Format ausgewertet werden soll.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula2?: string;'
+      return:
+        type: string
+  - name: operator
+    uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule#operator:member'
+    package: ExcelScript!
+    fullName: operator
+    summary: Der Operator des bedingten Zellwertformats.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator: ConditionalCellValueOperator;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalCellValueOperator:enum" />'

@@ -1,31 +1,24 @@
 ### YamlMime:TSType
 name: ExcelScript.GeometricShape
-uid: ExcelScript!ExcelScript.GeometricShape:interface
+uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
 package: ExcelScript!
 fullName: ExcelScript.GeometricShape
-summary: Stellt eine geometrische Form innerhalb eines Arbeitsblatts dar. Eine geometrische Form kann ein Rechteck, ein Blockpfeil, ein Formelsymbol, ein Flussdiagrammelement, ein Stern, ein Banner, eine Callout oder eine andere grundlegende Form in Excel sein.
+summary: 'Stellt eine geometrische Form innerhalb eines Arbeitsblatts dar. Eine geometrische Form kann ein Rechteck, ein Blockpfeil, ein Formelsymbol, ein Flussdiagrammelement, ein Stern, ein Banner, eine Legende oder eine beliebige andere grundlegende Form in Excel sein.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getId()
-  uid: ExcelScript!ExcelScript.GeometricShape#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Gibt die ID der Form zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-metadata:
-  ms.openlocfilehash: 4dfea045b85b1e12ab56c49603ae13d4e82f6b12
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914380"
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: Gibt die ID der Form zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''

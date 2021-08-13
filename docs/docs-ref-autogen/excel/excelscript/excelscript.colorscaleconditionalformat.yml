@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ColorScaleConditionalFormat
-uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ColorScaleConditionalFormat
 summary: Stellt die Kriterien für die Farbskala für die bedingte Formatierung dar.
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getCriteria()
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)
-  package: ExcelScript!
-  fullName: getCriteria()
-  summary: Die Kriterien der Farbskala. Midpoint ist optional, wenn eine Zwei-Punkt-Farbskala verwendet wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCriteria(): ConditionalColorScaleCriteria;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />
-      description: ''
-- name: getThreeColorScale()
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)
-  package: ExcelScript!
-  fullName: getThreeColorScale()
-  summary: If `true`<!-- -->hat die Farbskala drei Punkte (minimum, midpoint, maximum), andernfalls zwei (Minimum, Maximum).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getThreeColorScale(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setCriteria(criteria)
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)
-  package: ExcelScript!
-  fullName: setCriteria(criteria)
-  summary: Die Kriterien der Farbskala. Midpoint ist optional, wenn eine Zwei-Punkt-Farbskala verwendet wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCriteria(criteria: ConditionalColorScaleCriteria): void;'
-    parameters:
-    - id: criteria
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 8a890f2b95d90663083c6a1141142e5585f6c160
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913865"
+  - name: getCriteria()
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)'
+    package: ExcelScript!
+    fullName: getCriteria()
+    summary: Kriterien der Farbskala. Der Mittelpunkt ist bei Verwendung einer 2-Punkte-Farbskala optional.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCriteria(): ConditionalColorScaleCriteria;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />'
+        description: ''
+  - name: getThreeColorScale()
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)'
+    package: ExcelScript!
+    fullName: getThreeColorScale()
+    summary: 'Wenn `true`<!-- -->hat die Farbskala drei Punkte (Minimum, Mittelpunkt, Maximum), andernfalls zwei (Minimum, Maximum).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getThreeColorScale(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setCriteria(criteria)
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)'
+    package: ExcelScript!
+    fullName: setCriteria(criteria)
+    summary: Kriterien der Farbskala. Der Mittelpunkt ist bei Verwendung einer 2-Punkte-Farbskala optional.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCriteria(criteria: ConditionalColorScaleCriteria): void;'
+      parameters:
+        - id: criteria
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />'
+      return:
+        type: void
+        description: ''

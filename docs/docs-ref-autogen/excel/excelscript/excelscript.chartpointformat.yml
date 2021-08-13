@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartPointFormat
-uid: ExcelScript!ExcelScript.ChartPointFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartPointFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartPointFormat
 summary: Stellt das Formatierungsobjekt für Diagrammpunkte dar.
@@ -9,36 +9,29 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorder()
-  uid: ExcelScript!ExcelScript.ChartPointFormat#getBorder:member(1)
-  package: ExcelScript!
-  fullName: getBorder()
-  summary: Represents the border format of a chart data point, which includes color, style, and weight information.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorder(): ChartBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartPointFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: Stellt das Füllformat eines Diagramms dar, das Hintergrundformatierungsinformationen enthält.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: c32966a4e6b77b5b6d21c78680cf407cbea68b1a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51912054"
+  - name: getBorder()
+    uid: 'ExcelScript!ExcelScript.ChartPointFormat#getBorder:member(1)'
+    package: ExcelScript!
+    fullName: getBorder()
+    summary: 'Stellt das Rahmenformat eines Diagrammdatenpunkts dar, das Farb-, Format- und Gewichtungsinformationen enthält.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartPointFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: 'Stellt das Füllformat eines Diagramms dar, das Informationen zur Hintergrundformatierung enthält.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''

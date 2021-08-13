@@ -1,42 +1,35 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalDataBarRule
-uid: ExcelScript!ExcelScript.ConditionalDataBarRule:interface
+uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarRule
-summary: Stellt einen Regeltyp für eine Datenleiste dar.
+summary: Stellt einen Regeltyp für einen Datenbalken dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: formula
-  uid: ExcelScript!ExcelScript.ConditionalDataBarRule#formula:member
-  package: ExcelScript!
-  fullName: formula
-  summary: Die Formel, falls erforderlich, für die die Datenbalkenregel ausgewertet werden soll.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula?: string;'
-    return:
-      type: string
-- name: type
-  uid: ExcelScript!ExcelScript.ConditionalDataBarRule#type:member
-  package: ExcelScript!
-  fullName: type
-  summary: Der Typ der Regel für die Datenleiste.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'type: ConditionalFormatRuleType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatRuleType:enum" />
-metadata:
-  ms.openlocfilehash: fdfd59f9413a06f00ecd953b24cb018a893cc638
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606731"
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule#formula:member'
+    package: ExcelScript!
+    fullName: formula
+    summary: 'Die Formel, falls erforderlich, für die die Datenbalkenregel ausgewertet werden soll.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarRule#type:member'
+    package: ExcelScript!
+    fullName: type
+    summary: Der Regeltyp für den Datenbalken.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ConditionalFormatRuleType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatRuleType:enum" />'

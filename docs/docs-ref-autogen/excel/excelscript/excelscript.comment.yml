@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Comment
-uid: ExcelScript!ExcelScript.Comment:interface
+uid: 'ExcelScript!ExcelScript.Comment:interface'
 package: ExcelScript!
 fullName: ExcelScript.Comment
 summary: Stellt einen Kommentar in der Arbeitsmappe dar.
@@ -9,258 +9,251 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: addCommentReply(content, contentType)
-  uid: ExcelScript!ExcelScript.Comment#addCommentReply:member(1)
-  package: ExcelScript!
-  fullName: addCommentReply(content, contentType)
-  summary: Erstellt eine Kommentarantwort für einen Kommentar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addCommentReply(
-                  content: CommentRichContent | string,
-                  contentType?: ContentType
-              ): CommentReply;
-    parameters:
-    - id: content
-      description: Der Inhalt des Kommentars. Dies kann eine Zeichenfolge oder ein Objekt sein (z. B. für Kommentare `CommentRichContent` mit Erwähnungen).
-      type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
-    - id: contentType
-      description: Optional. Der Inhaltstyp, der im Kommentar enthalten ist. Der Standardwert ist enum `ContentType.Plain`<!-- -->.
-      type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
-      description: ''
-- name: delete()
-  uid: ExcelScript!ExcelScript.Comment#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Löscht den Kommentar und alle verbundenen Antworten.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getAuthorEmail()
-  uid: ExcelScript!ExcelScript.Comment#getAuthorEmail:member(1)
-  package: ExcelScript!
-  fullName: getAuthorEmail()
-  summary: Ruft die E-Mail des Autors des Kommentars ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAuthorEmail(): string;'
-    return:
-      type: string
-      description: ''
-- name: getAuthorName()
-  uid: ExcelScript!ExcelScript.Comment#getAuthorName:member(1)
-  package: ExcelScript!
-  fullName: getAuthorName()
-  summary: Ruft den Namen des Autors des Kommentars ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAuthorName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getCommentReply(commentReplyId)
-  uid: ExcelScript!ExcelScript.Comment#getCommentReply:member(1)
-  package: ExcelScript!
-  fullName: getCommentReply(commentReplyId)
-  summary: Gibt eine Kommentarantwort zurück, die durch ihre ID angegeben ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCommentReply(commentReplyId: string): CommentReply;'
-    parameters:
-    - id: commentReplyId
-      description: Der Bezeichner für die Kommentarantwort.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
-      description: ''
-- name: getContent()
-  uid: ExcelScript!ExcelScript.Comment#getContent:member(1)
-  package: ExcelScript!
-  fullName: getContent()
-  summary: Der Inhalt des Kommentars. Die Zeichenfolge ist Nur-Text.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getContent(): string;'
-    return:
-      type: string
-      description: ''
-- name: getContentType()
-  uid: ExcelScript!ExcelScript.Comment#getContentType:member(1)
-  package: ExcelScript!
-  fullName: getContentType()
-  summary: Ruft den Inhaltstyp des Kommentars ab.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getContentType(): ContentType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
-      description: ''
-- name: getCreationDate()
-  uid: ExcelScript!ExcelScript.Comment#getCreationDate:member(1)
-  package: ExcelScript!
-  fullName: getCreationDate()
-  summary: Ruft den Erstellungszeitpunkt des Kommentars ab. Gibt `null` zurück, ob der Kommentar aus einer Notiz konvertiert wurde, da der Kommentar kein Erstellungsdatum hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCreationDate(): Date;'
-    return:
-      type: Date
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.Comment#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Gibt den Kommentarbezeichner an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLocation()
-  uid: ExcelScript!ExcelScript.Comment#getLocation:member(1)
-  package: ExcelScript!
-  fullName: getLocation()
-  summary: Ruft die Zelle ab, in der sich dieser Kommentar befindet.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLocation(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getMentions()
-  uid: ExcelScript!ExcelScript.Comment#getMentions:member(1)
-  package: ExcelScript!
-  fullName: getMentions()
-  summary: Ruft die Entitäten (z. B. Personen) ab, die in Kommentaren erwähnt werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMentions(): CommentMention[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CommentMention:interface" />[]
-      description: ''
-- name: getReplies()
-  uid: ExcelScript!ExcelScript.Comment#getReplies:member(1)
-  package: ExcelScript!
-  fullName: getReplies()
-  summary: Stellt eine Sammlung der Antwortobjekte dar, die dem Kommentar zugeordnet sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReplies(): CommentReply[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />[]
-      description: ''
-- name: getResolved()
-  uid: ExcelScript!ExcelScript.Comment#getResolved:member(1)
-  package: ExcelScript!
-  fullName: getResolved()
-  summary: Der Kommentarthreadstatus. Ein Wert von `true` bedeutet, dass der Kommentarthread aufgelöst wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getResolved(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getRichContent()
-  uid: ExcelScript!ExcelScript.Comment#getRichContent:member(1)
-  package: ExcelScript!
-  fullName: getRichContent()
-  summary: Ruft den reichhaltigen Kommentarinhalt ab (z. B. Erwähnungen in Kommentaren). Diese Zeichenfolge ist nicht für Endbenutzer gedacht. Ihr Add-In sollte dies nur zum Analysieren von Rich-Comment-Inhalten verwenden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRichContent(): string;'
-    return:
-      type: string
-      description: ''
-- name: setContent(content)
-  uid: ExcelScript!ExcelScript.Comment#setContent:member(1)
-  package: ExcelScript!
-  fullName: setContent(content)
-  summary: Der Inhalt des Kommentars. Die Zeichenfolge ist Nur-Text.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setContent(content: string): void;'
-    parameters:
-    - id: content
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setResolved(resolved)
-  uid: ExcelScript!ExcelScript.Comment#setResolved:member(1)
-  package: ExcelScript!
-  fullName: setResolved(resolved)
-  summary: Der Kommentarthreadstatus. Ein Wert von `true` bedeutet, dass der Kommentarthread aufgelöst wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setResolved(resolved: boolean): void;'
-    parameters:
-    - id: resolved
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: updateMentions(contentWithMentions)
-  uid: ExcelScript!ExcelScript.Comment#updateMentions:member(1)
-  package: ExcelScript!
-  fullName: updateMentions(contentWithMentions)
-  summary: Aktualisiert den Kommentarinhalt mit einer speziell formatierten Zeichenfolge und einer Liste von Erwähnungen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
-    parameters:
-    - id: contentWithMentions
-      description: Der Inhalt des Kommentars. Dies enthält eine speziell formatierte Zeichenfolge und eine Liste von Erwähnungen, die in der Zeichenfolge analysiert werden, wenn sie von Excel angezeigt wird.
-      type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 64ea728bdbff9c555710e4a04342ad81a879fc3c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914513"
+  - name: 'addCommentReply(content, contentType)'
+    uid: 'ExcelScript!ExcelScript.Comment#addCommentReply:member(1)'
+    package: ExcelScript!
+    fullName: 'addCommentReply(content, contentType)'
+    summary: Erstellt eine Kommentarantwort für einen Kommentar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addCommentReply(
+                    content: CommentRichContent | string,
+                    contentType?: ContentType
+                ): CommentReply;
+      parameters:
+        - id: content
+          description: Der Inhalt des Kommentars. Dies kann eine Zeichenfolge oder ein Objekt sein `CommentRichContent` (z. B. für Kommentare mit Erwähnungen).
+          type: '<xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string'
+        - id: contentType
+          description: 'Optional. Der Inhaltstyp, der im Kommentar enthalten ist. Der Standardwert ist Enumeration. `ContentType.Plain`<!-- -->.'
+          type: '<xref uid="ExcelScript!ExcelScript.ContentType:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CommentReply:interface" />'
+        description: ''
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.Comment#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Löscht den Kommentar und alle verbundenen Antworten.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getAuthorEmail()
+    uid: 'ExcelScript!ExcelScript.Comment#getAuthorEmail:member(1)'
+    package: ExcelScript!
+    fullName: getAuthorEmail()
+    summary: Ruft die E-Mail des Autors des Kommentars ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAuthorEmail(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getAuthorName()
+    uid: 'ExcelScript!ExcelScript.Comment#getAuthorName:member(1)'
+    package: ExcelScript!
+    fullName: getAuthorName()
+    summary: Ruft den Namen des Autors des Kommentars ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAuthorName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getCommentReply(commentReplyId)
+    uid: 'ExcelScript!ExcelScript.Comment#getCommentReply:member(1)'
+    package: ExcelScript!
+    fullName: getCommentReply(commentReplyId)
+    summary: 'Gibt eine Kommentarantwort zurück, die durch ihre ID angegeben ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCommentReply(commentReplyId: string): CommentReply;'
+      parameters:
+        - id: commentReplyId
+          description: Der Bezeichner für die Kommentarantwort.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CommentReply:interface" />'
+        description: ''
+  - name: getContent()
+    uid: 'ExcelScript!ExcelScript.Comment#getContent:member(1)'
+    package: ExcelScript!
+    fullName: getContent()
+    summary: Der Inhalt des Kommentars. Die Zeichenfolge ist Nur-Text.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getContent(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getContentType()
+    uid: 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
+    package: ExcelScript!
+    fullName: getContentType()
+    summary: Ruft den Inhaltstyp des Kommentars ab.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getContentType(): ContentType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ContentType:enum" />'
+        description: ''
+  - name: getCreationDate()
+    uid: 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
+    package: ExcelScript!
+    fullName: getCreationDate()
+    summary: 'Ruft den Erstellungszeitpunkt des Kommentars ab. Gibt `null` zurück, ob der Kommentar aus einer Notiz konvertiert wurde, da der Kommentar kein Erstellungsdatum hat.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCreationDate(): Date;'
+      return:
+        type: Date
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.Comment#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: Gibt den Kommentarbezeichner an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLocation()
+    uid: 'ExcelScript!ExcelScript.Comment#getLocation:member(1)'
+    package: ExcelScript!
+    fullName: getLocation()
+    summary: 'Ruft die Zelle ab, in der sich dieser Kommentar befindet.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getMentions()
+    uid: 'ExcelScript!ExcelScript.Comment#getMentions:member(1)'
+    package: ExcelScript!
+    fullName: getMentions()
+    summary: 'Ruft die Entitäten (z. B. Personen) ab, die in Kommentaren erwähnt werden.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMentions(): CommentMention[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CommentMention:interface" />[]'
+        description: ''
+  - name: getReplies()
+    uid: 'ExcelScript!ExcelScript.Comment#getReplies:member(1)'
+    package: ExcelScript!
+    fullName: getReplies()
+    summary: 'Stellt eine Sammlung der Antwortobjekte dar, die dem Kommentar zugeordnet sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReplies(): CommentReply[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CommentReply:interface" />[]'
+        description: ''
+  - name: getResolved()
+    uid: 'ExcelScript!ExcelScript.Comment#getResolved:member(1)'
+    package: ExcelScript!
+    fullName: getResolved()
+    summary: 'Der Status des Kommentarthreads. Ein Wert, der `true` bedeutet, dass der Kommentarthread aufgelöst wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getResolved(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getRichContent()
+    uid: 'ExcelScript!ExcelScript.Comment#getRichContent:member(1)'
+    package: ExcelScript!
+    fullName: getRichContent()
+    summary: 'Ruft den umfangreichen Kommentarinhalt ab (z. B. Erwähnungen in Kommentaren). Diese Zeichenfolge sollte endbenutzern nicht angezeigt werden. Ihr Add-In sollte dies nur verwenden, um umfangreiche Kommentarinhalte zu analysieren.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRichContent(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setContent(content)
+    uid: 'ExcelScript!ExcelScript.Comment#setContent:member(1)'
+    package: ExcelScript!
+    fullName: setContent(content)
+    summary: Der Inhalt des Kommentars. Die Zeichenfolge ist Nur-Text.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setContent(content: string): void;'
+      parameters:
+        - id: content
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setResolved(resolved)
+    uid: 'ExcelScript!ExcelScript.Comment#setResolved:member(1)'
+    package: ExcelScript!
+    fullName: setResolved(resolved)
+    summary: 'Der Status des Kommentarthreads. Ein Wert, der `true` bedeutet, dass der Kommentarthread aufgelöst wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setResolved(resolved: boolean): void;'
+      parameters:
+        - id: resolved
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: updateMentions(contentWithMentions)
+    uid: 'ExcelScript!ExcelScript.Comment#updateMentions:member(1)'
+    package: ExcelScript!
+    fullName: updateMentions(contentWithMentions)
+    summary: Aktualisiert den Kommentarinhalt mit einer speziell formatierten Zeichenfolge und einer Liste von Erwähnungen.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
+      parameters:
+        - id: contentWithMentions
+          description: 'Der Inhalt des Kommentars. Diese enthält eine speziell formatierte Zeichenfolge und eine Liste von Erwähnungen, die in die Zeichenfolge analysiert werden, wenn sie von Excel angezeigt wird.'
+          type: '<xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />'
+      return:
+        type: void
+        description: ''

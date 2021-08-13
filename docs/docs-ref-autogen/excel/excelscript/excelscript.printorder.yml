@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PrintOrder
-uid: ExcelScript!ExcelScript.PrintOrder:enum
+uid: 'ExcelScript!ExcelScript.PrintOrder:enum'
 package: ExcelScript!
 fullName: ExcelScript.PrintOrder
 summary: ''
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: downThenOver
-  uid: ExcelScript!ExcelScript.PrintOrder.downThenOver:member
-  package: ExcelScript!
-  summary: Die Verarbeitung erfolgt zuerst abwärts nach Zeilen und dann quer über die Seiten oder Seitenfelder auf der rechten Seite.
-- name: overThenDown
-  uid: ExcelScript!ExcelScript.PrintOrder.overThenDown:member
-  package: ExcelScript!
-  summary: Die Verarbeitung erfolgt zuerst quer über die Seiten oder Seitenfelder auf der rechten Seite und dann abwärts nach Zeilen.
-metadata:
-  ms.openlocfilehash: e164a2b92767c6d8f6504164598ef6e78802052a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914265"
+  - name: downThenOver
+    uid: 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
+    package: ExcelScript!
+    summary: Die Verarbeitung erfolgt zuerst abwärts nach Zeilen und dann quer über die Seiten oder Seitenfelder auf der rechten Seite.
+  - name: overThenDown
+    uid: 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
+    package: ExcelScript!
+    summary: Die Verarbeitung erfolgt zuerst quer über die Seiten oder Seitenfelder auf der rechten Seite und dann abwärts nach Zeilen.

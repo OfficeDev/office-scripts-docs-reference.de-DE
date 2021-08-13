@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ProtectionSelectionMode
-uid: ExcelScript!ExcelScript.ProtectionSelectionMode:enum
+uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode:enum'
 package: ExcelScript!
 fullName: ExcelScript.ProtectionSelectionMode
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: none
-  uid: ExcelScript!ExcelScript.ProtectionSelectionMode.none:member
-  package: ExcelScript!
-  summary: Die Auswahl ist für keine Zellen zulässig.
-- name: normal
-  uid: ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member
-  package: ExcelScript!
-  summary: Die Auswahl ist für alle Zellen zulässig.
-- name: unlocked
-  uid: ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member
-  package: ExcelScript!
-  summary: Die Auswahl ist nur für Zellen zulässig, die nicht gesperrt sind.
-metadata:
-  ms.openlocfilehash: 7785335f2a75e072de6401873f37f801c85feddf
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606203"
+  - name: none
+    uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.none:member'
+    package: ExcelScript!
+    summary: Die Markierung ist für keine Zellen zulässig.
+  - name: normal
+    uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member'
+    package: ExcelScript!
+    summary: Die Auswahl ist für alle Zellen zulässig.
+  - name: unlocked
+    uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member'
+    package: ExcelScript!
+    summary: 'Die Auswahl ist nur für Zellen zulässig, die nicht gesperrt sind.'

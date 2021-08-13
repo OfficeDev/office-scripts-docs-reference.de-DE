@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.HeaderFooterGroup
-uid: ExcelScript!ExcelScript.HeaderFooterGroup:interface
+uid: 'ExcelScript!ExcelScript.HeaderFooterGroup:interface'
 package: ExcelScript!
 fullName: ExcelScript.HeaderFooterGroup
 summary: ''
@@ -9,152 +9,145 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getDefaultForAllPages()
-  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)
-  package: ExcelScript!
-  fullName: getDefaultForAllPages()
-  summary: Die allgemeine Kopf-/Fußzeile, die für alle Seiten verwendet wird, sofern nicht gerade/ungerade oder erste Seite angegeben ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDefaultForAllPages(): HeaderFooter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
-      description: ''
-- name: getEvenPages()
-  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)
-  package: ExcelScript!
-  fullName: getEvenPages()
-  summary: Die für gerade Seiten zu verwendende Kopf-/Fußzeile, für ungerade Seiten muss die ungerade Kopf-/Fußzeile angegeben werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEvenPages(): HeaderFooter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
-      description: ''
-- name: getFirstPage()
-  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)
-  package: ExcelScript!
-  fullName: getFirstPage()
-  summary: Die Kopf-/Fußzeile der ersten Seite, für alle anderen Seiten werden die Einstellungen für die allgemeine oder gerade/ungerade Kopf-/Fußzeile verwendet.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFirstPage(): HeaderFooter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
-      description: ''
-- name: getOddPages()
-  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)
-  package: ExcelScript!
-  fullName: getOddPages()
-  summary: Die für ungerade Seiten zu verwendende Kopf-/Fußzeile, für gerade Seiten muss die gerade Kopf-/Fußzeile angegeben werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getOddPages(): HeaderFooter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
-      description: ''
-- name: getState()
-  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)
-  package: ExcelScript!
-  fullName: getState()
-  summary: Der Status, nach dem Kopf- und Fußzeilen festgelegt werden. Weitere `ExcelScript.HeaderFooterState` Informationen finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getState(): HeaderFooterState;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.HeaderFooterState:enum" />
-      description: ''
-- name: getUseSheetMargins()
-  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)
-  package: ExcelScript!
-  fullName: getUseSheetMargins()
-  summary: Ruft eine Kennzeichnung ab, ob die Kopf-/Fußzeilen an den Seitenrändern in den Optionen für das Seitenlayout des Arbeitsblatts ausgerichtet sind, oder legt diese fest.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUseSheetMargins(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getUseSheetScale()
-  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)
-  package: ExcelScript!
-  fullName: getUseSheetScale()
-  summary: Ruft eine Kennzeichnung ab, die angibt, ob die Kopf-/Fußzeilen mit dem Prozentsatz für die Skalierung der Seite skaliert werden sollen, die in den Optionen für das Seitenlayout des Arbeitsblatts festgelegt ist, oder legt diese fest.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUseSheetScale(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setState(state)
-  uid: ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)
-  package: ExcelScript!
-  fullName: setState(state)
-  summary: Der Status, nach dem Kopf- und Fußzeilen festgelegt werden. Weitere `ExcelScript.HeaderFooterState` Informationen finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setState(state: HeaderFooterState): void;'
-    parameters:
-    - id: state
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.HeaderFooterState:enum" />
-    return:
-      type: void
-      description: ''
-- name: setUseSheetMargins(useSheetMargins)
-  uid: ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)
-  package: ExcelScript!
-  fullName: setUseSheetMargins(useSheetMargins)
-  summary: Ruft eine Kennzeichnung ab, ob die Kopf-/Fußzeilen an den Seitenrändern in den Optionen für das Seitenlayout des Arbeitsblatts ausgerichtet sind, oder legt diese fest.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setUseSheetMargins(useSheetMargins: boolean): void;'
-    parameters:
-    - id: useSheetMargins
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setUseSheetScale(useSheetScale)
-  uid: ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)
-  package: ExcelScript!
-  fullName: setUseSheetScale(useSheetScale)
-  summary: Ruft eine Kennzeichnung ab, die angibt, ob die Kopf-/Fußzeilen mit dem Prozentsatz für die Skalierung der Seite skaliert werden sollen, die in den Optionen für das Seitenlayout des Arbeitsblatts festgelegt ist, oder legt diese fest.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setUseSheetScale(useSheetScale: boolean): void;'
-    parameters:
-    - id: useSheetScale
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 20a50a119d48fad822b8a8c5b0c1c67b9f581d6d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914373"
+  - name: getDefaultForAllPages()
+    uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)'
+    package: ExcelScript!
+    fullName: getDefaultForAllPages()
+    summary: 'Die allgemeine Kopf-/Fußzeile, die für alle Seiten verwendet wird, sofern nicht gerade/ungerade oder erste Seite angegeben ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDefaultForAllPages(): HeaderFooter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />'
+        description: ''
+  - name: getEvenPages()
+    uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)'
+    package: ExcelScript!
+    fullName: getEvenPages()
+    summary: 'Die für gerade Seiten zu verwendende Kopf-/Fußzeile, für ungerade Seiten muss die ungerade Kopf-/Fußzeile angegeben werden.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEvenPages(): HeaderFooter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />'
+        description: ''
+  - name: getFirstPage()
+    uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)'
+    package: ExcelScript!
+    fullName: getFirstPage()
+    summary: 'Die Kopf-/Fußzeile der ersten Seite, für alle anderen Seiten werden die Einstellungen für die allgemeine oder gerade/ungerade Kopf-/Fußzeile verwendet.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFirstPage(): HeaderFooter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />'
+        description: ''
+  - name: getOddPages()
+    uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)'
+    package: ExcelScript!
+    fullName: getOddPages()
+    summary: 'Die für ungerade Seiten zu verwendende Kopf-/Fußzeile, für gerade Seiten muss die gerade Kopf-/Fußzeile angegeben werden.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getOddPages(): HeaderFooter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />'
+        description: ''
+  - name: getState()
+    uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
+    package: ExcelScript!
+    fullName: getState()
+    summary: 'Der Zustand, um den Kopf-/Fußzeilen festgelegt werden. Weitere Informationen finden Sie `ExcelScript.HeaderFooterState` unter.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getState(): HeaderFooterState;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.HeaderFooterState:enum" />'
+        description: ''
+  - name: getUseSheetMargins()
+    uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)'
+    package: ExcelScript!
+    fullName: getUseSheetMargins()
+    summary: 'Ruft eine Kennzeichnung ab, ob die Kopf-/Fußzeilen an den Seitenrändern in den Optionen für das Seitenlayout des Arbeitsblatts ausgerichtet sind, oder legt diese fest.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUseSheetMargins(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getUseSheetScale()
+    uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)'
+    package: ExcelScript!
+    fullName: getUseSheetScale()
+    summary: 'Ruft eine Kennzeichnung ab, die angibt, ob die Kopf-/Fußzeilen mit dem Prozentsatz für die Skalierung der Seite skaliert werden sollen, die in den Optionen für das Seitenlayout des Arbeitsblatts festgelegt ist, oder legt diese fest.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUseSheetScale(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setState(state)
+    uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
+    package: ExcelScript!
+    fullName: setState(state)
+    summary: 'Der Zustand, um den Kopf-/Fußzeilen festgelegt werden. Weitere Informationen finden Sie `ExcelScript.HeaderFooterState` unter.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setState(state: HeaderFooterState): void;'
+      parameters:
+        - id: state
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.HeaderFooterState:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setUseSheetMargins(useSheetMargins)
+    uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)'
+    package: ExcelScript!
+    fullName: setUseSheetMargins(useSheetMargins)
+    summary: 'Ruft eine Kennzeichnung ab, ob die Kopf-/Fußzeilen an den Seitenrändern in den Optionen für das Seitenlayout des Arbeitsblatts ausgerichtet sind, oder legt diese fest.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setUseSheetMargins(useSheetMargins: boolean): void;'
+      parameters:
+        - id: useSheetMargins
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setUseSheetScale(useSheetScale)
+    uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)'
+    package: ExcelScript!
+    fullName: setUseSheetScale(useSheetScale)
+    summary: 'Ruft eine Kennzeichnung ab, die angibt, ob die Kopf-/Fußzeilen mit dem Prozentsatz für die Skalierung der Seite skaliert werden sollen, die in den Optionen für das Seitenlayout des Arbeitsblatts festgelegt ist, oder legt diese fest.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setUseSheetScale(useSheetScale: boolean): void;'
+      parameters:
+        - id: useSheetScale
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

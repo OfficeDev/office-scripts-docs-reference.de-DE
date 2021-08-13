@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartParentLabelStrategy
-uid: ExcelScript!ExcelScript.ChartParentLabelStrategy:enum
+uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartParentLabelStrategy
-summary: Stellt die übergeordnete Bezeichnungsstrategie des Diagrammreihenlayouts dar. Dies gilt nur für Strukturkartendiagramme
+summary: Stellt die übergeordnete Beschriftungsstrategie des Diagrammreihenlayouts dar. Dies gilt nur für Strukturmapdiagramme.
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: banner
-  uid: ExcelScript!ExcelScript.ChartParentLabelStrategy.banner:member
-  package: ExcelScript!
-  summary: ''
-- name: none
-  uid: ExcelScript!ExcelScript.ChartParentLabelStrategy.none:member
-  package: ExcelScript!
-  summary: ''
-- name: overlapping
-  uid: ExcelScript!ExcelScript.ChartParentLabelStrategy.overlapping:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 4317813d5ba958d54c5fecc095eb91c0c3681074
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51911942"
+  - name: banner
+    uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.banner:member'
+    package: ExcelScript!
+    summary: ''
+  - name: none
+    uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.none:member'
+    package: ExcelScript!
+    summary: ''
+  - name: overlapping
+    uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.overlapping:member'
+    package: ExcelScript!
+    summary: ''

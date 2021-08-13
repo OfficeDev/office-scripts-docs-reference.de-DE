@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeTextVerticalOverflow
-uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum
+uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextVerticalOverflow
 summary: Gibt den vertikalen Überlauf für den Textrahmen in einer Form an.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: clip
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member
-  package: ExcelScript!
-  summary: Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet.
-- name: ellipsis
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member
-  package: ExcelScript!
-  summary: Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet, und ein Auslassungszeichen (...) wird am Ende des sichtbaren Texts angezeigt.
-- name: overflow
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member
-  package: ExcelScript!
-  summary: Vertikalen Überlauf von Text über den Textrahmen zulassen (kann oben, unten oder an beiden Enden abhängig von der Textausrichtung auftreten).
-metadata:
-  ms.openlocfilehash: 11a5caa2c4b41de28d80f7ffb202c8c783478acc
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913384"
+  - name: clip
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+    package: ExcelScript!
+    summary: 'Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet.'
+  - name: ellipsis
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+    package: ExcelScript!
+    summary: 'Text, der vertikal nicht in den Textrahmen passt, wird ausgeblendet, und ein Auslassungszeichen (...) wird am Ende des sichtbaren Texts angezeigt.'
+  - name: overflow
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+    package: ExcelScript!
+    summary: 'Vertikalen Überlauf von Text über den Textrahmen zulassen (kann oben, unten oder an beiden Enden abhängig von der Textausrichtung auftreten).'

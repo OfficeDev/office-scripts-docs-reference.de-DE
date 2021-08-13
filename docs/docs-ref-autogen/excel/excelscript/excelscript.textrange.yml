@@ -1,81 +1,74 @@
 ### YamlMime:TSType
 name: ExcelScript.TextRange
-uid: ExcelScript!ExcelScript.TextRange:interface
+uid: 'ExcelScript!ExcelScript.TextRange:interface'
 package: ExcelScript!
 fullName: ExcelScript.TextRange
-summary: Enthält den Text, der mit einer Form verknüpft ist, sowie Eigenschaften und Methoden für das Bearbeiten des Texts.
+summary: 'Enthält den Text, der mit einer Form verknüpft ist, sowie Eigenschaften und Methoden für das Bearbeiten des Texts.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFont()
-  uid: ExcelScript!ExcelScript.TextRange#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Gibt ein `ShapeFont` Objekt zurück, das die Schriftartattribute für den Textbereich darstellt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ShapeFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />
-      description: ''
-- name: getSubstring(start, length)
-  uid: ExcelScript!ExcelScript.TextRange#getSubstring:member(1)
-  package: ExcelScript!
-  fullName: getSubstring(start, length)
-  summary: Gibt ein TextRange-Objekt für die Teilzeichenfolge im angegebenen Bereich zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSubstring(start: number, length?: number): TextRange;'
-    parameters:
-    - id: start
-      description: Der nullbasierte Index des ersten Zeichens, das aus dem Textbereich erhalten werden soll.
-      type: number
-    - id: length
-      description: Optional. Die Anzahl der Zeichen, die im neuen Textbereich zurückgegeben werden sollen. Wenn die Länge nicht angegeben wird, werden alle Zeichen vom Anfang bis zum Ende des letzten Absatzes des Textbereichs zurückgegeben.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TextRange:interface" />
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.TextRange#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: Stellt den unformatierten Textinhalt des Textbereichs dar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: setText(text)
-  uid: ExcelScript!ExcelScript.TextRange#setText:member(1)
-  package: ExcelScript!
-  fullName: setText(text)
-  summary: Stellt den unformatierten Textinhalt des Textbereichs dar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setText(text: string): void;'
-    parameters:
-    - id: text
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 330faf3cabf13b2c07016407ca922173c1e66519
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913318"
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.TextRange#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Gibt ein `ShapeFont` Objekt zurück, das die Schriftartattribute für den Textbereich darstellt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ShapeFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />'
+        description: ''
+  - name: 'getSubstring(start, length)'
+    uid: 'ExcelScript!ExcelScript.TextRange#getSubstring:member(1)'
+    package: ExcelScript!
+    fullName: 'getSubstring(start, length)'
+    summary: Gibt ein TextRange-Objekt für die Teilzeichenfolge im angegebenen Bereich zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubstring(start: number, length?: number): TextRange;'
+      parameters:
+        - id: start
+          description: 'Der nullbasierte Index des ersten Zeichens, das aus dem Textbereich abgerufen werden soll.'
+          type: number
+        - id: length
+          description: 'Optional. Die Anzahl der Zeichen, die im neuen Textbereich zurückgegeben werden sollen. Wenn die Länge weggelassen wird, werden alle Zeichen vom Anfang bis zum Ende des letzten Absatzes des Textbereichs zurückgegeben.'
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TextRange:interface" />'
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.TextRange#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: Stellt den unformatierten Textinhalt des Textbereichs dar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setText(text)
+    uid: 'ExcelScript!ExcelScript.TextRange#setText:member(1)'
+    package: ExcelScript!
+    fullName: setText(text)
+    summary: Stellt den unformatierten Textinhalt des Textbereichs dar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setText(text: string): void;'
+      parameters:
+        - id: text
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

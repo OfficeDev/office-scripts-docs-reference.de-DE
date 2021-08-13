@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartGridlines
-uid: ExcelScript!ExcelScript.ChartGridlines:interface
+uid: 'ExcelScript!ExcelScript.ChartGridlines:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartGridlines
 summary: Stellt Haupt-Gitternetzlinien oder Hilfs-Gitternetzlinien auf einer Diagrammachse dar.
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Stellt die Formatierung der Diagrammgitternetzlinien dar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartGridlinesFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartGridlinesFormat:interface" />
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: Gibt an, ob die Achsen Gitternetzlinien sichtbar sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: Gibt an, ob die Achsen Gitternetzlinien sichtbar sind.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 81ec22aa839c012149c0b7facd8ffc69b417b398
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419803"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: Stellt die Formatierung der Diagrammgitternetzlinien dar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartGridlinesFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartGridlinesFormat:interface" />'
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: 'Gibt an, ob die Achsengitternetzlinien sichtbar sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: 'Gibt an, ob die Achsengitternetzlinien sichtbar sind.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

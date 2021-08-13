@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DateTimeDataValidation
-uid: ExcelScript!ExcelScript.DateTimeDataValidation:interface
+uid: 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
 package: ExcelScript!
 fullName: ExcelScript.DateTimeDataValidation
 summary: Stellt die Datumsdatenüberprüfungskriterien dar.
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: formula1
-  uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member
-  package: ExcelScript!
-  fullName: formula1
-  summary: Gibt den rechten Operanden an, wenn die Operatoreigenschaft auf einen binären Operator wie GreaterThan festgelegt ist (der linke Operand ist der Wert, den der Benutzer in die Zelle eingeben möchte). Gibt bei den ternären Operatoren Between und NotBetween den untergebundenen Operanden an. Beim Festlegen des Werts kann er als Date-, Range-Objekt oder Zeichenfolgenformel übergeben werden (wobei die Zeichenfolge entweder ein zeichenfolgengestrichenes Datum/Eine-Uhrzeit-Objekt im ISO8601-Format, ein Zellbezug wie "=A1" oder eine Formel wie "=MIN(A1, B1)") ist. Beim Abrufen des Werts wird er immer als Zeichenfolgenformel zurückgegeben, z. B. "=10", "=A1", "=SUM(A1:B5)"usw.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula1: string | Date | Range;'
-    return:
-      type: string | Date | <xref uid="ExcelScript!ExcelScript.Range:interface" />
-- name: formula2
-  uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member
-  package: ExcelScript!
-  fullName: formula2
-  summary: Gibt mit den ternären Operatoren Between und NotBetween den operanden oberen Rahmen an. Wird nicht mit den binären Operatoren verwendet, z. B. GreaterThan. Beim Festlegen des Werts kann er als Date-, Range-Objekt oder Zeichenfolge übergeben werden (wobei die Zeichenfolge entweder ein zeichenfolgengestrichenes Datum/Eine-Uhrzeit-Objekt im ISO8601-Format, ein Zellverweis wie "=A1" oder eine Formel wie "=MIN(A1, B1)") ist. Beim Abrufen des Werts wird er immer als Zeichenfolgenformel zurückgegeben, z. B. "=10", "=A1", "=SUM(A1:B5)"usw.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula2?: string | Date | Range;'
-    return:
-      type: string | Date | <xref uid="ExcelScript!ExcelScript.Range:interface" />
-- name: operator
-  uid: ExcelScript!ExcelScript.DateTimeDataValidation#operator:member
-  package: ExcelScript!
-  fullName: operator
-  summary: Der Operator, der zum Überprüfen der Daten verwendet wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'operator: DataValidationOperator;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
-metadata:
-  ms.openlocfilehash: 39fc07f2b12026aa0aab2a0eb7e56a74204004c4
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913653"
+  - name: formula1
+    uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member'
+    package: ExcelScript!
+    fullName: formula1
+    summary: 'Gibt den rechten Operanden an, wenn die Operatoreigenschaft auf einen binären Operator wie GreaterThan festgelegt ist (der linke Operand ist der Wert, den der Benutzer in die Zelle einzugeben versucht). Gibt mit den ternären Operatoren Between und NotBetween den unteren gebundenen Operanden an. Beim Festlegen des Werts kann er als Datum, ein Range-Objekt oder eine Zeichenfolgenformel übergeben werden (wobei es sich bei der Zeichenfolge entweder um ein Datum/eine Uhrzeit im ISO8601-Format, einen Zellbezug wie "=A1" oder eine Formel wie "=MIN(A1, B1)") handelt. Beim Abrufen des Werts wird er immer als Zeichenfolgenformel zurückgegeben, z. B.: "=10", "=A1", "=SUM(A1:B5)" usw.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula1: string | Date | Range;'
+      return:
+        type: 'string | Date | <xref uid="ExcelScript!ExcelScript.Range:interface" />'
+  - name: formula2
+    uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member'
+    package: ExcelScript!
+    fullName: formula2
+    summary: 'Gibt mit den ternären Operatoren Between und NotBetween den Operanden an, der an die Obergrenze gebunden ist. Wird nicht mit den binären Operatoren verwendet, z. B. GreaterThan. Beim Festlegen des Werts kann er als Datum, Range-Objekt oder Zeichenfolge übergeben werden (wobei die Zeichenfolge entweder ein Datum/eine Uhrzeit als Zeichenfolge im ISO8601-Format, ein Zellbezug wie "=A1" oder eine Formel wie "=MIN(A1, B1)") ist. Beim Abrufen des Werts wird er immer als Zeichenfolgenformel zurückgegeben, z. B.: "=10", "=A1", "=SUM(A1:B5)" usw.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula2?: string | Date | Range;'
+      return:
+        type: 'string | Date | <xref uid="ExcelScript!ExcelScript.Range:interface" />'
+  - name: operator
+    uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#operator:member'
+    package: ExcelScript!
+    fullName: operator
+    summary: 'Der Operator, der zum Überprüfen der Daten verwendet wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator: DataValidationOperator;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />'

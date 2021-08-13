@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartLegend
-uid: ExcelScript!ExcelScript.ChartLegend:interface
+uid: 'ExcelScript!ExcelScript.ChartLegend:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartLegend
 summary: Stellt die Legende in einem Diagramm dar.
@@ -9,276 +9,269 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartLegend#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Stellt die Formatierung für eine Diagrammlegende dar, einschließlich Füllung und Schriftartformatierung.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartLegendFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartLegendFormat:interface" />
-      description: ''
-- name: getHeight()
-  uid: ExcelScript!ExcelScript.ChartLegend#getHeight:member(1)
-  package: ExcelScript!
-  fullName: getHeight()
-  summary: Gibt die Höhe der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: getLeft()
-  uid: ExcelScript!ExcelScript.ChartLegend#getLeft:member(1)
-  package: ExcelScript!
-  fullName: getLeft()
-  summary: Gibt den linken Wert der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeft(): number;'
-    return:
-      type: number
-      description: ''
-- name: getLegendEntries()
-  uid: ExcelScript!ExcelScript.ChartLegend#getLegendEntries:member(1)
-  package: ExcelScript!
-  fullName: getLegendEntries()
-  summary: Stellt eine Sammlung von LegendEntries in der Legende dar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLegendEntries(): ChartLegendEntry[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartLegendEntry:interface" />[]
-      description: ''
-- name: getOverlay()
-  uid: ExcelScript!ExcelScript.ChartLegend#getOverlay:member(1)
-  package: ExcelScript!
-  fullName: getOverlay()
-  summary: Gibt an, ob die Diagrammlegende mit dem Haupttext des Diagramms überlappen soll.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getOverlay(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getPosition()
-  uid: ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)
-  package: ExcelScript!
-  fullName: getPosition()
-  summary: Gibt die Position der Legende im Diagramm an. Weitere `ExcelScript.ChartLegendPosition` Informationen finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPosition(): ChartLegendPosition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartLegendPosition:enum" />
-      description: ''
-- name: getShowShadow()
-  uid: ExcelScript!ExcelScript.ChartLegend#getShowShadow:member(1)
-  package: ExcelScript!
-  fullName: getShowShadow()
-  summary: Gibt an, ob die Legende einen Schatten im Diagramm hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowShadow(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getTop()
-  uid: ExcelScript!ExcelScript.ChartLegend#getTop:member(1)
-  package: ExcelScript!
-  fullName: getTop()
-  summary: Gibt den oberen Rand einer Diagrammlegende an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTop(): number;'
-    return:
-      type: number
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.ChartLegend#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: Gibt an, ob die Diagrammlegende sichtbar ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getWidth()
-  uid: ExcelScript!ExcelScript.ChartLegend#getWidth:member(1)
-  package: ExcelScript!
-  fullName: getWidth()
-  summary: Gibt die Breite der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWidth(): number;'
-    return:
-      type: number
-      description: ''
-- name: setHeight(height)
-  uid: ExcelScript!ExcelScript.ChartLegend#setHeight:member(1)
-  package: ExcelScript!
-  fullName: setHeight(height)
-  summary: Gibt die Höhe der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setHeight(height: number): void;'
-    parameters:
-    - id: height
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setLeft(left)
-  uid: ExcelScript!ExcelScript.ChartLegend#setLeft:member(1)
-  package: ExcelScript!
-  fullName: setLeft(left)
-  summary: Gibt den linken Wert der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLeft(left: number): void;'
-    parameters:
-    - id: left
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setOverlay(overlay)
-  uid: ExcelScript!ExcelScript.ChartLegend#setOverlay:member(1)
-  package: ExcelScript!
-  fullName: setOverlay(overlay)
-  summary: Gibt an, ob die Diagrammlegende mit dem Haupttext des Diagramms überlappen soll.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setOverlay(overlay: boolean): void;'
-    parameters:
-    - id: overlay
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setPosition(position)
-  uid: ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)
-  package: ExcelScript!
-  fullName: setPosition(position)
-  summary: Gibt die Position der Legende im Diagramm an. Weitere `ExcelScript.ChartLegendPosition` Informationen finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPosition(position: ChartLegendPosition): void;'
-    parameters:
-    - id: position
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartLegendPosition:enum" />
-    return:
-      type: void
-      description: ''
-- name: setShowShadow(showShadow)
-  uid: ExcelScript!ExcelScript.ChartLegend#setShowShadow:member(1)
-  package: ExcelScript!
-  fullName: setShowShadow(showShadow)
-  summary: Gibt an, ob die Legende einen Schatten im Diagramm hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowShadow(showShadow: boolean): void;'
-    parameters:
-    - id: showShadow
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setTop(top)
-  uid: ExcelScript!ExcelScript.ChartLegend#setTop:member(1)
-  package: ExcelScript!
-  fullName: setTop(top)
-  summary: Gibt den oberen Rand einer Diagrammlegende an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTop(top: number): void;'
-    parameters:
-    - id: top
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.ChartLegend#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: Gibt an, ob die Diagrammlegende sichtbar ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setWidth(width)
-  uid: ExcelScript!ExcelScript.ChartLegend#setWidth:member(1)
-  package: ExcelScript!
-  fullName: setWidth(width)
-  summary: Gibt die Breite der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setWidth(width: number): void;'
-    parameters:
-    - id: width
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 351089d8cddf53eed7fe1979f8d4ffaba96c11db
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914062"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartLegend#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 'Stellt die Formatierung für eine Diagrammlegende dar, einschließlich Füllung und Schriftartformatierung.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartLegendFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartLegendFormat:interface" />'
+        description: ''
+  - name: getHeight()
+    uid: 'ExcelScript!ExcelScript.ChartLegend#getHeight:member(1)'
+    package: ExcelScript!
+    fullName: getHeight()
+    summary: 'Gibt die Höhe der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getLeft()
+    uid: 'ExcelScript!ExcelScript.ChartLegend#getLeft:member(1)'
+    package: ExcelScript!
+    fullName: getLeft()
+    summary: 'Gibt den linken Wert der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getLegendEntries()
+    uid: 'ExcelScript!ExcelScript.ChartLegend#getLegendEntries:member(1)'
+    package: ExcelScript!
+    fullName: getLegendEntries()
+    summary: Stellt eine Sammlung von LegendEntries in der Legende dar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLegendEntries(): ChartLegendEntry[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartLegendEntry:interface" />[]'
+        description: ''
+  - name: getOverlay()
+    uid: 'ExcelScript!ExcelScript.ChartLegend#getOverlay:member(1)'
+    package: ExcelScript!
+    fullName: getOverlay()
+    summary: 'Gibt an, ob sich die Diagrammlegende mit dem Hauptteil des Diagramms überlappen soll.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getOverlay(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getPosition()
+    uid: 'ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)'
+    package: ExcelScript!
+    fullName: getPosition()
+    summary: Gibt die Position der Legende im Diagramm an. Weitere Informationen finden Sie `ExcelScript.ChartLegendPosition` unter.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPosition(): ChartLegendPosition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartLegendPosition:enum" />'
+        description: ''
+  - name: getShowShadow()
+    uid: 'ExcelScript!ExcelScript.ChartLegend#getShowShadow:member(1)'
+    package: ExcelScript!
+    fullName: getShowShadow()
+    summary: 'Gibt an, ob die Legende einen Schatten auf dem Diagramm hat.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowShadow(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getTop()
+    uid: 'ExcelScript!ExcelScript.ChartLegend#getTop:member(1)'
+    package: ExcelScript!
+    fullName: getTop()
+    summary: Gibt den oberen Rand einer Diagrammlegende an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.ChartLegend#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: 'Gibt an, ob die Diagrammlegende sichtbar ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getWidth()
+    uid: 'ExcelScript!ExcelScript.ChartLegend#getWidth:member(1)'
+    package: ExcelScript!
+    fullName: getWidth()
+    summary: 'Gibt die Breite der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setHeight(height)
+    uid: 'ExcelScript!ExcelScript.ChartLegend#setHeight:member(1)'
+    package: ExcelScript!
+    fullName: setHeight(height)
+    summary: 'Gibt die Höhe der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setHeight(height: number): void;'
+      parameters:
+        - id: height
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setLeft(left)
+    uid: 'ExcelScript!ExcelScript.ChartLegend#setLeft:member(1)'
+    package: ExcelScript!
+    fullName: setLeft(left)
+    summary: 'Gibt den linken Wert der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLeft(left: number): void;'
+      parameters:
+        - id: left
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setOverlay(overlay)
+    uid: 'ExcelScript!ExcelScript.ChartLegend#setOverlay:member(1)'
+    package: ExcelScript!
+    fullName: setOverlay(overlay)
+    summary: 'Gibt an, ob sich die Diagrammlegende mit dem Hauptteil des Diagramms überlappen soll.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setOverlay(overlay: boolean): void;'
+      parameters:
+        - id: overlay
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setPosition(position)
+    uid: 'ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)'
+    package: ExcelScript!
+    fullName: setPosition(position)
+    summary: Gibt die Position der Legende im Diagramm an. Weitere Informationen finden Sie `ExcelScript.ChartLegendPosition` unter.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPosition(position: ChartLegendPosition): void;'
+      parameters:
+        - id: position
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartLegendPosition:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setShowShadow(showShadow)
+    uid: 'ExcelScript!ExcelScript.ChartLegend#setShowShadow:member(1)'
+    package: ExcelScript!
+    fullName: setShowShadow(showShadow)
+    summary: 'Gibt an, ob die Legende einen Schatten auf dem Diagramm hat.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowShadow(showShadow: boolean): void;'
+      parameters:
+        - id: showShadow
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setTop(top)
+    uid: 'ExcelScript!ExcelScript.ChartLegend#setTop:member(1)'
+    package: ExcelScript!
+    fullName: setTop(top)
+    summary: Gibt den oberen Rand einer Diagrammlegende an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTop(top: number): void;'
+      parameters:
+        - id: top
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.ChartLegend#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: 'Gibt an, ob die Diagrammlegende sichtbar ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setWidth(width)
+    uid: 'ExcelScript!ExcelScript.ChartLegend#setWidth:member(1)'
+    package: ExcelScript!
+    fullName: setWidth(width)
+    summary: 'Gibt die Breite der Legende im Diagramm in Punkt an. Der Wert `null` ist, wenn die Legende nicht sichtbar ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setWidth(width: number): void;'
+      parameters:
+        - id: width
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

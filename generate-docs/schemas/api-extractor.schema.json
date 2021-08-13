@@ -1,32 +1,32 @@
 {
-    "title": "Konfiguration des API-Extraktions Moduls",
-    "description": "Describes how the API Extractor tool will process a project.",
+    "title": "API-Extraktorkonfiguration",
+    "description": "Beschreibt, wie das API-Extraktortool ein Projekt verarbeitet.",
     "type": "object",
     "properties": {
         "$schema": {
-            "description": "Part of the JSON Schema standard, this optional keyword declares the URL of the schema that the file conforms to. Editors may download the schema and use it to perform syntax highlighting.",
+            "description": "Als Teil des JSON-Schemastandard deklariert dieses optionale Schlüsselwort die URL des Schemas, dem die Datei entspricht. Editoren können das Schema herunterladen und verwenden, um syntaxhervorhebungen durchzuführen.",
             "type": "string"
         },
         "compiler": {
-            "description": "Determines how the TypeScript compiler will be invoked. The compiler.configType selects the type of configuration. Different options are available according to the configuration type.",
+            "description": "Bestimmt, wie der TypeScript-Compiler aufgerufen wird. Der compiler.configTyp wählt den Typ der Konfiguration aus. Je nach Konfigurationstyp stehen unterschiedliche Optionen zur Verfügung.",
             "type": "object",
             "oneOf": [
                 {
                     "type": "object",
                     "properties": {
                         "configType": {
-                            "description": "configType=tsconfig indicates that the compiler settings will be taken from a tsconfig.json file",
+                            "description": "configType=tsconfig gibt an, dass die Compilereinstellungen aus einer tsconfig.json-Datei übernommen werden.",
                             "type": "string",
                             "enum": [
                                 "tsconfig"
                             ]
                         },
                         "rootFolder": {
-                            "description": "The root folder for the project. This folder typically contains the tsconfig.json and package.json config files.",
+                            "description": "Der Stammordner für das Projekt. Dieser Ordner enthält in der Regel die tsconfig.json- und package.jsfür Konfigurationsdateien.",
                             "type": "string"
                         },
                         "overrideTsconfig": {
-                            "description": "Provides already parsed tsconfig.json contents conforming to the TypeScript tsconfig schema: http://json.schemastore.org/tsconfig If omitted, then the tsconfig.json file will be read.",
+                            "description": "Stellt bereits analysierte tsconfig.jszu Inhalten bereit, die dem TypeScript-tsconfig-Schema entsprechen: http://json.schemastore.org/tsconfig Wenn sie weggelassen wird, wird die tsconfig.json-Datei gelesen.",
                             "type": "object"
                         }
                     },
@@ -40,7 +40,7 @@
                     "type": "object",
                     "properties": {
                         "configType": {
-                            "description": "configType=runtime indicates that the compiler settings will be provided by a tool chain via a runtime API",
+                            "description": "configType=runtime gibt an, dass die Compilereinstellungen von einer Toolkette über eine Laufzeit-API bereitgestellt werden.",
                             "type": "string",
                             "enum": [
                                 "runtime"
@@ -55,15 +55,15 @@
             ]
         },
         "project": {
-            "description": "Describes a specific project that will be analyzed.",
+            "description": "Beschreibt ein bestimmtes Projekt, das analysiert wird.",
             "type": "object",
             "properties": {
                 "entryPointSourceFile": {
-                    "description": "Specifies the TypeScript source file that will be treated as the entry point for compilation.",
+                    "description": "Gibt die TypeScript-Quelldatei an, die als Einstiegspunkt für die Kompilierung behandelt wird.",
                     "type": "string"
                 },
                 "externalJsonFileFolders": {
-                    "description": "Indicates folders containing additional APJ JSON files (*.api.json) that will be consulted during the analysis.  This is useful for providing annotations for external packages that were not built using API Extractor.",
+                    "description": "Gibt Ordner mit zusätzlichen APJ JSON-Dateien (*.api.json) an, die während der Analyse abgefragt werden.  Dies ist hilfreich für die Bereitstellung von Anmerkungen für externe Pakete, die nicht mithilfe des API-Extraktors erstellt wurden.",
                     "type": "string"
                 }
             },
@@ -73,11 +73,11 @@
             "additionalProperties": false
         },
         "policies": {
-            "description": "These policies determine how API Extractor validates various best practices for API design.",
+            "description": "Diese Richtlinien bestimmen, wie der API-Extraktor verschiedene bewährte Methoden für den API-Entwurf überprüft.",
             "type": "object",
             "properties": {
                 "namespaceSupport": {
-                    "description": "Controls how API Extractor treats the TypeScript namespace keyword:\n\nconservative - (the default) namespaces may only be used to represent tables of constants\n\npermissive - arbitrary nesting of namespaces is allowed",
+                    "description": "Steuert, wie der API-Extraktor das TypeScript-Namespace-Schlüsselwort behandelt:\n\nkonservativ – (Standardnamespaces) dürfen nur zur Darstellung von Konstantentabellen verwendet werden.\n\nEingeschränkt – beliebiges Schachteln von Namespaces ist zulässig",
                     "type": "string",
                     "enum": [
                         "conservative",
@@ -88,19 +88,19 @@
             "additionalProperties": false
         },
         "apiReviewFile": {
-            "description": "Configures how the API review files (*.api.ts) will be generated.",
+            "description": "Konfiguriert, wie die API-Überprüfungsdateien (*.api.ts) generiert werden.",
             "type": "object",
             "properties": {
                 "enabled": {
-                    "description": "Whether to generate review files at all.  The default is true.",
+                    "description": "Gibt an, ob überhaupt Rezensionsdateien generiert werden sollen.  Der Standardwert ist \"true\".",
                     "type": "boolean"
                 },
                 "apiReviewFolder": {
-                    "description": "The file path of the folder containing API review file, relative to the project folder. The default value is \"./etc\".",
+                    "description": "Der Dateipfad des Ordners, der die API-Überprüfungsdatei enthält, relativ zum Projektordner. Der Standardwert lautet \"./etc\".",
                     "type": "string"
                 },
                 "tempFolder": {
-                    "description": "The *.api.ts report is saved into this folder.  During a production build, the temporary file will be compared with the file in apiReviewFolder; if there are differences, and error will be reported. The default value is \"./temp\".",
+                    "description": "Der Bericht *.api.ts wird in diesem Ordner gespeichert.  Während eines Produktionsbuilds wird die temporäre Datei mit der Datei in apiReviewFolder verglichen. wenn Unterschiede bestehen und Fehler gemeldet werden. Der Standardwert ist \"./temp\".",
                     "type": "string"
                 }
             },
@@ -110,15 +110,15 @@
             "additionalProperties": false
         },
         "apiJsonFile": {
-            "description": "Configures how the API JSON files (*.api.json) will be generated.",
+            "description": "Konfiguriert, wie die JSON-API-Dateien (*.api.jsein) generiert werden.",
             "type": "object",
             "properties": {
                 "enabled": {
-                    "description": "Whether to generate API JSON files at all.  The default is true.",
+                    "description": "Gibt an, ob ÜBERHAUPT API-JSON-Dateien generiert werden sollen.  Der Standardwert ist \"true\".",
                     "type": "boolean"
                 },
                 "outputFolder": {
-                    "description": "Specifies where the *.api.json file should be written. The default value is \"./dist\"",
+                    "description": "Gibt an, wo die *.api.json-Datei geschrieben werden soll. Der Standardwert lautet \"./dist\"",
                     "type": "string"
                 }
             },

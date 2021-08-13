@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.CalculationMode
-uid: ExcelScript!ExcelScript.CalculationMode:enum
+uid: 'ExcelScript!ExcelScript.CalculationMode:enum'
 package: ExcelScript!
 fullName: ExcelScript.CalculationMode
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
-  package: ExcelScript!
-  summary: Das Standardmäßige Neuberechnungsverhalten, bei dem Excel jedes Mal neue Formelergebnisse berechnet, wenn die relevanten Daten geändert werden.
-- name: automaticExceptTables
-  uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
-  package: ExcelScript!
-  summary: Berechnet jedes Mal, wenn die relevanten Daten geändert werden, neue Formelergebnisse, es sei denn, die Formel befindet sich in einer Datentabelle.
-- name: manual
-  uid: ExcelScript!ExcelScript.CalculationMode.manual:member
-  package: ExcelScript!
-  summary: Berechnungen erfolgen nur, wenn der Benutzer oder das Add-In sie anfordert.
-metadata:
-  ms.openlocfilehash: f7df42bfa4aee3c3bd6e39aabfc1140e64088d58
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913985"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.CalculationMode.automatic:member'
+    package: ExcelScript!
+    summary: 'Das Standardmäßige Neuberechnungsverhalten, bei dem Excel bei jeder Änderung der relevanten Daten neue Formelergebnisse berechnet.'
+  - name: automaticExceptTables
+    uid: 'ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member'
+    package: ExcelScript!
+    summary: 'Berechnet neue Formelergebnisse jedes Mal, wenn die relevanten Daten geändert werden, es sei denn, die Formel befindet sich in einer Datentabelle.'
+  - name: manual
+    uid: 'ExcelScript!ExcelScript.CalculationMode.manual:member'
+    package: ExcelScript!
+    summary: 'Berechnungen erfolgen nur, wenn der Benutzer oder das Add-In sie anfordert.'

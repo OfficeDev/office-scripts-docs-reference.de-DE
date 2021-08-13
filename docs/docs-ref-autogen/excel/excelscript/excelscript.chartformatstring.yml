@@ -1,31 +1,24 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartFormatString
-uid: ExcelScript!ExcelScript.ChartFormatString:interface
+uid: 'ExcelScript!ExcelScript.ChartFormatString:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartFormatString
-summary: Represents the substring in chart related objects that contain text, like a `ChartTitle` object or `ChartAxisTitle` object.
+summary: 'Stellt die Teilzeichenfolge in diagrammbezogenen Objekten dar, die Text enthalten, z. B. ein `ChartTitle` Objekt oder `ChartAxisTitle` Objekt.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Stellt die Schriftartattribute dar, z. B. Schriftartenname, Schriftgrad und Farbe eines Diagrammzeichenobjekts.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 117644700d3730164127e2c31f04b633b42ac244
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914083"
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Stellt die Schriftartattribute dar, z. B. Schriftartname, Schriftgrad und Farbe eines Diagrammzeichenobjekts.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

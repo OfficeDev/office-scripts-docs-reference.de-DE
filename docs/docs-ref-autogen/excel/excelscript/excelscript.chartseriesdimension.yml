@@ -1,37 +1,30 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartSeriesDimension
-uid: ExcelScript!ExcelScript.ChartSeriesDimension:enum
+uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartSeriesDimension
-summary: Stellt die Dimensionen beim Abholen von Werten aus Diagrammdatenreihen dar.
+summary: 'Stellt die Dimensionen dar, wenn Werte aus Diagrammreihen abgerufen werden.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: bubbleSizes
-  uid: ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member
-  package: ExcelScript!
-  summary: Die Achse der Diagrammreihe für die Blasengrößen in Blasendiagrammen.
-- name: categories
-  uid: ExcelScript!ExcelScript.ChartSeriesDimension.categories:member
-  package: ExcelScript!
-  summary: Die Achse der Diagrammreihe für die Kategorien.
-- name: values
-  uid: ExcelScript!ExcelScript.ChartSeriesDimension.values:member
-  package: ExcelScript!
-  summary: Die Achse der Diagrammreihe für die Werte.
-- name: xvalues
-  uid: ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member
-  package: ExcelScript!
-  summary: Die Achse der Diagrammreihe für die Werte der x-Achse in Streu-und Blasendiagrammen.
-- name: yvalues
-  uid: ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member
-  package: ExcelScript!
-  summary: Die Achse der Diagrammreihe für die y-Achsenwerte in Streu-und Blasendiagrammen.
-metadata:
-  ms.openlocfilehash: 62dbf9658e63772b83fed5d065b58bce1c013d89
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419551"
+  - name: bubbleSizes
+    uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+    package: ExcelScript!
+    summary: Die Diagrammreihenachse für die Blasengrößen in Blasendiagrammen.
+  - name: categories
+    uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+    package: ExcelScript!
+    summary: Die Diagrammreihenachse für die Kategorien.
+  - name: values
+    uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+    package: ExcelScript!
+    summary: Die Diagrammreihenachse für die Werte.
+  - name: xvalues
+    uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+    package: ExcelScript!
+    summary: Die Diagrammreihenachse für die X-Achsenwerte in Punkt- und Blasendiagrammen.
+  - name: yvalues
+    uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+    package: ExcelScript!
+    summary: Die Diagrammreihenachse für die Y-Achsenwerte in Punkt- und Blasendiagrammen.

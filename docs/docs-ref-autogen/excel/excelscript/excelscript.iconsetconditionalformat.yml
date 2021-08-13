@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.IconSetConditionalFormat
-uid: ExcelScript!ExcelScript.IconSetConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.IconSetConditionalFormat
 summary: Stellt ein Symbolsatzkriterium für die bedingte Formatierung dar.
@@ -9,130 +9,123 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getCriteria()
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getCriteria:member(1)
-  package: ExcelScript!
-  fullName: getCriteria()
-  summary: Ein Array von Kriterien und Symbolsätzen für die Regeln und potenziellen benutzerdefinierten Symbole für bedingte Symbole. Beachten Sie, dass beim ersten Kriterium nur das benutzerdefinierte Symbol geändert werden kann, während Typ, Formel und Operator beim Festlegen ignoriert werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCriteria(): ConditionalIconCriterion[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalIconCriterion:interface" />[]
-      description: ''
-- name: getReverseIconOrder()
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getReverseIconOrder:member(1)
-  package: ExcelScript!
-  fullName: getReverseIconOrder()
-  summary: If `true`<!-- -->, kehrt die Symbolbestellungen für den Symbolsatz um. Beachten Sie, dass dies nicht festgelegt werden kann, wenn benutzerdefinierte Symbole verwendet werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReverseIconOrder(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowIconOnly()
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getShowIconOnly:member(1)
-  package: ExcelScript!
-  fullName: getShowIconOnly()
-  summary: If `true`<!-- -->blendet die Werte aus und zeigt nur Symbole an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowIconOnly(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getStyle()
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getStyle:member(1)
-  package: ExcelScript!
-  fullName: getStyle()
-  summary: Wenn festgelegt, wird die Symbolsatzoption für das bedingte Format angezeigt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getStyle(): IconSet;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.IconSet:enum" />
-      description: ''
-- name: setCriteria(criteria)
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setCriteria:member(1)
-  package: ExcelScript!
-  fullName: setCriteria(criteria)
-  summary: Ein Array von Kriterien und Symbolsätzen für die Regeln und potenziellen benutzerdefinierten Symbole für bedingte Symbole. Beachten Sie, dass beim ersten Kriterium nur das benutzerdefinierte Symbol geändert werden kann, während Typ, Formel und Operator beim Festlegen ignoriert werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCriteria(criteria: ConditionalIconCriterion[]): void;'
-    parameters:
-    - id: criteria
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalIconCriterion:interface" />[]
-    return:
-      type: void
-      description: ''
-- name: setReverseIconOrder(reverseIconOrder)
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setReverseIconOrder:member(1)
-  package: ExcelScript!
-  fullName: setReverseIconOrder(reverseIconOrder)
-  summary: If `true`<!-- -->, kehrt die Symbolbestellungen für den Symbolsatz um. Beachten Sie, dass dies nicht festgelegt werden kann, wenn benutzerdefinierte Symbole verwendet werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setReverseIconOrder(reverseIconOrder: boolean): void;'
-    parameters:
-    - id: reverseIconOrder
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowIconOnly(showIconOnly)
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setShowIconOnly:member(1)
-  package: ExcelScript!
-  fullName: setShowIconOnly(showIconOnly)
-  summary: If `true`<!-- -->blendet die Werte aus und zeigt nur Symbole an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowIconOnly(showIconOnly: boolean): void;'
-    parameters:
-    - id: showIconOnly
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setStyle(style)
-  uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setStyle:member(1)
-  package: ExcelScript!
-  fullName: setStyle(style)
-  summary: Wenn festgelegt, wird die Symbolsatzoption für das bedingte Format angezeigt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setStyle(style: IconSet): void;'
-    parameters:
-    - id: style
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.IconSet:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 64ddd6ea51b31eb962d1edebd1e0f48015daf8dd
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913611"
+  - name: getCriteria()
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#getCriteria:member(1)'
+    package: ExcelScript!
+    fullName: getCriteria()
+    summary: 'Ein Array von Kriterien und Symbolsätzen für die Regeln und potenziellen benutzerdefinierten Symbole für bedingte Symbole. Beachten Sie, dass für das erste Kriterium nur das benutzerdefinierte Symbol geändert werden kann, während Typ, Formel und Operator beim Festlegen ignoriert werden.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCriteria(): ConditionalIconCriterion[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalIconCriterion:interface" />[]'
+        description: ''
+  - name: getReverseIconOrder()
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#getReverseIconOrder:member(1)'
+    package: ExcelScript!
+    fullName: getReverseIconOrder()
+    summary: 'Wenn `true`<!-- -->, kehrt die Symbolbestellungen für den Symbolsatz um. Beachten Sie, dass dies nicht festgelegt werden kann, wenn benutzerdefinierte Symbole verwendet werden.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReverseIconOrder(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowIconOnly()
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#getShowIconOnly:member(1)'
+    package: ExcelScript!
+    fullName: getShowIconOnly()
+    summary: 'Wenn `true`<!-- -->, blendet die Werte aus und zeigt nur Symbole an.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowIconOnly(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getStyle()
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#getStyle:member(1)'
+    package: ExcelScript!
+    fullName: getStyle()
+    summary: 'Wenn festgelegt, wird die Symbolsatzoption für das bedingte Format angezeigt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStyle(): IconSet;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.IconSet:enum" />'
+        description: ''
+  - name: setCriteria(criteria)
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#setCriteria:member(1)'
+    package: ExcelScript!
+    fullName: setCriteria(criteria)
+    summary: 'Ein Array von Kriterien und Symbolsätzen für die Regeln und potenziellen benutzerdefinierten Symbole für bedingte Symbole. Beachten Sie, dass für das erste Kriterium nur das benutzerdefinierte Symbol geändert werden kann, während Typ, Formel und Operator beim Festlegen ignoriert werden.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCriteria(criteria: ConditionalIconCriterion[]): void;'
+      parameters:
+        - id: criteria
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalIconCriterion:interface" />[]'
+      return:
+        type: void
+        description: ''
+  - name: setReverseIconOrder(reverseIconOrder)
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#setReverseIconOrder:member(1)'
+    package: ExcelScript!
+    fullName: setReverseIconOrder(reverseIconOrder)
+    summary: 'Wenn `true`<!-- -->, kehrt die Symbolbestellungen für den Symbolsatz um. Beachten Sie, dass dies nicht festgelegt werden kann, wenn benutzerdefinierte Symbole verwendet werden.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setReverseIconOrder(reverseIconOrder: boolean): void;'
+      parameters:
+        - id: reverseIconOrder
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowIconOnly(showIconOnly)
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#setShowIconOnly:member(1)'
+    package: ExcelScript!
+    fullName: setShowIconOnly(showIconOnly)
+    summary: 'Wenn `true`<!-- -->, blendet die Werte aus und zeigt nur Symbole an.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowIconOnly(showIconOnly: boolean): void;'
+      parameters:
+        - id: showIconOnly
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setStyle(style)
+    uid: 'ExcelScript!ExcelScript.IconSetConditionalFormat#setStyle:member(1)'
+    package: ExcelScript!
+    fullName: setStyle(style)
+    summary: 'Wenn festgelegt, wird die Symbolsatzoption für das bedingte Format angezeigt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStyle(style: IconSet): void;'
+      parameters:
+        - id: style
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.IconSet:enum" />'
+      return:
+        type: void
+        description: ''

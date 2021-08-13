@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CustomDataValidation
-uid: ExcelScript!ExcelScript.CustomDataValidation:interface
+uid: 'ExcelScript!ExcelScript.CustomDataValidation:interface'
 package: ExcelScript!
 fullName: ExcelScript.CustomDataValidation
 summary: Stellt die benutzerdefinierten Datenüberprüfungskriterien dar.
@@ -9,22 +9,15 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: formula
-  uid: ExcelScript!ExcelScript.CustomDataValidation#formula:member
-  package: ExcelScript!
-  fullName: formula
-  summary: Eine benutzerdefinierte Formel für die Datenüberprüfung. Dadurch werden spezielle Eingaberegeln erstellt, z. B. das Verhindern von Duplikaten oder das Einschränken der Gesamtsumme in einem Zellbereich.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: fdfa6250fa959a35feba17bfc6e9310666129986
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913703"
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.CustomDataValidation#formula:member'
+    package: ExcelScript!
+    fullName: formula
+    summary: 'Eine benutzerdefinierte Formel für die Datenüberprüfung. Dadurch werden spezielle Eingaberegeln erstellt, z. B. das Verhindern von Duplikaten oder das Einschränken der Summe in einem Zellbereich.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula: string;'
+      return:
+        type: string

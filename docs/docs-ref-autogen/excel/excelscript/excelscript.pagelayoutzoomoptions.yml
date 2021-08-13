@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.PageLayoutZoomOptions
-uid: ExcelScript!ExcelScript.PageLayoutZoomOptions:interface
+uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.PageLayoutZoomOptions
 summary: Stellt Seitenzoomeigenschaften dar.
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: horizontalFitToPages
-  uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#horizontalFitToPages:member
-  package: ExcelScript!
-  fullName: horizontalFitToPages
-  summary: Anzahl der horizontal einzupassenden Seiten. Dieser Wert kann `null` sein, wenn eine prozentuale Skalierung verwendet wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'horizontalFitToPages?: number;'
-    return:
-      type: number
-- name: scale
-  uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#scale:member
-  package: ExcelScript!
-  fullName: scale
-  summary: Der Skalierungswert für die Druckseite kann zwischen 10 und 400 liegen. Dieser Wert kann angegeben `null` werden, wenn für die Seite hoch oder breit passen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'scale?: number;'
-    return:
-      type: number
-- name: verticalFitToPages
-  uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#verticalFitToPages:member
-  package: ExcelScript!
-  fullName: verticalFitToPages
-  summary: Anzahl der vertikal einzupassenden Seiten. Dieser Wert kann `null` sein, wenn eine prozentuale Skalierung verwendet wird.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'verticalFitToPages?: number;'
-    return:
-      type: number
-metadata:
-  ms.openlocfilehash: e003103fb547ccfe9c0fcbabbdd5f9d1c7bb042f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913568"
+  - name: horizontalFitToPages
+    uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions#horizontalFitToPages:member'
+    package: ExcelScript!
+    fullName: horizontalFitToPages
+    summary: 'Anzahl der horizontal einzupassenden Seiten. Dieser Wert kann angegeben `null` werden, wenn eine Prozentskala verwendet wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'horizontalFitToPages?: number;'
+      return:
+        type: number
+  - name: scale
+    uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions#scale:member'
+    package: ExcelScript!
+    fullName: scale
+    summary: 'Der Skalierungswert für die Druckseite kann zwischen 10 und 400 liegen. Dieser Wert kann angegeben werden, wenn die `null` Höhe oder Breite der Seite angepasst wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scale?: number;'
+      return:
+        type: number
+  - name: verticalFitToPages
+    uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions#verticalFitToPages:member'
+    package: ExcelScript!
+    fullName: verticalFitToPages
+    summary: 'Anzahl der vertikal einzupassenden Seiten. Dieser Wert kann angegeben `null` werden, wenn eine Prozentskala verwendet wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'verticalFitToPages?: number;'
+      return:
+        type: number

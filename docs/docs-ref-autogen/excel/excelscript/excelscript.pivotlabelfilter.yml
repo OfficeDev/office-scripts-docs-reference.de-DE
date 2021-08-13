@@ -1,78 +1,71 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotLabelFilter
-uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
+uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotLabelFilter
-summary: Konfigurierbare Vorlage für einen Bezeichnungsfilter, der auf ein PivotField angewendet werden soll. Der `condition` definiert, welche Kriterien festgelegt werden müssen, damit der Filter funktioniert.
+summary: 'Konfigurierbare Vorlage für einen Bezeichnungsfilter, der auf ein PivotField angewendet werden soll. Die `condition` definiert, welche Kriterien festgelegt werden müssen, damit der Filter ausgeführt werden kann.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: condition
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#condition:member
-  package: ExcelScript!
-  fullName: condition
-  summary: Gibt die Bedingung für den Filter an, der die erforderlichen Filterkriterien definiert.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'condition: LabelFilterCondition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />
-- name: exclusive
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
-  package: ExcelScript!
-  fullName: exclusive
-  summary: If `true`<!-- -->, filter *schließt Elemente* aus, die Kriterien erfüllen. Der Standardwert ist `false` (Filter, um Elemente zu enthalten, die Kriterien erfüllen).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'exclusive?: boolean;'
-    return:
-      type: boolean
-- name: lowerBound
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
-  package: ExcelScript!
-  fullName: lowerBound
-  summary: 'Die Untergrenze des Bereichs für die `between` Filterbedingung. Hinweis: Eine numerische Zeichenfolge wird beim Vergleich mit anderen numerischen Zeichenfolgen als Zahl behandelt.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'lowerBound?: string;'
-    return:
-      type: string
-- name: substring
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
-  package: ExcelScript!
-  fullName: substring
-  summary: Die unterzeichenfolge, die für `beginsWith`<!-- -->, `endsWith`<!-- -->und `contains` Filterbedingungen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'substring?: string;'
-    return:
-      type: string
-- name: upperBound
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
-  package: ExcelScript!
-  fullName: upperBound
-  summary: 'Die Obere Grenze des Bereichs für die `between` Filterbedingung. Hinweis: Eine numerische Zeichenfolge wird beim Vergleich mit anderen numerischen Zeichenfolgen als Zahl behandelt.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'upperBound?: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: aff1aa4aa7669b1e8608c3eb22a55abc9c0ee320
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913547"
+  - name: condition
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
+    package: ExcelScript!
+    fullName: condition
+    summary: 'Gibt die Bedingung für den Filter an, der die erforderlichen Filterkriterien definiert.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'condition: LabelFilterCondition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />'
+  - name: exclusive
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
+    package: ExcelScript!
+    fullName: exclusive
+    summary: 'Wenn `true`<!-- -->, filter *excludes* items that meet criteria. Der Standardwert ist `false` (Filter, um Elemente einzuschließen, die Kriterien erfüllen).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'exclusive?: boolean;'
+      return:
+        type: boolean
+  - name: lowerBound
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
+    package: ExcelScript!
+    fullName: lowerBound
+    summary: 'Die untere Grenze des Bereichs für die `between` Filterbedingung. Hinweis: Eine numerische Zeichenfolge wird als Zahl behandelt, wenn sie mit anderen numerischen Zeichenfolgen verglichen wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lowerBound?: string;'
+      return:
+        type: string
+  - name: substring
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
+    package: ExcelScript!
+    fullName: substring
+    summary: 'Die Teilzeichenfolge, die für `beginsWith`<!-- -->, `endsWith`<!-- -->und `contains` Filterbedingungen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'substring?: string;'
+      return:
+        type: string
+  - name: upperBound
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
+    package: ExcelScript!
+    fullName: upperBound
+    summary: 'Die obere Grenze des Bereichs für die `between` Filterbedingung. Hinweis: Eine numerische Zeichenfolge wird als Zahl behandelt, wenn sie mit anderen numerischen Zeichenfolgen verglichen wird.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'upperBound?: string;'
+      return:
+        type: string

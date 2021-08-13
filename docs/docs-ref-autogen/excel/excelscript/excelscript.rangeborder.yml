@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeBorder
-uid: ExcelScript!ExcelScript.RangeBorder:interface
+uid: 'ExcelScript!ExcelScript.RangeBorder:interface'
 package: ExcelScript!
 fullName: ExcelScript.RangeBorder
 summary: Stellt den Rahmen eines Objekts dar.
@@ -9,143 +9,136 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getColor()
-  uid: ExcelScript!ExcelScript.RangeBorder#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: 'HTML-Farbcode, der die Farbe der Rahmenlinie in der Form \# RRGGBB (z. B. "FFA500") oder als benannte #A0 (z. B. "Orange") darstellt.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getSideIndex()
-  uid: ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)
-  package: ExcelScript!
-  fullName: getSideIndex()
-  summary: Konstanter Wert, der die bestimmte Seiten des Rahmens angibt. Weitere `ExcelScript.BorderIndex` Informationen finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSideIndex(): BorderIndex;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
-      description: ''
-- name: getStyle()
-  uid: ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)
-  package: ExcelScript!
-  fullName: getStyle()
-  summary: Einer der Konstanten der Linienart, die die Linienart für den Rahmen angibt. Weitere `ExcelScript.BorderLineStyle` Informationen finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getStyle(): BorderLineStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.BorderLineStyle:enum" />
-      description: ''
-- name: getTintAndShade()
-  uid: ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: getTintAndShade()
-  summary: Gibt ein Double an, das eine Farbe für den Bereichsrand aufhellt oder dunkler macht, der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein `null` Wert gibt an, dass der Rahmen keine einheitliche Einstellung `tintAndShade` hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTintAndShade(): number;'
-    return:
-      type: number
-      description: ''
-- name: getWeight()
-  uid: ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)
-  package: ExcelScript!
-  fullName: getWeight()
-  summary: Gibt die Stärke des Rahmens um einen Bereich an. Weitere `ExcelScript.BorderWeight` Informationen finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWeight(): BorderWeight;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.RangeBorder#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: 'HTML-Farbcode, der die Farbe der Rahmenlinie in der Form \# RRGGBB (z. B. "FFA500") oder als benannte #A0 (z. B. "Orange") darstellt.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setStyle(style)
-  uid: ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)
-  package: ExcelScript!
-  fullName: setStyle(style)
-  summary: Einer der Konstanten der Linienart, die die Linienart für den Rahmen angibt. Weitere `ExcelScript.BorderLineStyle` Informationen finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setStyle(style: BorderLineStyle): void;'
-    parameters:
-    - id: style
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.BorderLineStyle:enum" />
-    return:
-      type: void
-      description: ''
-- name: setTintAndShade(tintAndShade)
-  uid: ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: setTintAndShade(tintAndShade)
-  summary: Gibt ein Double an, das eine Farbe für den Bereichsrand aufhellt oder dunkler macht, der Wert liegt zwischen -1 (dunkelster) und 1 (hellster Wert), mit 0 für die Ursprüngliche Farbe. Ein `null` Wert gibt an, dass der Rahmen keine einheitliche Einstellung `tintAndShade` hat.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTintAndShade(tintAndShade: number): void;'
-    parameters:
-    - id: tintAndShade
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setWeight(weight)
-  uid: ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)
-  package: ExcelScript!
-  fullName: setWeight(weight)
-  summary: Gibt die Stärke des Rahmens um einen Bereich an. Weitere `ExcelScript.BorderWeight` Informationen finden Sie unter.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setWeight(weight: BorderWeight): void;'
-    parameters:
-    - id: weight
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 5561da1ed174cb4226dda9431c8731d18aedf863
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914251"
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.RangeBorder#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: 'HTML-Farbcode, der die Farbe der Rahmenlinie darstellt, im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getSideIndex()
+    uid: 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
+    package: ExcelScript!
+    fullName: getSideIndex()
+    summary: 'Konstanter Wert, der die bestimmte Seiten des Rahmens angibt. Weitere Informationen finden Sie `ExcelScript.BorderIndex` unter.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSideIndex(): BorderIndex;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />'
+        description: ''
+  - name: getStyle()
+    uid: 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
+    package: ExcelScript!
+    fullName: getStyle()
+    summary: 'Einer der Konstanten der Linienart, die die Linienart für den Rahmen angibt. Weitere Informationen finden Sie `ExcelScript.BorderLineStyle` unter.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStyle(): BorderLineStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.BorderLineStyle:enum" />'
+        description: ''
+  - name: getTintAndShade()
+    uid: 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: getTintAndShade()
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für den Bereichsrahmen aufhellt oder abdunkelt. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster), mit 0 für die Originalfarbe. Ein `null` Wert gibt an, dass der Rahmen keine einheitliche `tintAndShade` Einstellung aufweist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTintAndShade(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getWeight()
+    uid: 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
+    package: ExcelScript!
+    fullName: getWeight()
+    summary: Gibt die Stärke des Rahmens um einen Bereich an. Weitere Informationen finden Sie `ExcelScript.BorderWeight` unter.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWeight(): BorderWeight;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />'
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.RangeBorder#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: 'HTML-Farbcode, der die Farbe der Rahmenlinie darstellt, im Format \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setStyle(style)
+    uid: 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
+    package: ExcelScript!
+    fullName: setStyle(style)
+    summary: 'Einer der Konstanten der Linienart, die die Linienart für den Rahmen angibt. Weitere Informationen finden Sie `ExcelScript.BorderLineStyle` unter.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStyle(style: BorderLineStyle): void;'
+      parameters:
+        - id: style
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.BorderLineStyle:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setTintAndShade(tintAndShade)
+    uid: 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: setTintAndShade(tintAndShade)
+    summary: 'Gibt einen Double-Wert an, der eine Farbe für den Bereichsrahmen aufhellt oder abdunkelt. Der Wert liegt zwischen -1 (dunkelster) und 1 (hellster), mit 0 für die Originalfarbe. Ein `null` Wert gibt an, dass der Rahmen keine einheitliche `tintAndShade` Einstellung aufweist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTintAndShade(tintAndShade: number): void;'
+      parameters:
+        - id: tintAndShade
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setWeight(weight)
+    uid: 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
+    package: ExcelScript!
+    fullName: setWeight(weight)
+    summary: Gibt die Stärke des Rahmens um einen Bereich an. Weitere Informationen finden Sie `ExcelScript.BorderWeight` unter.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setWeight(weight: BorderWeight): void;'
+      parameters:
+        - id: weight
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />'
+      return:
+        type: void
+        description: ''

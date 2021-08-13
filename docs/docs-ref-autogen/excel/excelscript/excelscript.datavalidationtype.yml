@@ -1,57 +1,74 @@
 ### YamlMime:TSEnum
 name: ExcelScript.DataValidationType
-uid: ExcelScript!ExcelScript.DataValidationType:enum
+uid: 'ExcelScript!ExcelScript.DataValidationType:enum'
 package: ExcelScript!
 fullName: ExcelScript.DataValidationType
 summary: Stellt die Datenüberprüfungstyp-Enumeration dar.
-remarks: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This sample reads and logs the data validation type of the currently selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently selected range.\n  let range = workbook.getSelectedRange();\n\n  // Get the type (`DataValidationType`) of data validation applied to the range.\n  let validationType = range.getDataValidation().getType();\n\n  /*\n   * Log the data validation type.\n   * If the range has a single value, it logs that type.\n   * If the range doesn't have data validation applied, it logs \"None\".\n   * If the range has multiple different types of data validation, it logs \"Inconsistent\" or \"MixedCriteria\".\n   */\n  console.log(validationType.toString());\n}\n```"
+remarks: |-
+
+
+  #### <a name="examples"></a>Beispiele
+
+  ```TypeScript
+  /**
+   * This sample reads and logs the data validation type of the currently selected range.
+   */
+  function main(workbook: ExcelScript.Workbook) {
+    // Get the currently selected range.
+    let range = workbook.getSelectedRange();
+
+    // Get the type (`DataValidationType`) of data validation applied to the range.
+    let validationType = range.getDataValidation().getType();
+
+    /*
+     * Log the data validation type.
+     * If the range has a single value, it logs that type.
+     * If the range doesn't have data validation applied, it logs "None".
+     * If the range has multiple different types of data validation, it logs "Inconsistent" or "MixedCriteria".
+     */
+    console.log(validationType.toString());
+  }
+  ```
 isPreview: false
 isDeprecated: false
 fields:
-- name: custom
-  uid: ExcelScript!ExcelScript.DataValidationType.custom:member
-  package: ExcelScript!
-  summary: Der benutzerdefinierte Datenüberprüfungstyp.
-- name: date
-  uid: ExcelScript!ExcelScript.DataValidationType.date:member
-  package: ExcelScript!
-  summary: Der Datumsdatenüberprüfungstyp.
-- name: decimal
-  uid: ExcelScript!ExcelScript.DataValidationType.decimal:member
-  package: ExcelScript!
-  summary: Der Dezimaldatenüberprüfungstyp.
-- name: inconsistent
-  uid: ExcelScript!ExcelScript.DataValidationType.inconsistent:member
-  package: ExcelScript!
-  summary: Inkonsistent bedeutet, dass der Bereich eine inkonsistente Datenüberprüfung aufweist, was bedeutet, dass unterschiedliche Regeln für unterschiedliche Zellen vorhanden sind.
-- name: list
-  uid: ExcelScript!ExcelScript.DataValidationType.list:member
-  package: ExcelScript!
-  summary: Der Typ der Listendatenüberprüfung.
-- name: mixedCriteria
-  uid: ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member
-  package: ExcelScript!
-  summary: Gemischte Kriterien bedeuten, dass der Bereich für einige, aber nicht für alle Zellen eine Datenüberprüfung vorhanden ist.
-- name: none
-  uid: ExcelScript!ExcelScript.DataValidationType.none:member
-  package: ExcelScript!
-  summary: None means allow any value, indicating that there is no data validation in the range.
-- name: textLength
-  uid: ExcelScript!ExcelScript.DataValidationType.textLength:member
-  package: ExcelScript!
-  summary: Der Textlängen-Datenüberprüfungstyp.
-- name: time
-  uid: ExcelScript!ExcelScript.DataValidationType.time:member
-  package: ExcelScript!
-  summary: Der Zeitdatenüberprüfungstyp.
-- name: wholeNumber
-  uid: ExcelScript!ExcelScript.DataValidationType.wholeNumber:member
-  package: ExcelScript!
-  summary: Die gesamte Zahl des Datenüberprüfungstyps.
-metadata:
-  ms.openlocfilehash: 9b0bb4199eff15b3613be84d248341a5484a2bd8
-  ms.sourcegitcommit: 0b4ded26cbb2aa6e90e05b3e0af88b67da159021
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 07/15/2021
-  ms.locfileid: "53451600"
+  - name: custom
+    uid: 'ExcelScript!ExcelScript.DataValidationType.custom:member'
+    package: ExcelScript!
+    summary: Der benutzerdefinierte Datenüberprüfungstyp.
+  - name: date
+    uid: 'ExcelScript!ExcelScript.DataValidationType.date:member'
+    package: ExcelScript!
+    summary: Der Datumsdatenüberprüfungstyp.
+  - name: decimal
+    uid: 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
+    package: ExcelScript!
+    summary: Der Dezimaldatenüberprüfungstyp.
+  - name: inconsistent
+    uid: 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
+    package: ExcelScript!
+    summary: 'Inkonsistent bedeutet, dass der Bereich eine inkonsistente Datenüberprüfung aufweist, was bedeutet, dass unterschiedliche Regeln für unterschiedliche Zellen vorhanden sind.'
+  - name: list
+    uid: 'ExcelScript!ExcelScript.DataValidationType.list:member'
+    package: ExcelScript!
+    summary: Der Typ der Listendatenüberprüfung.
+  - name: mixedCriteria
+    uid: 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
+    package: ExcelScript!
+    summary: 'Gemischte Kriterien bedeuten, dass der Bereich für einige, aber nicht für alle Zellen eine Datenüberprüfung vorhanden ist.'
+  - name: none
+    uid: 'ExcelScript!ExcelScript.DataValidationType.none:member'
+    package: ExcelScript!
+    summary: 'None means allow any value, indicating that there is no data validation in the range.'
+  - name: textLength
+    uid: 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
+    package: ExcelScript!
+    summary: Der Textlängen-Datenüberprüfungstyp.
+  - name: time
+    uid: 'ExcelScript!ExcelScript.DataValidationType.time:member'
+    package: ExcelScript!
+    summary: Der Zeitdatenüberprüfungstyp.
+  - name: wholeNumber
+    uid: 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
+    package: ExcelScript!
+    summary: Die gesamte Zahl des Datenüberprüfungstyps.

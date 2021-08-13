@@ -1,57 +1,50 @@
 ### YamlMime:TSType
 name: ExcelScript.CultureInfo
-uid: ExcelScript!ExcelScript.CultureInfo:interface
+uid: 'ExcelScript!ExcelScript.CultureInfo:interface'
 package: ExcelScript!
 fullName: ExcelScript.CultureInfo
-summary: Stellt Informationen basierend auf den aktuellen Systemkultureinstellungen zur Verfügung. Dazu gehören die Kulturnamen, die Zahlenformatierung und andere kulturabhängige Einstellungen.
+summary: 'Stellt Informationen basierend auf den aktuellen Einstellungen für die Systemkultur bereit. Dazu gehören die Kulturnamen, die Zahlenformatierung und andere kulturell abhängige Einstellungen.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getDatetimeFormat()
-  uid: ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)
-  package: ExcelScript!
-  fullName: getDatetimeFormat()
-  summary: Definiert das kulturell geeignete Format der Anzeige von Datum und Uhrzeit. Dies basiert auf den aktuellen Systemkultureinstellungen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDatetimeFormat(): DatetimeFormatInfo;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DatetimeFormatInfo:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.CultureInfo#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Ruft den Kulturnamen im Format languagecode2-country/regioncode2 ab (z. B. "zh-cn" oder "en-us"). Dies basiert auf den aktuellen Systemeinstellungen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: Definiert das kulturell geeignete Format der Anzeige von Zahlen. Dies basiert auf den aktuellen Systemkultureinstellungen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): NumberFormatInfo;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 6d1e2ed04dfcdbb0275fc42382fa9a9e3f0c819b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913710"
+  - name: getDatetimeFormat()
+    uid: 'ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)'
+    package: ExcelScript!
+    fullName: getDatetimeFormat()
+    summary: Definiert das kulturell geeignete Format für die Anzeige von Datum und Uhrzeit. Dies basiert auf den aktuellen Einstellungen für die Systemkultur.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDatetimeFormat(): DatetimeFormatInfo;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DatetimeFormatInfo:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Ruft den Kulturnamen im Format "languagecode2-country/regioncode2" ab (z. B. "zh-cn" oder "en-us"). Dies basiert auf den aktuellen Systemeinstellungen.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: Definiert das kulturell geeignete Format für die Anzeige von Zahlen. Dies basiert auf den aktuellen Einstellungen für die Systemkultur.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): NumberFormatInfo;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />'
+        description: ''

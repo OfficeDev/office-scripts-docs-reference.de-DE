@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.IterativeCalculation
-uid: ExcelScript!ExcelScript.IterativeCalculation:interface
+uid: 'ExcelScript!ExcelScript.IterativeCalculation:interface'
 package: ExcelScript!
 fullName: ExcelScript.IterativeCalculation
 summary: Stellt die iterativen Berechnungseinstellungen dar.
@@ -9,100 +9,93 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getEnabled()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)
-  package: ExcelScript!
-  fullName: getEnabled()
-  summary: True, wenn Zirkelbezüge in Excel durch Iteration aufgelöst werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEnabled(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getMaxChange()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)
-  package: ExcelScript!
-  fullName: getMaxChange()
-  summary: Gibt den maximalen Änderungsbetrag zwischen den einzelnen Iterationen an, wenn Excel Zirkelverweise aufhebt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMaxChange(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMaxIteration()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)
-  package: ExcelScript!
-  fullName: getMaxIteration()
-  summary: Gibt die maximale Anzahl von Iterationen an, die Excel zum Auflösen eines Zirkelverweises verwenden kann.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMaxIteration(): number;'
-    return:
-      type: number
-      description: ''
-- name: setEnabled(enabled)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)
-  package: ExcelScript!
-  fullName: setEnabled(enabled)
-  summary: True, wenn Zirkelbezüge in Excel durch Iteration aufgelöst werden.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setEnabled(enabled: boolean): void;'
-    parameters:
-    - id: enabled
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setMaxChange(maxChange)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)
-  package: ExcelScript!
-  fullName: setMaxChange(maxChange)
-  summary: Gibt den maximalen Änderungsbetrag zwischen den einzelnen Iterationen an, wenn Excel Zirkelverweise aufhebt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMaxChange(maxChange: number): void;'
-    parameters:
-    - id: maxChange
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMaxIteration(maxIteration)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)
-  package: ExcelScript!
-  fullName: setMaxIteration(maxIteration)
-  summary: Gibt die maximale Anzahl von Iterationen an, die Excel zum Auflösen eines Zirkelverweises verwenden kann.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMaxIteration(maxIteration: number): void;'
-    parameters:
-    - id: maxIteration
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 9cd7e98544d85bb18748059ba1ab5c8d382aab7f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913603"
+  - name: getEnabled()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)'
+    package: ExcelScript!
+    fullName: getEnabled()
+    summary: 'True, wenn Zirkelbezüge in Excel durch Iteration aufgelöst werden.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEnabled(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getMaxChange()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)'
+    package: ExcelScript!
+    fullName: getMaxChange()
+    summary: 'Gibt die maximale Änderungsmenge zwischen den einzelnen Iterationen an, wenn Excel Zirkelbezüge auflösen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMaxChange(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMaxIteration()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)'
+    package: ExcelScript!
+    fullName: getMaxIteration()
+    summary: 'Gibt die maximale Anzahl von Iterationen an, die Excel verwenden können, um einen Zirkelbezug aufzulösen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMaxIteration(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setEnabled(enabled)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)'
+    package: ExcelScript!
+    fullName: setEnabled(enabled)
+    summary: 'True, wenn Zirkelbezüge in Excel durch Iteration aufgelöst werden.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEnabled(enabled: boolean): void;'
+      parameters:
+        - id: enabled
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setMaxChange(maxChange)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)'
+    package: ExcelScript!
+    fullName: setMaxChange(maxChange)
+    summary: 'Gibt die maximale Änderungsmenge zwischen den einzelnen Iterationen an, wenn Excel Zirkelbezüge auflösen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMaxChange(maxChange: number): void;'
+      parameters:
+        - id: maxChange
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMaxIteration(maxIteration)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)'
+    package: ExcelScript!
+    fullName: setMaxIteration(maxIteration)
+    summary: 'Gibt die maximale Anzahl von Iterationen an, die Excel verwenden können, um einen Zirkelbezug aufzulösen.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMaxIteration(maxIteration: number): void;'
+      parameters:
+        - id: maxIteration
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

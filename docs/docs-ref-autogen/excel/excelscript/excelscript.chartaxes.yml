@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartAxes
-uid: ExcelScript!ExcelScript.ChartAxes:interface
+uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxes
 summary: Die Achsen des Diagramms.
@@ -9,69 +9,62 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getCategoryAxis()
-  uid: ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)
-  package: ExcelScript!
-  fullName: getCategoryAxis()
-  summary: Stellt die Rubrikenachse in einem Diagramm dar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCategoryAxis(): ChartAxis;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-- name: getChartAxis(type, group)
-  uid: ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)
-  package: ExcelScript!
-  fullName: getChartAxis(type, group)
-  summary: Gibt eine bestimmte Achse anhand des Typs und der Gruppe zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
-    parameters:
-    - id: type
-      description: Gibt den Achsentyp an. Weitere `ExcelScript.ChartAxisType` Informationen finden Sie unter.
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
-    - id: group
-      description: Optional. Gibt die Achsengruppe an. Weitere `ExcelScript.ChartAxisGroup` Informationen finden Sie unter.
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-- name: getSeriesAxis()
-  uid: ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)
-  package: ExcelScript!
-  fullName: getSeriesAxis()
-  summary: Stellt die Datenreihenachse eines 3D-Diagramms dar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSeriesAxis(): ChartAxis;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-- name: getValueAxis()
-  uid: ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)
-  package: ExcelScript!
-  fullName: getValueAxis()
-  summary: Stellt die Größenachse in einer Achse dar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValueAxis(): ChartAxis;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 73e2396224adde7351299c69b73758091ba00aa1
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913280"
+  - name: getCategoryAxis()
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
+    package: ExcelScript!
+    fullName: getCategoryAxis()
+    summary: Stellt die Rubrikenachse in einem Diagramm dar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCategoryAxis(): ChartAxis;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''
+  - name: 'getChartAxis(type, group)'
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
+    package: ExcelScript!
+    fullName: 'getChartAxis(type, group)'
+    summary: Gibt eine bestimmte Achse anhand des Typs und der Gruppe zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+      parameters:
+        - id: type
+          description: Gibt den Achsentyp an. Weitere Informationen finden Sie `ExcelScript.ChartAxisType` unter.
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />'
+        - id: group
+          description: Optional. Gibt die Achsengruppe an. Weitere Informationen finden Sie `ExcelScript.ChartAxisGroup` unter.
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''
+  - name: getSeriesAxis()
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
+    package: ExcelScript!
+    fullName: getSeriesAxis()
+    summary: Stellt die Datenreihenachse eines 3D-Diagramms dar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSeriesAxis(): ChartAxis;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''
+  - name: getValueAxis()
+    uid: 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
+    package: ExcelScript!
+    fullName: getValueAxis()
+    summary: Stellt die Größenachse in einer Achse dar.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValueAxis(): ChartAxis;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />'
+        description: ''

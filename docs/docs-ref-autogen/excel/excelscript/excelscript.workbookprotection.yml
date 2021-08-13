@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorkbookProtection
-uid: ExcelScript!ExcelScript.WorkbookProtection:interface
+uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
 package: ExcelScript!
 fullName: ExcelScript.WorkbookProtection
 summary: Stellt den Schutz eines Arbeitsmappenobjekts dar.
@@ -9,57 +9,50 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getProtected()
-  uid: ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)
-  package: ExcelScript!
-  fullName: getProtected()
-  summary: Gibt an, ob die Arbeitsmappe geschützt ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getProtected(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: protect(password)
-  uid: ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)
-  package: ExcelScript!
-  fullName: protect(password)
-  summary: Schützt ein Arbeitsblatt. Schlägt fehl, wenn die Arbeitsmappe geschützt ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'protect(password?: string): void;'
-    parameters:
-    - id: password
-      description: Arbeitsmappenschutzkennwort.
-      type: string
-    return:
-      type: void
-      description: ''
-- name: unprotect(password)
-  uid: ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)
-  package: ExcelScript!
-  fullName: unprotect(password)
-  summary: Schützt eine Arbeitsmappe.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'unprotect(password?: string): void;'
-    parameters:
-    - id: password
-      description: Arbeitsmappenschutzkennwort.
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: c3744f882474aedd6d50bdbb466cf704b3b5b143
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607291"
+  - name: getProtected()
+    uid: 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
+    package: ExcelScript!
+    fullName: getProtected()
+    summary: 'Gibt an, ob die Arbeitsmappe geschützt ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getProtected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: protect(password)
+    uid: 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
+    package: ExcelScript!
+    fullName: protect(password)
+    summary: 'Schützt ein Arbeitsblatt. Schlägt fehl, wenn die Arbeitsmappe geschützt ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protect(password?: string): void;'
+      parameters:
+        - id: password
+          description: Arbeitsmappenschutzkennwort.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: unprotect(password)
+    uid: 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
+    package: ExcelScript!
+    fullName: unprotect(password)
+    summary: Schützt eine Arbeitsmappe.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      parameters:
+        - id: password
+          description: Arbeitsmappenschutzkennwort.
+          type: string
+      return:
+        type: void
+        description: ''

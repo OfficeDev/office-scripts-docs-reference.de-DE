@@ -1,6 +1,6 @@
 # <a name="office-scripts-api-documentation-tools"></a>Office Skript-API-Dokumentationstools
 
-Diese Tools unterstützen die Office SCripts-Dokumentation und das Team dahinter. Befolgen Sie diese Anweisungen, um die Tools in diesem Ordner auszuführen.
+Diese Tools unterstützen die Office SCripts-Dokumentation und das team dahinter. Befolgen Sie diese Anweisungen, um die Tools in diesem Ordner auszuführen.
 
 ## <a name="coverage-tester"></a>Abdeckungstester
 

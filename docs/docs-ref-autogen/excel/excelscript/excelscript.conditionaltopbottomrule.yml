@@ -1,42 +1,35 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalTopBottomRule
-uid: ExcelScript!ExcelScript.ConditionalTopBottomRule:interface
+uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalTopBottomRule
-summary: Represents the rule of the top/bottom conditional format.
+summary: Stellt die Regel des bedingten Oberen/Unterformats dar.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: rank
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member
-  package: ExcelScript!
-  fullName: rank
-  summary: Der Rang zwischen 1 und 1000 für numerische Ränge oder 1 und 100 als Prozentränge.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'rank: number;'
-    return:
-      type: number
-- name: type
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member
-  package: ExcelScript!
-  fullName: type
-  summary: Formatieren Sie Werte basierend auf dem oberen oder unteren Rang.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'type: ConditionalTopBottomCriterionType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum" />
-metadata:
-  ms.openlocfilehash: 7ed95d94dcade1c0fe7b898eae45e7c5b058f9a5
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913717"
+  - name: rank
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member'
+    package: ExcelScript!
+    fullName: rank
+    summary: Der Rang zwischen 1 und 1000 für numerische Ränge oder 1 und 100 als Prozentränge.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rank: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member'
+    package: ExcelScript!
+    fullName: type
+    summary: Formatwerte basierend auf der obersten oder unteren Rangfolge.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ConditionalTopBottomCriterionType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum" />'

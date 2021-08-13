@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalRangeFill
-uid: ExcelScript!ExcelScript.ConditionalRangeFill:interface
+uid: 'ExcelScript!ExcelScript.ConditionalRangeFill:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFill
 summary: Stellt den Hintergrund eines bedingten Bereichsobjekts dar.
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: Setzt die Füllung zurück.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: HTML-Farbcode, der die Farbe der Füllung darstellt, in der Form \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "orange").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: HTML-Farbcode, der die Farbe der Füllung darstellt, in der Form \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "orange").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: fae3593425cfa32294c127cdc7992fd1bd3f5746
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913745"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: Setzt die Füllung zurück.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: 'HTML-Farbcode, der die Farbe der Füllung darstellt, im Formular \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: 'HTML-Farbcode, der die Farbe der Füllung darstellt, im Formular \# RRGGBB (z. B. "FFA500") oder als benannte HTML-Farbe (z. B. "Orange").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

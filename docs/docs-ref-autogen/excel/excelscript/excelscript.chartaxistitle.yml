@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartAxisTitle
-uid: ExcelScript!ExcelScript.ChartAxisTitle:interface
+uid: 'ExcelScript!ExcelScript.ChartAxisTitle:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisTitle
 summary: Stellt den Titel einer Diagrammachse dar.
@@ -9,130 +9,123 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Gibt die Formatierung des Diagrammachsentitels an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartAxisTitleFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTitleFormat:interface" />
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: Gibt den Achsentitel an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTextOrientation()
-  uid: ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: getTextOrientation()
-  summary: Gibt den Winkel an, an dem der Text für den Titel der Diagrammachse ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von -90 bis 90 oder die ganze Zahl 180 für vertikal ausgerichteten Text sein.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTextOrientation(): number;'
-    return:
-      type: number
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: Gibt an, ob der Achsentitel sichtbar ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setFormula(formula)
-  uid: ExcelScript!ExcelScript.ChartAxisTitle#setFormula:member(1)
-  package: ExcelScript!
-  fullName: setFormula(formula)
-  summary: Ein Zeichenfolgenwert, der die Formel des Diagrammachseltitels unter Verwendung der A1-Schreibweise angibt.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormula(formula: string): void;'
-    parameters:
-    - id: formula
-      description: Eine Zeichenfolge, die die zu setzende Formel darstellt.
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setText(text)
-  uid: ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)
-  package: ExcelScript!
-  fullName: setText(text)
-  summary: Gibt den Achsentitel an.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setText(text: string): void;'
-    parameters:
-    - id: text
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setTextOrientation(textOrientation)
-  uid: ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: setTextOrientation(textOrientation)
-  summary: Gibt den Winkel an, an dem der Text für den Titel der Diagrammachse ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl von -90 bis 90 oder die ganze Zahl 180 für vertikal ausgerichteten Text sein.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTextOrientation(textOrientation: number): void;'
-    parameters:
-    - id: textOrientation
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: Gibt an, ob der Achsentitel sichtbar ist.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 24f39ab1eca8351eacb662b2849df42686d4850b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913252"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: Gibt die Formatierung des Diagrammachsentitels an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartAxisTitleFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTitleFormat:interface" />'
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: Gibt den Achsentitel an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTextOrientation()
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: getTextOrientation()
+    summary: 'Gibt den Winkel an, an dem der Text für den Titel der Diagrammachse ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl zwischen -90 und 90 oder die ganze Zahl 180 für vertikal ausgerichteten Text sein.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: 'Gibt an, ob der Achsentitel visibile ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setFormula(formula)
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setFormula:member(1)'
+    package: ExcelScript!
+    fullName: setFormula(formula)
+    summary: 'Ein Zeichenfolgenwert, der die Formel des Diagrammachseltitels unter Verwendung der A1-Schreibweise angibt.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      parameters:
+        - id: formula
+          description: 'Eine Zeichenfolge, die die festzulegende Formel darstellt.'
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setText(text)
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)'
+    package: ExcelScript!
+    fullName: setText(text)
+    summary: Gibt den Achsentitel an.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setText(text: string): void;'
+      parameters:
+        - id: text
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setTextOrientation(textOrientation)
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: setTextOrientation(textOrientation)
+    summary: 'Gibt den Winkel an, an dem der Text für den Titel der Diagrammachse ausgerichtet ist. Der Wert sollte entweder eine ganze Zahl zwischen -90 und 90 oder die ganze Zahl 180 für vertikal ausgerichteten Text sein.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      parameters:
+        - id: textOrientation
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: 'Gibt an, ob der Achsentitel visibile ist.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

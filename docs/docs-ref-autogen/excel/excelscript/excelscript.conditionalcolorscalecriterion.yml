@@ -1,54 +1,47 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalColorScaleCriterion
-uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface
+uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalColorScaleCriterion
-summary: Stellt ein Farbskalenkriterium dar, das einen Typ, einen Wert und eine Farbe enthält.
+summary: 'Stellt ein Farbskalenkriterium dar, das einen Typ, einen Wert und eine Farbe enthält.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: color
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member
-  package: ExcelScript!
-  fullName: color
-  summary: HTML-Farbcodedarstellung der Farbskalafarbe (z. B. \# FF0000 steht für Rot).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'color?: string;'
-    return:
-      type: string
-- name: formula
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member
-  package: ExcelScript!
-  fullName: formula
-  summary: Eine Zahl, eine Formel oder `null` (falls `type``lowestValue`<!-- -->).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula?: string;'
-    return:
-      type: string
-- name: type
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member
-  package: ExcelScript!
-  fullName: type
-  summary: Worauf die Bedingungsformel des Kriteriums basieren sollte.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'type: ConditionalFormatColorCriterionType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />
-metadata:
-  ms.openlocfilehash: eac56501e1a342e131cf192de81a465659d2c41d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914041"
+  - name: color
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member'
+    package: ExcelScript!
+    fullName: color
+    summary: HTML-Farbcodedarstellung der Farbskalafarbe (z. B. \# FF0000 stellt Rot dar).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member'
+    package: ExcelScript!
+    fullName: formula
+    summary: 'Eine Zahl, eine Formel oder `null` (falls `type` vorhanden) `lowestValue`<!-- -->).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member'
+    package: ExcelScript!
+    fullName: type
+    summary: Worauf die bedingte Kriterienformel basieren sollte.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ConditionalFormatColorCriterionType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />'
