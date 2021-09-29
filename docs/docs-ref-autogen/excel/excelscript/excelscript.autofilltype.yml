@@ -1,58 +1,65 @@
 ### YamlMime:TSEnum
 name: ExcelScript.AutoFillType
-uid: 'ExcelScript!ExcelScript.AutoFillType:enum'
+uid: ExcelScript!ExcelScript.AutoFillType:enum
 package: ExcelScript!
 fullName: ExcelScript.AutoFillType
-summary: 'Die Verhaltenstypen, wenn AutoFill für einen Bereich in der Arbeitsmappe verwendet wird.'
-remarks: ''
+summary: Die Verhaltenstypen, wenn AutoFill für einen Bereich in der Arbeitsmappe verwendet wird.
+remarks: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script uses the autofill feature to complete a table with days of the month.\n * See https://support.microsoft.com/74e31bdd-d993-45da-aa82-35a236c5b5db\n * for examples of autofill scenarios.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let currentWorksheet = workbook.getActiveWorksheet();\n\n  // Get the data range that shows the pattern.\n  let dataRange = currentWorksheet.getRange(\"C2:C3\");\n\n  // Autofill the connected range. C2:C3 are filled in with dates. C4:C54 are blank.\n  dataRange.autoFill(\"C2:C54\", ExcelScript.AutoFillType.fillDays);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: fillCopy
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillCopy:member'
-    package: ExcelScript!
-    summary: 'Füllt die angrenzenden Zellen mit Daten, die auf den ausgewählten Daten basieren.'
-  - name: fillDays
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillDays:member'
-    package: ExcelScript!
-    summary: 'Eine Version von "FillSeries" für Datumsangaben, die das Muster je nach Kontext entweder auf dem Tag des Monats oder dem Wochentag basiert.'
-  - name: fillDefault
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillDefault:member'
-    package: ExcelScript!
-    summary: Füllt die angrenzenden Zellen basierend auf den umgebenden Daten auf (standard AutoFill-Verhalten).
-  - name: fillFormats
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillFormats:member'
-    package: ExcelScript!
-    summary: Füllt die angrenzenden Zellen mit den ausgewählten Formeln.
-  - name: fillMonths
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillMonths:member'
-    package: ExcelScript!
-    summary: 'Eine Version von "FillSeries" für Datumsangaben, die das Muster auf dem Monat basiert.'
-  - name: fillSeries
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillSeries:member'
-    package: ExcelScript!
-    summary: 'Füllt die angrenzenden Zellen mit Daten, die einem Muster in den kopierten Zellen folgen.'
-  - name: fillValues
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillValues:member'
-    package: ExcelScript!
-    summary: Füllt die angrenzenden Zellen mit den ausgewählten Werten.
-  - name: fillWeekdays
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member'
-    package: ExcelScript!
-    summary: 'Eine Version von "FillSeries" für Datumsangaben, die das Muster auf dem Wochentag basiert und nur Wochentage enthält.'
-  - name: fillYears
-    uid: 'ExcelScript!ExcelScript.AutoFillType.fillYears:member'
-    package: ExcelScript!
-    summary: 'Eine Version von "FillSeries" für Datumsangaben, die das Muster auf dem Jahr basiert.'
-  - name: flashFill
-    uid: 'ExcelScript!ExcelScript.AutoFillType.flashFill:member'
-    package: ExcelScript!
-    summary: Füllt die angrenzenden Zellen mithilfe der Flash Fill-Funktion Excel.
-  - name: growthTrend
-    uid: 'ExcelScript!ExcelScript.AutoFillType.growthTrend:member'
-    package: ExcelScript!
-    summary: 'Eine Version von "FillSeries" für Zahlen, die die Werte in den angrenzenden Zellen gemäß einem Wachstumstrendmodell ausfüllen.'
-  - name: linearTrend
-    uid: 'ExcelScript!ExcelScript.AutoFillType.linearTrend:member'
-    package: ExcelScript!
-    summary: 'Eine Version von "FillSeries" für Zahlen, die die Werte in den angrenzenden Zellen gemäß einem linearen Trendmodell ausfüllen.'
+- name: fillCopy
+  uid: ExcelScript!ExcelScript.AutoFillType.fillCopy:member
+  package: ExcelScript!
+  summary: Füllt die angrenzenden Zellen mit Daten, die auf den ausgewählten Daten basieren.
+- name: fillDays
+  uid: ExcelScript!ExcelScript.AutoFillType.fillDays:member
+  package: ExcelScript!
+  summary: Eine Version von "FillSeries" für Datumsangaben, die das Muster je nach Kontext entweder auf dem Tag des Monats oder dem Wochentag basiert.
+- name: fillDefault
+  uid: ExcelScript!ExcelScript.AutoFillType.fillDefault:member
+  package: ExcelScript!
+  summary: Füllt die angrenzenden Zellen basierend auf den umgebenden Daten auf (standard AutoFill-Verhalten).
+- name: fillFormats
+  uid: ExcelScript!ExcelScript.AutoFillType.fillFormats:member
+  package: ExcelScript!
+  summary: Füllt die angrenzenden Zellen mit den ausgewählten Formeln.
+- name: fillMonths
+  uid: ExcelScript!ExcelScript.AutoFillType.fillMonths:member
+  package: ExcelScript!
+  summary: Eine Version von "FillSeries" für Datumsangaben, die das Muster auf dem Monat basiert.
+- name: fillSeries
+  uid: ExcelScript!ExcelScript.AutoFillType.fillSeries:member
+  package: ExcelScript!
+  summary: Füllt die angrenzenden Zellen mit Daten, die einem Muster in den kopierten Zellen folgen.
+- name: fillValues
+  uid: ExcelScript!ExcelScript.AutoFillType.fillValues:member
+  package: ExcelScript!
+  summary: Füllt die angrenzenden Zellen mit den ausgewählten Werten.
+- name: fillWeekdays
+  uid: ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member
+  package: ExcelScript!
+  summary: Eine Version von "FillSeries" für Datumsangaben, die das Muster auf dem Wochentag basiert und nur Wochentage enthält.
+- name: fillYears
+  uid: ExcelScript!ExcelScript.AutoFillType.fillYears:member
+  package: ExcelScript!
+  summary: Eine Version von "FillSeries" für Datumsangaben, die das Muster auf dem Jahr basiert.
+- name: flashFill
+  uid: ExcelScript!ExcelScript.AutoFillType.flashFill:member
+  package: ExcelScript!
+  summary: Füllt die angrenzenden Zellen mithilfe der Flash Fill-Funktion Excel auf.
+- name: growthTrend
+  uid: ExcelScript!ExcelScript.AutoFillType.growthTrend:member
+  package: ExcelScript!
+  summary: Eine Version von "FillSeries" für Zahlen, die die Werte in den angrenzenden Zellen gemäß einem Wachstumstrendmodell ausfüllen.
+- name: linearTrend
+  uid: ExcelScript!ExcelScript.AutoFillType.linearTrend:member
+  package: ExcelScript!
+  summary: Eine Version von "FillSeries" für Zahlen, die die Werte in den angrenzenden Zellen gemäß einem linearen Trendmodell ausfüllen.
+metadata:
+  ms.openlocfilehash: 1020e7f029e85176b516ccea60452e5fc2ada8db
+  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 09/29/2021
+  ms.locfileid: "60003715"
