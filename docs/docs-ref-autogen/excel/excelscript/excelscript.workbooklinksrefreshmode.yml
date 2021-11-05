@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: ExcelScript.WorkbookLinksRefreshMode
+uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum
+package: ExcelScript!
+fullName: ExcelScript.WorkbookLinksRefreshMode
+summary: Stellt den Aktualisierungsmodus der Arbeitsmappenlinks dar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode.automatic:member
+  package: ExcelScript!
+  summary: Die Arbeitsmappenlinks werden in einem von der Excel Anwendung festgelegten Intervall aktualisiert.
+- name: manual
+  uid: ExcelScript!ExcelScript.WorkbookLinksRefreshMode.manual:member
+  package: ExcelScript!
+  summary: Die Arbeitsmappenlinks werden manuell aktualisiert.
+metadata:
+  ms.openlocfilehash: b10e670da4146f94e49053a67d15c391909009de
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793426"
