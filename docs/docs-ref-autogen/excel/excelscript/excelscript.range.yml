@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: Gibt basierend auf der angegebenen Richtung ein Bereichsobjekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält. Dies entspricht dem Tastenverhalten STRG+UMSCHALT+PFEILTASTE im Excel auf Windows Benutzeroberfläche.
+  summary: Gibt basierend auf der angegebenen Richtung ein Bereichsobjekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält. Dies entspricht dem Tastenverhalten STRG+UMSCHALT+PFEILTASTE im Excel auf Windows Ui.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -627,7 +627,11 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
-  summary: Rendert den Bereich als base64-codiertes PNG-Bild.
+  summary: >-
+    Rendert den Bereich als base64-codiertes PNG-Bild.
+
+
+    **Hinweis:** Es gibt ein `Range.getImage` bekanntes Problem, das bewirkt, dass umgebrochener Text oder Text, der die Zellenbreite überschreitet, in derselben Zeile ohne Zeilenumbruch gerendert wird. Dadurch wird das resultierende Bild unlesbar, da der Text über die gesamte Zeile überläuft. Stellen Sie als Problemumgehung sicher, dass die Daten im Bereich in jede Zelle als einzelne Zeile passen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -902,7 +906,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
-  summary: Gibt ein Bereichsobjekt zurück, bei dem es sich um die Edgezelle des Datenbereichs handelt, die der angegebenen Richtung entspricht. Dies entspricht dem Strg+Pfeiltastenverhalten im Excel auf Windows Benutzeroberfläche.
+  summary: Gibt ein Bereichsobjekt zurück, bei dem es sich um die Edgezelle des Datenbereichs handelt, die der angegebenen Richtung entspricht. Dies entspricht dem Strg+Pfeiltastenverhalten im Excel auf Windows Ui.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1211,7 +1215,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
   package: ExcelScript!
   fullName: getValues()
-  summary: Stellt die Rohwerte des angegebenen Bereichs dar. Bei den zurückgegebenen Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Zellen, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück. Wenn der zurückgegebene Wert mit einem Pluszeichen ("+"), einem Minuszeichen ("-") oder einem Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
+  summary: Stellt die Rohwerte des angegebenen Bereichs dar. Bei den zurückgegebenen Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Zellen, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück. Wenn der zurückgegebene Wert mit einem Pluszeichen ("+"), minus ("-") oder Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1605,7 +1609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: Legt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers fest. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers fest. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` aus. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1639,7 +1643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
+  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` aus. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1690,7 +1694,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: Legt den Rohwert des angegebenen Bereichs fest. Die festgelegten Daten können vom Typ Zeichenfolge, Zahl oder boolescher Wert sein. `null`wird ignoriert (in Excel nicht festgelegt oder überschrieben). Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt den Rohwert des angegebenen Bereichs fest. Die festgelegten Daten können vom Typ Zeichenfolge, Zahl oder boolescher Wert sein. `null`wert wird ignoriert (in Excel nicht festgelegt oder überschrieben). Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1707,7 +1711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: Legt die Rohwerte des angegebenen Bereichs fest. Bei den bereitgestellten Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Wenn der angegebene Wert mit einem Pluszeichen ("+"), einem Minuszeichen ("-") oder einem Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
+  summary: Legt die Rohwerte des angegebenen Bereichs fest. Bei den bereitgestellten Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Wenn der angegebene Wert mit einem Pluszeichen ("+"), minus ("-") oder Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1781,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6f92ae14072075e94e23da505d833044859315ff
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: d3769fc5b4b2da492a94ed9a151f9eeba68791b9
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793380"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064906"

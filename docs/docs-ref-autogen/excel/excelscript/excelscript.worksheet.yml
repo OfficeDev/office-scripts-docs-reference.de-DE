@@ -174,7 +174,7 @@ methods:
       description: Der Abstand zwischen dem Ende der Zeile und der linken Seite des Arbeitsblatts in Punkt.
       type: number
     - id: endTop
-      description: Der Abstand zwischen dem Ende der Zeile und dem oberen Rand des Arbeitsblatts in Punkten.
+      description: Der Abstand (in Punkt) vom Ende der Zeile zum oberen Rand des Arbeitsblatts.
       type: number
     - id: connectorType
       description: Stellt den Verbindertyp dar. Weitere Informationen finden Sie `ExcelScript.ConnectorType` unter.
@@ -326,7 +326,7 @@ methods:
       description: Ein `Range` Objekt oder eine Zeichenfolgenadresse oder der Name des Bereichs, der die Datenquelle darstellt. Wenn die Adresse keinen Arbeitsblattnamen enthält, wird das aktuell aktive Blatt verwendet.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: Ein boolescher Wert, der angibt, ob die importierten Daten Spaltenbeschriftungen aufweisen. Wenn die Quelle keine Kopfzeilen enthält (d. h., wenn diese Eigenschaft auf `false`<!-- -->), generiert Excel automatisch eine Kopfzeile und verschiebt die Daten um eine Zeile nach unten.
+      description: Ein boolescher Wert, der angibt, ob die importierten Daten Spaltenbeschriftungen aufweisen. Wenn die Quelle keine Kopfzeilen enthält (d. h., wenn diese Eigenschaft auf `false`<!-- -->), Excel automatisch eine Kopfzeile generiert und die Daten um eine Zeile nach unten verschiebt.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -539,7 +539,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: Ruft ein Diagramm über seinen Namen ab. Wenn mehrere Diagramme mit demselben Namen vorhanden sind, wird das erste zurückgegeben. Wenn das Diagramm nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft ein Diagramm über seinen Namen ab. Wenn mehrere Diagramme mit demselben Namen vorhanden sind, wird das erste zurückgegeben. Wenn das Diagramm nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -711,7 +711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Ruft ein `NamedItem` Objekt anhand seines Namens ab. Wenn das Objekt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft ein `NamedItem` Objekt anhand seines Namens ab. Wenn das Objekt nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -771,7 +771,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: Ruft das Arbeitsblatt ab, das auf dieses folgt. Wenn diesem keine Arbeitsblätter folgen, gibt diese Methode ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft das Arbeitsblatt ab, das auf dieses folgt. Wenn nach diesem keine Arbeitsblätter folgen, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -801,7 +801,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: Ruft eine PivotTable anhand des Namens ab. Wenn die PivotTable nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft eine PivotTable anhand des Namens ab. Wenn die PivotTable nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -844,7 +844,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)
   package: ExcelScript!
   fullName: getPrevious(visibleOnly)
-  summary: Ruft das Arbeitsblatt ab, das vor diesem Arbeitsblatt steht. Wenn keine vorherigen Arbeitsblätter vorhanden sind, gibt diese Methode ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft das Arbeitsblatt ab, das vor diesem Arbeitsblatt steht. Wenn keine vorherigen Arbeitsblätter vorhanden sind, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -996,7 +996,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Ruft einen Datenschnitt anhand seines Namens oder seiner ID ab. Wenn der Datenschnitt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft einen Datenschnitt anhand seines Namens oder seiner ID ab. Wenn der Datenschnitt nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1065,7 +1065,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Ruft eine Tabelle anhand des Namens oder der ID ab. Wenn die Tabelle nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft eine Tabelle anhand des Namens oder der ID ab. Wenn die Tabelle nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1138,7 +1138,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: Ruft ein Objekt für benutzerdefinierte Eigenschaften über seinen Schlüssel ab, bei dem Groß-/Kleinschreibung nicht beachtet wird. Wenn die benutzerdefinierte Eigenschaft nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft ein Objekt für benutzerdefinierte Eigenschaften über seinen Schlüssel ab, bei dem Groß-/Kleinschreibung nicht beachtet wird. Wenn die benutzerdefinierte Eigenschaft nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d72ac45bf8844897dbdf829fd94f516fbce4bea
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: b57e4675686b008cc43f13043451f1be337f9b23
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355735"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064801"

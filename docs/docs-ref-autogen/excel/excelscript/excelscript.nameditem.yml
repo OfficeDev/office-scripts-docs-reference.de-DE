@@ -1,205 +1,212 @@
 ### YamlMime:TSType
 name: ExcelScript.NamedItem
-uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: 'Stellt einen definierten Namen für einen Zellbereich oder einen Wert dar. Namen können primitive benannte Objekte (wie im folgenden Typ dargestellt), Bereichsobjekt oder ein Verweis auf einen Bereich sein. Dieses Objekt kann zum Abrufen des mit Namen verknüpften Bereichsobjekts verwendet werden.'
+summary: Stellt einen definierten Namen für einen Zellbereich oder einen Wert dar. Namen können primitive benannte Objekte (wie im folgenden Typ dargestellt), Bereichsobjekt oder ein Verweis auf einen Bereich sein. Dieses Objekt kann zum Abrufen des mit Namen verknüpften Bereichsobjekts verwendet werden.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: delete()
-    uid: 'ExcelScript!ExcelScript.NamedItem#delete:member(1)'
-    package: ExcelScript!
-    fullName: delete()
-    summary: Löscht den angegebenen Namen.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getArrayValues()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)'
-    package: ExcelScript!
-    fullName: getArrayValues()
-    summary: Gibt ein Objekt mit Werten und Typen des benannten Elements zurück.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getArrayValues(): NamedItemArrayValues;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.NamedItemArrayValues:interface" />'
-        description: ''
-  - name: getComment()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getComment:member(1)'
-    package: ExcelScript!
-    fullName: getComment()
-    summary: Gibt den diesem Namen zugeordneten Kommentar an.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getComment(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getFormula()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getFormula:member(1)'
-    package: ExcelScript!
-    fullName: getFormula()
-    summary: Die Formel des benannten Elements. Formeln beginnen immer mit einem Gleichheitszeichen ("=").
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormula(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: Der Name des Objekts.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getRange()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getRange:member(1)'
-    package: ExcelScript!
-    fullName: getRange()
-    summary: 'Ruft das Bereichsobjekt ab, das mit dem Namen verknüpft ist. Wenn der Typ des benannten Elements kein Bereich ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: getScope()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getScope:member(1)'
-    package: ExcelScript!
-    fullName: getScope()
-    summary: 'Gibt an, ob der Name auf die Arbeitsmappe oder ein bestimmtes Arbeitsblatt beschränkt ist. Mögliche Werte sind: Worksheet, Workbook.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getScope(): NamedItemScope;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.NamedItemScope:enum" />'
-        description: ''
-  - name: getType()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
-    package: ExcelScript!
-    fullName: getType()
-    summary: 'Gibt den Typ des Werts an, der von der Formel des Namens zurückgegeben wird. Weitere Informationen finden Sie `ExcelScript.NamedItemType` unter.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getType(): NamedItemType;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />'
-        description: ''
-  - name: getValue()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getValue:member(1)'
-    package: ExcelScript!
-    fullName: getValue()
-    summary: 'Stellt den Wert dar, der von der Formel des Namens berechnet wurde. Für einen benannten Bereich wird die Bereichsadresse zurückgegeben.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getValue(): string | number;'
-      return:
-        type: string | number
-        description: ''
-  - name: getVisible()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getVisible:member(1)'
-    package: ExcelScript!
-    fullName: getVisible()
-    summary: 'Gibt an, ob das Objekt sichtbar ist.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getWorksheet()
-    uid: 'ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)'
-    package: ExcelScript!
-    fullName: getWorksheet()
-    summary: 'Gibt das Arbeitsblatt zurück, auf das das benannte Element beschränkt ist. Wenn das Element stattdessen auf die Arbeitsmappe beschränkt ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getWorksheet(): Worksheet | undefined;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined'
-        description: ''
-  - name: setComment(comment)
-    uid: 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
-    package: ExcelScript!
-    fullName: setComment(comment)
-    summary: Gibt den diesem Namen zugeordneten Kommentar an.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setComment(comment: string): void;'
-      parameters:
-        - id: comment
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setFormula(formula)
-    uid: 'ExcelScript!ExcelScript.NamedItem#setFormula:member(1)'
-    package: ExcelScript!
-    fullName: setFormula(formula)
-    summary: Die Formel des benannten Elements. Formeln beginnen immer mit einem Gleichheitszeichen ("=").
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      parameters:
-        - id: formula
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setVisible(visible)
-    uid: 'ExcelScript!ExcelScript.NamedItem#setVisible:member(1)'
-    package: ExcelScript!
-    fullName: setVisible(visible)
-    summary: 'Gibt an, ob das Objekt sichtbar ist.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      parameters:
-        - id: visible
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.NamedItem#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Löscht den angegebenen Namen.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getArrayValues()
+  uid: ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)
+  package: ExcelScript!
+  fullName: getArrayValues()
+  summary: Gibt ein Objekt mit Werten und Typen des benannten Elements zurück.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getArrayValues(): NamedItemArrayValues;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItemArrayValues:interface" />
+      description: ''
+- name: getComment()
+  uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
+  package: ExcelScript!
+  fullName: getComment()
+  summary: Gibt den diesem Namen zugeordneten Kommentar an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getComment(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFormula()
+  uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
+  package: ExcelScript!
+  fullName: getFormula()
+  summary: Die Formel des benannten Elements. Formeln beginnen immer mit einem Gleichheitszeichen ("=").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormula(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.NamedItem#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Der Name des Objekts.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: Ruft das Bereichsobjekt ab, das mit dem Namen verknüpft ist. Wenn der Typ des benannten Elements kein Bereich ist, gibt diese Funktion `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getScope()
+  uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
+  package: ExcelScript!
+  fullName: getScope()
+  summary: 'Gibt an, ob der Name auf die Arbeitsmappe oder ein bestimmtes Arbeitsblatt beschränkt ist. Mögliche Werte sind: Worksheet, Workbook.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getScope(): NamedItemScope;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItemScope:enum" />
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: Gibt den Typ des Werts an, der von der Formel des Namens zurückgegeben wird. Weitere Informationen finden Sie `ExcelScript.NamedItemType` unter.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): NamedItemType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />
+      description: ''
+- name: getValue()
+  uid: ExcelScript!ExcelScript.NamedItem#getValue:member(1)
+  package: ExcelScript!
+  fullName: getValue()
+  summary: Stellt den Wert dar, der von der Formel des Namens berechnet wurde. Für einen benannten Bereich wird die Bereichsadresse zurückgegeben.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValue(): string | number;'
+    return:
+      type: string | number
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.NamedItem#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: Gibt an, ob das Objekt sichtbar ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWorksheet()
+  uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet()
+  summary: Gibt das Arbeitsblatt zurück, auf das das benannte Element beschränkt ist. Wenn das Element stattdessen auf die Arbeitsmappe beschränkt ist, gibt diese Funktion `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(): Worksheet | undefined;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined
+      description: ''
+- name: setComment(comment)
+  uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
+  package: ExcelScript!
+  fullName: setComment(comment)
+  summary: Gibt den diesem Namen zugeordneten Kommentar an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setComment(comment: string): void;'
+    parameters:
+    - id: comment
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFormula(formula)
+  uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
+  package: ExcelScript!
+  fullName: setFormula(formula)
+  summary: Die Formel des benannten Elements. Formeln beginnen immer mit einem Gleichheitszeichen ("=").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.NamedItem#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: Gibt an, ob das Objekt sichtbar ist.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b097f6d3666bdd2d2334de0cd2e9705852bb219a
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064836"

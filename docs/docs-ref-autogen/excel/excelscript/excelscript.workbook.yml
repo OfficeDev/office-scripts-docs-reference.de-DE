@@ -410,7 +410,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
   fullName: getActiveChart()
-  summary: Ruft das derzeit aktive Diagramm in der Arbeitsmappe ab. Wenn kein aktives Diagramm vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft das derzeit aktive Diagramm in der Arbeitsmappe ab. Wenn kein aktives Diagramm vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -423,7 +423,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)
   package: ExcelScript!
   fullName: getActiveSlicer()
-  summary: Ruft den derzeit aktiven Datenschnitt in der Arbeitsmappe ab. Wenn kein aktiver Datenschnitt vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft den derzeit aktiven Datenschnitt in der Arbeitsmappe ab. Wenn kein aktiver Datenschnitt vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -475,7 +475,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getBinding:member(1)
   package: ExcelScript!
   fullName: getBinding(id)
-  summary: Ruft ein binding-Objekt anhand seiner ID ab. Wenn das Bindungsobjekt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft ein binding-Objekt anhand seiner ID ab. Wenn das Bindungsobjekt nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,7 +595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPart(id)
-  summary: Ruft eine benutzerdefinierte XML-Komponente basierend auf ihrer ID ab. Wenn das Objekt nicht vorhanden ist, gibt `CustomXmlPart` diese Funktion ein Objekt zurück, dessen Eigenschaft `isNullObject` auf `true`<!-- -->.
+  summary: Ruft eine benutzerdefinierte XML-Komponente basierend auf ihrer ID ab. Wenn das `CustomXmlPart` Nicht-Element nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -815,7 +815,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Ruft ein `NamedItem` Objekt anhand seines Namens ab. Wenn das Objekt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft ein `NamedItem` Objekt anhand seines Namens ab. Wenn das Objekt nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: Ruft eine PivotTable anhand des Namens ab. Wenn die PivotTable nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft eine PivotTable anhand des Namens ab. Wenn die PivotTable nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -875,7 +875,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getPivotTableStyle(name)
-  summary: Ruft einen `PivotTableStyle` anhand des Namens ab. Wenn das `PivotTableStyle` Objekt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft einen `PivotTableStyle` anhand des Namens ab. Wenn das `PivotTableStyle` Nicht-Element nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1013,7 +1013,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Ruft einen Datenschnitt anhand seines Namens oder seiner ID ab. Wenn der Datenschnitt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft einen Datenschnitt anhand seines Namens oder seiner ID ab. Wenn der Datenschnitt nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1043,7 +1043,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getSlicerStyle(name)
-  summary: Ruft einen `SlicerStyle` anhand des Namens ab. Wenn das Datenschnittformat nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft einen `SlicerStyle` anhand des Namens ab. Wenn das Datenschnittformat nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1073,7 +1073,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Ruft eine Tabelle anhand des Namens oder der ID ab. Wenn die Tabelle nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft eine Tabelle anhand des Namens oder der ID ab. Wenn die Tabelle nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)
   package: ExcelScript!
   fullName: getTableStyle(name)
-  summary: Ruft einen `TableStyle` anhand des Namens ab. Wenn das Tabellenformat nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft einen `TableStyle` anhand des Namens ab. Wenn das Tabellenformat nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1133,7 +1133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getTimelineStyle(name)
-  summary: Ruft einen `TimelineStyle` anhand des Namens ab. Wenn das Zeitachsenformat nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft einen `TimelineStyle` anhand des Namens ab. Wenn das Zeitachsenformat nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1176,7 +1176,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet(key)
-  summary: Ruft das Arbeitsblattobjekt mithilfe des Namens oder der ID ab. Wenn das Arbeitsblatt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.
+  summary: Ruft das Arbeitsblattobjekt mithilfe des Namens oder der ID ab. Wenn das Arbeitsblatt nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6639d3d72f5077f3f49c1ad953085ecd684ef599
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: 253c69d6b18673802e35526c93056f0640cf8fbd
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793366"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064787"

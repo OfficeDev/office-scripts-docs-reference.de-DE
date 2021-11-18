@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Gibt das `Range` Objekt zurück, das den Bereich darstellt, auf den der AutoFilter angewendet wird. Wenn dem AutoFilter kein Objekt zugeordnet ist, gibt `Range` diese Methode ein Objekt zurück, dessen Eigenschaft `isNullObject` auf `true`<!-- -->.
+  summary: Gibt das `Range` Objekt zurück, das den Bereich darstellt, auf den der AutoFilter angewendet wird. Wenn dem AutoFilter kein Objekt zugeordnet ist, gibt `Range` diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e798066ad83627541c710f23dd17468bc22e9c66
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: f600ab01652e0bc2791c8d73018be8df23ec9b54
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793352"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064829"

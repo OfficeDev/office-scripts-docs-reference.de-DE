@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorksheetFreezePanes
-uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
+uid: ExcelScript!ExcelScript.WorksheetFreezePanes:interface
 package: ExcelScript!
 fullName: ExcelScript.WorksheetFreezePanes
 summary: ''
@@ -9,80 +9,87 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: freezeAt(frozenRange)
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
-    package: ExcelScript!
-    fullName: freezeAt(frozenRange)
-    summary: 'Legt die fixierten Zellen in der Ansicht des aktiven Arbeitsblatts fest. Der angegebene Bereich entspricht Zellen, die im oberen und linken Bereich fixiert werden.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'freezeAt(frozenRange: Range | string): void;'
-      parameters:
-        - id: frozenRange
-          description: 'Ein Bereich, der die zu fixierten Zellen darstellt oder `null` alle fixierten Bereiche entfernt.'
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
-      return:
-        type: void
-        description: ''
-  - name: freezeColumns(count)
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
-    package: ExcelScript!
-    fullName: freezeColumns(count)
-    summary: Fixieren sie die ersten Spalten des Arbeitsblatts.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'freezeColumns(count?: number): void;'
-      parameters:
-        - id: count
-          description: 'Optionale Anzahl von Spalten, die fixiert werden sollen, oder Null, um alle Spalten frei zu machen'
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: freezeRows(count)
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
-    package: ExcelScript!
-    fullName: freezeRows(count)
-    summary: Fixieren Sie die oberen Zeilen des Arbeitsblatts.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'freezeRows(count?: number): void;'
-      parameters:
-        - id: count
-          description: 'Optionale Anzahl von Zeilen, die fixiert werden sollen, oder Null, um alle Zeilen zu fixieren'
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: getLocation()
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
-    package: ExcelScript!
-    fullName: getLocation()
-    summary: 'Ruft den Bereich ab, der die fixierten Zellen in der aktiven Ansicht des Arbeitsblatts beschreibt. Der fixierte Bereich entspricht Zellen, die im oberen und linken Bereich fixiert sind. Wenn kein fixiertes Fenster vorhanden ist, gibt diese Funktion ein Objekt zurück, dessen `isNullObject` Eigenschaft auf `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getLocation(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: unfreeze()
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
-    package: ExcelScript!
-    fullName: unfreeze()
-    summary: Entfernt alle fixierten Bereiche auf dem Arbeitsblatt.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'unfreeze(): void;'
-      return:
-        type: void
-        description: ''
+- name: freezeAt(frozenRange)
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)
+  package: ExcelScript!
+  fullName: freezeAt(frozenRange)
+  summary: Legt die fixierten Zellen in der Ansicht des aktiven Arbeitsblatts fest. Der angegebene Bereich entspricht Zellen, die im oberen und linken Bereich fixiert werden.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeAt(frozenRange: Range | string): void;'
+    parameters:
+    - id: frozenRange
+      description: Ein Bereich, der die zu fixierten Zellen darstellt oder `null` alle fixierten Bereiche entfernt.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: freezeColumns(count)
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)
+  package: ExcelScript!
+  fullName: freezeColumns(count)
+  summary: Fixieren sie die ersten Spalten des Arbeitsblatts.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeColumns(count?: number): void;'
+    parameters:
+    - id: count
+      description: Optionale Anzahl von Spalten, die fixiert werden sollen, oder Null, um alle Spalten frei zu machen
+      type: number
+    return:
+      type: void
+      description: ''
+- name: freezeRows(count)
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)
+  package: ExcelScript!
+  fullName: freezeRows(count)
+  summary: Fixieren Sie die oberen Zeilen des Arbeitsblatts.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeRows(count?: number): void;'
+    parameters:
+    - id: count
+      description: Optionale Anzahl von Zeilen, die fixiert werden sollen, oder Null, um alle Zeilen zu fixieren
+      type: number
+    return:
+      type: void
+      description: ''
+- name: getLocation()
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
+  package: ExcelScript!
+  fullName: getLocation()
+  summary: Ruft den Bereich ab, der die fixierten Zellen in der aktiven Ansicht des Arbeitsblatts beschreibt. Der fixierte Bereich entspricht Zellen, die im oberen und linken Bereich fixiert sind. Wenn kein fixiertes Fenster vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLocation(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: unfreeze()
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)
+  package: ExcelScript!
+  fullName: unfreeze()
+  summary: Entfernt alle fixierten Bereiche auf dem Arbeitsblatt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unfreeze(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 98ee21716269e9fcbb26b7cb2623708b083d54df
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064822"
