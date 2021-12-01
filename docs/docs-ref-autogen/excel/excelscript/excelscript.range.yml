@@ -174,7 +174,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script looks through a table column and finds cells marked \"no change\". \n * Those cells have \"no change\" replaced with the value from the cell to the left.\n * This script uses Range.find instead of Worksheet.findAll \n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"March\").getRange();\n\n  // Find all cells with the value \"no change\".\n  let cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  while (cellToOverwrite) {\n    let cellToCopyFrom = cellToOverwrite.getOffsetRange(0,-1);\n    cellToOverwrite.setValue(cellToCopyFrom.getValue());\n    cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  }\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script searches through a table column and finds cells marked \"no change\". \n * Those cells have \"no change\" replaced with the value from the cell to the left.\n * This script uses Range.find instead of Worksheet.findAll \n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"March\").getRange();\n\n  // Find all cells with the value \"no change\".\n  let cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  while (cellToOverwrite) {\n    let cellToCopyFrom = cellToOverwrite.getOffsetRange(0,-1);\n    cellToOverwrite.setValue(cellToCopyFrom.getValue());\n    cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  }\n}\n```"
 - name: flashFill()
   uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
   package: ExcelScript!
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: Gibt basierend auf der angegebenen Richtung ein Bereichsobjekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält. Dies entspricht dem Tastenverhalten STRG+UMSCHALT+PFEILTASTE im Excel auf Windows Ui.
+  summary: Gibt basierend auf der angegebenen Richtung ein Bereichsobjekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält. Dies entspricht dem Tastenverhalten STRG+UMSCHALT+PFEILTASTE im Excel auf Windows Benutzeroberfläche.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1146,7 +1146,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Stellt den Textwert des angegebenen Bereichs dar. Der Textwert hängt nicht von der Zellenbreite ab. Die \# sign-Ersetzung, die in Excel UI erfolgt, wirkt sich nicht auf den von der API zurückgegebenen Textwert aus. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt den Textwert des angegebenen Bereichs dar. Der Textwert hängt nicht von der Zellenbreite ab. Die Ersetzung von \# Zeichen, die in Excel UI erfolgt, wirkt sich nicht auf den von der API zurückgegebenen Textwert aus. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1159,7 +1159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: Textwerte des angegebenen Bereichs. Der Textwert hängt nicht von der Zellenbreite ab. Die Ersetzung des Nummernzeichens ( \# ) in der Excel Ui wirkt sich nicht auf den von der API zurückgegebenen Textwert aus.
+  summary: Textwerte des angegebenen Bereichs. Der Textwert hängt nicht von der Zellenbreite ab. Die Ersetzung des Nummernzeichens ( \# ) in der Excel UI wirkt sich nicht auf den von der API zurückgegebenen Textwert aus.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1425,7 +1425,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />
     return:
       type: number
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script looks through a table column and replaces  \n * cells marked \"monthly special\" with \"parsnip\".\n * This script uses Range.replaceAll instead of Worksheet.replaceAll\n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"Vegetable\").getRange();\n  \n  // Change the value of any cells with the value \"monthly special\".\n  range.replaceAll(\"monthly special\", \"parsnip\", {completeMatch: true});\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script searches through a table column and replaces  \n * cells marked \"monthly special\" with \"parsnip\".\n * This script uses Range.replaceAll instead of Worksheet.replaceAll\n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"Vegetable\").getRange();\n  \n  // Change the value of any cells with the value \"monthly special\".\n  range.replaceAll(\"monthly special\", \"parsnip\", {completeMatch: true});\n}\n```"
 - name: select()
   uid: ExcelScript!ExcelScript.Range#select:member(1)
   package: ExcelScript!
@@ -1609,7 +1609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: Legt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers fest. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` aus. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers fest. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1643,7 +1643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` aus. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
+  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1694,7 +1694,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: Legt den Rohwert des angegebenen Bereichs fest. Die festgelegten Daten können vom Typ Zeichenfolge, Zahl oder boolescher Wert sein. `null`wert wird ignoriert (in Excel nicht festgelegt oder überschrieben). Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt den Rohwert des angegebenen Bereichs fest. Die festgelegten Daten können vom Typ Zeichenfolge, Zahl oder boolescher Wert sein. `null`wert wird ignoriert (nicht festgelegt oder in Excel überschrieben). Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d3769fc5b4b2da492a94ed9a151f9eeba68791b9
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: f53fee1a0c937cb705b0890bc9e783670fcb6e58
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064906"
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240647"
