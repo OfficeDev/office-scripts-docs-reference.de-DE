@@ -167,10 +167,10 @@ methods:
     content: 'find(text: string, criteria: SearchCriteria): Range;'
     parameters:
     - id: text
-      description: ''
+      description: Die zu suchde Zeichenfolge.
       type: string
     - id: criteria
-      description: ''
+      description: Zusätzliche Suchkriterien, einschließlich der Suchrichtung und ob die Suche mit der gesamten Zelle übereinstimmen muss oder groß-/kleinschreibung beachtet werden muss.
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: Gibt basierend auf der angegebenen Richtung ein Bereichsobjekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält. Dies entspricht dem Tastenverhalten STRG+UMSCHALT+PFEILTASTE im Excel auf Windows Benutzeroberfläche.
+  summary: Gibt basierend auf der angegebenen Richtung ein Bereichsobjekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält. Dies entspricht dem Tastenverhalten STRG+UMSCHALT+PFEILTASTE im Excel auf Windows Ui.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -652,7 +652,7 @@ methods:
     content: 'getIntersection(anotherRange: Range | string): Range;'
     parameters:
     - id: anotherRange
-      description: ''
+      description: Das Bereichsobjekt oder die Bereichsadresse, die verwendet wird, um die Schnittmenge der Bereiche zu ermitteln.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -778,7 +778,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Stellt die Zelle Excel Zahlenformatcodes für den angegebenen Bereich dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt die Zelle Excel Zahlenformatcode für den angegebenen Bereich dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -817,7 +817,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: Stellt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt die Zelle Excel Zahlenformatcode für den angegebenen Bereich dar, basierend auf den Spracheinstellungen des Benutzers. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -843,7 +843,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
-  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
+  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich dar, basierend auf den Spracheinstellungen des Benutzers. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1078,10 +1078,10 @@ methods:
               ): RangeAreas;
     parameters:
     - id: cellType
-      description: ''
+      description: Der Typ der einzuschließenden Zellen.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: ''
+      description: Wenn `cellType` entweder `constants` oder `formulas`<!-- -->wird dieses Argument verwendet, um zu bestimmen, welche Zelltypen in das Ergebnis einbezogen werden sollen. Diese Werte können kombiniert werden, um mehr als einen Typ zurückzugeben. Standardmäßig werden alle Konstanten oder Formeln unabhängig vom Typ ausgewählt.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1146,7 +1146,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Stellt den Textwert des angegebenen Bereichs dar. Der Textwert hängt nicht von der Zellenbreite ab. Die Ersetzung von \# Zeichen, die in Excel UI erfolgt, wirkt sich nicht auf den von der API zurückgegebenen Textwert aus. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt den Textwert des angegebenen Bereichs dar. Der Textwert hängt nicht von der Zellenbreite ab. Die \# sign-Ersetzung, die in Excel UI erfolgt, wirkt sich nicht auf den von der API zurückgegebenen Textwert aus. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1193,7 +1193,7 @@ methods:
     content: 'getUsedRange(valuesOnly?: boolean): Range;'
     parameters:
     - id: valuesOnly
-      description: ''
+      description: Betrachtet nur Zellen mit Werten als verwendet.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1643,7 +1643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
+  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich dar, basierend auf den Spracheinstellungen des Benutzers. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f53fee1a0c937cb705b0890bc9e783670fcb6e58
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: a5e4a206a975656e3441d91791c0ae29cce414b0
+  ms.sourcegitcommit: 01a0e187975bd85f9ba8d25f63337803613ab6b3
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240647"
+  ms.lasthandoff: 12/18/2021
+  ms.locfileid: "61566969"
