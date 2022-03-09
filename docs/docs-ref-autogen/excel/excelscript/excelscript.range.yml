@@ -238,7 +238,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getBoundingRect:member(1)
   package: ExcelScript!
   fullName: getBoundingRect(anotherRange)
-  summary: Ruft das kleinste Bereichsobjekt ab, das die angegebenen Bereiche umfasst. Beispielsweise ist `GetBoundingRect` "B2:C5" und "D10:E15" "B2:E15".
+  summary: Ruft das kleinste Bereichsobjekt ab, das die angegebenen Bereiche umfasst. Beispielsweise ist " `GetBoundingRect` B2:C5" und "D10:E15" "B2:E15".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnHidden:member(1)
   package: ExcelScript!
   fullName: getColumnHidden()
-  summary: Gibt an, ob alle Spalten im aktuellen Bereich ausgeblendet sind. Wert `true` ist, wenn alle Spalten in einem Bereich ausgeblendet sind. Wert `false` ist, wenn keine Spalten im Bereich ausgeblendet sind. Der Wert `null` ist, wenn einige Spalten in einem Bereich ausgeblendet sind und andere Spalten im selben Bereich nicht ausgeblendet werden.
+  summary: Gibt an, ob alle Spalten im aktuellen Bereich ausgeblendet sind. Wert ist `true` , wenn alle Spalten in einem Bereich ausgeblendet sind. Wert ist `false` , wenn keine Spalten im Bereich ausgeblendet sind. Der Wert ist `null` , wenn einige Spalten in einem Bereich ausgeblendet sind und andere Spalten im selben Bereich nicht ausgeblendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -395,7 +395,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)
   package: ExcelScript!
   fullName: getConditionalFormats()
-  summary: Die Auflistung dieser Elemente `ConditionalFormats` überschneidet den Bereich.
+  summary: Die Auflistung dieser `ConditionalFormats` Elemente überschneidet den Bereich.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: Ruft ein Objekt ab, das die gesamte Spalte des Bereichs darstellt (wenn der aktuelle Bereich beispielsweise die Zellen "B4:E11" darstellt, handelt es sich um einen Bereich, der `getEntireColumn` die Spalten "B:E" darstellt).
+  summary: Ruft ein Objekt ab, das die gesamte Spalte des Bereichs darstellt (wenn der aktuelle Bereich beispielsweise die Zellen "B4:E11" darstellt, handelt es `getEntireColumn` sich um einen Bereich, der die Spalten "B:E" darstellt).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: Ruft ein Objekt ab, das die gesamte Zeile des Bereichs darstellt (wenn der aktuelle Bereich beispielsweise die Zellen "B4:E11" darstellt, handelt es sich um einen Bereich, der `GetEntireRow` die Zeilen "4:11" darstellt).
+  summary: Ruft ein Objekt ab, das die gesamte Zeile des Bereichs darstellt (wenn der aktuelle Bereich beispielsweise die Zellen "B4:E11" darstellt, handelt es `GetEntireRow` sich um einen Bereich, der die Zeilen "4:11" darstellt).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: Gibt basierend auf der angegebenen Richtung ein Bereichsobjekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält. Dies entspricht dem Tastenverhalten STRG+UMSCHALT+PFEILTASTE im Excel auf Windows Ui.
+  summary: Gibt basierend auf der angegebenen Richtung ein Bereichsobjekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält. Dies entspricht dem Strg+UMSCHALT+PFEILTASTEnverhalten im Excel auf Windows Ui.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -575,7 +575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
   package: ExcelScript!
   fullName: getHasSpill()
-  summary: Stellt dar, ob alle Zellen einen Überlaufrahmen aufweisen. Gibt `true` zurück, wenn alle Zellen einen Überlaufrahmen haben oder `false` wenn alle Zellen keinen Überlaufrahmen aufweisen. Gibt `null` zurück, ob innerhalb des Bereichs Zellen mit und ohne Überlaufrahmen vorhanden sind.
+  summary: Stellt dar, ob alle Zellen einen Überlaufrahmen aufweisen. Gibt zurück `true` , wenn alle Zellen einen Überlaufrahmen haben oder `false` wenn alle Zellen keinen Überlaufrahmen aufweisen. Gibt zurück `null` , ob innerhalb des Bereichs Zellen mit und ohne Überlaufrahmen vorhanden sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -601,7 +601,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHidden:member(1)
   package: ExcelScript!
   fullName: getHidden()
-  summary: Gibt an, ob alle Zellen im aktuellen Bereich ausgeblendet sind. Wert `true` ist, wenn alle Zellen in einem Bereich ausgeblendet sind. Wert `false` ist, wenn keine Zellen im Bereich ausgeblendet sind. Wert `null` ist, wenn einige Zellen in einem Bereich ausgeblendet sind und andere Zellen im selben Bereich nicht ausgeblendet sind.
+  summary: Gibt an, ob alle Zellen im aktuellen Bereich ausgeblendet sind. Wert ist `true` , wenn alle Zellen in einem Bereich ausgeblendet sind. Wert ist `false` , wenn keine Zellen im Bereich ausgeblendet sind. Wert ist `null` , wenn einige Zellen in einem Bereich ausgeblendet sind und andere Zellen im selben Bereich nicht ausgeblendet sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -631,7 +631,7 @@ methods:
     Rendert den Bereich als base64-codiertes PNG-Bild.
 
 
-    **Hinweis:** Es gibt ein `Range.getImage` bekanntes Problem, das bewirkt, dass umgebrochener Text oder Text, der die Zellenbreite überschreitet, in derselben Zeile ohne Zeilenumbruch gerendert wird. Dadurch wird das resultierende Bild unlesbar, da der Text über die gesamte Zeile überläuft. Stellen Sie als Problemumgehung sicher, dass die Daten im Bereich in jede Zelle als einzelne Zeile passen.
+    **Hinweis**: Es gibt ein bekanntes Problem, aufgrund `Range.getImage` dessen umbrochener Text oder Text, der die Zellenbreite überschreitet, in derselben Zeile ohne Zeilenumbruch gerendert wird. Dadurch wird das resultierende Bild unlesbar, da der Text über die gesamte Zeile überläuft. Stellen Sie als Problemumgehung sicher, dass die Daten im Bereich in jede Zelle als einzelne Zeile passen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -778,7 +778,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Stellt die Zelle Excel Zahlenformatcode für den angegebenen Bereich dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt die Zelle Excel Zahlenformatcodes für den angegebenen Bereich dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -817,7 +817,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: Stellt die Zelle Excel Zahlenformatcode für den angegebenen Bereich dar, basierend auf den Spracheinstellungen des Benutzers. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -843,7 +843,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
-  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich dar, basierend auf den Spracheinstellungen des Benutzers. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
+  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -980,7 +980,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
   package: ExcelScript!
   fullName: getRowHidden()
-  summary: Gibt an, ob alle Zeilen im aktuellen Bereich ausgeblendet sind. Wert `true` ist, wenn alle Zeilen in einem Bereich ausgeblendet sind. Wert `false` ist, wenn keine Zeilen im Bereich ausgeblendet sind. Wert `null` ist, wenn einige Zeilen in einem Bereich ausgeblendet sind und andere Zeilen im selben Bereich nicht ausgeblendet sind.
+  summary: Gibt an, ob alle Zeilen im aktuellen Bereich ausgeblendet sind. Wert ist `true` , wenn alle Zeilen in einem Bereich ausgeblendet sind. Wert ist `false` , wenn keine Zeilen im Bereich ausgeblendet sind. Wert ist `null` , wenn einige Zeilen in einem Bereich ausgeblendet sind und andere Zeilen im selben Bereich nicht ausgeblendet sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1040,7 +1040,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
   package: ExcelScript!
   fullName: getSavedAsArray()
-  summary: Gibt an, ob alle Zellen als Arrayformel gespeichert würden. Gibt `true` zurück, ob alle Zellen als Arrayformel gespeichert würden oder `false` wenn nicht alle Zellen als Arrayformel gespeichert würden. Gibt `null` zurück, ob einige Zellen als Arrayformel gespeichert würden und einige nicht.
+  summary: Gibt an, ob alle Zellen als Arrayformel gespeichert würden. Gibt zurück `true` , ob alle Zellen als Arrayformel gespeichert würden oder `false` wenn nicht alle Zellen als Arrayformel gespeichert würden. Gibt zurück `null` , ob einige Zellen als Arrayformel gespeichert würden und einige nicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1159,7 +1159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: Textwerte des angegebenen Bereichs. Der Textwert hängt nicht von der Zellenbreite ab. Die Ersetzung des Nummernzeichens ( \# ) in der Excel UI wirkt sich nicht auf den von der API zurückgegebenen Textwert aus.
+  summary: Textwerte des angegebenen Bereichs. Der Textwert hängt nicht von der Zellenbreite ab. Die Ersetzung des Nummernzeichens (\#) in der Excel Ui wirkt sich nicht auf den von der API zurückgegebenen Textwert aus.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1301,7 +1301,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Gibt an, wie der Bereich nach Zeilen oder Spalten gruppiert werden kann. Ein `InvalidArgument` Fehler wird ausgelöst, wenn die Gruppenoption von der Eigenschaft des Bereichs abweicht `isEntireRow` `isEntireColumn` (d. h. `range.isEntireRow` "true" und `groupOption` "ByColumns" `range.isEntireColumn` oder "True" und `groupOption` "ByRows") ist.
+      description: Gibt an, wie der Bereich nach Zeilen oder Spalten gruppiert werden kann. Ein `InvalidArgument` Fehler wird ausgelöst, `range.isEntireRow` wenn die Gruppenoption von der Eigenschaft des `isEntireColumn` Bereichs `isEntireRow` abweicht (d. h. "true" und `groupOption` "ByColumns" oder `range.isEntireColumn` "True" und `groupOption` "ByRows") ist.
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1339,7 +1339,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script inserts headers at the top of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  let currentSheet = workbook.getActiveWorksheet();\n\n  // Create headers for 3 columns.\n  let myHeaders = [[\"NAME\", \"ID\", \"ROLE\"]];\n\n  // Add a blank first row and push existing data down a row.\n  let firstRow = currentSheet.getRange(\"1:1\");\n  firstRow.insert(ExcelScript.InsertShiftDirection.down);\n\n  // Add the headers.\n  currentSheet.getRange(\"A1:C1\").setValues(myHeaders);\n}\n```"
 - name: merge(across)
   uid: ExcelScript!ExcelScript.Range#merge:member(1)
   package: ExcelScript!
@@ -1352,7 +1352,7 @@ methods:
     content: 'merge(across?: boolean): void;'
     parameters:
     - id: across
-      description: Optional. Legen Sie `true` fest, dass Zellen in jeder Zeile des angegebenen Bereichs als separate verbundene Zellen zusammengeführt werden. Der Standardwert ist `false`<!-- -->.
+      description: Optional. Legen Sie fest `true` , dass Zellen in jeder Zeile des angegebenen Bereichs als separate verbundene Zellen zusammengeführt werden. Der Standardwert ist `false`<!-- -->.
       type: boolean
     return:
       type: void
@@ -1443,7 +1443,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setColumnHidden:member(1)
   package: ExcelScript!
   fullName: setColumnHidden(columnHidden)
-  summary: Gibt an, ob alle Spalten im aktuellen Bereich ausgeblendet sind. Wert `true` ist, wenn alle Spalten in einem Bereich ausgeblendet sind. Wert `false` ist, wenn keine Spalten im Bereich ausgeblendet sind. Der Wert `null` ist, wenn einige Spalten in einem Bereich ausgeblendet sind und andere Spalten im selben Bereich nicht ausgeblendet werden.
+  summary: Gibt an, ob alle Spalten im aktuellen Bereich ausgeblendet sind. Wert ist `true` , wenn alle Spalten in einem Bereich ausgeblendet sind. Wert ist `false` , wenn keine Spalten im Bereich ausgeblendet sind. Der Wert ist `null` , wenn einige Spalten in einem Bereich ausgeblendet sind und andere Spalten im selben Bereich nicht ausgeblendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1536,7 +1536,7 @@ methods:
       type: string[][]
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script sets the values of a range, then adds SUM formulas to calcuate\n * the totals for each row of that range. \n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  let currentSheet = workbook.getActiveWorksheet();\n\n  // Set the values of a range.\n  let values = [[1, 2, 4], [8, 16, 32], [64, 128, 256]];\n  let valueRange = currentSheet.getRange(\"A1:C3\");\n  valueRange.setValues(values);\n\n  // Set the formulas of a range.\n  let formulas = [[\"=SUM(A1:C1)\"], [\"=SUM(A2:C2)\"], [\"=SUM(A3:C3)\"]];\n  let formulaRange = currentSheet.getRange(\"D1:D3\");\n  formulaRange.setFormulas(formulas);\n}\n```"
 - name: setFormulasLocal(formulasLocal)
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
@@ -1609,7 +1609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: Legt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers fest. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers fest. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1643,7 +1643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich dar, basierend auf den Spracheinstellungen des Benutzers. Excel führt beim Abrufen oder Festlegen der Eigenschaft keine Sprach- oder Formatkoersion `numberFormatLocal` durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
+  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1677,7 +1677,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
   package: ExcelScript!
   fullName: setRowHidden(rowHidden)
-  summary: Gibt an, ob alle Zeilen im aktuellen Bereich ausgeblendet sind. Wert `true` ist, wenn alle Zeilen in einem Bereich ausgeblendet sind. Wert `false` ist, wenn keine Zeilen im Bereich ausgeblendet sind. Wert `null` ist, wenn einige Zeilen in einem Bereich ausgeblendet sind und andere Zeilen im selben Bereich nicht ausgeblendet sind.
+  summary: Gibt an, ob alle Zeilen im aktuellen Bereich ausgeblendet sind. Wert ist `true` , wenn alle Zeilen in einem Bereich ausgeblendet sind. Wert ist `false` , wenn keine Zeilen im Bereich ausgeblendet sind. Wert ist `null` , wenn einige Zeilen in einem Bereich ausgeblendet sind und andere Zeilen im selben Bereich nicht ausgeblendet sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1711,7 +1711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: Legt die Rohwerte des angegebenen Bereichs fest. Bei den bereitgestellten Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Wenn der angegebene Wert mit einem Pluszeichen ("+"), minus ("-") oder Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
+  summary: Legt die Rohwerte des angegebenen Bereichs fest. Bei den bereitgestellten Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Wenn der angegebene Wert mit einem Pluszeichen ("+"), einem Minuszeichen ("-") oder einem Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a5e4a206a975656e3441d91791c0ae29cce414b0
-  ms.sourcegitcommit: 01a0e187975bd85f9ba8d25f63337803613ab6b3
+  ms.openlocfilehash: 6b6236c13056dc9f23d2dc9766a1ab586e9c6339
+  ms.sourcegitcommit: 95d4c3dc3d1a6a84b10430cfe796f4d883d5dbf4
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/18/2021
-  ms.locfileid: "61566969"
+  ms.lasthandoff: 03/09/2022
+  ms.locfileid: "63391617"
