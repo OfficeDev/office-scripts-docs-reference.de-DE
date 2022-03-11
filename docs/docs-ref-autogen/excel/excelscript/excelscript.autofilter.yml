@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.AutoFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.AutoFilter
 summary: Stellt das `AutoFilter` Objekt dar. AutoFilter wandelt die Werte in Excel Spalte basierend auf dem Zellinhalt in bestimmte Filter um.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script creates an autofilter on the worksheet that filters out rows based on column values. \n * The autofilter filters to only include rows that have a value in column C in the lowest 10 values \n * (of column C values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the lowest 10 values in column C\n  // (index 2, assuming the used range spans from at least A:C).\n  currentSheet.getAutoFilter().apply(dataRange, 2, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.bottomItems\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -49,7 +49,7 @@ methods:
     content: 'clearCriteria(): void;'
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script clears any applied criteria from the worksheet's autofilter.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n\n  // Clear all the criteria currently applied to the autofilter.\n  currentSheet.getAutoFilter().clearCriteria();\n}\n```"
 - name: getCriteria()
   uid: ExcelScript!ExcelScript.AutoFilter#getCriteria:member(1)
   package: ExcelScript!
@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Gibt das `Range` Objekt zurück, das den Bereich darstellt, auf den der AutoFilter angewendet wird. Wenn dem AutoFilter kein Objekt zugeordnet ist, gibt `Range` diese Methode `undefined`<!-- -->.
+  summary: Gibt das Objekt zurück, das `Range` den Bereich darstellt, auf den der AutoFilter angewendet wird. Wenn dem AutoFilter kein `Range` Objekt zugeordnet ist, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f600ab01652e0bc2791c8d73018be8df23ec9b54
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: b583ee6c2f358be8d97705af178b9581635b8948
+  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064829"
+  ms.lasthandoff: 03/11/2022
+  ms.locfileid: "63434821"

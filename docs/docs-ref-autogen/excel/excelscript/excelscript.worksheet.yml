@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.Worksheet:interface
 package: ExcelScript!
 fullName: ExcelScript.Worksheet
 summary: Ein Excel-Arbeitsblatt ist ein Raster von Zellen. Es kann Daten, Tabellen, Diagramme usw. enthalten.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script creates a new worksheet named \"Plum\" and sets its tab color to purple.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const newSheet = workbook.addWorksheet(\"Plum\")\n  newSheet.setTabColor(\"purple\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -70,7 +70,7 @@ methods:
       description: Die Zelle, der der Kommentar hinzugefügt wird. Dies kann ein `Range` Objekt oder eine Zeichenfolge sein. Wenn es sich um eine Zeichenfolge handelt, muss sie die vollständige Adresse einschließlich des Blattnamens enthalten. Wenn `InvalidArgument` der angegebene Bereich größer als eine Zelle ist, wird ein Fehler ausgelöst.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: Der Inhalt des Kommentars. Dies kann eine Zeichenfolge oder ein `CommentRichContent` Objekt sein. Zeichenfolgen werden für Nur-Text verwendet. `CommentRichContent` -Objekte ermöglichen andere Kommentarfeatures, z. B. Erwähnungen.
+      description: Der Inhalt des Kommentars. Dies kann eine Zeichenfolge oder `CommentRichContent` ein Objekt sein. Zeichenfolgen werden für Nur-Text verwendet. `CommentRichContent` -Objekte ermöglichen andere Kommentarfeatures, z. B. Erwähnungen.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
       description: Optional. Der Inhaltstyp, der im Kommentar enthalten ist. Der Standardwert ist Enumeration. `ContentType.Plain`<!-- -->.
@@ -514,12 +514,12 @@ methods:
     content: 'getAutoFilter(): AutoFilter;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script creates an autofilter on the worksheet that filters out rows based on column values. \n * The autofilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
 - name: getCell(row, column)
   uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: Ruft das `Range` Objekt ab, das die einzelne Zelle basierend auf Zeilen- und Spaltennummern enthält. Die Zelle kann sich außerhalb des übergeordneten Bereichs befinden, solange sie im Arbeitsblattraster bleibt.
+  summary: Ruft das Objekt ab, das `Range` die einzelne Zelle basierend auf Zeilen- und Spaltennummern enthält. Die Zelle kann sich außerhalb des übergeordneten Bereichs befinden, solange sie im Arbeitsblattraster bleibt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: Die Registerkartenfarbe des Arbeitsblatts. Wenn das Arbeitsblatt nicht sichtbar ist, lautet der Wert beim Abrufen der Registerkartenfarbe `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf "Automatisch" festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe im Format \# RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "automatische" Farbe oder andernfalls eine echte Farbe festzulegen.
+  summary: Die Registerkartenfarbe des Arbeitsblatts. Wenn das Arbeitsblatt nicht sichtbar ist, lautet der Wert beim Abrufen der Registerkartenfarbe `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf "Automatisch" festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe im Format \#RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "automatische" Farbe oder andernfalls eine echte Farbe festzulegen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1327,7 +1327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: Die Registerkartenfarbe des Arbeitsblatts. Wenn das Arbeitsblatt nicht sichtbar ist, lautet der Wert beim Abrufen der Registerkartenfarbe `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf "Automatisch" festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe im Format \# RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "automatische" Farbe oder andernfalls eine echte Farbe festzulegen.
+  summary: Die Registerkartenfarbe des Arbeitsblatts. Wenn das Arbeitsblatt nicht sichtbar ist, lautet der Wert beim Abrufen der Registerkartenfarbe `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf "Automatisch" festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe im Format \#RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "automatische" Farbe oder andernfalls eine echte Farbe festzulegen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1361,7 +1361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
   package: ExcelScript!
   fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: Zeigt Zeilen- oder Spaltengruppen nach ihren Gliederungsebenen an. Gliederung von Gruppen und Zusammenfassung einer Liste von Daten im Arbeitsblatt. Die `rowLevels` und die Parameter geben `columnLevels` an, wie viele Ebenen der Gliederung angezeigt werden. Der zulässige Argumentbereich liegt zwischen 0 und 8. Der Wert 0 ändert die aktuelle Anzeige nicht. Ein Wert, der größer als die aktuelle Anzahl von Ebenen ist, zeigt alle Ebenen an.
+  summary: Zeigt Zeilen- oder Spaltengruppen nach ihren Gliederungsebenen an. Gliederung von Gruppen und Zusammenfassung einer Liste von Daten im Arbeitsblatt. Die `rowLevels` und `columnLevels` die Parameter geben an, wie viele Ebenen der Gliederung angezeigt werden. Der zulässige Argumentbereich liegt zwischen 0 und 8. Der Wert 0 ändert die aktuelle Anzeige nicht. Ein Wert, der größer als die aktuelle Anzahl von Ebenen ist, zeigt alle Ebenen an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1eef5e7e31219028c6c86b4b4784ef9f0a74011f
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 81c49cac1838a1162ade2933ae19caa11519834d
+  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240563"
+  ms.lasthandoff: 03/11/2022
+  ms.locfileid: "63434828"
