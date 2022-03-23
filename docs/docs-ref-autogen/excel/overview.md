@@ -2,19 +2,19 @@
 title: Referenzdokumentation zur Office Scripts-API
 description: Eine Übersicht über die JavaScript-APIs für Office Skripts.
 ms.date: 06/29/2020
-ms.openlocfilehash: 3ce3344fb49b2811719feb13f8fb4118f1a20060db9d85a06d1be939f22bf3c5
-ms.sourcegitcommit: 6a0182075a558c4fe664fedfee08fea76513b192
+ms.openlocfilehash: b9ac5b191dbbb72301fc1f4fe11c81bd2b45ae17
+ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "58183426"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755991"
 ---
 # <a name="office-scripts-api-reference"></a>Referenzdokumentation zur Office Scripts-API
 
-Mit der api Office Skripts können Sie allgemeine Aufgaben in Excel im Web automatisieren. Verwenden Sie diese Referenzdokumentation, um mehr über die Klassen, Methoden und anderen Typen zu erfahren, die für Ihre Skripts verfügbar sind. Alle Objekte, auf die über Office Skripts zugegriffen werden kann, befinden sich im Inhaltsverzeichnis auf der linken Seite.
+Mit der api Office Skripts können Sie allgemeine Aufgaben in Excel im Web automatisieren. Verwenden Sie diese Referenzdokumentation, um mehr über die Klassen, Methoden und anderen Typen zu erfahren, die für Ihre Skripts verfügbar sind. Alle Objekte, auf die über Office Skripts zugegriffen werden kann, finden Sie im Inhaltsverzeichnis auf der linken Seite.
 
 > [!NOTE]
-> Wenn Sie nach den JavaScript-APIs für die Entwicklung von Office-Add-Ins suchen, besuchen Sie die [JavaScript-API-Referenz Office Add-Ins.](/javascript/api/overview?view=excel-js-preview)
+> Wenn Sie nach den JavaScript-APIs für die Entwicklung von Office-Add-Ins suchen, besuchen Sie die [JavaScript-API-Referenz Office Add-Ins](/javascript/api/overview?view=excel-js-preview&preserve-view=true).
 
 ## <a name="common-classes"></a>Allgemeine Klassen
 
@@ -27,9 +27,9 @@ In der folgenden Liste werden die Grundlagen des Office Scripts-Objektmodells au
 - Ein [Arbeitsblatt](/javascript/api/office-scripts/excelscript/excelscript.worksheet) enthält Arrays, die mit den Objekten gefüllt sind, die im einzelnen Blatt vorhanden sind.
 - Eine [Arbeitsmappe](/javascript/api/office-scripts/excelscript/excelscript.workbook) enthält Arrays einiger dieser Datenobjekte für die gesamte Arbeitsmappe.
 
-Weitere Informationen zum Office Scripts-Objektmodell finden Sie [unter Scripting fundamentals for Office Scripts in Excel im Web](/office/dev/scripts/develop/scripting-fundamentals)
+Weitere Informationen zum Office Scripts-Objektmodell finden Sie unter ["Scripting"-Grundlagen für Office Skripts in Excel im Web](/office/dev/scripts/develop/scripting-fundamentals)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Informationen zu Office Skripts](/office/dev/scripts/overview/excel)
 - [Aufzeichnen, Bearbeiten und Erstellen von Office-Skripts in Excel im Web](/office/dev/scripts/tutorials/excel-tutorial)

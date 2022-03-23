@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.RangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeAreas
 summary: '`RangeAreas` stellt eine Auflistung von einem oder mehreren rechteckigen Bereichen im selben Arbeitsblatt dar.'
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script clears all the cells in the current worksheet that are displaying errors.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula error.\n  const errorCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas, ExcelScript.SpecialCellValueType.errors);\n\n  // If there are any error cells, clear them.\n  if (errorCells) {\n    errorCells.clear();\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -55,7 +55,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script clears all the cells in the current worksheet that are displaying errors.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula error.\n  const errorCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas, ExcelScript.SpecialCellValueType.errors);\n\n  // If there are any error cells, clear them.\n  if (errorCells) {\n    errorCells.clear();\n  }\n}\n```"
 - name: clearAllConditionalFormats()
   uid: ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)
   package: ExcelScript!
@@ -226,7 +226,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: Gibt ein Objekt zurück, das die gesamten Spalten des Objekts darstellt (wenn der Aktuelle z. B. `RangeAreas` die Zellen `RangeAreas` `RangeAreas` "B4:E11, H2" darstellt, wird ein Objekt zurückgegeben, `RangeAreas` das die Spalten "B:E, H:H") darstellt.
+  summary: Gibt ein `RangeAreas` Objekt zurück, das die gesamten Spalten des `RangeAreas` Objekts darstellt (wenn der Aktuelle `RangeAreas` z. B. die Zellen "B4:E11, H2" darstellt, wird ein `RangeAreas` Objekt zurückgegeben, das die Spalten "B:E, H:H") darstellt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,7 +239,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: Gibt ein Objekt zurück, das die gesamten Zeilen des Objekts `RangeAreas` darstellt `RangeAreas` (wenn der Aktuelle z. B. die `RangeAreas` Zellen "B4:E11" darstellt, wird ein Objekt zurückgegeben, `RangeAreas` das die Zeilen "4:11") darstellt.
+  summary: Gibt ein `RangeAreas` Objekt zurück, das die gesamten Zeilen des `RangeAreas` Objekts darstellt (wenn der Aktuelle `RangeAreas` z. B. die Zellen "B4:E11" darstellt, wird ein `RangeAreas` Objekt zurückgegeben, das die Zeilen "4:11") darstellt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -252,7 +252,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Gibt ein `RangeFormat` Objekt zurück, das die Schriftart, Füllung, Rahmen, Ausrichtung und andere Eigenschaften für alle Bereiche des Objekts kapselt. `RangeAreas`
+  summary: Gibt ein `RangeFormat` Objekt zurück, das die Schriftart, Füllung, Rahmen, Ausrichtung und andere Eigenschaften für alle Bereiche des `RangeAreas` Objekts kapselt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
     content: 'getFormat(): RangeFormat;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script finds and highlights all the cells in the current worksheet that contain a formula.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula.\n  const formulaCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas);\n\n  // Add a light blue background to the cells containing formulas.\n  formulaCells.getFormat().getFill().setColor(\"#ADD8E6\");\n}\n```"
 - name: getIntersection(anotherRange)
   uid: ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)
   package: ExcelScript!
@@ -273,7 +273,7 @@ methods:
     content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
     parameters:
     - id: anotherRange
-      description: Der `RangeAreas` Bereich, das Objekt oder die Adresse, mit dem bzw. der die Schnittmenge bestimmt wird.
+      description: Der Bereich, `RangeAreas` das Objekt oder die Adresse, mit dem bzw. der die Schnittmenge bestimmt wird.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -282,7 +282,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)
   package: ExcelScript!
   fullName: getIsEntireColumn()
-  summary: Gibt an, ob alle Bereiche dieses Objekts ganze Spalten darstellen (z. B. `RangeAreas` "A:C, Q:Z").
+  summary: Gibt an, ob alle Bereiche dieses `RangeAreas` Objekts ganze Spalten darstellen (z. B. "A:C, Q:Z").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)
   package: ExcelScript!
   fullName: getOffsetRangeAreas(rowOffset, columnOffset)
-  summary: Gibt ein `RangeAreas` Objekt zurück, das durch den spezifischen Zeilen- und Spaltenversatz verschoben wird. Die Dimension des `RangeAreas` zurückgegebenen Objekts stimmt mit dem ursprünglichen Objekt überein. Wenn das resultierende Ergebnis `RangeAreas` außerhalb der Grenzen des Arbeitsblattrasters erzwungen wird, wird ein Fehler ausgelöst.
+  summary: Gibt ein `RangeAreas` Objekt zurück, das durch den spezifischen Zeilen- und Spaltenversatz verschoben wird. Die Dimension des zurückgegebenen `RangeAreas` Objekts stimmt mit dem ursprünglichen Objekt überein. Wenn das resultierende Ergebnis `RangeAreas` außerhalb der Grenzen des Arbeitsblattrasters erzwungen wird, wird ein Fehler ausgelöst.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -443,9 +443,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d2379d59b4a588788b4700e9985267e6ddf6a6d7
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 61f1c5d9f766f016055f7398b9ba2bada8b22e0d
+  ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064850"
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63755970"
