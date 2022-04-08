@@ -39,13 +39,13 @@ methods:
               ): Chart;
     parameters:
     - id: type
-      description: Stellt die Art des Diagramms dar. Weitere Informationen finden Sie `ExcelScript.ChartType` unter.
+      description: Stellt die Art des Diagramms dar. Weitere Informationen finden Sie `ExcelScript.ChartType` unter .
       type: <xref uid="ExcelScript!ExcelScript.ChartType:enum" />
     - id: sourceData
       description: Das `Range` Objekt, das den Quelldaten entspricht.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
-      description: Optional. Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden. Weitere Informationen finden Sie `ExcelScript.ChartSeriesBy` unter.
+      description: Optional. Gibt an, wie Spalten oder Zeilen als Datenreihen im Diagramm verwendet werden. Weitere Informationen finden Sie `ExcelScript.ChartSeriesBy` unter .
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Chart:interface" />
@@ -90,7 +90,7 @@ methods:
     content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
     parameters:
     - id: geometricShapeType
-      description: Stellt den Typ der geometrischen Form dar. Weitere Informationen finden Sie `ExcelScript.GeometricShapeType` unter.
+      description: Stellt den Typ der geometrischen Form dar. Weitere Informationen finden Sie `ExcelScript.GeometricShapeType` unter .
       type: <xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -168,16 +168,16 @@ methods:
       description: Der Abstand (in Punkt) vom Anfang der Zeile zur linken Seite des Arbeitsblatts.
       type: number
     - id: startTop
-      description: Der Abstand zwischen dem Anfang der Zeile und dem oberen Rand des Arbeitsblatts in Punkt.
+      description: Der Abstand (in Punkt) vom Anfang der Zeile bis zum oberen Rand des Arbeitsblatts.
       type: number
     - id: endLeft
-      description: Der Abstand zwischen dem Ende der Zeile und der linken Seite des Arbeitsblatts in Punkt.
+      description: Der Abstand (in Punkt) vom Ende der Zeile links vom Arbeitsblatt.
       type: number
     - id: endTop
-      description: Der Abstand (in Punkt) vom Ende der Zeile zum oberen Rand des Arbeitsblatts.
+      description: Der Abstand (in Punkt) vom Ende der Zeile bis zum oberen Rand des Arbeitsblatts.
       type: number
     - id: connectorType
-      description: Stellt den Verbindertyp dar. Weitere Informationen finden Sie `ExcelScript.ConnectorType` unter.
+      description: Stellt den Verbindertyp dar. Weitere Informationen finden Sie `ExcelScript.ConnectorType` unter .
       type: <xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -205,7 +205,7 @@ methods:
       description: Die Formel oder der Bereich, auf die bzw. den der Name verweist.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Optional. Der dem benannten Element zugeordnete Kommentar.
+      description: Optional. Der Kommentar, der dem benannten Element zugeordnet ist.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: Die Formel im Gebietsschema des Benutzers, auf die der Name verweist.
       type: string
     - id: comment
-      description: Optional. Der dem benannten Element zugeordnete Kommentar.
+      description: Optional. Der Kommentar, der dem benannten Element zugeordnet ist.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addNamedSheetView:member(1)
   package: ExcelScript!
   fullName: addNamedSheetView(name)
-  summary: Erstellt eine neue Blattansicht mit dem Angegebenen Namen.
+  summary: Erstellt eine neue Blattansicht mit dem angegebenen Namen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -250,7 +250,7 @@ methods:
     content: 'addNamedSheetView(name: string): NamedSheetView;'
     parameters:
     - id: name
-      description: Der Name der zu erstellenden Blattansicht. Löst einen Fehler aus, wenn der angegebene Name bereits vorhanden, leer oder vom Arbeitsblatt reserviert ist.
+      description: Der Name der zu erstellenden Blattansicht. Löst einen Fehler aus, wenn der angegebene Name bereits vorhanden ist, leer ist oder ein vom Arbeitsblatt reservierter Name ist.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
@@ -275,7 +275,7 @@ methods:
       description: Der Name der neuen PivotTable.
       type: string
     - id: source
-      description: Die Quelldaten für die neue PivotTable können ein Bereich (oder eine Zeichenfolgenadresse einschließlich des Arbeitsblattnamens) oder eine Tabelle sein.
+      description: Die Quelldaten für die neue PivotTable, dies kann entweder ein Bereich (oder eine Zeichenfolgenadresse einschließlich des Arbeitsblattnamens) oder eine Tabelle sein.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: destination
       description: Die Zelle in der oberen linken Ecke des Zielbereichs des PivotTable-Berichts (der Bereich auf dem Arbeitsblatt, in dem der resultierende Bericht platziert wird).
@@ -303,10 +303,10 @@ methods:
       description: Die Datenquelle, auf der der neue Datenschnitt basiert. Dabei kann es sich um ein `PivotTable` Objekt, ein `Table` Objekt oder eine Zeichenfolge handeln. Wenn ein PivotTable-Objekt übergeben wird, ist die Datenquelle die Quelle des `PivotTable` Objekts. Wenn ein `Table` Objekt übergeben wird, ist die Datenquelle das `Table` Objekt. Wenn eine Zeichenfolge übergeben wird, wird sie als Name oder ID einer PivotTable oder Tabelle interpretiert.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: Das Feld in der Datenquelle, nach dem gefiltert werden soll. Dabei kann es sich um ein `PivotField` Objekt, ein `TableColumn` Objekt, die ID eines `PivotField` Objekts oder den Namen oder die ID eines `TableColumn`<!-- -->.
+      description: Das Feld in der Datenquelle, nach dem gefiltert werden soll. Dabei kann es sich um ein `PivotField` Objekt, ein `TableColumn` Objekt, die ID eines `PivotField` objekts oder den Namen oder die ID eines `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Optional. Das Arbeitsblatt, in dem der neue Datenschnitt erstellt wird. Dabei kann es sich um ein `Worksheet` Objekt oder den Namen oder die ID eines Arbeitsblatts handeln. Dieser Parameter kann ausgelassen werden, wenn die Datenschnittauflistung aus einem Arbeitsblatt abgerufen wird.
+      description: Optional. Das Arbeitsblatt, in dem der neue Datenschnitt erstellt wird. Dabei kann es sich um ein `Worksheet` Objekt oder den Namen oder die ID eines Arbeitsblatts handeln. Dieser Parameter kann weggelassen werden, wenn die Datenschnittauflistung aus einem Arbeitsblatt abgerufen wird.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -326,7 +326,7 @@ methods:
       description: Ein `Range` Objekt oder eine Zeichenfolgenadresse oder der Name des Bereichs, der die Datenquelle darstellt. Wenn die Adresse keinen Arbeitsblattnamen enthält, wird das aktuell aktive Blatt verwendet.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: Ein boolescher Wert, der angibt, ob die importierten Daten Spaltenbeschriftungen aufweisen. Wenn die Quelle keine Kopfzeilen enthält (d. h., wenn diese Eigenschaft auf `false`<!-- -->), generiert Excel automatisch eine Kopfzeile und verschiebt die Daten um eine Zeile nach unten.
+      description: Ein boolescher Wert, der angibt, ob die zu importierenden Daten Spaltenbeschriftungen aufweisen. Wenn die Quelle keine Header enthält (d. h. wenn diese Eigenschaft auf `false`<!-- -->), wird Excel automatisch eine Kopfzeile generieren und die Daten um eine Zeile nach unten verschieben.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -381,7 +381,7 @@ methods:
               ): WorksheetCustomProperty;
     parameters:
     - id: key
-      description: Der Schlüssel, der das benutzerdefinierte Eigenschaftsobjekt identifiziert. Groß-/Kleinschreibung wird nicht beachtet. Der Schlüssel ist auf 255 Zeichen beschränkt (größere Werte führen dazu, dass ein `InvalidArgument` Fehler ausgelöst wird.)
+      description: Der Schlüssel, der das benutzerdefinierte Eigenschaftsobjekt identifiziert. Dabei wird die Groß-/Kleinschreibung nicht beachtet. Der Schlüssel ist auf 255 Zeichen beschränkt (bei größeren Werten wird ein `InvalidArgument` Fehler ausgelöst.)
       type: string
     - id: value
       description: Der Wert dieser benutzerdefinierten Eigenschaft.
@@ -401,7 +401,7 @@ methods:
     content: 'calculate(markAllDirty: boolean): void;'
     parameters:
     - id: markAllDirty
-      description: True, um alle als geändert zu markieren.
+      description: True, um alle als schmutzig zu markieren.
       type: boolean
     return:
       type: void
@@ -422,10 +422,10 @@ methods:
               ): Worksheet;
     parameters:
     - id: positionType
-      description: Der Speicherort in der Arbeitsmappe, an dem das neu erstellte Arbeitsblatt platziert werden soll. Der Standardwert ist "None", wodurch das Arbeitsblatt am Anfang des Arbeitsblatts eingefügt wird.
+      description: Die Position in der Arbeitsmappe, an der das neu erstellte Arbeitsblatt platziert werden soll. Der Standardwert ist "None", wodurch das Arbeitsblatt am Anfang des Arbeitsblatts eingefügt wird.
       type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
     - id: relativeTo
-      description: Das vorhandene Arbeitsblatt, das die Position des neu erstellten Arbeitsblatts bestimmt. Dies ist nur erforderlich, wenn `positionType` es sich um "Before" oder "After" handelt.
+      description: Das vorhandene Arbeitsblatt, das die Position des neu erstellten Arbeitsblatts bestimmt. Dies ist nur erforderlich, wenn es sich um `positionType` "Before" oder "After" handelt.
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: Löscht das Arbeitsblatt aus der Arbeitsmappe. Wenn die Sichtbarkeit des Arbeitsblatts auf "VeryHidden" festgelegt ist, schlägt der Löschvorgang mit einer `InvalidOperation` Ausnahme fehl. Sie sollten die Sichtbarkeit zuerst in ausgeblendet oder sichtbar ändern, bevor Sie sie löschen.
+  summary: 'Löscht das Arbeitsblatt aus der Arbeitsmappe. Beachten Sie: Wenn die Sichtbarkeit des Arbeitsblatts auf "VeryHidden" festgelegt ist, schlägt der Löschvorgang mit einer `InvalidOperation` Ausnahme fehl. Sie sollten die Sichtbarkeit zuerst in "Ausgeblendet" oder "Sichtbar" ändern, bevor Sie sie löschen.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
   package: ExcelScript!
   fullName: enterTemporaryNamedSheetView()
-  summary: Erstellt und aktiviert eine neue temporäre Blattansicht. Temporäre Ansichten werden entfernt, wenn sie die Anwendung schließen, die temporäre Ansicht mit der Exit-Methode beenden oder zu einer anderen Blattansicht wechseln. Die temporäre Blattansicht kann auch mit der leeren Zeichenfolge ("") versehen werden, wenn die temporäre Ansicht vorhanden ist.
+  summary: Erstellt und aktiviert eine neue temporäre Blattansicht. Temporäre Ansichten werden entfernt, wenn Sie die Anwendung schließen, die temporäre Ansicht mit der Exit-Methode beenden oder zu einer anderen Blattansicht wechseln. Die temporäre Blattansicht kann auch mit der leeren Zeichenfolge ("") zugeordnet werden, wenn die temporäre Ansicht vorhanden ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -481,10 +481,10 @@ methods:
     content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
     parameters:
     - id: text
-      description: Die zu suchde Zeichenfolge.
+      description: Die zu findenden Zeichenfolgen.
       type: string
     - id: criteria
-      description: Zusätzliche Suchkriterien, einschließlich, ob die Suche mit der gesamten Zelle übereinstimmen muss oder groß-/kleinschreibung beachtet werden muss.
+      description: Zusätzliche Suchkriterien, einschließlich der Frage, ob die Suche mit der gesamten Zelle übereinstimmen muss oder die Groß-/Kleinschreibung beachtet werden muss.
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -514,12 +514,12 @@ methods:
     content: 'getAutoFilter(): AutoFilter;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script creates an autofilter on the worksheet that filters out rows based on column values. \n * The autofilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script creates an autoFilter on the worksheet that filters out rows based on column values. \n * The autoFilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
 - name: getCell(row, column)
   uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: Ruft das Objekt ab, das `Range` die einzelne Zelle basierend auf Zeilen- und Spaltennummern enthält. Die Zelle kann sich außerhalb des übergeordneten Bereichs befinden, solange sie im Arbeitsblattraster bleibt.
+  summary: Ruft das `Range` Objekt ab, das die einzelne Zelle basierend auf Zeilen- und Spaltennummern enthält. Die Zelle kann sich außerhalb der Grenzen des übergeordneten Bereichs befinden, solange sie im Arbeitsblattraster bleibt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -659,7 +659,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)
   package: ExcelScript!
   fullName: getFreezePanes()
-  summary: Ruft ein Objekt ab, mit dem fixierte Fensterausschnitte auf dem Arbeitsblatt bearbeitet werden können.
+  summary: Ruft ein Objekt ab, das zum Bearbeiten fixierter Bereiche auf dem Arbeitsblatt verwendet werden kann.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -719,7 +719,7 @@ methods:
     content: 'getNamedItem(name: string): NamedItem | undefined;'
     parameters:
     - id: name
-      description: Nameditem-Name.
+      description: Name des Nameditem-Objekts.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
@@ -728,7 +728,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetView:member(1)
   package: ExcelScript!
   fullName: getNamedSheetView(key)
-  summary: Ruft eine Blattansicht mit ihrem Namen ab.
+  summary: Ruft eine Blattansicht anhand ihres Namens ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -736,7 +736,7 @@ methods:
     content: 'getNamedSheetView(key: string): NamedSheetView;'
     parameters:
     - id: key
-      description: Der Name der Blattansicht, bei dem die Groß-/Kleinschreibung beachtet wird. Verwenden Sie die leere Zeichenfolge (""), um die temporäre Blattansicht abzurufen, wenn die temporäre Ansicht vorhanden ist.
+      description: Der Name der Blattansicht unter Beachtung der Groß-/Kleinschreibung. Verwenden Sie die leere Zeichenfolge (""), um die temporäre Blattansicht abzurufen, wenn die temporäre Ansicht vorhanden ist.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
@@ -771,7 +771,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: Ruft das Arbeitsblatt ab, das auf dieses folgt. Wenn nach diesem keine Arbeitsblätter folgen, gibt diese Methode `undefined`<!-- -->.
+  summary: Ruft das Arbeitsblatt ab, das auf dieses folgt. Wenn diesem Arbeitsblatt keine Arbeitsblätter folgen, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -844,7 +844,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)
   package: ExcelScript!
   fullName: getPrevious(visibleOnly)
-  summary: Ruft das Arbeitsblatt ab, das vor diesem Arbeitsblatt steht. Wenn keine vorherigen Arbeitsblätter vorhanden sind, gibt diese Methode `undefined`<!-- -->.
+  summary: Ruft das Arbeitsblatt ab, das diesem Arbeitsblatt vorausgeht. Wenn keine vorherigen Arbeitsblätter vorhanden sind, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -874,7 +874,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRange:member(1)
   package: ExcelScript!
   fullName: getRange(address)
-  summary: Ruft das Objekt ab, das `Range` einen einzelnen rechteckigen Zellenblock darstellt, der durch die Adresse oder den Namen angegeben wird.
+  summary: Ruft das `Range` Objekt ab, das einen einzelnen rechteckigen Zellenblock darstellt, der durch die Adresse oder den Namen angegeben wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -891,7 +891,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: Ruft das Objekt ab, das `Range` mit einem bestimmten Zeilen- und Spaltenindex beginnt und eine bestimmte Anzahl von Zeilen und Spalten umfasst.
+  summary: Ruft das Objekt ab, das `Range` an einem bestimmten Zeilenindex und Spaltenindex beginnt und eine bestimmte Anzahl von Zeilen und Spalten umfasst.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -923,7 +923,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges(address)
-  summary: Ruft das Objekt ab, das `RangeAreas` einen oder mehrere Blöcke rechteckiger Bereiche darstellt, die durch die Adresse oder den Namen angegeben werden.
+  summary: Ruft das `RangeAreas` Objekt ab, das einen oder mehrere Blöcke rechteckiger Bereiche darstellt, die durch die Adresse oder den Namen angegeben werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: 'Optional. Eine Zeichenfolge, die die durch Trennzeichen getrennten Adressen oder Namen der einzelnen Bereiche enthält. Beispiel: "A1:B2, A5:B5". Wenn nicht angegeben, wird ein RangeArea-Objekt für das gesamte Arbeitsblatt zurückgegeben.'
+      description: 'Optional. Eine Zeichenfolge, die die durch Kommas getrennten Adressen oder Namen der einzelnen Bereiche enthält. Beispiel: "A1:B2, A5:B5". Wenn nicht angegeben, wird ein RangeArea-Objekt für das gesamte Arbeitsblatt zurückgegeben.'
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1039,7 +1039,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)
   package: ExcelScript!
   fullName: getStandardWidth()
-  summary: Gibt die Standardbreite (Standard) aller Spalten im Arbeitsblatt an. Eine Einheit der Spaltenbreite entspricht der Breite eines Zeichens im Format Normal. Für proportionale Schriftarten wird die Breite des Zeichens 0 (Null) verwendet.
+  summary: Gibt die Standardbreite (Standardbreite) aller Spalten im Arbeitsblatt an. Eine Einheit der Spaltenbreite entspricht der Breite eines Zeichens im Format Normal. Für proportionale Schriftarten wird die Breite des Zeichens 0 (Null) verwendet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: Die Registerkartenfarbe des Arbeitsblatts. Wenn das Arbeitsblatt nicht sichtbar ist, lautet der Wert beim Abrufen der Registerkartenfarbe `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf "Automatisch" festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe im Format \#RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "automatische" Farbe oder andernfalls eine echte Farbe festzulegen.
+  summary: Die Registerkartenfarbe des Arbeitsblatts. Wenn das Arbeitsblatt nicht sichtbar ist, wird beim Abrufen der Registerkartenfarbe der Wert `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf "Automatisch" festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe in der Form \#RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "auto"-Farbe festzulegen, oder verwenden Sie andernfalls eine echte Farbe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1149,7 +1149,7 @@ methods:
               ): WorksheetCustomProperty | undefined;
     parameters:
     - id: key
-      description: Der Schlüssel, der das benutzerdefinierte Eigenschaftsobjekt identifiziert. Groß-/Kleinschreibung wird nicht beachtet.
+      description: Der Schlüssel, der das benutzerdefinierte Eigenschaftsobjekt identifiziert. Dabei wird die Groß-/Kleinschreibung nicht beachtet.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" /> | undefined
@@ -1210,7 +1210,7 @@ methods:
               ): number;
     parameters:
     - id: text
-      description: Zu suchende Zeichenfolge.
+      description: Zeichenfolge, die gesucht werden soll.
       type: string
     - id: replacement
       description: Die Zeichenfolge, die die ursprüngliche Zeichenfolge ersetzt.
@@ -1310,7 +1310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)
   package: ExcelScript!
   fullName: setStandardWidth(standardWidth)
-  summary: Gibt die Standardbreite (Standard) aller Spalten im Arbeitsblatt an. Eine Einheit der Spaltenbreite entspricht der Breite eines Zeichens im Format Normal. Für proportionale Schriftarten wird die Breite des Zeichens 0 (Null) verwendet.
+  summary: Gibt die Standardbreite (Standardbreite) aller Spalten im Arbeitsblatt an. Eine Einheit der Spaltenbreite entspricht der Breite eines Zeichens im Format Normal. Für proportionale Schriftarten wird die Breite des Zeichens 0 (Null) verwendet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1327,7 +1327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: Die Registerkartenfarbe des Arbeitsblatts. Wenn das Arbeitsblatt nicht sichtbar ist, lautet der Wert beim Abrufen der Registerkartenfarbe `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf "Automatisch" festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe im Format \#RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "automatische" Farbe oder andernfalls eine echte Farbe festzulegen.
+  summary: Die Registerkartenfarbe des Arbeitsblatts. Wenn das Arbeitsblatt nicht sichtbar ist, wird beim Abrufen der Registerkartenfarbe der Wert `null`<!-- -->. Wenn das Arbeitsblatt sichtbar ist, die Registerkartenfarbe jedoch auf "Automatisch" festgelegt ist, wird eine leere Zeichenfolge zurückgegeben. Andernfalls wird die Eigenschaft auf eine Farbe in der Form \#RRGGBB (z. B. "FFA500") festgelegt. Verwenden Sie beim Festlegen der Farbe eine leere Zeichenfolge, um eine "auto"-Farbe festzulegen, oder verwenden Sie andernfalls eine echte Farbe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1361,7 +1361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
   package: ExcelScript!
   fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: Zeigt Zeilen- oder Spaltengruppen nach ihren Gliederungsebenen an. Gliederung von Gruppen und Zusammenfassung einer Liste von Daten im Arbeitsblatt. Die `rowLevels` und `columnLevels` die Parameter geben an, wie viele Ebenen der Gliederung angezeigt werden. Der zulässige Argumentbereich liegt zwischen 0 und 8. Der Wert 0 ändert die aktuelle Anzeige nicht. Ein Wert, der größer als die aktuelle Anzahl von Ebenen ist, zeigt alle Ebenen an.
+  summary: Zeigt Zeilen- oder Spaltengruppen anhand ihrer Gliederungsebenen an. Gliedert Gruppen und fasst eine Liste der Daten im Arbeitsblatt zusammen. Die `rowLevels` Parameter und `columnLevels` geben an, wie viele Ebenen der Gliederung angezeigt werden. Der zulässige Argumentbereich liegt zwischen 0 und 8. Der Wert 0 ändert die aktuelle Anzeige nicht. Bei einem Wert, der größer als die aktuelle Anzahl von Ebenen ist, werden alle Ebenen angezeigt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1369,18 +1369,18 @@ methods:
     content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
     parameters:
     - id: rowLevels
-      description: Die Anzahl der Anzuzeigenden Zeilenebenen einer Gliederung.
+      description: Die Anzahl der Zeilenebenen einer anzuzeigenden Gliederung.
       type: number
     - id: columnLevels
-      description: Die Anzahl der Spaltenebenen einer anzuzeigenden Gliederung.
+      description: Die Anzahl der Anzuzeigenden Spaltenebenen einer Gliederung.
       type: number
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 81c49cac1838a1162ade2933ae19caa11519834d
-  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
+  ms.openlocfilehash: e2f112cd55fb4eef8c72cf1ab283bda7250afd63
+  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/11/2022
-  ms.locfileid: "63434828"
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64715967"

@@ -3,7 +3,7 @@ name: ExcelScript.Range
 uid: ExcelScript!ExcelScript.Range:interface
 package: ExcelScript!
 fullName: ExcelScript.Range
-summary: Bereich stellt eine Gruppe von zusammenhängenden Zellen dar, z. B. eine Zelle, eine Zeile, eine Spalte oder einen Zellblock.
+summary: Der Bereich stellt eine Gruppe von einer oder mehreren zusammenhängenden Zellen dar, z. B. eine Zelle, eine Zeile, eine Spalte oder einen Zellblock.
 remarks: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script logs the address of the used range in the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let currentWorksheet = workbook.getActiveWorksheet();\n\n  // Get the range containing all the cells with data or formatting.\n  let usedRange = currentWorksheet.getUsedRange();\n\n  // Log the range's address to the console.\n  console.log(usedRange.getAddress());\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
   package: ExcelScript!
   fullName: addConditionalFormat(type)
-  summary: Fügt der Auflistung bei der ersten/obersten Priorität ein neues bedingtes Format hinzu.
+  summary: Fügt der Auflistung mit der ersten/obersten Priorität ein neues bedingtes Format hinzu.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
     parameters:
     - id: type
-      description: Der Typ des bedingten Formats, das hinzugefügt wird. Weitere Informationen finden Sie `ExcelScript.ConditionalFormatType` unter.
+      description: Der Typ des bedingten Formats, das hinzugefügt wird. Weitere Informationen finden Sie `ExcelScript.ConditionalFormatType` unter .
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: Füllt den Bereich vom aktuellen Bereich bis zum Zielbereich mithilfe der angegebenen AutoFill-Logik. Der Zielbereich kann `null`<!-- -->oder kann die Quelle horizontal oder vertikal erweitern. Nicht zusammenhängenden Bereichen werden nicht unterstützt.
+  summary: Füllt den Bereich zwischen dem aktuellen Bereich und dem Zielbereich mithilfe der angegebenen AutoAusfülllogik. Der Zielbereich kann `null`<!-- -->oder kann die Quelle horizontal oder vertikal erweitern. Nicht zusammenhängende Bereiche werden nicht unterstützt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -42,10 +42,10 @@ methods:
               ): void;
     parameters:
     - id: destinationRange
-      description: Der Zielbereich für AutoFill. Wenn der Zielbereich `null`<!-- -->werden die Daten basierend auf den umgebenden Zellen ausgefüllt (dies ist das Verhalten beim Doppelklicken auf den Füllpunkt des Ui-Bereichs).
+      description: Der Zielbereich für AutoAusfüllen. Wenn der Zielbereich `null`<!-- -->werden die Daten basierend auf den umgebenden Zellen ausgefüllt (das Verhalten beim Doppelklicken auf das Bereichsfüllkästchen der Benutzeroberfläche).
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: autoFillType
-      description: Der Typ von AutoFill. Gibt an, wie der Zielbereich gefüllt werden soll, basierend auf dem Inhalt des aktuellen Bereichs. Der Standardwert ist "FillDefault".
+      description: Der Typ des AutoAusfüllens. Gibt basierend auf dem Inhalt des aktuellen Bereichs an, wie der Zielbereich gefüllt werden soll. Der Standardwert ist "FillDefault".
       type: <xref uid="ExcelScript!ExcelScript.AutoFillType:enum" />
     return:
       type: void
@@ -75,7 +75,7 @@ methods:
     content: 'clear(applyTo?: ClearApplyTo): void;'
     parameters:
     - id: applyTo
-      description: Optional. Bestimmt den Typ der Löschaktion. Weitere Informationen finden Sie `ExcelScript.ClearApplyTo` unter.
+      description: Optional. Bestimmt den Typ der Löschaktion. Weitere Informationen finden Sie `ExcelScript.ClearApplyTo` unter .
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
@@ -110,7 +110,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#copyFrom:member(1)
   package: ExcelScript!
   fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
-  summary: Kopiert Zelldaten oder Formatierungen aus dem Quellbereich oder `RangeAreas` in den aktuellen Bereich. Der Zielbereich kann eine andere Größe als der Quellbereich haben oder `RangeAreas`<!-- -->. Das Ziel wird automatisch erweitert, wenn es kleiner als die Quelle ist.
+  summary: Kopiert Zelldaten oder Formatierungen aus dem Quellbereich oder `RangeAreas` in den aktuellen Bereich. Der Zielbereich kann eine andere Größe haben als der Quellbereich oder `RangeAreas`<!-- -->. Das Ziel wird automatisch erweitert, wenn es kleiner als die Quelle ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,16 +124,16 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: Der Quellbereich oder `RangeAreas` aus dem kopiert werden soll. Wenn die Quelle `RangeAreas` mehrere Bereiche aufweist, muss ihr Formular erstellt werden können, indem vollständige Zeilen oder Spalten aus einem rechteckigen Bereich entfernt werden.
+      description: Der Quellbereich, `RangeAreas` aus dem kopiert werden soll. Wenn die Quelle `RangeAreas` über mehrere Bereiche verfügt, muss ihr Formular erstellt werden können, indem vollständige Zeilen oder Spalten aus einem rechteckigen Bereich entfernt werden.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
-      description: Der Typ der Zu kopierenden Zelldaten oder Formatierungen. Der Standardwert ist "Alle".
+      description: Der Typ der Zu kopierenden Zelldaten oder Formatierung. Der Standardwert ist "Alle".
       type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
     - id: skipBlanks
       description: True, wenn leere Zellen im Quellbereich übersprungen werden sollen. Der Standardwert ist „false“.
       type: boolean
     - id: transpose
-      description: True, wenn die Zellen im Zielbereich transponieren. Der Standardwert ist „false“.
+      description: True, wenn die Zellen im Zielbereich transponiert werden sollen. Der Standardwert ist „false“.
       type: boolean
     return:
       type: void
@@ -150,7 +150,7 @@ methods:
     content: 'delete(shift: DeleteShiftDirection): void;'
     parameters:
     - id: shift
-      description: Gibt an, wohin die Zellen verschoben werden. Weitere Informationen finden Sie `ExcelScript.DeleteShiftDirection` unter.
+      description: Gibt an, wohin die Zellen verschoben werden. Weitere Informationen finden Sie `ExcelScript.DeleteShiftDirection` unter .
       type: <xref uid="ExcelScript!ExcelScript.DeleteShiftDirection:enum" />
     return:
       type: void
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Sucht die angegebene Zeichenfolge anhand der angegebenen Kriterien. Wenn der aktuelle Bereich größer als eine einzelne Zelle ist, wird die Suche auf diesen Bereich beschränkt, andernfalls wird die Suche das gesamte Blatt abdecken, das nach dieser Zelle beginnt. Wenn keine Übereinstimmungen vorhanden sind, gibt diese Funktion `undefined`<!-- -->.
+  summary: Sucht die angegebene Zeichenfolge anhand der angegebenen Kriterien. Wenn der aktuelle Bereich größer als eine einzelne Zelle ist, ist die Suche auf diesen Bereich beschränkt. Andernfalls wird das gesamte Blatt ab dieser Zelle durchsucht. Wenn keine Übereinstimmungen vorhanden sind, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,10 +167,10 @@ methods:
     content: 'find(text: string, criteria: SearchCriteria): Range;'
     parameters:
     - id: text
-      description: Die zu suchde Zeichenfolge.
+      description: Die zu findenden Zeichenfolgen.
       type: string
     - id: criteria
-      description: Zusätzliche Suchkriterien, einschließlich der Suchrichtung und ob die Suche mit der gesamten Zelle übereinstimmen muss oder groß-/kleinschreibung beachtet werden muss.
+      description: Zusätzliche Suchkriterien, einschließlich der Suchrichtung und ob die Suche mit der gesamten Zelle übereinstimmen muss oder die Groß-/Kleinschreibung beachtet werden muss.
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -179,7 +179,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
   package: ExcelScript!
   fullName: flashFill()
-  summary: Führt eine Blitzfüllung für den aktuellen Bereich aus. Flash Fill füllt Daten automatisch aus, wenn ein Muster erfasst wird. Daher muss es sich bei dem Bereich um einen Einzelnen-Spaltenbereich mit Daten um ihn herum befinden, um ein Muster zu finden.
+  summary: Führt eine Blitzvorschau für den aktuellen Bereich aus. Die Blitzvorschau füllt Daten automatisch aus, wenn sie ein Muster erkennt. Daher muss der Bereich ein einzelner Spaltenbereich sein und Daten enthalten, um ein Muster zu finden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -212,7 +212,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: Gibt den Bereichsbezug im A1-Format an. Der Adresswert enthält den Blattverweis (z. B. "Sheet1! A1:B4").
+  summary: Gibt den Bereichsbezug im A1-Format an. Der Adresswert enthält den Blattbezug (z. B. "Sheet1! A1:B4").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddressLocal:member(1)
   package: ExcelScript!
   fullName: getAddressLocal()
-  summary: Stellt den Bereichsverweis für den angegebenen Bereich in der Sprache des Benutzers dar.
+  summary: Stellt den Bereichsbezug für den angegebenen Bereich in der Sprache des Benutzers dar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -238,7 +238,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getBoundingRect:member(1)
   package: ExcelScript!
   fullName: getBoundingRect(anotherRange)
-  summary: Ruft das kleinste Bereichsobjekt ab, das die angegebenen Bereiche umfasst. Beispielsweise ist " `GetBoundingRect` B2:C5" und "D10:E15" "B2:E15".
+  summary: Ruft das kleinste Bereichsobjekt ab, das die angegebenen Bereiche umfasst. Beispielsweise lautet der `GetBoundingRect` Wert von "B2:C5" und "D10:E15" "B2:E15".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: Ruft das Bereichsobjekt ab, das die einzelne Zelle basierend auf Zeilen- und Spaltenanzahl enthält. Die Zelle kann sich außerhalb des übergeordneten Bereichs befinden, solange sie im Arbeitsblattraster bleibt. Die zurückgegebene Zelle befindet sich relativ zur obersten linken Zelle des Bereichs.
+  summary: Ruft das Bereichsobjekt ab, das die einzelne Zelle basierend auf Zeilen- und Spaltenanzahl enthält. Die Zelle kann sich außerhalb der Grenzen des übergeordneten Bereichs befinden, solange sie im Arbeitsblattraster bleibt. Die zurückgegebene Zelle befindet sich relativ zur obersten linken Zelle des Bereichs.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnHidden:member(1)
   package: ExcelScript!
   fullName: getColumnHidden()
-  summary: Gibt an, ob alle Spalten im aktuellen Bereich ausgeblendet sind. Wert ist `true` , wenn alle Spalten in einem Bereich ausgeblendet sind. Wert ist `false` , wenn keine Spalten im Bereich ausgeblendet sind. Der Wert ist `null` , wenn einige Spalten in einem Bereich ausgeblendet sind und andere Spalten im selben Bereich nicht ausgeblendet werden.
+  summary: Stellt dar, ob alle Spalten im aktuellen Bereich ausgeblendet sind. Der Wert ist `true` , wenn alle Spalten in einem Bereich ausgeblendet sind. Der Wert ist `false` , wenn keine Spalten im Bereich ausgeblendet sind. Der Wert ist `null` , wenn einige Spalten in einem Bereich ausgeblendet sind und andere Spalten im selben Bereich nicht ausgeblendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -395,7 +395,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)
   package: ExcelScript!
   fullName: getConditionalFormats()
-  summary: Die Auflistung dieser `ConditionalFormats` Elemente überschneidet den Bereich.
+  summary: Die Auflistung, die `ConditionalFormats` den Bereich überschneidet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: Ruft ein Objekt ab, das die gesamte Spalte des Bereichs darstellt (wenn der aktuelle Bereich beispielsweise die Zellen "B4:E11" darstellt, handelt es `getEntireColumn` sich um einen Bereich, der die Spalten "B:E" darstellt).
+  summary: Ruft ein Objekt ab, das die gesamte Spalte des Bereichs darstellt (wenn der aktuelle Bereich z. B. die Zellen "B4:E11" darstellt, ist dies `getEntireColumn` ein Bereich, der die Spalten "B:E" darstellt).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: Ruft ein Objekt ab, das die gesamte Zeile des Bereichs darstellt (wenn der aktuelle Bereich beispielsweise die Zellen "B4:E11" darstellt, handelt es `GetEntireRow` sich um einen Bereich, der die Zeilen "4:11" darstellt).
+  summary: Ruft ein Objekt ab, das die gesamte Zeile des Bereichs darstellt (wenn der aktuelle Bereich beispielsweise die Zellen "B4:E11" darstellt, ist dies `GetEntireRow` ein Bereich, der die Zeilen "4:11" darstellt).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: Gibt basierend auf der angegebenen Richtung ein Bereichsobjekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält. Dies entspricht dem Strg+UMSCHALT+PFEILTASTEnverhalten im Excel auf Windows Ui.
+  summary: Gibt ein Bereichsobjekt zurück, das den aktuellen Bereich und bis zum Rand des Bereichs enthält, basierend auf der angegebenen Richtung. Dies entspricht dem Verhalten von STRG+UMSCHALT+PFEILTASTE in der Excel auf Windows Benutzeroberfläche.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -472,7 +472,7 @@ methods:
               ): Range;
     parameters:
     - id: direction
-      description: Die Richtung der aktiven Zelle.
+      description: Die Richtung von der aktiven Zelle.
       type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
     - id: activeCell
       description: Die aktive Zelle in diesem Bereich. Standardmäßig ist die aktive Zelle die obere linke Zelle des Bereichs. Wenn sich die aktive Zelle nicht in diesem Bereich befindet, wird ein Fehler ausgelöst.
@@ -497,7 +497,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: Stellt die Zellformel in der A1-Schreibweise dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt die Zellformel in der A1-Schreibweise dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -510,7 +510,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
   package: ExcelScript!
   fullName: getFormulaLocal()
-  summary: Stellt die Zellformel in der A1-Schreibweise, in der Sprache des Benutzers und im Gebietsschema für die Zahlenformatierung dar. Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt die Zellformel in der A1-Schreibweise in der Sprache des Benutzers und im Gebietsschema der Zahlenformatierung dar. Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -523,7 +523,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulaR1C1()
-  summary: Stellt die Zellformel in der Z1C1-Schreibweise dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt die Zellformel in der Schreibweise R1C1 dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -536,7 +536,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
   package: ExcelScript!
   fullName: getFormulas()
-  summary: Stellt die Formel in der A1-Schreibweise dar. Wenn eine Zelle keine Formel aufweist, wird stattdessen ihr Wert zurückgegeben.
+  summary: Stellt die Formel in der A1-Schreibweise dar. Wenn eine Zelle keine Formel enthält, wird stattdessen ihr Wert zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -549,7 +549,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)
   package: ExcelScript!
   fullName: getFormulasLocal()
-  summary: Stellt die Formel in der A1-Schreibweise, Sprache des Benutzers und im Gebietsschema der Zahlenformatierung dar. Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden. Wenn eine Zelle keine Formel aufweist, wird stattdessen ihr Wert zurückgegeben.
+  summary: Stellt die Formel in der A1-Schreibweise, Sprache des Benutzers und im Gebietsschema der Zahlenformatierung dar. Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden. Wenn eine Zelle keine Formel enthält, wird stattdessen ihr Wert zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -562,7 +562,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulasR1C1()
-  summary: Stellt die Formel in der R1C1-Schreibweise dar. Wenn eine Zelle keine Formel aufweist, wird stattdessen ihr Wert zurückgegeben.
+  summary: Stellt die Formel in der R1C1-Schreibweise dar. Wenn eine Zelle keine Formel enthält, wird stattdessen ihr Wert zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -575,7 +575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
   package: ExcelScript!
   fullName: getHasSpill()
-  summary: Stellt dar, ob alle Zellen einen Überlaufrahmen aufweisen. Gibt zurück `true` , wenn alle Zellen einen Überlaufrahmen haben oder `false` wenn alle Zellen keinen Überlaufrahmen aufweisen. Gibt zurück `null` , ob innerhalb des Bereichs Zellen mit und ohne Überlaufrahmen vorhanden sind.
+  summary: Stellt dar, ob alle Zellen einen Überlaufrahmen aufweisen. Gibt zurück `true` , ob alle Zellen einen Überlaufrahmen aufweisen oder `false` wenn alle Zellen keinen Überlaufrahmen aufweisen. Gibt zurück `null` , wenn Zellen mit und ohne Überlaufrahmen innerhalb des Bereichs vorhanden sind.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -601,7 +601,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHidden:member(1)
   package: ExcelScript!
   fullName: getHidden()
-  summary: Gibt an, ob alle Zellen im aktuellen Bereich ausgeblendet sind. Wert ist `true` , wenn alle Zellen in einem Bereich ausgeblendet sind. Wert ist `false` , wenn keine Zellen im Bereich ausgeblendet sind. Wert ist `null` , wenn einige Zellen in einem Bereich ausgeblendet sind und andere Zellen im selben Bereich nicht ausgeblendet sind.
+  summary: Stellt dar, ob alle Zellen im aktuellen Bereich ausgeblendet sind. Der Wert ist `true` , wenn alle Zellen in einem Bereich ausgeblendet sind. Der Wert ist `false` , wenn keine Zellen im Bereich ausgeblendet sind. Der Wert ist `null` , wenn einige Zellen in einem Bereich ausgeblendet sind und andere Zellen im selben Bereich nicht ausgeblendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -631,7 +631,7 @@ methods:
     Rendert den Bereich als base64-codiertes PNG-Bild.
 
 
-    **Hinweis**: Es gibt ein bekanntes Problem, aufgrund `Range.getImage` dessen umbrochener Text oder Text, der die Zellenbreite überschreitet, in derselben Zeile ohne Zeilenumbruch gerendert wird. Dadurch wird das resultierende Bild unlesbar, da der Text über die gesamte Zeile überläuft. Stellen Sie als Problemumgehung sicher, dass die Daten im Bereich in jede Zelle als einzelne Zeile passen.
+    **Hinweis**: Es gibt ein bekanntes Problem, `Range.getImage` das dazu führt, dass umgebrochener Text oder Text, der die Zellenbreite überschreitet, in derselben Zeile ohne Zeilenumbruch gerendert wird. Dies macht das resultierende Bild unlesbar, da der Text über die gesamte Zeile überläuft. Stellen Sie als Problemumgehung sicher, dass die Daten im Bereich in jede der Zellen als einzelne Zeile passen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -726,7 +726,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Gibt den Abstand in Punkt für den Zoom von 100 % vom linken Rand des Arbeitsblatts zum linken Rand des Bereichs zurück.
+  summary: Gibt den Abstand in Punkt für 100 % Zoom vom linken Rand des Arbeitsblatts zum linken Rand des Bereichs zurück.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -765,7 +765,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
-  summary: Gibt ein RangeAreas -Objekt zurück, das die zusammengeführten Bereiche in diesem Bereich darstellt. Beachten Sie, dass die API das Ergebnis nicht zurückgeben kann, wenn die Anzahl der zusammengeführten Bereiche in diesem Bereich größer als 512 ist. Wenn rangeAreas nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  summary: Gibt ein RangeAreas -Objekt zurück, das die zusammengeführten Bereiche in diesem Bereich darstellt. Beachten Sie, dass die API das Ergebnis nicht zurückgeben kann, wenn die Anzahl der zusammengeführten Bereiche in diesem Bereich mehr als 512 beträgt. Wenn rangeAreas nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -778,7 +778,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Stellt die Zelle Excel Zahlenformatcodes für den angegebenen Bereich dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt den Excel Zahlenformatcode für den angegebenen Bereich dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -817,7 +817,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: Stellt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt zellenbasierten Excel Zahlenformatcode für den angegebenen Bereich dar, basierend auf den Spracheinstellungen des Benutzers. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion aus. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -843,7 +843,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
-  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
+  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion aus. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -876,7 +876,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
   package: ExcelScript!
   fullName: getPivotTables(fullyContained)
-  summary: Ruft eine bereichsbezogene Auflistung von PivotTables ab, die sich mit dem Bereich überlappen.
+  summary: Ruft eine bereichsbezogene Auflistung von PivotTables ab, die sich mit dem Bereich überschneiden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -893,7 +893,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
-  summary: Stellt die Formatvorlage des aktuellen Bereichs dar. Wenn die Formatvorlagen der Zellen inkonsistent sind, `null` wird zurückgegeben. Bei benutzerdefinierten Formatvorlagen wird der Formatvorlagenname zurückgegeben. Bei integrierten Formatvorlagen wird eine Zeichenfolge zurückgegeben, die einen Wert in der `BuiltInStyle` Enumeration darstellt.
+  summary: Stellt die Formatvorlage des aktuellen Bereichs dar. Wenn die Formatvorlagen der Zellen inkonsistent sind, `null` werden sie zurückgegeben. Bei benutzerdefinierten Formatvorlagen wird der Formatvorlagenname zurückgegeben. Bei integrierten Formatvorlagen wird eine Zeichenfolge zurückgegeben, die einen Wert in der `BuiltInStyle` Enumeration darstellt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -906,7 +906,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
-  summary: Gibt ein Bereichsobjekt zurück, bei dem es sich um die Edgezelle des Datenbereichs handelt, die der angegebenen Richtung entspricht. Dies entspricht dem Strg+Pfeiltastenverhalten im Excel auf Windows Ui.
+  summary: Gibt ein Bereichsobjekt zurück, das die Randzelle des Datenbereichs ist, die der angegebenen Richtung entspricht. Dies entspricht dem Verhalten von STRG+PFEILTASTE in der Excel auf Windows Benutzeroberfläche.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -918,7 +918,7 @@ methods:
               ): Range;
     parameters:
     - id: direction
-      description: Die Richtung der aktiven Zelle.
+      description: Die Richtung von der aktiven Zelle.
       type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
     - id: activeCell
       description: Die aktive Zelle in diesem Bereich. Standardmäßig ist die aktive Zelle die obere linke Zelle des Bereichs. Wenn sich die aktive Zelle nicht in diesem Bereich befindet, wird ein Fehler ausgelöst.
@@ -930,7 +930,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
   package: ExcelScript!
   fullName: getResizedRange(deltaRows, deltaColumns)
-  summary: Ruft ein `Range` Objekt ab, das dem aktuellen `Range` Objekt ähnelt, dessen untere rechte Ecke jedoch um eine Bestimmte Anzahl von Zeilen und Spalten erweitert (oder gekürzt) wird.
+  summary: Ruft ein `Range` Objekt ab, das dem aktuellen `Range` Objekt ähnelt, aber mit seiner unteren rechten Ecke um eine Reihe von Zeilen und Spalten erweitert (oder zusammengestellt) wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -980,7 +980,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
   package: ExcelScript!
   fullName: getRowHidden()
-  summary: Gibt an, ob alle Zeilen im aktuellen Bereich ausgeblendet sind. Wert ist `true` , wenn alle Zeilen in einem Bereich ausgeblendet sind. Wert ist `false` , wenn keine Zeilen im Bereich ausgeblendet sind. Wert ist `null` , wenn einige Zeilen in einem Bereich ausgeblendet sind und andere Zeilen im selben Bereich nicht ausgeblendet sind.
+  summary: Stellt dar, ob alle Zeilen im aktuellen Bereich ausgeblendet sind. Der Wert ist `true` , wenn alle Zeilen in einem Bereich ausgeblendet sind. Der Wert ist `false` , wenn keine Zeilen im Bereich ausgeblendet sind. Der Wert ist `null` , wenn einige Zeilen in einem Bereich ausgeblendet sind und andere Zeilen im selben Bereich nicht ausgeblendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1006,7 +1006,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRowsAbove:member(1)
   package: ExcelScript!
   fullName: getRowsAbove(count)
-  summary: Ruft eine bestimmte Anzahl von Zeilen über dem aktuellen `Range` Objekt ab.
+  summary: Ruft eine bestimmte Anzahl von Zeilen oberhalb des aktuellen `Range` Objekts ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1040,7 +1040,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
   package: ExcelScript!
   fullName: getSavedAsArray()
-  summary: Gibt an, ob alle Zellen als Arrayformel gespeichert würden. Gibt zurück `true` , ob alle Zellen als Arrayformel gespeichert würden oder `false` wenn nicht alle Zellen als Arrayformel gespeichert würden. Gibt zurück `null` , ob einige Zellen als Arrayformel gespeichert würden und einige nicht.
+  summary: Gibt an, ob alle Zellen als Matrixformel gespeichert würden. Gibt zurück `true` , ob alle Zellen als Matrixformel gespeichert würden oder `false` wenn alle Zellen nicht als Matrixformel gespeichert würden. Gibt zurück `null` , ob einige Zellen als Matrixformel gespeichert würden und andere nicht.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1066,7 +1066,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Ruft das Objekt ab, das `RangeAreas` aus einem oder mehreren Bereichen besteht und alle Zellen darstellt, die dem angegebenen Typ und Wert entsprechen. Wenn keine speziellen Zellen gefunden werden, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das `RangeAreas` Objekt ab, das aus einem oder mehreren Bereichen besteht und alle Zellen darstellt, die dem angegebenen Typ und Wert entsprechen. Wenn keine speziellen Zellen gefunden werden, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1081,7 +1081,7 @@ methods:
       description: Der Typ der einzuschließenden Zellen.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: Wenn `cellType` entweder `constants` oder `formulas`<!-- -->wird dieses Argument verwendet, um zu bestimmen, welche Zelltypen in das Ergebnis einbezogen werden sollen. Diese Werte können kombiniert werden, um mehr als einen Typ zurückzugeben. Standardmäßig werden alle Konstanten oder Formeln unabhängig vom Typ ausgewählt.
+      description: Ist `cellType` entweder oder `constants``formulas`<!-- -->wird dieses Argument verwendet, um zu bestimmen, welche Zellentypen in das Ergebnis eingeschlossen werden sollen. Diese Werte können kombiniert werden, um mehr als einen Typ zurückzugeben. Standardmäßig werden alle Konstanten oder Formeln unabhängig vom Typ ausgewählt.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Ruft das Bereichsobjekt ab, das die Ankerzelle für die Zelle enthält, in die überlauft wird. Wenn es sich nicht um eine überlaufte Zelle handelt oder mehr als eine Zelle angegeben ist, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das Bereichsobjekt ab, das die Ankerzelle für die Zelle enthält, in die übergelaufen wird. Wenn es sich nicht um eine übergelaufene Zelle handelt oder mehrere Zellen angegeben werden, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1146,7 +1146,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Stellt den Textwert des angegebenen Bereichs dar. Der Textwert hängt nicht von der Zellenbreite ab. Die \# sign-Ersetzung, die in Excel UI erfolgt, wirkt sich nicht auf den von der API zurückgegebenen Textwert aus. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt den Textwert des angegebenen Bereichs dar. Der Textwert hängt nicht von der Zellenbreite ab. Die \# Signierungsersetzung, die in Excel Benutzeroberfläche erfolgt, wirkt sich nicht auf den von der API zurückgegebenen Textwert aus. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1159,7 +1159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: Textwerte des angegebenen Bereichs. Der Textwert hängt nicht von der Zellenbreite ab. Die Ersetzung des Nummernzeichens (\#) in der Excel Ui wirkt sich nicht auf den von der API zurückgegebenen Textwert aus.
+  summary: Textwerte des angegebenen Bereichs. Der Textwert hängt nicht von der Zellenbreite ab. Die Ersetzung von Nummernzeichen (\#) in der benutzeroberfläche Excel wirkt sich nicht auf den von der API zurückgegebenen Textwert aus.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1172,7 +1172,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Gibt den Abstand in Punkt für den Zoom von 100 % vom oberen Rand des Arbeitsblatts zum oberen Rand des Bereichs zurück.
+  summary: Gibt den Abstand in Punkt für 100 % Zoom vom oberen Rand des Arbeitsblatts zum oberen Rand des Bereichs zurück.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1185,7 +1185,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Gibt den verwendeten Bereich des angegebenen Bereichsobjekts zurück. Wenn innerhalb des Bereichs keine verwendeten Zellen vorhanden sind, gibt diese Funktion `undefined`<!-- -->.
+  summary: Gibt den verwendeten Bereich des angegebenen Bereichsobjekts zurück. Wenn im Bereich keine verwendeten Zellen vorhanden sind, gibt diese Funktion `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1202,7 +1202,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: Stellt den Rohwert des angegebenen Bereichs dar. Die zurückgegebenen Daten können vom Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zellen, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt den Rohwert des angegebenen Bereichs dar. Die zurückgegebenen Daten können vom Typ Zeichenfolge, Zahl oder ein boolescher Wert sein. Zellen, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1215,7 +1215,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
   package: ExcelScript!
   fullName: getValues()
-  summary: Stellt die Rohwerte des angegebenen Bereichs dar. Bei den zurückgegebenen Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Zellen, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück. Wenn der zurückgegebene Wert mit einem Pluszeichen ("+"), minus ("-") oder Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
+  summary: Stellt die Rohwerte des angegebenen Bereichs dar. Die zurückgegebenen Daten können eine Zeichenfolge, eine Zahl oder ein boolescher Wert sein. Zellen, die einen Fehler enthalten, geben die Fehlerzeichenfolge zurück. Wenn der zurückgegebene Wert mit einem Pluszeichen ("+"), Minuszeichen ("-") oder Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1228,7 +1228,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
   package: ExcelScript!
   fullName: getValueType()
-  summary: Stellt den Datentyp in der Zelle dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex von 0) zurückgegeben.
+  summary: Stellt den Datentyp in der Zelle dar. Wenn der Bereich mehrere Zellen enthält, werden die Daten aus der ersten Zelle (dargestellt durch Zeilenindex von 0 und Spaltenindex 0) zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1262,12 +1262,12 @@ methods:
     content: 'getVisibleView(): RangeView;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeView:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script copies values and formatting from the visible range of a table in Sheet1 into Sheet2.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the filtered data from Sheet1.\n  const currentSheet = workbook.getWorksheet(\"Sheet1\");\n  const table = currentSheet.getTables()[0];\n  const source = table.getRange().getVisibleView().getRange();\n  \n  // Copy the data into the other sheet.\n  const otherSheet = workbook.getWorksheet(\"Sheet2\");\n  const otherRangeCorner = otherSheet.getRange(\"A1\");\n  otherRangeCorner.copyFrom(source, ExcelScript.RangeCopyType.all);\n}\n```"
 - name: getWidth()
   uid: ExcelScript!ExcelScript.Range#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Gibt den Abstand in Punkt für den Zoom von 100 % vom linken Rand des Bereichs zum rechten Rand des Bereichs zurück.
+  summary: Gibt den Abstand in Punkt für 100 % Zoom vom linken Rand des Bereichs zum rechten Rand des Bereichs zurück.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1301,7 +1301,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Gibt an, wie der Bereich nach Zeilen oder Spalten gruppiert werden kann. Ein `InvalidArgument` Fehler wird ausgelöst, `range.isEntireRow` wenn die Gruppenoption von der Eigenschaft des `isEntireColumn` Bereichs `isEntireRow` abweicht (d. h. "true" und `groupOption` "ByColumns" oder `range.isEntireColumn` "True" und `groupOption` "ByRows") ist.
+      description: Gibt an, wie der Bereich nach Zeilen oder Spalten gruppiert werden kann. Ein `InvalidArgument` Fehler wird ausgelöst, `range.isEntireRow` wenn sich die Gruppenoption von der Bereichs`isEntireRow`- oder `isEntireColumn` Eigenschaft unterscheidet (d. h. wahr und `groupOption` "ByColumns" oder `range.isEntireColumn` "wahr" ist und `groupOption` "ByRows" ist).
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1318,7 +1318,7 @@ methods:
     content: 'hideGroupDetails(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Gibt an, ob die Details gruppierter Zeilen oder gruppierter Spalten ausgeblendet werden sollen.
+      description: Gibt an, ob die Details von gruppierten Zeilen oder gruppierten Spalten ausgeblendet werden sollen.
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1327,7 +1327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#insert:member(1)
   package: ExcelScript!
   fullName: insert(shift)
-  summary: Fügt eine Zelle oder einen Zellbereich in das Arbeitsblatt anstelle dieses Bereichs ein, und verschiebt die anderen Zellen, um Platz zu schaffen. Gibt ein neues `Range` Objekt im nun leeren Bereich zurück.
+  summary: Fügt eine Zelle oder einen Zellbereich in das Arbeitsblatt anstelle dieses Bereichs ein, und verschiebt die anderen Zellen, um Platz zu schaffen. Gibt ein neues `Range` Objekt im jetzt leeren Bereich zurück.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1335,7 +1335,7 @@ methods:
     content: 'insert(shift: InsertShiftDirection): Range;'
     parameters:
     - id: shift
-      description: Gibt an, wohin die Zellen verschoben werden. Weitere Informationen finden Sie `ExcelScript.InsertShiftDirection` unter.
+      description: Gibt an, wohin die Zellen verschoben werden. Weitere Informationen finden Sie `ExcelScript.InsertShiftDirection` unter .
       type: <xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1361,7 +1361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#moveTo:member(1)
   package: ExcelScript!
   fullName: moveTo(destinationRange)
-  summary: Verschiebt Zellwerte, Formatierungen und Formeln aus dem aktuellen Bereich in den Zielbereich und ersetzt dabei die alten Informationen in diesen Zellen. Der Zielbereich wird automatisch erweitert, wenn er kleiner als der aktuelle Bereich ist. Alle Zellen im Zielbereich, die sich außerhalb des Ursprünglichen Bereichs befinden, werden nicht geändert.
+  summary: Verschiebt Zellwerte, Formatierungen und Formeln aus dem aktuellen Bereich in den Zielbereich, wodurch die alten Informationen in diesen Zellen ersetzt werden. Der Zielbereich wird automatisch erweitert, wenn er kleiner als der aktuelle Bereich ist. Alle Zellen im Zielbereich, die sich außerhalb des ursprünglichen Bereichs befinden, werden nicht geändert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1393,7 +1393,7 @@ methods:
       description: Die Spalten innerhalb des Bereichs, die Duplikate enthalten können. Es muss mindestens eine Spalte angegeben werden. Nullindiziert.
       type: number[]
     - id: includesHeader
-      description: True, wenn die Eingabedaten den Header enthalten. Der Standardwert ist „false“.
+      description: True, wenn die Eingabedaten eine Kopfzeile enthalten. Der Standardwert ist „false“.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
@@ -1415,7 +1415,7 @@ methods:
               ): number;
     parameters:
     - id: text
-      description: Zu suchende Zeichenfolge.
+      description: Zeichenfolge, die gesucht werden soll.
       type: string
     - id: replacement
       description: Die Zeichenfolge, die die ursprüngliche Zeichenfolge ersetzt.
@@ -1443,7 +1443,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setColumnHidden:member(1)
   package: ExcelScript!
   fullName: setColumnHidden(columnHidden)
-  summary: Gibt an, ob alle Spalten im aktuellen Bereich ausgeblendet sind. Wert ist `true` , wenn alle Spalten in einem Bereich ausgeblendet sind. Wert ist `false` , wenn keine Spalten im Bereich ausgeblendet sind. Der Wert ist `null` , wenn einige Spalten in einem Bereich ausgeblendet sind und andere Spalten im selben Bereich nicht ausgeblendet werden.
+  summary: Stellt dar, ob alle Spalten im aktuellen Bereich ausgeblendet sind. Der Wert ist `true` , wenn alle Spalten in einem Bereich ausgeblendet sind. Der Wert ist `false` , wenn keine Spalten im Bereich ausgeblendet sind. Der Wert ist `null` , wenn einige Spalten in einem Bereich ausgeblendet sind und andere Spalten im selben Bereich nicht ausgeblendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1490,7 +1490,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
   package: ExcelScript!
   fullName: setFormulaLocal(formulaLocal)
-  summary: Legen Sie die Zellformel in der A1-Schreibweise, in der Sprache des Benutzers und im Gebietsschema für die Zahlenformatierung fest. Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legen Sie die Zellformel in der A1-Schreibweise in der Sprache des Benutzers und im Gebietsschema für die Zahlenformatierung fest. Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1507,7 +1507,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulaR1C1(formulaR1C1)
-  summary: Legt die Zellformel in der Z1C1-Schreibweise fest. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt die Zellformel in der Schreibweise R1C1 fest. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1524,7 +1524,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulas:member(1)
   package: ExcelScript!
   fullName: setFormulas(formulas)
-  summary: Stellt die Formel in der A1-Schreibweise dar. Wenn eine Zelle keine Formel aufweist, wird stattdessen ihr Wert zurückgegeben.
+  summary: Stellt die Formel in der A1-Schreibweise dar. Wenn eine Zelle keine Formel enthält, wird stattdessen ihr Wert zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1541,7 +1541,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
   fullName: setFormulasLocal(formulasLocal)
-  summary: Stellt die Formel in der A1-Schreibweise, Sprache des Benutzers und im Gebietsschema der Zahlenformatierung dar. Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden. Wenn eine Zelle keine Formel aufweist, wird stattdessen ihr Wert zurückgegeben.
+  summary: Stellt die Formel in der A1-Schreibweise, Sprache des Benutzers und im Gebietsschema der Zahlenformatierung dar. Beispielsweise würde die englische Formel „= SUM(A1, 1.5)“ in Deutsch „= SUMME(A1; 1,5)“ werden. Wenn eine Zelle keine Formel enthält, wird stattdessen ihr Wert zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1558,7 +1558,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulasR1C1(formulasR1C1)
-  summary: Stellt die Formel in der R1C1-Schreibweise dar. Wenn eine Zelle keine Formel aufweist, wird stattdessen ihr Wert zurückgegeben.
+  summary: Stellt die Formel in der R1C1-Schreibweise dar. Wenn eine Zelle keine Formel enthält, wird stattdessen ihr Wert zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1592,7 +1592,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Legt die Zelle Excel Zahlenformatcode für den angegebenen Bereich fest. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt Excel Zahlenformatcode für den angegebenen Bereich fest. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1609,7 +1609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: Legt die Zelle Excel Zahlenformatcode für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers fest. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt basierend auf den Spracheinstellungen des Benutzers Excel Zahlenformatcode für den angegebenen Bereich fest. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion aus. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache. Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1643,7 +1643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion durch. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
+  summary: Stellt den Zahlenformatcode Excel für den angegebenen Bereich basierend auf den Spracheinstellungen des Benutzers dar. Excel führt beim Abrufen oder Festlegen der `numberFormatLocal` Eigenschaft keine Sprach- oder Formatkoersion aus. Jeder zurückgegebene Text verwendet die lokal formatierten Zeichenfolgen basierend auf der in den Systemeinstellungen angegebenen Sprache.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1660,7 +1660,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: Stellt die Formatvorlage des aktuellen Bereichs dar. Wenn die Formatvorlagen der Zellen inkonsistent sind, `null` wird zurückgegeben. Bei benutzerdefinierten Formatvorlagen wird der Formatvorlagenname zurückgegeben. Bei integrierten Formatvorlagen wird eine Zeichenfolge zurückgegeben, die einen Wert in der `BuiltInStyle` Enumeration darstellt.
+  summary: Stellt die Formatvorlage des aktuellen Bereichs dar. Wenn die Formatvorlagen der Zellen inkonsistent sind, `null` werden sie zurückgegeben. Bei benutzerdefinierten Formatvorlagen wird der Formatvorlagenname zurückgegeben. Bei integrierten Formatvorlagen wird eine Zeichenfolge zurückgegeben, die einen Wert in der `BuiltInStyle` Enumeration darstellt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1677,7 +1677,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
   package: ExcelScript!
   fullName: setRowHidden(rowHidden)
-  summary: Gibt an, ob alle Zeilen im aktuellen Bereich ausgeblendet sind. Wert ist `true` , wenn alle Zeilen in einem Bereich ausgeblendet sind. Wert ist `false` , wenn keine Zeilen im Bereich ausgeblendet sind. Wert ist `null` , wenn einige Zeilen in einem Bereich ausgeblendet sind und andere Zeilen im selben Bereich nicht ausgeblendet sind.
+  summary: Stellt dar, ob alle Zeilen im aktuellen Bereich ausgeblendet sind. Der Wert ist `true` , wenn alle Zeilen in einem Bereich ausgeblendet sind. Der Wert ist `false` , wenn keine Zeilen im Bereich ausgeblendet sind. Der Wert ist `null` , wenn einige Zeilen in einem Bereich ausgeblendet sind und andere Zeilen im selben Bereich nicht ausgeblendet werden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1694,7 +1694,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: Legt den Rohwert des angegebenen Bereichs fest. Die festgelegten Daten können vom Typ Zeichenfolge, Zahl oder boolescher Wert sein. `null`wert wird ignoriert (nicht festgelegt oder in Excel überschrieben). Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
+  summary: Legt den Rohwert des angegebenen Bereichs fest. Die festzulegenden Daten können vom Typ "string", "number" oder "boolean" sein. `null`wert wird ignoriert (nicht in Excel festgelegt oder überschrieben). Wenn der Bereich mehrere Zellen enthält, wird jede Zelle im angegebenen Bereich mit den Eingabedaten aktualisiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1711,7 +1711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: Legt die Rohwerte des angegebenen Bereichs fest. Bei den bereitgestellten Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Wenn der angegebene Wert mit einem Pluszeichen ("+"), einem Minuszeichen ("-") oder einem Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
+  summary: Legt die Rohwerte des angegebenen Bereichs fest. Bei den bereitgestellten Daten kann es sich um eine Zeichenfolge, eine Zahl oder einen booleschen Wert handeln. Wenn der angegebene Wert mit einem Pluszeichen ("+"), Minuszeichen ("-") oder Gleichheitszeichen ("=") beginnt, interpretiert Excel diesen Wert als Formel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1749,7 +1749,7 @@ methods:
     content: 'showGroupDetails(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Gibt an, ob die Details gruppierter Zeilen oder gruppierter Spalten angezeigt werden sollen.
+      description: Gibt an, ob die Details von gruppierten Zeilen oder gruppierten Spalten angezeigt werden sollen.
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 10f95bef6a77dd47ba74b3d7cda2ee0c0d5d2164
-  ms.sourcegitcommit: 9b58b1ac2de88fae836d9f575fbc59c498a0b4ea
+  ms.openlocfilehash: 8d30c738908e33ddb292f08f12814d25c0ce30c9
+  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/15/2022
-  ms.locfileid: "63508389"
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64715960"
