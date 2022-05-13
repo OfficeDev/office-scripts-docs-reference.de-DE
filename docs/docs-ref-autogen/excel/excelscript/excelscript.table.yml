@@ -29,7 +29,7 @@ methods:
       description: Optional. Gibt die relative Position der neuen Spalte an. Bei NULL oder -1 erfolgt die Erweiterung am Ende. Spalten mit einem höheren Index werden auf die Seite verschoben. Nullindiziert.
       type: number
     - id: values
-      description: Optional. Ein eindimensionales Array von unformatierten Werten der Tabellenspalte.
+      description: Optional. Ein 1-dimensionales Array mit unformatierten Werten der Tabellenspalte.
       type: (boolean | string | number)[]
     - id: name
       description: Optional. Gibt den Namen der neuen Spalte an. Bei NULL wird der Standardname verwendet.
@@ -52,7 +52,7 @@ methods:
       description: Optional. Gibt die relative Position der neuen Zeile an. Bei NULL oder -1 erfolgt die Erweiterung am Ende. Alle Zeilen unterhalb der eingefügten Zeile werden nach unten verschoben. Nullindiziert.
       type: number
     - id: values
-      description: Optional. Ein eindimensionales Array von unformatierten Werten der Tabellenzeile.
+      description: Optional. Ein 1-dimensionales Array mit unformatierten Werten der Tabellenzeile.
       type: (boolean | string | number)[]
     return:
       type: void
@@ -120,7 +120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)
   package: ExcelScript!
   fullName: deleteRowsAt(index, count)
-  summary: Löscht eine angegebene Anzahl von Zeilen an einem bestimmten Index.
+  summary: Löscht eine bestimmte Anzahl von Zeilen an einem bestimmten Index.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -128,10 +128,10 @@ methods:
     content: 'deleteRowsAt(index: number, count?: number): void;'
     parameters:
     - id: index
-      description: 'Der Indexwert der zu löschenden Zeile. Vorsicht: Der Index der Zeile hat sich möglicherweise von dem Zeitpunkt an verschoben, zu dem Sie den für die Entfernung zu verwendenden Wert bestimmt haben.'
+      description: 'Der Indexwert der zu löschenden Zeile. Achtung: Der Index der Zeile wurde möglicherweise seit dem Zeitpunkt verschoben, zu dem Sie den für das Entfernen zu verwendenden Wert bestimmt haben.'
       type: number
     - id: count
-      description: 'Anzahl der zu löschenden Zeilen. Standardmäßig wird eine einzelne Zeile gelöscht. Hinweis: Das gleichzeitige Löschen von mehr als 1.000 Zeilen kann zu einem Power Automate Timeout führen.'
+      description: 'Anzahl der zu löschenden Zeilen. Standardmäßig wird eine einzelne Zeile gelöscht. Hinweis: Das Gleichzeitige Löschen von mehr als 1000 Zeilen kann zu einem Power Automate Timeout führen.'
       type: number
     return:
       type: void
@@ -153,7 +153,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
   package: ExcelScript!
   fullName: getColumn(key)
-  summary: Ruft ein Spaltenobjekt nach Name oder ID ab. Wenn die Spalte nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft ein Spaltenobjekt nach Name oder ID ab. Wenn die Spalte nicht vorhanden ist, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
   package: ExcelScript!
   fullName: getColumnById(key)
-  summary: Ruft ein Spaltenobjekt nach ID ab. Wenn die Spalte nicht vorhanden ist, wird nicht definiert zurückgegeben.
+  summary: Ruft ein Spaltenobjekt nach ID ab. Wenn die Spalte nicht vorhanden ist, wird undefiniert zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -187,7 +187,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
   package: ExcelScript!
   fullName: getColumnByName(key)
-  summary: Ruft ein Spaltenobjekt anhand des Namens ab. Wenn die Spalte nicht vorhanden ist, wird nicht definiert zurückgegeben.
+  summary: Ruft ein Spaltenobjekt nach Name ab. Wenn die Spalte nicht vorhanden ist, wird undefiniert zurückgegeben.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: getShowBandedColumns()
-  summary: Gibt an, ob in den Spalten gebänderte Formatierungen angezeigt werden, in denen ungerade Spalten anders hervorgehoben werden als gerade Spalten, um das Lesen der Tabelle zu vereinfachen.
+  summary: Gibt an, ob die Spalten gebänderte Formatierungen aufweisen, in denen ungerade Spalten anders als gerade hervorgehoben werden, um das Lesen der Tabelle zu vereinfachen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
   package: ExcelScript!
   fullName: getShowBandedRows()
-  summary: Gibt an, ob in den Zeilen gebänderte Formatierungen angezeigt werden, in denen ungerade Zeilen anders hervorgehoben werden als gerade, um das Lesen der Tabelle zu vereinfachen.
+  summary: Gibt an, ob die Zeilen gebänderte Formatierungen aufweisen, in denen ungerade Zeilen anders als gerade hervorgehoben werden, um das Lesen der Tabelle zu vereinfachen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -373,7 +373,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)
   package: ExcelScript!
   fullName: getShowFilterButton()
-  summary: Gibt an, ob die Filterschaltflächen oben in jeder Spaltenüberschrift sichtbar sind. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.
+  summary: Gibt an, ob die Filterschaltflächen oben in jeder Spaltenüberschrift angezeigt werden. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -464,7 +464,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#resize:member(1)
   package: ExcelScript!
   fullName: resize(newRange)
-  summary: Ändern Sie die Größe der Tabelle in den neuen Bereich. Der neue Bereich muss sich mit dem ursprünglichen Tabellenbereich überlappen, und die Kopfzeilen (oder der Anfang der Tabelle) müssen sich in derselben Zeile befinden.
+  summary: Ändern Sie die Größe der Tabelle auf den neuen Bereich. Der neue Bereich muss mit dem ursprünglichen Tabellenbereich überlappen, und die Kopfzeilen (oder der obere Rand der Tabelle) müssen sich in derselben Zeile befinden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -472,7 +472,7 @@ methods:
     content: 'resize(newRange: Range | string): void;'
     parameters:
     - id: newRange
-      description: Das Bereichsobjekt oder die Bereichsadresse, das bzw. die verwendet wird, um die neue Größe der Tabelle zu bestimmen.
+      description: Das Bereichsobjekt oder die Bereichsadresse, die zum Bestimmen der neuen Größe der Tabelle verwendet wird.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -549,7 +549,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: setShowBandedColumns(showBandedColumns)
-  summary: Gibt an, ob in den Spalten gebänderte Formatierungen angezeigt werden, in denen ungerade Spalten anders hervorgehoben werden als gerade Spalten, um das Lesen der Tabelle zu vereinfachen.
+  summary: Gibt an, ob die Spalten gebänderte Formatierungen aufweisen, in denen ungerade Spalten anders als gerade hervorgehoben werden, um das Lesen der Tabelle zu vereinfachen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
   package: ExcelScript!
   fullName: setShowBandedRows(showBandedRows)
-  summary: Gibt an, ob in den Zeilen gebänderte Formatierungen angezeigt werden, in denen ungerade Zeilen anders hervorgehoben werden als gerade, um das Lesen der Tabelle zu vereinfachen.
+  summary: Gibt an, ob die Zeilen gebänderte Formatierungen aufweisen, in denen ungerade Zeilen anders als gerade hervorgehoben werden, um das Lesen der Tabelle zu vereinfachen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -583,7 +583,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)
   package: ExcelScript!
   fullName: setShowFilterButton(showFilterButton)
-  summary: Gibt an, ob die Filterschaltflächen oben in jeder Spaltenüberschrift sichtbar sind. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.
+  summary: Gibt an, ob die Filterschaltflächen oben in jeder Spaltenüberschrift angezeigt werden. Diese Einstellung ist nur zulässig, wenn die Tabelle eine Kopfzeile enthält.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -631,9 +631,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6519d6987825c7f3c316f3f153115fb4d83a2bef
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: d257901ee686a182d2891bb7ccf63cba1116a1dd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240654"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394037"

@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
   package: ExcelScript!
   fullName: getComment()
-  summary: Gibt den diesem Namen zugeordneten Kommentar an.
+  summary: Gibt den Kommentar an, der diesem Namen zugeordnet ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Ruft das Bereichsobjekt ab, das mit dem Namen verknüpft ist. Wenn der Typ des benannten Elements kein Bereich ist, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das Bereichsobjekt ab, das mit dem Namen verknüpft ist. Wenn der Typ des benannten Elements kein Bereich ist, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
   package: ExcelScript!
   fullName: getScope()
-  summary: 'Gibt an, ob der Name auf die Arbeitsmappe oder ein bestimmtes Arbeitsblatt beschränkt ist. Mögliche Werte sind: Worksheet, Workbook.'
+  summary: 'Gibt an, ob der Name auf die Arbeitsmappe oder auf ein bestimmtes Arbeitsblatt beschränkt ist. Mögliche Werte sind: Arbeitsblatt, Arbeitsmappe.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Gibt den Typ des Werts an, der von der Formel des Namens zurückgegeben wird. Weitere Informationen finden Sie `ExcelScript.NamedItemType` unter.
+  summary: Gibt den Typ des Werts an, der von der Formel des Namens zurückgegeben wird. Weitere Informationen finden Sie `ExcelScript.NamedItemType` unter .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: Gibt das Arbeitsblatt zurück, auf das das benannte Element beschränkt ist. Wenn das Element stattdessen auf die Arbeitsmappe beschränkt ist, gibt diese Funktion `undefined`<!-- -->.
+  summary: Gibt das Arbeitsblatt zurück, auf das das benannte Element beschränkt ist. Wenn das Element stattdessen auf die Arbeitsmappe beschränkt ist, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
   package: ExcelScript!
   fullName: setComment(comment)
-  summary: Gibt den diesem Namen zugeordneten Kommentar an.
+  summary: Gibt den Kommentar an, der diesem Namen zugeordnet ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b097f6d3666bdd2d2334de0cd2e9705852bb219a
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 182f0fc8a5e12d2bc525d28c22f8c6734abbcffd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064836"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394121"

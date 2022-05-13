@@ -21,10 +21,10 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: Erforderlich. Der Schlüssel der benutzerdefinierten Eigenschaft, bei dem die Groß-/Kleinschreibung nicht beachtet wird. Die Taste ist auf 255 Zeichen außerhalb von Excel im Web beschränkt (größere Tasten werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).
+      description: Erforderlich. Der Schlüssel der benutzerdefinierten Eigenschaft, bei dem die Groß-/Kleinschreibung nicht beachtet wird. Der Schlüssel ist außerhalb von Excel im Web auf 255 Zeichen beschränkt (größere Tasten werden auf anderen Plattformen automatisch auf 255 Zeichen gekürzt).
       type: string
     - id: value
-      description: Erforderlich. Der Wert der benutzerdefinierten Eigenschaft. Der Wert ist auf 255 Zeichen außerhalb von Excel im Web beschränkt (größere Werte werden automatisch auf 255 Zeichen auf anderen Plattformen gekürzt).
+      description: Erforderlich. Der Wert der benutzerdefinierten Eigenschaft. Der Wert ist außerhalb von Excel im Web auf 255 Zeichen beschränkt (größere Werte werden auf anderen Plattformen automatisch auf 255 Zeichen gekürzt).
       type: any
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
@@ -85,7 +85,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)
   package: ExcelScript!
   fullName: getCompany()
-  summary: Das Unternehmen der Arbeitsmappe.
+  summary: Die Firma der Arbeitsmappe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)
   package: ExcelScript!
   fullName: getCreationDate()
-  summary: Ruft das Erstellungsdatum der Arbeitsmappe ab. Schreibgeschützt.
+  summary: Ruft das Erstellungsdatum der Arbeitsmappe ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)
   package: ExcelScript!
   fullName: getCustom()
-  summary: Ruft die Sammlung der benutzerdefinierten Eigenschaften der Arbeitsmappe ab. Schreibgeschützt.
+  summary: Ruft die Sammlung der benutzerdefinierten Eigenschaften der Arbeitsmappe ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
   package: ExcelScript!
   fullName: getCustomProperty(key)
-  summary: Ruft ein Objekt für benutzerdefinierte Eigenschaften über seinen Schlüssel ab, bei dem Groß-/Kleinschreibung nicht beachtet wird. Wenn die benutzerdefinierte Eigenschaft nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft ein Objekt für benutzerdefinierte Eigenschaften über seinen Schlüssel ab, bei dem Groß-/Kleinschreibung nicht beachtet wird. Wenn die benutzerdefinierte Eigenschaft nicht vorhanden ist, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -154,7 +154,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)
   package: ExcelScript!
   fullName: getLastAuthor()
-  summary: Ruft den letzten Autor der Arbeitsmappe ab. Schreibgeschützt.
+  summary: Ruft den letzten Autor der Arbeitsmappe ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,7 +167,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)
   package: ExcelScript!
   fullName: getManager()
-  summary: Der Vorgesetzte der Arbeitsmappe.
+  summary: Der Manager der Arbeitsmappe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -180,7 +180,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)
   package: ExcelScript!
   fullName: getRevisionNumber()
-  summary: Ruft die Revisionsnummer der Arbeitsmappe ab. Schreibgeschützt.
+  summary: Ruft die Revisionsnummer der Arbeitsmappe ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -270,7 +270,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)
   package: ExcelScript!
   fullName: setCompany(company)
-  summary: Das Unternehmen der Arbeitsmappe.
+  summary: Die Firma der Arbeitsmappe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -304,7 +304,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)
   package: ExcelScript!
   fullName: setManager(manager)
-  summary: Der Vorgesetzte der Arbeitsmappe.
+  summary: Der Manager der Arbeitsmappe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)
   package: ExcelScript!
   fullName: setRevisionNumber(revisionNumber)
-  summary: Ruft die Revisionsnummer der Arbeitsmappe ab. Schreibgeschützt.
+  summary: Ruft die Revisionsnummer der Arbeitsmappe ab.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 625ea9b1b9ce99a2f4b8e750ba181865016dc6ad
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: b145a889420ad995959a9445c8cd936f8e588d39
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064913"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394138"

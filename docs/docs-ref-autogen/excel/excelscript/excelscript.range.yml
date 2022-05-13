@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: Füllt den Bereich zwischen dem aktuellen Bereich und dem Zielbereich mithilfe der angegebenen AutoAusfülllogik. Der Zielbereich kann `null`<!-- -->oder kann die Quelle horizontal oder vertikal erweitern. Nicht zusammenhängende Bereiche werden nicht unterstützt.
+  summary: Füllt einen Bereich vom aktuellen Bereich bis zum Zielbereich mithilfe der angegebenen AutoAusfülllogik aus. Der Zielbereich kann der Quellbereich horizontal oder vertikal sein `null` oder erweitern. Nicht zusammenhängende Bereiche werden nicht unterstützt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Sucht die angegebene Zeichenfolge anhand der angegebenen Kriterien. Wenn der aktuelle Bereich größer als eine einzelne Zelle ist, ist die Suche auf diesen Bereich beschränkt. Andernfalls wird das gesamte Blatt ab dieser Zelle durchsucht. Wenn keine Übereinstimmungen vorhanden sind, gibt diese Funktion `undefined`<!-- -->.
+  summary: Sucht die angegebene Zeichenfolge anhand der angegebenen Kriterien. Wenn der aktuelle Bereich größer als eine einzelne Zelle ist, ist die Suche auf diesen Bereich beschränkt. Andernfalls wird das gesamte Blatt ab dieser Zelle durchsucht. Wenn keine Übereinstimmungen vorhanden sind, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -179,7 +179,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
   package: ExcelScript!
   fullName: flashFill()
-  summary: Führt eine Blitzvorschau für den aktuellen Bereich aus. Die Blitzvorschau füllt Daten automatisch aus, wenn sie ein Muster erkennt. Daher muss der Bereich ein einzelner Spaltenbereich sein und Daten enthalten, um ein Muster zu finden.
+  summary: Führt eine Flash Füllung für den aktuellen Bereich aus. Flash Fill füllt Daten automatisch aus, wenn sie ein Muster erkennt. Daher muss der Bereich ein einzelner Spaltenbereich sein und Daten um ihn herum haben, um ein Muster zu finden.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Ruft das Bereichsobjekt ab, das die rechteckige Schnittmenge der angegebenen Bereiche darstellt. Wenn keine Schnittmenge gefunden wird, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das Bereichsobjekt ab, das die rechteckige Schnittmenge der angegebenen Bereiche darstellt. Wenn keine Schnittmenge gefunden wird, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -765,7 +765,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
-  summary: Gibt ein RangeAreas -Objekt zurück, das die zusammengeführten Bereiche in diesem Bereich darstellt. Beachten Sie, dass die API das Ergebnis nicht zurückgeben kann, wenn die Anzahl der zusammengeführten Bereiche in diesem Bereich mehr als 512 beträgt. Wenn rangeAreas nicht vorhanden ist, wird ein NULL-Objekt zurückgegeben.
+  summary: Gibt ein `RangeAreas` Objekt zurück, das die zusammengeführten Bereiche in diesem Bereich darstellt. Beachten Sie, dass diese Methode das Ergebnis nicht zurückgeben kann, wenn die Anzahl der zusammengeführten Bereiche in diesem Bereich mehr als 512 beträgt. Wenn das `RangeAreas` Objekt nicht vorhanden ist, gibt diese Funktion ein Objekt zurück `isNullObject` , dessen Eigenschaft auf `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1066,7 +1066,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Ruft das `RangeAreas` Objekt ab, das aus einem oder mehreren Bereichen besteht und alle Zellen darstellt, die dem angegebenen Typ und Wert entsprechen. Wenn keine speziellen Zellen gefunden werden, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das `RangeAreas` Objekt ab, das aus einem oder mehreren Bereichen besteht und alle Zellen darstellt, die dem angegebenen Typ und Wert entsprechen. Wenn keine speziellen Zellen gefunden werden, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1090,7 +1090,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Ruft beim Aufruf für eine Ankerzelle das Bereichsobjekt ab, das den Überlaufbereich enthält. Wenn der Bereich keine Ankerzelle ist oder der Überlaufbereich nicht gefunden werden kann, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft beim Aufruf für eine Ankerzelle das Bereichsobjekt ab, das den Überlaufbereich enthält. Wenn der Bereich keine Ankerzelle ist oder der Überlaufbereich nicht gefunden werden kann, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Ruft das Bereichsobjekt ab, das die Ankerzelle für die Zelle enthält, in die übergelaufen wird. Wenn es sich nicht um eine übergelaufene Zelle handelt oder mehrere Zellen angegeben werden, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das Bereichsobjekt ab, das die Ankerzelle für die Zelle enthält, in die übergelaufen wird. Wenn es sich nicht um eine übergelaufene Zelle handelt oder mehrere Zellen angegeben sind, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1185,7 +1185,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Gibt den verwendeten Bereich des angegebenen Bereichsobjekts zurück. Wenn im Bereich keine verwendeten Zellen vorhanden sind, gibt diese Funktion `undefined`<!-- -->.
+  summary: Gibt den verwendeten Bereich des angegebenen Bereichsobjekts zurück. Wenn sich im Bereich keine verwendeten Zellen befinden, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d30c738908e33ddb292f08f12814d25c0ce30c9
-  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.openlocfilehash: 131c648e35d13d5d8bc28d44514f8c893b4250d8
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64715960"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394149"

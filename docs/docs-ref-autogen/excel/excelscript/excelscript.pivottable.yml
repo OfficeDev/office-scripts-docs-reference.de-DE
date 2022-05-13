@@ -103,7 +103,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: getAllowMultipleFiltersPerField()
-  summary: Gibt an, ob die PivotTable die Anwendung mehrerer PivotFilter auf einem bestimmten PivotField in der Tabelle zulässt.
+  summary: Gibt an, ob die PivotTable die Anwendung mehrerer PivotFilter auf ein bestimmtes PivotField in der Tabelle zulässt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: Ruft das RowColumnPivotHierarchy-Objekt anhand des Namens ab. Wenn rowColumnPivotHierarchy nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das RowColumnPivotHierarchy-Objekt anhand des Namens ab. Wenn rowColumnPivotHierarchy nicht vorhanden ist, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
     content: 'getColumnHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Der Name des abzurufenden RowColumnPivotHierarchy-Objekts.
+      description: Name des rowColumnPivotHierarchy-Objekts, das abgerufen werden soll.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" /> | undefined
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: Ruft das DataPivotHierarchy-Objekt anhand des Namens ab. Wenn dataPivotHierarchy nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das DataPivotHierarchy-Objekt anhand des Namens ab. Wenn dataPivotHierarchy nicht vorhanden ist, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: getEnableDataValueEditing()
-  summary: Gibt an, ob die PivotTable die Bearbeitung von Werten im Datentext durch den Benutzer zulässt.
+  summary: Gibt an, ob die PivotTable das Bearbeiten von Werten im Datentext durch den Benutzer zulässt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: Ruft das FilterPivotHierarchy-Objekt anhand des Namens ab. Wenn das FilterPivotHierarchy-Objekt nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das FilterPivotHierarchy-Objekt anhand des Namens ab. Wenn das FilterPivotHierarchy-Objekt nicht vorhanden ist, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: Ruft das PivotHierarchy-Objekt anhand des Namens ab. Wenn das PivotHierarchy-Objekt nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das PivotHierarchy-Objekt anhand des Namens ab. Wenn pivotHierarchy nicht vorhanden ist, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -240,7 +240,7 @@ methods:
     content: 'getHierarchy(name: string): PivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Name des abzurufenden PivotHierarchy-Objekts.
+      description: Name des pivotHierarchy-Objekts, das abgerufen werden soll.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" /> | undefined
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: DIE ID der PivotTable.
+  summary: ID der PivotTable.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: Ruft das RowColumnPivotHierarchy-Objekt anhand des Namens ab. Wenn rowColumnPivotHierarchy nicht vorhanden ist, gibt diese Funktion `undefined`<!-- -->.
+  summary: Ruft das RowColumnPivotHierarchy-Objekt anhand des Namens ab. Wenn rowColumnPivotHierarchy nicht vorhanden ist, gibt diese Methode `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -309,7 +309,7 @@ methods:
     content: 'getRowHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
     parameters:
     - id: name
-      description: Der Name des abzurufenden RowColumnPivotHierarchy-Objekts.
+      description: Name des rowColumnPivotHierarchy-Objekts, das abgerufen werden soll.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" /> | undefined
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-  summary: Gibt an, ob die PivotTable die Anwendung mehrerer PivotFilter auf einem bestimmten PivotField in der Tabelle zulässt.
+  summary: Gibt an, ob die PivotTable die Anwendung mehrerer PivotFilter auf ein bestimmtes PivotField in der Tabelle zulässt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -451,7 +451,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: setEnableDataValueEditing(enableDataValueEditing)
-  summary: Gibt an, ob die PivotTable die Bearbeitung von Werten im Datentext durch den Benutzer zulässt.
+  summary: Gibt an, ob die PivotTable das Bearbeiten von Werten im Datentext durch den Benutzer zulässt.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: dd8d395e4cc4c09f3443c686bf19c4a441e5c28e
-  ms.sourcegitcommit: b9473966fe37e1ac701719cf9fc4714c572878ca
+  ms.openlocfilehash: fa1e1616bb66cac6a98078b5d73d36f71cedd19d
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/30/2022
-  ms.locfileid: "64536517"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394030"
