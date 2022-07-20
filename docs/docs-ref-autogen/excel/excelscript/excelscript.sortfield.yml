@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.SortField
-uid: 'ExcelScript!ExcelScript.SortField:interface'
+uid: ExcelScript!ExcelScript.SortField:interface
 package: ExcelScript!
 fullName: ExcelScript.SortField
 summary: Stellt eine Bedingung in einem Sortiervorgang dar.
@@ -9,87 +9,95 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: ascending
-    uid: 'ExcelScript!ExcelScript.SortField#ascending:member'
-    package: ExcelScript!
-    fullName: ascending
-    summary: 'Gibt an, ob die Sortierung aufsteigend erfolgt.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'ascending?: boolean;'
-      return:
-        type: boolean
-  - name: color
-    uid: 'ExcelScript!ExcelScript.SortField#color:member'
-    package: ExcelScript!
-    fullName: color
-    summary: 'Gibt die Farbe an, die das Ziel der Bedingung ist, wenn die Sortierung auf Schrift- oder Zellenfarbe erfolgt.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'color?: string;'
-      return:
-        type: string
-  - name: dataOption
-    uid: 'ExcelScript!ExcelScript.SortField#dataOption:member'
-    package: ExcelScript!
-    fullName: dataOption
-    summary: Stellt weitere Sortieroptionen für dieses Feld dar.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'dataOption?: SortDataOption;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.SortDataOption:enum" />'
-  - name: icon
-    uid: 'ExcelScript!ExcelScript.SortField#icon:member'
-    package: ExcelScript!
-    fullName: icon
-    summary: 'Gibt das Symbol an, das das Ziel der Bedingung ist, wenn sich die Sortierung auf dem Symbol der Zelle befindet.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'icon?: Icon;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Icon:interface" />'
-  - name: key
-    uid: 'ExcelScript!ExcelScript.SortField#key:member'
-    package: ExcelScript!
-    fullName: key
-    summary: 'Gibt die Spalte (oder Zeile, abhängig von der Sortierausrichtung) an, für die die Bedingung gilt. Wird als Offset von der ersten Spalte (oder Zeile) dargestellt.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'key: number;'
-      return:
-        type: number
-  - name: sortOn
-    uid: 'ExcelScript!ExcelScript.SortField#sortOn:member'
-    package: ExcelScript!
-    fullName: sortOn
-    summary: Gibt den Typ der Sortierung dieser Bedingung an.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'sortOn?: SortOn;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.SortOn:enum" />'
-  - name: subField
-    uid: 'ExcelScript!ExcelScript.SortField#subField:member'
-    package: ExcelScript!
-    fullName: subField
-    summary: 'Gibt das Unterfeld an, bei dem es sich um den Namen der Zieleigenschaft eines umfangreichen Werts handelt, nach dem sortiert werden soll.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'subField?: string;'
-      return:
-        type: string
+- name: ascending
+  uid: ExcelScript!ExcelScript.SortField#ascending:member
+  package: ExcelScript!
+  fullName: ascending
+  summary: Gibt an, ob die Sortierung aufsteigend erfolgt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'ascending?: boolean;'
+    return:
+      type: boolean
+- name: color
+  uid: ExcelScript!ExcelScript.SortField#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: Gibt die Farbe an, die das Ziel der Bedingung ist, wenn die Sortierung nach Schriftart oder Zellenfarbe erfolgt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script sorts a range based on the color of the cells.\n * It brings all red cells to the top of the range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range (A1:D8) to sort from the current worksheet.\n  const worksheet = workbook.getActiveWorksheet();\n  const rangeToSort = worksheet.getRange(\"A1:D8\");\n\n  // Create a SortField for color sorting.\n  // This sorts the rows based on the fill color of each row's cell in the first column.\n  let colorSort: ExcelScript.SortField = {\n    ascending: true,\n    color: \"FF0000\", /* red */\n    key: 0,\n    sortOn: ExcelScript.SortOn.cellColor\n  };\n\n  // Apply the SortField to the range.\n  rangeToSort.getSort().apply([colorSort]);\n}\n```"
+- name: dataOption
+  uid: ExcelScript!ExcelScript.SortField#dataOption:member
+  package: ExcelScript!
+  fullName: dataOption
+  summary: Stellt weitere Sortieroptionen für dieses Feld dar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'dataOption?: SortDataOption;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SortDataOption:enum" />
+- name: icon
+  uid: ExcelScript!ExcelScript.SortField#icon:member
+  package: ExcelScript!
+  fullName: icon
+  summary: Gibt das Symbol an, das das Ziel der Bedingung ist, wenn sich die Sortierung auf dem Symbol der Zelle befindet.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'icon?: Icon;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
+- name: key
+  uid: ExcelScript!ExcelScript.SortField#key:member
+  package: ExcelScript!
+  fullName: key
+  summary: Gibt die Spalte (oder Zeile, je nach Sortierausrichtung) an, in der sich die Bedingung befindet. Wird als Offset von der ersten Spalte (oder Zeile) dargestellt.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'key: number;'
+    return:
+      type: number
+- name: sortOn
+  uid: ExcelScript!ExcelScript.SortField#sortOn:member
+  package: ExcelScript!
+  fullName: sortOn
+  summary: Gibt den Typ der Sortierung dieser Bedingung an.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'sortOn?: SortOn;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SortOn:enum" />
+- name: subField
+  uid: ExcelScript!ExcelScript.SortField#subField:member
+  package: ExcelScript!
+  fullName: subField
+  summary: Gibt das Unterfeld an, bei dem es sich um den Zieleigenschaftennamen eines rich-Werts handelt, nach dem sortiert werden soll.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'subField?: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: ef6a2d8ca7c3328b5d52f9aaf5ccb19bed89f592
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890347"
