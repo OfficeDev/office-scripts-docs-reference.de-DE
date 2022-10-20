@@ -3,7 +3,7 @@ name: ExcelScript.PivotField
 uid: ExcelScript!ExcelScript.PivotField:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotField
-summary: Stellt das Excel PivotField dar.
+summary: Represents the Excel PivotField.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -260,14 +260,14 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
       description: Die Elemente, die für den Bereich der Sortierung verwendet werden sollen. Dies sind die Elemente, aus denen die Zeile oder Spalte besteht, nach der Sie sortieren möchten. Wenn eine Zeichenfolge anstelle eines PivotItems verwendet wird, stellt die Zeichenfolge die ID des PivotItem-Objekts dar. Wenn auf der Achse, nach der Sie sortieren möchten, keine anderen Elemente als die Datenhierarchie vorhanden sind, kann dies leer sein.
-      type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
+      type: Array&lt;<xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | string&gt;
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b101e242560b91b8f743585d90e374bd5fbc2851
-  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.openlocfilehash: 7360ef6c63b19b899ae28544da943e67379eb237
+  ms.sourcegitcommit: 497d2ecc546aecf311c23c82110f8f0dfbcde0b9
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/13/2022
-  ms.locfileid: "65394186"
+  ms.lasthandoff: 10/20/2022
+  ms.locfileid: "68619504"
