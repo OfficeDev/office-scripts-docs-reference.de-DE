@@ -3,7 +3,7 @@ name: ExcelScript.Shape
 uid: ExcelScript!ExcelScript.Shape:interface
 package: ExcelScript!
 fullName: ExcelScript.Shape
-summary: Stellt ein generisches Shape-Objekt im Arbeitsblatt dar. Eine Form kann eine geometrische Form, eine Linie, eine Gruppe von Formen usw. sein.
+summary: Stellt ein generisches Formobjekt im Arbeitsblatt dar. Eine Form kann eine geometrische Form, eine Linie, eine Gruppe von Formen usw. sein.
 remarks: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script creates a hexagon shape on the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const hexagon: ExcelScript.Shape = \n    currentSheet.addGeometricShape(ExcelScript.GeometricShapeType.hexagon);\n  \n  // Set the hexagon size to 40x40 pixels.\n  hexagon.setHeight(40);\n  hexagon.setWidth(40);\n\n  // Position the hexagon at [100,100] pixels.\n  hexagon.setLeft(100);\n  hexagon.setTop(100);\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#copyTo:member(1)
   package: ExcelScript!
   fullName: copyTo(destinationSheet)
-  summary: Kopiert und fügt ein Objekt ein `Shape` . Das eingefügte Shape wird an die gleiche Pixelposition wie dieses Shape kopiert.
+  summary: Kopiert ein Objekt und fügt es ein `Shape` . Die eingefügte Form wird an die gleiche Pixelposition wie dieses Shape kopiert.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
     parameters:
     - id: destinationSheet
-      description: Das Blatt, in das das Shape-Objekt eingefügt wird. Der Standardwert ist das Arbeitsblatt des kopierten Shapes.
+      description: Das Blatt, in das das Shape-Objekt eingefügt wird. Der Standardwert ist das Arbeitsblatt der kopierten Form.
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)
   package: ExcelScript!
   fullName: getAltTextDescription()
-  summary: Gibt den alternativen Beschreibungstext für ein `Shape` Objekt an.
+  summary: Gibt den alternativen Beschreibungstext für ein `Shape` -Objekt an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)
   package: ExcelScript!
   fullName: getAltTextTitle()
-  summary: Gibt den alternativen Titeltext für ein `Shape` Objekt an.
+  summary: Gibt den alternativen Titeltext für ein `Shape` -Objekt an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
     return:
       type: string
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script creates a star shape with the value from cell A1.\n * It then returns the image as a base64-encoded string. \n * This string would be used as part of a Power Automate flow to add the image elsewhere.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the value of A1 from the worksheet named Sheet1.\n  const sheet = workbook.getWorksheet(\"Sheet1\");\n  const value = sheet.getRange(\"A1\").getValue();\n\n  // Create a Shape object that looks like a 5-pointed star.\n  const star = sheet.addGeometricShape(ExcelScript.GeometricShapeType.star5);\n\n  // Set the text of star and make sure the shape fits the text.\n  const textFrame = star.getTextFrame();\n  textFrame.getTextRange().setText(value.toString());\n  textFrame.setAutoSizeSetting(ExcelScript.ShapeAutoSize.autoSizeShapeToFitText);\n\n  // Return the shape as a PNG image represented by a base64-encoded string.\n  return star.getAsImage(ExcelScript.PictureFormat.png);\n}\n```"
 - name: getConnectionSiteCount()
   uid: ExcelScript!ExcelScript.Shape#getConnectionSiteCount:member(1)
   package: ExcelScript!
@@ -126,7 +126,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: getGeometricShapeType()
-  summary: Gibt den geometrischen Formtyp dieser geometrischen Form an. Weitere Informationen finden Sie `ExcelScript.GeometricShapeType` unter . Gibt zurück `null` , wenn der Formtyp nicht "GeometricShape" ist.
+  summary: Gibt den geometrischen Formtyp dieser geometrischen Form an. Weitere Informationen finden Sie unter `ExcelScript.GeometricShapeType` . Gibt zurück `null` , wenn der Formtyp nicht "GeometricShape" ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -152,7 +152,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Gibt die Höhe des Shapes in Punkt an. Löst eine `InvalidArgument` Ausnahme aus, wenn sie mit einem negativen Wert oder null als Eingabe festgelegt wird.
+  summary: Gibt die Höhe der Form in Punkt an. Löst eine Ausnahme aus `InvalidArgument` , wenn als Eingabe mit einem negativen Wert oder 0 (null) festgelegt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
     content: 'getImage(): Image;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Image:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n* This script transfers an image from one worksheet to another.\n*/\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script transfers an image from one worksheet to another.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
 - name: getImageAsBase64(format)
   uid: ExcelScript!ExcelScript.Shape#getImageAsBase64:member(1)
   package: ExcelScript!
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Der Abstand in Punkten von der linken Seite der Form zur linken Seite des Arbeitsblatts. Löst eine `InvalidArgument` Ausnahme aus, wenn sie mit einem negativen Wert als Eingabe festgelegt wird.
+  summary: Der Abstand in Punkten von der linken Seite der Form zur linken Seite des Arbeitsblatts. Löst eine `InvalidArgument` Ausnahme aus, wenn mit einem negativen Wert als Eingabe festgelegt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: getLockAspectRatio()
-  summary: Gibt an, ob das Seitenverhältnis dieses Shapes gesperrt ist.
+  summary: Gibt an, ob das Seitenverhältnis dieser Form gesperrt ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Gibt den Namen des Shapes an.
+  summary: Gibt den Namen der Form an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getParentGroup:member(1)
   package: ExcelScript!
   fullName: getParentGroup()
-  summary: Gibt die übergeordnete Gruppe dieses Shapes an.
+  summary: Gibt die übergeordnete Gruppe dieser Form an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -333,12 +333,12 @@ methods:
     content: 'getTextFrame(): TextFrame;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.TextFrame:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Beispiele\n\n```TypeScript\n/**\n * This script creates a star shape with the value from cell A1.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the value of A1 from the worksheet named Sheet1.\n  const sheet = workbook.getWorksheet(\"Sheet1\");\n  const value = sheet.getRange(\"A1\").getValue();\n\n  // Create a Shape object that looks like a 5-pointed star.\n  const star = sheet.addGeometricShape(ExcelScript.GeometricShapeType.star5);\n\n  // Set the text of star and make sure the shape fits the text.\n  const textFrame = star.getTextFrame();\n  textFrame.getTextRange().setText(value.toString());\n  textFrame.setAutoSizeSetting(ExcelScript.ShapeAutoSize.autoSizeShapeToFitText);\n}\n```"
 - name: getTop()
   uid: ExcelScript!ExcelScript.Shape#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Der Abstand in Punkten zwischen der oberen Kante der Form und der oberen Kante der Arbeitsmappe. Löst eine `InvalidArgument` Ausnahme aus, wenn sie mit einem negativen Wert als Eingabe festgelegt wird.
+  summary: Der Abstand in Punkten zwischen der oberen Kante der Form und der oberen Kante der Arbeitsmappe. Löst eine `InvalidArgument` Ausnahme aus, wenn mit einem negativen Wert als Eingabe festgelegt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -351,7 +351,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Gibt den Typ dieser Form zurück. Weitere Informationen finden Sie `ExcelScript.ShapeType` unter .
+  summary: Gibt den Typ dieser Form zurück. Weitere Informationen finden Sie unter `ExcelScript.ShapeType` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -364,7 +364,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Gibt an, ob das Shape sichtbar ist.
+  summary: Gibt an, ob die Form sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -377,7 +377,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Gibt die Breite der Form in Punkt an. Löst eine `InvalidArgument` Ausnahme aus, wenn sie mit einem negativen Wert oder null als Eingabe festgelegt wird.
+  summary: Gibt die Breite der Form in Punkt an. Löst eine Ausnahme aus `InvalidArgument` , wenn als Eingabe mit einem negativen Wert oder 0 (null) festgelegt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -411,7 +411,7 @@ methods:
     content: 'incrementLeft(increment: number): void;'
     parameters:
     - id: increment
-      description: 'Das Inkrement in Punkt wird horizontal verschoben. Ein positiver Wert verschiebt die Form nach rechts und ein negativer Wert nach links. Wenn das Blatt von rechts nach links ausgerichtet ist, wird dies umgekehrt: Positive Werte verschieben die Form nach links und negative Werte verschieben sie nach rechts.'
+      description: 'Das Inkrement in Punkt wird die Form horizontal verschoben. Ein positiver Wert verschiebt die Form nach rechts, und ein negativer Wert verschiebt sie nach links. Wenn das Blatt von rechts nach links ausgerichtet ist, wird dies umgekehrt: Positive Werte verschieben die Form nach links und negative Werte nach rechts.'
       type: number
     return:
       type: void
@@ -420,7 +420,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#incrementRotation:member(1)
   package: ExcelScript!
   fullName: incrementRotation(increment)
-  summary: Dreht die Form um die angegebene Gradzahl um die Z-Achse. Verwenden Sie die `rotation` Eigenschaft, um die absolute Drehung der Form festzulegen.
+  summary: Dreht die Form um die angegebene Gradzahl um die Z-Achse. Verwenden Sie die `rotation` -Eigenschaft, um die absolute Drehung der Form festzulegen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -445,7 +445,7 @@ methods:
     content: 'incrementTop(increment: number): void;'
     parameters:
     - id: increment
-      description: Das Inkrement in Punkt wird vertikal verschoben. Ein positiver Wert verschiebt die Form nach unten, und ein negativer Wert verschiebt sie nach oben.
+      description: Das Inkrement in Punkt wird die Form vertikal verschoben. Ein positiver Wert verschiebt die Form nach unten, und ein negativer Wert verschiebt sie nach oben.
       type: number
     return:
       type: void
@@ -470,10 +470,10 @@ methods:
       description: Gibt das Verhältnis zwischen der Höhe der Form nach der Änderung ihrer Größe und der aktuellen oder ursprünglichen Höhe an.
       type: number
     - id: scaleType
-      description: Gibt an, ob die Form relativ zu ihrer ursprünglichen oder aktuellen Größe skaliert wird. Die Ursprüngliche Größenskalierungsoption funktioniert nur für Bilder.
+      description: Gibt an, ob die Form relativ zur ursprünglichen oder aktuellen Größe skaliert wird. Die Ursprüngliche Größenskalierungsoption funktioniert nur für Bilder.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: Optional. Gibt an, welcher Teil der Form beim Skalieren die Position beibehält. Wenn sie nicht angegeben wird, stellt sie die obere linke Ecke des Shapes dar und behält ihre Position bei.
+      description: Optional. Gibt an, welcher Teil der Form beim Skalieren die Position beibehält. Wenn sie nicht angegeben wird, stellt sie dar, dass die obere linke Ecke der Form ihre Position behält.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -498,10 +498,10 @@ methods:
       description: Gibt das Verhältnis zwischen der Breite der Form nach der Änderung ihrer Größe und der aktuellen oder ursprünglichen Breite an.
       type: number
     - id: scaleType
-      description: Gibt an, ob die Form relativ zu ihrer ursprünglichen oder aktuellen Größe skaliert wird. Die Ursprüngliche Größenskalierungsoption funktioniert nur für Bilder.
+      description: Gibt an, ob die Form relativ zur ursprünglichen oder aktuellen Größe skaliert wird. Die Ursprüngliche Größenskalierungsoption funktioniert nur für Bilder.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: Optional. Gibt an, welcher Teil der Form beim Skalieren die Position beibehält. Wenn sie nicht angegeben wird, stellt sie die obere linke Ecke des Shapes dar und behält ihre Position bei.
+      description: Optional. Gibt an, welcher Teil der Form beim Skalieren die Position beibehält. Wenn sie nicht angegeben wird, stellt sie dar, dass die obere linke Ecke der Form ihre Position behält.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -510,7 +510,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)
   package: ExcelScript!
   fullName: setAltTextDescription(altTextDescription)
-  summary: Gibt den alternativen Beschreibungstext für ein `Shape` Objekt an.
+  summary: Gibt den alternativen Beschreibungstext für ein `Shape` -Objekt an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -527,7 +527,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)
   package: ExcelScript!
   fullName: setAltTextTitle(altTextTitle)
-  summary: Gibt den alternativen Titeltext für ein `Shape` Objekt an.
+  summary: Gibt den alternativen Titeltext für ein `Shape` -Objekt an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -544,7 +544,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: setGeometricShapeType(geometricShapeType)
-  summary: Gibt den geometrischen Formtyp dieser geometrischen Form an. Weitere Informationen finden Sie `ExcelScript.GeometricShapeType` unter . Gibt zurück `null` , wenn der Formtyp nicht "GeometricShape" ist.
+  summary: Gibt den geometrischen Formtyp dieser geometrischen Form an. Weitere Informationen finden Sie unter `ExcelScript.GeometricShapeType` . Gibt zurück `null` , wenn der Formtyp nicht "GeometricShape" ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -561,7 +561,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Gibt die Höhe des Shapes in Punkt an. Löst eine `InvalidArgument` Ausnahme aus, wenn sie mit einem negativen Wert oder null als Eingabe festgelegt wird.
+  summary: Gibt die Höhe der Form in Punkt an. Löst eine Ausnahme aus `InvalidArgument` , wenn als Eingabe mit einem negativen Wert oder 0 (null) festgelegt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -578,7 +578,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Der Abstand in Punkten von der linken Seite der Form zur linken Seite des Arbeitsblatts. Löst eine `InvalidArgument` Ausnahme aus, wenn sie mit einem negativen Wert als Eingabe festgelegt wird.
+  summary: Der Abstand in Punkten von der linken Seite der Form zur linken Seite des Arbeitsblatts. Löst eine `InvalidArgument` Ausnahme aus, wenn mit einem negativen Wert als Eingabe festgelegt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,7 +595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: setLockAspectRatio(lockAspectRatio)
-  summary: Gibt an, ob das Seitenverhältnis dieses Shapes gesperrt ist.
+  summary: Gibt an, ob das Seitenverhältnis dieser Form gesperrt ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -612,7 +612,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Gibt den Namen des Shapes an.
+  summary: Gibt den Namen der Form an.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -663,7 +663,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Der Abstand in Punkten zwischen der oberen Kante der Form und der oberen Kante der Arbeitsmappe. Löst eine `InvalidArgument` Ausnahme aus, wenn sie mit einem negativen Wert als Eingabe festgelegt wird.
+  summary: Der Abstand in Punkten zwischen der oberen Kante der Form und der oberen Kante der Arbeitsmappe. Löst eine `InvalidArgument` Ausnahme aus, wenn mit einem negativen Wert als Eingabe festgelegt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -680,7 +680,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Gibt an, ob das Shape sichtbar ist.
+  summary: Gibt an, ob die Form sichtbar ist.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -697,7 +697,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Gibt die Breite der Form in Punkt an. Löst eine `InvalidArgument` Ausnahme aus, wenn sie mit einem negativen Wert oder null als Eingabe festgelegt wird.
+  summary: Gibt die Breite der Form in Punkt an. Löst eine Ausnahme aus `InvalidArgument` , wenn als Eingabe mit einem negativen Wert oder 0 (null) festgelegt wird.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -722,15 +722,15 @@ methods:
     content: 'setZOrder(position: ShapeZOrder): void;'
     parameters:
     - id: position
-      description: Position, an der die Form im Stapel der Z-Reihenfolge relativ zu den anderen Formen verschoben werden soll. Weitere Informationen finden Sie `ExcelScript.ShapeZOrder` unter .
+      description: Wo die Form im Z-Reihenfolgenstapel relativ zu den anderen Shapes verschoben werden soll. Weitere Informationen finden Sie unter `ExcelScript.ShapeZOrder` .
       type: <xref uid="ExcelScript!ExcelScript.ShapeZOrder:enum" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ada90a41593e16c30239927364f7955501de640c
-  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.openlocfilehash: d356ab4daea59de285b386feb91721336650413a
+  ms.sourcegitcommit: bd711a06dd265e3446ede101909916e5d45d7b23
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/13/2022
-  ms.locfileid: "65394212"
+  ms.lasthandoff: 11/09/2022
+  ms.locfileid: "68891377"
